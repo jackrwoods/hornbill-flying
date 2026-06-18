@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="PA28 Cherokee N6576J on the ramp at Reno-Tahoe International Airport (RNO). Photo placeholder.">
+  <defs>
+    <linearGradient id="g6576j" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1C2C"/>
+      <stop offset="100%" stop-color="#142A3D"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g6576j)"/>
+  <rect x="0" y="596" width="800" height="4" fill="#C89F4F"/>
+  <text x="400" y="270" font-family="'IBM Plex Mono', monospace" font-size="56" font-weight="500" fill="#F7F4EC" text-anchor="middle">N6576J</text>
+  <text x="400" y="330" font-family="Inter, sans-serif" font-size="22" fill="#F7F4EC" text-anchor="middle" opacity="0.9">PA28 at Reno–Tahoe (RNO)</text>
+  <text x="400" y="370" font-family="Inter, sans-serif" font-size="16" fill="#C89F4F" text-anchor="middle">Dual Garmin G5 · WAAS Garmin 375</text>
+  <text x="400" y="560" font-family="Inter, sans-serif" font-size="14" fill="#F7F4EC" text-anchor="middle" opacity="0.6">Photo placeholder — aircraft image to be replaced after photoshoot</text>
+</svg>

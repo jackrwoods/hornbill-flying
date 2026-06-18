@@ -1,0 +1,68 @@
+import Image from "next/image";
+import Link from "next/link";
+import { Container } from "@/components/Container";
+import { Section } from "@/components/Section";
+import { commercialPilotProgram } from "@/content/programs/commercial-pilot";
+
+export function CommercialCareerPathwaySection() {
+  const { careerPathway } = commercialPilotProgram;
+
+  return (
+    <Section background="white" id="career-pathway">
+      <Container>
+        <div className="grid gap-12 lg:grid-cols-2">
+          <div>
+            <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
+              {careerPathway.title}
+            </h2>
+            <p className="mt-4 text-ink-light">{careerPathway.intro}</p>
+            <div className="mt-8 space-y-6">
+              {careerPathway.steps.map((step, index) => (
+                <div key={step.title} className="flex gap-4">
+                  <span
+                    className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-gold-500 text-sm font-semibold text-navy-900"
+                    aria-hidden="true"
+                  >
+                    {index + 1}
+                  </span>
+                  <div>
+                    <h3 className="font-heading text-xl text-navy-900">
+                      {step.title}
+                    </h3>
+                    <p className="mt-1 text-ink-light">{step.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="mt-6 flex flex-wrap gap-4">
+              {careerPathway.links.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-sm font-semibold text-gold-500 hover:text-gold-400 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <figure className="overflow-hidden rounded-xl bg-white shadow-sm">
+            <Image
+              src="/images/programs/commercial-pilot-cross-country.webp"
+              alt="Hornbill PA28 flying cross-country near the Sierra Nevada with a student building flight time toward a Commercial Pilot certificate"
+              width={870}
+              height={653}
+              className="h-auto w-full object-cover"
+              sizes="(max-width: 768px) 100vw, 870px"
+            />
+            <figcaption className="px-5 py-3 text-sm text-ink-light">
+              Cross-country rentals let you build real flight time in the same
+              PA28s you train in.
+            </figcaption>
+          </figure>
+        </div>
+      </Container>
+    </Section>
+  );
+}

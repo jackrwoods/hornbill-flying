@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" role="img" aria-label="Generic instructor avatar placeholder">
+  <rect width="200" height="200" fill="#F7F4EC"/>
+  <circle cx="100" cy="70" r="36" fill="#142A3D"/>
+  <path fill="#142A3D" d="M44 170c0-30 25-54 56-54s56 24 56 54v6H44v-6z"/>
+</svg>

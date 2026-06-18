@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "alex-rivera",
+    "name": "Alex Rivera",
+    "photo": "/images/instructors/placeholder-avatar.svg",
+    "focus": "Primary training, cross-country, mountain flying"
+  },
+  {
+    "slug": "jordan-chen",
+    "name": "Jordan Chen",
+    "photo": "/images/instructors/placeholder-avatar.svg",
+    "focus": "Instrument training, CFI/CFII prep"
+  },
+  {
+    "slug": "morgan-patel",
+    "name": "Morgan Patel",
+    "photo": "/images/instructors/placeholder-avatar.svg",
+    "focus": "Sport Pilot, Private Pilot, first-time flyers"
+  },
+  {
+    "slug": "taylor-brooks",
+    "name": "Taylor Brooks",
+    "photo": "/images/instructors/placeholder-avatar.svg",
+    "focus": "Commercial maneuvers, CFI/CFII add-ons, checkride prep"
+  }
+]

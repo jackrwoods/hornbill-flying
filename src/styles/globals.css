@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-navy-900: #0B1C2C;
+  --color-navy-800: #142A3D;
+  --color-cream-50: #F7F4EC;
+  --color-gold-500: #C89F4F;
+  --color-gold-400: #DDB970;
+  --color-orange-500: #E87A2A;
+  --color-orange-400: #F2954F;
+  --color-ink: #1A1A1A;
+  --color-ink-light: #5A6573;
+  --color-sky-100: #E3EFF7;
+  --color-success: #2D7A46;
+  --color-error: #B52B2B;
+
+  --font-heading: "Instrument Serif", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", "Courier New", monospace;
+
+  --spacing-18: 4.5rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--color-ink);
+    background-color: var(--color-cream-50);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-heading);
+    font-weight: 400;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-body);
+    font-weight: 600;
+  }
+}
+
+@layer utilities {
+  .font-variant-tabular {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}

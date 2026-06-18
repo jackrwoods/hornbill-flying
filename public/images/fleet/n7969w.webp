@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="PA28 Cherokee N7969W on the ramp at Reno-Tahoe International Airport (RNO). Photo placeholder.">
+  <defs>
+    <linearGradient id="g7969w" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A1A1A"/>
+      <stop offset="100%" stop-color="#0B1C2C"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g7969w)"/>
+  <rect x="0" y="596" width="800" height="4" fill="#C89F4F"/>
+  <text x="400" y="270" font-family="'IBM Plex Mono', monospace" font-size="56" font-weight="500" fill="#F7F4EC" text-anchor="middle">N7969W</text>
+  <text x="400" y="330" font-family="Inter, sans-serif" font-size="22" fill="#F7F4EC" text-anchor="middle" opacity="0.9">PA28 at Reno–Tahoe (RNO)</text>
+  <text x="400" y="370" font-family="Inter, sans-serif" font-size="16" fill="#C89F4F" text-anchor="middle">VFR panel · training workhorse</text>
+  <text x="400" y="560" font-family="Inter, sans-serif" font-size="14" fill="#F7F4EC" text-anchor="middle" opacity="0.6">Photo placeholder — aircraft image to be replaced after photoshoot</text>
+</svg>
