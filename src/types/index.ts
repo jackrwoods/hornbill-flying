@@ -114,8 +114,6 @@ export interface FAQItem {
   answer: string;
 }
 
-import type { MDXRemoteSerializeResult } from "next-mdx-remote";
-
 export interface BlogAuthor {
   slug: string;
   name: string;
@@ -145,10 +143,6 @@ export interface BlogPostFrontmatter {
 
 export interface BlogPost extends BlogPostFrontmatter {
   content: string;
-  compiled: MDXRemoteSerializeResult<
-    Record<string, unknown>,
-    BlogPostFrontmatter
-  >;
   readTime: number;
   authorName: string;
 }

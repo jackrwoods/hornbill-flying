@@ -2,7 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
-  distDir: "dist",
+  basePath: "/hornbill-flying",
+  assetPrefix: "/hornbill-flying",
   trailingSlash: true,
   images: {
     unoptimized: true,

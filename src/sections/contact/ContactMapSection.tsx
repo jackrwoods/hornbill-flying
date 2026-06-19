@@ -21,13 +21,14 @@ export function ContactMapSection() {
 
         <p className="mt-6 text-ink-light">
           Need detailed directions, parking instructions, or airport access
-          notes? See the{" "}
+          notes?{" "}
           <Link
-            href="/location/"
+            href="/contact/"
             className="font-semibold text-navy-900 hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
           >
-            Location page
-          </Link>.
+            Contact us
+          </Link>{" "}
+          and we will send everything you need before your first visit.
         </p>
       </Container>
     </Section>

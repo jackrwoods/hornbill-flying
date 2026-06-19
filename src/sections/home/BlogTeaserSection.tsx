@@ -2,11 +2,11 @@ import Link from "next/link";
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
 import { LatestPosts } from "@/components/LatestPosts";
-import { latestPosts } from "@/content/blog";
+import { getBlogTeasers } from "@/lib/blog";
 import { homepageBlog } from "@/content/homepage";
 
-export function BlogTeaserSection() {
-  const posts = latestPosts.slice(0, homepageBlog.maxPosts);
+export async function BlogTeaserSection() {
+  const posts = (await getBlogTeasers()).slice(0, homepageBlog.maxPosts);
 
   return (
     <Section background="cream">

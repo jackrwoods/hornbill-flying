@@ -55,7 +55,7 @@ export const routeMap: RouteMeta[] = [
     slug: "programs",
     label: "Programs",
     href: "/programs/",
-    published: false,
+    published: true,
     changefreq: "monthly",
     priority: 0.8,
     children: [
@@ -416,10 +416,7 @@ export function getHeaderNav(): NavItem[] {
     { label: "Fleet & Pricing", href: "/fleet/" },
     { label: "Membership", href: "/membership/" },
     { label: "Instructors", href: "/instructors/" },
-    { label: "Cross-Country", href: "/cross-country-rentals/" },
-    { label: "Location", href: "/location/" },
     { label: "Blog", href: "/blog/" },
-    { label: "About", href: "/about/" },
   ];
 }
 
@@ -464,9 +461,9 @@ export function getFooterLinks(): { title: string; links: NavItem[] }[] {
       title: "About",
       links: [
         { label: "Instructors", href: "/instructors/" },
-        { label: "Location", href: "/location/" },
-        { label: "About", href: "/about/" },
-        { label: "FAQ", href: "/faq/" },
+        { label: "Discovery Flight", href: "/discovery-flight/" },
+        { label: "Blog", href: "/blog/" },
+        { label: "Student Resources", href: "/student-resources/" },
       ],
     },
     {

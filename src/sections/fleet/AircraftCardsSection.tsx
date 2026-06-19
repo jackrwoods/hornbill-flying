@@ -80,10 +80,10 @@ export function AircraftCardsSection() {
                 {plane.ifrEquipped && (
                   <p className="mt-4 text-sm">
                     <Link
-                      href="/cross-country-rentals/"
+                      href="/fleet/"
                       className="font-semibold text-gold-500 hover:text-gold-400 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
                     >
-                      Cross-country rentals
+                      Fleet & rental rates
                     </Link>
                   </p>
                 )}

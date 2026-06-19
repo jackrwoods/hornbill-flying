@@ -56,12 +56,12 @@ export function InstructorsPageHeader() {
             >
               Private Pilot training
             </Link>{" "}
-            or reading about{" "}
+            or learning more on the{" "}
             <Link
-              href="/about/"
+              href="/blog/"
               className="font-semibold text-gold-400 hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
             >
-              our Part 61 philosophy
+              blog
             </Link>
             , the relationship is yours to pick.
           </p>
