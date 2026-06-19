@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Hornbill Flight Center PA28 fleet at Reno-Tahoe International Airport (RNO). Hero banner placeholder.">
+  <defs>
+    <linearGradient id="ghero" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1C2C"/>
+      <stop offset="50%" stop-color="#142A3D"/>
+      <stop offset="100%" stop-color="#1A1A1A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#ghero)"/>
+  <text x="800" y="420" font-family="Instrument Serif, Georgia, serif" font-size="72" fill="#F7F4EC" text-anchor="middle">Hornbill Flight Center Fleet</text>
+  <text x="800" y="490" font-family="Inter, sans-serif" font-size="28" fill="#C89F4F" text-anchor="middle">PA28 Cherokees at Reno–Tahoe International Airport (RNO)</text>
+  <text x="800" y="830" font-family="Inter, sans-serif" font-size="16" fill="#F7F4EC" text-anchor="middle" opacity="0.6">Hero banner placeholder — fleet photo to be replaced after photoshoot</text>
+</svg>
