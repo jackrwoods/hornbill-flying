@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { AssetImage as Image } from "@/components/AssetImage";
 import { Container } from "@/components/Container";
 import { CTALink } from "@/components/CTALink";
 import { homepageHero } from "@/content/homepage";

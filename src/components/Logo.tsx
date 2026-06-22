@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { AssetImage as Image } from "@/components/AssetImage";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { siteConfig } from "@/lib/config";

@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { AssetImage as Image } from "@/components/AssetImage";
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
 import { instrumentRatingProgram } from "@/content/programs/instrument-rating";
