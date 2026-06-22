@@ -6,6 +6,7 @@ const discoveryFlightHref = "/discovery-flight/";
 const contactHref = "/contact/";
 const bookHref = "/book/";
 const startMembershipHref = "/discovery-flight/";
+const instrumentRatingHref = "/programs/instrument-rating/";
 
 export const membershipContent = {
   meta: {
@@ -37,7 +38,7 @@ export const membershipContent = {
 
   quickAnswer: {
     title: "What is the Hornbill membership?",
-    text: `Hornbill's membership is a $${pricing.membershipMonthly}/month subscription for pilots training or renting at Reno–Tahoe. Members pay $${pricing.memberWetRate}/hr wet for our PA28 fleet, saving $${membershipRates.savingsPerHour}/hr over the non-member rate. There is no contract, and it includes priority scheduling, unlimited ground school, and cross-country rental eligibility.`,
+    text: `Hornbill's membership is a $${pricing.membershipMonthly}/month subscription for pilots training or renting at Reno–Tahoe. Members pay $${pricing.memberWetRate}/hr wet for our PA28 fleet, saving $${membershipRates.savingsPerHour}/hr over the non-member rate. There is no contract, and it includes priority scheduling, unlimited ground school, unlimited access to our FAA-certified CR-12 AATD, and cross-country rental eligibility. See the Instrument Rating page for details on AATD time creditable toward a rating.`,
   },
 
   pricing: {
@@ -67,6 +68,11 @@ export const membershipContent = {
         title: "Unlimited ground school access",
         description:
           "Drop into scheduled ground school sessions as often as you like while your membership is active.",
+      },
+      {
+        title: "Unlimited CR-12 AATD access",
+        description:
+          "Members get unlimited time in our FAA-certified CR-12 Advanced Aviation Training Device. Up to 20 hours can count toward an Instrument Rating under 14 CFR §61.65(i). See the Instrument Rating page for details.",
       },
       {
         title: "12-hour cancellation window",
@@ -108,6 +114,7 @@ export const membershipContent = {
     discoveryFlight: discoveryFlightHref,
     contact: contactHref,
     book: bookHref,
+    instrumentRating: instrumentRatingHref,
   },
 };
 
@@ -116,7 +123,7 @@ export const membershipFAQs: FAQItem[] = [
     id: "included",
     question: "What is included in the $49/month membership?",
     answer:
-      "The membership lowers the PA28 wet rate to $159/hr, gives you priority scheduling, unlimited ground school access, a 12-hour booking cancellation window, and cross-country rental eligibility. It does not include instructor time or the aircraft rental hours themselves.",
+      "The membership lowers the PA28 wet rate to $159/hr, gives you priority scheduling, unlimited ground school access, unlimited access to our FAA-certified CR-12 AATD, a 12-hour booking cancellation window, and cross-country rental eligibility. It does not include instructor time or the aircraft rental hours themselves. See the Instrument Rating page for how AATD hours count toward a rating.",
   },
   {
     id: "savings",
