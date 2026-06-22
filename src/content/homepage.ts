@@ -11,26 +11,26 @@ import type { Testimonial } from "@/types";
 export const homepageHero = {
   h1: "Part 61 flight school in Reno, NV.",
   subheadline:
-    "Train in a consistent PA28 fleet, choose your instructor, and fly real cross-country routes from Reno–Tahoe (RNO).",
+    "Earn your PPL, CPL, and CFI around scenic Lake Tahoe and the Sierra Nevada Mountains.",
   ctaPrimary: "Book a discovery flight",
   ctaSecondary: "Buy a gift voucher",
   ctaSecondaryQuery: { type: "gift" },
   image: "/images/hero/hero-image.BhmeJT7E_Z1oh9we.webp",
   imageAlt:
-    "PA28 Cherokee on the ramp at Reno-Tahoe International Airport (RNO)",
+    "PA28 Cherokee flying past snow-capped mountains above the Reno-Stead (RTS) airport.",
   imageWidth: 1920,
   imageHeight: 1280,
 };
 
 export const homepageTrustStrip = {
   items: [
-    { id: "part-61-rno", label: "Part 61 school at RNO" },
+    { id: "part-61-rno", label: "Part 61 Flight Instruction at RNO" },
     {
       id: "pa28-rate",
-      label: `Wet PA28 rental from $${pricing.memberWetRate}/hr with membership`,
+      label: `Piper PA28 Cherokee rental from $${pricing.memberWetRate}/hr`,
     },
-    { id: "named-cfis", label: "4 named CFIs with certificate numbers" },
-    { id: "cross-country", label: "Real cross-country rentals" },
+    { id: "named-cfis", label: "Meet our CFIs, or bring your own" },
+    { id: "cross-country", label: "Take our planes on real cross-country trips" },
   ],
 };
 
@@ -39,25 +39,25 @@ export const homepageDifferentiators = [
     id: "flexibility",
     title: "Flexibility",
     description:
-      "Part 61 training means your schedule, your pace. Choose your instructor or bring your own.",
+      "Part 61 training means you can train at your own pace.",
   },
   {
     id: "consistency",
     title: "Consistency",
     description:
-      "One PA28 fleet, similarly equipped. Predictable handling and costs from first lesson to checkride.",
+      "Our PA28 fleet is similarly equipped with Garmin avionics, providing dependable aircraft from first lesson to checkride.",
   },
   {
     id: "real-world",
     title: "Real-world experience",
     description:
-      "Cross-country rentals from day one. Plan a route, file, and go — instead of repeating the same practice area.",
+      "Cross-country rentals are available. Plan a trip and take our planes on your next overnight adventure. Get real experience while time-building.",
   },
   {
     id: "value",
     title: "Value",
     description:
-      "$159/hr wet with membership. Transparent pricing, no fuel surcharge, no hidden fees.",
+      "Just $159/hr wet with membership. Memberships include unlimited time in our FAA-certified AATD.",
   },
 ];
 
@@ -66,7 +66,7 @@ export const homepageDiscoveryTeaser = {
   subtext:
     "No deposit required. You sit in the left seat, handle the controls, and decide if flying is for you.",
   bullets: [
-    "Real aircraft at RNO",
+    "Take the controls of a real aircraft",
     "Choose your instructor",
     "Gift vouchers available",
   ],
@@ -90,13 +90,14 @@ export const homepagePricingSnapshot = {
 export const homepageTestimonials: Testimonial[] = [];
 
 export const homepageFounderCredibility = {
-  heading: "Built by pilots, for pilots",
+  heading: "A flying community founded by pilots.",
   statement:
-    "Hornbill Flight Center is a Part 61 school at Reno–Tahoe (RNO) built around student choice. Our lead instructor, Trygve Inda, is a CFI/CFII with 2,000+ hours across 42 states and ten countries. He is joined by certificated flight instructors with experience in the Sierra and high-desert airspace around Reno.",
+    "Hornbill Flight Center is a Part 61 school at Reno–Tahoe (RNO) built around value and student choice. Our certificated flight instructors have experience in the Sierra and high-desert airspace around Reno.",
   highlights: [
-    "Part 61 training with instructor choice",
-    "Consistent PA28 fleet",
-    "Real cross-country rentals from day one",
+    "Part 61 training",
+    "Well-equipped PA28 fleet",
+    "The only school allowing you to bring your own CFI",
+    "Real cross-country aircraft rentals",
   ],
   cta: "Book a discovery flight",
 };
