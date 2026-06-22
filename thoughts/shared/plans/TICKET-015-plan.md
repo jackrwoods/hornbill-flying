@@ -114,7 +114,7 @@ These must already exist before this ticket is implemented.
 | Source ticket | Reusable asset | Usage on `/cross-country-rentals/` |
 |---------------|----------------|------------------------------------|
 | TICKET-011 (Fleet & Pricing) | `src/content/fleet.ts` aircraft data and membership rates. | Reuse tail numbers, engine/avionics copy, and wet rates so the fleet-suitability section stays consistent with `/fleet/`. |
-| TICKET-012 (Membership) | `/membership/` page and `$59/month` rate. | Eligibility section links here; CTA section links here. |
+| TICKET-012 (Membership) | `/membership/` page and `$49/month` rate. | Eligibility section links here; CTA section links here. |
 | TICKET-016 (Location / RNO) | `/location/` page. | Link from "Home airport" context and route planning notes. |
 | TICKET-010 (Mountain Flying) | `/programs/mountain-flying/` page and shared `RouteCard`. | Link to related program; share the `RouteCard` component. |
 | TICKET-003 (Discovery Flight) | `/discovery-flight/` page. | Secondary CTA for visitors not yet checked out. |
@@ -304,7 +304,7 @@ None. This is a static marketing page. All data is sourced from `src/content/cro
 |--------|--------------|
 | **TICKET-003** | `/discovery-flight/` is a secondary CTA destination. If not live, link to it anyway; the route resolves once TICKET-003 ships. |
 | **TICKET-011** | `/fleet/` is the primary CTA and the source of aircraft/rate data. Define canonical rates in `src/content/fleet.ts` so this page imports them rather than duplicating. |
-| **TICKET-012** | `/membership/` is the secondary CTA. The `$59/month` membership and benefits are referenced from the eligibility/CTA sections. |
+| **TICKET-012** | `/membership/` is the secondary CTA. The `$49/month` membership and benefits are referenced from the eligibility/CTA sections. |
 | **TICKET-016** | `/location/` is linked from route-planning and home-airport context. If not live, omit the link or point to `/contact/`. |
 | **TICKET-010** | `/programs/mountain-flying/` is linked as a related program. The `RouteCard` component built here should be reusable by Mountain Flying. |
 | **TICKET-023** | `/tools/cross-country-estimator/` is linked as a future resource. If not live, omit the link. |
@@ -348,7 +348,7 @@ None. This is a static marketing page. All data is sourced from `src/content/cro
 
 1. Read every line of copy against the forbidden-phrase list in `brand_identity_writing_style.md`:
    - No "soar", "unlock your potential", "world-class", "premier", "aviation family", "passion for aviation", LLM hedges.
-2. Verify all claims are specific: tail numbers, `$159/hr`, `$185/hr`, `$59/month`, `RNO`, `PA28`, `KTVL`, `KMRY`, `KBDN`.
+2. Verify all claims are specific: tail numbers, `$159/hr`, `$185/hr`, `$49/month`, `RNO`, `PA28`, `KTVL`, `KMRY`, `KBDN`.
 3. Verify the H1 is the only H1 on the page and uses sentence case.
 4. Verify CTAs are concrete: "See the fleet and rates", "Start a membership", "Book a discovery flight".
 5. Verify the policy text has been replaced with the real operations policy, not left as placeholder.

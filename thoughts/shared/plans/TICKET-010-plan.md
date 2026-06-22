@@ -263,7 +263,7 @@ Ensure all schema uses `@id`-based references so the provider entity is not dupl
 | **TICKET-002** (Homepage) | Hard blocker for navigation reachability | Homepage Programs grid must link to `/programs/mountain-flying/` so the page is reachable within three clicks from home. |
 | **TICKET-003** (Discovery Flight landing page and booking widget) | Soft dependency | Primary CTA destination `/discovery-flight/` should exist; the page can use a fallback `/contact/` link until TICKET-003 is ready. |
 | **TICKET-011** (Fleet & Pricing page) | Soft dependency | `/fleet/` link and rate details should exist; copy can reference planned rates from site constants. |
-| **TICKET-012** (Membership page) | Soft dependency | Cost section references the $59/month membership and `/membership/` link. |
+| **TICKET-012** (Membership page) | Soft dependency | Cost section references the $49/month membership and `/membership/` link. |
 | **TICKET-016** (Location / RNO page) | Soft dependency | Internal link to `/location/` for directions, airspace, and local context. The page works without it but benefits when the Location page is live. |
 | **TICKET-022** (Blog launch content) | Soft dependency | Link to `/blog/density-altitude-at-krno/` should be verified; use a fallback to `/blog/` or omit the link until the post exists. |
 | **TICKET-023** (Pilot tools / widgets) | Soft dependency | Link to `/tools/density-altitude-calculator/` should be verified; for launch, the link can point to `/student-resources/` or be hidden until the tool is live. |

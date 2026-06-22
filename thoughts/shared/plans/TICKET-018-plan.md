@@ -84,7 +84,7 @@ This ticket does **not** implement: Stratus Financial API integrations, loan app
 |---------------|-------|-------|
 | TICKET-006 — Private Pilot page | `/programs/private-pilot/` route and shared `src/content/programs.ts` | CTA link to Private Pilot program; budget scenarios reference PPL costs. |
 | TICKET-004 — Fleet & Pricing page | `/fleet/` route and shared rate constants | Link to full rates; budget scenarios reference `$159/hr` member rate and `$185/hr` non-member rate. |
-| TICKET-014 or later — Membership page | `/membership/` route and membership constants | Link to membership page; budget scenarios note `$59/month` membership. |
+| TICKET-014 or later — Membership page | `/membership/` route and membership constants | Link to membership page; budget scenarios note `$49/month` membership. |
 | TICKET-003 — Discovery Flight page | `/discovery-flight/` route | Primary CTA for booking a discovery flight. |
 | TICKET-015 or legal ticket | `/cancellation-policy/` route | Link from payment expectations section if refund/cancellation policy lives on a dedicated page. |
 
@@ -172,7 +172,7 @@ Do not duplicate the base `Organization` / `LocalBusiness` / `EducationalOrganiz
 | Accelerated (5+ flights/week) | 20 hours | ~$3,180 member / ~$3,700 non-member | Full-time pace; financing often makes cash flow manageable. |
 
 - *Add explicit footnote:* `*Sample assumes member rate of $159/hr wet and non-member rate of $185/hr wet, plus estimated instructor time. Rates and instructor fees subject to change; see /fleet/ for current pricing.`
-- Add membership note: `Add $59/month for membership. Membership pays for itself at just over 2 flight hours per month.` Link to `/membership/`.
+- Add membership note: `Add $49/month for membership. Membership pays for itself at just over 2 flight hours per month.` Link to `/membership/`.
 
 #### Financing CTAs (`FinancingCTASection.tsx`)
 
@@ -237,7 +237,7 @@ Do not duplicate the base `Organization` / `LocalBusiness` / `EducationalOrganiz
 | **TICKET-003** — Discovery Flight page | **Soft prerequisite.** The primary CTA links to `/discovery-flight/`. Route should resolve. |
 | **TICKET-004** — Fleet & Pricing page | **Soft prerequisite.** Multiple internal links point to `/fleet/` for current rates. Budget scenario footnotes reference fleet pricing. |
 | **TICKET-006** — Private Pilot program page | **Soft prerequisite.** CTA links to `/programs/private-pilot/` and sample budgets assume PPL training. |
-| Membership page (future ticket; may be TICKET-015 or similar) | **Soft prerequisite.** Link to `/membership/` and membership rate `$59/month` should be consistent. |
+| Membership page (future ticket; may be TICKET-015 or similar) | **Soft prerequisite.** Link to `/membership/` and membership rate `$49/month` should be consistent. |
 | Cancellation / Refund Policy page (future legal ticket) | **Soft prerequisite.** Payment expectations section may link to `/cancellation-policy/`. If unavailable, include a one-line in-page summary. |
 
 ### What this ticket does not depend on
@@ -301,7 +301,7 @@ Do not duplicate the base `Organization` / `LocalBusiness` / `EducationalOrganiz
    - No "unlock your potential," "soar to new heights," "world-class," "premier," or aviation clichés.
    - No LLM hedges: "it's important to note," "in today's world," "at the end of the day," "ultimately."
 2. Verify claims are specific and honest:
-   - Rates match design doc (`$159/hr` member, `$185/hr` non-member, `$59/month` membership).
+   - Rates match design doc (`$159/hr` member, `$185/hr` non-member, `$49/month` membership).
    - Stratus terms are not overstated; no guarantee of approval or specific APR.
 3. Verify CTAs use concrete verbs: "Book," "See," "Call," "Apply."
 

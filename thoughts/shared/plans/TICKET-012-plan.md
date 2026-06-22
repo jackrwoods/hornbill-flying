@@ -21,7 +21,7 @@ related_design:
 
 ## 1. Scope summary
 
-Build the public Membership page at `/membership/`. The page has one primary conversion job: persuade a visitor that the $59/month membership is worth the savings and convenience, then drive them into the membership sign-up flow. It must explain the member vs. non-member PA28 wet-rate difference (`$159/hr` vs. `$185/hr`), list the full benefits, answer common objections in an FAQ accordion, and provide a clear "Start membership" call-to-action.
+Build the public Membership page at `/membership/`. The page has one primary conversion job: persuade a visitor that the $49/month membership is worth the savings and convenience, then drive them into the membership sign-up flow. It must explain the member vs. non-member PA28 wet-rate difference (`$159/hr` vs. `$185/hr`), list the full benefits, answer common objections in an FAQ accordion, and provide a clear "Start membership" call-to-action.
 
 This ticket produces only the Membership page and the small shared data/components it needs. It does **not** implement the booking backend, the global shell, the Fleet & Pricing page, the Discovery Flight page, or analytics instrumentation. It consumes those from other tickets or defines the data contract for them.
 
@@ -109,7 +109,7 @@ Assume a Next.js 14+ App Router project configured for static export, with a `sr
 - **URL:** `/membership/`
 - **Canonical:** `https://hornbillaviation.com/membership/`
 - **Title tag:** `PA28 Aircraft Rental Membership in Reno, NV | Hornbill Flight Center`
-- **Meta description:** `Join Hornbill's $59/month membership for a $159/hr PA28 wet rate at RNO. Save $26/hr vs. the $185 non-member rate. No contract.` (≤155 characters)
+- **Meta description:** `Join Hornbill's $49/month membership for a $159/hr PA28 wet rate at RNO. Save $26/hr vs. the $185 non-member rate. No contract.` (≤155 characters)
 - **OpenGraph:** same title/description; image uses `public/images/membership/membership-hero.webp` or the default OG image from TICKET-001.
 - **Twitter card:** `summary_large_image`.
 
@@ -134,10 +134,10 @@ Assume a Next.js 14+ App Router project configured for static export, with a `sr
 
 2. **Quick answer box**
    - 50–70 word direct answer: what the Hornbill membership is, what it costs, and who it benefits.
-   - Example: `Hornbill's membership is a $59/month subscription for pilots training or renting at Reno–Tahoe. Members pay $159/hr wet for our PA28 fleet, saving $26/hr over the non-member rate. There is no contract, and it includes priority scheduling, unlimited ground school, and cross-country rental eligibility.`
+   - Example: `Hornbill's membership is a $49/month subscription for pilots training or renting at Reno–Tahoe. Members pay $159/hr wet for our PA28 fleet, saving $26/hr over the non-member rate. There is no contract, and it includes priority scheduling, unlimited ground school, and cross-country rental eligibility.`
 
 3. **Pricing card (`MembershipPricingCard`)**
-   - **Monthly membership:** `$59/month`
+   - **Monthly membership:** `$49/month`
    - **Member PA28 wet rate:** `$159/hr`
    - **Non-member PA28 wet rate:** `$185/hr`
    - **Savings:** `$26/hr`
@@ -160,7 +160,7 @@ Assume a Next.js 14+ App Router project configured for static export, with a `sr
 
 6. **FAQ accordion (`MembershipFAQ`)**
    - 5–7 questions. Suggested list:
-     1. What is included in the $59/month membership?
+     1. What is included in the $49/month membership?
      2. How much do I save per flight hour?
      3. Is there a contract or minimum commitment?
      4. Can non-members still rent aircraft?
@@ -287,7 +287,7 @@ This page is static and requires no runtime API calls for its primary content. H
 
 - [ ] The H1 text is exactly: `Aircraft rental membership in Reno, NV`.
 - [ ] The design headline *"Fly more for less. Stay in the air without the markup."* is visible under the H1.
-- [ ] The pricing card clearly shows `$59/month`, `$159/hr` member rate, `$185/hr` non-member rate, and the `$26/hr` savings note.
+- [ ] The pricing card clearly shows `$49/month`, `$159/hr` member rate, `$185/hr` non-member rate, and the `$26/hr` savings note.
 - [ ] The benefits list includes all six items from the design doc.
 - [ ] The "Start membership" CTA is visible above the fold on desktop and in the sticky mobile bar/header.
 - [ ] The "Start membership" CTA links to `/book/?flow=membership` (or the agreed fallback).

@@ -5,6 +5,81 @@ import type { Instructor } from "@/types";
 
 export const instructors: Instructor[] = [
   {
+    slug: "trygve-inda",
+    name: "Trygve Inda",
+    title: "Certified Flight Instructor — Instrument",
+    tagline: "Private through CFI/CFII, instrument, and mountain flying at RNO",
+    specialties: [
+      "Private through Commercial pilot training",
+      "Instrument Rating (CFII)",
+      "CFI/CFII mentoring",
+      "Mountain flying and cross-country trips",
+    ],
+    photo: "/images/instructors/placeholder-avatar.svg",
+    altText:
+      "Headshot of Trygve Inda, Certified Flight Instructor Instrument at Hornbill Flight Center",
+    certificateNumber: null,
+    publishCertificate: false,
+    bio:
+      "Trygve is a commercial pilot and CFI/CFII based at Reno–Tahoe International (KRNO). " +
+      "He grew up in an airline family at Lake Tahoe and later lived in Europe and the Middle East. " +
+      "His aviation passion began in 2012 during a Cessna 182 trip around southern Africa. " +
+      "Since then, he has flown his Piper Dakota as far as Guatemala and Maine, and has flown general aviation " +
+      "aircraft in 42 US states and ten foreign countries.\n\n" +
+      "An aircraft owner since 2015, Trygve is semi-retired and not headed to the airlines — he is passionate about " +
+      "introducing people to aviation and helping them grow into skilled aviators. He holds Commercial Pilot, CFI, CFII, " +
+      "and Advanced/Instrument Ground Instructor certificates, with High-Performance, Complex, and Tailwheel endorsements.\n\n" +
+      "He teaches Private, Instrument, Commercial, and CFI/CFII training, plus flight reviews, instrument proficiency " +
+      "checks, insurance checkouts, and mountain flying. He is an Assistant Chief Pilot at NV Flight, a FAASTeam " +
+      "Representative, and the IMC Club Program Coordinator for EAA Chapter 1361.",
+    credentials: {
+      certificates: [
+        "CFI",
+        "CFII",
+        "Commercial ASEL",
+        "Instrument Rating",
+        "AGI/IGI Ground Instructor",
+      ],
+      totalHours: "2,000+",
+    },
+    typicalAvailability:
+      "Based at KRNO; also available at Stead (KRTS) and other locations using the student's aircraft. Cross-country training trips to states bordering Nevada and repositioning flights nationwide with advance notice.",
+    teachesPrograms: [
+      "private-pilot",
+      "instrument-rating",
+      "commercial-pilot",
+      "mountain-flying",
+      "certified-flight-instructor",
+      "cfii",
+    ],
+    bookingSlug: "trygve-inda",
+    bookingLink: "/instructors/trygve-inda/",
+    metaTitle: "Trygve Inda — Flight Instructor in Reno, NV",
+    metaDescription:
+      "Train with Trygve Inda, a CFI/CFII at Reno-Tahoe (RNO). Specialties: private, instrument, commercial, CFI/CFII, and mountain flying. Book a discovery flight with Trygve.",
+    faq: [
+      {
+        id: "trygve-discovery",
+        question: "Can I request Trygve for my discovery flight?",
+        answer:
+          "Yes. Select Trygve Inda when booking a discovery flight. He is a good fit for first-time flyers as well as pilots adding instrument, commercial, or CFI/CFII ratings.",
+      },
+      {
+        id: "trygve-ratings",
+        question: "What ratings does Trygve teach?",
+        answer:
+          "Trygve teaches Private Pilot, Instrument Rating, Commercial Pilot, CFI, and CFII add-on training, plus flight reviews, instrument proficiency checks, and mountain flying.",
+      },
+      {
+        id: "trygve-trips",
+        question: "Does Trygve offer cross-country or delivery training?",
+        answer:
+          "Yes. Trygve is available for cross-country training trips to states bordering Nevada and for repositioning or delivery flights nationwide with reasonable advance notice.",
+      },
+    ],
+    published: true,
+  },
+  {
     slug: "alex-rivera",
     name: "Alex Rivera",
     title: "Certified Flight Instructor",

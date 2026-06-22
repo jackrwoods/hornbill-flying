@@ -92,7 +92,7 @@ export const homepageTestimonials: Testimonial[] = [];
 export const homepageFounderCredibility = {
   heading: "Built by pilots, for pilots",
   statement:
-    "Hornbill Flight Center is a Part 61 school at Reno–Tahoe (RNO) built around student choice. Our instructors — Alex Rivera, Jordan Chen, Morgan Patel, and Taylor Brooks — are certificated flight instructors with experience in the Sierra and high-desert airspace around Reno.",
+    "Hornbill Flight Center is a Part 61 school at Reno–Tahoe (RNO) built around student choice. Our lead instructor, Trygve Inda, is a CFI/CFII with 2,000+ hours across 42 states and ten countries. He is joined by certificated flight instructors with experience in the Sierra and high-desert airspace around Reno.",
   highlights: [
     "Part 61 training with instructor choice",
     "Consistent PA28 fleet",

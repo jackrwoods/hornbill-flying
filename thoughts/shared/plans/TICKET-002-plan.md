@@ -252,7 +252,7 @@ Compact table or 3-column cards:
 
 | Item | Value |
 |------|-------|
-| Membership | `$59/month` |
+| Membership | `$49/month` |
 | Member PA28 wet rate | `$159/hr` |
 | Non-member PA28 wet rate | `$185/hr` |
 | Discovery flight | `$199` |

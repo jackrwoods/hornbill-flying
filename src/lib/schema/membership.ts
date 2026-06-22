@@ -15,7 +15,7 @@ export interface MembershipSchemaInput {
 /**
  * Builds the Service + Offer JSON-LD graph used on the membership page.
  * The Service describes the PA28 rental membership product; the Offer
- * carries the $59/month price and availability.
+ * carries the $49/month price and availability.
  */
 export function buildMembershipService(
   input: MembershipSchemaInput

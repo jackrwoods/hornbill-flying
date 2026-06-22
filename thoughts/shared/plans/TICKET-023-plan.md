@@ -348,7 +348,7 @@ All tool pages use the same layout contract:
 | `src/content/tools.ts` | Tool metadata (slug, title, shortDescription, icon, path), per-tool FAQ items, default widget values, sample routes, caution thresholds. |
 | `src/lib/flightPlanning.ts` | Airport coordinate table for RNO, KTVL, KMRY, KBDN, and others used by the fuel estimator. Great-circle distance helper. VFR reserve rules. |
 | `src/lib/density.ts` | RNO elevation (`4403` ft), standard altimeter, ISA lapse rate, density-altitude formula. |
-| `src/lib/cost.ts` | Program hour estimates (e.g., SPL 20, PPL 40–55, IR 35–50, CPL additional hours beyond PPL, CFI/CFII). Aircraft rates (`$159/hr` member / `$185/hr` non-member from design doc). Membership `$59/month`. Instructor rate placeholder until TICKET-004 lands. |
+| `src/lib/cost.ts` | Program hour estimates (e.g., SPL 20, PPL 40–55, IR 35–50, CPL additional hours beyond PPL, CFI/CFII). Aircraft rates (`$159/hr` member / `$185/hr` non-member from design doc). Membership `$49/month`. Instructor rate placeholder until TICKET-004 lands. |
 | `public/images/tools/practice-area-map.svg` | Hand-coded SVG map. |
 
 ### Environment variables
@@ -421,7 +421,7 @@ All live data fetching happens in the browser. The static export contains only H
 - [ ] Confirm touch targets are ≥ 44 px on mobile.
 - [ ] Confirm the sticky "Book a discovery flight" CTA and phone link are reachable on every tool page.
 - [ ] Read all tool copy against the forbidden-phrase list in `brand_identity_writing_style.md`; remove clichés, superlatives, and LLM hedges.
-- [ ] Confirm copy uses specific numbers and names: RNO, PA28, $159/hr, $59/month, 4,403 ft, etc.
+- [ ] Confirm copy uses specific numbers and names: RNO, PA28, $159/hr, $49/month, 4,403 ft, etc.
 
 ### 8.5 Performance
 

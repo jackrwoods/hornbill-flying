@@ -83,7 +83,7 @@ All paths are relative to the repository root `/Users/jack/hornbill-flying/`.
 - `FleetTable` / `AircraftCard` from TICKET-011 (Fleet & Pricing)
   - Reuse a lightweight variant for the fleet-consistency section, or link to `/fleet/`.
 - `MembershipCard` / `PricingCard` from TICKET-012 (Membership)
-  - Render the $59/month membership savings message.
+  - Render the $49/month membership savings message.
 - `InstructorCard` from TICKET-013 (Instructors index)
   - Use a compact version in the "Choose your instructor" section.
 - `FinancingLink` / `FinancingBanner` from TICKET-018 (Financing)
@@ -148,7 +148,7 @@ All paths are relative to the repository root `/Users/jack/hornbill-flying/`.
    - H2: `Estimated cost`
    - Static cost block showing:
      - Aircraft wet rate: `$159/hour` (member) / `$185/hour` (non-member).
-     - Membership: `$59/month`.
+     - Membership: `$49/month`.
      - Example at 50 flight hours (member aircraft only): `50 hrs × $159 = $7,950`.
      - Add instructor time, ground school, medical, knowledge test, checkride, materials.
      - Present realistic total range: `Most students spend roughly $12,000–$16,000 from first lesson to certificate.`
@@ -254,7 +254,7 @@ All paths are relative to the repository root `/Users/jack/hornbill-flying/`.
 - **TICKET-011 — Fleet & Pricing page**
   - Secondary CTA to `/fleet/` and cost-section links.
 - **TICKET-012 — Membership page**
-  - Cost section references the $59/month membership and `/membership/` link.
+  - Cost section references the $49/month membership and `/membership/` link.
 - **TICKET-013 — Instructors index page**
   - "Choose your instructor" section links to `/instructors/`.
 - **TICKET-018 — Financing page**

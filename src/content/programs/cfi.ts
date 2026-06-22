@@ -138,17 +138,12 @@ export const cfiProgram = {
   instructorLead: {
     title: "Meet your CFI lead",
     intro:
-      "Jordan Chen and Taylor Brooks mentor initial CFI candidates at Hornbill, with combined experience in instrument instruction, advanced maneuvers, and checkride preparation.",
+      "Trygve Inda mentors initial CFI candidates at Hornbill, with experience in instrument instruction, advanced maneuvers, and checkride preparation.",
     instructors: [
       {
-        name: "Jordan Chen",
-        href: "/instructors/jordan-chen/",
+        name: "Trygve Inda",
+        href: "/instructors/trygve-inda/",
         focus: "CFI training, instrument instruction, and teaching technique",
-      },
-      {
-        name: "Taylor Brooks",
-        href: "/instructors/taylor-brooks/",
-        focus: "Commercial maneuvers, CFI checkride prep, and advanced instruction",
       },
     ],
   },

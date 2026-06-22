@@ -139,7 +139,7 @@ Assume a Next.js 14+ static-export project with the App Router and a `src/` dire
      - Instructor: `15 hours dual × $XX/hr` (use actual instructor rate once set; placeholder `$70/hr`).
      - Ground instruction / pre/post-flight briefings: estimate.
      - Materials / test fees: knowledge test fee + checkride examiner fee (ranges).
-     - Membership: `$59/month` if it saves money at typical usage.
+     - Membership: `$49/month` if it saves money at typical usage.
    - Show two totals: member estimate and non-member estimate.
    - Include a clear disclaimer that costs vary with individual progress.
 

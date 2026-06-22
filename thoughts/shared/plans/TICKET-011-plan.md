@@ -143,7 +143,7 @@ Render as a responsive table or three pricing cards.
 
 | Plan | Monthly | PA28 wet rate | Who it's for |
 |------|---------|---------------|--------------|
-| Member | $59/month | $159/hr | Students and renters who fly regularly. |
+| Member | $49/month | $159/hr | Students and renters who fly regularly. |
 | Non-member | — | $185/hr | Occasional renters or visitors. |
 
 - Highlight the member card as the preferred option.
@@ -347,7 +347,7 @@ None. This is a static marketing page. All data is sourced from `src/content/fle
 
 1. Read every line of copy against the forbidden-phrase list in `brand_identity_writing_style.md`:
    - No "soar", "unlock your potential", "world-class", "premier", "aviation family", "passion for aviation", LLM hedges.
-2. Verify all claims are specific: tail numbers, `$159/hr`, `$185/hr`, `$59/month`, `$199`, `RNO`, `PA28`.
+2. Verify all claims are specific: tail numbers, `$159/hr`, `$185/hr`, `$49/month`, `$199`, `RNO`, `PA28`.
 3. Verify the H1 is the only H1 on the page and uses sentence case.
 4. Verify CTAs are concrete: "Book a discovery flight", "Start a membership", "See membership details".
 5. Verify the cancellation/refund policy text has been replaced with the real operations policy, not left as placeholder.

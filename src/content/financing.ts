@@ -217,6 +217,6 @@ export const financingFAQs: FAQItem[] = [
     id: "combine-membership",
     question: "Can I combine financing with a membership for lower hourly rates?",
     answer:
-      "Yes. A $59/month membership lowers the PA28 wet rate from $180/hr to $159/hr. If you are financing your training, lower hourly rates reduce the total loan amount needed and can make your monthly cash flow easier.",
+      "Yes. A $49/month membership lowers the PA28 wet rate from $180/hr to $159/hr. If you are financing your training, lower hourly rates reduce the total loan amount needed and can make your monthly cash flow easier.",
   },
 ];

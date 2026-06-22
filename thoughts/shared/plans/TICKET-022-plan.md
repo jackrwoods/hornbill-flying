@@ -426,7 +426,7 @@ Notes:
 6. Confirm every post links to `/discovery-flight/`.
 7. Confirm no aviation clichés or LLM hedges (`soar to new heights`, `unlock your potential`, `passion for aviation`, `it's important to note`, `at the end of the day`, etc.).
 8. Confirm no empty superlatives (`best`, `premier`, `world-class`).
-9. Confirm all prices/rates match the design doc: member `$159/hour wet`, non-member `$185/hour wet`, membership `$59/month`, discovery flight `$199`.
+9. Confirm all prices/rates match the design doc: member `$159/hour wet`, non-member `$185/hour wet`, membership `$49/month`, discovery flight `$199`.
 10. Confirm NAP is byte-for-byte consistent wherever mentioned: `1008 Gentry Way, Reno, NV 89512`, `+1-555-555-1234`, `office@hornbillaviation.com`.
 
 ### 7.5 Author and byline checks

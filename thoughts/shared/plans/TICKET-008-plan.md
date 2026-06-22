@@ -140,7 +140,7 @@ If the project does not yet have a shared **program page shell**, this ticket sh
 6. **Cost estimate**
    - Use the central pricing constants from the design doc and TICKET-011:
      - Aircraft rental: $159/hr wet (member) / $185/hr wet (non-member)
-     - Membership: $59/month
+     - Membership: $49/month
      - Instructor rate: published on `/fleet/`
      - Examiner fee: estimated $700–$900 (paid directly to the DPE; not to Hornbill)
    - Present a transparent range rather than a fixed total, because CFI candidate hours vary widely with prior experience.
@@ -289,7 +289,7 @@ If any dependent page is not ready when this ticket is implemented, create stub 
    - No empty superlatives ("best", "premier", "world-class").
    - No LLM hedges ("it's important to note", "at the end of the day").
    - Second person ("you") is used naturally.
-   - Prices are transparent and match the design doc: `$159/hr` member wet, `$185/hr` non-member, `$59/month` membership.
+   - Prices are transparent and match the design doc: `$159/hr` member wet, `$185/hr` non-member, `$49/month` membership.
 14. Confirm the NAP (1008 Gentry Way, Reno, NV 89512; office@hornbillaviation.com; 555-555-1234) matches the shell/footer exactly if it appears on this page.
 
 ### Internal links and conversion

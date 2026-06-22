@@ -28,7 +28,7 @@ A vertical-slice design document for the public-facing Hornbill Flight Center we
 | Scheduling | Custom API backend | Discovery-flight and lesson booking flow will hit an internal API; the frontend is a static marketing site with dynamic booking components. |
 | Site type | Static marketing site (Next.js static export) | Next.js chosen for heavier client-side booking widget interactivity. |
 | SEO targets | “Part 61 flight school Reno, NV” in H1/meta; 1–2 blog posts/month | Homepage and program pages lead with Part 61 + Reno/RNO. Blog is built in from launch. |
-| Membership price | $59/month | At 6 hours/month, membership pays for itself vs. non-member rate. |
+| Membership price | $49/month | At 6 hours/month, membership pays for itself vs. non-member rate. |
 | Discovery flight | $199, $0 deposit | Low-friction booking; payment collected at flight or via full prepay option. |
 | NAP | 1008 Gentry Way, Reno, NV 89512; office@hornbillaviation.com; 555-555-1234 | Must match GBP, schema, and all citations byte-for-byte. |
 
@@ -357,7 +357,7 @@ Pilot-focused widgets drive repeat traffic, earn backlinks, and signal topical a
 
 - Headline: *“Fly more for less. Stay in the air without the markup.”*
 - Pricing card:
-  - **Monthly membership:** $59/month
+  - **Monthly membership:** $49/month
   - **Member PA28 wet rate:** $159/hr
   - **Non-member PA28 wet rate:** $185/hr
   - Savings: $26/hr — at just over 2 hours per month, membership pays for itself.
@@ -457,7 +457,7 @@ Session → Program/Fleet page → Discovery Flight page → Booking started →
 |----------|-----------|
 | Static marketing site (Next.js static export) | Maximizes speed, SEO, and low hosting cost; Next.js chosen for heavier client-side booking widget interactivity. |
 | Single-engine only | User confirmed. No multi-engine page; avoids competing with FlyReno. |
-| Membership tier at $59/month | Must be a first-class page; break-even at just over 2 flight hours/month. |
+| Membership tier at $49/month | Must be a first-class page; break-even at just over 2 flight hours/month. |
 | $159/hr member wet rate / $185/hr non-member | Transparently shown on Fleet & Pricing and Membership pages. |
 | Discovery flight at $199, $0 deposit | Low-friction first commitment; payment handled at flight or via optional full prepay. |
 | 4 CFI placeholder pages from launch | Real bios + photos deferred until CFIs are hired/photographed; certificate numbers intentionally omitted per owner. Pages still publish with name, placeholder focus area, and booking CTA. |
