@@ -1,5 +1,6 @@
 import type { FAQItem } from "@/types";
 import { siteConfig } from "@/lib/config";
+import { membershipRates } from "@/content/pricing";
 
 const { memberWetRate, nonMemberWetRate, membershipMonthly } = siteConfig.pricing;
 
@@ -137,7 +138,7 @@ export const financingContent = {
       },
     ],
     footnote: `*Sample assumes member rate of $${memberWetRate}/hr wet and non-member rate of $${nonMemberWetRate}/hr wet, plus estimated instructor time. Rates and instructor fees are subject to change; see the Fleet & Pricing page for current pricing.`,
-    membershipNote: `Add $${membershipMonthly}/month for membership. Membership pays for itself at just over 2 flight hours per month.`,
+    membershipNote: `Add $${membershipMonthly}/month for membership. Membership pays for itself at about ${membershipRates.breakEvenHours} flight hours per month.`,
   },
 
   faqTitle: "Financing questions",
@@ -216,6 +217,6 @@ export const financingFAQs: FAQItem[] = [
     id: "combine-membership",
     question: "Can I combine financing with a membership for lower hourly rates?",
     answer:
-      "Yes. A $59/month membership lowers the PA28 wet rate from $185/hr to $159/hr. If you are financing your training, lower hourly rates reduce the total loan amount needed and can make your monthly cash flow easier.",
+      "Yes. A $59/month membership lowers the PA28 wet rate from $180/hr to $159/hr. If you are financing your training, lower hourly rates reduce the total loan amount needed and can make your monthly cash flow easier.",
   },
 ];

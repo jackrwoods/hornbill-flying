@@ -75,7 +75,7 @@ const pageSchema = buildSchemaGraph(
       },
       {
         name: "Non-member PA28 wet rate",
-        price: "185.00",
+        price: "180.00",
         priceCurrency: "USD",
         unitCode: "HUR",
         availability: "https://schema.org/InStock",

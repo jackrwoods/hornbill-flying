@@ -42,7 +42,7 @@ export const instrumentRatingProgram = {
     },
   },
   quickAnswer:
-    "Hornbill Flight Center offers Part 61 Instrument Rating training at Reno–Tahoe (RNO). You train in a WAAS GPS, dual Garmin G5 PA28 fleet, logging the 40 hours of actual or simulated instrument time the FAA requires, with a schedule built around yours.",
+    "Hornbill Flight Center offers Part 61 Instrument Rating training at Reno–Tahoe (RNO). You train in a WAAS GPS, dual Garmin G5 PA28 fleet, logging the 40 hours of actual or simulated instrument time the FAA requires, with a schedule built around yours. Members also get unlimited time in our FAA-certified CR-12 AATD, where up to 20 hours can count toward your instrument rating under 14 CFR §61.65(i).",
   benefits: {
     title: "What the Instrument Rating gives you",
     intro:
@@ -89,6 +89,7 @@ export const instrumentRatingProgram = {
       { label: "Actual or simulated instrument time", value: "40 hours" },
       { label: "Instrument training with a CFII", value: "15 hours" },
       { label: "Long IFR cross-country", value: "250 nm along airways or ATC-directed routing, with approaches at three airports" },
+      { label: "AATD creditable toward instrument time", value: "Up to 20 hours (14 CFR §61.65(i))" },
       { label: "Ground school / written exam", value: "FAA Instrument Rating Airplane (IRA) knowledge test" },
       { label: "Practical test", value: "Instrument Rating checkride with a Designated Pilot Examiner" },
     ],
@@ -148,18 +149,20 @@ export const instrumentRatingProgram = {
   cost: {
     title: "Cost estimate",
     intro:
-      "These numbers are a realistic starting point, not a guarantee. Your total depends on prior instrument exposure, proficiency, and how often you fly.",
+      "These numbers are a realistic starting point, not a guarantee. Your total depends on prior instrument exposure, proficiency, and how often you fly. Members can shift up to 20 hours of instrument time into our FAA-certified CR-12 AATD, which drops the aircraft rental line below.",
     rows: [
       { label: "PA28 member wet rate", value: memberRate },
       { label: "PA28 non-member wet rate", value: nonMemberRate },
       { label: "CFII instruction", value: "$75/hr (confirm with owner)" },
-      { label: "Aircraft rental (35–50 hrs typical)", value: `${memberRate} member / ${nonMemberRate} non-member` },
+      { label: "Aircraft rental (15–30 hrs typical after up to 20 hrs AATD credit)", value: `${memberRate} member / ${nonMemberRate} non-member` },
+      { label: "AATD time (up to 20 hrs creditable, 14 CFR §61.65(i))", value: "Members: $0 unlimited — saves up to $3,180" },
       { label: "Ground instruction / written prep", value: "$600 (estimate)" },
       { label: "Checkride aircraft + instructor", value: "$700 (estimate)" },
       { label: "Monthly membership", value: membershipRate },
     ],
-    totalRange: "$8,500–$11,500",
-    note: "Prices do not include the FAA examiner fee, headset, or materials unless specified. CFII rate, written exam fee, and checkride estimate must be confirmed with the owner.",
+    totalRange: "$5,300–$8,300 with max AATD credit (member); $8,500–$11,500 without",
+    note:
+      "AATD savings assume a member uses the full 20-hour AATD credit allowed under 14 CFR §61.65(i) in place of aircraft rental at the $159/hr member wet rate (20 × $159 = $3,180). AATD time still requires an authorized instructor, so CFII time is unchanged. The practical test, IPC, and flight review must still be accomplished in an aircraft. Prices do not include the FAA examiner fee, headset, or materials unless specified. CFII rate, written exam fee, and checkride estimate must be confirmed with the owner.",
     links: [
       { label: "See fleet and rates", href: fleetHref },
       { label: "Membership details", href: membershipHref },
@@ -193,6 +196,11 @@ export const instrumentRatingProgram = {
         title: "Choose your CFII",
         description:
           "Train with a Hornbill CFII or bring your own. Part 61 means the schedule and instructor relationship fit you.",
+      },
+      {
+        title: "Unlimited CR-12 AATD for members",
+        description:
+          "Members get unlimited time in our FAA-certified CR-12 Advanced Aviation Training Device. Up to 20 hours logged in the AATD count toward the 40 hours of instrument time required for the rating under 14 CFR §61.65(i), so you can build procedure fluency without burning aircraft time.",
       },
     ],
   },
@@ -274,6 +282,12 @@ export const instrumentRatingProgram = {
       question: "What happens if weather cancels an IFR lesson?",
       answer:
         "We reschedule. If actual or simulated instrument conditions are not available, your CFII may convert the lesson to ground study, simulator work, or partial-panel practice in VFR. You are not charged for aircraft time we cancel due to weather.",
+    },
+    {
+      id: "ir-aatd",
+      question: "Can I use the CR-12 AATD to log instrument time toward the rating?",
+      answer:
+        "Yes. Our CR-12 is an FAA-certified Advanced Aviation Training Device. Under 14 CFR §61.65(i), up to 20 hours of instrument time logged in an AATD with an authorized instructor may be credited toward the 40 hours of actual or simulated instrument time required for the Instrument Rating — Airplane. The practical test, IPC, and flight-review portions still must be accomplished in an aircraft. Members get unlimited time in the CR-12 AATD, so you can rehearse approaches, holds, and partial-panel drills without burning aircraft rental hours.",
     },
     {
       id: "ir-ground-school",

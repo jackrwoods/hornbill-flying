@@ -1,4 +1,9 @@
 import type { FAQItem } from "@/types";
+import { siteConfig } from "@/lib/config";
+
+const memberRate = `$${siteConfig.pricing.memberWetRate}/hr`;
+const nonMemberRate = `$${siteConfig.pricing.nonMemberWetRate}/hr`;
+const membershipRate = `$${siteConfig.pricing.membershipMonthly}/month`;
 
 export const cfiiProgram = {
   slug: "cfii",
@@ -141,8 +146,8 @@ export const cfiiProgram = {
     intro:
       "These numbers are a realistic starting point, not a guarantee. Your total depends on proficiency, preparation, and how much of the work you complete before the checkride.",
     rows: [
-      { label: "PA28 member wet rate", value: "$159/hr" },
-      { label: "PA28 non-member wet rate", value: "$185/hr" },
+      { label: "PA28 member wet rate", value: memberRate },
+      { label: "PA28 non-member wet rate", value: nonMemberRate },
       { label: "Instructor rate", value: "$75–$95/hr" },
       { label: "Flight time (typical)", value: "15–25 hours" },
       { label: "Ground instruction", value: "10–15 hours" },
@@ -151,7 +156,7 @@ export const cfiiProgram = {
     ],
     totalRange: "$4,500–$7,500",
     note:
-      "Membership lowers the aircraft rate to $159/hr. See fleet, membership, and financing pages for full details.",
+      `Membership lowers the aircraft rate to ${memberRate}. See fleet, membership, and financing pages for full details.`,
   },
   whyHornbill: {
     title: "Why Hornbill for CFII",
@@ -240,7 +245,7 @@ export const cfiiProgram = {
       id: "cfii-membership",
       question: "Does membership reduce the cost?",
       answer:
-        "Yes. Members pay $159/hr wet for the PA28. Non-members pay $185/hr. At 6 hours per month, the $59 membership pays for itself.",
+        `Yes. Members pay ${memberRate} wet for the PA28. Non-members pay ${nonMemberRate}. At 6 hours per month, the ${membershipRate} membership pays for itself.`,
     },
     {
       id: "cfii-ipc",

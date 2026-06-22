@@ -152,7 +152,7 @@ export const commercialPilotProgram = {
       {
         title: "High-elevation training",
         description:
-          "RNO sits at 4,403 ft. You will gain mountain and density-altitude experience that flatland schools cannot replicate.",
+          "RNO sits at 4,415 ft. You will gain mountain and density-altitude experience that flatland schools cannot replicate.",
       },
       {
         title: "Value",

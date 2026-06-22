@@ -1,4 +1,5 @@
 import type { ToolMeta, ToolFAQItem, SampleRoute } from "@/lib/tools";
+import { membershipRates } from "@/content/pricing";
 
 export const tools: ToolMeta[] = [
   {
@@ -77,7 +78,7 @@ export const densityFaqs: ToolFAQItem[] = [
     id: "why-density-altitude-matters",
     question: "Why does density altitude matter at RNO?",
     answer:
-      "RNO sits at 4,403 ft. Hot summer days can push density altitude well above 6,000 ft, meaning longer takeoff rolls, reduced climb rate, and less margin over terrain.",
+      "RNO sits at 4,415 ft. Hot summer days can push density altitude well above 6,000 ft, meaning longer takeoff rolls, reduced climb rate, and less margin over terrain.",
   },
   {
     id: "what-is-pressure-altitude",
@@ -173,7 +174,7 @@ export const costFaqs: ToolFAQItem[] = [
     id: "membership-saves",
     question: "Does membership really save money?",
     answer:
-      "At $59/month and a $26/hour aircraft discount, membership pays for itself at just over 2 flight hours per month. Train more often and the savings add up quickly.",
+      `At $${membershipRates.monthly}/month and a $${membershipRates.savingsPerHour}/hour aircraft discount, membership pays for itself at about ${membershipRates.breakEvenHours} flight hours per month. Train more often and the savings add up quickly.`,
   },
 ];
 

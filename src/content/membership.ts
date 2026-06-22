@@ -11,7 +11,7 @@ export const membershipContent = {
   meta: {
     title: "PA28 Aircraft Rental Membership in Reno, NV",
     description:
-      "Join Hornbill's $59/month membership for a $159/hr PA28 wet rate at RNO. Save $26/hr vs. the $185 non-member rate. No contract.",
+      "Join Hornbill's $59/month membership for a $159/hr PA28 wet rate at RNO. Save $21/hr vs. the $180 non-member rate. No contract.",
   },
 
   hero: {
@@ -46,7 +46,7 @@ export const membershipContent = {
     nonMemberRateLabel: "Non-member PA28 wet rate",
     savingsLabel: "Savings",
     savingsText: `Save $${membershipRates.savingsPerHour}/hr on every flight hour.`,
-    breakEvenText: `At just over 2 hours per month, the membership pays for itself.`,
+    breakEvenText: `At about ${membershipRates.breakEvenHours} hours per month, the membership pays for itself.`,
     disclaimer:
       "Rates are subject to change. Rental availability depends on maintenance and schedule.",
   },
@@ -122,7 +122,7 @@ export const membershipFAQs: FAQItem[] = [
     id: "savings",
     question: "How much do I save per flight hour?",
     answer:
-      "Members pay $159/hr wet for the PA28 fleet. Non-members pay $185/hr. That is a $26/hr savings, so the membership pays for itself at just over two flight hours per month.",
+      "Members pay $159/hr wet for the PA28 fleet. Non-members pay $180/hr. That is a $21/hr savings, so the membership pays for itself at just under three flight hours per month.",
   },
   {
     id: "contract",
@@ -134,7 +134,7 @@ export const membershipFAQs: FAQItem[] = [
     id: "non-members",
     question: "Can non-members still rent aircraft?",
     answer:
-      "Yes. Non-members can rent the same PA28 fleet at the non-member wet rate of $185/hr. The membership is simply a way to save if you fly regularly.",
+      "Yes. Non-members can rent the same PA28 fleet at the non-member wet rate of $180/hr. The membership is simply a way to save if you fly regularly.",
   },
   {
     id: "instructor-fees",

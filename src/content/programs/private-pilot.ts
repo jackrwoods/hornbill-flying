@@ -27,7 +27,7 @@ export const privatePilotProgram = {
       "Train at your pace, choose your instructor, and earn your certificate in a consistent PA28 fleet at Reno–Tahoe (RNO).",
     image: "/images/programs/private-pilot-hero.webp",
     imageAlt:
-      "PA28 Cherokee on the ramp at Reno-Tahoe International Airport",
+      "Student and CFI during a Private Pilot training flight in a PA28 at Reno–Tahoe International Airport (RNO)",
     cta: {
       primary: {
         label: "Book a discovery flight",
@@ -149,7 +149,7 @@ export const privatePilotProgram = {
       id: "ppl-cost",
       question: "How much does it cost to get a PPL at Hornbill?",
       answer:
-        "Most students spend roughly $12,000–$16,000 from first lesson to certificate. The biggest variables are aircraft rental rate, instructor time, and how many hours you need to reach proficiency. Members pay $159/hr wet; non-members pay $185/hr wet.",
+        `Most students spend roughly $12,000–$16,000 from first lesson to certificate. The biggest variables are aircraft rental rate, instructor time, and how many hours you need to reach proficiency. Members pay ${memberRate} wet; non-members pay ${nonMemberRate} wet.`,
     },
     {
       id: "ppl-instructor-choice",
@@ -206,7 +206,7 @@ export const privatePilotProgram = {
       },
       {
         title: "Membership",
-        description: "Lower your wet rate to $159/hr and get priority scheduling for $59/month.",
+        description: `Lower your wet rate to ${memberRate} and get priority scheduling for ${membershipRate}.`,
         href: membershipHref,
       },
     ],

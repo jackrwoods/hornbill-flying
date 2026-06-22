@@ -6,7 +6,7 @@ export const currency = "USD" as const;
  * Last-updated timestamp for all published rates.
  * Update this when rates change so every page reflects the same date.
  */
-export const lastUpdated = "2026-06-18";
+export const lastUpdated = "2026-06-21";
 
 /**
  * Canonical public-facing rates for the whole site.
