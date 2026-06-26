@@ -16,9 +16,9 @@ export const membershipContent = {
   },
 
   hero: {
-    h1: "Aircraft rental membership in Reno, NV",
-    headline: "Fly more for less. Stay in the air without the markup.",
-    valueProp: `Pay $${pricing.membershipMonthly} a month and fly the same PA28 fleet for $${pricing.memberWetRate}/hr wet — instead of $${pricing.nonMemberWetRate}/hr.`,
+    h1: "The smart way to train at RNO",
+    headline: "Members save thousands on their training at Hornbill.",
+    valueProp: `Get unlimited time in our FAA-certified CR-12 AATD, $${membershipRates.savingsPerHour}/hr off the non-member aircraft rate, priority scheduling, cross-country rental eligibility, and no contract.`,
     image: "/images/membership/membership-hero.webp",
     imageAlt:
       "Hornbill PA28 Cherokee on the ramp at Reno-Tahoe International Airport (RNO).",
@@ -41,6 +41,28 @@ export const membershipContent = {
     text: `Hornbill's membership is a $${pricing.membershipMonthly}/month subscription for pilots training or renting at Reno–Tahoe. Members pay $${pricing.memberWetRate}/hr wet for our PA28 fleet, saving $${membershipRates.savingsPerHour}/hr over the non-member rate. There is no contract, and it includes priority scheduling, unlimited ground school, unlimited access to our FAA-certified CR-12 AATD, and cross-country rental eligibility. See the Instrument Rating page for details on AATD time creditable toward a rating.`,
   },
 
+  story: {
+    title: "The savings speak for themselves.",
+    lede:
+      "As a Hornbill member, you can save thousands on your training toward PPL, Instrument Rating, CPL, and CFI.",
+    blocks: [
+      {
+        label: "Low-cost aircraft rental",
+        body: `Only $${pricing.memberWetRate}/hr for aircraft. Save $${membershipRates.savingsPerHour}/hr on every aircraft hour.`,
+        summary: `Over 250 aircraft hours (for CPL), that's a savings of $5,250.`,
+      },
+      {
+        label: "Save with the sim",
+        body: "Hornbill's CR-12 AATD is FAA-certified and unlimited for members. Use it for 2.5 hours toward your PPL, 20 toward your instrument rating, and 50 toward your commercial.",
+        summary: `Students who utilize all 72.5 hours will save almost $16,800 vs renting an aircraft.`,
+      },
+      {
+        label: "Membership pays for itself",
+        body: `The membership pays for itself after only 3 hours in an aircraft or 1 hour in the simulator.`,
+      },
+    ],
+  },
+
   pricing: {
     monthlyLabel: "Monthly membership",
     memberRateLabel: "Member PA28 wet rate",
@@ -60,19 +82,14 @@ export const membershipContent = {
         description: `Members fly the PA28 fleet at $${pricing.memberWetRate}/hr wet, $${membershipRates.savingsPerHour} less per hour than the non-member rate.`,
       },
       {
-        title: "Priority scheduling",
-        description:
-          "Members get first pick of aircraft and instructor slots when the schedule opens.",
-      },
-      {
-        title: "Unlimited ground school access",
-        description:
-          "Drop into scheduled ground school sessions as often as you like while your membership is active.",
-      },
-      {
         title: "Unlimited CR-12 AATD access",
         description:
           "Members get unlimited time in our FAA-certified CR-12 Advanced Aviation Training Device. Up to 20 hours can count toward an Instrument Rating under 14 CFR §61.65(i). See the Instrument Rating page for details.",
+      },
+      {
+        title: "Priority scheduling",
+        description:
+          "Members get first pick of aircraft and instructor slots when the schedule opens.",
       },
       {
         title: "12-hour cancellation window",

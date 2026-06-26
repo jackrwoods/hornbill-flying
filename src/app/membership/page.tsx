@@ -15,6 +15,7 @@ import { buildMembershipService } from "@/lib/schema/membership";
 import { membershipContent, membershipFAQs } from "@/content/membership";
 import { MembershipHeroSection } from "@/sections/membership/MembershipHeroSection";
 import { MembershipBreadcrumbSection } from "@/sections/membership/MembershipBreadcrumbSection";
+import { MembershipStorySection } from "@/sections/membership/MembershipStorySection";
 import { MembershipQuickAnswerSection } from "@/sections/membership/MembershipQuickAnswerSection";
 import { MembershipPricingCardSection } from "@/sections/membership/MembershipPricingCardSection";
 import { MembershipBenefitsSection } from "@/sections/membership/MembershipBenefitsSection";
@@ -80,10 +81,11 @@ export default function MembershipPage() {
       <SchemaInjector schema={pageSchema} id="membership-schema" />
       <MembershipHeroSection />
       <MembershipBreadcrumbSection />
-      <MembershipQuickAnswerSection />
-      <MembershipPricingCardSection />
+      <MembershipStorySection />
       <MembershipBenefitsSection />
+      <MembershipQuickAnswerSection />
       <MembershipSignupCTASection />
+      <MembershipPricingCardSection />
       <MembershipFAQSection />
     </>
   );
