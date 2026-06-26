@@ -115,7 +115,7 @@ This ticket does **not** implement:
 | Field | Value |
 |-------|-------|
 | URL | `/student-resources/` |
-| Title tag | `Student Resources for Pilots in Reno, NV | Hornbill Flight Center` |
+| Title tag | `Student Resources for Pilots in Reno, NV | Hornbill Aviation` |
 | Meta description | `Weather, METAR/TAF for RNO, FAA medical certificate guidance, training syllabi, POH downloads, flight-planning tools, and Part 61 resources for Hornbill students.` (under 155 chars) |
 | Canonical | `https://hornbillaviation.com/student-resources/` |
 | OpenGraph | `og:type: website`, title/description mirror, `og:image` default or `/images/student-resources/hero.webp`. |
@@ -140,7 +140,7 @@ This ticket does **not** implement:
 
 A concise 50–70 word answer box for AI/answer-engine optimization:
 
-> Hornbill Flight Center students can check the latest KRNO METAR/TAF, download training syllabi and PA28 checklists, review FAA medical certificate requirements, and use our Reno-specific flight tools. Everything is organized below and kept current.
+> Hornbill Aviation students can check the latest KRNO METAR/TAF, download training syllabi and PA28 checklists, review FAA medical certificate requirements, and use our Reno-specific flight tools. Everything is organized below and kept current.
 
 #### 4.3 WeatherSection
 
@@ -355,7 +355,7 @@ Data contents (initial):
 
 ### 7.2 SEO metadata checks
 
-1. Title tag: `Student Resources for Pilots in Reno, NV | Hornbill Flight Center`.
+1. Title tag: `Student Resources for Pilots in Reno, NV | Hornbill Aviation`.
 2. Meta description under 155 characters and includes "Reno," "RNO," "METAR/TAF," "syllabi," "POH."
 3. Canonical is self-referencing with trailing slash: `https://hornbillaviation.com/student-resources/`.
 4. OpenGraph and Twitter tags populated; image is absolute URL.

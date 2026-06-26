@@ -21,7 +21,7 @@ import { termsContent } from "@/content/legal/terms";
 
 const PAGE_TITLE = "Terms of Service";
 const PAGE_DESCRIPTION =
-  "Read the terms of service for Hornbill Flight Center, including flight training, aircraft rental, and website use.";
+  "Read the terms of service for Hornbill Aviation, including flight training, aircraft rental, and website use.";
 const termsRoute = routeMap.find((r) => r.slug === "terms")!;
 const pagePath = termsRoute.href;
 const canonical = buildCanonical(pagePath);

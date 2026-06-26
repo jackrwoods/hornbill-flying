@@ -1,12 +1,12 @@
 ---
 date: 2026-06-18
-topic: "Hornbill Flight Center blog editorial calendar"
+topic: "Hornbill Aviation blog editorial calendar"
 status: draft
 ---
 
 # Blog Editorial Calendar — First 90 Days
 
-This calendar captures the launch content cluster for the Hornbill Flight Center blog. The pillar page publishes first, followed by one cluster post per week for the first seven weeks.
+This calendar captures the launch content cluster for the Hornbill Aviation blog. The pillar page publishes first, followed by one cluster post per week for the first seven weeks.
 
 ## Launch content cluster
 

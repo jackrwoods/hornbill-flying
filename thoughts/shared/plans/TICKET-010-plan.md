@@ -8,7 +8,7 @@ created: 2026-06-18
 
 ## 1. Scope summary
 
-Build the static Next.js program page at `/programs/mountain-flying/` for Hornbill Flight Center's single-engine mountain/density-altitude course. This is a **regional differentiator page**: it captures local-search intent for mountain flying training in Reno and the Sierra Nevada while reinforcing Hornbill's real-world, high-elevation flying experience.
+Build the static Next.js program page at `/programs/mountain-flying/` for Hornbill Aviation's single-engine mountain/density-altitude course. This is a **regional differentiator page**: it captures local-search intent for mountain flying training in Reno and the Sierra Nevada while reinforcing Hornbill's real-world, high-elevation flying experience.
 
 The page explains:
 
@@ -115,7 +115,7 @@ All paths are relative to the repository root `/Users/jack/hornbill-flying/`.
    - Secondary CTA: **"See the fleet and rates"** → `/fleet/`.
    - Hero image with descriptive alt text (e.g. `PA28 Cherokee in flight near the Sierra Nevada with Reno-Tahoe terrain below`), explicit width/height, `fetchpriority="high"`, `loading="eager"`.
 5. **Quick answer box**
-   - 50–70 words: "Hornbill Flight Center's Mountain Flying course teaches single-engine pilots to operate safely in the Sierra Nevada and high-desert terrain around Reno–Tahoe (RNO). You study density altitude, mountain weather, ridge crossing, and escape-route planning, then apply it on real routes from RNO with a CFI who knows the local area."
+   - 50–70 words: "Hornbill Aviation's Mountain Flying course teaches single-engine pilots to operate safely in the Sierra Nevada and high-desert terrain around Reno–Tahoe (RNO). You study density altitude, mountain weather, ridge crossing, and escape-route planning, then apply it on real routes from RNO with a CFI who knows the local area."
 6. **What the course covers**
    - Density-altitude performance and takeoff/landing calculations.
    - Mountain weather patterns, wind, turbulence, and diurnal effects.
@@ -182,7 +182,7 @@ All paths are relative to the repository root `/Users/jack/hornbill-flying/`.
 
 | Element | Value |
 |---------|-------|
-| Title tag | `Mountain Flying Course in Reno, NV | Sierra Nevada Training | Hornbill Flight Center` |
+| Title tag | `Mountain Flying Course in Reno, NV | Sierra Nevada Training | Hornbill Aviation` |
 | Meta description | `Learn mountain flying and density altitude at RNO. Part 61 Sierra Nevada course in a PA28 fleet. Book a discovery flight or consultation today.` (under 155 characters) |
 | Canonical | `https://<domain>/programs/mountain-flying/` |
 | OpenGraph title | same as title tag |
@@ -199,7 +199,7 @@ Implement the following JSON-LD graphs. Reuse the shared `Organization`/`LocalBu
    - `Home` → `Programs` → `Mountain Flying`
 2. **Service** (schema.org)
    - `@type`: `Service`
-   - `name`: `Mountain Flying Course — Sierra Nevada — Hornbill Flight Center`
+   - `name`: `Mountain Flying Course — Sierra Nevada — Hornbill Aviation`
    - `serviceType`: `FlightTraining`
    - `provider`: Hornbill LocalBusiness/Organization entity (referenced by `@id`)
    - `areaServed`: Reno, NV / Sierra Nevada region
@@ -211,7 +211,7 @@ Implement the following JSON-LD graphs. Reuse the shared `Organization`/`LocalBu
    - `description`: outcome-focused course summary
    - `provider`: Hornbill EducationalOrganization/Organization
    - `coursePrerequisites`: Private Pilot certificate recommended, current flight review, appropriate medical certificate
-   - `educationalCredentialAwarded`: `Mountain Flying Course Completion — Hornbill Flight Center` (this is not an FAA certificate)
+   - `educationalCredentialAwarded`: `Mountain Flying Course Completion — Hornbill Aviation` (this is not an FAA certificate)
    - `timeRequired`: typical duration range
    - `teaches`: `Mountain flying, density-altitude operations, high-terrain weather and decision-making`
 4. **FAQPage**
@@ -294,7 +294,7 @@ Ensure all schema uses `@id`-based references so the provider entity is not dupl
 
 ### SEO & metadata checks
 
-- [ ] Title tag matches `Mountain Flying Course in Reno, NV | Sierra Nevada Training | Hornbill Flight Center`.
+- [ ] Title tag matches `Mountain Flying Course in Reno, NV | Sierra Nevada Training | Hornbill Aviation`.
 - [ ] Meta description is under 155 characters and includes "mountain flying", "Reno", "RNO", "density altitude", "PA28", and "Part 61".
 - [ ] OpenGraph and Twitter card tags are present and unique to this page.
 - [ ] Canonical URL is `https://<domain>/programs/mountain-flying/`.

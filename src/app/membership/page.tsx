@@ -39,7 +39,7 @@ export const metadata: Metadata = {
         url: OG_IMAGE,
         width: 1920,
         height: 1280,
-        alt: "Hornbill Flight Center PA28 rental membership at Reno–Tahoe (RNO)",
+        alt: "Hornbill Aviation PA28 rental membership at Reno–Tahoe (RNO)",
       },
     ],
   }),

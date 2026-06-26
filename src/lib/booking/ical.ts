@@ -54,7 +54,7 @@ export function generateBookingIcal(details: IcalBookingDetails): string {
   const lines = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
-    "PRODID:-//Hornbill Flight Center//Discovery Flight//EN",
+    "PRODID:-//Hornbill Aviation//Discovery Flight//EN",
     "CALSCALE:GREGORIAN",
     "METHOD:PUBLISH",
     "BEGIN:VEVENT",

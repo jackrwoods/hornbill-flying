@@ -8,14 +8,14 @@ related_research:
 related_design:
   - thoughts/shared/design/brand_identity_writing_style.md
   - thoughts/shared/design/visual_identity.md
-topic: "Website layout and feature design for Hornbill Flight Center"
+topic: "Website layout and feature design for Hornbill Aviation"
 tags: [design, website, seo, booking, conversion, flight-school]
 status: draft
 ---
 
-# Hornbill Flight Center — Website Layout & Feature Design
+# Hornbill Aviation — Website Layout & Feature Design
 
-A vertical-slice design document for the public-facing Hornbill Flight Center website. It captures decisions across the page layer, content layer, booking/API layer, and SEO/distribution layer.
+A vertical-slice design document for the public-facing Hornbill Aviation website. It captures decisions across the page layer, content layer, booking/API layer, and SEO/distribution layer.
 
 ## Executive decisions (from user interview)
 
@@ -111,7 +111,7 @@ The homepage has one job: get a prospective student to book a discovery flight i
 ### Homepage technical requirements
 
 - One H1 only.
-- Title tag: `Part 61 Flight School in Reno, NV | Hornbill Flight Center`
+- Title tag: `Part 61 Flight School in Reno, NV | Hornbill Aviation`
 - Meta description under 155 chars, includes “discovery flight,” “PA28,” “RNO.”
 - LocalBusiness + EducationalOrganization + Organization schema.
 - FAQPage schema on the FAQ accordion.
@@ -244,7 +244,7 @@ Discovery flight booking is the #1 conversion event. The frontend posts to a cus
 
 | Element | Rule | Example |
 |---------|------|---------|
-| Title tag | Primary keyword first, city/state, brand | `Private Pilot License Training in Reno, NV | Hornbill Flight Center` |
+| Title tag | Primary keyword first, city/state, brand | `Private Pilot License Training in Reno, NV | Hornbill Aviation` |
 | Meta description | Keyword + value prop + CTA | `Earn your private pilot license at RNO. Part 61, choose your CFI, train in a PA28 fleet. Book a discovery flight.` |
 | H1 | One per page, primary keyword | *“Part 61 flight school in Reno, NV”* |
 | URLs | Short, hyphenated, descriptive | `/programs/private-pilot/`, `/discovery-flight/` |
@@ -296,7 +296,7 @@ Discovery flight booking is the #1 conversion event. The frontend posts to a cus
 - Conversational H2/H3 headers matching real queries.
 - FAQ sections with FAQPage schema.
 - Tables and lists for structured extraction.
-- Citable factual statements: *“Hornbill Flight Center is a Part 61 flight school at KRNO offering SPL, PPL, IR, CPL, CFI, and CFII training in a PA28 fleet.”*
+- Citable factual statements: *“Hornbill Aviation is a Part 61 flight school at KRNO offering SPL, PPL, IR, CPL, CFI, and CFII training in a PA28 fleet.”*
 
 ---
 
@@ -420,7 +420,7 @@ Pilot-focused widgets drive repeat traffic, earn backlinks, and signal topical a
 - Quick links: Discovery Flight, Programs, Fleet, Membership, Instructors, Location, About, FAQ, Blog, Contact, Privacy, Terms
 - Social links (only if active)
 - FAA Part 61 statement
-- © Hornbill Flight Center
+- © Hornbill Aviation
 
 ---
 

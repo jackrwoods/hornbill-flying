@@ -10,7 +10,7 @@ created: 2026-06-18
 
 ## 1. Scope summary
 
-TICKET-022 produces the launch content cluster for the Hornbill Flight Center blog. This ticket is about **content and on-page SEO wiring**, not about building the blog engine or site shell.
+TICKET-022 produces the launch content cluster for the Hornbill Aviation blog. This ticket is about **content and on-page SEO wiring**, not about building the blog engine or site shell.
 
 What this ticket produces:
 
@@ -138,7 +138,7 @@ tags: ["Reno", "RNO", "Part 61", "flight training", "PA28"]
 heroImage: "/images/blog/flight-training-reno-nv-hero.webp"
 heroAlt: "Hornbill PA28 Cherokee on the ramp at Reno-Tahoe International Airport"
 wordCountTarget: 2600
-quickAnswer: "Hornbill Flight Center is a Part 61 flight school at Reno–Tahoe (RNO) offering Sport Pilot through CFII training in a consistent PA28 fleet. Students choose their instructor, train at their own pace, and can rent the same aircraft for real cross-country trips."
+quickAnswer: "Hornbill Aviation is a Part 61 flight school at Reno–Tahoe (RNO) offering Sport Pilot through CFII training in a consistent PA28 fleet. Students choose their instructor, train at their own pace, and can rent the same aircraft for real cross-country trips."
 faq:
   - question: "What is a Part 61 flight school?"
     answer: "Part 61 schools follow FAA regulations in 14 CFR Part 61, training one student at a time with flexible scheduling. You choose your instructor and pace, unlike the fixed curriculum of most Part 141 academies."
@@ -168,7 +168,7 @@ faq:
 **Permalink and title-tag convention**
 
 - URL: `https://hornbillaviation.com/blog/<slug>/`
-- Title tag: `<Primary keyword> | Hornbill Flight Center` (under 60 chars).
+- Title tag: `<Primary keyword> | Hornbill Aviation` (under 60 chars).
 - Canonical: self-referencing with trailing slash.
 - OpenGraph type: `article` for posts, `website` for `/blog/`.
 
@@ -178,7 +178,7 @@ faq:
 
 | Element | Value |
 |---------|-------|
-| Title tag | `Flight Training in Reno, NV: A Complete Guide | Hornbill Flight Center` |
+| Title tag | `Flight Training in Reno, NV: A Complete Guide | Hornbill Aviation` |
 | Meta description | `Learn to fly in Reno with a Part 61 school at RNO. Choose your instructor, train in a PA28 fleet, and see real costs, timelines, and mountain-flying tips.` |
 | H1 | `Flight training in Reno, NV` |
 | Subtitle | `A practical guide to certificates, costs, schedules, and flying in the Sierra Nevada.` |
@@ -210,13 +210,13 @@ faq:
 
 | # | Slug | Title tag / H1 | Word count | Category | Author | FAQPage? |
 |---|------|----------------|------------|----------|--------|----------|
-| 1 | `private-pilot-license-cost-nevada` | `Private Pilot License Cost in Nevada | Hornbill Flight Center` / `How much does a Private Pilot license cost in Nevada?` | 1,200 | Cost & Planning | `alex-morgan` | Yes |
-| 2 | `part-61-vs-part-141` | `Part 61 vs Part 141: Which Is Right for You? | Hornbill Flight Center` / `Part 61 vs Part 141: which is right for you?` | 1,000 | Getting Started | `alex-morgan` | Yes |
-| 3 | `first-discovery-flight-rno` | `First Discovery Flight at RNO: What to Expect | Hornbill Flight Center` / `What to expect on your first discovery flight at RNO` | 1,000 | Getting Started | `jordan-lee` | Yes |
-| 4 | `mountain-flying-sierra-nevada` | `Mountain Flying in the Sierra Nevada | Hornbill Flight Center` / `Mountain flying in the Sierra Nevada: a guide for Reno pilots` | 1,400 | Safety & Mountain Flying | `jordan-lee` | Yes |
-| 5 | `density-altitude-krno` | `Density Altitude at KRNO: What Student Pilots Need to Know | Hornbill Flight Center` / `Density altitude at KRNO: what student pilots need to know` | 1,100 | Safety & Mountain Flying | `alex-morgan` | Yes |
-| 6 | `medical-certificate-student-pilots` | `Medical Certificate Guide for Student Pilots | Hornbill Flight Center` / `Medical certificate guide for student pilots` | 1,200 | Medical & Certification | `jordan-lee` | Yes |
-| 7 | `ppl-timeline-part-time-vs-full-time` | `PPL Timeline: Part-Time vs Full-Time Training | Hornbill Flight Center` / `How long does PPL training take part-time vs full-time?` | 1,100 | Cost & Planning | `alex-morgan` | Yes |
+| 1 | `private-pilot-license-cost-nevada` | `Private Pilot License Cost in Nevada | Hornbill Aviation` / `How much does a Private Pilot license cost in Nevada?` | 1,200 | Cost & Planning | `alex-morgan` | Yes |
+| 2 | `part-61-vs-part-141` | `Part 61 vs Part 141: Which Is Right for You? | Hornbill Aviation` / `Part 61 vs Part 141: which is right for you?` | 1,000 | Getting Started | `alex-morgan` | Yes |
+| 3 | `first-discovery-flight-rno` | `First Discovery Flight at RNO: What to Expect | Hornbill Aviation` / `What to expect on your first discovery flight at RNO` | 1,000 | Getting Started | `jordan-lee` | Yes |
+| 4 | `mountain-flying-sierra-nevada` | `Mountain Flying in the Sierra Nevada | Hornbill Aviation` / `Mountain flying in the Sierra Nevada: a guide for Reno pilots` | 1,400 | Safety & Mountain Flying | `jordan-lee` | Yes |
+| 5 | `density-altitude-krno` | `Density Altitude at KRNO: What Student Pilots Need to Know | Hornbill Aviation` / `Density altitude at KRNO: what student pilots need to know` | 1,100 | Safety & Mountain Flying | `alex-morgan` | Yes |
+| 6 | `medical-certificate-student-pilots` | `Medical Certificate Guide for Student Pilots | Hornbill Aviation` / `Medical certificate guide for student pilots` | 1,200 | Medical & Certification | `jordan-lee` | Yes |
+| 7 | `ppl-timeline-part-time-vs-full-time` | `PPL Timeline: Part-Time vs Full-Time Training | Hornbill Aviation` / `How long does PPL training take part-time vs full-time?` | 1,100 | Cost & Planning | `alex-morgan` | Yes |
 
 **Each cluster post must include:**
 
@@ -245,7 +245,7 @@ export const authors: Author[] = [
     slug: "alex-morgan",
     name: "Alex Morgan",
     credentials: "Certified Flight Instructor (CFI), Commercial Pilot",
-    bio: "Alex teaches Private Pilot and Instrument Rating students at Hornbill Flight Center. They specialize in mountain-flying instruction and helping part-time students stay on schedule.",
+    bio: "Alex teaches Private Pilot and Instrument Rating students at Hornbill Aviation. They specialize in mountain-flying instruction and helping part-time students stay on schedule.",
     photo: "/images/blog/authors/alex-morgan.webp",
     linkedIn: "https://www.linkedin.com/in/alex-morgan-placeholder",
     isPlaceholder: true,

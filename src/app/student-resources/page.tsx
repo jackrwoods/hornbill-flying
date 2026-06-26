@@ -46,7 +46,7 @@ export const metadata: Metadata = {
         url: OG_IMAGE,
         width: 1200,
         height: 800,
-        alt: "Student resources for pilots at Hornbill Flight Center in Reno, NV",
+        alt: "Student resources for pilots at Hornbill Aviation in Reno, NV",
       },
     ],
   }),

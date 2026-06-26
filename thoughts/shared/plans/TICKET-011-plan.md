@@ -8,7 +8,7 @@ created: 2026-06-18
 
 ## 1. Scope summary
 
-TICKET-011 builds the `/fleet/` page for Hornbill Flight Center. The page's primary job is to earn trust through radical pricing transparency and to pre-qualify prospective students and renters. It surfaces the full PA28 fleet (tail numbers, engine, avionics, notes), the membership vs non-member wet-rate comparison, instructor rates, discovery-flight pricing, financing options, and the cancellation/refund policy. The page must drive visitors toward two conversion paths: starting a membership (`/membership/`) and booking a discovery flight (`/discovery-flight/`).
+TICKET-011 builds the `/fleet/` page for Hornbill Aviation. The page's primary job is to earn trust through radical pricing transparency and to pre-qualify prospective students and renters. It surfaces the full PA28 fleet (tail numbers, engine, avionics, notes), the membership vs non-member wet-rate comparison, instructor rates, discovery-flight pricing, financing options, and the cancellation/refund policy. The page must drive visitors toward two conversion paths: starting a membership (`/membership/`) and booking a discovery flight (`/discovery-flight/`).
 
 What this ticket produces:
 
@@ -116,7 +116,7 @@ These must already exist before this ticket is implemented.
 
 Use the `metadata` export built with helpers from `src/lib/seo.ts`.
 
-- **Title:** `PA28 Fleet & Pricing in Reno, NV | Hornbill Flight Center` (≤60 chars).
+- **Title:** `PA28 Fleet & Pricing in Reno, NV | Hornbill Aviation` (≤60 chars).
 - **Meta description:** `Transparent PA28 wet rates at RNO. Members fly for $159/hr, non-members $185/hr. See tails, avionics, instructor rates, discovery flights, and financing.` (≤155 chars).
 - **Canonical:** `https://hornbillaviation.com/fleet/` (trailing slash, from `site.url`).
 - **OpenGraph:** title mirrors page title; description mirrors meta description; image uses a fleet photo or the default OG image from TICKET-001.
@@ -337,7 +337,7 @@ None. This is a static marketing page. All data is sourced from `src/content/fle
 
 ### 7.3 SEO metadata checks
 
-1. Verify title is exactly `PA28 Fleet & Pricing in Reno, NV | Hornbill Flight Center`.
+1. Verify title is exactly `PA28 Fleet & Pricing in Reno, NV | Hornbill Aviation`.
 2. Verify meta description is ≤155 chars and contains "PA28", "wet rates", "RNO", and "discovery flights".
 3. Verify canonical is self-referencing with trailing slash.
 4. Verify the sitemap includes `/fleet/`.

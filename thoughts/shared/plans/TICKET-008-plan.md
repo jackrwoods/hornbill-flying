@@ -9,7 +9,7 @@ updated: 2026-06-18
 
 # TICKET-008 — Certified Flight Instructor (CFI) program page
 
-Implementation plan for `/programs/certified-flight-instructor/` in the Hornbill Flight Center Next.js static-export site.
+Implementation plan for `/programs/certified-flight-instructor/` in the Hornbill Aviation Next.js static-export site.
 
 ## 1. Scope summary
 
@@ -88,8 +88,8 @@ If the project does not yet have a shared **program page shell**, this ticket sh
 
 ### SEO metadata
 
-- **Title tag:** `Certified Flight Instructor Training in Reno, NV | Hornbill Flight Center`
-- **Meta description:** `Earn your CFI certificate at Hornbill Flight Center in Reno, NV. Part 61 training for aspiring flight instructors: FOI, spin proficiency, lesson planning, and checkride prep. Book a consultation.`
+- **Title tag:** `Certified Flight Instructor Training in Reno, NV | Hornbill Aviation`
+- **Meta description:** `Earn your CFI certificate at Hornbill Aviation in Reno, NV. Part 61 training for aspiring flight instructors: FOI, spin proficiency, lesson planning, and checkride prep. Book a consultation.`
 - **Canonical:** `https://www.hornbillaviation.com/programs/certified-flight-instructor/`
 - **OpenGraph:**
   - `og:title` same as title tag
@@ -193,7 +193,7 @@ Inject the following JSON-LD via the shared `SchemaRenderer`. All IDs and provid
   - `@type`: `Course`
   - `name`: `Certified Flight Instructor (CFI) — Airplane Single-Engine`
   - `description`: same as meta description
-  - `provider`: Hornbill Flight Center
+  - `provider`: Hornbill Aviation
   - `courseMode`: `in-person`
   - `educationalLevel`: `advanced`
   - `teaches`: `["Fundamentals of Instruction", "Spin proficiency", "Lesson planning", "Practical test preparation"]`

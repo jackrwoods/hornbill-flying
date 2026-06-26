@@ -1,17 +1,17 @@
-# Hornbill Flight Center — Visual Identity
+# Hornbill Aviation — Visual Identity
 
-A brand foundation document for the Hornbill Flight Center website.
+A brand foundation document for the Hornbill Aviation website.
 
 ---
 
 ## 1. Brand summary
 
-**Name:** Hornbill Flight Center
+**Name:** Hornbill Aviation
 **Tagline candidate:** *Built around how you learn best.*
 
 ### What the brand stands for
 
-Hornbill Flight Center is a Part 61 flight school at Reno–Tahoe (RNO) built around **student choice and real-world experience**.
+Hornbill Aviation is a Part 61 flight school at Reno–Tahoe (RNO) built around **student choice and real-world experience**.
 
 - A uniform fleet of similarly equipped PA28 aircraft keeps training consistent and costs predictable.
 - Students can choose their instructor — or bring their own — so the learning relationship fits the person.
@@ -40,7 +40,7 @@ The circular hornbill crest (`logo.jpeg`) is the anchor asset. It combines:
 
 ### Name vs. logo wording
 
-The website and public brand name is **Hornbill Flight Center**. The logo currently reads "Hornbill Flying Club". Until the wordmark is updated, use the crest as-is for hero/brand moments and pair it with the text name "Hornbill Flight Center" so search and signage stay coherent. Treat the crest as the visual symbol; do not crop or edit it to remove the word "Club".
+The website and public brand name is **Hornbill Aviation**. The logo currently reads "Hornbill Flying Club". Until the wordmark is updated, use the crest as-is for hero/brand moments and pair it with the text name "Hornbill Aviation" so search and signage stay coherent. Treat the crest as the visual symbol; do not crop or edit it to remove the word "Club".
 
 ### Logo usage rules
 
@@ -245,7 +245,7 @@ Avoid these common weak-writing patterns:
 
 | Decision | Rationale | Notes |
 |----------|-----------|-------|
-| Website name is **Hornbill Flight Center** | User confirmed; more inclusive of training-center positioning than the logo's "Flying Club." | Logo will be updated separately; keep using crest for now. |
+| Website name is **Hornbill Aviation** | User confirmed; more inclusive of training-center positioning than the logo's "Flying Club." | Logo will be updated separately; keep using crest for now. |
 | Color palette pulled from hornbill + crest | Deep navy from the bird's plumage and crest surround; gold from the crest rope and accents; orange from the hornbill's beak. | Keeps natural/aviation tension: bird warmth + professional navy. |
 | Heading font: **Instrument Serif** | Chosen for legibility first, subtle aviation reference second (aircraft instruments), elegance third. | Pair with Inter body for contrast and readability. |
 | Body font: **Inter** | Highly readable, modern, friendly, works at all sizes. | Use for everything except headings and data labels. |
@@ -258,7 +258,7 @@ Avoid these common weak-writing patterns:
 
 ## 9. Open questions
 
-1. **Logo update timeline:** Will the crest be updated to read "Hornbill Flight Center" before launch, or should the website carry the old wording for a period?
+1. **Logo update timeline:** Will the crest be updated to read "Hornbill Aviation" before launch, or should the website carry the old wording for a period?
 2. **Photography availability:** Do real aircraft/instructor/location photos exist, or should we plan a photoshoot and use the crest + approved stock in the meantime?
 3. **Tone calibration:** Is the voice in this document the right level of warmth vs. authority? Finalize after reviewing actual page copy.
 4. **Accessibility target:** Is WCAG AA the target, or should we aim for AAA for color contrast where possible?

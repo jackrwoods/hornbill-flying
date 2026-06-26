@@ -176,7 +176,7 @@ Because this is a QA ticket, this section defines **validation coverage per page
 - `AggregateRating` only if ≥5 reviews exist; otherwise absent.
 
 **SEO metadata**
-- Title: `Part 61 Flight School in Reno, NV | Hornbill Flight Center`.
+- Title: `Part 61 Flight School in Reno, NV | Hornbill Aviation`.
 - Meta description under 155 chars and contains "discovery flight", "PA28", "RNO".
 
 ### 4.3 Discovery Flight page (`/discovery-flight/`)
@@ -208,7 +208,7 @@ Because this is a QA ticket, this section defines **validation coverage per page
 - `BreadcrumbList`.
 
 **SEO metadata**
-- Unique title/description per program; title formula: `{Program} Training in Reno, NV | Hornbill Flight Center`.
+- Unique title/description per program; title formula: `{Program} Training in Reno, NV | Hornbill Aviation`.
 
 ### 4.5 Blog pages (`/blog/` and `/blog/[slug]/`)
 
@@ -334,7 +334,7 @@ TICKET-029 is the **last ticket before launch**. It depends on all prior build t
 2. For each public HTML page, confirm required schema types from `qa-reference/schema-requirements.json` are present.
 3. Validate extracted JSON-LD against Schema.org using a local JSON Schema check or Google Rich Results Test snippet mode.
 4. Confirm NAP in LocalBusiness matches `qa-reference/nap.json` exactly:
-   - Name: Hornbill Flight Center
+   - Name: Hornbill Aviation
    - Address: 1008 Gentry Way, Reno, NV 89512
    - Phone: +1-555-555-1234
    - Email: office@hornbillaviation.com

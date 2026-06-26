@@ -96,7 +96,7 @@ export function ToolLayout({
           <Container className="max-w-4xl text-center">
             <h2 className="font-heading text-3xl text-white">Ready to fly?</h2>
             <p className="mx-auto mt-4 max-w-xl text-cream-50/90">
-              Book a discovery flight at Hornbill Flight Center and see how Part 61 training in a PA28 fleet fits your schedule.
+              Book a discovery flight at Hornbill Aviation and see how Part 61 training in a PA28 fleet fits your schedule.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <CTALink variant="secondary">Book a discovery flight</CTALink>

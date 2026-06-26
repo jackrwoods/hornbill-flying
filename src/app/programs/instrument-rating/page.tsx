@@ -38,7 +38,7 @@ export const metadata: Metadata = {
         url: OG_IMAGE,
         width: 1200,
         height: 628,
-        alt: "Hornbill Flight Center Instrument Rating training in a WAAS-equipped PA28 at Reno–Tahoe (RNO)",
+        alt: "Hornbill Aviation Instrument Rating training in a WAAS-equipped PA28 at Reno–Tahoe (RNO)",
       },
     ],
   }),

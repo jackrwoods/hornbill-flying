@@ -44,7 +44,7 @@ export const metadata: Metadata = {
         url: OG_IMAGE,
         width: 1844,
         height: 1229,
-        alt: "Hornbill Flight Center Private Pilot training in a PA28 at Reno–Tahoe (RNO)",
+        alt: "Hornbill Aviation Private Pilot training in a PA28 at Reno–Tahoe (RNO)",
       },
     ],
   }),

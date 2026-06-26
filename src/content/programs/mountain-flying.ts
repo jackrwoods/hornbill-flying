@@ -46,7 +46,7 @@ export const mountainFlyingProgram = {
     },
   },
   quickAnswer:
-    "Hornbill Flight Center's Mountain Flying course teaches single-engine pilots to operate safely in the Sierra Nevada and high-desert terrain around Reno–Tahoe (RNO). You study density altitude, mountain weather, ridge crossing, and escape-route planning, then apply it on real routes from RNO with a CFI who knows the local area.",
+    "Hornbill Aviation's Mountain Flying course teaches single-engine pilots to operate safely in the Sierra Nevada and high-desert terrain around Reno–Tahoe (RNO). You study density altitude, mountain weather, ridge crossing, and escape-route planning, then apply it on real routes from RNO with a CFI who knows the local area.",
   whatCourseCovers: {
     title: "What the course covers",
     intro:
@@ -353,7 +353,7 @@ export const mountainFlyingProgram = {
       id: "mountain-flying-certificate",
       question: "Is this an FAA certificate or a checkout?",
       answer:
-        "This is not an FAA certificate. You receive a Mountain Flying Course Completion from Hornbill Flight Center, plus the judgment and experience to operate safely in the Sierra Nevada. Many students also use the course as the basis for a formal mountain checkout for rentals.",
+        "This is not an FAA certificate. You receive a Mountain Flying Course Completion from Hornbill Aviation, plus the judgment and experience to operate safely in the Sierra Nevada. Many students also use the course as the basis for a formal mountain checkout for rentals.",
     },
     {
       id: "density-altitude-krno-learn-more",

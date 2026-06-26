@@ -22,7 +22,7 @@ import { instructorsFAQ } from "@/content/instructors-faq";
 
 const PAGE_TITLE = "Flight Instructors in Reno, NV";
 const PAGE_DESCRIPTION =
-  "Meet the CFIs at Hornbill Flight Center. Part 61 instruction at RNO, choose your instructor, and book a discovery flight.";
+  "Meet the CFIs at Hornbill Aviation. Part 61 instruction at RNO, choose your instructor, and book a discovery flight.";
 
 export const metadata: Metadata = {
   title: buildTitle(PAGE_TITLE),

@@ -21,7 +21,7 @@ export const cfiiProgram = {
       "N6576J instrument panel with Garmin G5 and WAAS GPS at Reno-Tahoe International Airport",
   },
   quickAnswer:
-    "Hornbill Flight Center offers Part 61 Certified Flight Instructor Instrument (CFII) training at Reno–Tahoe (RNO). You learn to teach instrument procedures in a consistent PA28 fleet, prepare for the Flight Instructor Instrument ACS, and add instrument instruction privileges to your existing CFI certificate.",
+    "Hornbill Aviation offers Part 61 Certified Flight Instructor Instrument (CFII) training at Reno–Tahoe (RNO). You learn to teach instrument procedures in a consistent PA28 fleet, prepare for the Flight Instructor Instrument ACS, and add instrument instruction privileges to your existing CFI certificate.",
   benefits: {
     title: "What the CFII rating gives you",
     items: [

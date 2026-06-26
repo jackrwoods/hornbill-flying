@@ -87,7 +87,7 @@ Out of scope for this ticket: the backend API itself, instructor detail pages, a
 ### Title tag
 
 ```
-Book a Discovery Flight in Reno, NV | $199 | Hornbill Flight Center
+Book a Discovery Flight in Reno, NV | $199 | Hornbill Aviation
 ```
 
 ### Meta description
@@ -161,12 +161,12 @@ Implement as JSON-LD via `SchemaScript`:
 
 2. **Event** (for the standard discovery flight)
    - `@type`: `Event`
-   - `name`: `Discovery Flight — Hornbill Flight Center`
+   - `name`: `Discovery Flight — Hornbill Aviation`
    - `description`: one-sentence summary
    - `eventStatus`: `https://schema.org/EventScheduled`
    - `eventAttendanceMode`: `https://schema.org/OfflineEventAttendanceMode`
    - `location`: references the `Place` / `LocalBusiness` for RNO (reuse base schema from TICKET-001)
-   - `organizer`: Organization schema for Hornbill Flight Center
+   - `organizer`: Organization schema for Hornbill Aviation
    - `offers`:
      - `price`: `199`
      - `priceCurrency`: `USD`

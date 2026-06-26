@@ -101,7 +101,7 @@ The page implements `Service`, `Course`, and `FAQPage` JSON-LD schema, unique SE
    - Secondary CTA: **"See the fleet and rates"** → `/fleet/`.
    - Hero image with descriptive alt text, explicit width/height, `fetchpriority="high"`, `loading="eager"`.
 5. **Quick answer box**
-   - 50–70 words: "Hornbill Flight Center offers Part 61 Certified Flight Instructor Instrument (CFII) training at Reno–Tahoe (RNO). You learn to teach instrument procedures in a consistent PA28 fleet, prepare for the Flight Instructor Instrument ACS, and add instrument instruction privileges to your existing CFI certificate."
+   - 50–70 words: "Hornbill Aviation offers Part 61 Certified Flight Instructor Instrument (CFII) training at Reno–Tahoe (RNO). You learn to teach instrument procedures in a consistent PA28 fleet, prepare for the Flight Instructor Instrument ACS, and add instrument instruction privileges to your existing CFI certificate."
 6. **What the CFII rating gives you**
    - Provide instrument flight instruction in aircraft.
    - Endorse applicants for the Instrument Rating practical test and knowledge test.
@@ -168,7 +168,7 @@ The page implements `Service`, `Course`, and `FAQPage` JSON-LD schema, unique SE
 
 | Element | Value |
 |---------|-------|
-| Title tag | `CFII Training in Reno, NV | Certified Flight Instructor Instrument | Hornbill Flight Center` |
+| Title tag | `CFII Training in Reno, NV | Certified Flight Instructor Instrument | Hornbill Aviation` |
 | Meta description | `Add instrument instruction to your CFI certificate at RNO. Part 61 CFII training in a PA28 fleet with real IFR experience. Contact Hornbill today.` (under 155 characters) |
 | Canonical | `https://<domain>/programs/cfii/` |
 | OpenGraph title | same as title tag |
@@ -185,7 +185,7 @@ Implement the following JSON-LD graphs. Reuse the shared `Organization`/`LocalBu
    - `Home` → `Programs` → `CFII`
 2. **Service** (schema.org)
    - `@type`: `Service`
-   - `name`: `CFII Training — Certified Flight Instructor Instrument — Hornbill Flight Center`
+   - `name`: `CFII Training — Certified Flight Instructor Instrument — Hornbill Aviation`
    - `serviceType`: `FlightTraining`
    - `provider`: Hornbill LocalBusiness/Organization entity (referenced by `@id`)
    - `areaServed`: Reno, NV
@@ -276,7 +276,7 @@ Ensure all schema uses `@id`-based references so the provider entity is not dupl
 
 ### SEO & metadata checks
 
-- [ ] Title tag matches `CFII Training in Reno, NV | Certified Flight Instructor Instrument | Hornbill Flight Center`.
+- [ ] Title tag matches `CFII Training in Reno, NV | Certified Flight Instructor Instrument | Hornbill Aviation`.
 - [ ] Meta description is under 155 characters and includes "CFII", "Reno", "RNO", "PA28", and "Part 61".
 - [ ] OpenGraph and Twitter card tags are present and unique to this page.
 - [ ] Canonical URL is `https://<domain>/programs/cfii/`.

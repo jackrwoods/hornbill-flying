@@ -39,7 +39,7 @@ export default function ToolsHubPage() {
     >
       <div className="prose max-w-none text-ink-light">
         <p>
-          These tools are built for pilots training at Hornbill Flight Center.
+          These tools are built for pilots training at Hornbill Aviation.
           Check current weather, estimate density altitude, plan cross-country
           fuel, find sunrise and sunset times, review the local practice area,
           and estimate training costs. They are references only — always confirm

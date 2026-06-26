@@ -16,7 +16,7 @@ export const authors: Author[] = [
     name: "Alex Morgan",
     credentials: "Certified Flight Instructor (CFI), Commercial Pilot",
     bio:
-      "Alex teaches Private Pilot and Instrument Rating students at Hornbill Flight Center. " +
+      "Alex teaches Private Pilot and Instrument Rating students at Hornbill Aviation. " +
       "They specialize in mountain-flying instruction and helping part-time students stay on schedule.",
     photo: "/images/blog/authors/alex-morgan.webp",
     linkedIn: "https://www.linkedin.com/in/alex-morgan-placeholder",

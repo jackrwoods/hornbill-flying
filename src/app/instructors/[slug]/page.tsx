@@ -103,7 +103,7 @@ export default async function InstructorPage({
       <SchemaInjector schema={buildSchemaGraph(...schemas)} id="instructor-schema" />
       <PageHeader
         title={instructor.name}
-        subtitle="Certified Flight Instructor, Hornbill Flight Center"
+        subtitle="Certified Flight Instructor, Hornbill Aviation"
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Instructors", href: "/instructors/" },

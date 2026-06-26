@@ -27,7 +27,7 @@ related_design:
 
 ## 1. Scope summary
 
-TICKET-023 builds six pilot-focused tools for the Hornbill Flight Center static Next.js site. Each tool ships as an isolated, client-side React component with its own landing page under `/tools/<slug>/`. The tools drive repeat traffic, earn backlinks, and reinforce topical authority around RNO, PA28 training, and Part 61 instruction.
+TICKET-023 builds six pilot-focused tools for the Hornbill Aviation static Next.js site. Each tool ships as an isolated, client-side React component with its own landing page under `/tools/<slug>/`. The tools drive repeat traffic, earn backlinks, and reinforce topical authority around RNO, PA28 training, and Part 61 instruction.
 
 What this ticket produces:
 
@@ -156,7 +156,7 @@ Tool pages live in `src/app/tools/`. Widget UI lives in `src/components/tools/`.
 All tool pages use the same layout contract:
 
 - One and only one H1.
-- Title format: `{Primary keyword} | Hornbill Flight Center`.
+- Title format: `{Primary keyword} | Hornbill Aviation`.
 - Meta description ≤ 155 characters, includes "RNO" or "Reno" and the tool's primary keyword.
 - Self-referencing canonical with trailing slash.
 - `BreadcrumbList`: `Home` → `Tools` → `{Tool name}`.
@@ -165,7 +165,7 @@ All tool pages use the same layout contract:
 
 ### 5.1 `/tools/` — Pilot tools hub
 
-**Title:** `Pilot Tools for Reno–Tahoe (RNO) | Hornbill Flight Center`  
+**Title:** `Pilot Tools for Reno–Tahoe (RNO) | Hornbill Aviation`  
 **Meta description:** `Free pilot tools for RNO: METAR/TAF, density altitude, cross-country fuel estimator, sunrise/sunset, practice area map, and flight training cost calculator.`  
 **H1:** `Pilot tools for RNO`  
 
@@ -178,7 +178,7 @@ All tool pages use the same layout contract:
 
 ### 5.2 `/tools/metar/` — KRNO METAR & TAF
 
-**Title:** `KRNO METAR & TAF | Hornbill Flight Center`  
+**Title:** `KRNO METAR & TAF | Hornbill Aviation`  
 **Meta description:** `Current METAR and forecast TAF for Reno–Tahoe (KRNO). Decoded in plain language for student pilots and renters.`  
 **H1:** `Reno–Tahoe (KRNO) METAR and TAF`  
 
@@ -203,7 +203,7 @@ All tool pages use the same layout contract:
 
 ### 5.3 `/tools/density-altitude/` — Density altitude calculator
 
-**Title:** `Density Altitude Calculator for KRNO | Hornbill Flight Center`  
+**Title:** `Density Altitude Calculator for KRNO | Hornbill Aviation`  
 **Meta description:** `Calculate pressure altitude and density altitude for Reno–Tahoe. RNO elevation pre-filled at 4,403 ft. Built for PA28 pilots.`  
 **H1:** `Density altitude calculator`  
 
@@ -228,7 +228,7 @@ All tool pages use the same layout contract:
 
 ### 5.4 `/tools/cross-country-estimator/` — Fuel / time estimator
 
-**Title:** `Cross-Country Fuel & Time Estimator | Hornbill Flight Center`  
+**Title:** `Cross-Country Fuel & Time Estimator | Hornbill Aviation`  
 **Meta description:** `Estimate flight time and fuel for PA28 trips from RNO. Pre-loaded routes to Tahoe, Monterey, and Bend.`  
 **H1:** `Cross-country fuel and time estimator`  
 
@@ -258,7 +258,7 @@ All tool pages use the same layout contract:
 
 ### 5.5 `/tools/sunrise-sunset/` — RNO sunrise / sunset
 
-**Title:** `RNO Sunrise & Sunset Times | Hornbill Flight Center`  
+**Title:** `RNO Sunrise & Sunset Times | Hornbill Aviation`  
 **Meta description:** `Today's sunrise, sunset, and civil twilight times for Reno–Tahoe (RNO). Plan your last legal evening flight.`  
 **H1:** `Sunrise and sunset at RNO`  
 
@@ -281,7 +281,7 @@ All tool pages use the same layout contract:
 
 ### 5.6 `/tools/practice-area-map/` — Training area map
 
-**Title:** `Reno Training Area & Local Route Map | Hornbill Flight Center`  
+**Title:** `Reno Training Area & Local Route Map | Hornbill Aviation`  
 **Meta description:** `Common practice areas and nearby airports around RNO for student pilots. Static map with airspace and altitude notes.`  
 **H1:** `Practice area and local route map`  
 
@@ -305,7 +305,7 @@ All tool pages use the same layout contract:
 
 ### 5.7 `/tools/cost-estimator/` — Flight training cost estimator
 
-**Title:** `Flight Training Cost Estimator | Hornbill Flight Center`  
+**Title:** `Flight Training Cost Estimator | Hornbill Aviation`  
 **Meta description:** `Estimate total cost and timeline for Sport, Private, Instrument, Commercial, CFI, or CFII training at Hornbill.`  
 **H1:** `Flight training cost estimator`  
 

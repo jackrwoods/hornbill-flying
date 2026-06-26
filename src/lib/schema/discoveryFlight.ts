@@ -38,7 +38,7 @@ export function buildDiscoveryFlightEvent(): JsonLdThing {
   return {
     "@type": "Event",
     "@id": absoluteUrl("/discovery-flight/#event", BASE),
-    name: "Discovery Flight — Hornbill Flight Center",
+    name: "Discovery Flight — Hornbill Aviation",
     description:
       "A 45–60 minute introductory flight in a PA28 at Reno–Tahoe (RNO). You sit in the left seat and handle the controls with a certificated flight instructor.",
     eventStatus: "https://schema.org/EventScheduled",
@@ -73,7 +73,7 @@ export function buildTahoeScenicEvent(): JsonLdThing {
   return {
     "@type": "Event",
     "@id": absoluteUrl("/discovery-flight/#event-tahoe", BASE),
-    name: "Tahoe Scenic Discovery Flight — Hornbill Flight Center",
+    name: "Tahoe Scenic Discovery Flight — Hornbill Aviation",
     description:
       "A 75-minute scenic discovery flight over Lake Tahoe and the Sierra in a PA28 with a CFI.",
     eventStatus: "https://schema.org/EventScheduled",

@@ -279,6 +279,6 @@ export const studentFaqs: StudentFaqItem[] = [
     id: "broken-link",
     question: "Who do I contact if a syllabus link is broken?",
     answer:
-      "Call or text Hornbill Flight Center at 555-555-1234, or email office@hornbillaviation.com. We will send you the correct document and fix the link.",
+      "Call or text Hornbill Aviation at 555-555-1234, or email office@hornbillaviation.com. We will send you the correct document and fix the link.",
   },
 ];

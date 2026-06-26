@@ -137,9 +137,9 @@ TICKET-013 is not strictly a hard blocker, but it should ship before or concurre
 
 **Title tag template:**
 ```
-[Name] — Flight Instructor in Reno, NV | Hornbill Flight Center
+[Name] — Flight Instructor in Reno, NV | Hornbill Aviation
 ```
-Example: `Sarah Chen — Flight Instructor in Reno, NV | Hornbill Flight Center`
+Example: `Sarah Chen — Flight Instructor in Reno, NV | Hornbill Aviation`
 
 **Meta description template (under 155 characters):**
 ```
@@ -162,7 +162,7 @@ Stored per-instructor in `src/content/instructors.ts` as `metaDescription`.
 1. **PageHeader section**
    - Breadcrumb: `Home > Instructors > [Name]`
    - H1: `[Name]` (e.g., "Sarah Chen")
-   - Subtitle / title: "Certified Flight Instructor, Hornbill Flight Center"
+   - Subtitle / title: "Certified Flight Instructor, Hornbill Aviation"
 
 2. **InstructorHeroSection**
    - Portrait image (`InstructorPortrait`) on one side.
@@ -378,7 +378,7 @@ Rules:
 ### 7.3 SEO metadata checks
 
 1. Verify each instructor page has a unique title tag matching the template:
-   `[Name] — Flight Instructor in Reno, NV | Hornbill Flight Center`.
+   `[Name] — Flight Instructor in Reno, NV | Hornbill Aviation`.
 2. Verify meta descriptions are under 155 characters, include the instructor name, "Reno", and "book a discovery flight".
 3. Verify canonical is self-referencing with trailing slash.
 4. Verify OpenGraph `og:title`, `og:description`, and `og:image` are set per instructor.
@@ -398,7 +398,7 @@ Rules:
 ### 7.5 Accessibility and UX checks
 
 1. Run axe-core or Lighthouse accessibility audit on each instructor page; target WCAG 2.2 AA with no critical errors.
-2. Verify the instructor portrait has descriptive `alt` text (e.g., "Sarah Chen, Certified Flight Instructor at Hornbill Flight Center").
+2. Verify the instructor portrait has descriptive `alt` text (e.g., "Sarah Chen, Certified Flight Instructor at Hornbill Aviation").
 3. Verify heading hierarchy: one H1, logical H2/H3 progression, no skipped levels.
 4. Verify CTA buttons are reachable by keyboard and have visible focus states.
 5. Verify touch targets are ≥44 px on mobile.

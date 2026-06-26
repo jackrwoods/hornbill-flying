@@ -8,7 +8,7 @@ created: 2026-06-18
 
 ## 1. Scope summary
 
-TICKET-001 establishes the foundation for the Hornbill Flight Center static Next.js marketing site. This ticket builds the shared site shell and global SEO infrastructure that every subsequent page ticket will consume. Because other tickets depend on these shared assets, this work must be completed first and must be as stable as possible.
+TICKET-001 establishes the foundation for the Hornbill Aviation static Next.js marketing site. This ticket builds the shared site shell and global SEO infrastructure that every subsequent page ticket will consume. Because other tickets depend on these shared assets, this work must be completed first and must be as stable as possible.
 
 What this ticket produces:
 
@@ -79,7 +79,7 @@ Create the following root files to bootstrap the project. Assume the project roo
 | `src/components/Header.tsx` | Sticky header: logo, nav, programs dropdown, CTA, phone link. |
 | `src/components/MobileNav.tsx` | Disclosure menu for mobile; uses `aria-expanded`. |
 | `src/components/Footer.tsx` | Site footer with NAP, links, map placeholder, legal. |
-| `src/components/Logo.tsx` | Brand logo component with text name "Hornbill Flight Center". |
+| `src/components/Logo.tsx` | Brand logo component with text name "Hornbill Aviation". |
 | `src/components/PhoneLink.tsx` | Click-to-call link with tel schema and analytics data attribute. |
 | `src/components/CTALink.tsx` | "Book a discovery flight" link/button used in header and across pages. |
 | `src/components/Button.tsx` | Reusable button variants (primary, secondary, tertiary, accent) per visual identity. |
@@ -174,7 +174,7 @@ Downstream tickets should:
 
 **Title template:**
 ```
-%s | Hornbill Flight Center
+%s | Hornbill Aviation
 ```
 Default title segment: `"Part 61 flight school in Reno, NV"`.
 
@@ -190,7 +190,7 @@ Keep under 155 characters; allow per-page override.
 
 **OpenGraph defaults:**
 - `og:type`: `website`
-- `og:site_name`: `Hornbill Flight Center`
+- `og:site_name`: `Hornbill Aviation`
 - `og:image`: `/opengraph-default.jpg` (absolute URL)
 - `og:locale`: `en_US`
 
@@ -202,13 +202,13 @@ Keep under 155 characters; allow per-page override.
 
 1. `Organization`
    - `@id`: `<baseUrl>/#organization`
-   - `name`: `Hornbill Flight Center`
+   - `name`: `Hornbill Aviation`
    - `url`: `<baseUrl>/`
    - `logo`: `<baseUrl>/logo.jpeg`
    - `sameAs`: GBP + social URLs (only active profiles).
 2. `LocalBusiness` (subtype of `EducationalOrganization` is not directly valid as a subtype in schema.org; represent as `LocalBusiness` + `makesOffer` referencing educational services)
    - `@id`: `<baseUrl>/#localbusiness`
-   - `name`: `Hornbill Flight Center`
+   - `name`: `Hornbill Aviation`
    - `image`: hero image
    - `address` (PostalAddress): `1008 Gentry Way, Reno, NV 89512`
    - `telephone`: `+1-555-555-1234`
@@ -219,7 +219,7 @@ Keep under 155 characters; allow per-page override.
    - `url`: `<baseUrl>/`
 3. `EducationalOrganization`
    - `@id`: `<baseUrl>/#educationalorganization`
-   - `name`: `Hornbill Flight Center`
+   - `name`: `Hornbill Aviation`
    - `address` references the same PostalAddress `@id`.
    - `hasCredential`: sport, private, instrument, commercial, CFI, CFII training.
 4. `WebSite`
@@ -230,7 +230,7 @@ Keep under 155 characters; allow per-page override.
 ### 4.2 Homepage (`/`)
 
 **URL:** `/`
-**Title:** `Part 61 Flight School in Reno, NV | Hornbill Flight Center`
+**Title:** `Part 61 Flight School in Reno, NV | Hornbill Aviation`
 **Meta description:**
 ```
 Earn your pilot certificate at RNO. Part 61 training in a PA28 fleet, choose your CFI, and book a $199 discovery flight with no deposit.
@@ -277,7 +277,7 @@ Earn your pilot certificate at RNO. Part 61 training in a PA28 fleet, choose you
 
 ### 4.3 404 page (`/404/`)
 
-**Title:** `Page Not Found | Hornbill Flight Center`
+**Title:** `Page Not Found | Hornbill Aviation`
 **Content:**
 - H1: "Page not found"
 - Copy: "That route is not in our flight plan."
@@ -399,7 +399,7 @@ If office hours or exact instructor details are not available at launch, create 
 
 ### 7.3 SEO metadata checks
 
-1. Verify homepage title is exactly: `Part 61 Flight School in Reno, NV | Hornbill Flight Center`.
+1. Verify homepage title is exactly: `Part 61 Flight School in Reno, NV | Hornbill Aviation`.
 2. Verify meta description is under 155 characters and contains "discovery flight", "PA28", "RNO".
 3. Verify canonical link is self-referencing with trailing slash.
 4. Verify `robots.txt` allows all user-agents and references the sitemap.

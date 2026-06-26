@@ -147,8 +147,8 @@ Create under `src/components/booking/`:
 | Element | Value |
 |---------|-------|
 | URL | `/book/` |
-| Title | `Book a discovery flight or schedule training | Hornbill Flight Center` |
-| Meta description | `Book a discovery flight, buy a gift voucher, or schedule flight training at Hornbill Flight Center in Reno, NV. Part 61 school at RNO with a PA28 fleet.` |
+| Title | `Book a discovery flight or schedule training | Hornbill Aviation` |
+| Meta description | `Book a discovery flight, buy a gift voucher, or schedule flight training at Hornbill Aviation in Reno, NV. Part 61 school at RNO with a PA28 fleet.` |
 | Canonical | `https://hornbillaviation.com/book/` |
 | OG image | `/opengraph-booking.jpg` |
 | OG type | `website` |
@@ -205,7 +205,7 @@ Inject the following JSON-LD via `SchemaInjector` on `/book/`:
    - Item 2: `Book` → `/book/`
 3. **Event** (for the discovery flight as a bookable service)
    - `@id`: `<baseUrl>/book/#discovery-flight`
-   - `name`: `Discovery Flight at Hornbill Flight Center`
+   - `name`: `Discovery Flight at Hornbill Aviation`
    - `description`: `45–60 minute introductory flight in a PA28 at Reno–Tahoe (RNO).`
    - `eventStatus`: `https://schema.org/EventScheduled`
    - `eventAttendanceMode`: `https://schema.org/OfflineEventAttendanceMode`
@@ -347,7 +347,7 @@ Do **not** inject `AggregateRating` on this page unless 5+ reviews exist globall
 
 ### 7.4 SEO metadata checks
 
-1. Verify title tag: `Book a discovery flight or schedule training | Hornbill Flight Center`.
+1. Verify title tag: `Book a discovery flight or schedule training | Hornbill Aviation`.
 2. Verify meta description is under 155 characters and contains "discovery flight", "Reno, NV", "RNO".
 3. Verify canonical is self-referencing with trailing slash: `https://hornbillaviation.com/book/`.
 4. Verify OG image is the dedicated booking OG image or the default.

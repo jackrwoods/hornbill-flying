@@ -108,7 +108,7 @@ Assume a Next.js 14+ App Router project configured for static export, with a `sr
 
 - **URL:** `/membership/`
 - **Canonical:** `https://hornbillaviation.com/membership/`
-- **Title tag:** `PA28 Aircraft Rental Membership in Reno, NV | Hornbill Flight Center`
+- **Title tag:** `PA28 Aircraft Rental Membership in Reno, NV | Hornbill Aviation`
 - **Meta description:** `Join Hornbill's $49/month membership for a $159/hr PA28 wet rate at RNO. Save $26/hr vs. the $185 non-member rate. No contract.` (≤155 characters)
 - **OpenGraph:** same title/description; image uses `public/images/membership/membership-hero.webp` or the default OG image from TICKET-001.
 - **Twitter card:** `summary_large_image`.
@@ -267,7 +267,7 @@ This page is static and requires no runtime API calls for its primary content. H
 
 ### SEO / schema validation
 
-- [ ] Confirm the title tag is exactly: `PA28 Aircraft Rental Membership in Reno, NV | Hornbill Flight Center`.
+- [ ] Confirm the title tag is exactly: `PA28 Aircraft Rental Membership in Reno, NV | Hornbill Aviation`.
 - [ ] Confirm the meta description is ≤ 155 characters and includes "Reno," "$59," "$159," "PA28."
 - [ ] Confirm the canonical tag is self-referencing: `https://hornbillaviation.com/membership/`.
 - [ ] Confirm OpenGraph tags use the page title, description, URL, and image.

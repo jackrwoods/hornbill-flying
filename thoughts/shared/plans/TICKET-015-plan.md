@@ -128,7 +128,7 @@ These must already exist before this ticket is implemented.
 
 Use the `metadata` export built with helpers from `src/lib/seo.ts`.
 
-- **Title:** `Cross-Country Aircraft Rental in Reno, NV | Hornbill Flight Center` (≤60 chars).
+- **Title:** `Cross-Country Aircraft Rental in Reno, NV | Hornbill Aviation` (≤60 chars).
 - **Meta description:** `Rent a PA28 at RNO for real cross-country trips. Members save with $159/hr wet rates. Fly to Tahoe, Monterey, Bend, and beyond. See requirements.` (≤155 chars).
 - **Canonical:** `https://hornbillaviation.com/cross-country-rentals/` (trailing slash, from `site.url`).
 - **OpenGraph:** title mirrors page title; description mirrors meta description; image uses the cross-country hero photo or the default OG image from TICKET-001.
@@ -338,7 +338,7 @@ None. This is a static marketing page. All data is sourced from `src/content/cro
 
 ### 7.3 SEO metadata checks
 
-1. Verify title is exactly `Cross-Country Aircraft Rental in Reno, NV | Hornbill Flight Center`.
+1. Verify title is exactly `Cross-Country Aircraft Rental in Reno, NV | Hornbill Aviation`.
 2. Verify meta description is ≤155 chars and contains "PA28", "RNO", "cross-country", "Tahoe", "Monterey", "Bend", or "rates".
 3. Verify canonical is self-referencing with trailing slash.
 4. Verify the sitemap includes `/cross-country-rentals/`.

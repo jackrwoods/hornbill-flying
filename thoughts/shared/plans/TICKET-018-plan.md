@@ -10,7 +10,7 @@ created: 2026-06-18
 
 ## 1. Scope summary
 
-Build the Hornbill Flight Center financing page at `/financing/`. Flight training cost is one of the most common objections prospective students raise; this page must remove that friction by explaining the Stratus Financial partnership, the application process, what training costs can be financed, the school's payment expectations (deposits, pay-as-you-go), and sample monthly budget scenarios. The page also links to program pages, the Fleet & Pricing page, the Membership page, and the Discovery Flight booking page, and it implements `FAQPage` schema to capture cost-related long-tail search queries.
+Build the Hornbill Aviation financing page at `/financing/`. Flight training cost is one of the most common objections prospective students raise; this page must remove that friction by explaining the Stratus Financial partnership, the application process, what training costs can be financed, the school's payment expectations (deposits, pay-as-you-go), and sample monthly budget scenarios. The page also links to program pages, the Fleet & Pricing page, the Membership page, and the Discovery Flight booking page, and it implements `FAQPage` schema to capture cost-related long-tail search queries.
 
 What this ticket produces:
 
@@ -97,8 +97,8 @@ This ticket does **not** implement: Stratus Financial API integrations, loan app
 Use Next.js `metadata` export via the helper from `src/lib/seo.ts`.
 
 - **URL:** `/financing/`
-- **Title:** `Flight Training Financing in Reno, NV | Hornbill Flight Center`
-- **Meta description:** `Finance your flight training at Hornbill Flight Center through Stratus Financial. Learn what costs are covered, how to apply, and see sample monthly budgets for PPL training at RNO.` (≤155 characters)
+- **Title:** `Flight Training Financing in Reno, NV | Hornbill Aviation`
+- **Meta description:** `Finance your flight training at Hornbill Aviation through Stratus Financial. Learn what costs are covered, how to apply, and see sample monthly budgets for PPL training at RNO.` (≤155 characters)
 - **Canonical:** `https://hornbillaviation.com/financing/`
 - **OpenGraph:** title mirrors page title; description mirrors meta description; image uses page hero or default OG image from TICKET-001.
 - **Twitter card:** `summary_large_image`.
@@ -128,7 +128,7 @@ Do not duplicate the base `Organization` / `LocalBusiness` / `EducationalOrganiz
 
 - **H2:** `Financing through Stratus Financial`
 - Body copy explaining:
-  - Hornbill Flight Center partners with Stratus Financial, a lender focused on aviation training.
+  - Hornbill Aviation partners with Stratus Financial, a lender focused on aviation training.
   - Students apply directly with Stratus; approval decisions come from Stratus, not Hornbill.
   - Funds are disbursed to the school for flight training as the student progresses.
   - Mention that Stratus may offer options for U.S. citizens and permanent residents with qualifying credit.
@@ -259,7 +259,7 @@ Do not duplicate the base `Organization` / `LocalBusiness` / `EducationalOrganiz
 
 ### 7.2 SEO / metadata checks
 
-1. Verify title tag: `Flight Training Financing in Reno, NV | Hornbill Flight Center`.
+1. Verify title tag: `Flight Training Financing in Reno, NV | Hornbill Aviation`.
 2. Verify meta description is ≤155 characters and contains "Stratus Financial," "Reno," "flight training," and "RNO" or "Hornbill."
 3. Verify canonical link is `https://hornbillaviation.com/financing/` with trailing slash.
 4. Verify OpenGraph title, description, URL, and image tags are present and use absolute URLs.

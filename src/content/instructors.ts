@@ -17,7 +17,7 @@ export const instructors: Instructor[] = [
     ],
     photo: "/images/instructors/placeholder-avatar.svg",
     altText:
-      "Headshot of Trygve Inda, Certified Flight Instructor Instrument at Hornbill Flight Center",
+      "Headshot of Trygve Inda, Certified Flight Instructor Instrument at Hornbill Aviation",
     certificateNumber: null,
     publishCertificate: false,
     bio:
@@ -92,7 +92,7 @@ export const instructors: Instructor[] = [
     ],
     photo: "/images/instructors/placeholder-avatar.svg",
     altText:
-      "Headshot of Alex Rivera, Certified Flight Instructor at Hornbill Flight Center",
+      "Headshot of Alex Rivera, Certified Flight Instructor at Hornbill Aviation",
     certificateNumber: null,
     publishCertificate: false,
     bio:
@@ -157,7 +157,7 @@ export const instructors: Instructor[] = [
     ],
     photo: "/images/instructors/placeholder-avatar.svg",
     altText:
-      "Headshot of Jordan Chen, Certified Flight Instructor Instrument at Hornbill Flight Center",
+      "Headshot of Jordan Chen, Certified Flight Instructor Instrument at Hornbill Aviation",
     certificateNumber: null,
     publishCertificate: false,
     bio:
@@ -223,7 +223,7 @@ export const instructors: Instructor[] = [
     ],
     photo: "/images/instructors/placeholder-avatar.svg",
     altText:
-      "Headshot of Morgan Patel, Certified Flight Instructor at Hornbill Flight Center",
+      "Headshot of Morgan Patel, Certified Flight Instructor at Hornbill Aviation",
     certificateNumber: null,
     publishCertificate: false,
     bio:
@@ -283,7 +283,7 @@ export const instructors: Instructor[] = [
     ],
     photo: "/images/instructors/placeholder-avatar.svg",
     altText:
-      "Headshot of Taylor Brooks, Certified Flight Instructor at Hornbill Flight Center",
+      "Headshot of Taylor Brooks, Certified Flight Instructor at Hornbill Aviation",
     certificateNumber: null,
     publishCertificate: false,
     bio:

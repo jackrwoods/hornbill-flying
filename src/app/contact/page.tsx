@@ -20,7 +20,7 @@ import { ContactFormSection } from "@/sections/contact/ContactFormSection";
 import { ContactFAQSection } from "@/sections/contact/ContactFAQSection";
 import { contactFAQ } from "@/content/contact";
 
-const PAGE_TITLE = "Contact Hornbill Flight Center in Reno, NV";
+const PAGE_TITLE = "Contact Hornbill Aviation in Reno, NV";
 const PAGE_DESCRIPTION =
   "Call 555-555-1234 or email office@hornbillaviation.com. Visit us at 1008 Gentry Way, Reno, NV. Book a discovery flight or send a message.";
 
@@ -56,7 +56,7 @@ export default function ContactPage() {
     <>
       <SchemaInjector schema={schema} id="contact-schema" />
       <PageHeader
-        title="Contact Hornbill Flight Center"
+        title="Contact Hornbill Aviation"
         subtitle="Call, email, or stop by. We're here to answer questions and help you book your first flight."
         breadcrumbs={[
           { label: "Home", href: "/" },

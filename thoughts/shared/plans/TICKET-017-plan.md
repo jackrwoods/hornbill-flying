@@ -8,7 +8,7 @@ created: 2026-06-18
 
 ## 1. Scope summary
 
-TICKET-017 builds the public `/about/` page for Hornbill Flight Center. The page answers the trust and fit questions prospective students have before they book: who runs the school, why it exists, why Part 61 matters, how safety is handled, why the fleet is intentionally uniform, and what the team culture feels like.
+TICKET-017 builds the public `/about/` page for Hornbill Aviation. The page answers the trust and fit questions prospective students have before they book: who runs the school, why it exists, why Part 61 matters, how safety is handled, why the fleet is intentionally uniform, and what the team culture feels like.
 
 What this ticket produces:
 
@@ -104,12 +104,12 @@ Use these shared shell and primitive components; do not recreate them:
 
 **Title tag:**
 ```
-About Hornbill Flight Center | Part 61 Flight School in Reno, NV
+About Hornbill Aviation | Part 61 Flight School in Reno, NV
 ```
 
 **Meta description:**
 ```
-Hornbill Flight Center is a Part 61 flight school at Reno-Tahoe (RNO). Learn our founder story, safety culture, and why we train in a consistent PA28 fleet.
+Hornbill Aviation is a Part 61 flight school at Reno-Tahoe (RNO). Learn our founder story, safety culture, and why we train in a consistent PA28 fleet.
 ```
 Keep under 155 characters.
 
@@ -189,7 +189,7 @@ Inject the following JSON-LD via `SchemaInjector` in `src/app/about/page.tsx`:
 
 1. **Organization** (design doc priority: homepage + about)
    - `@id`: `<baseUrl>/#organization` (same `@id` used in root layout so search engines merge the entity).
-   - `name`: `Hornbill Flight Center`
+   - `name`: `Hornbill Aviation`
    - `url`: `<baseUrl>/`
    - `logo`: `<baseUrl>/logo.jpeg`
    - `sameAs`: active social profile URLs and Google Business Profile URL.

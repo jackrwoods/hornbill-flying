@@ -83,7 +83,7 @@ export function buildProgramSchemas(input: ProgramSchemaInput): JsonLdThing[] {
     course.isPartOf = {
       "@type": "Course",
       url: absoluteUrl(input.isPartOf, BASE),
-      name: "Hornbill Flight Center Training Programs",
+      name: "Hornbill Aviation Training Programs",
     };
   }
 

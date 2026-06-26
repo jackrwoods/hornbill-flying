@@ -23,7 +23,7 @@ last_updated_by: Jack Woods
 
 > Research flight school websites, like nvflight.com and https://biggestlittleflightschool.com/. How can a flight school improve on these websites? Be more findable? etc.
 
-Context: Hornbill Flight Center is a brand-new Part 61 flight school at Reno–Tahoe International Airport (KRNO). The project directory contains only brand/design documents (`thoughts/shared/design/`) and a set of unoptimized image assets — no website code has been written yet. The user is asking for a competitive analysis of two named local competitors plus a findability/SEO strategy so that the eventual Hornbill website can both outrank and out-convert the incumbents.
+Context: Hornbill Aviation is a brand-new Part 61 flight school at Reno–Tahoe International Airport (KRNO). The project directory contains only brand/design documents (`thoughts/shared/design/`) and a set of unoptimized image assets — no website code has been written yet. The user is asking for a competitive analysis of two named local competitors plus a findability/SEO strategy so that the eventual Hornbill website can both outrank and out-convert the incumbents.
 
 ## Summary
 
@@ -56,7 +56,7 @@ The repository is a greenfield project. There is no website code yet — only:
   - `instrument-training-reno-flight-lessons.uBfxqRYx_hXOiQ.webp` — instrument training imagery
   - `montain-_-plane2.CXIGPQB-_Z1byY2E.webp` — mountain flying imagery
   - `nv-flight-programs_bg.DIL-gRYw.webp`, `nv-flight-reno_*.webp` (3 files), `nvflight-reno-programs-*.jpg` (2 files), `nvflight-reno-student-pilot-hero.BuUJ_J7J_7C26h.webp` — these filenames suggest some assets originated from or were inspired by NV Flight's site; worth verifying ownership/licensing before use
-  - `logo.jpeg` — the hornbill crest (per `visual_identity.md`, the crest currently reads "Hornbill Flying Club" while the public brand name is "Hornbill Flight Center")
+  - `logo.jpeg` — the hornbill crest (per `visual_identity.md`, the crest currently reads "Hornbill Flying Club" while the public brand name is "Hornbill Aviation")
 
 - **`thoughts/shared/research/`** — this document (created by this research)
 
@@ -303,7 +303,7 @@ Validate every page using Google's Rich Results Test; monitor Search Console's E
 **Content cadence:** 2 well-written, technically accurate posts per month, published consistently for 12 months, outperforms irregular bursts. Editorial calendar 3–6 months ahead, aligned with seasonal demand (cost content in January, career-outcomes content October–November). Consistency is the most-mentioned failure mode in aviation content marketing. 12–18 month horizon for competitive terms; 3–6 months for moderate-competition geographic keywords. Repurposing: 1 core piece per month → 5–7 social posts, IG stories/Reels, email, pull-quote graphics, short video clips, forum responses, FAQ updates.
 
 **On-page SEO quick wins:**
-- Include regulatory language in title tags: "Part 61 Flight School in Reno, NV | Hornbill Flight Center" — called "the single biggest quick win" in aviation SEO audits
+- Include regulatory language in title tags: "Part 61 Flight School in Reno, NV | Hornbill Aviation" — called "the single biggest quick win" in aviation SEO audits
 - One H1 per page using the primary keyword phrase
 - Specific meta descriptions (not templated "We provide professional aviation services…")
 - Internal linking with descriptive anchor text
@@ -739,7 +739,7 @@ There is no website code yet — the project is greenfield. The relevant artifac
 
 - `thoughts/shared/design/visual_identity.md` — brand visual identity system (colors, typography, logo rules, component usage notes, design decisions log)
 - `thoughts/shared/design/brand_identity_writing_style.md` — brand voice, messaging pillars, writing rules, word list, page-level copy guidance, before/after examples
-- `logo.jpeg` — the hornbill crest (currently reads "Hornbill Flying Club"; public brand name is "Hornbill Flight Center" per visual_identity.md §2)
+- `logo.jpeg` — the hornbill crest (currently reads "Hornbill Flying Club"; public brand name is "Hornbill Aviation" per visual_identity.md §2)
 - `N6576J-.Cpd774dW_Zlwo46.webp` — aircraft photo (tail number N6576J, currently listed on NV Flight's fleet page as a 1968 Piper Cherokee 180)
 - `n6576j-instrument-panel-instrument-rating-reno-nevada.BxcVyLIY_1HzB6s.webp` — cockpit instrument panel
 - `hero-image.BhmeJT7E_Z1oh9we.webp` — homepage hero candidate
@@ -759,7 +759,7 @@ Key design tokens established (from `visual_identity.md`):
 
 Key voice/messaging pillars established (from `brand_identity_writing_style.md`):
 - Four pillars: Flexibility, Consistency (uniform PA28 fleet), Real-world experience (cross-country rentals), Value (lowest RNO rates)
-- Positioning: "For people in Northern Nevada and beyond who want to learn to fly, Hornbill Flight Center is the flexible, student-first Part 61 school that combines consistent aircraft, instructor choice, real cross-country experience, and the most competitive rental rates at RNO."
+- Positioning: "For people in Northern Nevada and beyond who want to learn to fly, Hornbill Aviation is the flexible, student-first Part 61 school that combines consistent aircraft, instructor choice, real cross-country experience, and the most competitive rental rates at RNO."
 - Voice attributes: friendly, confident, inspirational, reassuring, encouraging, professional
 - Forbidden phrases: "passion for aviation," "unlock your potential," "soar to new heights," "sky's the limit," "world-class," "premier," "aviation family," "in today's world," "it's important to note"
 - CTA convention: verb-first ("Book a discovery flight," "See the fleet and rates," "Meet the instructors")
@@ -768,8 +768,8 @@ This documented design system is directly aligned with the SEO and conversion be
 
 ## Historical Context (from thoughts/)
 
-- `thoughts/shared/design/visual_identity.md` — Establishes Hornbill Flight Center's visual identity. Decision log notes the name discrepancy: website/public brand name is "Hornbill Flight Center" but logo currently reads "Hornbill Flying Club" — crest should be used as-is for hero/brand moments, paired with text name "Hornbill Flight Center" so search and signage stay coherent. Open questions: logo update timeline, photography availability (real aircraft/instructor/location photos vs. crest + approved stock), tone calibration, accessibility target (AA vs. AAA), brand extension to print/apparel/aircraft livery.
-- `thoughts/shared/design/brand_identity_writing_style.md` — Establishes brand identity and writing style. Brand story: "Most flight schools make you fit their program. Hornbill Flight Center builds the program around you. We're a Part 61 school at Reno–Tahoe (RNO) with a simple idea: the best pilots come from training that respects their schedule, their budget, and their goals. Our fleet of similarly equipped PA28s keeps costs predictable and learning consistent. Students choose their instructor — or bring their own. And when they're ready, they rent the same aircraft for real cross-country trips instead of just repeating the same practice-area maneuvers."
+- `thoughts/shared/design/visual_identity.md` — Establishes Hornbill Aviation's visual identity. Decision log notes the name discrepancy: website/public brand name is "Hornbill Aviation" but logo currently reads "Hornbill Flying Club" — crest should be used as-is for hero/brand moments, paired with text name "Hornbill Aviation" so search and signage stay coherent. Open questions: logo update timeline, photography availability (real aircraft/instructor/location photos vs. crest + approved stock), tone calibration, accessibility target (AA vs. AAA), brand extension to print/apparel/aircraft livery.
+- `thoughts/shared/design/brand_identity_writing_style.md` — Establishes brand identity and writing style. Brand story: "Most flight schools make you fit their program. Hornbill Aviation builds the program around you. We're a Part 61 school at Reno–Tahoe (RNO) with a simple idea: the best pilots come from training that respects their schedule, their budget, and their goals. Our fleet of similarly equipped PA28s keeps costs predictable and learning consistent. Students choose their instructor — or bring their own. And when they're ready, they rent the same aircraft for real cross-country trips instead of just repeating the same practice-area maneuvers."
 
 ## Related Research
 
@@ -782,7 +782,7 @@ No prior research documents exist in `thoughts/shared/research/`. This is the fi
 
 ## Open Questions
 
-1. **Logo update timeline** — Per `visual_identity.md` §9, the crest currently reads "Hornbill Flying Club" while the public brand name is "Hornbill Flight Center." Will the crest be updated before launch, or should the website carry the old wording for a period? This affects schema `name` field consistency and GBP business name matching (a 2026 E-E-A-T trust signal).
+1. **Logo update timeline** — Per `visual_identity.md` §9, the crest currently reads "Hornbill Flying Club" while the public brand name is "Hornbill Aviation." Will the crest be updated before launch, or should the website carry the old wording for a period? This affects schema `name` field consistency and GBP business name matching (a 2026 E-E-A-T trust signal).
 
 2. **Photography availability** — Per `visual_identity.md` §9, do real aircraft/instructor/location photos exist, or should we plan a photoshoot? The existing image assets in the project root are mostly aircraft/cockpit imagery (good), but instructor headshots and facility photos are needed for the named-CFI pages and GBP photo requirements (minimum 20 high-quality fleet/facility/instructor photos).
 

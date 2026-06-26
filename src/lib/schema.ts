@@ -478,7 +478,7 @@ export function buildFleetRentalService(): JsonLdThing {
       unitCode: "MON",
       availability: "https://schema.org/InStock",
       url: "/membership/",
-      itemOffered: "Hornbill Flight Center membership",
+      itemOffered: "Hornbill Aviation membership",
     },
     {
       name: "Discovery flight",
@@ -609,7 +609,7 @@ export function buildEvent(): JsonLdThing {
   return {
     "@type": "Event",
     "@id": eventId,
-    name: "Discovery Flight at Hornbill Flight Center",
+    name: "Discovery Flight at Hornbill Aviation",
     description:
       "45–60 minute introductory flight in a PA28 at Reno–Tahoe (RNO).",
     eventStatus: "https://schema.org/EventScheduled",

@@ -22,10 +22,10 @@ export default function MountainFlyingProgramPage() {
       description: mountainFlyingProgram.metaDescription,
       url: "/programs/mountain-flying/",
       serviceName:
-        "Mountain Flying Course — Sierra Nevada — Hornbill Flight Center",
+        "Mountain Flying Course — Sierra Nevada — Hornbill Aviation",
       courseName: "Mountain Flying and Density-Altitude Course",
       credentialAwarded:
-        "Mountain Flying Course Completion — Hornbill Flight Center",
+        "Mountain Flying Course Completion — Hornbill Aviation",
       timeToComplete: "1–2 ground sessions plus 2–4 instructional flights",
       prerequisites: mountainFlyingProgram.prerequisitesDurationCost.prerequisites.items,
       teaches: [

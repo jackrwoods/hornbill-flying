@@ -4,14 +4,14 @@ researcher: Jack Woods
 git_commit: none-yet
 branch: main
 repository: hornbill-flying
-topic: "Online marketing for a new small business — actionable tips, marketing techniques, and conversion optimization, applied to Hornbill Flight Center (Part 61 flight school at RNO)"
+topic: "Online marketing for a new small business — actionable tips, marketing techniques, and conversion optimization, applied to Hornbill Aviation (Part 61 flight school at RNO)"
 tags: [research, marketing, flight-school, local-seo, cro, conversion-optimization]
 status: complete
 last_updated: 2026-06-17
 last_updated_by: Jack Woods
 ---
 
-# Online Marketing for a New Small Business — Hornbill Flight Center Research
+# Online Marketing for a New Small Business — Hornbill Aviation Research
 
 | Field | Value |
 |-------|-------|
@@ -25,7 +25,7 @@ last_updated_by: Jack Woods
 
 ## Research Question
 
-How should a new small business market itself online in 2026 — and specifically, how should **Hornbill Flight Center**, a new Part 61 flight school at Reno–Tahoe International Airport (RNO), use online marketing to find and convert its first students? The research covers four areas: (a) the general online marketing playbook for a new small business, (b) conversion rate optimization (CRO) best practices that turn visitors into paying customers, (c) local SEO for a location-based business that depends on being found by people nearby, and (d) flight-school-specific marketing — including how the discovery flight functions as the centerpiece of the funnel, how a uniform PA28 fleet and instructor choice become marketing assets, and how to build a web presence that earns trust before the first phone call. The goal is actionable, prioritized guidance a new owner can act on without a marketing background or large budget.
+How should a new small business market itself online in 2026 — and specifically, how should **Hornbill Aviation**, a new Part 61 flight school at Reno–Tahoe International Airport (RNO), use online marketing to find and convert its first students? The research covers four areas: (a) the general online marketing playbook for a new small business, (b) conversion rate optimization (CRO) best practices that turn visitors into paying customers, (c) local SEO for a location-based business that depends on being found by people nearby, and (d) flight-school-specific marketing — including how the discovery flight functions as the centerpiece of the funnel, how a uniform PA28 fleet and instructor choice become marketing assets, and how to build a web presence that earns trust before the first phone call. The goal is actionable, prioritized guidance a new owner can act on without a marketing background or large budget.
 
 ## Summary
 
@@ -52,7 +52,7 @@ The repository currently contains the **brand foundation only — no website cod
 
 ### Brand identity
 
-- **Name:** Hornbill Flight Center (logo currently reads "Hornbill Flying Club"; website uses the new name)
+- **Name:** Hornbill Aviation (logo currently reads "Hornbill Flying Club"; website uses the new name)
 - **Tagline candidate:** *Built around how you learn best.*
 - **Brand promise:** We make learning to fly fit your life, not the other way around.
 - **Positioning:** Part 61 school at RNO, student-first, flexible, competitive rates
@@ -356,13 +356,13 @@ Classic playbooks assume you have a team, a budget, and an audience. On day one 
 
 ## Conversion Rate Optimization: Maximizing Web Visitors to Paying Customers
 
-For Hornbill Flight Center, "conversion" means one thing: turning a website visitor into a paying flight training student. The path runs through discovery flight bookings and inquiry forms, and every CRO decision should remove friction from that path. This section condenses 2025–2026 research into actionable guidance, biased toward what a new, low-traffic site can execute before launch.
+For Hornbill Aviation, "conversion" means one thing: turning a website visitor into a paying flight training student. The path runs through discovery flight bookings and inquiry forms, and every CRO decision should remove friction from that path. This section condenses 2025–2026 research into actionable guidance, biased toward what a new, low-traffic site can execute before launch.
 
 ### The 5-Second Rule and Above-the-Fold Design
 
 Visitors spend **57% of viewing time above the fold** and form a judgment in roughly **50 milliseconds** ([apexure.com](https://www.apexure.com/blog/above-the-fold-landing-page-design)). You have **3–5 seconds** to answer three questions: *What is this? Is it for me? Should I trust it?* The hero's job is to earn the scroll, not close the deal. The seven elements that belong in the first viewport:
 
-1. **Benefit-driven headline** — Formula: Specific Outcome + Timeframe + For Whom. "Welcome to Hornbill Flight Center" fails; "Earn Your Private Pilot Certificate at Reno-Tahoe International in 6 Months" passes. Headline optimization can deliver up to **34% average conversion lift** ([unhooked.ai](https://unhooked.ai/high-converting-landing-page-2025/)).
+1. **Benefit-driven headline** — Formula: Specific Outcome + Timeframe + For Whom. "Welcome to Hornbill Aviation" fails; "Earn Your Private Pilot Certificate at Reno-Tahoe International in 6 Months" passes. Headline optimization can deliver up to **34% average conversion lift** ([unhooked.ai](https://unhooked.ai/high-converting-landing-page-2025/)).
 2. **Supporting subheadline** (1–2 sentences, plain language, explains *how*).
 3. **Single primary CTA** — one button, not three.
 4. **Hero visual showing the actual product** — generic stock photos reduce credibility by ~12%; product demo videos convert at ~3.6% vs. ~2.7% for static images. Use a real photo of Hornbill's aircraft or a real student preflight — not a Cessna pulled from a stock site.
@@ -861,7 +861,7 @@ Citations remain a top-5 factor but **quality dwarfs quantity** — 25–50 high
 On-page signals carry 15% of local pack weight, 33% of local organic weight, and **24% of AI search weight — the largest AI category**. [Usama Habib](https://usamahabib.com/local-seo-ranking-factors/) · [Syed Hadi Hussain](https://syedhadihussain.com/en/blog/on-page-seo-local-businesses)
 
 **Title tag formula:** `Primary Keyword in City, State | Brand Name`
-- Example: "Flight Training & Pilot Lessons in Reno, NV | Hornbill Flight Center"
+- Example: "Flight Training & Pilot Lessons in Reno, NV | Hornbill Aviation"
 - Keep under 60 characters to avoid truncation
 - Place primary keyword at the beginning
 - Include city name in every local page title
@@ -1153,7 +1153,7 @@ For a flight school, vertical citations signal topical authority that generic di
 |---------|--------|-----|
 | Wrong primary GBP category | Poor query matching — critical ranking factor | Pick "Flight School" not "Aviation"; audit quarterly |
 | NAP inconsistency | Found on ~60% of local audits; erodes trust, suppresses rankings | Create source-of-truth NAP document; audit quarterly |
-| Keyword stuffing business name | #1 reason for fast GBP suspensions | Use your real legal business name — "Hornbill Flight Center," not "Hornbill Flight Center Reno Flight School Pilot Lessons" |
+| Keyword stuffing business name | #1 reason for fast GBP suspensions | Use your real legal business name — "Hornbill Aviation," not "Hornbill Aviation Reno Flight School Pilot Lessons" |
 | Fake reviews | Review purging, "scarlet letter" warning, profile suspension | Build a system for genuine reviews; never incentivize |
 | Buying links | Penalties; low-quality links harm more than help | Earn local links through legitimate community involvement |
 | Neglecting GBP posts | Stale profiles drop in rank | Post minimum once per week |
@@ -1224,7 +1224,7 @@ For Hornbill, the differentiation levers visible from public competitor sites ar
 
 ## Flight School-Specific Marketing: The Aviation Playbook for Hornbill
 
-Hornbill Flight Center is not a generic small business, and generic marketing advice will undersell it. A Part 61 school at RNO operating a uniform PA28 fleet with student-chosen instructors and cross-country rentals sits in a market where the rules are different: the buyer commits $15,000-$110,000 and 3-24 months of their life, the search window is 3-8 weeks, the conversion conversation happens in a cockpit at 3,000 feet, and the #1 unspoken objection is financing. This section is the aviation-specific playbook that translates the research into action for Hornbill.
+Hornbill Aviation is not a generic small business, and generic marketing advice will undersell it. A Part 61 school at RNO operating a uniform PA28 fleet with student-chosen instructors and cross-country rentals sits in a market where the rules are different: the buyer commits $15,000-$110,000 and 3-24 months of their life, the search window is 3-8 weeks, the conversion conversation happens in a cockpit at 3,000 feet, and the #1 unspoken objection is financing. This section is the aviation-specific playbook that translates the research into action for Hornbill.
 
 ### The Core Insight: The Discovery Flight Is a Sales Conversation
 
@@ -1750,7 +1750,7 @@ Meta (Facebook/Instagram) budget: small/medium $1,500-$3,000/month; large multi-
 - **Acron Aviation Academy (Swish Agency, 2025):** 15% YoY lead increase; +5% contact rate improvement; Google rating 3.3 → 3.7; new landing pages doubled conversion rates; multi-channel Paid Search/Meta/Snapchat/Reddit/LinkedIn/CTV/streaming audio/direct mail ([Swish Agency — Acron Aviation Academy](https://www.theswishagency.com/case-studies/acron-aviation-academy)).
 - **Leading Edge Flight Academy (Savy Agency):** 43% new user increase (3 months); 18% session increase; Instagram growth 5.23%; Facebook page views +23% MoM; top 10 rankings on 7 unique keywords ([Savy Agency — Leading Edge Flight Academy](https://savyagency.com/our-work/leading-edge-flight-academy/)).
 
-## Hornbill Flight Center: Tailored Marketing Strategy
+## Hornbill Aviation: Tailored Marketing Strategy
 
 The four research areas — general online marketing, conversion rate optimization, local SEO, and flight-school-specific marketing — converge on a single, simple system for Hornbill. The school's product features are not separate from its marketing; they are the only honest claims the marketing should make, and they map cleanly onto the four messaging pillars established in `thoughts/shared/design/brand_identity_writing_style.md`:
 

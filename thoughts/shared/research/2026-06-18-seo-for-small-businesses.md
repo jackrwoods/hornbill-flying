@@ -37,7 +37,7 @@ last_updated_by: Jack Woods
 
 ## Summary
 
-This document synthesizes three independent research tracks — SEO essentials, competitive ranking across Google/Bing/DuckDuckGo and AI assistants, and social media integration — into a single 2026-era reference for a small local service business building its first website. The motivating context is Hornbill Flight Center, a Part 61 flight school operating a uniform PA28 fleet at Reno–Tahoe International Airport (RNO): a single-location business with instructor choice, cross-country rentals, and competitive RNO rates, currently standing up its first website with no prior web presence, no backlinks, and no brand search history. The findings, however, are generalizable to any small local service business — a plumber, an independent dental practice, a single-location yoga studio, a boutique law firm — that has one physical address, a handful of core services, and limited time and budget. The three sub-questions are treated in dedicated parts (Part 1: Essentials, Part 2: Competitive Ranking, Part 3: Social Media Integration); this section is the executive synthesis that frames them.
+This document synthesizes three independent research tracks — SEO essentials, competitive ranking across Google/Bing/DuckDuckGo and AI assistants, and social media integration — into a single 2026-era reference for a small local service business building its first website. The motivating context is Hornbill Aviation, a Part 61 flight school operating a uniform PA28 fleet at Reno–Tahoe International Airport (RNO): a single-location business with instructor choice, cross-country rentals, and competitive RNO rates, currently standing up its first website with no prior web presence, no backlinks, and no brand search history. The findings, however, are generalizable to any small local service business — a plumber, an independent dental practice, a single-location yoga studio, a boutique law firm — that has one physical address, a handful of core services, and limited time and budget. The three sub-questions are treated in dedicated parts (Part 1: Essentials, Part 2: Competitive Ranking, Part 3: Social Media Integration); this section is the executive synthesis that frames them.
 
 ### What a website MUST include for optimal SEO
 
@@ -106,7 +106,7 @@ The remainder of this document is organized into three parts. Part 1 (SEO Essent
 ---
 ## Part 1: What a Small Business Website MUST Include for Optimal SEO
 
-This section covers the foundational SEO requirements every small business website needs in 2026 — technical fundamentals, on-page essentials, content strategy, local SEO (the highest-leverage area for a single-location service business like Hornbill Flight Center at RNO), search-engine submission, accessibility, and a prioritized quick-wins action plan. Every recommendation is grounded in current 2026 documentation from Google Search Central, Bing Webmaster Tools, schema.org, and major SEO research bodies (BrightLocal, Whitespark, Moz, Ahrefs, SEMrush).
+This section covers the foundational SEO requirements every small business website needs in 2026 — technical fundamentals, on-page essentials, content strategy, local SEO (the highest-leverage area for a single-location service business like Hornbill Aviation at RNO), search-engine submission, accessibility, and a prioritized quick-wins action plan. Every recommendation is grounded in current 2026 documentation from Google Search Central, Bing Webmaster Tools, schema.org, and major SEO research bodies (BrightLocal, Whitespark, Moz, Ahrefs, SEMrush).
 
 ### 1.1 Technical SEO Fundamentals
 
@@ -208,13 +208,13 @@ For a single-location local service business like Hornbill, the essential schema
 
 **Required by Google**: `name` and `address` (as PostalAddress). **Recommended**: `telephone`, `url`, `geo` (GeoCoordinates with 5–6 decimal places), `openingHoursSpecification`, `priceRange` (under 100 chars), `image`, `sameAs` (links to your social profiles), `aggregateRating` and `review` (only if you follow Google's Review snippet guidelines — do not fake these).
 
-Sample JSON-LD for Hornbill Flight Center:
+Sample JSON-LD for Hornbill Aviation:
 
 ```json
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "Hornbill Flight Center",
+  "name": "Hornbill Aviation",
   "description": "Part 61 flight school at Reno-Tahoe International Airport offering private pilot, instrument rating, commercial, CFI, discovery flights, and aircraft rental.",
   "url": "https://hornbillflight.com/",
   "telephone": "+1775XXXXXXX",
@@ -330,7 +330,7 @@ Sample responsive hero image (with format negotiation, `fetchpriority="high"`, N
   <source srcset="hero-image.avif" type="image/avif">
   <source srcset="hero-image.webp" type="image/webp">
   <img src="hero-image.jpg"
-       alt="Hornbill Flight Center Cessna 172 N6576J at Reno-Tahoe International Airport"
+       alt="Hornbill Aviation Cessna 172 N6576J at Reno-Tahoe International Airport"
        width="1600" height="900"
        fetchpriority="high"
        decoding="async">
@@ -394,7 +394,7 @@ Best practices:
 Example for Hornbill's private pilot page:
 
 ```
-Private Pilot License Reno | Part 61 Flight Training | Hornbill Flight Center
+Private Pilot License Reno | Part 61 Flight Training | Hornbill Aviation
 ```
 
 #### Meta Descriptions
@@ -460,13 +460,13 @@ Short, keyword-rich, hyphen-separated, lowercase, no dates for evergreen content
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Private Pilot License Reno | Part 61 Flight Training | Hornbill Flight Center</title>
-  <meta name="description" content="Earn your private pilot license in Reno with Hornbill Flight Center. Part 61 flight training at Reno-Tahoe International Airport. Flexible scheduling, experienced CFIs, and Cessna 172 rental. Book your discovery flight today.">
+  <title>Private Pilot License Reno | Part 61 Flight Training | Hornbill Aviation</title>
+  <meta name="description" content="Earn your private pilot license in Reno with Hornbill Aviation. Part 61 flight training at Reno-Tahoe International Airport. Flexible scheduling, experienced CFIs, and Cessna 172 rental. Book your discovery flight today.">
 
   <link rel="canonical" href="https://hornbillflight.com/private-pilot-license-reno/">
 
   <meta property="og:title" content="Private Pilot License Reno | Part 61 Flight Training">
-  <meta property="og:description" content="Earn your private pilot license in Reno with Hornbill Flight Center. Part 61 training at RNO.">
+  <meta property="og:description" content="Earn your private pilot license in Reno with Hornbill Aviation. Part 61 training at RNO.">
   <meta property="og:image" content="https://hornbillflight.com/images/n6576j-instrument-panel.webp">
   <meta property="og:url" content="https://hornbillflight.com/private-pilot-license-reno/">
   <meta property="og:type" content="website">
@@ -631,7 +631,7 @@ GBP signals account for approximately **32% of local pack ranking influence** (B
 1. Go to business.google.com and claim/verify your business.
 2. **Primary category** — the #1 ranking factor. Pick the most specific one that fits. For a flight school, "Flight School" or "Aviation Training Institute" if available — check the GBP category list. Do not use generic categories.
 3. Add up to 9 secondary categories for adjacent services.
-4. **Business name** — use the exact real-world name. Do NOT add keywords or city names (e.g., "Hornbill Flight Center — Reno Flight School" is a violation risk).
+4. **Business name** — use the exact real-world name. Do NOT add keywords or city names (e.g., "Hornbill Aviation — Reno Flight School" is a violation risk).
 5. **NAP** — Name, Address, Phone must be IDENTICAL across GBP, website, Yelp, Apple Maps, and all directories. Inconsistent NAP causes 18% lower visibility. Use a local US phone number, not toll-free.
 6. **Business description** — use all 750 characters. Lead with primary service + city. Include a soft CTA.
 7. **Hours** — fill in every day. Add holiday hours via special hours. Update immediately if changed.
@@ -1180,7 +1180,7 @@ Topical authority is a search engine's (and now AI engine's) assessment of how d
 - Timeline: 3–6 months to see measurable authority signals
 - Internal linking: bidirectional pillar↔cluster links plus contextual cluster↔cluster links
 
-For Hornbill Flight Center, topical clusters might include: "Private Pilot License," "Instrument Rating," "Commercial Pilot," "Flight Training Costs," "Aviation Medical," "Reno Flight Training," etc.
+For Hornbill Aviation, topical clusters might include: "Private Pilot License," "Instrument Rating," "Commercial Pilot," "Flight Training Costs," "Aviation Medical," "Reno Flight Training," etc.
 
 Sources: [HubSpot — Keyword Clustering for Topic Authority 2026](https://blog.hubspot.com/marketing/keyword-clustering), [Rankeo — Topical Authority 2026](https://rankeo.io/blog/topical-authority-topic-clusters), [Topical Map AI — Pillar Page Strategy](https://topicalmap.ai/blog/auto/pillar-page-and-cluster-content-strategy-guide), [MentionLayer — Topical Authority Complete Guide](https://www.mentionlayer.com/blog/topical-authority-complete-guide).
 
@@ -1417,7 +1417,7 @@ YouTube is the second most-visited website in the world with ~48.6 billion visit
 - Build topic clusters of 5–10 videos per core topic
 - Audience retention/watch time: ~45% weight; engagement: ~30%; relevance: ~25%
 
-For Hornbill Flight Center, YouTube videos answering questions like "How much does it cost to get a private pilot license in Reno?" or "What's the difference between Part 61 and Part 141 flight schools?" are realistic content that could earn AI citations before the website itself ranks.
+For Hornbill Aviation, YouTube videos answering questions like "How much does it cost to get a private pilot license in Reno?" or "What's the difference between Part 61 and Part 141 flight schools?" are realistic content that could earn AI citations before the website itself ranks.
 
 Sources: [Search Engine Land — YouTube SEO and AI Overviews (Jan 2026)](https://searchengineland.com/youtube-seo-ai-overviews-467253), [YouTubeNiches — YouTube SEO 2026](https://youtubeniches.com/blog/youtube-seo-optimization-2026-ranking-guide), [Zeover Research — YouTube Content That Ranks (April 2026)](https://blog.zeover.com/2026/04/17/youtube-content-that-ranks-in-search-and-ai-what-actually-works-in-2026/), [Brafton — YouTube Fueling AI Search](https://www.brafton.co.uk/blog/seo/youtube-is-fueling-ai-search-results-heres-how-to-make-your-videos-discoverable/).
 
@@ -1553,7 +1553,7 @@ The 2026 consensus: scale alone is not a strategy. Swapping a city name into a t
 
 **The 60–70% uniqueness threshold:** Each page needs 30–60% truly unique content to survive the Helpful Content classifier. If removing the city name leaves nothing location-specific, the page is too thin. The data layer is the moat, not the template — successful operations spend 80% of effort on data sourcing, 20% on templates.
 
-**For Hornbill Flight Center (small business approach):**
+**For Hornbill Aviation (small business approach):**
 
 - Start with actual service area — cities where you can genuinely serve students (Reno, Sparks, Carson City, Truckee, Minden, Gardnerville, Fernley — perhaps 10–20 cities max)
 - Each location page needs unique local data: nearest airports, driving distances, local weather considerations for flight training, local AME (Aviation Medical Examiner) listings, local housing/hotels for visiting students
@@ -1571,7 +1571,7 @@ Sources: [Topical Map AI — Programmatic SEO for Local Service Pages 2026](http
 
 #### Other Competitive Strategy Elements
 
-**Brand search volume and direct traffic** — Branded searches are a ranking signal. Building brand awareness through sponsorships, PR, and community involvement generates branded searches that Google interprets as authority. For a flight school: "Hornbill Flight Center" branded search growth signals growing entity recognition.
+**Brand search volume and direct traffic** — Branded searches are a ranking signal. Building brand awareness through sponsorships, PR, and community involvement generates branded searches that Google interprets as authority. For a flight school: "Hornbill Aviation" branded search growth signals growing entity recognition.
 
 **User engagement signals (confirmed by 2024 API leak)** — NavBoost system uses CTR, dwell time, scroll depth, return-to-SERP behavior, siteAuthority (site-level quality score separate from page-level signals), and "Twiddlers" (real-time ranking adjustments). These are engagement signals you can influence but not fake.
 
@@ -1616,7 +1616,7 @@ Sources: [Topical Map AI — Programmatic SEO for Local Service Pages 2026](http
 - Setup: generate key (8–128 alphanumeric chars), host text file at domain root, send HTTP POST to `https://api.indexnow.org/IndexNow`
 - Native integrations: Wix, Shopify, Cloudflare, WordPress.com. WordPress requires a plugin (RankMath, Yoast, CrawlWP).
 
-**For Hornbill Flight Center:** Set up IndexNow immediately — it is free, gives you instant indexing on Bing (which powers Yahoo, DuckDuckGo, Copilot, and ChatGPT Search), and Google's lack of support doesn't matter because Google will discover pages through sitemaps and crawling anyway.
+**For Hornbill Aviation:** Set up IndexNow immediately — it is free, gives you instant indexing on Bing (which powers Yahoo, DuckDuckGo, Copilot, and ChatGPT Search), and Google's lack of support doesn't matter because Google will discover pages through sitemaps and crawling anyway.
 
 #### DuckDuckGo
 
@@ -1726,7 +1726,7 @@ PPC and SEO are complementary, not competitors. The smartest growth teams treat 
 
 **2026-specific:** AI Overviews have pushed organic results further down the page, increasing PPC's value for high-intent commercial queries. Google's AI Max (upgrading Dynamic Search Ads Sept 2026) uses website content + real-time intent signals — your site's SEO quality now directly affects paid search performance. Bing Ads offers ~33% lower CPCs compared to Google Ads.
 
-**For Hornbill Flight Center:** Run Google Ads for "flight school Reno," "private pilot lessons Reno," "instrument rating Nevada" from day one. The search-term data reveals which queries actually convert before you invest months ranking for them organically. Begin shifting budget to SEO as organic rankings compound.
+**For Hornbill Aviation:** Run Google Ads for "flight school Reno," "private pilot lessons Reno," "instrument rating Nevada" from day one. The search-term data reveals which queries actually convert before you invest months ranking for them organically. Begin shifting budget to SEO as organic rankings compound.
 
 Sources: [SearchPod — How Long Until a New Website Ranks (2026)](https://searchpod.com/answers/how-long-does-it-take-a-new-website-to-rank-on-google), [Site Academy — Why New Websites Almost Never Rank in First 6 Months](https://siteacademy.co.uk/articles/technical-seo/why-new-websites-almost-never-rank-in-their-first-6-months-and-what-google-is-actually-waiting-for/), [Backend Spark — How Long Does It Take (Jan 2026)](https://backendspark.com/2026/01/05/how-long-does-it-take-for-a-new-website-to-rank-on-google/), [DASH-SEO — What Is the Google Sandbox](https://dash-seo.com/insights/what-is-google-sandbox-in-seo/), [SEOEngine — Google Sandbox 2026](https://seoengine.ai/blog/what-is-google-sandbox), [Codivox — PPC vs SEO for Small Business 2026](https://codivox.com/blog/ppc-vs-seo-small-business-2026/), [Groas — PPC vs SEO 2026](https://groas.ai/post/ppc-vs-seo-2026-when-to-invest-combine-both-budget-allocation).
 
@@ -1926,14 +1926,14 @@ OG tags control how your pages render as link previews on Facebook, LinkedIn, Sl
 
 ```html
 <!-- Core required -->
-<meta property="og:title" content="Instrument Rating Training in Reno | Hornbill Flight Center" />
+<meta property="og:title" content="Instrument Rating Training in Reno | Hornbill Aviation" />
 <meta property="og:type" content="website" /> <!-- use "article" for blog posts -->
 <meta property="og:url" content="https://hornbillflight.com/instrument-rating-reno" />
 <meta property="og:image" content="https://hornbillflight.com/og/instrument-rating-1200x630.jpg" />
 
 <!-- Strongly recommended -->
 <meta property="og:description" content="Earn your instrument rating at Reno-Tahoe International. Part 61 training, mountain flying specialists, flexible scheduling for working pilots." />
-<meta property="og:site_name" content="Hornbill Flight Center" />
+<meta property="og:site_name" content="Hornbill Aviation" />
 <meta property="og:locale" content="en_US" />
 
 <!-- Image sub-properties (help crawlers render previews faster) -->
@@ -1999,7 +1999,7 @@ Every page should have **unique** `og:title`, `og:description`, `og:url`, and `o
 
 ```html
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Instrument Rating Training in Reno | Hornbill Flight Center" />
+<meta name="twitter:title" content="Instrument Rating Training in Reno | Hornbill Aviation" />
 <meta name="twitter:description" content="Part 61 IFR training at RNO. Mountain flying specialists. Flexible scheduling for working pilots." />
 <meta name="twitter:image" content="https://hornbillflight.com/og/instrument-rating-1200x628.png" />
 <meta name="twitter:image:alt" content="Cessna 172 instrument panel on an IFR training flight over the Sierra Nevada" />
@@ -2057,7 +2057,7 @@ Sources: [Twitter/X Card Guide - og-image.org](https://og-image.org/docs/platfor
 
 Google's [Organization structured data documentation](https://developers.google.com/search/docs/appearance/structured-data/organization) explicitly recommends `sameAs`: *"The URL of a page on another website with additional information about your organization... a URL to your organization's profile page on a social media or review site. You can provide multiple `sameAs` URLs."*
 
-#### Sample JSON-LD for Hornbill Flight Center
+#### Sample JSON-LD for Hornbill Aviation
 
 ```html
 <script type="application/ld+json">
@@ -2065,7 +2065,7 @@ Google's [Organization structured data documentation](https://developers.google.
   "@context": "https://schema.org",
   "@type": "FlightSchool",
   "@id": "https://hornbillflight.com/#organization",
-  "name": "Hornbill Flight Center",
+  "name": "Hornbill Aviation",
   "description": "Part 61 flight school at Reno-Tahoe International Airport offering private pilot, instrument rating, commercial, and CFI training. Mountain flying specialists.",
   "url": "https://hornbillflight.com",
   "logo": "https://hornbillflight.com/logo.png",
@@ -2177,7 +2177,7 @@ The **Web Share API** (`navigator.share`) lets you invoke the device's native sh
       try {
         await navigator.share({
           title: document.title,
-          text: 'Check out Hornbill Flight Center — flight training at Reno-Tahoe International.',
+          text: 'Check out Hornbill Aviation — flight training at Reno-Tahoe International.',
           url: window.location.href
         });
       } catch (err) {
@@ -2422,7 +2422,7 @@ YouTube processes over **3 billion searches per month** — second only to Googl
 {
   "@context": "https://schema.org",
   "@type": "VideoObject",
-  "name": "Your First Flight Lesson: What to Expect at Hornbill Flight Center",
+  "name": "Your First Flight Lesson: What to Expect at Hornbill Aviation",
   "description": "Walkthrough of a first discovery flight at Reno-Tahoe International. Pre-flight inspection, taxi, takeoff, basic maneuvers, and landing with a CFI.",
   "thumbnailUrl": "https://hornbillflight.com/videos/thumbnails/first-flight-lesson.jpg",
   "uploadDate": "2026-06-17T08:00:00-08:00",
@@ -2451,7 +2451,7 @@ YouTube processes over **3 billion searches per month** — second only to Googl
 {
   "@context": "https://schema.org",
   "@type": "VideoObject",
-  "name": "Your First Flight Lesson: What to Expect at Hornbill Flight Center",
+  "name": "Your First Flight Lesson: What to Expect at Hornbill Aviation",
   "thumbnailUrl": "https://hornbillflight.com/videos/thumbnails/first-flight-lesson.jpg",
   "uploadDate": "2026-06-17T08:00:00-08:00",
   "potentialAction": {
@@ -2673,7 +2673,7 @@ This is the single best metric for measuring social's indirect SEO impact.
 3. Track **branded search impressions and clicks over time**
 4. When social activity increases, watch for a corresponding lift in branded search — this is the clearest indirect SEO benefit of social
 
-**For Hornbill**: Track queries like "hornbill flight center," "hornbill flight school," "hornbill aviation," "hornbill reno." If an Instagram Reel goes viral on a given week, check if branded search lifts the following 1–2 weeks.
+**For Hornbill**: Track queries like "Hornbill Aviation," "hornbill flight school," "hornbill aviation," "hornbill reno." If an Instagram Reel goes viral on a given week, check if branded search lifts the following 1–2 weeks.
 
 #### Backlinks Acquired via Social-Driven Content Discovery
 
@@ -2724,7 +2724,7 @@ If you have limited time, here's what actually moves the needle, in priority ord
 
 #### Minimum Viable Social Integration for a Brand-New Website
 
-For Hornbill Flight Center launching its first website, here's the minimum viable social integration:
+For Hornbill Aviation launching its first website, here's the minimum viable social integration:
 
 **On Every Page**:
 - Unique OG tags (title, description, image, url)
@@ -2786,7 +2786,7 @@ For Hornbill Flight Center launching its first website, here's the minimum viabl
 ---
 ## Code References
 
-A consolidated, copy-paste-ready reference of every concrete code/markup sample surfaced across the three research reports. All examples are adapted to the Hornbill Flight Center context (domain `hornbillflight.com`, Reno–Tahoe International Airport / RNO, Part 61, PA28 fleet, N6576J aircraft). Where a sample appeared in multiple reports, it is included once and the sourcing is noted. Validate every block with the [Rich Results Test](https://search.google.com/test/rich-results) and [validator.schema.org](https://validator.schema.org/) before deployment.
+A consolidated, copy-paste-ready reference of every concrete code/markup sample surfaced across the three research reports. All examples are adapted to the Hornbill Aviation context (domain `hornbillflight.com`, Reno–Tahoe International Airport / RNO, Part 61, PA28 fleet, N6576J aircraft). Where a sample appeared in multiple reports, it is included once and the sourcing is noted. Validate every block with the [Rich Results Test](https://search.google.com/test/rich-results) and [validator.schema.org](https://validator.schema.org/) before deployment.
 
 ### Sample JSON-LD: LocalBusiness schema for the homepage
 
@@ -2798,7 +2798,7 @@ Place this on the homepage `<head>`, server-side rendered (Googlebot Smartphone 
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "@id": "https://hornbillflight.com/#business",
-  "name": "Hornbill Flight Center",
+  "name": "Hornbill Aviation",
   "description": "Part 61 flight school at Reno-Tahoe International Airport offering private pilot, instrument rating, commercial pilot, CFI training, discovery flights, aircraft rental, and cross-country rental.",
   "url": "https://hornbillflight.com/",
   "telephone": "+17755550100",
@@ -2849,7 +2849,7 @@ Use `sameAs` to link all owned social profiles so Google's Knowledge Graph and L
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "@id": "https://hornbillflight.com/#organization",
-  "name": "Hornbill Flight Center",
+  "name": "Hornbill Aviation",
   "description": "Part 61 flight school at Reno-Tahoe International Airport offering private pilot, instrument rating, commercial, and CFI training. Mountain flying specialists.",
   "url": "https://hornbillflight.com",
   "logo": "https://hornbillflight.com/logo.png",
@@ -2926,7 +2926,7 @@ Required properties: `name`, `thumbnailUrl`, `uploadDate`. Recommended: `content
 {
   "@context": "https://schema.org",
   "@type": "VideoObject",
-  "name": "Your First Flight Lesson: What to Expect at Hornbill Flight Center",
+  "name": "Your First Flight Lesson: What to Expect at Hornbill Aviation",
   "description": "Walkthrough of a first discovery flight at Reno-Tahoe International. Pre-flight inspection, taxi, takeoff, basic maneuvers, and landing with a CFI.",
   "thumbnailUrl": "https://hornbillflight.com/videos/thumbnails/first-flight-lesson.jpg",
   "uploadDate": "2026-06-17T08:00:00-08:00",
@@ -2957,7 +2957,7 @@ SeekToAction drives chapter-level navigation to **your domain** rather than yout
 {
   "@context": "https://schema.org",
   "@type": "VideoObject",
-  "name": "Your First Flight Lesson: What to Expect at Hornbill Flight Center",
+  "name": "Your First Flight Lesson: What to Expect at Hornbill Aviation",
   "thumbnailUrl": "https://hornbillflight.com/videos/thumbnails/first-flight-lesson.jpg",
   "uploadDate": "2026-06-17T08:00:00-08:00",
   "potentialAction": {
@@ -3030,13 +3030,13 @@ A complete `<head>` for the Private Pilot License page. Charset and viewport are
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Private Pilot License Reno | Part 61 Flight Training | Hornbill Flight Center</title>
-  <meta name="description" content="Earn your private pilot license in Reno with Hornbill Flight Center. Part 61 flight training at Reno-Tahoe International Airport. Flexible scheduling, experienced CFIs, and Cessna 172 rental. Book your discovery flight today.">
+  <title>Private Pilot License Reno | Part 61 Flight Training | Hornbill Aviation</title>
+  <meta name="description" content="Earn your private pilot license in Reno with Hornbill Aviation. Part 61 flight training at Reno-Tahoe International Airport. Flexible scheduling, experienced CFIs, and Cessna 172 rental. Book your discovery flight today.">
 
   <link rel="canonical" href="https://hornbillflight.com/private-pilot-license-reno/">
 
   <meta property="og:title" content="Private Pilot License Reno | Part 61 Flight Training">
-  <meta property="og:description" content="Earn your private pilot license in Reno with Hornbill Flight Center. Part 61 training at RNO.">
+  <meta property="og:description" content="Earn your private pilot license in Reno with Hornbill Aviation. Part 61 training at RNO.">
   <meta property="og:image" content="https://hornbillflight.com/images/n6576j-instrument-panel.webp">
   <meta property="og:url" content="https://hornbillflight.com/private-pilot-license-reno/">
   <meta property="og:type" content="website">
@@ -3079,14 +3079,14 @@ OG tags control how pages render as link previews on Facebook, LinkedIn, Slack, 
 
 ```html
 <!-- Core required -->
-<meta property="og:title" content="Instrument Rating Training in Reno | Hornbill Flight Center" />
+<meta property="og:title" content="Instrument Rating Training in Reno | Hornbill Aviation" />
 <meta property="og:type" content="website" /> <!-- use "article" for blog posts -->
 <meta property="og:url" content="https://hornbillflight.com/instrument-rating-reno" />
 <meta property="og:image" content="https://hornbillflight.com/og/instrument-rating-1200x630.jpg" />
 
 <!-- Strongly recommended -->
 <meta property="og:description" content="Earn your instrument rating at Reno-Tahoe International. Part 61 training, mountain flying specialists, flexible scheduling for working pilots." />
-<meta property="og:site_name" content="Hornbill Flight Center" />
+<meta property="og:site_name" content="Hornbill Aviation" />
 <meta property="og:locale" content="en_US" />
 
 <!-- Image sub-properties (help crawlers render previews faster) -->
@@ -3110,7 +3110,7 @@ OG tags control how pages render as link previews on Facebook, LinkedIn, Slack, 
 
 ```html
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Instrument Rating Training in Reno | Hornbill Flight Center" />
+<meta name="twitter:title" content="Instrument Rating Training in Reno | Hornbill Aviation" />
 <meta name="twitter:description" content="Part 61 IFR training at RNO. Mountain flying specialists. Flexible scheduling for working pilots." />
 <meta name="twitter:image" content="https://hornbillflight.com/og/instrument-rating-1200x628.png" />
 <meta name="twitter:image:alt" content="Cessna 172 instrument panel on an IFR training flight over the Sierra Nevada" />
@@ -3127,7 +3127,7 @@ The hero image is the LCP element on ~70–80% of pages, so do NOT lazy-load it 
   <source srcset="hero-image.avif" type="image/avif">
   <source srcset="hero-image.webp" type="image/webp">
   <img src="hero-image.jpg"
-       alt="Hornbill Flight Center Cessna 172 N6576J at Reno-Tahoe International Airport"
+       alt="Hornbill Aviation Cessna 172 N6576J at Reno-Tahoe International Airport"
        width="1600" height="900"
        fetchpriority="high"
        decoding="async">
@@ -3166,7 +3166,7 @@ The Web Share API invokes the device's native sharing UI with a single button �
       try {
         await navigator.share({
           title: document.title,
-          text: 'Check out Hornbill Flight Center — flight training at Reno-Tahoe International.',
+          text: 'Check out Hornbill Aviation — flight training at Reno-Tahoe International.',
           url: window.location.href
         });
       } catch (err) {
@@ -3227,7 +3227,7 @@ https://hornbillflight.com/instrument-rating-reno?utm_source=youtube&utm_medium=
 ---
 ## Architecture Documentation
 
-This section documents the SEO patterns, conventions, and design recommendations that should be baked into the Hornbill Flight Center website from day one. Because the project is still in brand-design phase (only image assets and design docs exist, no codebase yet), this is a forward-looking architecture reference — the patterns to apply when the site is built. It is organized as a checklist-style reference covering site architecture, technical foundation, schema markup, image strategy, on-page template, local SEO, search engine submission, social integration, accessibility, performance budget, content architecture, and the monitoring stack.
+This section documents the SEO patterns, conventions, and design recommendations that should be baked into the Hornbill Aviation website from day one. Because the project is still in brand-design phase (only image assets and design docs exist, no codebase yet), this is a forward-looking architecture reference — the patterns to apply when the site is built. It is organized as a checklist-style reference covering site architecture, technical foundation, schema markup, image strategy, on-page template, local SEO, search engine submission, social integration, accessibility, performance budget, content architecture, and the monitoring stack.
 
 ### 1. Site architecture
 
@@ -3306,7 +3306,7 @@ Use **JSON-LD format** in the `<head>` of each page, server-side rendered. Valid
 
 Every page gets:
 
-- [ ] **Unique title tag** — 50–60 characters, primary keyword front-loaded (within first 2–3 words), brand suffix at end. Formula: `Primary Keyword - Modifier/Value | Hornbill Flight Center`. Add numerals and brackets/parens where genuine (e.g., "(Part 61)") for CTR lift.
+- [ ] **Unique title tag** — 50–60 characters, primary keyword front-loaded (within first 2–3 words), brand suffix at end. Formula: `Primary Keyword - Modifier/Value | Hornbill Aviation`. Add numerals and brackets/parens where genuine (e.g., "(Part 61)") for CTR lift.
 - [ ] **Unique meta description** — 140–155 characters, written as ad copy with a clear CTA, keyword in first sentence. Critical info in first 120 characters for mobile. No double quotes. Google rewrites 62–74% of the time, but well-written ones still lift CTR when they survive and are now extracted into AI Overview citations.
 - [ ] **One H1 with the primary keyword** stating the page topic.
 - [ ] **Question-based H2s** for AI Overview eligibility (e.g., "How much does a private pilot license cost in Reno?"). Google frequently pulls the nearest heading as the label and the paragraph below it as the AI Overview content.
@@ -3413,7 +3413,7 @@ The SEO research is grounded in two existing brand/design documents in the repos
 
 The visual identity document establishes the brand system that the website's HTML, CSS, schema, and content must honor:
 
-- **Brand name:** "Hornbill Flight Center." The logo currently reads "Hornbill Flying Club" — keep the crest as-is until the wordmark is updated, but pair it with the text name "Hornbill Flight Center" so search and signage stay coherent. This matters for entity recognition: the schema `name`, GBP business name, and visible text name must all agree.
+- **Brand name:** "Hornbill Aviation." The logo currently reads "Hornbill Flying Club" — keep the crest as-is until the wordmark is updated, but pair it with the text name "Hornbill Aviation" so search and signage stay coherent. This matters for entity recognition: the schema `name`, GBP business name, and visible text name must all agree.
 - **Tagline candidates:** "Your path, your pace, your wings." / "Real flights. Real experience. Real confidence." / "Built around how you learn best."
 - **Brand promise:** "We make learning to fly fit your life, not the other way around."
 - **Positioning:** Part 61 school at RNO with a uniform PA28 fleet, instructor choice, cross-country rentals, and the most competitive rental rates at RNO.
@@ -3426,8 +3426,8 @@ The visual identity document establishes the brand system that the website's HTM
 
 The brand identity and writing style document establishes the voice, word list, and page-level copy guidance that the on-page SEO template must enforce:
 
-- **Brand story:** "Most flight schools make you fit their program. Hornbill Flight Center builds the program around you."
-- **Positioning statement:** "For people in Northern Nevada and beyond who want to learn to fly, Hornbill Flight Center is the flexible, student-first Part 61 school that combines consistent aircraft, instructor choice, real cross-country experience, and the most competitive rental rates at RNO."
+- **Brand story:** "Most flight schools make you fit their program. Hornbill Aviation builds the program around you."
+- **Positioning statement:** "For people in Northern Nevada and beyond who want to learn to fly, Hornbill Aviation is the flexible, student-first Part 61 school that combines consistent aircraft, instructor choice, real cross-country experience, and the most competitive rental rates at RNO."
 - **Four messaging pillars:** Flexibility / Consistency / Real-world experience / Value — each with proof points. These become the topic clusters (see above).
 - **Pillar combinations by page:** Homepage (Flexibility + Real-world experience + value); Training programs (Flexibility + Consistency); Fleet/pricing (Value + Consistency); Instructors (Flexibility); Cross-country (Real-world experience + Flexibility); About (Real-world experience + Flexibility + value); Contact (Flexibility).
 - **Voice attributes:** Friendly, Confident, Inspirational, Reassuring, Encouraging, Professional.
@@ -3435,7 +3435,7 @@ The brand identity and writing style document establishes the voice, word list, 
 - **Writing rules:** Lead with the reader's outcome. Use specific numbers and names — "PA28-161" over "our fleet," "RNO" over "our airport," "$149/hour wet" over "competitive rates." One idea per sentence. Prefer active voice. Prefer "you." Answer objections directly. Use aviation terms naturally. Make CTAs concrete. Read it out loud.
 - **Word list — preferred:** learn to fly / train at your pace / choose your instructor / PA28 fleet / wet rate / cross-country rental / real-world experience / discovery flight / checkride / Part 61 / RNO / logbook hours / solo flight / consistent aircraft / transparent pricing.
 - **Word list — avoid:** passion for aviation / unlock your potential / soar to new heights / sky's the limit / elevate your dreams / world-class / premier / best-in-class / aviation family / passionate team / unparalleled / unique experience / tailored solutions / end-to-end / in today's world / it's important to note / at the end of the day / ultimately / leverage / synergy.
-- **Capitalization:** Sentence case for headings. Capitalize FAA / CFI / Part 61 / PA28 / RNO / Hornbill Flight Center. Don't capitalize generic job titles.
+- **Capitalization:** Sentence case for headings. Capitalize FAA / CFI / Part 61 / PA28 / RNO / Hornbill Aviation. Don't capitalize generic job titles.
 - **Numbers:** Spell out one through nine. Numerals for 10+. Always numerals for prices, aircraft identifiers, hours, rates, years — "$149/hour," "PA28-161," "40+ hours," "2026." Use "$149/hour wet" not "$149/hour, wet."
 - **Page-level copy guidance:** Homepage hero headline under 12 words leading with flexibility + outcome; subheadline adds concrete proof; proof strip 3–4 stat/benefit lines with real numbers; CTA "Book a discovery flight." Training programs: one section per certificate/rating with what it is / typical hours / what you can do after / next step, using real names (Private Pilot, Instrument Rating, Commercial Pilot, CFI). Fleet and pricing: lead with transparency promise, table format aircraft/rate/notes, short FAQ. Instructors: one card per instructor (photo/name/focus area/hours/experience), lead with human not resume. Cross-country: tell one trip story as example (route/aircraft/what student did/what they learned), CTA "Ask about cross-country rental." About: origin story of name and school, why Part 61 / why RNO / why uniform fleet, brief and specific. Contact: phone/email/location/booking link, lower the barrier — "No commitment. Just questions or a first flight."
 - **Review checklist:** Does it sound like something a real instructor would say to a prospective student? Is the student the subject of the sentence more often than the school? Are all claims specific? Are there clichés/superlatives/LLM hedges? Is the CTA concrete? Does it answer the obvious worry? Is the tone appropriate? Would you feel confident signing up based on this copy alone?

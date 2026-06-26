@@ -32,7 +32,7 @@ export function ProgramStub({ program, description, related }: ProgramStubProps)
       { name: program.title, url: absoluteUrl(pageUrl, BASE) },
     ]),
     buildService(
-      `${program.title} training — Hornbill Flight Center`,
+      `${program.title} training — Hornbill Aviation`,
       description || program.shortDescription,
       pageUrl
     ),

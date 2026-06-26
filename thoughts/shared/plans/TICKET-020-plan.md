@@ -8,7 +8,7 @@ created: 2026-06-18
 
 ## 1. Scope summary
 
-TICKET-020 builds the public `/contact/` page for the Hornbill Flight Center static Next.js marketing site. The page is the single source of truth for prospective students and visitors who prefer phone, email, or an in-person visit. It must present the exact NAP (name, address, phone), office hours, an embedded map, a working contact form, and direct click-to-call/email links. It also reinforces conversion with a prominent discovery-flight CTA and internal links to the Location and Discovery Flight pages.
+TICKET-020 builds the public `/contact/` page for the Hornbill Aviation static Next.js marketing site. The page is the single source of truth for prospective students and visitors who prefer phone, email, or an in-person visit. It must present the exact NAP (name, address, phone), office hours, an embedded map, a working contact form, and direct click-to-call/email links. It also reinforces conversion with a prominent discovery-flight CTA and internal links to the Location and Discovery Flight pages.
 
 What this ticket produces:
 
@@ -113,7 +113,7 @@ These are required and must already exist before this ticket ships.
 
 **Title tag:**
 ```
-Contact Hornbill Flight Center in Reno, NV | Hornbill Flight Center
+Contact Hornbill Aviation in Reno, NV | Hornbill Aviation
 ```
 
 **Meta description (under 155 characters):**
@@ -134,12 +134,12 @@ Call 555-555-1234 or email office@hornbillaviation.com. Visit us at 1008 Gentry 
 
 1. **PageHeader**
    - Breadcrumb: `Home > Contact`
-   - H1: "Contact Hornbill Flight Center"
+   - H1: "Contact Hornbill Aviation"
    - Subheadline: "Call, email, or stop by. We're here to answer questions and help you book your first flight."
 
 2. **ContactDetailsSection**
    - **Address block:**
-     - Hornbill Flight Center
+     - Hornbill Aviation
      - 1008 Gentry Way
      - Reno, NV 89512
      - Link text: "Get directions" → external Google Maps directions URL (configured in `src/lib/config.ts`).
@@ -191,7 +191,7 @@ Call 555-555-1234 or email office@hornbillaviation.com. Visit us at 1008 Gentry 
 
 ### 4.3 Heading hierarchy
 
-- H1: "Contact Hornbill Flight Center" only.
+- H1: "Contact Hornbill Aviation" only.
 - H2: "Find us at Reno–Tahoe (RNO)", "Send us a message", "Common questions".
 - H3: Section subheads inside cards if needed.
 
@@ -201,7 +201,7 @@ Inject the following JSON-LD via `SchemaInjector` on `/contact/`:
 
 1. **LocalBusiness** (enhanced with contact details)
    - `@id`: `https://hornbillaviation.com/#localbusiness`
-   - `name`: `Hornbill Flight Center`
+   - `name`: `Hornbill Aviation`
    - `url`: `https://hornbillaviation.com/`
    - `image`: site hero image
    - `telephone`: `+1-555-555-1234`
@@ -344,7 +344,7 @@ Fire the following events (mapped to GA4 / GTM data layer):
 
 ### 7.4 SEO metadata checks
 
-1. Verify title tag: `Contact Hornbill Flight Center in Reno, NV | Hornbill Flight Center`.
+1. Verify title tag: `Contact Hornbill Aviation in Reno, NV | Hornbill Aviation`.
 2. Verify meta description is under 155 characters and includes "discovery flight", phone, and address signals.
 3. Verify canonical link is self-referencing with trailing slash: `https://hornbillaviation.com/contact/`.
 4. Verify OpenGraph and Twitter tags are present and use absolute image URLs.

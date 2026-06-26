@@ -22,7 +22,7 @@ export const privacyContent: PrivacyContent = {
       id: "introduction",
       heading: "Introduction",
       paragraphs: [
-        "Hornbill Flight Center respects your privacy. This policy explains what information we collect when you visit our website, book a flight, or contact us; how we use and protect that information; and the choices you have.",
+        "Hornbill Aviation respects your privacy. This policy explains what information we collect when you visit our website, book a flight, or contact us; how we use and protect that information; and the choices you have.",
         "By using our website or submitting a booking request, you agree to the practices described here. If you do not agree, please do not use the site.",
       ],
     },

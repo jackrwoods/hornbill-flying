@@ -22,7 +22,7 @@ export default function SportPilotProgramPage() {
       title: sportPilotProgram.title,
       description: sportPilotProgram.metaDescription,
       url: "/programs/sport-pilot/",
-      serviceName: "Sport Pilot Training — Hornbill Flight Center",
+      serviceName: "Sport Pilot Training — Hornbill Aviation",
       courseName: "Sport Pilot Certificate course",
       credentialAwarded: "FAA Sport Pilot Certificate",
       timeToComplete: "4–6 weeks full-time; 3–6 months part-time",

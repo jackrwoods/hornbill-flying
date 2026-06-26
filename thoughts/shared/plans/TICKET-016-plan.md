@@ -8,7 +8,7 @@ created: 2026-06-18
 
 ## 1. Scope summary
 
-TICKET-016 builds the public `/location/` page for Hornbill Flight Center. This page has two jobs: help visitors physically find the school at Reno–Tahoe International (KRNO), and capture local-search traffic with exact NAP, geo coordinates, and LocalBusiness + FAQPage schema.
+TICKET-016 builds the public `/location/` page for Hornbill Aviation. This page has two jobs: help visitors physically find the school at Reno–Tahoe International (KRNO), and capture local-search traffic with exact NAP, geo coordinates, and LocalBusiness + FAQPage schema.
 
 What this ticket produces:
 
@@ -111,8 +111,8 @@ This ticket does **not** implement: the booking API/backend, dynamic airport dat
 | Element | Value |
 |---------|-------|
 | URL | `/location/` (trailing slash canonical) |
-| Title | `Location & Directions — Reno–Tahoe (RNO) \| Hornbill Flight Center` |
-| Meta description | `Visit Hornbill Flight Center at KRNO. Directions, parking, and airport access for our Reno, NV flight school. Book a discovery flight or call 555-555-1234.` |
+| Title | `Location & Directions — Reno–Tahoe (RNO) \| Hornbill Aviation` |
+| Meta description | `Visit Hornbill Aviation at KRNO. Directions, parking, and airport access for our Reno, NV flight school. Book a discovery flight or call 555-555-1234.` |
 | Canonical | `https://hornbillaviation.com/location/` |
 | H1 | `Find us at Reno–Tahoe (RNO).` |
 | Subheadline | `We're a Part 61 flight school at KRNO, minutes from downtown Reno. Here's how to visit, park, and start training.` |
@@ -180,7 +180,7 @@ Title/description should be produced with `buildTitle`, `buildCanonical`, and `b
 7. **FAQ section (`FAQAccordion`)**
    - H2: `Location questions`
    - Questions (examples; finalize in `src/content/location.ts`):
-     - Where exactly is Hornbill Flight Center located?
+     - Where exactly is Hornbill Aviation located?
      - How do I get to the ramp from the terminal?
      - Where do I park?
      - What should I bring to my first lesson?
@@ -201,7 +201,7 @@ Page-specific JSON-LD (in addition to whatever Organization/WebSite schema the r
 1. **LocalBusiness** (if not already emitted globally; otherwise extend the global entity)
    - `@id`: `https://hornbillaviation.com/location/#localbusiness`
    - `@type`: `["LocalBusiness", "EducationalOrganization"]`
-   - `name`: `Hornbill Flight Center`
+   - `name`: `Hornbill Aviation`
    - `image`: `https://hornbillaviation.com/images/location/rno-ramp-hero.webp`
    - `url`: `https://hornbillaviation.com/location/`
    - `telephone`: `+1-555-555-1234`
@@ -236,7 +236,7 @@ Page-specific JSON-LD (in addition to whatever Organization/WebSite schema the r
 - One H1 only (`LocationPageHeader`).
 - Each section title is an H2.
 - Card titles and route names are H3.
-- Map iframe must have a descriptive `title` attribute, e.g., "Map of Hornbill Flight Center at Reno–Tahoe International Airport".
+- Map iframe must have a descriptive `title` attribute, e.g., "Map of Hornbill Aviation at Reno–Tahoe International Airport".
 - Phone and email links use proper `tel:` and `mailto:` schemes with visible text.
 - Color contrast must pass WCAG 2.2 AA: `ink` on `cream-50`, `white` on `navy-900`, `gold-500` only for large buttons/icons on light backgrounds.
 
@@ -328,7 +328,7 @@ Until confirmed, use placeholder values marked with `// TODO: data ticket` and d
 
 ### 7.3 SEO and metadata checks
 
-1. Title tag must be exactly: `Location & Directions — Reno–Tahoe (RNO) | Hornbill Flight Center`.
+1. Title tag must be exactly: `Location & Directions — Reno–Tahoe (RNO) | Hornbill Aviation`.
 2. Meta description must be ≤ 155 characters and include "Reno," "RNO," "directions," and "parking".
 3. Canonical must be `https://hornbillaviation.com/location/` (trailing slash).
 4. OpenGraph image must resolve and be 1200×630 or close.

@@ -22,7 +22,7 @@ export const termsContent: TermsContent = {
       id: "acceptance-of-terms",
       heading: "Acceptance of terms",
       paragraphs: [
-        "These terms of service apply to everyone who visits hornbillaviation.com, books a flight or lesson, or rents an aircraft from Hornbill Flight Center. By using the site or booking a service, you agree to these terms. If you do not agree, do not use the site or services.",
+        "These terms of service apply to everyone who visits hornbillaviation.com, books a flight or lesson, or rents an aircraft from Hornbill Aviation. By using the site or booking a service, you agree to these terms. If you do not agree, do not use the site or services.",
       ],
     },
     {
@@ -64,7 +64,7 @@ export const termsContent: TermsContent = {
       id: "assumption-of-risk",
       heading: "Assumption of risk",
       paragraphs: [
-        "Aviation involves inherent risk. By flying with us, you acknowledge those risks and agree that Hornbill Flight Center's liability is limited to the extent permitted by Nevada law. A release or assumption-of-risk agreement may be required before flight.",
+        "Aviation involves inherent risk. By flying with us, you acknowledge those risks and agree that Hornbill Aviation's liability is limited to the extent permitted by Nevada law. A release or assumption-of-risk agreement may be required before flight.",
         "This section is intended for operator and legal review before launch.",
       ],
     },
@@ -72,7 +72,7 @@ export const termsContent: TermsContent = {
       id: "intellectual-property",
       heading: "Intellectual property",
       paragraphs: [
-        "All content on this site, including text, photography, the Hornbill crest, logos, and course materials, is owned by Hornbill Flight Center or used with permission. You may not copy, reproduce, or distribute site content without written permission.",
+        "All content on this site, including text, photography, the Hornbill crest, logos, and course materials, is owned by Hornbill Aviation or used with permission. You may not copy, reproduce, or distribute site content without written permission.",
       ],
     },
     {

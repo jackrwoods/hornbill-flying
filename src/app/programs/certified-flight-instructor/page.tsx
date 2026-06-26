@@ -20,7 +20,7 @@ export default function CFIProgramPage() {
       title: cfiProgram.title,
       description: cfiProgram.metaDescription,
       url: "/programs/certified-flight-instructor/",
-      serviceName: "Certified Flight Instructor Training — Hornbill Flight Center",
+      serviceName: "Certified Flight Instructor Training — Hornbill Aviation",
       courseName: "Certified Flight Instructor (CFI) — Airplane Single-Engine",
       credentialAwarded:
         "FAA Certified Flight Instructor Certificate (Airplane Single-Engine)",

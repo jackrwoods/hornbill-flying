@@ -16,7 +16,7 @@ export function ContactMapSection() {
         </p>
 
         <div className="mt-8">
-          <MapEmbed title="Hornbill Flight Center location at 1008 Gentry Way, Reno, NV" />
+          <MapEmbed title="Hornbill Aviation location at 1008 Gentry Way, Reno, NV" />
         </div>
 
         <p className="mt-6 text-ink-light">

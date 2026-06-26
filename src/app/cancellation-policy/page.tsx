@@ -24,7 +24,7 @@ import { cancellationPolicy } from "@/content/legal/cancellation";
 
 const PAGE_TITLE = "Cancellation, Refund & Weather Policy";
 const PAGE_DESCRIPTION =
-  "Our cancellation, refund, and weather policy for discovery flights and lessons at Hornbill Flight Center in Reno, NV.";
+  "Our cancellation, refund, and weather policy for discovery flights and lessons at Hornbill Aviation in Reno, NV.";
 const cancellationRoute = routeMap.find((r) => r.slug === "cancellation-policy")!;
 const pagePath = cancellationRoute.href;
 const canonical = buildCanonical(pagePath);

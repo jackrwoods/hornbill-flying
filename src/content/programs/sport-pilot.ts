@@ -39,7 +39,7 @@ export const sportPilotProgram = {
     },
   },
   quickAnswer:
-    "Hornbill Flight Center offers Part 61 Sport Pilot training at Reno–Tahoe (RNO). You train with a CFI you choose, build foundational skills in a consistent PA28 fleet, and prepare for the FAA Sport Pilot knowledge and practical tests. The first step is a $199 discovery flight with no deposit required.",
+    "Hornbill Aviation offers Part 61 Sport Pilot training at Reno–Tahoe (RNO). You train with a CFI you choose, build foundational skills in a consistent PA28 fleet, and prepare for the FAA Sport Pilot knowledge and practical tests. The first step is a $199 discovery flight with no deposit required.",
   whatIs: {
     title: "What is a Sport Pilot certificate?",
     intro:

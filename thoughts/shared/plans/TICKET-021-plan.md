@@ -28,7 +28,7 @@ related_design:
 
 ## 1. Scope summary
 
-TICKET-021 builds the content hub that Hornbill Flight Center will use for SEO authority and prospective-student nurture. It creates a static-site blog pipeline, an index page, a post-detail template, and archive pages for categories and tags.
+TICKET-021 builds the content hub that Hornbill Aviation will use for SEO authority and prospective-student nurture. It creates a static-site blog pipeline, an index page, a post-detail template, and archive pages for categories and tags.
 
 What this ticket produces:
 
@@ -251,8 +251,8 @@ Validate frontmatter at build time with Zod. Fail the build on missing/invalid r
 **URL:** `https://hornbillaviation.com/blog/`
 
 **SEO metadata:**
-- **Title:** `Flight Training Blog & Guides | Hornbill Flight Center`
-- **Meta description:** `Practical flight training guides from Hornbill Flight Center. Part 61 training, Reno-Tahoe flying, and what to expect on your first lesson.`
+- **Title:** `Flight Training Blog & Guides | Hornbill Aviation`
+- **Meta description:** `Practical flight training guides from Hornbill Aviation. Part 61 training, Reno-Tahoe flying, and what to expect on your first lesson.`
 - **Canonical:** self-referencing, trailing slash.
 - **OpenGraph:** `og:type: website`, title mirrors page title, description mirrors meta, default OG image.
 
@@ -272,7 +272,7 @@ Validate frontmatter at build time with Zod. Fail the build on missing/invalid r
 **URL pattern:** `https://hornbillaviation.com/blog/[slug]/`
 
 **SEO metadata:**
-- **Title:** `{title} | Hornbill Flight Center` (use `buildTitle`).
+- **Title:** `{title} | Hornbill Aviation` (use `buildTitle`).
 - **Meta description:** from frontmatter `description`.
 - **Canonical:** self-referencing.
 - **OpenGraph:** `og:type: article`; `og:image` from `heroImage`; publish/modified dates.
@@ -315,8 +315,8 @@ Validate frontmatter at build time with Zod. Fail the build on missing/invalid r
 **URL pattern:** `https://hornbillaviation.com/blog/category/[kebab-category]/`
 
 **SEO metadata:**
-- **Title:** `{Category} Articles | Hornbill Flight Center Blog`
-- **Meta description:** `Hornbill Flight Center {category} articles: practical guides for pilots training in Reno, NV.`
+- **Title:** `{Category} Articles | Hornbill Aviation Blog`
+- **Meta description:** `Hornbill Aviation {category} articles: practical guides for pilots training in Reno, NV.`
 
 **Schema markup:**
 - **BreadcrumbList:** `Home > Blog > {Category}`
@@ -331,8 +331,8 @@ Validate frontmatter at build time with Zod. Fail the build on missing/invalid r
 **URL pattern:** `https://hornbillaviation.com/blog/tag/[tag]/`
 
 **SEO metadata:**
-- **Title:** `#{tag} Articles | Hornbill Flight Center Blog`
-- **Meta description:** `Posts tagged #{tag} from Hornbill Flight Center's flight training blog.`
+- **Title:** `#{tag} Articles | Hornbill Aviation Blog`
+- **Meta description:** `Posts tagged #{tag} from Hornbill Aviation's flight training blog.`
 
 **Schema markup:**
 - **BreadcrumbList:** `Home > Blog > #{tag}`
@@ -351,7 +351,7 @@ Authors must be named and verifiable. Example record:
   slug: "sarah-chen",
   name: "Sarah Chen",
   role: "Certified Flight Instructor",
-  bio: "Sarah teaches primary students and instrument rating prep at Hornbill Flight Center. She has 1,500 hours in PA28s and specializes in building confidence in the pattern.",
+  bio: "Sarah teaches primary students and instrument rating prep at Hornbill Aviation. She has 1,500 hours in PA28s and specializes in building confidence in the pattern.",
   photo: "/images/instructors/sarah-chen.webp",
   linkedin: "https://www.linkedin.com/in/sarah-chen-example",
   instructorSlug: "sarah-chen"  // links to /instructors/sarah-chen/

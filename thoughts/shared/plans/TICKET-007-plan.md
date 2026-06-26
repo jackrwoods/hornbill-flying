@@ -2,7 +2,7 @@
 
 ## 1. Scope summary
 
-Build the static Next.js program page at `/programs/commercial-pilot/`. The page is aimed at career-track pilots and explains the FAA Part 61 Commercial Pilot certificate pathway at Hornbill Flight Center:
+Build the static Next.js program page at `/programs/commercial-pilot/`. The page is aimed at career-track pilots and explains the FAA Part 61 Commercial Pilot certificate pathway at Hornbill Aviation:
 
 - What the CPL allows (fly for compensation, build time, pathway to CFI/airlines).
 - Prerequisites (PPL, current second-class medical, Instrument Rating recommended, English proficient).
@@ -94,7 +94,7 @@ The page must implement `Service`, `Course`, and `FAQPage` JSON-LD schema, uniqu
    - Secondary CTA: **"See the fleet and rates"** → `/fleet/`.
    - Hero image with descriptive alt text, explicit width/height, `fetchpriority="high"`, `loading="eager"`.
 5. **Quick answer box**
-   - 50–70 words: "Hornbill Flight Center offers Part 61 Commercial Pilot training at Reno–Tahoe (RNO). You build the required 250 hours in a consistent PA28 fleet, fly real cross-country routes, and prepare for the FAA Commercial Pilot checkride."
+   - 50–70 words: "Hornbill Aviation offers Part 61 Commercial Pilot training at Reno–Tahoe (RNO). You build the required 250 hours in a consistent PA28 fleet, fly real cross-country routes, and prepare for the FAA Commercial Pilot checkride."
 6. **What the Commercial Pilot certificate gives you**
    - Fly for compensation or hire (subject to limitations).
    - Build flight time toward CFI, CFII, or airline minimums.
@@ -150,7 +150,7 @@ The page must implement `Service`, `Course`, and `FAQPage` JSON-LD schema, uniqu
 
 | Element | Value |
 |---------|-------|
-| Title tag | `Commercial Pilot License Training in Reno, NV | Hornbill Flight Center` |
+| Title tag | `Commercial Pilot License Training in Reno, NV | Hornbill Aviation` |
 | Meta description | `Earn your Commercial Pilot certificate at RNO. Part 61 CPL training in a consistent PA28 fleet with real cross-country experience. Book a consultation.` (under 155 characters; adjust as needed) |
 | Canonical | `https://<domain>/programs/commercial-pilot/` |
 | OpenGraph title | same as title tag |
@@ -167,7 +167,7 @@ Implement the following JSON-LD graphs. Reuse the shared `Organization`/`LocalBu
    - `Home` → `Programs` → `Commercial Pilot`
 2. **Service** (schema.org)
    - `@type`: `Service`
-   - `name`: `Commercial Pilot License (CPL) Training — Hornbill Flight Center`
+   - `name`: `Commercial Pilot License (CPL) Training — Hornbill Aviation`
    - `serviceType`: `FlightTraining`
    - `provider`: Hornbill LocalBusiness/Organization entity
    - `areaServed`: Reno, NV
@@ -255,7 +255,7 @@ Ensure all schema uses `@id`-based references so the provider entity is not dupl
 
 ### SEO & metadata checks
 
-- [ ] Title tag matches `Commercial Pilot License Training in Reno, NV | Hornbill Flight Center`.
+- [ ] Title tag matches `Commercial Pilot License Training in Reno, NV | Hornbill Aviation`.
 - [ ] Meta description is under 155 characters and includes "CPL", "Reno", "RNO", "PA28", and "Part 61".
 - [ ] OpenGraph and Twitter card tags are present and unique.
 - [ ] Canonical URL is `https://<domain>/programs/commercial-pilot/`.

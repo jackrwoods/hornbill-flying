@@ -21,7 +21,7 @@ export default function CommercialPilotProgramPage() {
       description: commercialPilotProgram.metaDescription,
       url: "/programs/commercial-pilot/",
       serviceName:
-        "Commercial Pilot License (CPL) Training — Hornbill Flight Center",
+        "Commercial Pilot License (CPL) Training — Hornbill Aviation",
       courseName: "Commercial Pilot License course",
       credentialAwarded: "Commercial Pilot Certificate (FAA Part 61)",
       timeToComplete: "3–5 months full-time; 6–9 months part-time",

@@ -8,7 +8,7 @@ created: 2026-06-18
 
 ## 1. Scope summary
 
-TICKET-013 builds the `/instructors/` team-overview page for the Hornbill Flight Center static Next.js marketing site. This page introduces all four launch CFIs, surfaces their specialties and bios, and provides a clear path to book with each instructor.
+TICKET-013 builds the `/instructors/` team-overview page for the Hornbill Aviation static Next.js marketing site. This page introduces all four launch CFIs, surfaces their specialties and bios, and provides a clear path to book with each instructor.
 
 What this ticket produces:
 
@@ -113,8 +113,8 @@ This ticket does **not** implement:
 |---------|-------|
 | URL | `/instructors/` |
 | Canonical | `https://hornbillaviation.com/instructors/` |
-| Title | `Flight Instructors in Reno, NV | Hornbill Flight Center` |
-| Meta description | `Meet the CFIs at Hornbill Flight Center. Part 61 flight instruction at RNO, choose your instructor, and book a discovery flight with the CFI who fits your goals.` |
+| Title | `Flight Instructors in Reno, NV | Hornbill Aviation` |
+| Meta description | `Meet the CFIs at Hornbill Aviation. Part 61 flight instruction at RNO, choose your instructor, and book a discovery flight with the CFI who fits your goals.` |
 | H1 | `Part 61 flight instructors in Reno, NV` |
 | Subtitle / lead | `Choose the CFI who fits your goals and schedule.` |
 | OpenGraph | `og:type: website`, `og:title` mirrors page title, `og:description` mirrors meta description, `og:image` falls back to `/opengraph-default.jpg`. |
@@ -154,7 +154,7 @@ This ticket does **not** implement:
 
 Each `InstructorCard` must render:
 
-- **Photo:** `InstructorPhoto` placeholder (or real photo when available) with `width`/`height` and descriptive `alt` text: `Headshot of [Name], Certified Flight Instructor at Hornbill Flight Center`.
+- **Photo:** `InstructorPhoto` placeholder (or real photo when available) with `width`/`height` and descriptive `alt` text: `Headshot of [Name], Certified Flight Instructor at Hornbill Aviation`.
 - **Name:** H3, e.g. `Sarah Chen`.
 - **Specialties:** 2–4 tag pills, e.g. `Private Pilot`, `Instrument Rating`, `Anxious students`, `Mountain flying`.
 - **Bio:** 2–3 sentence paragraph, warm/credible tone per the brand writing style guide.
@@ -280,7 +280,7 @@ None. This page is fully static.
 
 ### 7.3 SEO metadata checks
 
-1. Title is exactly `Flight Instructors in Reno, NV | Hornbill Flight Center` and under 60 characters.
+1. Title is exactly `Flight Instructors in Reno, NV | Hornbill Aviation` and under 60 characters.
 2. Meta description is under 155 characters and contains "RNO" and "discovery flight".
 3. Canonical link is self-referencing with trailing slash: `https://hornbillaviation.com/instructors/`.
 4. OpenGraph and Twitter tags are present and populated.

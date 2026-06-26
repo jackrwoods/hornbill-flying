@@ -96,7 +96,7 @@ The FAQ page uses only typography, icons, and UI components. No hero image or OG
 | Element | Value |
 |---------|-------|
 | **URL** | `/faq/` |
-| **Title tag** | `Flight School FAQ: Discovery Flights, Medical, Cost & Scheduling | Hornbill Flight Center` |
+| **Title tag** | `Flight School FAQ: Discovery Flights, Medical, Cost & Scheduling | Hornbill Aviation` |
 | **Meta description** | `Answers to common flight training questions. Medical certificates, what to bring, weather cancellations, Part 61 vs 141, cost, and how to book a discovery flight at RNO.` |
 | **Canonical** | `https://hornbillaviation.com/faq/` (self-referencing, trailing slash) |
 | **OpenGraph type** | `website` |
@@ -125,7 +125,7 @@ Title tag rules applied:
    - H2: `Still have questions?`
    - Copy: `Call or text us, or book a discovery flight and ask your CFI in person.`
    - Primary CTA: `Book a discovery flight` → `/discovery-flight/`
-   - Secondary CTA: `Call Hornbill Flight Center` (tappable phone link)
+   - Secondary CTA: `Call Hornbill Aviation` (tappable phone link)
    - Tertiary link: `Contact page` → `/contact/`
 
 ### 4.3 FAQ questions and answers (content spec)
@@ -184,7 +184,7 @@ The `src/content/faq-page.ts` array should contain exactly these items, in this 
     - Internal link: `/cross-country-rentals/`, `/membership/`
 
 14. **Where are you located?**
-    - Answer: `Hornbill Flight Center is based at Reno–Tahoe International Airport (RNO), 1008 Gentry Way, Reno, NV 89512. Our location page has directions, parking instructions, and what to expect when you arrive at the airport.`
+    - Answer: `Hornbill Aviation is based at Reno–Tahoe International Airport (RNO), 1008 Gentry Way, Reno, NV 89512. Our location page has directions, parking instructions, and what to expect when you arrive at the airport.`
     - Internal link: `/location/`
 
 15. **What should I do after my discovery flight?**

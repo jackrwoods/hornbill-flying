@@ -108,11 +108,11 @@ This ticket does **not** implement: the booking API, payment processing, the boo
 
 **URL:** `/privacy/`
 
-**Title tag:** `Privacy Policy | Hornbill Flight Center`
+**Title tag:** `Privacy Policy | Hornbill Aviation`
 
 **Meta description (≤155 chars):**
 ```
-Read how Hornbill Flight Center collects, uses, and protects your information when you book flights or browse our site.
+Read how Hornbill Aviation collects, uses, and protects your information when you book flights or browse our site.
 ```
 
 **Canonical:** `https://hornbillaviation.com/privacy/`
@@ -147,11 +147,11 @@ Read how Hornbill Flight Center collects, uses, and protects your information wh
 
 **URL:** `/terms/`
 
-**Title tag:** `Terms of Service | Hornbill Flight Center`
+**Title tag:** `Terms of Service | Hornbill Aviation`
 
 **Meta description (≤155 chars):**
 ```
-Read the terms of service for Hornbill Flight Center, including flight training, aircraft rental, and website use.
+Read the terms of service for Hornbill Aviation, including flight training, aircraft rental, and website use.
 ```
 
 **Canonical:** `https://hornbillaviation.com/terms/`
@@ -185,11 +185,11 @@ Read the terms of service for Hornbill Flight Center, including flight training,
 
 **URL:** `/cancellation-policy/`
 
-**Title tag:** `Cancellation, Refund & Weather Policy | Hornbill Flight Center`
+**Title tag:** `Cancellation, Refund & Weather Policy | Hornbill Aviation`
 
 **Meta description (≤155 chars):**
 ```
-Our cancellation, refund, and weather policy for discovery flights and lessons at Hornbill Flight Center in Reno, NV.
+Our cancellation, refund, and weather policy for discovery flights and lessons at Hornbill Aviation in Reno, NV.
 ```
 
 **Canonical:** `https://hornbillaviation.com/cancellation-policy/`

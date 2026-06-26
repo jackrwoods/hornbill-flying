@@ -3,10 +3,10 @@ import type { SiteConfig } from "@/types";
 export const siteConfig: SiteConfig = {
   baseUrl:
     process.env.NEXT_PUBLIC_SITE_URL || "https://hornbillaviation.com",
-  brandName: "Hornbill Flight Center",
+  brandName: "Hornbill Aviation",
   tagline: "Built around how you learn best.",
   nap: {
-    name: "Hornbill Flight Center",
+    name: "Hornbill Aviation",
     streetAddress: "1008 Gentry Way",
     addressLocality: "Reno",
     addressRegion: "NV",
@@ -58,7 +58,7 @@ export const siteConfig: SiteConfig = {
     },
   ],
   social: {
-    googleBusinessProfile: "https://maps.google.com/?q=Hornbill+Flight+Center",
+    googleBusinessProfile: "https://maps.google.com/?q=Hornbill+Aviation",
     facebook: undefined,
     instagram: undefined,
     linkedin: undefined,

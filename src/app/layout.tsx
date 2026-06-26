@@ -22,7 +22,7 @@ import "@/styles/globals.css";
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Hornbill Flight Center",
+    template: "%s | Hornbill Aviation",
     default: "Part 61 flight school in Reno, NV",
   },
   description: getDefaultDescription(),

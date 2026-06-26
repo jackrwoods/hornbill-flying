@@ -9,7 +9,7 @@ import { routeHrefs } from "@/lib/routes";
 export const notFoundCopy = {
   metaTitle: "Page Not Found",
   metaDescription:
-    "That route is not in our flight plan. Return to Hornbill Flight Center home, book a discovery flight, or view our programs.",
+    "That route is not in our flight plan. Return to Hornbill Aviation home, book a discovery flight, or view our programs.",
   headline: "Page not found",
   subheadline: "That route is not in our flight plan.",
   body: "You may have mistyped the URL or the page has moved. Try a search, or choose one of the links below to get back on course.",

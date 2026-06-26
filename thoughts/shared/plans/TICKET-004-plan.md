@@ -9,7 +9,7 @@ status: draft
 
 ## 1. Scope summary
 
-Build the `/programs/private-pilot/` route in the Hornbill Flight Center Next.js static-export site. This is the main enrollment page for the Private Pilot License (PPL). It must answer a prospective student's core questions—what the certificate allows, Part 61 requirements, realistic timeline, estimated cost, fleet, instructor choice, financing, and next steps—and drive them toward booking a discovery flight.
+Build the `/programs/private-pilot/` route in the Hornbill Aviation Next.js static-export site. This is the main enrollment page for the Private Pilot License (PPL). It must answer a prospective student's core questions—what the certificate allows, Part 61 requirements, realistic timeline, estimated cost, fleet, instructor choice, financing, and next steps—and drive them toward booking a discovery flight.
 
 The page is a static marketing page composed from shared shell components and a local data file. It ships with:
 
@@ -95,7 +95,7 @@ All paths are relative to the repository root `/Users/jack/hornbill-flying/`.
 
 ### Metadata (Next.js `metadata` export)
 
-- **Title tag:** `Private Pilot License Training in Reno, NV | Hornbill Flight Center`
+- **Title tag:** `Private Pilot License Training in Reno, NV | Hornbill Aviation`
 - **Meta description:** `Earn your private pilot license at RNO. Part 61, PA28 fleet, choose your CFI. Book a discovery flight and start training today.`
 - **Canonical:** `https://www.hornbillaviation.com/programs/private-pilot/`
 - **OpenGraph:** same title/description, OG image from hero asset, type `website`.
@@ -194,7 +194,7 @@ All paths are relative to the repository root `/Users/jack/hornbill-flying/`.
 - **Service**
   - `@type`: `Service`
   - `serviceType`: `Private Pilot License Training`
-  - `provider`: reference to Organization/LocalBusiness (Hornbill Flight Center)
+  - `provider`: reference to Organization/LocalBusiness (Hornbill Aviation)
   - `areaServed`: `{ @type: City, name: Reno, containedInPlace: { @type: State, name: Nevada } }`
   - `hasOfferCatalog` or `offers` with the discovery flight as an entry point (optional)
   - `audience`: `{ @type: Audience, audienceType: Prospective pilots }`
@@ -204,7 +204,7 @@ All paths are relative to the repository root `/Users/jack/hornbill-flying/`.
   - `name`: `Private Pilot License Training`
   - `courseCode`: `PPL`
   - `educationalCredentialAwarded`: `Private Pilot Certificate — Airplane Single-Engine Land (ASEL)`
-  - `provider`: Hornbill Flight Center
+  - `provider`: Hornbill Aviation
   - `description`: short course summary
   - `coursePrerequisites`: `Minimum 17 years old, English proficient, valid 3rd-class medical or BasicMed, and completed FAA knowledge test prior to checkride.`
   - `teaches`: `Visual flight rules, single-engine aircraft operation, cross-country navigation, FAA private pilot practical test standards`

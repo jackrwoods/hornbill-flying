@@ -42,7 +42,7 @@ export const instrumentRatingProgram = {
     },
   },
   quickAnswer:
-    "Hornbill Flight Center offers Part 61 Instrument Rating training at Reno–Tahoe (RNO). You train in a WAAS GPS, dual Garmin G5 PA28 fleet, logging the 40 hours of actual or simulated instrument time the FAA requires, with a schedule built around yours. Members also get unlimited time in our FAA-certified CR-12 AATD, where up to 20 hours can count toward your instrument rating under 14 CFR §61.65(i).",
+    "Hornbill Aviation offers Part 61 Instrument Rating training at Reno–Tahoe (RNO). You train in a WAAS GPS, dual Garmin G5 PA28 fleet, logging the 40 hours of actual or simulated instrument time the FAA requires, with a schedule built around yours. Members also get unlimited time in our FAA-certified CR-12 AATD, where up to 20 hours can count toward your instrument rating under 14 CFR §61.65(i).",
   benefits: {
     title: "What the Instrument Rating gives you",
     intro:

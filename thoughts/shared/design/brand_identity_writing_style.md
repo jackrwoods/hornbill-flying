@@ -1,6 +1,6 @@
-# Hornbill Flight Center — Brand Identity & Writing Style
+# Hornbill Aviation — Brand Identity & Writing Style
 
-A dedicated guide for how Hornbill Flight Center sounds, writes, and talks to students.
+A dedicated guide for how Hornbill Aviation sounds, writes, and talks to students.
 
 ---
 
@@ -8,13 +8,13 @@ A dedicated guide for how Hornbill Flight Center sounds, writes, and talks to st
 
 ### Brand name
 
-**Hornbill Flight Center**
+**Hornbill Aviation**
 
 Use the full name on first mention in body copy. After that, "Hornbill" or "the school" is fine. Avoid "HFC" in customer-facing copy unless space is severely constrained.
 
 ### Brand story
 
-Most flight schools make you fit their program. Hornbill Flight Center builds the program around you.
+Most flight schools make you fit their program. Hornbill Aviation builds the program around you.
 
 We're a Part 61 school at Reno–Tahoe (RNO) with a simple idea: the best pilots come from training that respects their schedule, their budget, and their goals. Our fleet of similarly equipped PA28s keeps costs predictable and learning consistent. Students choose their instructor — or bring their own. And when they're ready, they rent the same aircraft for real cross-country trips instead of just repeating the same practice-area maneuvers.
 
@@ -26,7 +26,7 @@ The hornbill in our name is deliberate. Hornbills are distinctive, determined, a
 
 ### Positioning statement
 
-For people in Northern Nevada and beyond who want to learn to fly, Hornbill Flight Center is the flexible, student-first Part 61 school that combines consistent aircraft, instructor choice, real cross-country experience, and the most competitive rental rates at RNO.
+For people in Northern Nevada and beyond who want to learn to fly, Hornbill Aviation is the flexible, student-first Part 61 school that combines consistent aircraft, instructor choice, real cross-country experience, and the most competitive rental rates at RNO.
 
 ### What we are not
 
@@ -165,7 +165,7 @@ Every page should reinforce one or more of these four pillars. Use them as a che
 ### Example 1: Homepage hero
 
 **Before (don't write this):**
-> "At Hornbill Flight Center, we are passionate about aviation and committed to providing world-class flight training solutions for aspiring pilots of all backgrounds. Whether you're looking to pursue a professional career or simply want to experience the joy of flight, our team is here to help you unlock your potential and achieve your dreams."
+> "At Hornbill Aviation, we are passionate about aviation and committed to providing world-class flight training solutions for aspiring pilots of all backgrounds. Whether you're looking to pursue a professional career or simply want to experience the joy of flight, our team is here to help you unlock your potential and achieve your dreams."
 
 **After (write this):**
 > "Learn to fly on your schedule, with instructors you choose and aircraft you can count on. From first lesson to checkride — and your first real cross-country — we train pilots, not passengers."
@@ -266,7 +266,7 @@ Every page should reinforce one or more of these four pillars. Use them as a che
 ### Capitalization
 
 - Use sentence case for headings: "Start your flight training."
-- Capitalize "FAA," "CFI," "Part 61," "PA28," "RNO," "Hornbill Flight Center."
+- Capitalize "FAA," "CFI," "Part 61," "PA28," "RNO," "Hornbill Aviation."
 - Don't capitalize generic job titles: "flight instructor," "certified flight instructor" unless used as a name.
 
 ### Numbers

@@ -8,7 +8,7 @@ created: 2026-06-18
 
 ## 1. Scope summary
 
-TICKET-027 builds the public 404 page at `/404/` for the Hornbill Flight Center static Next.js marketing site. The goal is to turn dead-end traffic into retained traffic by giving visitors friendly, on-brand copy, clear routes back to high-value pages, and a lightweight search or sitemap fallback. The page must be lightweight, inherit the site shell from TICKET-001, and avoid becoming the canonical URL for any real content.
+TICKET-027 builds the public 404 page at `/404/` for the Hornbill Aviation static Next.js marketing site. The goal is to turn dead-end traffic into retained traffic by giving visitors friendly, on-brand copy, clear routes back to high-value pages, and a lightweight search or sitemap fallback. The page must be lightweight, inherit the site shell from TICKET-001, and avoid becoming the canonical URL for any real content.
 
 What this ticket produces:
 
@@ -102,12 +102,12 @@ These components are introduced in TICKET-001 and are required for this page. TI
 
 **Title tag:**
 ```
-Page Not Found | Hornbill Flight Center
+Page Not Found | Hornbill Aviation
 ```
 
 **Meta description (under 155 characters):**
 ```
-That route is not in our flight plan. Return to Hornbill Flight Center home, book a discovery flight, or view our programs.
+That route is not in our flight plan. Return to Hornbill Aviation home, book a discovery flight, or view our programs.
 ```
 (137 characters)
 
@@ -118,7 +118,7 @@ That route is not in our flight plan. Return to Hornbill Flight Center home, boo
 
 **OpenGraph / Twitter:**
 - Inherit defaults from `src/lib/seo.ts` (`og:type=website`, site name, default OG image).
-- Override `og:title` and `twitter:title` to `Page Not Found | Hornbill Flight Center`.
+- Override `og:title` and `twitter:title` to `Page Not Found | Hornbill Aviation`.
 - Override `og:description` / `twitter:description` with the 404 meta description.
 
 ### 4.3 Content structure
@@ -127,7 +127,7 @@ Render order inside `not-found.tsx`:
 
 1. **Visual anchor**
    - Hornbill crest logo (`public/logo.jpeg` or optimized 404 crest asset) at a modest size (e.g., 120–160 px width).
-   - Alt text: "Hornbill Flight Center crest".
+   - Alt text: "Hornbill Aviation crest".
 
 2. **H1**
    - Text: "Page not found".
@@ -243,7 +243,7 @@ None. The 404 page is fully static. The site-search form is a client-side redire
 
 1. Run `npm install` (if not already done) and `npm run build`.
 2. Confirm `dist/404/index.html` exists and contains:
-   - `<title>Page Not Found | Hornbill Flight Center</title>`
+   - `<title>Page Not Found | Hornbill Aviation</title>`
    - Exactly one `<h1>` with text "Page not found".
    - The subheadline "That route is not in our flight plan."
    - All four primary CTAs (Home, Discovery Flight, Programs, Contact) with valid `href` values.
@@ -253,7 +253,7 @@ None. The 404 page is fully static. The site-search form is a client-side redire
 
 ### 7.2 SEO metadata checks
 
-1. Verify the `<title>` is exactly `Page Not Found | Hornbill Flight Center`.
+1. Verify the `<title>` is exactly `Page Not Found | Hornbill Aviation`.
 2. Verify the meta description is under 155 characters and contains "discovery flight" and "programs".
 3. Verify the canonical link points to `https://hornbillaviation.com/404/` (trailing slash, absolute URL).
 4. Verify there is no `<meta name="robots" content="noindex" ...>` unless the host cannot return a 404 status.

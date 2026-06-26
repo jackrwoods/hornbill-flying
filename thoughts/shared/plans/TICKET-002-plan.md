@@ -26,7 +26,7 @@ related_research:
 
 ## 1. Scope Summary
 
-Build the Hornbill Flight Center homepage at `/`. The page has one primary conversion job: persuade a visitor to book a discovery flight in under three clicks. It must also establish the school's identity as a **Part 61 flight school in Reno, NV** (exact-match SEO target), introduce the four messaging pillars, surface the program catalog, preview instructors, show transparent pricing, display social proof or founder credibility, answer common questions in an FAQ accordion, and link to the latest blog posts.
+Build the Hornbill Aviation homepage at `/`. The page has one primary conversion job: persuade a visitor to book a discovery flight in under three clicks. It must also establish the school's identity as a **Part 61 flight school in Reno, NV** (exact-match SEO target), introduce the four messaging pillars, surface the program catalog, preview instructors, show transparent pricing, display social proof or founder credibility, answer common questions in an FAQ accordion, and link to the latest blog posts.
 
 This ticket is **content and composition only**; no booking API implementation, no widget logic, and no global shell creation. All shared UI, global metadata, and base schema are owned by TICKET-001 and consumed here.
 
@@ -154,8 +154,8 @@ The homepage should import shared data/components where they exist. If the ownin
 
 Use Next.js `metadata` export via the helper from `src/lib/seo.ts`.
 
-- **Title:** `Part 61 Flight School in Reno, NV | Hornbill Flight Center`
-- **Meta description:** `Book a discovery flight at Hornbill Flight Center. Part 61 training in a PA28 fleet at RNO. Choose your instructor and fly real cross-country routes.` (≤155 chars)
+- **Title:** `Part 61 Flight School in Reno, NV | Hornbill Aviation`
+- **Meta description:** `Book a discovery flight at Hornbill Aviation. Part 61 training in a PA28 fleet at RNO. Choose your instructor and fly real cross-country routes.` (≤155 chars)
 - **Canonical:** `https://hornbillaviation.com/` (from `site.url`)
 - **OpenGraph:** title mirrors page title; description mirrors meta description; image uses hero image or default OG image from TICKET-001.
 - **Twitter card:** summary_large_image.
@@ -166,7 +166,7 @@ Render in this order:
 
 1. **Organization** — name, alternateName (Hornbill), URL, logo, sameAs (social profiles if active).
 2. **LocalBusiness** + **EducationalOrganization** (combined `@graph` or separate scripts) — exact NAP from `site.ts`:
-   - Name: Hornbill Flight Center
+   - Name: Hornbill Aviation
    - Address: 1008 Gentry Way, Reno, NV 89512
    - Phone: 555-555-1234
    - Email: office@hornbillaviation.com
@@ -329,7 +329,7 @@ Suggested questions:
 ### 9.2 SEO / schema validation
 
 - [ ] Google Rich Results Test: homepage passes with Organization, LocalBusiness, EducationalOrganization, BreadcrumbList, FAQPage, and WebSite entities.
-- [ ] Verify title tag in `<head>`: `Part 61 Flight School in Reno, NV | Hornbill Flight Center`.
+- [ ] Verify title tag in `<head>`: `Part 61 Flight School in Reno, NV | Hornbill Aviation`.
 - [ ] Verify meta description ≤155 characters and includes "discovery flight," "PA28," and "RNO."
 - [ ] Verify self-referencing canonical tag points to `https://hornbillaviation.com/`.
 - [ ] Verify OpenGraph tags use title, description, URL, and image.

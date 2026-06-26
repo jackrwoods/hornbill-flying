@@ -22,7 +22,7 @@ export default function CFIIProgramPage() {
       description: cfiiProgram.quickAnswer,
       url: "/programs/cfii/",
       serviceName:
-        "CFII Training — Certified Flight Instructor Instrument — Hornbill Flight Center",
+        "CFII Training — Certified Flight Instructor Instrument — Hornbill Aviation",
       courseName: "Certified Flight Instructor Instrument (CFII) course",
       credentialAwarded:
         "Certified Flight Instructor Instrument (CFII) Certificate (FAA Part 61)",

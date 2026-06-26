@@ -19,7 +19,7 @@ export function HeroSection() {
         <Container className="max-w-4xl">
           <div className="rounded-lg border-l-4 border-gold-500 bg-white p-6 shadow-sm">
             <p className="text-ink">
-              Hornbill Flight Center students can check the latest KRNO METAR/TAF,
+              Hornbill Aviation students can check the latest KRNO METAR/TAF,
               download training syllabi and PA28 checklists, review FAA medical
               certificate requirements, and use our Reno-specific flight tools.
               Everything is organized below and kept current.

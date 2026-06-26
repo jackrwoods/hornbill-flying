@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { siteConfig } from "./config";
 import { absoluteUrl } from "./utils";
 
-const TITLE_TEMPLATE = "%s | Hornbill Flight Center";
+const TITLE_TEMPLATE = "%s | Hornbill Aviation";
 const DEFAULT_TITLE_SEGMENT = "Part 61 flight school in Reno, NV";
 const DEFAULT_DESCRIPTION =
   "Train with a Part 61 flight school at Reno-Tahoe (RNO). Choose your instructor, fly a consistent PA28 fleet, and book a discovery flight today.";
@@ -73,6 +73,6 @@ export function buildNotFoundMetadata(): Metadata {
   return {
     title: buildTitle("Page Not Found"),
     description:
-      "That route is not in our flight plan. Return to Hornbill Flight Center home, book a discovery flight, or view our programs.",
+      "That route is not in our flight plan. Return to Hornbill Aviation home, book a discovery flight, or view our programs.",
   };
 }

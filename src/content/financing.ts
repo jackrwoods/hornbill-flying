@@ -8,7 +8,7 @@ export const financingContent = {
   meta: {
     title: "Flight Training Financing in Reno, NV",
     description:
-      "Finance your flight training at Hornbill Flight Center through Stratus Financial. See covered costs, how to apply, and sample monthly budgets at RNO.",
+      "Finance your flight training at Hornbill Aviation through Stratus Financial. See covered costs, how to apply, and sample monthly budgets at RNO.",
   },
 
   hero: {
@@ -181,7 +181,7 @@ export const financingFAQs: FAQItem[] = [
     id: "apply-stratus",
     question: "How do I apply for Stratus Financial flight training financing?",
     answer:
-      "Apply directly on the Stratus Financial website. You choose Hornbill Flight Center as your school and submit the requested financial information. Stratus makes the approval decision and contacts you with next steps.",
+      "Apply directly on the Stratus Financial website. You choose Hornbill Aviation as your school and submit the requested financial information. Stratus makes the approval decision and contacts you with next steps.",
   },
   {
     id: "what-costs-covered",

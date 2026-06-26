@@ -11,7 +11,7 @@ created: 2026-06-18
 
 ## 1. Scope summary
 
-Build the public Sport Pilot (SPL) program page at `/programs/sport-pilot/`. The page explains the Sport Pilot pathway at Hornbill Flight Center, including FAA requirements, operational limitations, realistic timeline, cost estimate with the membership benefit, fleet fit, and a clear conversion path to book a discovery flight.
+Build the public Sport Pilot (SPL) program page at `/programs/sport-pilot/`. The page explains the Sport Pilot pathway at Hornbill Aviation, including FAA requirements, operational limitations, realistic timeline, cost estimate with the membership benefit, fleet fit, and a clear conversion path to book a discovery flight.
 
 This ticket produces only the SPL page. It does not build the booking backend, the global shell, or other program pages, but it defines the content and schema conventions that other program pages should follow.
 
@@ -91,7 +91,7 @@ Assume a Next.js 14+ static-export project with the App Router and a `src/` dire
 
 - **URL:** `/programs/sport-pilot/`
 - **Canonical:** self-referencing to `https://hornbillaviation.com/programs/sport-pilot/`
-- **Title tag:** `Sport Pilot Training in Reno, NV | Hornbill Flight Center`
+- **Title tag:** `Sport Pilot Training in Reno, NV | Hornbill Aviation`
 - **Meta description:** `Earn your Sport Pilot certificate at RNO. Part 61 training in a PA28 fleet, flexible scheduling, and a $199 discovery flight. See requirements, timeline, and cost.`
 - **OpenGraph:** same title/description plus hero image URL.
 - **Twitter card:** summary_large_image.
@@ -192,7 +192,7 @@ Embed the following JSON-LD in `<head>` via a `SchemaScript` component.
   "name": "Sport Pilot Training",
   "provider": {
     "@type": "FlightSchool",
-    "name": "Hornbill Flight Center",
+    "name": "Hornbill Aviation",
     "url": "https://hornbillaviation.com",
     "address": {
       "@type": "PostalAddress",
@@ -224,10 +224,10 @@ Embed the following JSON-LD in `<head>` via a `SchemaScript` component.
   "@context": "https://schema.org",
   "@type": "Course",
   "name": "Sport Pilot Certificate",
-  "description": "Part 61 Sport Pilot training at Hornbill Flight Center in Reno, NV.",
+  "description": "Part 61 Sport Pilot training at Hornbill Aviation in Reno, NV.",
   "provider": {
     "@type": "Organization",
-    "name": "Hornbill Flight Center",
+    "name": "Hornbill Aviation",
     "sameAs": "https://hornbillaviation.com"
   },
   "coursePrerequisites": "At least 17 years old; able to read, speak, write, and understand English; hold a third-class medical certificate or valid U.S. driver's license under Sport Pilot rules.",
@@ -321,7 +321,7 @@ This page is static and requires no runtime API calls for its primary content. H
 ### Manual checks
 
 1. **Title/H1/meta** — confirm:
-   - Title: `Sport Pilot Training in Reno, NV | Hornbill Flight Center`
+   - Title: `Sport Pilot Training in Reno, NV | Hornbill Aviation`
    - H1: `Sport Pilot training in Reno, NV`
    - Meta description includes "discovery flight," "PA28," and "RNO."
 2. **Schema validation** — paste the rendered page URL or HTML into Google's Rich Results Test and confirm:

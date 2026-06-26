@@ -43,7 +43,7 @@ export const metadata: Metadata = {
         url: OG_IMAGE,
         width: 1600,
         height: 900,
-        alt: "Hornbill Flight Center PA28 fleet at Reno-Tahoe International Airport (RNO)",
+        alt: "Hornbill Aviation PA28 fleet at Reno-Tahoe International Airport (RNO)",
       },
     ],
   }),

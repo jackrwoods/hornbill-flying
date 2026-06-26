@@ -39,13 +39,13 @@ export const homepageDifferentiators = [
     id: "flexibility",
     title: "Flexibility",
     description:
-      "Part 61 training means you can train at your own pace.",
+      "Part 61 training means you can train at your own pace with your instructor.",
   },
   {
     id: "consistency",
-    title: "Consistency",
+    title: "Fleet Consistency",
     description:
-      "Our PA28 fleet is similarly equipped with Garmin avionics, providing dependable aircraft from first lesson to checkride.",
+      "Our PA28 fleet is similarly equipped with Garmin avionics, ensuring a plane is always available from first lesson to checkride.",
   },
   {
     id: "real-world",
@@ -92,7 +92,7 @@ export const homepageTestimonials: Testimonial[] = [];
 export const homepageFounderCredibility = {
   heading: "A flying community founded by pilots.",
   statement:
-    "Hornbill Flight Center is a Part 61 school at Reno–Tahoe (RNO) built around value and student choice. Our certificated flight instructors have experience in the Sierra and high-desert airspace around Reno.",
+    "Hornbill Aviation is a Part 61 school at Reno–Tahoe (RNO) built around value and student choice. Our certificated flight instructors have experience in the Sierra and high-desert airspace around Reno.",
   highlights: [
     "Part 61 training",
     "Well-equipped PA28 fleet",

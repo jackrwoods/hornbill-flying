@@ -25,7 +25,7 @@ import { BlogTeaserSection } from "@/sections/home/BlogTeaserSection";
 
 const PAGE_TITLE = "Part 61 Flight School in Reno, NV";
 const PAGE_DESCRIPTION =
-  "Book a discovery flight at Hornbill Flight Center. Part 61 training in a PA28 fleet at RNO. Choose your instructor and fly real cross-country routes.";
+  "Book a discovery flight at Hornbill Aviation. Part 61 training in a PA28 fleet at RNO. Choose your instructor and fly real cross-country routes.";
 
 export const metadata: Metadata = {
   title: buildTitle(PAGE_TITLE),

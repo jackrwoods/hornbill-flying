@@ -98,7 +98,7 @@ Use the shared components introduced by TICKET-001. Do **not** recreate header, 
 |---------|-------|
 | URL | `/programs/instrument-rating/` |
 | Canonical | `https://www.hornbillaviation.com/programs/instrument-rating/` |
-| Title tag | `Instrument Rating Training in Reno, NV | Hornbill Flight Center` |
+| Title tag | `Instrument Rating Training in Reno, NV | Hornbill Aviation` |
 | Meta description | `Earn your FAA Instrument Rating at Reno–Tahoe. Part 61 IFR training in a WAAS-equipped PA28 fleet with Garmin G5 avionics. Book a discovery flight or consultation.` |
 | OpenGraph title | same as title tag |
 | OpenGraph description | same as meta description |
@@ -126,7 +126,7 @@ Home > Programs > Instrument Rating
 
 2. **Quick answer box (AEO snippet)**
    - 50–70 word direct answer for featured snippets / AI Overviews:
-   - *“Hornbill Flight Center offers Part 61 Instrument Rating training at Reno–Tahoe (RNO). You train in a WAAS GPS, dual Garmin G5 PA28 fleet, logging the 40 hours of actual or simulated instrument time the FAA requires, with a schedule built around yours.”*
+   - *“Hornbill Aviation offers Part 61 Instrument Rating training at Reno–Tahoe (RNO). You train in a WAAS GPS, dual Garmin G5 PA28 fleet, logging the 40 hours of actual or simulated instrument time the FAA requires, with a schedule built around yours.”*
 
 3. **What the rating gives you**
    - Define the Instrument Rating: fly under IFR, file instrument flight plans, operate in marginal weather with proper planning.

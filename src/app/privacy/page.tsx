@@ -21,7 +21,7 @@ import { privacyContent } from "@/content/legal/privacy";
 
 const PAGE_TITLE = "Privacy Policy";
 const PAGE_DESCRIPTION =
-  "Read how Hornbill Flight Center collects, uses, and protects your information when you book flights or browse our site.";
+  "Read how Hornbill Aviation collects, uses, and protects your information when you book flights or browse our site.";
 const privacyRoute = routeMap.find((r) => r.slug === "privacy")!;
 const pagePath = privacyRoute.href;
 const canonical = buildCanonical(pagePath);

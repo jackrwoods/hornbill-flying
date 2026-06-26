@@ -38,7 +38,7 @@ export const commercialPilotProgram = {
     },
   },
   quickAnswer:
-    `Hornbill Flight Center offers Part 61 Commercial Pilot training at Reno–Tahoe (RNO). You build the required 250 hours in a consistent PA28 fleet, fly real cross-country routes through high-elevation terrain, and prepare for the FAA Commercial Pilot checkride. Training is flexible — full-time or part-time — with instructor choice and transparent ${memberRate} member wet rates.`,
+    `Hornbill Aviation offers Part 61 Commercial Pilot training at Reno–Tahoe (RNO). You build the required 250 hours in a consistent PA28 fleet, fly real cross-country routes through high-elevation terrain, and prepare for the FAA Commercial Pilot checkride. Training is flexible — full-time or part-time — with instructor choice and transparent ${memberRate} member wet rates.`,
   benefits: {
     title: "What the Commercial Pilot certificate gives you",
     intro:

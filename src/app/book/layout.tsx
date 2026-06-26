@@ -18,7 +18,7 @@ import {
 import { BOOKING_FAQ } from "@/content/booking";
 
 const BOOKING_DESCRIPTION =
-  "Book a discovery flight or schedule flight training at Hornbill Flight Center in Reno, NV. Part 61 school at RNO with a PA28 fleet.";
+  "Book a discovery flight or schedule flight training at Hornbill Aviation in Reno, NV. Part 61 school at RNO with a PA28 fleet.";
 
 export const metadata: Metadata = {
   title: buildTitle("Book a discovery flight or schedule training"),
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
         url: buildCanonical("/opengraph-booking.jpg"),
         width: 1200,
         height: 630,
-        alt: "Book a discovery flight or schedule training at Hornbill Flight Center",
+        alt: "Book a discovery flight or schedule training at Hornbill Aviation",
       },
     ],
   }),
