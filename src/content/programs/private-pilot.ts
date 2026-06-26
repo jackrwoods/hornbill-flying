@@ -27,7 +27,7 @@ export const privatePilotProgram = {
       "Train at your pace, choose your instructor, and earn your certificate in a consistent PA28 fleet at Reno–Tahoe (RNO).",
     image: "/images/programs/private-pilot-hero.webp",
     imageAlt:
-      "Student and CFI during a Private Pilot training flight in a PA28 at Reno–Tahoe International Airport (RNO)",
+      "PA28 Cherokee on the ramp at Reno-Tahoe International Airport",
     cta: {
       primary: {
         label: "Book a discovery flight",
@@ -206,7 +206,7 @@ export const privatePilotProgram = {
       },
       {
         title: "Membership",
-        description: `Lower your wet rate to ${memberRate} and get priority scheduling for ${membershipRate}.`,
+        description: "Lower your wet rate to $159/hr and get priority scheduling for $49/month.",
         href: membershipHref,
       },
     ],
