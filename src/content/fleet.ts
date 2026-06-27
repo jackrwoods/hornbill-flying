@@ -15,11 +15,15 @@ const fleetMembers: FleetMember[] = [
     notes: "Cruise prop for efficient IFR cross-country flying.",
     photo: "/images/fleet/n6576j.webp",
     photoAlt:
-      "PA28 Cherokee N6576J on the ramp at Reno-Tahoe International Airport (RNO).",
+      "PA28 Cherokee N6576J in flight over snow-covered terrain near Reno, NV.",
     gallery: [
       {
         src: "/images/fleet/n6576j.webp",
-        alt: "PA28 Cherokee N6576J on the ramp at Reno-Tahoe International Airport (RNO).",
+        alt: "PA28 Cherokee N6576J in flight over snow-covered terrain near Reno, NV.",
+      },
+      {
+        src: "/images/fleet/n6576j-sunset.webp",
+        alt: "PA28 Cherokee N6576J on the ramp at sunset at Reno-Tahoe International Airport (RNO).",
       },
       {
         src: "/images/fleet/n6576j-panel.jpeg",
