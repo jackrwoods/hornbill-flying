@@ -220,14 +220,14 @@ export const fleetFAQs: FAQItem[] = [
     id: "fuel-surcharges",
     question: "Are there any fuel surcharges?",
     answer:
-      "No. Every PA28 wet rate is all-inclusive. Members pay $159/hr and non-members pay $180/hr with no additional fuel or oil fees.",
+      `No. Every PA28 wet rate is all-inclusive. Members pay $${membershipRates.memberRate}/hr and non-members pay $${membershipRates.nonMemberRate}/hr with no additional fuel or oil fees.`,
   },
 ];
 
 export const fleetPage = {
   metaTitle: "PA28 Fleet & Pricing in Reno, NV",
   metaDescription:
-    "Transparent PA28 wet rates at RNO. Members fly for $159/hr, non-members $180/hr. See tails, avionics, instructor rates, and discovery flights.",
+    `Transparent PA28 wet rates at RNO. Members fly for $${membershipRates.memberRate}/hr, non-members $${membershipRates.nonMemberRate}/hr. See tails, avionics, instructor rates, and discovery flights.`,
   hero: {
     title: "Our PA28 fleet and transparent rates.",
     subtitle:

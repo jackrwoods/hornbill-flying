@@ -74,7 +74,7 @@ const pageSchema = buildSchemaGraph(
       },
       {
         name: "Non-member PA28 wet rate",
-        price: "180.00",
+        price: String(membershipRates.nonMemberRate),
         priceCurrency: "USD",
         unitCode: "HUR",
         availability: "https://schema.org/InStock",

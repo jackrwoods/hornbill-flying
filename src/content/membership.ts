@@ -49,7 +49,7 @@ export const membershipContent = {
       {
         label: "Low-cost aircraft rental",
         body: `Only $${pricing.memberWetRate}/hr for aircraft. Save $${membershipRates.savingsPerHour}/hr on every aircraft hour.`,
-        summary: `Over 250 aircraft hours (for CPL), that's a savings of $5,250.`,
+        summary: `Over 250 aircraft hours (for CPL), that's a savings of $${250 * membershipRates.savingsPerHour}.`,
       },
       {
         label: "Save with the sim",
@@ -146,7 +146,7 @@ export const membershipFAQs: FAQItem[] = [
     id: "savings",
     question: "How much do I save per flight hour?",
     answer:
-      "Members pay $159/hr wet for the PA28 fleet. Non-members pay $180/hr. That is a $21/hr savings, so the membership pays for itself at just under three flight hours per month.",
+      `Members pay $${pricing.memberWetRate}/hr wet for the PA28 fleet. Non-members pay $${pricing.nonMemberWetRate}/hr. That is a $${membershipRates.savingsPerHour}/hr savings, so the membership pays for itself at just under three flight hours per month.`,
   },
   {
     id: "contract",
@@ -158,7 +158,7 @@ export const membershipFAQs: FAQItem[] = [
     id: "non-members",
     question: "Can non-members still rent aircraft?",
     answer:
-      "Yes. Non-members can rent the same PA28 fleet at the non-member wet rate of $180/hr. The membership is simply a way to save if you fly regularly.",
+      `Yes. Non-members can rent the same PA28 fleet at the non-member wet rate of $${pricing.nonMemberWetRate}/hr. The membership is simply a way to save if you fly regularly.`,
   },
   {
     id: "instructor-fees",

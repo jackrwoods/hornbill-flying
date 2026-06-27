@@ -541,7 +541,7 @@ export function buildFleetRentalService(): JsonLdThing {
     {
       name: "Non-member PA28 wet rate",
       description: "Wet hourly rate for PA28 rental without membership.",
-      price: "180.00",
+      price: String(siteConfig.pricing.nonMemberWetRate),
       priceCurrency: "USD",
       unitCode: "HUR",
       availability: "https://schema.org/InStock",

@@ -71,7 +71,7 @@ export const siteConfig: SiteConfig = {
   pricing: {
     membershipMonthly: 59,
     memberWetRate: 159,
-    nonMemberWetRate: 180,
+    nonMemberWetRate: 179,
     discoveryFlight: 199,
   },
   // Map embed URL (OpenStreetMap iframe) centered on RNO / 1008 Gentry Way.
