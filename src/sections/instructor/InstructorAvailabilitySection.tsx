@@ -29,8 +29,8 @@ export function InstructorAvailabilitySection({
             <p className="mt-2 text-ink-light">{instructor.typicalAvailability}</p>
             <p className="mt-4 text-ink-light">
               Exact slots change with aircraft maintenance, weather, and other
-              bookings. The booking flow shows real-time availability for your
-              preferred instructor.
+              bookings. See up-to-date availability and book with the instructor
+              you want.
             </p>
           </div>
 

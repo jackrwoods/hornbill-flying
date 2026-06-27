@@ -138,11 +138,11 @@ export const cfiProgram = {
   instructorLead: {
     title: "Meet your CFI lead",
     intro:
-      "Trygve Inda mentors initial CFI candidates at Hornbill, with experience in instrument instruction, advanced maneuvers, and checkride preparation.",
+      "Trygve mentors initial CFI candidates at Hornbill, with experience in instrument instruction, advanced maneuvers, and checkride preparation.",
     instructors: [
       {
-        name: "Trygve Inda",
-        href: "/instructors/trygve-inda/",
+        name: "Trygve",
+        href: "/instructors/trygve/",
         focus: "CFI training, instrument instruction, and teaching technique",
       },
     ],
