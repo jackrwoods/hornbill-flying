@@ -52,6 +52,7 @@ export const instructors: Instructor[] = [
     ],
     bookingSlug: "trygve",
     bookingLink: "/instructors/trygve/",
+    website: "https://nevadacfi.com",
     metaTitle: "Trygve — Flight Instructor in Reno, NV",
     metaDescription:
       "Train with Trygve, a CFI/CFII at Reno-Tahoe (RNO). Specialties: private, instrument, commercial, CFI/CFII, and mountain flying. Book a discovery flight with Trygve.",
@@ -114,6 +115,7 @@ export const instructors: Instructor[] = [
     ],
     bookingSlug: "joel",
     bookingLink: "/instructors/joel/",
+    website: null,
     metaTitle: "Joel — Flight Instructor in Reno, NV",
     metaDescription:
       "Train with Joel, a CFI/CFII at Reno-Tahoe (RNO). Specialties: private, instrument, commercial, CFI/CFII. Book a discovery flight with Joel.",
@@ -170,6 +172,7 @@ export const instructors: Instructor[] = [
     teachesPrograms: ["private-pilot", "commercial-pilot"],
     bookingSlug: "jeremy",
     bookingLink: "/instructors/jeremy/",
+    website: null,
     metaTitle: "Jeremy — Flight Instructor in Reno, NV",
     metaDescription:
       "Train with Jeremy, a CFI at Reno-Tahoe (RNO). Specialties: private pilot, commercial pilot, first-time students. Book a discovery flight with Jeremy.",
@@ -229,6 +232,7 @@ export const instructors: Instructor[] = [
     teachesPrograms: ["private-pilot", "commercial-pilot"],
     bookingSlug: "ethan",
     bookingLink: "/instructors/ethan/",
+    website: null,
     metaTitle: "Ethan — Flight Instructor in Reno, NV",
     metaDescription:
       "Train with Ethan, a CFI at Reno-Tahoe (RNO). Specialties: private pilot, commercial pilot, discovery flights. Book a discovery flight with Ethan.",

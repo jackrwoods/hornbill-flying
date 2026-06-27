@@ -9,6 +9,14 @@ interface InstructorHeroSectionProps {
   instructor: Instructor;
 }
 
+function displayDomain(url: string): string {
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return url.replace(/^https?:\/\//, "").replace(/^www\./, "").replace(/\/.*$/, "");
+  }
+}
+
 export function InstructorHeroSection({ instructor }: InstructorHeroSectionProps) {
   const firstName = instructor.name.split(" ")[0];
 
@@ -44,6 +52,16 @@ export function InstructorHeroSection({ instructor }: InstructorHeroSectionProps
               >
                 Back to all instructors
               </Link>
+              {instructor.website && (
+                <a
+                  href={instructor.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-semibold text-navy-900 transition-colors hover:bg-navy-900/5 focus:outline-none focus:ring-2 focus:ring-navy-900 focus:ring-offset-2"
+                >
+                  {displayDomain(instructor.website)}
+                </a>
+              )}
             </div>
           </div>
         </div>

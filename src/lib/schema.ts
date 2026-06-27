@@ -356,6 +356,10 @@ export function buildPerson(instructor: Instructor): JsonLdThing {
     };
   }
 
+  if (instructor.website) {
+    person.sameAs = [instructor.website];
+  }
+
   return person;
 }
 

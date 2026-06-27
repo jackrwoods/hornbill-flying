@@ -103,6 +103,7 @@ export interface Instructor {
   teachesPrograms: string[];
   bookingSlug: string;
   bookingLink: string;
+  website?: string | null;
   metaTitle: string;
   metaDescription: string;
   faq?: FAQItem[];
