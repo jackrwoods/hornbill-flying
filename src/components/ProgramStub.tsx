@@ -51,10 +51,7 @@ export function ProgramStub({ program, description, related }: ProgramStubProps)
         <Container className="relative z-10">
           <div className="py-20 md:py-28">
             <div className="max-w-2xl">
-              <p className="text-sm font-semibold uppercase tracking-wide text-gold-400">
-                Flight training program
-              </p>
-              <h1 className="mt-3 font-heading text-4xl leading-tight md:text-5xl lg:text-6xl">
+              <h1 className="font-heading text-4xl leading-tight md:text-5xl lg:text-6xl">
                 {program.title} training in Reno, NV
               </h1>
               <p className="mt-6 text-lg text-cream-50/90 md:text-xl">
