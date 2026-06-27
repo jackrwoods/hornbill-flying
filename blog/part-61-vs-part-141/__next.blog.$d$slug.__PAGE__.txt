@@ -1,0 +1,103 @@
+1:"$Sreact.fragment"
+3:I[22016,["/hornbill-flying/_next/static/chunks/2hf-l4-bag_mi.js"],""]
+19:I[97367,["/hornbill-flying/_next/static/chunks/05-c3ty_6dwfk.js","/hornbill-flying/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+1a:"$Sreact.suspense"
+2:Ta1e,{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://hornbillaviation.com/blog/part-61-vs-part-141/#webpage",
+      "name": "Part 61 vs Part 141: which is right for you?",
+      "url": "https://hornbillaviation.com/blog/part-61-vs-part-141/",
+      "isPartOf": {
+        "@id": "https://hornbillaviation.com/#website"
+      },
+      "about": {
+        "@id": "https://hornbillaviation.com/#localbusiness"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://hornbillaviation.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://hornbillaviation.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Part 61 vs Part 141: which is right for you?",
+          "item": "https://hornbillaviation.com/blog/part-61-vs-part-141/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do Part 61 and Part 141 give the same certificate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The FAA Private Pilot, Instrument Rating, or Commercial Pilot certificate you earn is identical regardless of which training path you choose."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which is faster?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Part 141 can be faster for full-time students because it allows reduced minimum hours for some certificates. Part 61 is usually faster for working adults who cannot follow a fixed daily schedule."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Part 61 more expensive?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not necessarily. Part 61 can cost more if training is sporadic, but it can also cost less because you are not locked into a fixed curriculum or stage-check fees."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I switch from Part 141 to Part 61?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Many students start at a Part 141 academy and finish under Part 61, or vice versa. Your logbook hours count either way."
+          }
+        }
+      ]
+    }
+  ]
+}0:{"rsc":["$","$1","c",{"children":[[["$","script",null,{"id":"blog-post-schema","type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","section",null,{"className":"relative overflow-hidden bg-navy-900 py-16 md:py-24 text-white","children":["$undefined",["$","div",null,{"className":"mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10","children":[["$","nav",null,{"aria-label":"Breadcrumb","className":"mb-4","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-2 text-sm text-cream-50/80","children":[["$","li","Home",{"className":"flex items-center gap-2","children":[false,["$","$L3",null,{"href":"/","className":"hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded","children":"Home"}]]}],["$","li","Blog",{"className":"flex items-center gap-2","children":["$L4","$L5"]}],"$L6"]}]}],"$L7","$undefined"]}]]}],"$L8"],null,"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"PeWWNo0pqvKLmn8gk9HOy"}
+4:["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":"12","height":"12","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","aria-hidden":"true","children":["$","polyline",null,{"points":"9 18 15 12 9 6"}]}]
+5:["$","$L3",null,{"href":"/blog/","className":"hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded","children":"Blog"}]
+6:["$","li","Part 61 vs Part 141: which is right for you?",{"className":"flex items-center gap-2","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":"12","height":"12","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","aria-hidden":"true","children":["$","polyline",null,{"points":"9 18 15 12 9 6"}]}],["$","span",null,{"aria-current":"page","children":"Part 61 vs Part 141: which is right for you?"}]]}]
+7:["$","h1",null,{"className":"font-heading text-4xl md:text-5xl leading-tight","children":"Part 61 vs Part 141: which is right for you?"}]
+8:["$","section",null,{"className":"py-16 md:py-24 bg-white","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 max-w-3xl","children":["$","article",null,{"className":"prose prose-lg max-w-none","children":[["$","header",null,{"className":"not-prose mb-8","children":["$","div",null,{"className":"flex flex-wrap items-center gap-3 text-sm text-ink-light","children":[["$","span",null,{"className":"rounded bg-sky-100 px-2 py-0.5 text-navy-900","children":"Getting Started"}],["$","time",null,{"dateTime":"2026-07-15","children":"July 14, 2026"}],["$","span",null,{"children":[4," min read"]}]]}]}],[["$","div",null,{"className":"rounded-lg bg-sky-100 p-5 text-navy-900","children":[["$","p",null,{"className":"font-semibold","children":"Quick answer"}],["$","p",null,{"className":"mt-1","children":["$","p",null,{"children":"Part 61 training is flexible and instructor-driven: you choose your CFI and schedule. Part 141 training follows a\nfixed, FAA-approved curriculum at an approved school with stage checks and cohort schedules. Both lead to the same FAA\ncertificate."}]}]]}],"\n",["$","p",null,{"children":"If you are researching flight schools in Reno, you have probably seen the terms Part 61 and Part 141. They describe the set of FAA regulations a school follows. The certificate you earn is the same. The checkride is the same. The difference is how you get there."}],"\n",["$","h2",null,{"id":"what-is-part-61","children":"What is Part 61?"}],"\n",["$","p",null,{"children":"Part 61 refers to 14 CFR Part 61, the FAA regulations that govern the certification of pilots and flight instructors. Under Part 61, training is typically one-on-one between a student and a CFI. There is no required syllabus, no stage checks, and no formal enrollment calendar. Your instructor signs you off when you meet the aeronautical experience and proficiency requirements for the certificate or rating."}],"\n",["$","p",null,{"children":"This structure is ideal for working adults, parents, and anyone whose schedule changes from week to week. You book lessons around your life. If you need extra time on landings, you take extra time on landings. If you want to fly twice this week and not at all next week, you can."}],"\n",["$","p",null,{"children":["Hornbill Aviation is a Part 61 school because flexibility is one of our core beliefs. We explain why in our ",["$","a",null,{"href":"/blog/flight-training-reno-nv/","children":"guide to flight training in Reno"}],"."]}],"\n",["$","h2",null,{"id":"what-is-part-141","children":"What is Part 141?"}],"\n",["$","p",null,{"children":"Part 141 schools operate under an FAA-approved training curriculum. They must meet specific classroom, simulator, and flight-hour requirements, maintain student records in a prescribed format, and pass periodic FAA inspections. Training is usually structured in stages or semesters, with stage checks along the way."}],"\n",["$","p",null,{"children":"Part 141 makes sense for full-time students who want a college-like structure, for veterans using certain GI Bill benefits, and for career-track pilots who want an accelerated, airline-oriented pathway. It can also allow slightly reduced minimum flight hours for some certificates if the student performs well."}],"\n",["$","h2",null,{"id":"how-the-schedules-differ","children":"How the schedules differ"}],"\n",["$","p",null,{"children":"Under Part 61, your schedule is yours. You and your CFI agree on lesson times. You can fly mornings, evenings, or weekends. You can pause training for a month and pick up where you left off without falling behind a class."}],"\n",["$","p",null,{"children":"Under Part 141, your schedule is largely set by the school. Missing a stage check or falling behind the cohort can delay your completion. That rigidity helps some students stay on track and hurts others who have unpredictable lives."}],"\n","$La","\n","$Lb","\n","$Lc","\n","$Ld","\n","$Le","\n","$Lf","\n","$L10","\n","$L11","\n","$L12","\n","$L13","\n","$L14","\n","$L15","\n","$L16","\n","$L17"],"$L18"]}]}]}]
+9:["$","$L19",null,{"children":["$","$1a",null,{"name":"Next.MetadataOutlet","children":"$@1b"}]}]
+a:["$","h2",null,{"id":"how-costs-differ","children":"How costs differ"}]
+b:["$","p",null,{"children":"Part 141 programs often quote an all-inclusive price up front. That can be reassuring, but it also means you pay for the structure whether you need it or not. Part 61 costs depend on how many hours you need, which means the total is less predictable but often lower for focused students."}]
+c:["$","p",null,{"children":["At Hornbill, we publish our ",["$","a",null,{"href":"/fleet/","children":"PA28 wet rates"}]," openly. Members pay $159/hour; non-members pay $180/hour. There are no hidden fuel surcharges. That transparency lets you control your own budget."]}]
+d:["$","h2",null,{"id":"which-path-should-you-choose","children":"Which path should you choose?"}]
+e:["$","p",null,{"children":"Choose Part 61 if you:"}]
+f:["$","ul",null,{"children":["\n",["$","li",null,{"children":"Work full-time or have a variable schedule"}],"\n",["$","li",null,{"children":"Want to choose or bring your own instructor"}],"\n",["$","li",null,{"children":"Prefer to learn at your own pace"}],"\n",["$","li",null,{"children":"Want to rent the same aircraft for real cross-country trips while you train"}],"\n"]}]
+10:["$","p",null,{"children":"Choose Part 141 if you:"}]
+11:["$","ul",null,{"children":["\n",["$","li",null,{"children":"Can commit to a full-time, structured program"}],"\n",["$","li",null,{"children":"Need an approved curriculum for benefits or career placement"}],"\n",["$","li",null,{"children":"Want frequent stage checks and a cohort experience"}],"\n"]}]
+12:["$","h2",null,{"id":"why-hornbill-chose-part-61","children":"Why Hornbill chose Part 61"}]
+13:["$","p",null,{"children":["Our students come from all walks of life: nurses, engineers, retirees, college students, and airline hopefuls. A single rigid schedule does not fit them all. Part 61 lets us build training around the student, not the other way around. Learn more about our philosophy on the ",["$","a",null,{"href":"/about/","children":"About"}]," page."]}]
+14:["$","p",null,{"children":["If you are still unsure, book a ",["$","a",null,{"href":"/discovery-flight/","children":"discovery flight"}],". You will meet a CFI, fly a PA28, and see whether our style matches how you learn best."]}]
+15:["$","hr",null,{}]
+16:["$","h2",null,{"id":"about-the-author","children":"About the author"}]
+17:["$","p",null,{"children":[["$","strong",null,{"children":"Alex Morgan"}]," is a Certified Flight Instructor (CFI) and Commercial Pilot at Hornbill Aviation. They train Private Pilot and Instrument Rating students under Part 61 at RNO and help new students pick the path that fits their lives."]}]
+18:["$","footer",null,{"className":"not-prose mt-12 border-t border-navy-800/10 pt-8","children":["$","p",null,{"className":"text-sm text-ink-light","children":["By ","alex-morgan"]}]}]
+1b:null

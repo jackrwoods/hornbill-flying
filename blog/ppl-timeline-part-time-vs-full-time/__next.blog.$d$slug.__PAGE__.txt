@@ -1,0 +1,102 @@
+1:"$Sreact.fragment"
+3:I[22016,["/hornbill-flying/_next/static/chunks/2hf-l4-bag_mi.js"],""]
+18:I[97367,["/hornbill-flying/_next/static/chunks/05-c3ty_6dwfk.js","/hornbill-flying/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+19:"$Sreact.suspense"
+2:Ta83,{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://hornbillaviation.com/blog/ppl-timeline-part-time-vs-full-time/#webpage",
+      "name": "How long does PPL training take part-time vs full-time?",
+      "url": "https://hornbillaviation.com/blog/ppl-timeline-part-time-vs-full-time/",
+      "isPartOf": {
+        "@id": "https://hornbillaviation.com/#website"
+      },
+      "about": {
+        "@id": "https://hornbillaviation.com/#localbusiness"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://hornbillaviation.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://hornbillaviation.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "How long does PPL training take part-time vs full-time?",
+          "item": "https://hornbillaviation.com/blog/ppl-timeline-part-time-vs-full-time/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How many flight hours do I need for a Private Pilot certificate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The FAA minimum is 40 hours, but most students finish between 55 and 75 hours depending on pace, preparation, and weather."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I work full-time and still finish in six months?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, if you fly twice a week and study consistently between lessons. Flying only once every two weeks usually stretches the timeline past a year."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does ground school add much time?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ground school can run parallel with flight training. Students who finish the written exam early usually move through flight lessons faster because they already know the concepts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What slows students down the most?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Inconsistent scheduling, skipping ground study, and not reviewing maneuvers between lessons. Weather in Reno can also interrupt training, especially in winter."
+          }
+        }
+      ]
+    }
+  ]
+}0:{"rsc":["$","$1","c",{"children":[[["$","script",null,{"id":"blog-post-schema","type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","section",null,{"className":"relative overflow-hidden bg-navy-900 py-16 md:py-24 text-white","children":["$undefined",["$","div",null,{"className":"mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10","children":[["$","nav",null,{"aria-label":"Breadcrumb","className":"mb-4","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-2 text-sm text-cream-50/80","children":[["$","li","Home",{"className":"flex items-center gap-2","children":[false,["$","$L3",null,{"href":"/","className":"hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded","children":"Home"}]]}],"$L4","$L5"]}]}],"$L6","$undefined"]}]]}],"$L7"],null,"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"PeWWNo0pqvKLmn8gk9HOy"}
+4:["$","li","Blog",{"className":"flex items-center gap-2","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":"12","height":"12","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","aria-hidden":"true","children":["$","polyline",null,{"points":"9 18 15 12 9 6"}]}],["$","$L3",null,{"href":"/blog/","className":"hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded","children":"Blog"}]]}]
+5:["$","li","How long does PPL training take part-time vs full-time?",{"className":"flex items-center gap-2","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":"12","height":"12","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","aria-hidden":"true","children":["$","polyline",null,{"points":"9 18 15 12 9 6"}]}],["$","span",null,{"aria-current":"page","children":"How long does PPL training take part-time vs full-time?"}]]}]
+6:["$","h1",null,{"className":"font-heading text-4xl md:text-5xl leading-tight","children":"How long does PPL training take part-time vs full-time?"}]
+7:["$","section",null,{"className":"py-16 md:py-24 bg-white","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 max-w-3xl","children":["$","article",null,{"className":"prose prose-lg max-w-none","children":[["$","header",null,{"className":"not-prose mb-8","children":["$","div",null,{"className":"flex flex-wrap items-center gap-3 text-sm text-ink-light","children":[["$","span",null,{"className":"rounded bg-sky-100 px-2 py-0.5 text-navy-900","children":"Cost & Planning"}],["$","time",null,{"dateTime":"2026-08-19","children":"August 18, 2026"}],["$","span",null,{"children":[4," min read"]}]]}]}],[["$","div",null,{"className":"rounded-lg bg-sky-100 p-5 text-navy-900","children":[["$","p",null,{"className":"font-semibold","children":"Quick answer"}],["$","p",null,{"className":"mt-1","children":["$","p",null,{"children":"Full-time Private Pilot students at RNO often finish in 3–4 months. Part-time students flying once or twice a week\ntypically take 6–12 months. The difference is not intelligence; it is frequency and consistency."}]}]]}],"\n",["$","p",null,{"children":"One of the first questions prospective students ask is how long it takes to earn a Private Pilot certificate. The honest answer depends on how often you can fly, how well you study, and how flexible your schedule is. This guide compares the two most common paths at Hornbill Aviation."}],"\n",["$","h2",null,{"id":"what-the-faa-requires","children":"What the FAA requires"}],"\n",["$","p",null,{"children":"The FAA requires at least 40 hours of flight experience for the Private Pilot certificate, including specific cross-country, night, and solo hours. Most students need more than the minimum. A realistic total at RNO is 55–75 hours before the checkride."}],"\n",["$","p",null,{"children":"Time to finish depends on how quickly you accumulate those hours and how well you retain what you learn between lessons. That is why frequency matters more than raw talent."}],"\n",["$","h2",null,{"id":"full-time-training-34-months","children":"Full-time training: 3–4 months"}],"\n",["$","p",null,{"children":"A full-time student treats flight training like a job. They fly four or five days a week, study ground material daily, and take the written exam within the first month. With this rhythm, skills build on top of each other instead of fading between lessons."}],"\n",["$","p",null,{"children":"Full-time students often finish in 3–4 months with 55–65 hours. The pace is intense but efficient. It works well for people with flexible schedules, summer breaks, or career-track goals. The downside is cost concentration: you are paying for a lot of flying in a short window."}],"\n",["$","h2",null,{"id":"part-time-training-612-months","children":"Part-time training: 6–12 months"}],"\n",["$","p",null,{"children":"Most adult students at Hornbill fly part-time. They have jobs, families, and other responsibilities. A common schedule is two lessons per week: one weekday evening and one weekend morning."}],"\n",["$","p",null,{"children":"At two lessons per week, a part-time student usually finishes in 6–9 months with 60–75 hours. At one lesson per week, the timeline stretches toward 12 months or longer because each lesson includes review before new material. The total hours often drift higher as well."}],"\n",["$","p",null,{"children":"The key to part-time success is protecting your lesson slots. Treat them like meetings you cannot move. Cancel only for weather or genuine emergencies."}],"\n",["$","h2",null,{"id":"ground-school-and-the-written-exam","children":"Ground school and the written exam"}],"\n",["$","p",null,{"children":"Flight training and ground school can run side by side. Students who pass the FAA written exam early have a head start. They already understand regulations, weather, navigation, and aerodynamics, so their CFI can spend airtime teaching practical skills, not explaining theory."}],"\n","$L9","\n","$La","\n","$Lb","\n","$Lc","\n","$Ld","\n","$Le","\n","$Lf","\n","$L10","\n","$L11","\n","$L12","\n","$L13","\n","$L14","\n","$L15","\n","$L16"],"$L17"]}]}]}]
+8:["$","$L18",null,{"children":["$","$19",null,{"name":"Next.MetadataOutlet","children":"$@1a"}]}]
+9:["$","p",null,{"children":"Online ground school, evening classes, or one-on-one sessions with your CFI all work. Pick the format that matches how you learn. The important thing is to start early and finish the written before the checkride looms."}]
+a:["$","h2",null,{"id":"how-weather-affects-the-timeline","children":"How weather affects the timeline"}]
+b:["$","p",null,{"children":"Reno weather is generally good for training, but it is not perfect. Summer afternoons can be bumpy and hot, making density altitude a real factor. Winter storms can cancel lessons for days. Spring winds can keep students on the ground. A flexible schedule helps you move lessons to better weather windows."}]
+c:["$","h2",null,{"id":"cost-and-timeline-together","children":"Cost and timeline together"}]
+d:["$","p",null,{"children":["The longer the timeline, the more the total cost can grow, even if the hourly rate stays the same. Part-time students need more review lessons and may repeat skills more often. That is why our ",["$","a",null,{"href":"/blog/private-pilot-license-cost-nevada/","children":"cost breakdown for a Private Pilot license in Nevada"}]," emphasizes frequency."]}]
+e:["$","p",null,{"children":["You can lower the hourly cost by joining the ",["$","a",null,{"href":"/membership/","children":"membership program"}],". Members pay $159/hour wet for the PA28 versus $180/hour for non-members. Over 60 hours, that difference adds up."]}]
+f:["$","h2",null,{"id":"tips-for-staying-on-track","children":"Tips for staying on track"}]
+10:["$","ul",null,{"children":["\n",["$","li",null,{"children":[["$","strong",null,{"children":"Book a recurring schedule."}]," Same days, same times, every week."]}],"\n",["$","li",null,{"children":[["$","strong",null,{"children":"Study between lessons."}]," Even 20 minutes of chair flying helps."]}],"\n",["$","li",null,{"children":[["$","strong",null,{"children":"Use a syllabus."}]," Know the next two lessons so you can prepare."]}],"\n",["$","li",null,{"children":[["$","strong",null,{"children":"Take the written early."}]," Do not let it become a last-minute hurdle."]}],"\n",["$","li",null,{"children":[["$","strong",null,{"children":"Fly often enough to retain skills."}]," Twice a week is the practical minimum for efficient progress."]}],"\n"]}]
+11:["$","h2",null,{"id":"which-path-is-right-for-you","children":"Which path is right for you?"}]
+12:["$","p",null,{"children":"Choose full-time if you can dedicate several months and want to finish quickly. Choose part-time if you need to balance training with the rest of your life. Both paths lead to the same certificate and the same checkride."}]
+13:["$","p",null,{"children":["The best first step is to ",["$","a",null,{"href":"/discovery-flight/","children":"book a discovery flight"}]," and talk through your schedule with a CFI. You can also explore the full ",["$","a",null,{"href":"/programs/private-pilot/","children":"Private Pilot program"}]," and read our complete ",["$","a",null,{"href":"/blog/flight-training-reno-nv/","children":"guide to flight training in Reno"}],"."]}]
+14:["$","hr",null,{}]
+15:["$","h2",null,{"id":"about-the-author","children":"About the author"}]
+16:["$","p",null,{"children":[["$","strong",null,{"children":"Alex Morgan"}]," is a Certified Flight Instructor (CFI) and Commercial Pilot at Hornbill Aviation. They help students design training schedules that fit their lives, whether they fly twice a week or twice a day."]}]
+17:["$","footer",null,{"className":"not-prose mt-12 border-t border-navy-800/10 pt-8","children":["$","p",null,{"className":"text-sm text-ink-light","children":["By ","alex-morgan"]}]}]
+1a:null

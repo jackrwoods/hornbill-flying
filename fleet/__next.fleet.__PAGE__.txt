@@ -1,0 +1,208 @@
+1:"$Sreact.fragment"
+d:I[5500,["/hornbill-flying/_next/static/chunks/2hf-l4-bag_mi.js","/hornbill-flying/_next/static/chunks/25v9rlq3f4jj1.js"],"Image"]
+e:I[22016,["/hornbill-flying/_next/static/chunks/2hf-l4-bag_mi.js","/hornbill-flying/_next/static/chunks/25v9rlq3f4jj1.js"],""]
+14:I[31638,["/hornbill-flying/_next/static/chunks/2hf-l4-bag_mi.js","/hornbill-flying/_next/static/chunks/25v9rlq3f4jj1.js"],"FAQAccordion"]
+15:I[97367,["/hornbill-flying/_next/static/chunks/05-c3ty_6dwfk.js","/hornbill-flying/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+16:"$Sreact.suspense"
+2:T19f1,{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://hornbillaviation.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Fleet & Pricing",
+          "item": "https://hornbillaviation.com/fleet/"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://hornbillaviation.com/fleet/#service",
+      "name": "PA28 Aircraft Rental & Flight Training",
+      "description": "Transparent wet-rate PA28 aircraft rental and Part 61 flight training at Reno–Tahoe International Airport (RNO).",
+      "provider": [
+        {
+          "@id": "https://hornbillaviation.com/#organization"
+        },
+        {
+          "@id": "https://hornbillaviation.com/#localbusiness"
+        }
+      ],
+      "areaServed": {
+        "@type": "Airport",
+        "name": "Reno–Tahoe International Airport",
+        "alternateName": "RNO",
+        "containedInPlace": {
+          "@type": "City",
+          "name": "Reno",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Nevada"
+          }
+        }
+      },
+      "serviceType": [
+        "Flight Training",
+        "Aircraft Rental"
+      ],
+      "url": "https://hornbillaviation.com/fleet/",
+      "offers": [
+        {
+          "@type": "Offer",
+          "price": "159.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "unitCode": "HUR",
+          "name": "Member PA28 wet rate",
+          "url": "https://hornbillaviation.com/fleet/",
+          "description": "Wet hourly rate for PA28 rental with active membership.",
+          "itemOffered": "PA28 Cherokee aircraft rental"
+        },
+        {
+          "@type": "Offer",
+          "price": "180.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "unitCode": "HUR",
+          "name": "Non-member PA28 wet rate",
+          "url": "https://hornbillaviation.com/fleet/",
+          "description": "Wet hourly rate for PA28 rental without membership.",
+          "itemOffered": "PA28 Cherokee aircraft rental"
+        },
+        {
+          "@type": "Offer",
+          "price": "59.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "unitCode": "MON",
+          "name": "Monthly membership",
+          "url": "https://hornbillaviation.com/membership/",
+          "description": "Monthly membership that lowers the PA28 wet rate.",
+          "itemOffered": "Hornbill Aviation membership"
+        },
+        {
+          "@type": "Offer",
+          "price": "199.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "name": "Discovery flight",
+          "url": "https://hornbillaviation.com/discovery-flight/",
+          "description": "Introductory discovery flight in a PA28 at RNO.",
+          "itemOffered": "Discovery flight"
+        }
+      ]
+    },
+    {
+      "@type": "AggregateOffer",
+      "lowPrice": "159",
+      "highPrice": "180",
+      "priceCurrency": "USD",
+      "offers": [
+        {
+          "@type": "Offer",
+          "price": "159.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "unitCode": "HUR",
+          "name": "Member PA28 wet rate",
+          "url": "https://hornbillaviation.com/fleet/"
+        },
+        {
+          "@type": "Offer",
+          "price": "180.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "unitCode": "HUR",
+          "name": "Non-member PA28 wet rate",
+          "url": "https://hornbillaviation.com/fleet/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does \"wet rate\" mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A wet rate includes fuel and oil. You pay one hourly price for the aircraft; we handle the fuel. There is no separate fuel surcharge."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I rent an aircraft for a cross-country trip?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Members can rent the same PA28s they train in for cross-country flights. IFR-equipped aircraft are available for instrument cross-countries. Ask about our cross-country rental requirements before planning an overnight or out-of-state trip."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a membership to fly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Non-members can rent aircraft at the non-member wet rate. The $49/month membership lowers the rate to $159/hr and is worth it if you fly more than about two hours per month."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is included in the discovery flight?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The $199 discovery flight includes a pre-flight briefing, 45–60 minutes of hands-on flight time with a CFI, and a post-flight debrief. No deposit is required."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How are instructor hours billed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CFI time is billed separately from aircraft rental. Ground instruction and flight instruction are tracked individually and charged by the hour. Contact us to confirm the current CFI rate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the cancellation policy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Discovery flights and rentals can be cancelled or rescheduled with at least 24 hours' notice. No-shows may be charged the full booking amount. Refunds are processed to the original payment method within 5–10 business days."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there any fuel surcharges?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Every PA28 wet rate is all-inclusive. Members pay $159/hr and non-members pay $180/hr with no additional fuel or oil fees."
+          }
+        }
+      ]
+    }
+  ]
+}0:{"rsc":["$","$1","c",{"children":[[["$","script",null,{"id":"fleet-schema","type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],"$L3","$L4","$L5","$L6","$L7","$L8","$L9","$La"],["$Lb"],"$Lc"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"PeWWNo0pqvKLmn8gk9HOy"}
+3:["$","section",null,{"className":"relative overflow-hidden bg-navy-900 py-16 md:py-24 text-white","children":[["$","div",null,{"className":"absolute inset-0 z-0","children":[["$","$Ld",null,{"src":"/hornbill-flying/images/fleet/fleet-hero-new.webp","alt":"Three Hornbill Aviation PA28 Cherokee aircraft lined up on the ramp under a blue sky.","width":1920,"height":1440,"fill":false,"priority":true,"className":"object-cover opacity-30","sizes":"100vw"}],["$","div",null,{"className":"absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-900/70 to-navy-900/50"}]]}],["$","div",null,{"className":"mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10","children":[["$","nav",null,{"aria-label":"Breadcrumb","className":"mb-4","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-2 text-sm text-cream-50/80","children":[["$","li","Home",{"className":"flex items-center gap-2","children":[false,["$","$Le",null,{"href":"/","className":"hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded","children":"Home"}]]}],["$","li","Fleet & Pricing",{"className":"flex items-center gap-2","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":"12","height":"12","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","aria-hidden":"true","children":["$","polyline",null,{"points":"9 18 15 12 9 6"}]}],["$","span",null,{"aria-current":"page","children":"Fleet & Pricing"}]]}]]}]}],["$","h1",null,{"className":"font-heading text-4xl md:text-5xl leading-tight","children":"Our PA28 fleet and transparent rates."}],["$","p",null,{"className":"mt-4 max-w-2xl text-lg text-cream-50/90","children":"Every wet rate is listed here. No fuel surcharge, no hidden fees, no surprise markup when you switch aircraft."}]]}]]}]
+4:["$","section",null,{"id":"membership","className":"py-16 md:py-24 bg-cream-50","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8","children":[["$","h2",null,{"className":"font-heading text-3xl md:text-4xl text-navy-900","children":"Membership vs non-member rates"}],["$","p",null,{"className":"mt-4 max-w-2xl text-ink-light","children":"Transparent pricing. One membership lowers every PA28 wet rate."}],["$","div",null,{"className":"mt-10 grid gap-6 md:grid-cols-2","children":[["$","div",null,{"className":"rounded-xl border-t-4 border-gold-500 bg-white p-6 shadow-sm","children":[["$","p",null,{"className":"font-mono text-xs uppercase tracking-wide text-ink-light","children":"Member"}],["$","p",null,{"className":"mt-2 font-heading text-4xl text-navy-900","children":["$$",159,["$","span",null,{"className":"text-lg font-body text-ink-light","children":"/hr wet"}]]}],["$","p",null,{"className":"mt-1 text-sm text-ink-light","children":["$$",49,"/month · students and renters who fly regularly"]}],["$","p",null,{"className":"mt-4 text-sm font-semibold text-success","children":["Save $",21,"/hr. At about ",2.3," hours per month, membership pays for itself."]}]]}],["$","div",null,{"className":"rounded-xl bg-white p-6 shadow-sm","children":[["$","p",null,{"className":"font-mono text-xs uppercase tracking-wide text-ink-light","children":"Non-member"}],["$","p",null,{"className":"mt-2 font-heading text-4xl text-navy-900","children":["$$",180,["$","span",null,{"className":"text-lg font-body text-ink-light","children":"/hr wet"}]]}],["$","p",null,{"className":"mt-1 text-sm text-ink-light","children":"No monthly fee · occasional renters or visitors"}]]}]]}],["$","div",null,{"className":"mt-8","children":["$","$Le",null,{"href":"/membership/","className":"inline-flex items-center text-sm font-semibold text-gold-500 hover:text-gold-400 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded","data-analytics":"membership_signup_started","children":["See membership details",["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":"16","height":"16","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","aria-hidden":"true","className":"ml-1","children":["$","polyline",null,{"points":"9 18 15 12 9 6"}]}]]}]}]]}]}]
+5:["$","section",null,{"id":"aircraft","className":"py-16 md:py-24 bg-white","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8","children":[["$","h2",null,{"className":"font-heading text-3xl md:text-4xl text-navy-900","children":"The fleet"}],["$","p",null,{"className":"mt-4 max-w-2xl text-ink-light","children":"Four PA28 Cherokees and a flight simulator. Same engine, same handling, similarly equipped aircraft — plus a place to rehearse procedures before you burn fuel."}],["$","div",null,{"className":"mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3","children":[["$","article","n6576j",{"className":"rounded-xl bg-cream-50 shadow-sm overflow-hidden flex flex-col","children":[["$","div",null,{"className":"relative aspect-[4/3] w-full","children":["$","$Ld",null,{"src":"/hornbill-flying/images/fleet/n6576j.webp","alt":"PA28 Cherokee N6576J on the ramp at Reno-Tahoe International Airport (RNO).","fill":true,"sizes":"(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw","className":"object-cover","loading":"eager"}]}],["$","div",null,{"className":"flex flex-1 flex-col p-5","children":[["$","h3",null,{"className":"font-heading text-2xl text-navy-900","children":"N6576J"}],["$","div",null,{"className":"mt-4 space-y-3 text-sm","children":[["$","div",null,{"children":[["$","h4",null,{"className":"font-semibold text-ink-light","children":"Engine"}],["$","p",null,{"children":"180 HP Lycoming"}]]}],["$","div",null,{"children":[["$","h4",null,{"className":"font-semibold text-ink-light","children":"Avionics"}],["$","ul",null,{"className":"list-disc pl-4","children":[["$","li","Dual Garmin G5 units",{"children":"Dual Garmin G5 units"}],["$","li","WAAS Garmin 375 GPS",{"children":"WAAS Garmin 375 GPS"}]]}]]}],["$","div",null,{"children":[["$","h4",null,{"className":"font-semibold text-ink-light","children":"Notes"}],["$","p",null,{"children":"Cruise prop for efficient IFR cross-country flying."}]]}]]}],["$","div",null,{"className":"mt-auto pt-5 flex flex-wrap gap-2","children":[[["$","span",null,{"className":"inline-flex rounded-full bg-navy-900 px-3 py-1 text-xs font-semibold text-white","children":["Member $",159,"/hr"]}],["$","span",null,{"className":"inline-flex rounded-full bg-white border border-navy-800/10 px-3 py-1 text-xs font-semibold text-navy-900","children":["Non-member $",180,"/hr"]}],["$","span",null,{"className":"inline-flex rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold text-navy-900","children":"IFR equipped"}],["$","span",null,{"className":"inline-flex rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold text-navy-900","children":"Cross-country ready"}]],false]}],["$","p",null,{"className":"mt-4 text-sm","children":["$","$Le",null,{"href":"/fleet/n6576j/","className":"font-semibold text-gold-500 hover:text-gold-400 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded","children":"View details →"}]}]]}]]}],["$","article","n7824w",{"className":"rounded-xl bg-cream-50 shadow-sm overflow-hidden flex flex-col","children":[["$","div",null,{"className":"relative aspect-[4/3] w-full","children":["$","$Ld",null,{"src":"/hornbill-flying/images/fleet/n7824w.webp","alt":"PA28 Cherokee N7824W on the ramp at Reno-Tahoe International Airport (RNO).","fill":true,"sizes":"(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw","className":"object-cover","loading":"lazy"}]}],["$","div",null,{"className":"flex flex-1 flex-col p-5","children":[["$","h3",null,{"className":"font-heading text-2xl text-navy-900","children":"N7824W"}],["$","div",null,{"className":"mt-4 space-y-3 text-sm","children":[["$","div",null,{"children":[["$","h4",null,{"className":"font-semibold text-ink-light","children":"Engine"}],["$","p",null,{"children":"180 HP Lycoming"}]]}],["$","div",null,{"children":[["$","h4",null,{"className":"font-semibold text-ink-light","children":"Avionics"}],["$","ul",null,{"className":"list-disc pl-4","children":[["$","li","Dual Garmin G5 units",{"children":"Dual Garmin G5 units"}],["$","li","WAAS Garmin 480 GPS",{"children":"WAAS Garmin 480 GPS"}]]}]]}],["$","div",null,{"children":[["$","h4",null,{"className":"font-semibold text-ink-light","children":"Notes"}],"$Lf"]}]]}],"$L10","$L11"]}]]}],"$L12","$L13"]}]]}]}]
+6:["$","section",null,{"id":"instructor-rate","className":"py-16 md:py-24 bg-cream-50","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8","children":[["$","h2",null,{"className":"font-heading text-3xl md:text-4xl text-navy-900","children":"CFI instruction rates"}],["$","div",null,{"className":"mt-8 max-w-2xl rounded-xl bg-white p-6 shadow-sm","children":[["$","p",null,{"className":"font-mono text-xs uppercase tracking-wide text-ink-light","children":"CFI instruction"}],["$","p",null,{"className":"mt-2 font-heading text-4xl text-navy-900","children":["$","span",null,{"className":"text-2xl","children":"Confirm with operations"}]}],["$","p",null,{"className":"mt-4 text-ink-light","children":"Ground and flight instruction billed separately from aircraft rental."}],["$","p",null,{"className":"mt-4 text-sm text-ink-light","children":"Our instruction rate is being finalized. Call or email for the current CFI hourly rate."}]]}]]}]}]
+7:["$","section",null,{"id":"discovery-flight","className":"py-16 md:py-24 bg-sky-100","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8","children":["$","div",null,{"className":"grid gap-8 lg:grid-cols-2 lg:items-center","children":[["$","div",null,{"children":[["$","h2",null,{"className":"font-heading text-3xl md:text-4xl text-navy-900","children":"Discovery flight"}],["$","p",null,{"className":"mt-4 text-lg text-ink-light","children":"Your first lesson in the left seat. No deposit, no commitment."}],["$","div",null,{"className":"mt-6 rounded-xl bg-white p-6 shadow-sm","children":[["$","p",null,{"className":"font-mono text-xs uppercase tracking-wide text-ink-light","children":"Introductory flight"}],["$","p",null,{"className":"mt-2 font-heading text-5xl text-navy-900","children":["$$",199]}],["$","ul",null,{"className":"mt-4 space-y-1 text-ink-light","children":[["$","li",null,{"children":"45–60 minutes"}],["$","li",null,{"children":"No deposit required."}]]}]]}],["$","div",null,{"className":"mt-6","children":["$","$Le",null,{"href":"/discovery-flight/","className":"inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 text-center bg-gold-500 text-navy-900 hover:bg-gold-400 focus:ring-navy-900","data-analytics":"discovery_flight_booking_started","children":"Book a discovery flight"}]}]]}],["$","div",null,{"className":"rounded-xl bg-white p-6 shadow-sm","children":[["$","h3",null,{"className":"font-heading text-xl text-navy-900","children":"What is included"}],["$","ul",null,{"className":"mt-4 space-y-3 text-ink-light","children":[["$","li","Pre-flight briefing",{"className":"flex items-start gap-3","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":"20","height":"20","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","aria-hidden":"true","className":"mt-0.5 flex-shrink-0 text-gold-500","children":["$","polyline",null,{"points":"20 6 9 17 4 12"}]}],"Pre-flight briefing"]}],["$","li","Hands-on time at the controls",{"className":"flex items-start gap-3","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":"20","height":"20","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","aria-hidden":"true","className":"mt-0.5 flex-shrink-0 text-gold-500","children":["$","polyline",null,{"points":"20 6 9 17 4 12"}]}],"Hands-on time at the controls"]}],["$","li","Post-flight debrief",{"className":"flex items-start gap-3","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":"20","height":"20","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","aria-hidden":"true","className":"mt-0.5 flex-shrink-0 text-gold-500","children":["$","polyline",null,{"points":"20 6 9 17 4 12"}]}],"Post-flight debrief"]}]]}]]}]]}]}]}]
+8:["$","section",null,{"id":"cancellation-policy","className":"py-16 md:py-24 bg-cream-50","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8","children":[["$","h2",null,{"className":"font-heading text-3xl md:text-4xl text-navy-900","children":"Cancellation and refund policy"}],["$","p",null,{"className":"mt-4 max-w-3xl text-ink-light leading-relaxed","children":"Discovery flights and rentals can be cancelled or rescheduled with at least 24 hours' notice. No-shows may be charged the full booking amount. Refunds are processed to the original payment method within 5–10 business days."}]]}]}]
+9:["$","section",null,{"id":"faq","className":"py-16 md:py-24 bg-white","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8","children":[["$","h2",null,{"className":"font-heading text-3xl md:text-4xl text-navy-900","children":"Frequently asked questions"}],["$","div",null,{"className":"mt-8 max-w-3xl","children":["$","$L14",null,{"faqs":[{"id":"wet-rate","question":"What does \"wet rate\" mean?","answer":"A wet rate includes fuel and oil. You pay one hourly price for the aircraft; we handle the fuel. There is no separate fuel surcharge."},{"id":"cross-country-rental","question":"Can I rent an aircraft for a cross-country trip?","answer":"Yes. Members can rent the same PA28s they train in for cross-country flights. IFR-equipped aircraft are available for instrument cross-countries. Ask about our cross-country rental requirements before planning an overnight or out-of-state trip."},{"id":"membership-required","question":"Do I need a membership to fly?","answer":"No. Non-members can rent aircraft at the non-member wet rate. The $49/month membership lowers the rate to $159/hr and is worth it if you fly more than about two hours per month."},{"id":"discovery-flight-included","question":"What is included in the discovery flight?","answer":"The $199 discovery flight includes a pre-flight briefing, 45–60 minutes of hands-on flight time with a CFI, and a post-flight debrief. No deposit is required."},{"id":"instructor-billing","question":"How are instructor hours billed?","answer":"CFI time is billed separately from aircraft rental. Ground instruction and flight instruction are tracked individually and charged by the hour. Contact us to confirm the current CFI rate."},{"id":"cancellation-policy","question":"What is the cancellation policy?","answer":"Discovery flights and rentals can be cancelled or rescheduled with at least 24 hours' notice. No-shows may be charged the full booking amount. Refunds are processed to the original payment method within 5–10 business days."},{"id":"fuel-surcharges","question":"Are there any fuel surcharges?","answer":"No. Every PA28 wet rate is all-inclusive. Members pay $159/hr and non-members pay $180/hr with no additional fuel or oil fees."}]}]}]]}]}]
+a:["$","section",null,{"id":"cta","className":"py-16 md:py-24 bg-navy-900 text-white","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8","children":["$","div",null,{"className":"text-center","children":[["$","h2",null,{"className":"font-heading text-3xl md:text-4xl text-white","children":"Ready to fly?"}],["$","p",null,{"className":"mx-auto mt-4 max-w-2xl text-cream-50/90","children":"Book a discovery flight or start a membership today. Questions? Call us and we will walk you through the rates."}],["$","div",null,{"className":"mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row","children":[["$","$Le",null,{"href":"/discovery-flight/","className":"inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 text-center bg-gold-500 text-navy-900 hover:bg-gold-400 focus:ring-navy-900","data-analytics":"discovery_flight_booking_started","children":"Book a discovery flight"}],["$","$Le",null,{"href":"/membership/","className":"inline-flex items-center justify-center rounded-lg border-2 border-gold-500 px-5 py-3 text-sm font-semibold text-gold-500 transition-colors hover:bg-gold-500 hover:text-navy-900 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2","data-analytics":"membership_signup_started","children":"Start a membership"}],["$","a",null,{"href":"tel:15555551234","className":"inline-flex items-center gap-2 font-medium hover:underline focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded text-white hover:text-gold-400","data-analytics":"phone_click","aria-label":"Call 555-555-1234","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":"18","height":"18","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","aria-hidden":"true","children":["$","path",null,{"d":"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"}]}],"555-555-1234"]}]]}],["$","p",null,{"className":"mt-6 text-sm text-cream-50/70","children":["Interested in a full certificate?"," ",["$","$Le",null,{"href":"/programs/private-pilot/","className":"font-semibold text-gold-400 hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded","children":"See Private Pilot training"}]]}]]}]}]}]
+b:["$","script","script-0",{"src":"/hornbill-flying/_next/static/chunks/25v9rlq3f4jj1.js","async":true}]
+c:["$","$L15",null,{"children":["$","$16",null,{"name":"Next.MetadataOutlet","children":"$@17"}]}]
+f:["$","p",null,{"children":"Set up for performance around the mountains."}]
+10:["$","div",null,{"className":"mt-auto pt-5 flex flex-wrap gap-2","children":[[["$","span",null,{"className":"inline-flex rounded-full bg-navy-900 px-3 py-1 text-xs font-semibold text-white","children":["Member $",159,"/hr"]}],["$","span",null,{"className":"inline-flex rounded-full bg-white border border-navy-800/10 px-3 py-1 text-xs font-semibold text-navy-900","children":["Non-member $",180,"/hr"]}],["$","span",null,{"className":"inline-flex rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold text-navy-900","children":"IFR equipped"}],["$","span",null,{"className":"inline-flex rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold text-navy-900","children":"Cross-country ready"}]],false]}]
+11:["$","p",null,{"className":"mt-4 text-sm","children":["$","$Le",null,{"href":"/fleet/n7824w/","className":"font-semibold text-gold-500 hover:text-gold-400 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded","children":"View details →"}]}]
+12:["$","article","n7969w",{"className":"rounded-xl bg-cream-50 shadow-sm overflow-hidden flex flex-col","children":[["$","div",null,{"className":"relative aspect-[4/3] w-full","children":["$","$Ld",null,{"src":"/hornbill-flying/images/fleet/n7969w.webp","alt":"PA28 Cherokee N7969W on the ramp at Reno-Tahoe International Airport (RNO), with other aircraft and the control tower in the background.","fill":true,"sizes":"(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw","className":"object-cover","loading":"lazy"}]}],["$","div",null,{"className":"flex flex-1 flex-col p-5","children":[["$","h3",null,{"className":"font-heading text-2xl text-navy-900","children":"N7969W"}],["$","div",null,{"className":"mt-4 space-y-3 text-sm","children":[["$","div",null,{"children":[["$","h4",null,{"className":"font-semibold text-ink-light","children":"Engine"}],["$","p",null,{"children":"180 HP Lycoming"}]]}],["$","div",null,{"children":[["$","h4",null,{"className":"font-semibold text-ink-light","children":"Avionics"}],["$","ul",null,{"className":"list-disc pl-4","children":[["$","li","VFR panel",{"children":"VFR panel"}]]}]]}],["$","div",null,{"children":[["$","h4",null,{"className":"font-semibold text-ink-light","children":"Notes"}],["$","p",null,{"children":"Training and local rental workhorse."}]]}]]}],["$","div",null,{"className":"mt-auto pt-5 flex flex-wrap gap-2","children":[[["$","span",null,{"className":"inline-flex rounded-full bg-navy-900 px-3 py-1 text-xs font-semibold text-white","children":["Member $",159,"/hr"]}],["$","span",null,{"className":"inline-flex rounded-full bg-white border border-navy-800/10 px-3 py-1 text-xs font-semibold text-navy-900","children":["Non-member $",180,"/hr"]}],false,false],false]}],["$","p",null,{"className":"mt-4 text-sm","children":["$","$Le",null,{"href":"/fleet/n7969w/","className":"font-semibold text-gold-500 hover:text-gold-400 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded","children":"View details →"}]}]]}]]}]
+13:["$","article","simulator",{"className":"rounded-xl bg-cream-50 shadow-sm overflow-hidden flex flex-col","children":[["$","div",null,{"className":"relative aspect-[4/3] w-full","children":["$","$Ld",null,{"src":"/hornbill-flying/images/fleet/simulator.webp","alt":"Flight simulator station with three displays and a full instrument panel at Hornbill Aviation in Reno, NV.","fill":true,"sizes":"(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw","className":"object-cover","loading":"lazy"}]}],["$","div",null,{"className":"flex flex-1 flex-col p-5","children":[["$","h3",null,{"className":"font-heading text-2xl text-navy-900","children":"Flight simulator"}],["$","div",null,{"className":"mt-4 space-y-3 text-sm","children":[["$","p",null,{"children":"Practice procedures before you pay for engine time."}],["$","p",null,{"children":"Useful for Instrument Rating students, IPC preparation, and anyone who wants to sharpen procedures without weather or fuel concerns."}]]}],["$","div",null,{"className":"mt-auto pt-5 flex flex-wrap gap-2","children":[false,["$","span",null,{"className":"inline-flex rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold text-navy-900","children":"Procedure training"}]]}],["$","p",null,{"className":"mt-4 text-sm","children":["$","$Le",null,{"href":"/fleet/simulator/","className":"font-semibold text-gold-500 hover:text-gold-400 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded","children":"View details →"}]}]]}]]}]
+17:null

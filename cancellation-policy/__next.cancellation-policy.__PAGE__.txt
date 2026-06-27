@@ -1,0 +1,96 @@
+1:"$Sreact.fragment"
+c:I[22016,["/hornbill-flying/_next/static/chunks/2hf-l4-bag_mi.js","/hornbill-flying/_next/static/chunks/25v9rlq3f4jj1.js"],""]
+f:I[31638,["/hornbill-flying/_next/static/chunks/2hf-l4-bag_mi.js","/hornbill-flying/_next/static/chunks/25v9rlq3f4jj1.js"],"FAQAccordion"]
+10:I[97367,["/hornbill-flying/_next/static/chunks/05-c3ty_6dwfk.js","/hornbill-flying/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+11:"$Sreact.suspense"
+2:Tab9,{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://hornbillaviation.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cancellation, Refund & Weather Policy",
+          "item": "https://hornbillaviation.com/cancellation-policy/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://hornbillaviation.com/cancellation-policy/#webpage",
+      "name": "Cancellation, Refund & Weather Policy",
+      "url": "https://hornbillaviation.com/cancellation-policy/",
+      "isPartOf": {
+        "@id": "https://hornbillaviation.com/#website"
+      },
+      "about": {
+        "@id": "https://hornbillaviation.com/#localbusiness"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What if I'm running late?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Call or text the office as soon as you can. If you arrive too late to complete the preflight briefing and scheduled flight safely, we may need to reschedule and apply the late cancellation policy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I reschedule my discovery flight online?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Use the reschedule link in your confirmation email, or call the office. Changes made at least 24 hours in advance are free."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What weather conditions cancel a flight?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Common reasons include high winds, low ceilings, poor visibility, density-altitude concerns, and aircraft maintenance. Your instructor makes the final decision based on safety."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do gift vouchers expire?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Discovery flight gift vouchers do not expire and can be transferred to someone else."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the membership cancellation policy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can cancel your month-to-month membership anytime. There is no long-term contract and no cancellation fee. Contact the office or manage it through your account."
+          }
+        }
+      ]
+    }
+  ]
+}0:{"rsc":["$","$1","c",{"children":[[["$","script",null,{"id":"cancellation-schema","type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","section",null,{"className":"relative overflow-hidden bg-navy-900 py-16 md:py-24 text-white","children":["$undefined",["$","div",null,{"className":"mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10","children":[["$","nav",null,{"aria-label":"Breadcrumb","className":"mb-4","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-2 text-sm text-cream-50/80","children":[["$","li","Home",{"className":"flex items-center gap-2","children":[false,"$L3"]}],"$L4"]}]}],"$L5","$L6"]}]]}],"$L7","$L8","$L9"],["$La"],"$Lb"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"PeWWNo0pqvKLmn8gk9HOy"}
+3:["$","$Lc",null,{"href":"/","className":"hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded","children":"Home"}]
+4:["$","li","Cancellation, Refund & Weather Policy",{"className":"flex items-center gap-2","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":"12","height":"12","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","aria-hidden":"true","children":["$","polyline",null,{"points":"9 18 15 12 9 6"}]}],["$","span",null,{"aria-current":"page","children":"Cancellation, Refund & Weather Policy"}]]}]
+5:["$","h1",null,{"className":"font-heading text-4xl md:text-5xl leading-tight","children":"Cancellation, refund & weather policy"}]
+6:["$","p",null,{"className":"mt-4 max-w-2xl text-lg text-cream-50/90","children":"Clear rules so you can book with confidence. Life happens; weather happens. Here's how we handle both."}]
+7:["$","section",null,{"className":"py-16 md:py-24 bg-cream-50","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8","children":["$","div",null,{"className":"mx-auto max-w-2xl [&_h2]:mt-12 [&_h2]:mb-4 [&_h2]:font-heading [&_h2]:text-3xl [&_h2]:leading-tight [&_h2]:text-navy-900 [&_h3]:mt-8 [&_h3]:mb-3 [&_h3]:font-heading [&_h3]:text-2xl [&_h3]:leading-snug [&_h3]:text-navy-900 [&_p]:mb-4 [&_p]:text-base/relaxed [&_p]:text-ink [&_ul]:mb-6 [&_ul]:list-disc [&_ul]:pl-5 [&_ol]:mb-6 [&_ol]:list-decimal [&_ol]:pl-5 [&_li]:mb-2 [&_li]:text-ink [&_a]:text-navy-900 [&_a]:underline [&_a]:decoration-gold-500/50 hover:[&_a]:decoration-gold-500 [&_a]:transition-colors [&_strong]:font-semibold","children":[["$","p",null,{"className":"text-ink-light","children":["Effective date: ","June 18, 2026"]}],["$","section",null,{"id":"discovery-flights","children":[["$","h2",null,{"children":"Discovery flights"}],["$","p",null,{"children":["You can cancel or reschedule a discovery flight at no charge up to ","24 hours before your scheduled flight",". That gives us enough time to offer the slot to another student."]}],["$","p",null,{"children":["If you cancel inside that window,"," ","the full discovery flight deposit"," may be forfeited."]}],["$","p",null,{"children":"No-shows are treated as late cancellations and forfeit the deposit unless an exception is approved by the office."}]]}],["$","section",null,{"id":"flight-lessons","children":[["$","h2",null,{"children":"Flight lessons"}],["$","p",null,{"children":["The same ","24 hours before your scheduled lesson"," window applies to ongoing flight lessons. Cancel or reschedule before then and there is no charge."]}],["$","p",null,{"children":"To reschedule or cancel, use the link in your confirmation email, call the office, or text us. We confirm changes as quickly as possible."}]]}],["$","section",null,{"id":"membership-cancellation","children":[["$","h2",null,{"children":"Membership cancellation"}],["$","p",null,{"children":"Membership is month-to-month. You can cancel anytime with no long-term contract."}],["$","ul",null,{"children":[["$","li","0",{"children":"Cancel anytime through your account or by contacting the office."}],["$","li","1",{"children":"No cancellation fee."}],["$","li","2",{"children":"Prorated refunds are not offered for partial months unless required by law."}]]}]]}],["$","section",null,{"id":"weather-and-safety","children":[["$","h2",null,{"children":"Weather and safety"}],["$","p",null,{"children":"If weather or aircraft availability makes a flight unsafe, we reschedule at no charge or offer a full refund. The instructor or pilot in command makes the final call."}],["$","ul",null,{"children":[["$","li","0",{"children":"We monitor conditions including wind, ceiling, visibility, density altitude, and aircraft maintenance status."}],["$","li","1",{"children":"If a flight is cancelled for weather or maintenance, we notify you as early as possible."}],["$","li","2",{"children":"Examples that may cancel a flight: high surface winds, low ceilings, reduced visibility, density-altitude concerns, or unscheduled maintenance."}]]}]]}],["$","section",null,{"id":"refund-methods","children":[["$","h2",null,{"children":"Refund methods"}],["$","p",null,{"children":"Refunds are returned to the original payment method. Processing times depend on your bank or card issuer."}],["$","ul",null,{"children":[["$","li","0",{"children":"Eligible refunds are issued to the card or account used for the original purchase."}],["$","li","1",{"children":"Most refunds appear within 5 to 10 business days."}],["$","li","2",{"children":"Gift vouchers are refunded as voucher credit unless otherwise required."}]]}]]}],["$","section",null,{"id":"gift-vouchers","children":[["$","h2",null,{"children":"Gift vouchers"}],["$","p",null,{"children":"Discovery flight gift vouchers do not expire and can be transferred to another person."}],"$Ld"]}],"$Le"]}]}]}]
+8:["$","section",null,{"className":"py-16 md:py-24 bg-white","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8","children":["$","div",null,{"className":"mx-auto max-w-2xl","children":[["$","h2",null,{"className":"mb-6 font-heading text-3xl text-navy-900","children":"Common questions"}],["$","$Lf",null,{"faqs":[{"id":"running-late","question":"What if I'm running late?","answer":"Call or text the office as soon as you can. If you arrive too late to complete the preflight briefing and scheduled flight safely, we may need to reschedule and apply the late cancellation policy."},{"id":"reschedule-online","question":"Can I reschedule my discovery flight online?","answer":"Yes. Use the reschedule link in your confirmation email, or call the office. Changes made at least 24 hours in advance are free."},{"id":"weather-conditions","question":"What weather conditions cancel a flight?","answer":"Common reasons include high winds, low ceilings, poor visibility, density-altitude concerns, and aircraft maintenance. Your instructor makes the final decision based on safety."},{"id":"voucher-expiration","question":"Do gift vouchers expire?","answer":"No. Discovery flight gift vouchers do not expire and can be transferred to someone else."},{"id":"membership-cancellation","question":"What is the membership cancellation policy?","answer":"You can cancel your month-to-month membership anytime. There is no long-term contract and no cancellation fee. Contact the office or manage it through your account."}]}]]}]}]}]
+9:["$","section",null,{"className":"py-16 md:py-24 bg-sky-100","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8","children":["$","div",null,{"className":"flex flex-col items-center justify-center gap-4 text-center sm:flex-row","children":[["$","$Lc",null,{"href":"/discovery-flight/","className":"inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 text-center bg-gold-500 text-navy-900 hover:bg-gold-400 focus:ring-navy-900","data-analytics":"discovery_flight_booking_started","children":"Book a discovery flight"}],["$","$Lc",null,{"href":"/contact/","className":"inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 text-center bg-transparent border-2 border-current text-navy-900 hover:bg-navy-900/5 focus:ring-navy-900","data-analytics":"contact_click","children":"Contact us"}]]}]}]}]
+a:["$","script","script-0",{"src":"/hornbill-flying/_next/static/chunks/25v9rlq3f4jj1.js","async":true}]
+b:["$","$L10",null,{"children":["$","$11",null,{"name":"Next.MetadataOutlet","children":"$@12"}]}]
+d:["$","ul",null,{"children":[["$","li","0",{"children":"Vouchers do not expire."}],["$","li","1",{"children":"The recipient books through the standard discovery flight flow."}],["$","li","2",{"children":"Rescheduling follows the same 24-hour window as standard discovery flights."}]]}]
+e:["$","section",null,{"id":"contact-us","children":[["$","h2",null,{"children":"Contact us"}],["$","p",null,{"children":["1008 Gentry Way",","," ","Reno",","," ","NV"," ","89512",["$","br",null,{}],["$","a",null,{"href":"mailto:office@hornbillaviation.com","children":"office@hornbillaviation.com"}],["$","br",null,{}],"555-555-1234"]}],["$","p",null,{"children":["Still have questions?"," ",["$","$Lc",null,{"href":"/contact/","children":"Contact us"}]," ","and we'll walk you through it."]}]]}]
+12:null

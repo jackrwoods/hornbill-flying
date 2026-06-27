@@ -1,0 +1,238 @@
+1:"$Sreact.fragment"
+11:I[5500,["/hornbill-flying/_next/static/chunks/2hf-l4-bag_mi.js","/hornbill-flying/_next/static/chunks/25v9rlq3f4jj1.js"],"Image"]
+12:I[22016,["/hornbill-flying/_next/static/chunks/2hf-l4-bag_mi.js","/hornbill-flying/_next/static/chunks/25v9rlq3f4jj1.js"],""]
+19:I[31638,["/hornbill-flying/_next/static/chunks/2hf-l4-bag_mi.js","/hornbill-flying/_next/static/chunks/25v9rlq3f4jj1.js"],"FAQAccordion"]
+1a:I[97367,["/hornbill-flying/_next/static/chunks/05-c3ty_6dwfk.js","/hornbill-flying/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+1b:"$Sreact.suspense"
+2:T2264,{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://hornbillaviation.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Programs",
+          "item": "https://hornbillaviation.com/programs/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Mountain Flying",
+          "item": "https://hornbillaviation.com/programs/mountain-flying/"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Mountain Flying Course — Sierra Nevada — Hornbill Aviation",
+      "description": "Learn mountain flying and density altitude at RNO. Part 61 Sierra Nevada course in a PA28 fleet. Book a discovery flight or consultation today.",
+      "provider": {
+        "@id": "https://hornbillaviation.com/#organization"
+      },
+      "url": "https://hornbillaviation.com/programs/mountain-flying/",
+      "offers": [
+        {
+          "@type": "Offer",
+          "price": "159",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        }
+      ],
+      "serviceType": "FlightTraining",
+      "areaServed": {
+        "@type": "City",
+        "name": "Reno",
+        "containedInPlace": {
+          "@type": "State",
+          "name": "Nevada"
+        }
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Mountain Flying offers",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "Offer",
+              "name": "Fleet and rates",
+              "url": "https://hornbillaviation.com/fleet/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "Offer",
+              "name": "Membership",
+              "url": "https://hornbillaviation.com/membership/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "Offer",
+              "name": "Discovery flight",
+              "url": "https://hornbillaviation.com/discovery-flight/"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "Offer",
+              "name": "Density altitude calculator",
+              "url": "https://hornbillaviation.com/tools/density-altitude/"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Course",
+      "name": "Mountain Flying and Density-Altitude Course",
+      "description": "Learn mountain flying and density altitude at RNO. Part 61 Sierra Nevada course in a PA28 fleet. Book a discovery flight or consultation today.",
+      "provider": {
+        "@id": "https://hornbillaviation.com/#organization"
+      },
+      "url": "https://hornbillaviation.com/programs/mountain-flying/",
+      "educationalCredentialAwarded": "Mountain Flying Course Completion — Hornbill Aviation",
+      "timeToComplete": "1–2 ground sessions plus 2–4 instructional flights",
+      "coursePrerequisites": [
+        "Hold at least a Private Pilot certificate (strongly recommended).",
+        "Hold a current medical certificate or BasicMed as appropriate for the flight.",
+        "Completed a recent flight review or equivalent checkout at Hornbill.",
+        "Comfortable with basic performance calculations and cross-country navigation."
+      ],
+      "occupationalCredentialAwarded": "Mountain Flying Course Completion — Hornbill Aviation",
+      "teaches": [
+        "Mountain flying",
+        "Density-altitude operations",
+        "High-terrain weather and decision-making"
+      ],
+      "educationalLevel": "advanced",
+      "courseMode": "in-person",
+      "isPartOf": {
+        "@type": "Course",
+        "url": "https://hornbillaviation.com/programs/",
+        "name": "Hornbill Aviation Training Programs"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I need a Private Pilot certificate to take the mountain flying course?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We strongly recommend at least a Private Pilot certificate. Mountain flying adds complexity on top of basic aircraft control, navigation, and weather judgment. A solid Private Pilot foundation keeps the course safe and productive."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does the mountain flying course take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most students complete the course in 1–2 ground sessions plus 2–4 instructional flights. The exact timeline depends on your experience, weather windows, and how quickly you build comfort with high-terrain decision-making."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What aircraft is used for mountain flying training?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We train in Hornbill's uniform PA28 fleet, all with 180 HP Lycoming engines. N7824W is set up with performance-friendly configuration for mountain work. You can rent the same aircraft after checkout."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is density altitude and why does it matter at RNO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Density altitude is the altitude the aircraft 'feels' based on temperature, pressure, and humidity. RNO's field elevation is roughly 4,415 ft, but on a hot day the density altitude can exceed 7,000 ft. That reduces climb performance, increases takeoff distance, and changes landing behavior."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What weather conditions cancel a mountain flying lesson?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We cancel or reschedule for strong winds aloft, active mountain waves or rotor, afternoon thunderstorms, low visibility, icing conditions, or any condition that leaves inadequate escape routes. The course teaches you to make that same call yourself."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which routes will I fly during the course?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Typical routes include RNO to Lake Tahoe (KTVL), Truckee–Tahoe (KTRK), Minden–Tahoe (KMEV), and, for advanced students, Mammoth Lakes (KMMH). Your CFI chooses the route based on weather, your currency, and the learning objective for that day."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I rent a Hornbill aircraft for mountain cross-country flights after the course?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. After a mountain checkout, you can rent the same PA28s for real cross-country trips. That is one of the reasons students train at Hornbill: the aircraft you learn in are the aircraft you rent."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does mountain flying training cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most students spend roughly $1,800–$2,400 as a member or $2,000–$2,700 as a non-member, including aircraft rental at $159/hr member / $180/hr non-member, flight instruction, and ground briefings. Destination landing and tie-down fees are extra."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this an FAA certificate or a checkout?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This is not an FAA certificate. You receive a Mountain Flying Course Completion from Hornbill Aviation, plus the judgment and experience to operate safely in the Sierra Nevada. Many students also use the course as the basis for a formal mountain checkout for rentals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I learn more about density altitude at KRNO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use our density-altitude calculator for RNO, or read the blog post 'Density altitude at KRNO: what student pilots need to know.' Both are linked in the density-altitude section above."
+          }
+        }
+      ]
+    }
+  ]
+}0:{"rsc":["$","$1","c",{"children":[[["$","script",null,{"id":"mountain-flying-schema","type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],"$L3","$L4","$L5","$L6","$L7","$L8","$L9","$La","$Lb","$Lc","$Ld","$Le"],["$Lf"],"$L10"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"PeWWNo0pqvKLmn8gk9HOy"}
+3:["$","section",null,{"className":"relative overflow-hidden bg-navy-900 text-white","children":[["$","div",null,{"className":"absolute inset-0 z-0","children":[["$","$L11",null,{"src":"/hornbill-flying/images/programs/mountain-flying-hero.webp","alt":"Hornbill PA28 Cherokee on the ramp with snow-capped Sierra Nevada mountains in the background","fill":true,"priority":true,"fetchPriority":"high","loading":"eager","className":"object-cover opacity-40","sizes":"100vw"}],["$","div",null,{"className":"absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-900/60 to-navy-900/40"}]]}],["$","div",null,{"className":"mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10","children":["$","div",null,{"className":"py-20 md:py-32 lg:py-40","children":["$","div",null,{"className":"max-w-2xl","children":[["$","h1",null,{"className":"font-heading text-4xl leading-tight md:text-5xl lg:text-6xl","children":"Mountain flying training in Reno, NV."}],["$","p",null,{"className":"mt-6 text-lg text-cream-50/90 md:text-xl","children":"Learn to fly the Sierra Nevada safely. Build confidence in density altitude, mountain weather, and high-terrain route planning from Reno–Tahoe (RNO)."}],["$","div",null,{"className":"mt-8 flex flex-col gap-4 sm:flex-row sm:items-center","children":[["$","$L12",null,{"href":"/discovery-flight/","className":"inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 text-center bg-gold-500 text-navy-900 hover:bg-gold-400 focus:ring-navy-900","data-analytics":"mountain_flying_discovery_booking_started","children":"Book a discovery flight"}],["$","$L12",null,{"href":"/fleet/","className":"inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 text-center bg-transparent border-2 border-current text-navy-900 hover:bg-navy-900/5 focus:ring-navy-900 text-white hover:bg-white/10","data-analytics":"fleet_click","children":"See the fleet and rates"}]]}]]}]}]}]]}]
+4:["$","section",null,{"id":"quick-answer","className":"py-16 md:py-24 bg-sky-100","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8","children":["$","div",null,{"className":"rounded-xl border-l-4 border-gold-500 bg-white p-6 shadow-sm md:p-8","children":[["$","h2",null,{"className":"font-heading text-2xl text-navy-900","children":"What is the Mountain Flying course at Hornbill?"}],["$","p",null,{"className":"mt-3 text-ink leading-relaxed","children":"Hornbill Aviation's Mountain Flying course teaches single-engine pilots to operate safely in the Sierra Nevada and high-desert terrain around Reno–Tahoe (RNO). You study density altitude, mountain weather, ridge crossing, and escape-route planning, then apply it on real routes from RNO with a CFI who knows the local area."}]]}]}]}]
+5:["$","section",null,{"id":"what-the-course-covers","className":"py-16 md:py-24 bg-cream-50","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8","children":["$","div",null,{"className":"grid gap-12 lg:grid-cols-2","children":[["$","div",null,{"children":[["$","h2",null,{"className":"font-heading text-3xl md:text-4xl text-navy-900","children":"What the course covers"}],["$","p",null,{"className":"mt-4 text-ink-light leading-relaxed","children":"This is a judgment-first course. Every flight starts with a honest go/no-go decision and ends with a debrief that makes the next mountain flight safer."}]]}],["$","ul",null,{"className":"space-y-6","children":[["$","li","Density-altitude performance",{"className":"flex items-start gap-3","children":[["$","span",null,{"className":"mt-2 flex h-2 w-2 flex-shrink-0 rounded-full bg-gold-500","aria-hidden":"true"}],["$","div",null,{"children":[["$","h3",null,{"className":"font-heading text-xl text-navy-900","children":"Density-altitude performance"}],["$","p",null,{"className":"mt-1 text-ink-light","children":"Calculate pressure altitude and density altitude for RNO's 4,415 ft field elevation. Apply the numbers to takeoff, climb, and landing performance in warm weather."}]]}]]}],["$","li","Mountain weather patterns",{"className":"flex items-start gap-3","children":[["$","span",null,{"className":"mt-2 flex h-2 w-2 flex-shrink-0 rounded-full bg-gold-500","aria-hidden":"true"}],["$","div",null,{"children":[["$","h3",null,{"className":"font-heading text-xl text-navy-900","children":"Mountain weather patterns"}],["$","p",null,{"className":"mt-1 text-ink-light","children":"Read the diurnal cycle, wind, turbulence, mountain waves, and afternoon thunderstorm potential along Sierra ridge lines."}]]}]]}],["$","li","Terrain avoidance and ridge crossing",{"className":"flex items-start gap-3","children":[["$","span",null,{"className":"mt-2 flex h-2 w-2 flex-shrink-0 rounded-full bg-gold-500","aria-hidden":"true"}],["$","div",null,{"children":[["$","h3",null,{"className":"font-heading text-xl text-navy-900","children":"Terrain avoidance and ridge crossing"}],["$","p",null,{"className":"mt-1 text-ink-light","children":"Practice ridge-crossing angles, canyon judgment, and the golden rule of always having an out — even when the pass looks clear."}]]}]]}],["$","li","Emergency options and escape routes",{"className":"flex items-start gap-3","children":[["$","span",null,{"className":"mt-2 flex h-2 w-2 flex-shrink-0 rounded-full bg-gold-500","aria-hidden":"true"}],["$","div",null,{"children":[["$","h3",null,{"className":"font-heading text-xl text-navy-900","children":"Emergency options and escape routes"}],["$","p",null,{"className":"mt-1 text-ink-light","children":"Identify bailout airports, valleys, and turn-around points before takeoff. Brief them so the decision is already made if weather or performance shift."}]]}]]}],["$","li","High-elevation airport operations",{"className":"flex items-start gap-3","children":[["$","span",null,{"className":"mt-2 flex h-2 w-2 flex-shrink-0 rounded-full bg-gold-500","aria-hidden":"true"}],["$","div",null,{"children":[["$","h3",null,{"className":"font-heading text-xl text-navy-900","children":"High-elevation airport operations"}],["$","p",null,{"className":"mt-1 text-ink-light","children":"Plan approaches and departures at airports like KTRK and KMMH where density altitude, runway slope, and terrain matter."}]]}]]}],["$","li","Preflight decision-making",{"className":"flex items-start gap-3","children":[["$","span",null,{"className":"mt-2 flex h-2 w-2 flex-shrink-0 rounded-full bg-gold-500","aria-hidden":"true"}],["$","div",null,{"children":[["$","h3",null,{"className":"font-heading text-xl text-navy-900","children":"Preflight decision-making"}],["$","p",null,{"className":"mt-1 text-ink-light","children":"Build personal minimums, weather windows, and a no-pressure go/no-go framework you can use on every flight."}]]}]]}]]}]]}]}]}]
+6:["$","section",null,{"id":"density-altitude-at-rno","className":"py-16 md:py-24 bg-white","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8","children":["$","div",null,{"className":"grid gap-12 lg:grid-cols-2","children":[["$","div",null,{"children":[["$","h2",null,{"className":"font-heading text-3xl md:text-4xl text-navy-900","children":"Density altitude at RNO"}],["$","p",null,{"className":"mt-4 text-ink-light leading-relaxed","children":"Reno–Tahoe International (RNO, KRNO) sits at roughly 4,415 ft above sea level. On a warm summer afternoon, the density altitude can climb well above 7,000 ft. That changes everything: takeoff roll, climb rate, and landing distance all behave differently than at sea level."}],["$","div",null,{"className":"mt-8 flex flex-wrap gap-4","children":[["$","$L12",null,{"href":"/tools/density-altitude/","className":"text-sm font-semibold text-gold-500 hover:text-gold-400 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded","children":"Try the KRNO density-altitude calculator"}],["$","$L12",null,{"href":"/blog/density-altitude-krno/","className":"text-sm font-semibold text-gold-500 hover:text-gold-400 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded","children":"Read: Density altitude at KRNO: what student pilots need to know"}]]}]]}],["$","div",null,{"className":"rounded-xl border-t-4 border-gold-500 bg-cream-50 p-6 md:p-8","children":[["$","h3",null,{"className":"font-heading text-xl text-navy-900","children":"What drives density altitude"}],["$","dl",null,{"className":"mt-6 space-y-4","children":[["$","div","Elevation",{"children":[["$","dt",null,{"className":"font-body font-semibold text-ink","children":"Elevation"}],["$","dd",null,{"className":"mt-1 text-ink-light","children":"RNO's field elevation of ~4,415 ft is your starting pressure altitude when the altimeter is 29.92 inHg."}]]}],["$","div","Temperature",{"children":[["$","dt",null,{"className":"font-body font-semibold text-ink","children":"Temperature"}],["$","dd",null,{"className":"mt-1 text-ink-light","children":"Warm air is less dense. A 30 °C day at RNO can push density altitude thousands of feet above the field elevation."}]]}],["$","div","Pressure",{"children":[["$","dt",null,{"className":"font-body font-semibold text-ink","children":"Pressure"}],["$","dd",null,{"className":"mt-1 text-ink-light","children":"Low-pressure systems raise pressure altitude. Combine that with heat and your aircraft performs as if it is at a much higher elevation."}]]}],["$","div","Humidity",{"children":[["$","dt",null,{"className":"font-body font-semibold text-ink","children":"Humidity"}],["$","dd",null,{"className":"mt-1 text-ink-light","children":"Water vapor displaces air molecules slightly. The effect is smaller than heat or pressure, but it matters on the margins."}]]}]]}]]}]]}]}]}]
+7:["$","section",null,{"id":"terrain-and-weather","className":"py-16 md:py-24 bg-cream-50","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8","children":[["$","h2",null,{"className":"font-heading text-3xl md:text-4xl text-navy-900","children":"Terrain and weather considerations"}],["$","p",null,{"className":"mt-4 max-w-3xl text-ink-light","children":"The Sierra Nevada is a beautiful and demanding training area. The course focuses on the conditions you will actually see when flying west from RNO."}],["$","div",null,{"className":"mt-10 grid gap-6 md:grid-cols-2","children":[["$","div","Sierra ridge orientation and passes",{"className":"rounded-xl border-t-4 border-gold-500 bg-white p-6 shadow-sm","children":[["$","h3",null,{"className":"font-heading text-xl text-navy-900","children":"Sierra ridge orientation and passes"}],["$","p",null,{"className":"mt-2 text-ink-light","children":"The range runs north-south. Common VFR crossings include the Carson Valley, Tahoe basin, and passes near Mammoth. Each has its own terrain, airspace, and weather traps."}]]}],["$","div","Leeside turbulence and rotor",{"className":"rounded-xl border-t-4 border-gold-500 bg-white p-6 shadow-sm","children":[["$","h3",null,{"className":"font-heading text-xl text-navy-900","children":"Leeside turbulence and rotor"}],["$","p",null,{"className":"mt-2 text-ink-light","children":"Strong west or southwest winds create mountain waves and rotor on the lee side of the Sierra. The course teaches you to read the sky and stay on the ground when the pattern is active."}]]}],["$","div","Afternoon thunderstorms",{"className":"rounded-xl border-t-4 border-gold-500 bg-white p-6 shadow-sm","children":[["$","h3",null,{"className":"font-heading text-xl text-navy-900","children":"Afternoon thunderstorms"}],["$","p",null,{"className":"mt-2 text-ink-light","children":"Sierra convection builds most afternoons in summer. We plan mountain flights for morning windows and use them as go/no-go practice."}]]}],["$","div","Snow, icing, and seasonal closures",{"className":"rounded-xl border-t-4 border-gold-500 bg-white p-6 shadow-sm","children":[["$","h3",null,{"className":"font-heading text-xl text-navy-900","children":"Snow, icing, and seasonal closures"}],["$","p",null,{"className":"mt-2 text-ink-light","children":"Higher airports like Truckee (KTRK) and Mammoth Lakes (KMMH) close or restrict operations in winter weather. Seasonal planning is part of the syllabus."}]]}],["$","div","Class C airspace around RNO",{"className":"rounded-xl border-t-4 border-gold-500 bg-white p-6 shadow-sm","children":[["$","h3",null,{"className":"font-heading text-xl text-navy-900","children":"Class C airspace around RNO"}],["$","p",null,{"className":"mt-2 text-ink-light","children":"You will learn the transition routes, communication expectations, and how to stay clear of restricted and MOA airspace west of Reno."}]]}],["$","div","Visual illusions",{"className":"rounded-xl border-t-4 border-gold-500 bg-white p-6 shadow-sm","children":[["$","h3",null,{"className":"font-heading text-xl text-navy-900","children":"Visual illusions"}],["$","p",null,{"className":"mt-2 text-ink-light","children":"Rising terrain, sloping runways, and flat-light days can fool your senses. The ground brief covers the cues and cross-checks that keep you oriented."}]]}]]}]]}]}]
+8:["$","section",null,{"id":"sample-routes","className":"py-16 md:py-24 bg-white","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8","children":[["$","h2",null,{"className":"font-heading text-3xl md:text-4xl text-navy-900","children":"Sample routes from RNO"}],["$","p",null,{"className":"mt-4 max-w-3xl text-ink-light","children":"These are representative routes, not a fixed syllabus. Every flight is chosen for the weather, your experience, and instructor approval."}],["$","div",null,{"className":"mt-8 overflow-hidden rounded-xl bg-white shadow-sm","children":["$","table",null,{"className":"w-full text-left","children":[["$","thead",null,{"className":"bg-cream-50","children":["$","tr",null,{"children":[["$","th",null,{"scope":"col","className":"px-6 py-4 font-body text-sm font-semibold uppercase tracking-wide text-ink-light","children":"Route"}],["$","th",null,{"scope":"col","className":"px-6 py-4 font-body text-sm font-semibold uppercase tracking-wide text-ink-light","children":"Distance"}],["$","th",null,{"scope":"col","className":"px-6 py-4 font-body text-sm font-semibold uppercase tracking-wide text-ink-light","children":"What it teaches"}]]}]}],["$","tbody",null,{"className":"divide-y divide-navy-800/10","children":[["$","tr","RNO → KTVL",{"children":[["$","th",null,{"scope":"row","className":"px-6 py-4 align-top font-mono text-navy-900","children":["RNO → KTVL",["$","span",null,{"className":"ml-2 block font-body text-sm font-normal text-ink-light","children":"Lake Tahoe"}]]}],["$","td",null,{"className":"px-6 py-4 align-top font-mono text-ink","children":"~40 nm"}],["$","td",null,{"className":"px-6 py-4 align-top text-ink-light","children":"Short mountain crossing, high-elevation airport, terrain awareness."}]]}],["$","tr","RNO → KTRK",{"children":[["$","th",null,{"scope":"row","className":"px-6 py-4 align-top font-mono text-navy-900","children":["RNO → KTRK",["$","span",null,{"className":"ml-2 block font-body text-sm font-normal text-ink-light","children":"Truckee–Tahoe"}]]}],["$","td",null,{"className":"px-6 py-4 align-top font-mono text-ink","children":"~50 nm"}],["$","td",null,{"className":"px-6 py-4 align-top text-ink-light","children":"Higher elevation, weather considerations, approach options."}]]}],["$","tr","RNO → KMEV",{"children":[["$","th",null,{"scope":"row","className":"px-6 py-4 align-top font-mono text-navy-900","children":["RNO → KMEV",["$","span",null,{"className":"ml-2 block font-body text-sm font-normal text-ink-light","children":"Minden–Tahoe"}]]}],["$","td",null,{"className":"px-6 py-4 align-top font-mono text-ink","children":"~30 nm"}],["$","td",null,{"className":"px-6 py-4 align-top text-ink-light","children":"Carson Valley routing, ridge crossing, density-altitude landing."}]]}],["$","tr","RNO → KMMH",{"children":[["$","th",null,{"scope":"row","className":"px-6 py-4 align-top font-mono text-navy-900","children":["RNO → KMMH",["$","span",null,{"className":"ml-2 block font-body text-sm font-normal text-ink-light","children":"Mammoth Lakes"}]]}],["$","td",null,{"className":"px-6 py-4 align-top font-mono text-ink","children":"~90 nm"}],["$","td",null,{"className":"px-6 py-4 align-top text-ink-light","children":"Advanced route — higher terrain, weather windows, performance planning."}]]}]]}]]}]}],["$","p",null,{"className":"mt-4 text-sm text-ink-light","children":"Exact routes depend on weather, currency, and instructor approval."}]]}]}]
+9:["$","section",null,{"id":"prerequisites-duration-cost","className":"py-16 md:py-24 bg-cream-50","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8","children":[["$","h2",null,{"className":"font-heading text-3xl md:text-4xl text-navy-900","children":"Prerequisites, duration, and cost"}],["$","p",null,{"className":"mt-4 max-w-3xl text-ink-light","children":"Mountain flying is not an entry-level course. You should be comfortable with basic performance calculations, aircraft control, and cross-country planning before adding terrain complexity."}],["$","div",null,{"className":"mt-10 grid gap-8 lg:grid-cols-2","children":[["$","div",null,{"className":"rounded-xl border-t-4 border-gold-500 bg-white p-6 shadow-sm md:p-8","children":[["$","h3",null,{"className":"font-heading text-xl text-navy-900","children":"Prerequisites"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","0",{"className":"flex items-start gap-3","children":[["$","span",null,{"className":"mt-1 flex h-2 w-2 flex-shrink-0 rounded-full bg-gold-500","aria-hidden":"true"}],["$","span",null,{"className":"text-ink-light","children":"Hold at least a Private Pilot certificate (strongly recommended)."}]]}],["$","li","1",{"className":"flex items-start gap-3","children":[["$","span",null,{"className":"mt-1 flex h-2 w-2 flex-shrink-0 rounded-full bg-gold-500","aria-hidden":"true"}],["$","span",null,{"className":"text-ink-light","children":"Hold a current medical certificate or BasicMed as appropriate for the flight."}]]}],["$","li","2",{"className":"flex items-start gap-3","children":[["$","span",null,{"className":"mt-1 flex h-2 w-2 flex-shrink-0 rounded-full bg-gold-500","aria-hidden":"true"}],["$","span",null,{"className":"text-ink-light","children":"Completed a recent flight review or equivalent checkout at Hornbill."}]]}],["$","li","3",{"className":"flex items-start gap-3","children":[["$","span",null,{"className":"mt-1 flex h-2 w-2 flex-shrink-0 rounded-full bg-gold-500","aria-hidden":"true"}],["$","span",null,{"className":"text-ink-light","children":"Comfortable with basic performance calculations and cross-country navigation."}]]}]]}]]}],["$","div",null,{"className":"rounded-xl border-t-4 border-gold-500 bg-white p-6 shadow-sm md:p-8","children":[["$","h3",null,{"className":"font-heading text-xl text-navy-900","children":"Duration"}],["$","p",null,{"className":"mt-4 text-ink-light","children":"Typically 1–2 ground sessions plus 2–4 instructional flights, depending on your experience and the weather windows available."}]]}]]}],["$","div",null,{"className":"mt-12","children":[["$","h3",null,{"className":"font-heading text-2xl text-navy-900","children":"Cost estimate"}],["$","p",null,{"className":"mt-2 max-w-3xl text-ink-light","children":"These numbers are a realistic starting point, not a guarantee. Destination landing and tie-down fees vary and are not included."}],["$","div",null,{"className":"mt-6 overflow-hidden rounded-xl bg-white shadow-sm","children":["$","table",null,{"className":"w-full text-left","children":[["$","tbody",null,{"className":"divide-y divide-navy-800/10","children":[["$","tr","PA28 member wet rate",{"children":[["$","th",null,{"scope":"row","className":"px-6 py-4 font-body font-medium text-ink","children":"PA28 member wet rate"}],["$","td",null,{"className":"px-6 py-4 text-right font-mono text-navy-900","children":"$$159/hr"}]]}],["$","tr","PA28 non-member wet rate",{"children":[["$","th",null,{"scope":"row","className":"px-6 py-4 font-body font-medium text-ink","children":"PA28 non-member wet rate"}],["$","td",null,{"className":"px-6 py-4 text-right font-mono text-navy-900","children":"$$180/hr"}]]}],["$","tr","Aircraft rental (4 flights typical)",{"children":[["$","th",null,{"scope":"row","className":"px-6 py-4 font-body font-medium text-ink","children":"Aircraft rental (4 flights typical)"}],["$","td",null,{"className":"px-6 py-4 text-right font-mono text-navy-900","children":"4 × $159/hr member / 4 × $180/hr non-member"}]]}],"$L13","$L14","$L15"]}],"$L16"]}]}],"$L17","$L18"]}]]}]}]
+a:["$","section",null,{"id":"safety","className":"py-16 md:py-24 bg-navy-900 text-white","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8","children":["$","div",null,{"className":"grid gap-12 lg:grid-cols-2","children":[["$","div",null,{"children":[["$","h2",null,{"className":"font-heading text-3xl md:text-4xl text-white","children":"Safety emphasis"}],["$","p",null,{"className":"mt-4 text-cream-50/90 leading-relaxed","children":"Mountain flying is a judgment course as much as a stick-and-rudder course. The goal is not to thrill you; it is to build the decision-making that lets you fly the Sierra Nevada for years."}],["$","div",null,{"className":"mt-8 flex flex-wrap gap-4","children":[["$","$L12","/about/",{"href":"/about/","className":"text-sm font-semibold text-gold-400 hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded","children":"Our safety philosophy"}],["$","$L12","/student-resources/",{"href":"/student-resources/","className":"text-sm font-semibold text-gold-400 hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded","children":"Weather briefing tools"}]]}]]}],["$","div",null,{"className":"rounded-xl border-t-4 border-gold-500 bg-white p-6 md:p-8","children":[["$","h3",null,{"className":"font-heading text-xl text-navy-900","children":"Mountain flying non-negotiables"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","0",{"className":"flex items-start gap-3","children":[["$","span",null,{"className":"mt-1 flex h-2 w-2 flex-shrink-0 rounded-full bg-orange-500","aria-hidden":"true"}],["$","span",null,{"className":"text-ink-light","children":"Personal minimums written before the briefing."}]]}],["$","li","1",{"className":"flex items-start gap-3","children":[["$","span",null,{"className":"mt-1 flex h-2 w-2 flex-shrink-0 rounded-full bg-orange-500","aria-hidden":"true"}],["$","span",null,{"className":"text-ink-light","children":"Escape routes identified for every leg."}]]}],["$","li","2",{"className":"flex items-start gap-3","children":[["$","span",null,{"className":"mt-1 flex h-2 w-2 flex-shrink-0 rounded-full bg-orange-500","aria-hidden":"true"}],["$","span",null,{"className":"text-ink-light","children":"Weather window with a hard turn-around time."}]]}],["$","li","3",{"className":"flex items-start gap-3","children":[["$","span",null,{"className":"mt-1 flex h-2 w-2 flex-shrink-0 rounded-full bg-orange-500","aria-hidden":"true"}],["$","span",null,{"className":"text-ink-light","children":"Aircraft performance margins calculated for the actual conditions."}]]}],["$","li","4",{"className":"flex items-start gap-3","children":[["$","span",null,{"className":"mt-1 flex h-2 w-2 flex-shrink-0 rounded-full bg-orange-500","aria-hidden":"true"}],["$","span",null,{"className":"text-ink-light","children":"A no-pressure go/no-go call — the CFI cancels the flight if conditions warrant it."}]]}]]}],["$","p",null,{"className":"mt-6 text-sm text-ink-light","children":"Every mountain flight is briefed. Terrain and emergency options are identified before departure. We would rather reschedule than push into marginal conditions."}]]}]]}]}]}]
+b:["$","section",null,{"id":"why-hornbill","className":"py-16 md:py-24 bg-white","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8","children":[["$","h2",null,{"className":"font-heading text-3xl md:text-4xl text-navy-900","children":"Why Hornbill for mountain flying"}],["$","div",null,{"className":"mt-10 grid gap-6 md:grid-cols-2","children":[["$","div","Home airport at RNO",{"className":"rounded-xl border-t-4 border-gold-500 bg-cream-50 p-6","children":[["$","h3",null,{"className":"font-heading text-xl text-navy-900","children":"Home airport at RNO"}],["$","p",null,{"className":"mt-2 text-ink-light","children":"You start every flight at 4,415 ft, at the foot of the Sierra Nevada. Density altitude is not theoretical here — it is the first item on the checklist."}]]}],["$","div","Uniform PA28 fleet",{"className":"rounded-xl border-t-4 border-gold-500 bg-cream-50 p-6","children":[["$","h3",null,{"className":"font-heading text-xl text-navy-900","children":"Uniform PA28 fleet"}],["$","p",null,{"className":"mt-2 text-ink-light","children":"Train and rent the same 180 HP PA28s, including N7824W configured with mountain performance in mind. Consistent handling means consistent decisions."}]]}],["$","div","CFIs with local route experience",{"className":"rounded-xl border-t-4 border-gold-500 bg-cream-50 p-6","children":[["$","h3",null,{"className":"font-heading text-xl text-navy-900","children":"CFIs with local route experience"}],["$","p",null,{"className":"mt-2 text-ink-light","children":"Our certificated flight instructors know the passes, valleys, and weather patterns around RNO because they fly them regularly."}]]}],["$","div","Real cross-country rentals",{"className":"rounded-xl border-t-4 border-gold-500 bg-cream-50 p-6","children":[["$","h3",null,{"className":"font-heading text-xl text-navy-900","children":"Real cross-country rentals"}],["$","p",null,{"className":"mt-2 text-ink-light","children":"After checkout, rent the same aircraft and keep flying the mountains. The course is the beginning of your real-world mountain experience."}]]}]]}],["$","div",null,{"className":"mt-8 flex flex-wrap gap-4","children":[["$","$L12","/location/",{"href":"/location/","className":"text-sm font-semibold text-gold-500 hover:text-gold-400 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded","children":"Our location at RNO"}],["$","$L12","/cross-country-rentals/",{"href":"/cross-country-rentals/","className":"text-sm font-semibold text-gold-500 hover:text-gold-400 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded","children":"Cross-country rentals"}]]}]]}]}]
+c:["$","section",null,{"id":"related-pathways","className":"py-16 md:py-24 bg-cream-50","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8","children":[["$","h2",null,{"className":"font-heading text-3xl md:text-4xl text-navy-900","children":"Related programs and next steps"}],["$","div",null,{"className":"mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-4","children":[["$","$L12","/programs/private-pilot/",{"href":"/programs/private-pilot/","className":"group rounded-xl border-t-4 border-gold-500 bg-white p-6 shadow-sm transition hover:shadow-md focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2","children":[["$","h3",null,{"className":"font-heading text-xl text-navy-900 group-hover:text-gold-500 transition-colors","children":"Private Pilot"}],["$","p",null,{"className":"mt-2 text-ink-light","children":"Build the foundation you need before advanced mountain training."}]]}],["$","$L12","/programs/instrument-rating/",{"href":"/programs/instrument-rating/","className":"group rounded-xl border-t-4 border-gold-500 bg-white p-6 shadow-sm transition hover:shadow-md focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2","children":[["$","h3",null,{"className":"font-heading text-xl text-navy-900 group-hover:text-gold-500 transition-colors","children":"Instrument Rating"}],["$","p",null,{"className":"mt-2 text-ink-light","children":"Add instrument skills for mountain IFR and weather decision-making."}]]}],["$","$L12","/cross-country-rentals/",{"href":"/cross-country-rentals/","className":"group rounded-xl border-t-4 border-gold-500 bg-white p-6 shadow-sm transition hover:shadow-md focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2","children":[["$","h3",null,{"className":"font-heading text-xl text-navy-900 group-hover:text-gold-500 transition-colors","children":"Cross-Country Rentals"}],["$","p",null,{"className":"mt-2 text-ink-light","children":"Rent the same PA28s and fly real mountain routes after checkout."}]]}],["$","$L12","/discovery-flight/",{"href":"/discovery-flight/","className":"group rounded-xl border-t-4 border-gold-500 bg-white p-6 shadow-sm transition hover:shadow-md focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2","children":[["$","h3",null,{"className":"font-heading text-xl text-navy-900 group-hover:text-gold-500 transition-colors","children":"Discovery Flight"}],["$","p",null,{"className":"mt-2 text-ink-light","children":"New to Hornbill? Fly with a CFI and see what our training is like."}]]}]]}]]}]}]
+d:["$","section",null,{"id":"faq","className":"py-16 md:py-24 bg-white","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8","children":[["$","h2",null,{"className":"font-heading text-3xl md:text-4xl text-navy-900","children":"Frequently asked questions"}],["$","div",null,{"className":"mt-8 max-w-3xl","children":["$","$L19",null,{"faqs":[{"id":"mountain-flying-requirements","question":"Do I need a Private Pilot certificate to take the mountain flying course?","answer":"We strongly recommend at least a Private Pilot certificate. Mountain flying adds complexity on top of basic aircraft control, navigation, and weather judgment. A solid Private Pilot foundation keeps the course safe and productive."},{"id":"mountain-flying-duration","question":"How long does the mountain flying course take?","answer":"Most students complete the course in 1–2 ground sessions plus 2–4 instructional flights. The exact timeline depends on your experience, weather windows, and how quickly you build comfort with high-terrain decision-making."},{"id":"mountain-flying-aircraft","question":"What aircraft is used for mountain flying training?","answer":"We train in Hornbill's uniform PA28 fleet, all with 180 HP Lycoming engines. N7824W is set up with performance-friendly configuration for mountain work. You can rent the same aircraft after checkout."},{"id":"density-altitude-definition","question":"What is density altitude and why does it matter at RNO?","answer":"Density altitude is the altitude the aircraft 'feels' based on temperature, pressure, and humidity. RNO's field elevation is roughly 4,415 ft, but on a hot day the density altitude can exceed 7,000 ft. That reduces climb performance, increases takeoff distance, and changes landing behavior."},{"id":"mountain-flying-weather-cancellations","question":"What weather conditions cancel a mountain flying lesson?","answer":"We cancel or reschedule for strong winds aloft, active mountain waves or rotor, afternoon thunderstorms, low visibility, icing conditions, or any condition that leaves inadequate escape routes. The course teaches you to make that same call yourself."},{"id":"mountain-flying-routes","question":"Which routes will I fly during the course?","answer":"Typical routes include RNO to Lake Tahoe (KTVL), Truckee–Tahoe (KTRK), Minden–Tahoe (KMEV), and, for advanced students, Mammoth Lakes (KMMH). Your CFI chooses the route based on weather, your currency, and the learning objective for that day."},{"id":"mountain-flying-rentals","question":"Can I rent a Hornbill aircraft for mountain cross-country flights after the course?","answer":"Yes. After a mountain checkout, you can rent the same PA28s for real cross-country trips. That is one of the reasons students train at Hornbill: the aircraft you learn in are the aircraft you rent."},{"id":"mountain-flying-cost","question":"How much does mountain flying training cost?","answer":"Most students spend roughly $1,800–$2,400 as a member or $2,000–$2,700 as a non-member, including aircraft rental at $159/hr member / $180/hr non-member, flight instruction, and ground briefings. Destination landing and tie-down fees are extra."},{"id":"mountain-flying-certificate","question":"Is this an FAA certificate or a checkout?","answer":"This is not an FAA certificate. You receive a Mountain Flying Course Completion from Hornbill Aviation, plus the judgment and experience to operate safely in the Sierra Nevada. Many students also use the course as the basis for a formal mountain checkout for rentals."},{"id":"density-altitude-krno-learn-more","question":"Where can I learn more about density altitude at KRNO?","answer":"Use our density-altitude calculator for RNO, or read the blog post 'Density altitude at KRNO: what student pilots need to know.' Both are linked in the density-altitude section above."}]}]}]]}]}]
+e:["$","section",null,{"id":"book-now","className":"py-16 md:py-24 bg-gold-500 text-navy-900","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 text-center","children":[["$","h2",null,{"className":"font-heading text-3xl md:text-4xl text-navy-900","children":"Ready to fly the Sierra Nevada?"}],["$","div",null,{"className":"mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row","children":[["$","$L12",null,{"href":"/discovery-flight/","className":"inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 text-center bg-navy-900 text-white hover:bg-navy-800 focus:ring-gold-500","data-analytics":"mountain_flying_booking_started","children":"Book a discovery flight"}],["$","$L12",null,{"href":"/contact/?subject=Mountain%20Flying%20course","className":"inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 text-center bg-transparent border-2 border-current text-navy-900 hover:bg-navy-900/5 focus:ring-navy-900","data-analytics":"discovery_flight_booking_started","children":"Talk to an instructor"}]]}],["$","p",null,{"className":"mt-6 text-navy-900/80","children":["Prefer to call?"," ",["$","a",null,{"href":"tel:15555551234","className":"inline-flex items-center gap-2 font-medium hover:underline focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded font-semibold text-navy-900 hover:underline","data-analytics":"phone_click","aria-label":"Call 555-555-1234","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":"18","height":"18","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","aria-hidden":"true","children":["$","path",null,{"d":"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"}]}],"555-555-1234"]}]]}]]}]}]
+f:["$","script","script-0",{"src":"/hornbill-flying/_next/static/chunks/25v9rlq3f4jj1.js","async":true}]
+10:["$","$L1a",null,{"children":["$","$1b",null,{"name":"Next.MetadataOutlet","children":"$@1c"}]}]
+13:["$","tr","Flight instruction (6 hours dual typical)",{"children":[["$","th",null,{"scope":"row","className":"px-6 py-4 font-body font-medium text-ink","children":"Flight instruction (6 hours dual typical)"}],["$","td",null,{"className":"px-6 py-4 text-right font-mono text-navy-900","children":"6 × $70/hr"}]]}]
+14:["$","tr","Ground instruction / briefings",{"children":[["$","th",null,{"scope":"row","className":"px-6 py-4 font-body font-medium text-ink","children":"Ground instruction / briefings"}],["$","td",null,{"className":"px-6 py-4 text-right font-mono text-navy-900","children":"2–4 hours"}]]}]
+15:["$","tr","Monthly membership",{"children":[["$","th",null,{"scope":"row","className":"px-6 py-4 font-body font-medium text-ink","children":"Monthly membership"}],["$","td",null,{"className":"px-6 py-4 text-right font-mono text-navy-900","children":"$$49/month"}]]}]
+16:["$","tfoot",null,{"className":"bg-cream-50","children":[["$","tr",null,{"children":[["$","th",null,{"scope":"row","className":"px-6 py-4 font-heading text-lg text-navy-900","children":"Typical total — member"}],["$","td",null,{"className":"px-6 py-4 text-right font-heading text-2xl text-navy-900","children":"$$1,800–$2,400"}]]}],["$","tr",null,{"children":[["$","th",null,{"scope":"row","className":"px-6 py-4 font-heading text-lg text-navy-900","children":"Typical total — non-member"}],["$","td",null,{"className":"px-6 py-4 text-right font-heading text-2xl text-navy-900","children":"$$2,000–$2,700"}]]}]]}]
+17:["$","p",null,{"className":"mt-4 text-sm text-ink-light","children":"Members pay $159/hr wet versus $180/hr non-member. At just over 2 flight hours per month, the $49/month membership pays for itself."}]
+18:["$","div",null,{"className":"mt-4 flex flex-wrap gap-4","children":[["$","$L12","/fleet/",{"href":"/fleet/","className":"text-sm font-semibold text-gold-500 hover:text-gold-400 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded","children":"See fleet and rates"}],["$","$L12","/membership/",{"href":"/membership/","className":"text-sm font-semibold text-gold-500 hover:text-gold-400 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded","children":"Membership details"}]]}]
+1c:null
