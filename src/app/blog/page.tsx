@@ -56,6 +56,12 @@ export default async function BlogIndexPage() {
           { label: "Home", href: "/" },
           { label: PAGE_TITLE },
         ]}
+        image={{
+          src: "/images/blog/blog-hero.jpg",
+          alt: "Aerial view of a town and university campus with green hills and mountain ranges in the background.",
+          width: 3024,
+          height: 1701,
+        }}
       />
 
       <Section background="cream">

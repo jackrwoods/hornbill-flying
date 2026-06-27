@@ -25,6 +25,10 @@ const fleetMembers: FleetMember[] = [
         src: "/images/fleet/n6576j-panel.jpeg",
         alt: "N6576J instrument panel with Garmin G5 and WAAS GPS at Reno-Tahoe International Airport (RNO).",
       },
+      {
+        src: "/images/fleet/n6576j-wet-ramp.jpeg",
+        alt: "PA28 Cherokee on a wet ramp with red, white, and blue stripes reflected in standing water.",
+      },
     ],
     ifrEquipped: true,
     crossCountryReady: true,

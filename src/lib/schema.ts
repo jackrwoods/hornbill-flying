@@ -50,7 +50,7 @@ export function buildLocalBusiness(): JsonLdThing {
     "@type": "LocalBusiness",
     "@id": absoluteUrl("/#localbusiness", BASE),
     name: siteConfig.brandName,
-    image: absoluteUrl("/images/hero/hero-image.BhmeJT7E_Z1oh9we.webp", BASE),
+    image: absoluteUrl("/images/hero/homepage-hero.jpeg", BASE),
     address: {
       "@id": postalAddressId(),
     },
@@ -114,7 +114,7 @@ export function buildContactPageLocalBusiness(): JsonLdThing {
     "@id": absoluteUrl("/#localbusiness", BASE),
     name: siteConfig.brandName,
     url: absoluteUrl("/", BASE),
-    image: absoluteUrl("/images/hero/hero-image.BhmeJT7E_Z1oh9we.webp", BASE),
+    image: absoluteUrl("/images/hero/homepage-hero.jpeg", BASE),
     telephone: siteConfig.nap.telephone,
     email: siteConfig.nap.email,
     address: {

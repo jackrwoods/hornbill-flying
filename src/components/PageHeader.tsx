@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AssetImage as Image } from "./AssetImage";
 import { Container } from "./Container";
 import { cn } from "@/lib/utils";
 
@@ -7,10 +8,18 @@ interface BreadcrumbItem {
   href?: string;
 }
 
+interface PageHeaderImage {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+}
+
 interface PageHeaderProps {
   title: string;
   subtitle?: string;
   breadcrumbs?: BreadcrumbItem[];
+  image?: PageHeaderImage;
   className?: string;
 }
 
@@ -18,11 +27,33 @@ export function PageHeader({
   title,
   subtitle,
   breadcrumbs,
+  image,
   className,
 }: PageHeaderProps) {
   return (
-    <section className={cn("bg-navy-900 py-16 md:py-24 text-white", className)}>
-      <Container>
+    <section
+      className={cn(
+        "relative overflow-hidden bg-navy-900 py-16 md:py-24 text-white",
+        className
+      )}
+    >
+      {image && (
+        <div className="absolute inset-0 z-0">
+          <Image
+            src={image.src}
+            alt={image.alt}
+            width={image.width}
+            height={image.height}
+            fill={image.width === undefined || image.height === undefined}
+            priority
+            className="object-cover opacity-30"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-900/70 to-navy-900/50" />
+        </div>
+      )}
+
+      <Container className="relative z-10">
         {breadcrumbs && breadcrumbs.length > 0 && (
           <nav aria-label="Breadcrumb" className="mb-4">
             <ol className="flex flex-wrap items-center gap-2 text-sm text-cream-50/80">

@@ -15,8 +15,9 @@ export function HeroSection() {
           priority
           fetchPriority="high"
           loading="eager"
-          className="object-cover opacity-40"
+          className="object-cover opacity-40 w-full h-full"
           sizes="100vw"
+          style={{ minWidth: "100%", minHeight: "100%" }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-900/60 to-navy-900/40" />
       </div>

@@ -15,11 +15,11 @@ export const homepageHero = {
   ctaPrimary: "Book a discovery flight",
   ctaSecondary: "Buy a gift voucher",
   ctaSecondaryQuery: { type: "gift" },
-  image: "/images/hero/hero-image.BhmeJT7E_Z1oh9we.webp",
+  image: "/images/hero/homepage-hero.jpeg",
   imageAlt:
-    "PA28 Cherokee flying past snow-capped mountains above the Reno-Stead (RTS) airport.",
-  imageWidth: 1920,
-  imageHeight: 1280,
+    "Aerial view of airport runways with snow-capped mountains in the background near Reno, NV.",
+  imageWidth: 1440,
+  imageHeight: 1080,
 };
 
 export const homepageTrustStrip = {
