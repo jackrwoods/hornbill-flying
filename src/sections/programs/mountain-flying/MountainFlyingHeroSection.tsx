@@ -18,8 +18,6 @@ export function MountainFlyingHeroSection() {
           loading="eager"
           className="object-cover opacity-40"
           sizes="100vw"
-          width={736}
-          height={552}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-900/60 to-navy-900/40" />
       </div>
