@@ -79,6 +79,66 @@ export const instructors: Instructor[] = [
     published: true,
   },
   {
+    slug: "ethan",
+    name: "Ethan",
+    title: "Certified Flight Instructor",
+    tagline: "Private and Commercial students from discovery flight to checkride",
+    specialties: [
+      "Private Pilot training",
+      "Commercial Pilot training",
+      "Discovery flights",
+      "Young and first-time students",
+    ],
+    photo: "/images/instructors/person-by-airplane-propeller.png",
+    previewPhoto: "/images/instructors/ethan-portrait.webp",
+    altText:
+      "Headshot of Ethan, Certified Flight Instructor at Hornbill Aviation",
+    certificateNumber: null,
+    publishCertificate: false,
+    bio:
+      "Ethan is a current CFI at Hornbill Aviation taking on Private and Commercial students. Growing up, he always had a passion " +
+      "for things that seemed 'unattainable.' Wondering what the view from above was like, he took his first discovery flight at the " +
+      "age of 16 and instantly fell in love with it, quickly earning his Private Pilot certificate during his junior year of high school. " +
+      "After graduating, Ethan chose to stay in Reno and attend UNR. Throughout the four years, he earned four pilot ratings and graduated " +
+      "with a dual degree while working a full-time job.\n\n" +
+      "When he is not flying, Ethan loves to work on trucks, hunt, be outdoors, and travel the world. He has toured and lived in various " +
+      "parts of the world but always finds his way back to Reno as 'there is no place more beautiful than Nevada.' Start your aviation " +
+      "journey with Ethan now!",
+    credentials: {
+      certificates: ["CFI", "Commercial ASEL"],
+    },
+    typicalAvailability:
+      "Based at KRNO; available by appointment",
+    teachesPrograms: ["private-pilot", "commercial-pilot"],
+    bookingSlug: "ethan",
+    bookingLink: "/instructors/ethan/",
+    website: null,
+    metaTitle: "Ethan — Flight Instructor in Reno, NV",
+    metaDescription:
+      "Train with Ethan, a CFI at Reno-Tahoe (RNO). Specialties: private pilot, commercial pilot, discovery flights. Book a discovery flight with Ethan.",
+    faq: [
+      {
+        id: "ethan-discovery",
+        question: "Can I request Ethan for my discovery flight?",
+        answer:
+          "Yes. Select Ethan when booking a discovery flight. His own aviation journey started with a discovery flight at age 16, and he enjoys introducing new students to flying.",
+      },
+      {
+        id: "ethan-ratings",
+        question: "What ratings does Ethan teach?",
+        answer:
+          "Ethan teaches Private Pilot and Commercial Pilot training at Hornbill Aviation.",
+      },
+      {
+        id: "ethan-background",
+        question: "What is Ethan's background?",
+        answer:
+          "Ethan earned his Private Pilot certificate in high school, then stayed in Reno for UNR where he earned four pilot ratings and a dual degree while working full-time before joining Hornbill Aviation as a CFI.",
+      },
+    ],
+    published: true,
+  },
+  {
     slug: "joel",
     name: "Joel",
     title: "Certified Flight Instructor — Instrument",
@@ -194,66 +254,6 @@ export const instructors: Instructor[] = [
         question: "How much experience does Jeremy have?",
         answer:
           "Jeremy has four years of flying experience and brings an enthusiastic, safety-focused approach to every lesson.",
-      },
-    ],
-    published: true,
-  },
-  {
-    slug: "ethan",
-    name: "Ethan",
-    title: "Certified Flight Instructor",
-    tagline: "Private and Commercial students from discovery flight to checkride",
-    specialties: [
-      "Private Pilot training",
-      "Commercial Pilot training",
-      "Discovery flights",
-      "Young and first-time students",
-    ],
-    photo: "/images/instructors/person-by-airplane-propeller.png",
-    previewPhoto: "/images/instructors/ethan-portrait.webp",
-    altText:
-      "Headshot of Ethan, Certified Flight Instructor at Hornbill Aviation",
-    certificateNumber: null,
-    publishCertificate: false,
-    bio:
-      "Ethan is a current CFI at Hornbill Aviation taking on Private and Commercial students. Growing up, he always had a passion " +
-      "for things that seemed 'unattainable.' Wondering what the view from above was like, he took his first discovery flight at the " +
-      "age of 16 and instantly fell in love with it, quickly earning his Private Pilot certificate during his junior year of high school. " +
-      "After graduating, Ethan chose to stay in Reno and attend UNR. Throughout the four years, he earned four pilot ratings and graduated " +
-      "with a dual degree while working a full-time job.\n\n" +
-      "When he is not flying, Ethan loves to work on trucks, hunt, be outdoors, and travel the world. He has toured and lived in various " +
-      "parts of the world but always finds his way back to Reno as 'there is no place more beautiful than Nevada.' Start your aviation " +
-      "journey with Ethan now!",
-    credentials: {
-      certificates: ["CFI", "Commercial ASEL"],
-    },
-    typicalAvailability:
-      "Based at KRNO; available by appointment",
-    teachesPrograms: ["private-pilot", "commercial-pilot"],
-    bookingSlug: "ethan",
-    bookingLink: "/instructors/ethan/",
-    website: null,
-    metaTitle: "Ethan — Flight Instructor in Reno, NV",
-    metaDescription:
-      "Train with Ethan, a CFI at Reno-Tahoe (RNO). Specialties: private pilot, commercial pilot, discovery flights. Book a discovery flight with Ethan.",
-    faq: [
-      {
-        id: "ethan-discovery",
-        question: "Can I request Ethan for my discovery flight?",
-        answer:
-          "Yes. Select Ethan when booking a discovery flight. His own aviation journey started with a discovery flight at age 16, and he enjoys introducing new students to flying.",
-      },
-      {
-        id: "ethan-ratings",
-        question: "What ratings does Ethan teach?",
-        answer:
-          "Ethan teaches Private Pilot and Commercial Pilot training at Hornbill Aviation.",
-      },
-      {
-        id: "ethan-background",
-        question: "What is Ethan's background?",
-        answer:
-          "Ethan earned his Private Pilot certificate in high school, then stayed in Reno for UNR where he earned four pilot ratings and a dual degree while working full-time before joining Hornbill Aviation as a CFI.",
       },
     ],
     published: true,
