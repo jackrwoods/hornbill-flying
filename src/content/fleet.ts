@@ -1,11 +1,13 @@
-import type { Aircraft, FAQItem } from "@/types";
+import type { Aircraft, FAQItem, FleetMember, Simulator } from "@/types";
+import { isAircraft } from "@/types";
 import { siteConfig } from "@/lib/config";
 
 const { membershipMonthly, memberWetRate, nonMemberWetRate, discoveryFlight } =
   siteConfig.pricing;
 
-export const aircraft: Aircraft[] = [
+const fleetMembers: FleetMember[] = [
   {
+    kind: "aircraft",
     tail: "N6576J",
     slug: "n6576j",
     engine: "180 HP Lycoming",
@@ -14,10 +16,25 @@ export const aircraft: Aircraft[] = [
     photo: "/images/fleet/n6576j.webp",
     photoAlt:
       "PA28 Cherokee N6576J on the ramp at Reno-Tahoe International Airport (RNO).",
+    gallery: [
+      {
+        src: "/images/fleet/n6576j.webp",
+        alt: "PA28 Cherokee N6576J on the ramp at Reno-Tahoe International Airport (RNO).",
+      },
+      {
+        src: "/images/fleet/n6576j-panel.jpeg",
+        alt: "N6576J instrument panel with Garmin G5 and WAAS GPS at Reno-Tahoe International Airport (RNO).",
+      },
+    ],
     ifrEquipped: true,
     crossCountryReady: true,
+    metaTitle: "N6576J — PA28 Cherokee for Rent and Training in Reno, NV",
+    metaDescription:
+      "Rent or train in N6576J, a 180 HP PA28 Cherokee with dual Garmin G5 units and WAAS GPS. See specs, rates, and availability at Hornbill Aviation.",
+    published: true,
   },
   {
+    kind: "aircraft",
     tail: "N7824W",
     slug: "n7824w",
     engine: "180 HP Lycoming",
@@ -26,10 +43,29 @@ export const aircraft: Aircraft[] = [
     photo: "/images/fleet/n7824w.webp",
     photoAlt:
       "PA28 Cherokee N7824W on the ramp at Reno-Tahoe International Airport (RNO).",
+    gallery: [
+      {
+        src: "/images/fleet/n7824w.webp",
+        alt: "PA28 Cherokee N7824W on the ramp at Reno-Tahoe International Airport (RNO).",
+      },
+      {
+        src: "/images/fleet/n7824w-flying.webp",
+        alt: "PA28 Cherokee N7824W in flight near Reno, NV.",
+      },
+      {
+        src: "/images/fleet/n7824w-panel.webp",
+        alt: "N7824W instrument panel with Garmin G5 and WAAS GPS at Reno-Tahoe International Airport (RNO).",
+      },
+    ],
     ifrEquipped: true,
     crossCountryReady: true,
+    metaTitle: "N7824W — PA28 Cherokee for Rent and Training in Reno, NV",
+    metaDescription:
+      "Rent or train in N7824W, a 180 HP PA28 Cherokee set up for mountain flying with dual Garmin G5 units and WAAS GPS. See specs at Hornbill Aviation.",
+    published: true,
   },
   {
+    kind: "aircraft",
     tail: "N7969W",
     slug: "n7969w",
     engine: "180 HP Lycoming",
@@ -37,23 +73,73 @@ export const aircraft: Aircraft[] = [
     notes: "Training and local rental workhorse.",
     photo: "/images/fleet/n7969w.webp",
     photoAlt:
-      "PA28 Cherokee N7969W on the ramp at Reno-Tahoe International Airport (RNO).",
+      "PA28 Cherokee N7969W on the ramp at Reno-Tahoe International Airport (RNO), with other aircraft and the control tower in the background.",
+    gallery: [
+      {
+        src: "/images/fleet/n7969w.webp",
+        alt: "PA28 Cherokee N7969W on the ramp at Reno-Tahoe International Airport (RNO), with other aircraft and the control tower in the background.",
+      },
+    ],
     ifrEquipped: false,
     crossCountryReady: false,
+    metaTitle: "N7969W — PA28 Cherokee for Training in Reno, NV",
+    metaDescription:
+      "Train in N7969W, a 180 HP PA28 Cherokee with a VFR panel. Reliable, predictable handling for primary training at Hornbill Aviation.",
+    published: true,
   },
   {
-    tail: "N0001J",
-    slug: "n0001j",
-    engine: "180 HP Lycoming",
-    avionics: ["VFR panel"],
-    notes: "Training and local rental workhorse.",
-    photo: "/images/fleet/n0001j.webp",
+    kind: "simulator",
+    slug: "simulator",
+    name: "Flight simulator",
+    tagline: "Practice procedures before you pay for engine time.",
+    description:
+      "Our simulator is set up for instrument procedure training, approach practice, and emergency rehearsal. Work through holds, intercepts, and partial-panel scenarios at your own pace, then transfer what you learned to the airplane.",
+    photo: "/images/fleet/simulator.webp",
     photoAlt:
-      "PA28 Cherokee N0001J on the ramp at Reno-Tahoe International Airport (RNO).",
-    ifrEquipped: false,
-    crossCountryReady: false,
-  },
+      "Flight simulator station with three displays and a full instrument panel at Hornbill Aviation in Reno, NV.",
+    notes:
+      "Useful for Instrument Rating students, IPC preparation, and anyone who wants to sharpen procedures without weather or fuel concerns.",
+    metaTitle: "Flight Simulator Training in Reno, NV",
+    metaDescription:
+      "Practice instrument procedures, approaches, and emergencies in our flight simulator. Build habit patterns before you fly at Hornbill Aviation.",
+    published: true,
+  } as Simulator,
 ];
+
+/**
+ * All published fleet members (aircraft + simulator).
+ */
+export const fleet = fleetMembers;
+
+/**
+ * Backwards-compatible aircraft-only export.
+ */
+export const aircraft: Aircraft[] = fleetMembers.filter(isAircraft);
+
+/**
+ * Returns only fleet members that should have public detail pages.
+ */
+export function getPublishedFleet(): FleetMember[] {
+  return fleet.filter((m) => m.published);
+}
+
+/**
+ * Finds a fleet member by slug, or returns undefined if not found.
+ */
+export function getFleetMemberBySlug(
+  slug: string
+): FleetMember | undefined {
+  return fleet.find((m) => m.slug === slug);
+}
+
+/**
+ * Finds an aircraft by slug, or returns undefined if the slug belongs to a
+ * simulator or does not exist.
+ */
+export function getAircraftBySlug(slug: string): Aircraft | undefined {
+  const member = getFleetMemberBySlug(slug);
+  return member && isAircraft(member) ? member : undefined;
+}
 
 export const membershipRates = {
   monthly: membershipMonthly,

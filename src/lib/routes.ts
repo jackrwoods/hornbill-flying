@@ -1,4 +1,5 @@
-import type { Instructor, NavItem, RouteMeta } from "@/types";
+import type { FleetMember, Instructor, NavItem, RouteMeta } from "@/types";
+import { isAircraft } from "@/types";
 
 /**
  * Canonical URL for the instructors index page.
@@ -28,6 +29,29 @@ export function getInstructorRoutes(instructors: Instructor[]): RouteMeta[] {
       slug: i.slug,
       label: i.name,
       href: getInstructorDetailUrl(i.slug),
+      published: true,
+      changefreq: "monthly" as const,
+      priority: 0.6,
+    }));
+}
+
+/**
+ * Builds the detail-page URL for a given fleet member slug.
+ */
+export function getFleetDetailUrl(slug: string): string {
+  return `/fleet/${slug}/`;
+}
+
+/**
+ * Returns RouteMeta entries for each published fleet detail page.
+ */
+export function getFleetRoutes(fleet: FleetMember[]): RouteMeta[] {
+  return fleet
+    .filter((m) => m.published)
+    .map((m) => ({
+      slug: m.slug,
+      label: isAircraft(m) ? m.tail : m.name,
+      href: getFleetDetailUrl(m.slug),
       published: true,
       changefreq: "monthly" as const,
       priority: 0.6,

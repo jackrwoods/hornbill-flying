@@ -1,7 +1,8 @@
 import { siteConfig } from "./config";
 import { absoluteUrl } from "./utils";
 import { programs } from "@/content/programs";
-import type { FAQItem, Instructor } from "@/types";
+import type { Aircraft, FAQItem, FleetMember, Instructor, Simulator } from "@/types";
+import { isAircraft } from "@/types";
 
 const BASE = siteConfig.baseUrl;
 
@@ -224,6 +225,79 @@ export function buildInstructorBreadcrumbList(
     { name: "Instructors", url: absoluteUrl("/instructors/", BASE) },
     { name: instructor.name, url: instructorDetailUrl(instructor.slug) },
   ]);
+}
+
+function fleetDetailUrl(slug: string): string {
+  return absoluteUrl(`/fleet/${slug}/`, BASE);
+}
+
+/**
+ * Builds a BreadcrumbList for an individual fleet detail page.
+ */
+export function buildFleetBreadcrumbList(member: FleetMember): JsonLdThing {
+  const name = isAircraft(member) ? member.tail : member.name;
+  return buildBreadcrumbList([
+    { name: "Home", url: absoluteUrl("/", BASE) },
+    { name: "Fleet & Pricing", url: absoluteUrl("/fleet/", BASE) },
+    { name, url: fleetDetailUrl(member.slug) },
+  ]);
+}
+
+interface AircraftRateOffers {
+  memberRate: number;
+  nonMemberRate: number;
+}
+
+/**
+ * Builds a Product entity for an aircraft detail page, including wet-rate offers.
+ */
+export function buildAircraftProduct(
+  aircraft: Aircraft,
+  rates: AircraftRateOffers
+): JsonLdThing {
+  const url = fleetDetailUrl(aircraft.slug);
+  return {
+    "@type": "Product",
+    "@id": `${url}#product`,
+    name: `${aircraft.tail} — PA28 Cherokee`,
+    description: `${aircraft.notes} IFR equipped: ${aircraft.ifrEquipped ? "Yes" : "No"}.`,
+    image: absoluteUrl(aircraft.photo, BASE),
+    brand: { "@type": "Brand", name: "Piper" },
+    offers: [
+      buildServiceOffer({
+        name: "Member PA28 wet rate",
+        price: String(rates.memberRate),
+        priceCurrency: "USD",
+        unitCode: "HUR",
+        availability: "https://schema.org/InStock",
+        url: `/fleet/${aircraft.slug}/`,
+        itemOffered: "PA28 Cherokee aircraft rental",
+      }),
+      buildServiceOffer({
+        name: "Non-member PA28 wet rate",
+        price: String(rates.nonMemberRate),
+        priceCurrency: "USD",
+        unitCode: "HUR",
+        availability: "https://schema.org/InStock",
+        url: `/fleet/${aircraft.slug}/`,
+        itemOffered: "PA28 Cherokee aircraft rental",
+      }),
+    ],
+  };
+}
+
+/**
+ * Builds a Product entity for the simulator detail page.
+ */
+export function buildSimulatorProduct(simulator: Simulator): JsonLdThing {
+  const url = fleetDetailUrl(simulator.slug);
+  return {
+    "@type": "Product",
+    "@id": `${url}#product`,
+    name: simulator.name,
+    description: simulator.description,
+    image: absoluteUrl(simulator.photo, BASE),
+  };
 }
 
 function buildKnowsAbout(instructor: Instructor): string[] {

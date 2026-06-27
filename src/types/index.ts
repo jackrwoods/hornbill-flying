@@ -167,7 +167,13 @@ export interface Testimonial {
 export type ButtonVariant = "primary" | "secondary" | "tertiary" | "accent";
 export type SectionBackground = "cream" | "white" | "navy" | "gold" | "sky";
 
+export interface AircraftPhoto {
+  src: string;
+  alt: string;
+}
+
 export interface Aircraft {
+  kind: "aircraft";
   tail: string;
   slug: string;
   engine: string;
@@ -175,8 +181,32 @@ export interface Aircraft {
   notes: string;
   photo: string;
   photoAlt: string;
+  gallery: AircraftPhoto[];
   ifrEquipped: boolean;
   crossCountryReady: boolean;
+  metaTitle: string;
+  metaDescription: string;
+  published: boolean;
+}
+
+export interface Simulator {
+  kind: "simulator";
+  slug: string;
+  name: string;
+  tagline: string;
+  description: string;
+  photo: string;
+  photoAlt: string;
+  notes: string;
+  metaTitle: string;
+  metaDescription: string;
+  published: boolean;
+}
+
+export type FleetMember = Aircraft | Simulator;
+
+export function isAircraft(member: FleetMember): member is Aircraft {
+  return member.kind === "aircraft";
 }
 
 export interface Rate {
