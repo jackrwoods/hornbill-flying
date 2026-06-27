@@ -13,6 +13,7 @@ export const instructors: Instructor[] = [
       "Mountain flying and cross-country trips",
     ],
     photo: "/images/instructors/person-leaning-airplane-hoodie.png",
+    previewPhoto: "/images/instructors/trygve-portrait.webp",
     altText:
       "Headshot of Trygve, Certified Flight Instructor Instrument at Hornbill Aviation",
     certificateNumber: null,
@@ -88,6 +89,7 @@ export const instructors: Instructor[] = [
       "Mountain and cross-country flying",
     ],
     photo: "/images/instructors/person-by-airplane-american-flag.png",
+    previewPhoto: "/images/instructors/joel-portrait.webp",
     altText:
       "Headshot of Joel, Certified Flight Instructor Instrument at Hornbill Aviation",
     certificateNumber: null,
@@ -149,6 +151,7 @@ export const instructors: Instructor[] = [
       "Safety and precision",
     ],
     photo: "/images/instructors/person-by-airplane-tail.png",
+    previewPhoto: "/images/instructors/jeremy-portrait.webp",
     altText:
       "Headshot of Jeremy, Certified Flight Instructor at Hornbill Aviation",
     certificateNumber: null,
@@ -204,6 +207,7 @@ export const instructors: Instructor[] = [
       "Young and first-time students",
     ],
     photo: "/images/instructors/person-by-airplane-propeller.png",
+    previewPhoto: "/images/instructors/ethan-portrait.webp",
     altText:
       "Headshot of Ethan, Certified Flight Instructor at Hornbill Aviation",
     certificateNumber: null,

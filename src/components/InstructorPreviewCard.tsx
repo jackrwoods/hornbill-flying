@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AssetImage } from "@/components/AssetImage";
 import { cn } from "@/lib/utils";
 import type { Instructor } from "@/types";
 
@@ -17,6 +18,7 @@ export function InstructorPreviewCard({
     .map((n) => n[0])
     .join("")
     .slice(0, 2);
+  const portraitSrc = instructor.previewPhoto || instructor.photo;
 
   return (
     <div
@@ -26,9 +28,22 @@ export function InstructorPreviewCard({
       )}
     >
       <div className="flex items-start gap-4">
-        <div className="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full bg-navy-800 text-white font-heading text-xl">
-          {initials}
-        </div>
+        {portraitSrc ? (
+          <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-full bg-navy-800">
+            <AssetImage
+              src={portraitSrc}
+              alt={instructor.altText}
+              width={64}
+              height={64}
+              className="h-full w-full object-cover"
+              sizes="64px"
+            />
+          </div>
+        ) : (
+          <div className="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full bg-navy-800 text-white font-heading text-xl">
+            {initials}
+          </div>
+        )}
         <div className="min-w-0">
           <h3 className="font-heading text-xl">{instructor.name}</h3>
           <p className="mt-1 text-sm text-ink-light">{instructor.title}</p>

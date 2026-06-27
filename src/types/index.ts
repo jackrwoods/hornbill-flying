@@ -93,6 +93,7 @@ export interface Instructor {
   tagline: string;
   specialties: string[];
   photo?: string;
+  previewPhoto?: string;
   altText: string;
   certificateNumber?: string | null;
   publishCertificate: boolean;

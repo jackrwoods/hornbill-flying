@@ -93,7 +93,7 @@ export const instrumentRatingProgram = {
       { label: "Ground school / written exam", value: "FAA Instrument Rating Airplane (IRA) knowledge test" },
       { label: "Practical test", value: "Instrument Rating checkride with a Designated Pilot Examiner" },
     ],
-    note: "Part 61 minimums are a floor, not a finish line. Most students need additional time to reach proficiency for the checkride.",
+    note: "Part 61 minimums are just that — minimums. Most students need additional time to reach proficiency for the checkride.",
   },
   trainingStructure: {
     title: "Training structure",
