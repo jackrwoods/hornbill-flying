@@ -8,7 +8,6 @@ const discoveryFlightHref = "/discovery-flight/";
 const fleetHref = "/fleet/";
 const membershipHref = "/membership/";
 const instructorsHref = "/instructors/";
-const financingHref = "/financing/";
 const sportPilotHref = "/programs/sport-pilot/";
 const instrumentRatingHref = "/programs/instrument-rating/";
 const commercialPilotHref = "/programs/commercial-pilot/";
@@ -119,12 +118,6 @@ export const privatePilotProgram = {
     description:
       "Pick the CFI whose schedule and style fit you. Already have a CFI? You can bring your own instructor to Hornbill.",
     href: instructorsHref,
-  },
-  financing: {
-    title: "Finance your training",
-    description:
-      "We partner with Stratus Financial to help students spread training costs over time.",
-    href: financingHref,
   },
   faq: [
     {

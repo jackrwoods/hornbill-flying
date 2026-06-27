@@ -7,7 +7,6 @@ const membershipRate = `$${siteConfig.pricing.membershipMonthly}/month`;
 const discoveryFlightHref = "/discovery-flight/";
 const fleetHref = "/fleet/";
 const membershipHref = "/membership/";
-const financingHref = "/financing/";
 const contactCplHref = "/contact/?subject=Commercial%20Pilot%20training";
 
 export const commercialPilotProgram = {
@@ -129,11 +128,10 @@ export const commercialPilotProgram = {
       { label: "Commercial written test", value: "$175" },
     ],
     totalRange: "$15,000–$25,000",
-    note: `Membership lowers the aircraft rate to ${memberRate}. See the fleet, membership, and financing pages for current rates and payment options.`,
+    note: `Membership lowers the aircraft rate to ${memberRate}. See the fleet and membership pages for current rates.`,
     links: [
       { label: "See fleet and rates", href: fleetHref },
       { label: "Membership details", href: membershipHref },
-      { label: "Financing options", href: financingHref },
     ],
   },
   whyHornbill: {

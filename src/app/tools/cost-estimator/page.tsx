@@ -39,7 +39,6 @@ export default function CostEstimatorPage() {
       faqs={costFaqs}
       related={[
         { href: "/fleet/", label: "Fleet and rates" },
-        { href: "/financing/", label: "Financing options" },
         { href: "/membership/", label: "Membership" },
         { href: "/programs/private-pilot/", label: "Private Pilot program" },
       ]}

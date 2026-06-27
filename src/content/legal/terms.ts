@@ -79,7 +79,7 @@ export const termsContent: TermsContent = {
       id: "third-party-links",
       heading: "Third-party links",
       paragraphs: [
-        "The site may link to third-party resources such as the FAA, weather services, aviation charts, or financing partners. We are not responsible for the content, accuracy, or practices of those sites.",
+        "The site may link to third-party resources such as the FAA, weather services, or aviation charts. We are not responsible for the content, accuracy, or practices of those sites.",
       ],
     },
     {

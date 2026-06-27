@@ -190,14 +190,6 @@ export const routeMap: RouteMeta[] = [
     priority: 0.6,
   },
   {
-    slug: "financing",
-    label: "Financing",
-    href: "/financing/",
-    published: true,
-    changefreq: "monthly",
-    priority: 0.6,
-  },
-  {
     slug: "faq",
     label: "FAQ",
     href: "/faq/",
@@ -478,7 +470,6 @@ export function getFooterLinks(): { title: string; links: NavItem[] }[] {
         { label: "Mountain Flying", href: "/programs/mountain-flying/" },
         { label: "Fleet & Pricing", href: "/fleet/" },
         { label: "Membership", href: "/membership/" },
-        { label: "Financing", href: "/financing/" },
       ],
     },
     {

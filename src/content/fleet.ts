@@ -172,14 +172,6 @@ export const discoveryFlightPricing = {
   ],
 };
 
-export const financing = {
-  partner: "Stratus Financial",
-  description:
-    "Stratus Financial offers loans built for flight training. Qualified students can cover certificates, ratings, aircraft rental, instructor time, and checkride costs.",
-  applyUrl: "https://stratusfinancial.com/",
-  pageUrl: "/financing/",
-};
-
 export const cancellationPolicy = {
   text: "Discovery flights and rentals can be cancelled or rescheduled with at least 24 hours' notice. No-shows may be charged the full booking amount. Refunds are processed to the original payment method within 5–10 business days.",
 };
@@ -231,7 +223,7 @@ export const fleetFAQs: FAQItem[] = [
 export const fleetPage = {
   metaTitle: "PA28 Fleet & Pricing in Reno, NV",
   metaDescription:
-    "Transparent PA28 wet rates at RNO. Members fly for $159/hr, non-members $180/hr. See tails, avionics, instructor rates, discovery flights, and financing.",
+    "Transparent PA28 wet rates at RNO. Members fly for $159/hr, non-members $180/hr. See tails, avionics, instructor rates, and discovery flights.",
   hero: {
     title: "Our PA28 fleet and transparent rates.",
     subtitle:

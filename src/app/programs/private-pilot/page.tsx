@@ -21,7 +21,6 @@ import { PrivatePilotTimelineSection } from "@/sections/programs/private-pilot/P
 import { PrivatePilotCostSection } from "@/sections/programs/private-pilot/PrivatePilotCostSection";
 import { PrivatePilotFleetSection } from "@/sections/programs/private-pilot/PrivatePilotFleetSection";
 import { PrivatePilotInstructorsSection } from "@/sections/programs/private-pilot/PrivatePilotInstructorsSection";
-import { PrivatePilotFinancingSection } from "@/sections/programs/private-pilot/PrivatePilotFinancingSection";
 import { PrivatePilotFAQSection } from "@/sections/programs/private-pilot/PrivatePilotFAQSection";
 import { PrivatePilotRelatedProgramsSection } from "@/sections/programs/private-pilot/PrivatePilotRelatedProgramsSection";
 import { PrivatePilotBottomCTASection } from "@/sections/programs/private-pilot/PrivatePilotBottomCTASection";
@@ -134,7 +133,6 @@ export default function PrivatePilotProgramPage() {
       <PrivatePilotCostSection />
       <PrivatePilotFleetSection />
       <PrivatePilotInstructorsSection />
-      <PrivatePilotFinancingSection />
       <PrivatePilotFAQSection />
       <PrivatePilotRelatedProgramsSection />
       <PrivatePilotBottomCTASection />

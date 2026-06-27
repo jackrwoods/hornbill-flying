@@ -7,7 +7,6 @@ const membershipRate = `$${siteConfig.pricing.membershipMonthly}/month`;
 const discoveryFlightHref = "/discovery-flight/";
 const fleetHref = "/fleet/";
 const membershipHref = "/membership/";
-const financingHref = "/financing/";
 const contactHref = "/contact/";
 const privatePilotHref = "/programs/private-pilot/";
 const instrumentRatingHref = "/programs/instrument-rating/";
@@ -225,7 +224,6 @@ export const mountainFlyingProgram = {
       links: [
         { label: "See fleet and rates", href: fleetHref },
         { label: "Membership details", href: membershipHref },
-        { label: "Financing options", href: financingHref },
       ],
     },
   },

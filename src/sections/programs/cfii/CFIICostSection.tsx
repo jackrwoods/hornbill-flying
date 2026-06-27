@@ -59,12 +59,6 @@ export function CFIICostSection() {
           >
             Membership details
           </Link>
-          <Link
-            href="/financing/"
-            className="text-sm font-semibold text-gold-500 hover:text-gold-400 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
-          >
-            Financing options
-          </Link>
         </div>
       </Container>
     </Section>

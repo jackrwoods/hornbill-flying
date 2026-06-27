@@ -156,7 +156,7 @@ export const cfiiProgram = {
     ],
     totalRange: "$4,500–$7,500",
     note:
-      `Membership lowers the aircraft rate to ${memberRate}. See fleet, membership, and financing pages for full details.`,
+      `Membership lowers the aircraft rate to ${memberRate}. See fleet and membership pages for full details.`,
   },
   whyHornbill: {
     title: "Why Hornbill for CFII",

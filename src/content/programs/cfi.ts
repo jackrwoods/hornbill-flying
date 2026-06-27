@@ -109,7 +109,7 @@ export const cfiProgram = {
       { label: "FIA written test", value: "$175" },
     ],
     totalRange: "$4,000–$8,500",
-    note: `Membership lowers the aircraft rate to ${memberRate}. See the fleet, membership, and financing pages for current rates and payment options.`,
+    note: `Membership lowers the aircraft rate to ${memberRate}. See the fleet and membership pages for current rates.`,
   },
   whyHornbill: {
     title: "Why train at Hornbill",

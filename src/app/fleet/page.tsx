@@ -19,7 +19,6 @@ import { MembershipComparisonSection } from "@/sections/fleet/MembershipComparis
 import { AircraftCardsSection } from "@/sections/fleet/AircraftCardsSection";
 import { InstructorRateSection } from "@/sections/fleet/InstructorRateSection";
 import { DiscoveryFlightPriceSection } from "@/sections/fleet/DiscoveryFlightPriceSection";
-import { FinancingOptionsSection } from "@/sections/fleet/FinancingOptionsSection";
 import { CancellationPolicySection } from "@/sections/fleet/CancellationPolicySection";
 import { FleetFAQSection } from "@/sections/fleet/FleetFAQSection";
 import { FleetCTASection } from "@/sections/fleet/FleetCTASection";
@@ -95,7 +94,6 @@ export default function FleetPage() {
       <AircraftCardsSection />
       <InstructorRateSection />
       <DiscoveryFlightPriceSection />
-      <FinancingOptionsSection />
       <CancellationPolicySection />
       <FleetFAQSection />
       <FleetCTASection />
