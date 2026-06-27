@@ -197,7 +197,7 @@ export const fleetFAQs: FAQItem[] = [
     id: "membership-required",
     question: "Do I need a membership to fly?",
     answer:
-      "No. Non-members can rent aircraft at the non-member wet rate. The $49/month membership lowers the rate to $159/hr and is worth it if you fly more than about two hours per month.",
+      `No. Non-members can rent aircraft at the non-member wet rate. The $${membershipRates.monthly}/month membership lowers the rate to $${membershipRates.memberRate}/hr and is worth it if you fly more than about ${Math.ceil(membershipRates.breakEvenHours)} hours per month.`,
   },
   {
     id: "discovery-flight-included",

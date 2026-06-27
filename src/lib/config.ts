@@ -69,7 +69,7 @@ export const siteConfig: SiteConfig = {
     clarityProjectId: process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID,
   },
   pricing: {
-    membershipMonthly: 49,
+    membershipMonthly: 59,
     memberWetRate: 159,
     nonMemberWetRate: 180,
     discoveryFlight: 199,

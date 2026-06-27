@@ -12,7 +12,7 @@ export const membershipContent = {
   meta: {
     title: "PA28 Aircraft Rental Membership in Reno, NV",
     description:
-      "Join Hornbill's $49/month membership for a $159/hr PA28 wet rate at RNO. Save $21/hr vs. the $180 non-member rate. No contract.",
+      `Join Hornbill's $${pricing.membershipMonthly}/month membership for a $${pricing.memberWetRate}/hr PA28 wet rate at RNO. Save $${membershipRates.savingsPerHour}/hr vs. the $${pricing.nonMemberWetRate}/hr non-member rate. No contract.`,
   },
 
   hero: {
@@ -138,7 +138,7 @@ export const membershipContent = {
 export const membershipFAQs: FAQItem[] = [
   {
     id: "included",
-    question: "What is included in the $49/month membership?",
+    question: `What is included in the $${pricing.membershipMonthly}/month membership?`,
     answer:
       "The membership lowers the PA28 wet rate to $159/hr, gives you priority scheduling, unlimited ground school access, unlimited access to our FAA-certified CR-12 AATD, a 12-hour booking cancellation window, and cross-country rental eligibility. It does not include instructor time or the aircraft rental hours themselves. See the Instrument Rating page for how AATD hours count toward a rating.",
   },

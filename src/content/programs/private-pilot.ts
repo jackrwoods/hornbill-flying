@@ -199,7 +199,7 @@ export const privatePilotProgram = {
       },
       {
         title: "Membership",
-        description: "Lower your wet rate to $159/hr and get priority scheduling for $49/month.",
+        description: `Lower your wet rate to ${memberRate} and get priority scheduling for ${membershipRate}.`,
         href: membershipHref,
       },
     ],
