@@ -36,16 +36,16 @@ export const homepageTrustStrip = {
 
 export const homepageDifferentiators = [
   {
-    id: "flexibility",
-    title: "Flexibility",
+    id: "value",
+    title: "Value",
     description:
-      "Part 61 training means you can train at your own pace with your instructor.",
+      "Just $159/hr wet with membership. Memberships include unlimited time in our FAA-certified AATD.",
   },
   {
-    id: "consistency",
-    title: "Fleet Consistency",
+    id: "community",
+    title: "Community",
     description:
-      "Our PA28 fleet is similarly equipped with Garmin avionics, ensuring a plane is always available from first lesson to checkride.",
+      "Hornbill is a flight school that's run not-for-profit, like a flying club.",
   },
   {
     id: "real-world",
@@ -54,10 +54,10 @@ export const homepageDifferentiators = [
       "Cross-country rentals are available. Plan a trip and take our planes on your next overnight adventure. Get real experience while time-building.",
   },
   {
-    id: "value",
-    title: "Value",
+    id: "well-equipped-aircraft",
+    title: "Well-equipped aircraft",
     description:
-      "Just $159/hr wet with membership. Memberships include unlimited time in our FAA-certified AATD.",
+      "Our PA28 fleet is equipped with Garmin avionics, ensuring a plane is always available from first lesson to checkride.",
   },
 ];
 
