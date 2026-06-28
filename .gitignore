@@ -21,6 +21,9 @@ out/
 # macOS
 .DS_Store
 
+# Local planning/ticket files
+thoughts/
+
 # Logs
 npm-debug.log*
 yarn-debug.log*
