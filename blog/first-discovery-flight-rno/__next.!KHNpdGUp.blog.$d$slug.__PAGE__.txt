@@ -1,0 +1,99 @@
+1:"$Sreact.fragment"
+3:I[22016,["/hornbill-flying/_next/static/chunks/1z6x88ihszho0.js","/hornbill-flying/_next/static/chunks/1dlnts2853mxf.js"],""]
+15:I[97367,["/hornbill-flying/_next/static/chunks/05-c3ty_6dwfk.js","/hornbill-flying/_next/static/chunks/14mrh2-p_w84d.js"],"OutletBoundary"]
+16:"$Sreact.suspense"
+2:Ta08,{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://hornbillaviation.com/blog/first-discovery-flight-rno/#webpage",
+      "name": "What to expect on your first discovery flight at RNO",
+      "url": "https://hornbillaviation.com/blog/first-discovery-flight-rno/",
+      "isPartOf": {
+        "@id": "https://hornbillaviation.com/#website"
+      },
+      "about": {
+        "@id": "https://hornbillaviation.com/#localbusiness"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://hornbillaviation.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://hornbillaviation.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "What to expect on your first discovery flight at RNO",
+          "item": "https://hornbillaviation.com/blog/first-discovery-flight-rno/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I need a medical certificate for a discovery flight?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. A discovery flight is not solo flight. You only need a government-issued ID and comfortable clothing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I bring a friend on a discovery flight?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Discovery flights are designed as one-on-one lessons with you and the instructor. Weight and balance limits in a PA28 usually mean no passengers on the first lesson."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I wear?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dress for the weather and wear closed-toe shoes. Sunglasses are helpful, and a light jacket is smart even in summer at altitude."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the discovery flight count toward my Private Pilot certificate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The flight is logged as dual instruction and counts toward the required flight time if you continue training."
+          }
+        }
+      ]
+    }
+  ]
+}0:{"rsc":["$","$1","c",{"children":[[["$","script",null,{"id":"blog-post-schema","type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}],["$","section",null,{"className":"relative overflow-hidden bg-navy-900 py-16 md:py-24 text-white","children":["$undefined",["$","div",null,{"className":"mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10","children":[["$","nav",null,{"aria-label":"Breadcrumb","className":"mb-4","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-2 text-sm text-cream-50/80","children":[["$","li","Home",{"className":"flex items-center gap-2","children":[false,["$","$L3",null,{"href":"/","className":"hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded","children":"Home"}]]}],["$","li","Blog",{"className":"flex items-center gap-2","children":["$L4","$L5"]}],"$L6"]}]}],"$L7","$undefined"]}]]}],"$L8"],null,"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"Emp48i28YQXImUCU5Opdl"}
+4:["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":"12","height":"12","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","aria-hidden":"true","children":["$","polyline",null,{"points":"9 18 15 12 9 6"}]}]
+5:["$","$L3",null,{"href":"/blog/","className":"hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded","children":"Blog"}]
+6:["$","li","What to expect on your first discovery flight at RNO",{"className":"flex items-center gap-2","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","width":"12","height":"12","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","aria-hidden":"true","children":["$","polyline",null,{"points":"9 18 15 12 9 6"}]}],["$","span",null,{"aria-current":"page","children":"What to expect on your first discovery flight at RNO"}]]}]
+7:["$","h1",null,{"className":"font-heading text-4xl md:text-5xl leading-tight","children":"What to expect on your first discovery flight at RNO"}]
+8:["$","section",null,{"className":"py-16 md:py-24 bg-white","children":["$","div",null,{"className":"mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 max-w-3xl","children":["$","article",null,{"className":"prose prose-lg max-w-none","children":[["$","header",null,{"className":"not-prose mb-8","children":["$","div",null,{"className":"flex flex-wrap items-center gap-3 text-sm text-ink-light","children":[["$","span",null,{"className":"rounded bg-sky-100 px-2 py-0.5 text-navy-900","children":"Getting Started"}],["$","time",null,{"dateTime":"2026-07-22","children":"July 21, 2026"}],["$","span",null,{"children":[4," min read"]}]]}]}],[["$","div",null,{"className":"rounded-lg bg-sky-100 p-5 text-navy-900","children":[["$","p",null,{"className":"font-semibold","children":"Quick answer"}],["$","p",null,{"className":"mt-1","children":["$","p",null,{"children":"A discovery flight at RNO is a 45–60 minute introductory lesson in a PA28. You sit in the left seat, handle the\ncontrols with a CFI beside you, and log the time toward a future certificate. The flight costs $199 and requires no\nmedical or prior experience."}]}]]}],"\n",["$","p",null,{"children":"A discovery flight is the best first step into aviation. It is not a tourist ride. It is a real lesson with you at the controls, a certificated flight instructor next to you, and the Reno area outside the window. Here is exactly what to expect when you book a discovery flight at Hornbill Aviation."}],"\n",["$","h2",null,{"id":"before-you-arrive","children":"Before you arrive"}],"\n",["$","p",null,{"children":"You book online or call us at +1-555-555-1234. We are located at 1008 Gentry Way, Reno, NV 89512, on the RNO field. You will receive a confirmation with parking and gate instructions. Bring a government-issued ID and sunglasses. Leave bulky bags at home; space in a PA28 is generous for two people but not infinite."}],"\n",["$","p",null,{"children":"There is no medical required. You do not need to pass a test. You do not need to decide on a certificate before you walk in. The only goal is to see if flying feels right for you."}],"\n",["$","h2",null,{"id":"arrival-and-meet-your-cfi","children":"Arrival and meet your CFI"}],"\n",["$","p",null,{"children":["When you arrive, you will meet your instructor. This is the person who will answer your questions, walk you through the airplane, and ultimately hand you the controls. If you are curious about a specific instructor, you can request one when you ",["$","a",null,{"href":"/discovery-flight/","children":"book a discovery flight"}],"."]}],"\n",["$","p",null,{"children":"After introductions, your CFI explains the plan for the flight. You will cover what you will see, what maneuvers you will try, and how the lesson will flow. You will also talk about the weather and why we picked today’s plan."}],"\n",["$","h2",null,{"id":"the-preflight-walk-around","children":"The preflight walk-around"}],"\n",["$","p",null,{"children":"Before you start the engine, you and your CFI walk around the airplane. This is the preflight inspection. You check the fuel, oil, tires, control surfaces, and overall condition. It is not busywork. It is the habit that keeps every flight safe."}],"\n",["$","p",null,{"children":"Your CFI will explain what you are looking at and why it matters. By the end of the walk-around, you will already know more about a PA28 than most people learn in a lifetime."}],"\n",["$","h2",null,{"id":"in-the-cockpit","children":"In the cockpit"}],"\n",["$","p",null,{"children":"You climb into the left seat. Your CFI sits in the right. You will learn the basic instruments, the throttle, the yoke, and the rudder pedals. Once the engine starts, your CFI handles taxiing and takeoff. Then, once the airplane is stable in climb, you take the controls."}],"\n","$La","\n","$Lb","\n","$Lc","\n","$Ld","\n","$Le","\n","$Lf","\n","$L10","\n","$L11","\n","$L12","\n","$L13"],"$L14"]}]}]}]
+9:["$","$L15",null,{"children":["$","$16",null,{"name":"Next.MetadataOutlet","children":"$@17"}]}]
+a:["$","p",null,{"children":"You will try straight-and-level flight, gentle turns, and maybe a climb or descent. Your CFI is there to correct any over-control and to keep the flight safe. Most first-time students are surprised by how responsive the airplane feels and how little force is needed."}]
+b:["$","h2",null,{"id":"what-you-will-see","children":"What you will see"}]
+c:["$","p",null,{"children":"Depending on the day and wind, you may fly over the Truckee Meadows, toward the Sierra foothills, or over the high desert to the east. RNO sits at the edge of two very different landscapes, so the view changes quickly. You will also hear ATC communications, which gives you a feel for how a busy Class C airport operates."}]
+d:["$","h2",null,{"id":"after-landing","children":"After landing"}]
+e:["$","p",null,{"children":["Back on the ground, your CFI will debrief the flight. You will talk about what went well, what surprised you, and what the next lessons would look like if you decide to continue. If you want to keep flying, we will help you choose the right certificate path — ",["$","a",null,{"href":"/programs/sport-pilot/","children":"Sport Pilot"}]," or ",["$","a",null,{"href":"/programs/private-pilot/","children":"Private Pilot"}]," — and build a schedule that fits your life."]}]
+f:["$","h2",null,{"id":"cost-and-next-step","children":"Cost and next step"}]
+10:["$","p",null,{"children":["The discovery flight is $199. That hour goes in your logbook and counts toward future training. There is no deposit and no obligation. If you are ready to reserve your slot, ",["$","a",null,{"href":"/discovery-flight/","children":"book your discovery flight today"}],". Questions first? ",["$","a",null,{"href":"/contact/","children":"Contact us"}]," and we will get you sorted."]}]
+11:["$","hr",null,{}]
+12:["$","h2",null,{"id":"about-the-author","children":"About the author"}]
+13:["$","p",null,{"children":[["$","strong",null,{"children":"Jordan Lee"}]," is a CFI and CFII at Hornbill Aviation. They specialize in discovery flights, medical certification guidance for new students, and helping pilots transition into the Reno mountain environment."]}]
+14:["$","footer",null,{"className":"not-prose mt-12 border-t border-navy-800/10 pt-8","children":["$","p",null,{"className":"text-sm text-ink-light","children":["By ","jordan-lee"]}]}]
+17:null
