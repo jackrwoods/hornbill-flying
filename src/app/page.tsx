@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { AssetImage as Image } from "@/components/AssetImage";
 import { Container } from "@/components/Container";
-import { getPublishedFleet, membershipRates } from "@/content/fleet";
+import { getPublishedFleet } from "@/content/fleet";
 import { isAircraft } from "@/types";
 import { siteConfig } from "@/lib/config";
 import {
@@ -160,12 +160,6 @@ export default function ComingSoonPage() {
                     <div className="mt-auto flex flex-wrap gap-2 pt-5">
                       {isAircraft(member) ? (
                         <>
-                          <span className="inline-flex rounded-full bg-navy-900 px-3 py-1 text-xs font-semibold text-white">
-                            Member ${membershipRates.memberRate}/hr
-                          </span>
-                          <span className="inline-flex rounded-full border border-navy-800/10 bg-white px-3 py-1 text-xs font-semibold text-navy-900">
-                            Non-member ${membershipRates.nonMemberRate}/hr
-                          </span>
                           {member.ifrEquipped && (
                             <span className="inline-flex rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold text-navy-900">
                               IFR equipped
