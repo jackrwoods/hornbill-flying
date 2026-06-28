@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
 import { ImageCarousel } from "@/components/ImageCarousel";
+import { DownloadCard } from "@/components/DownloadCard";
 import { membershipRates } from "@/content/fleet";
 import { memberRateBillingNote } from "@/content/pricing";
 import { isAircraft, type FleetMember } from "@/types";
@@ -111,6 +112,25 @@ export function FleetMemberDetailSection({
             )}
           </div>
         </div>
+
+        {member.documents && member.documents.length > 0 && (
+          <div className="mt-16">
+            <h2 className="font-heading text-2xl text-navy-900 md:text-3xl">
+              Documents
+            </h2>
+            <p className="mt-3 max-w-3xl text-ink-light">
+              Download the current manuals and reference documents for{" "}
+              {isAircraft(member) ? member.tail : member.name}. Verify all
+              numbers and procedures with the physical aircraft or current
+              simulator materials before flight or training.
+            </p>
+            <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {member.documents.map((doc) => (
+                <DownloadCard key={doc.slug} document={doc} />
+              ))}
+            </div>
+          </div>
+        )}
       </Container>
     </Section>
   );

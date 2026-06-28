@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import type { DownloadableDocument } from "@/content/student-resources";
+import { assetPath } from "@/lib/assets";
+import type { DownloadableDocument } from "@/types";
 
 interface DownloadCardProps {
   document: DownloadableDocument;
@@ -9,7 +10,7 @@ interface DownloadCardProps {
 
 export function DownloadCard({ document, className }: DownloadCardProps) {
   const isAvailable = Boolean(document.filePath || document.externalUrl);
-  const downloadHref = document.externalUrl || document.filePath;
+  const downloadHref = document.externalUrl || assetPath(document.filePath || "");
 
   return (
     <div

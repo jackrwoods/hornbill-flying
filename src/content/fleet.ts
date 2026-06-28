@@ -39,6 +39,41 @@ const fleetMembers: FleetMember[] = [
     metaTitle: "N6576J — PA28 Cherokee for Rent and Training in Reno, NV",
     metaDescription:
       "Rent or train in N6576J, a 180 HP PA28 Cherokee with dual Garmin G5 units and WAAS GPS. See specs, rates, and availability at Hornbill Aviation.",
+    documents: [
+      {
+        title: "PA-28-180 POH",
+        slug: "n6576j-poh",
+        description:
+          "Pilot's Operating Handbook for the PA-28-180. Verify current weight and balance and emergency procedures before every flight.",
+        filePath: "/documents/aircraft/PA-28-180-POH.pdf",
+        format: "PDF",
+        size: "3.4 MB",
+        lastUpdated: "2026-06-28",
+        tailNumber: "N6576J",
+      },
+      {
+        title: "Weight and balance",
+        slug: "n6576j-weight-balance-pdf",
+        description:
+          "Printed weight-and-balance sheet for N6576J dated November 2022.",
+        filePath: "/documents/aircraft/N6576J-weight-and-balance-11-2022.pdf",
+        format: "PDF",
+        size: "24 KB",
+        lastUpdated: "2022-11-01",
+        tailNumber: "N6576J",
+      },
+      {
+        title: "Weight and balance worksheet",
+        slug: "n6576j-weight-balance-xls",
+        description:
+          "Editable Excel worksheet for computing N6576J weight and balance.",
+        filePath: "/documents/aircraft/N6576J-weight-and-balance.xls",
+        format: "XLS",
+        size: "38 KB",
+        lastUpdated: "2022-11-01",
+        tailNumber: "N6576J",
+      },
+    ],
     published: true,
   },
   {
@@ -70,6 +105,41 @@ const fleetMembers: FleetMember[] = [
     metaTitle: "N7824W — PA28 Cherokee for Rent and Training in Reno, NV",
     metaDescription:
       "Rent or train in N7824W, a 180 HP PA28 Cherokee set up for mountain flying with dual Garmin G5 units and WAAS GPS. See specs at Hornbill Aviation.",
+    documents: [
+      {
+        title: "Aircraft Flight Manual",
+        slug: "n7824w-afm",
+        description:
+          "Complete Aircraft Flight Manual for N7824W.",
+        filePath: "/documents/aircraft/N7824W-AFM.pdf",
+        format: "PDF",
+        size: "7.5 MB",
+        lastUpdated: "2026-06-28",
+        tailNumber: "N7824W",
+      },
+      {
+        title: "PA-28-180C POH",
+        slug: "n7824w-poh",
+        description:
+          "Piper PA-28-180C Pilot's Operating Handbook. Verify current weight and balance and emergency procedures before every flight.",
+        filePath: "/documents/aircraft/piper-PA-28-180C.pdf",
+        format: "PDF",
+        size: "1.9 MB",
+        lastUpdated: "2026-06-28",
+        tailNumber: "N7824W",
+      },
+      {
+        title: "Weight and balance worksheet",
+        slug: "n7824w-weight-balance-xlsx",
+        description:
+          "Editable Excel worksheet for computing N7824W weight and balance.",
+        filePath: "/documents/aircraft/N7824W-weight-and-balance.xlsx",
+        format: "XLSX",
+        size: "16 KB",
+        lastUpdated: "2026-06-28",
+        tailNumber: "N7824W",
+      },
+    ],
     published: true,
   },
   {
@@ -93,6 +163,41 @@ const fleetMembers: FleetMember[] = [
     metaTitle: "N7969W — PA28 Cherokee for Training in Reno, NV",
     metaDescription:
       "Train in N7969W, a 180 HP PA28 Cherokee with a VFR panel. Reliable, predictable handling for primary training at Hornbill Aviation.",
+    documents: [
+      {
+        title: "PA-28-180C POH",
+        slug: "n7969w-poh",
+        description:
+          "Piper PA-28-180C Pilot's Operating Handbook. Verify current weight and balance and emergency procedures before every flight.",
+        filePath: "/documents/aircraft/piper-PA-28-180C.pdf",
+        format: "PDF",
+        size: "1.9 MB",
+        lastUpdated: "2026-06-28",
+        tailNumber: "N7969W",
+      },
+      {
+        title: "Weight and balance",
+        slug: "n7969w-weight-balance-pdf",
+        description:
+          "Printed weight-and-balance sheet for N7969W dated April 2025.",
+        filePath: "/documents/aircraft/N7969W-weight-and-balance-4-2025.pdf",
+        format: "PDF",
+        size: "21 KB",
+        lastUpdated: "2025-04-01",
+        tailNumber: "N7969W",
+      },
+      {
+        title: "Weight and balance worksheet",
+        slug: "n7969w-weight-balance-xlsx",
+        description:
+          "Editable Excel worksheet for computing N7969W weight and balance.",
+        filePath: "/documents/aircraft/N7969W-weight-and-balance.xlsx",
+        format: "XLSX",
+        size: "16 KB",
+        lastUpdated: "2025-04-01",
+        tailNumber: "N7969W",
+      },
+    ],
     published: false,
   },
   {
@@ -110,6 +215,58 @@ const fleetMembers: FleetMember[] = [
     metaTitle: "Flight Simulator Training in Reno, NV",
     metaDescription:
       "Practice instrument procedures, approaches, and emergencies in our flight simulator. Build habit patterns before you fly at Hornbill Aviation.",
+    documents: [
+      {
+        title: "PFC CR12 ProPanel AATD LOA",
+        slug: "simulator-loa-03-15-2022",
+        description:
+          "Letter of Authorization for the PFC CR12 ProPanel Advanced Aviation Training Device, revision signed March 15, 2022.",
+        filePath: "/documents/aircraft/PFC-CR12-PROPANEL-AATD-AIRPLANE-Revision-LOA-signed-03-15-2022.pdf",
+        format: "PDF",
+        size: "315 KB",
+        lastUpdated: "2022-03-15",
+      },
+      {
+        title: "PFC CR12 ProPanel AATD revised QAG",
+        slug: "simulator-qag-03-31-2022",
+        description:
+          "Revised Qualification and Approval Guide for the PFC CR12 ProPanel AATD, signed March 31, 2022.",
+        filePath: "/documents/aircraft/Signed-03-31-2022-PFC-CR-12-PROPANEL-AATD-revised-QAG-01-19-2022-rev-031522.pdf",
+        format: "PDF",
+        size: "18.1 MB",
+        lastUpdated: "2022-03-31",
+      },
+      {
+        title: "FAA AC 61-136A",
+        slug: "faa-ac-61-136a",
+        description:
+          "FAA Advisory Circular 61-136A on flight simulation training device use in aviation training.",
+        filePath: "/documents/aircraft/FAA-AC-61-136A.pdf",
+        format: "PDF",
+        size: "225 KB",
+        lastUpdated: "2026-06-27",
+      },
+      {
+        title: "FAA loggable time guidance",
+        slug: "faa-loggable-time",
+        description:
+          "FAA guidance on what simulator time can be logged and how to log it.",
+        filePath: "/documents/aircraft/FAA-Loggable-Time.pdf",
+        format: "PDF",
+        size: "356 KB",
+        lastUpdated: "2026-06-27",
+      },
+      {
+        title: "How to log time",
+        slug: "how-to-log-time",
+        description:
+          "Reference document explaining how to log simulator and training time.",
+        filePath: "/documents/aircraft/How-to-Log-Time.pdf",
+        format: "PDF",
+        size: "248 KB",
+        lastUpdated: "2026-06-27",
+      },
+    ],
     published: true,
   } as Simulator,
 ];

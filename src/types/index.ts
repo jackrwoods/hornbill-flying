@@ -117,6 +117,18 @@ export interface FAQItem {
   answer: string;
 }
 
+export interface DownloadableDocument {
+  title: string;
+  slug: string;
+  description: string;
+  filePath?: string; // /documents/...  (undefined = coming soon)
+  externalUrl?: string;
+  format: "PDF" | "XLS" | "XLSX";
+  size?: string;
+  lastUpdated?: string; // ISO date
+  tailNumber?: string; // for aircraft-specific documents
+}
+
 export interface BlogAuthor {
   slug: string;
   name: string;
@@ -189,6 +201,7 @@ export interface Aircraft {
   crossCountryReady: boolean;
   metaTitle: string;
   metaDescription: string;
+  documents?: DownloadableDocument[];
   published: boolean;
 }
 
@@ -203,6 +216,7 @@ export interface Simulator {
   notes: string;
   metaTitle: string;
   metaDescription: string;
+  documents?: DownloadableDocument[];
   published: boolean;
 }
 

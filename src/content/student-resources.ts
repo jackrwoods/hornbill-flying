@@ -1,21 +1,11 @@
+import type { DownloadableDocument } from "@/types";
+
 export interface ExternalResource {
   title: string;
   url: string;
   description: string;
   category: "weather" | "medical" | "faa" | "planning";
   isFaa?: boolean;
-}
-
-export interface DownloadableDocument {
-  title: string;
-  slug: string;
-  description: string;
-  filePath?: string; // /downloads/...  (undefined = coming soon)
-  externalUrl?: string;
-  format: "PDF";
-  size?: string;
-  lastUpdated?: string; // ISO date
-  tailNumber?: string; // for POH cards
 }
 
 export interface StudentFaqItem {
