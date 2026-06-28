@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Section } from "@/components/Section";
 import { Container } from "@/components/Container";
 import { membershipRates } from "@/content/fleet";
+import { memberRateBillingNote } from "@/content/pricing";
 
 export function MembershipComparisonSection() {
   const {
@@ -34,6 +35,7 @@ export function MembershipComparisonSection() {
             <p className="mt-1 text-sm text-ink-light">
               ${monthly}/month · students and renters who fly regularly
             </p>
+            <p className="mt-3 text-sm text-ink-light">{memberRateBillingNote}</p>
             <p className="mt-4 text-sm font-semibold text-success">
               Save ${savingsPerHour}/hr. At about {breakEvenHours} hours per month,
               membership pays for itself.

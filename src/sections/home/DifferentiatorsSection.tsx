@@ -7,7 +7,7 @@ export function DifferentiatorsSection() {
     <Section background="cream">
       <Container>
         <h2 className="font-heading text-3xl md:text-4xl text-center text-navy-900">
-          What makes Hornbill different
+          What makes Hornbill Aviation different
         </h2>
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {homepageDifferentiators.map((item) => (

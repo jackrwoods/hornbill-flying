@@ -4,6 +4,7 @@ import { useState } from "react";
 import { NavLink } from "./NavLink";
 import { CTALink } from "./CTALink";
 import { PhoneLink } from "./PhoneLink";
+import { siteConfig } from "@/lib/config";
 import type { NavItem } from "@/types";
 
 interface MobileNavProps {
@@ -82,6 +83,17 @@ export function MobileNav({ items }: MobileNavProps) {
                 )}
               </div>
             ))}
+
+            <a
+              href={siteConfig.flightCircleScheduleUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-base text-white"
+              onClick={() => setIsOpen(false)}
+              data-analytics="mobile_schedule_click"
+            >
+              Schedule
+            </a>
 
             <div className="mt-4 flex flex-col gap-3 border-t border-navy-800 pt-4">
               <PhoneLink

@@ -11,14 +11,14 @@ export const cfiProgram = {
   fullTitle: "Certified Flight Instructor",
   metaTitle: "Certified Flight Instructor Training in Reno, NV",
   metaDescription:
-    "Earn your CFI certificate at Hornbill in Reno, NV. Part 61 training: FOI, spin proficiency, lesson planning, and checkride prep. Book a consultation.",
+    "Earn your CFI certificate at Hornbill Aviation in Reno, NV. Part 61 training: FOI, spin proficiency, lesson planning, and checkride prep. Book a consultation.",
   hero: {
     title: "Certified Flight Instructor (CFI) training in Reno, NV",
     subtitle:
       "Learn to teach pilots in a consistent PA28 fleet at Reno–Tahoe (RNO). Part 61 CFI training that covers Fundamentals of Instruction, spin proficiency, lesson planning, and practical-test preparation.",
     image: "/images/programs/cfi-hero.webp",
     imageAlt:
-      "CFI candidate reviewing a flight lesson plan with a Hornbill instructor in a PA28 at Reno-Tahoe International Airport",
+      "CFI candidate reviewing a flight lesson plan with a Hornbill Aviation instructor in a PA28 at Reno-Tahoe International Airport",
     cta: {
       primary: {
         label: "Book a CFI consultation",
@@ -33,7 +33,7 @@ export const cfiProgram = {
     },
   },
   quickAnswer:
-    "Hornbill's CFI program prepares commercial pilots with instrument privileges to become FAA-certified flight instructors. Training emphasizes the Fundamentals of Instruction, spin proficiency endorsement, lesson planning, and the practical test standards for single-engine airplane instruction in our consistent PA28 fleet at RNO.",
+    "Hornbill Aviation's CFI program prepares commercial pilots with instrument privileges to become FAA-certified flight instructors. Training emphasizes the Fundamentals of Instruction, spin proficiency endorsement, lesson planning, and the practical test standards for single-engine airplane instruction in our consistent PA28 fleet at RNO.",
   whoIsFor: {
     title: "Who this is for",
     intro:
@@ -112,7 +112,7 @@ export const cfiProgram = {
     note: `Membership lowers the aircraft rate to ${memberRate}. See the fleet and membership pages for current rates.`,
   },
   whyHornbill: {
-    title: "Why train at Hornbill",
+    title: "Why train at Hornbill Aviation",
     items: [
       {
         title: "Consistency",
@@ -127,7 +127,7 @@ export const cfiProgram = {
       {
         title: "Real-world experience",
         description:
-          "CFIs at Hornbill fly real cross-country routes, not just practice-area patterns.",
+          "CFIs at Hornbill Aviation fly real cross-country routes, not just practice-area patterns.",
       },
       {
         title: "Value",
@@ -138,7 +138,7 @@ export const cfiProgram = {
   instructorLead: {
     title: "Meet your CFI lead",
     intro:
-      "Trygve mentors initial CFI candidates at Hornbill, with experience in instrument instruction, advanced maneuvers, and checkride preparation.",
+      "Trygve mentors initial CFI candidates at Hornbill Aviation, with experience in instrument instruction, advanced maneuvers, and checkride preparation.",
     instructors: [
       {
         name: "Trygve",
@@ -179,7 +179,7 @@ export const cfiProgram = {
     },
     {
       id: "cfi-cfii-addon",
-      question: "Does Hornbill offer CFII add-on training?",
+      question: "Does Hornbill Aviation offer CFII add-on training?",
       answer:
         "Yes. After you earn your initial CFI certificate, you can add instrument instruction privileges through our CFII program in the same PA28 fleet.",
     },
@@ -197,7 +197,7 @@ export const cfiProgram = {
     },
     {
       id: "cfi-instruct-at-hornbill",
-      question: "Can I instruct at Hornbill after I earn my CFI?",
+      question: "Can I instruct at Hornbill Aviation after I earn my CFI?",
       answer:
         "Possibly. We hire based on student demand, instructional quality, and fit. If you train with us and perform well, we are happy to discuss instructing opportunities as they open.",
     },

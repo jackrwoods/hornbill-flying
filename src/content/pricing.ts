@@ -22,6 +22,9 @@ export const pricing = {
   lastUpdated,
 };
 
+export const memberRateBillingNote =
+  "Billed as tach time × 1.3. A 1.0 tach-hour flight costs $206.70.";
+
 export const membershipRates = {
   monthly: pricing.membershipMonthly,
   memberRate: pricing.memberWetRate,

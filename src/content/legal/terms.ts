@@ -39,7 +39,7 @@ export const termsContent: TermsContent = {
       paragraphs: ["All flight training and aircraft rental are subject to:"],
       items: [
         "FAA regulations, including medical, citizenship, and pilot-certification requirements.",
-        "Completion of a checkout or review with a Hornbill certificated flight instructor before solo or rental operations.",
+        "Completion of a checkout or review with a Hornbill Aviation certificated flight instructor before solo or rental operations.",
         "The pilot in command's responsibility to conduct a thorough preflight inspection and accept the aircraft as airworthy.",
         "Instructor assignments based on availability, qualifications, and student preference.",
       ],

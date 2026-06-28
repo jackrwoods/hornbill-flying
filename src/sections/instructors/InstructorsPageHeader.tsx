@@ -46,24 +46,9 @@ export function InstructorsPageHeader() {
 
         <div className="mt-6 max-w-3xl text-cream-50/90 leading-relaxed">
           <p>
-            Hornbill is a Part 61 school, so you choose your instructor or bring
-            your own. Every CFI trains in the same PA28 fleet, so switching
-            aircraft does not mean switching handling or costs. Whether you are
-            starting{" "}
-            <Link
-              href="/programs/private-pilot/"
-              className="font-semibold text-gold-400 hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
-            >
-              Private Pilot training
-            </Link>{" "}
-            or learning more on the{" "}
-            <Link
-              href="/blog/"
-              className="font-semibold text-gold-400 hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
-            >
-              blog
-            </Link>
-            , the relationship is yours to pick.
+            Hornbill Aviation is a Part 61 school, so you choose your instructor
+            or bring your own. Every CFI is available in any plane in the
+            fleet.
           </p>
         </div>
 

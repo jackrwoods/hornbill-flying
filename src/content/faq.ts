@@ -9,7 +9,7 @@ export const homeFAQ: FAQItem[] = [
   },
   {
     id: "how-much-does-training-cost",
-    question: "How much does flight training cost at Hornbill?",
+    question: "How much does flight training cost at Hornbill Aviation?",
     answer:
       "Total cost depends on the certificate and how often you fly. A Private Pilot certificate typically starts around $12,000 with membership. Discovery flights are $199. See the Fleet & Pricing page for current wet rates and membership details.",
   },

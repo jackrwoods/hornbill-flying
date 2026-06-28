@@ -11,7 +11,7 @@ export const cfiiProgram = {
   fullTitle: "Certified Flight Instructor Instrument",
   metaTitle: "CFII Training in Reno, NV | Certified Flight Instructor Instrument",
   metaDescription:
-    "Add instrument instruction to your CFI certificate at RNO. Part 61 CFII training in a PA28 fleet with real IFR experience. Contact Hornbill today.",
+    "Add instrument instruction to your CFI certificate at RNO. Part 61 CFII training in a PA28 fleet with real IFR experience. Contact Hornbill Aviation today.",
   hero: {
     title: "CFII training in Reno, NV.",
     subtitle:
@@ -159,7 +159,7 @@ export const cfiiProgram = {
       `Membership lowers the aircraft rate to ${memberRate}. See fleet and membership pages for full details.`,
   },
   whyHornbill: {
-    title: "Why Hornbill for CFII",
+    title: "Why Hornbill Aviation for CFII",
     items: [
       {
         title: "Uniform PA28 fleet",

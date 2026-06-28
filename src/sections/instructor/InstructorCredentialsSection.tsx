@@ -61,9 +61,9 @@ export function InstructorCredentialsSection({
         )}
 
         <p className="mt-6 max-w-3xl text-ink-light">
-          All instruction follows FAA Part 61 standards and Hornbill Flight
-          Center safety practices. Aircraft are inspected before each flight and
-          maintained on a recurring schedule.
+          All instruction follows FAA Part 61 standards and Hornbill Aviation
+          flight center safety practices. Aircraft are inspected before each
+          flight and maintained on a recurring schedule.
         </p>
       </Container>
     </Section>

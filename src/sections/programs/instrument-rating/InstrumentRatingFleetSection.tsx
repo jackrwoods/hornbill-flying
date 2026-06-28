@@ -55,7 +55,7 @@ export function InstrumentRatingFleetSection() {
           <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
             <Image
               src="/images/programs/instrument-rating-hero.webp"
-              alt="Dual Garmin G5 instrument panel in a Hornbill PA28 IFR trainer at RNO"
+              alt="Dual Garmin G5 instrument panel in a Hornbill Aviation PA28 IFR trainer at RNO"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"

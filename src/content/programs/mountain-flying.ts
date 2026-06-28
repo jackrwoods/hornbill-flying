@@ -30,7 +30,7 @@ export const mountainFlyingProgram = {
       "Learn to fly the Sierra Nevada safely. Build confidence in density altitude, mountain weather, and high-terrain route planning from Reno–Tahoe (RNO).",
     image: "/images/programs/mountain-flying-hero.webp",
     imageAlt:
-      "Hornbill PA28 Cherokee on the ramp with snow-capped Sierra Nevada mountains in the background",
+      "Hornbill Aviation PA28 Cherokee on the ramp with snow-capped Sierra Nevada mountains in the background",
     cta: {
       primary: {
         label: "Book a discovery flight",
@@ -197,7 +197,7 @@ export const mountainFlyingProgram = {
       items: [
         "Hold at least a Private Pilot certificate (strongly recommended).",
         "Hold a current medical certificate or BasicMed as appropriate for the flight.",
-        "Completed a recent flight review or equivalent checkout at Hornbill.",
+        "Completed a recent flight review or equivalent checkout at Hornbill Aviation.",
         "Comfortable with basic performance calculations and cross-country navigation.",
       ],
     },
@@ -245,7 +245,7 @@ export const mountainFlyingProgram = {
     ],
   },
   whyHornbill: {
-    title: "Why Hornbill for mountain flying",
+    title: "Why Hornbill Aviation for mountain flying",
     items: [
       {
         title: "Home airport at RNO",
@@ -293,7 +293,7 @@ export const mountainFlyingProgram = {
       },
       {
         title: "Discovery Flight",
-        description: "New to Hornbill? Fly with a CFI and see what our training is like.",
+        description: "New to Hornbill Aviation? Fly with a CFI and see what our training is like.",
         href: discoveryFlightHref,
       },
     ],
@@ -315,7 +315,7 @@ export const mountainFlyingProgram = {
       id: "mountain-flying-aircraft",
       question: "What aircraft is used for mountain flying training?",
       answer:
-        "We train in Hornbill's uniform PA28 fleet, all with 180 HP Lycoming engines. N7824W is set up with performance-friendly configuration for mountain work. You can rent the same aircraft after checkout.",
+        "We train in Hornbill Aviation's uniform PA28 fleet, all with 180 HP Lycoming engines. N7824W is set up with performance-friendly configuration for mountain work. You can rent the same aircraft after checkout.",
     },
     {
       id: "density-altitude-definition",
@@ -337,9 +337,9 @@ export const mountainFlyingProgram = {
     },
     {
       id: "mountain-flying-rentals",
-      question: "Can I rent a Hornbill aircraft for mountain cross-country flights after the course?",
+      question: "Can I rent a Hornbill Aviation aircraft for mountain cross-country flights after the course?",
       answer:
-        "Yes. After a mountain checkout, you can rent the same PA28s for real cross-country trips. That is one of the reasons students train at Hornbill: the aircraft you learn in are the aircraft you rent.",
+        "Yes. After a mountain checkout, you can rent the same PA28s for real cross-country trips. That is one of the reasons students train at Hornbill Aviation: the aircraft you learn in are the aircraft you rent.",
     },
     {
       id: "mountain-flying-cost",

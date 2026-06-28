@@ -13,10 +13,14 @@ const fleetMembers: FleetMember[] = [
     engine: "180 HP Lycoming",
     avionics: ["Dual Garmin G5 units", "WAAS Garmin 375 GPS"],
     notes: "Cruise prop for efficient IFR cross-country flying.",
-    photo: "/images/fleet/n6576j.webp",
+    photo: "/images/fleet/n6576j-wet-ramp.jpeg",
     photoAlt:
-      "PA28 Cherokee N6576J in flight over snow-covered terrain near Reno, NV.",
+      "Hornbill Aviation PA28 Cherokee N6576J reflected in standing water on the ramp at Reno-Tahoe International Airport (RNO).",
     gallery: [
+      {
+        src: "/images/fleet/n6576j-wet-ramp.jpeg",
+        alt: "Hornbill Aviation PA28 Cherokee N6576J reflected in standing water on the ramp at Reno-Tahoe International Airport (RNO).",
+      },
       {
         src: "/images/fleet/n6576j.webp",
         alt: "PA28 Cherokee N6576J in flight over snow-covered terrain near Reno, NV.",
@@ -28,10 +32,6 @@ const fleetMembers: FleetMember[] = [
       {
         src: "/images/fleet/n6576j-panel.jpeg",
         alt: "N6576J instrument panel with Garmin G5 and WAAS GPS at Reno-Tahoe International Airport (RNO).",
-      },
-      {
-        src: "/images/fleet/n6576j-wet-ramp.jpeg",
-        alt: "PA28 Cherokee on a wet ramp with red, white, and blue stripes reflected in standing water.",
       },
     ],
     ifrEquipped: true,
@@ -93,7 +93,7 @@ const fleetMembers: FleetMember[] = [
     metaTitle: "N7969W — PA28 Cherokee for Training in Reno, NV",
     metaDescription:
       "Train in N7969W, a 180 HP PA28 Cherokee with a VFR panel. Reliable, predictable handling for primary training at Hornbill Aviation.",
-    published: true,
+    published: false,
   },
   {
     kind: "simulator",

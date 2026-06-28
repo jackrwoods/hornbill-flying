@@ -220,7 +220,7 @@ export default function DiscoveryFlightPage() {
       <Section background="navy" id="why-hornbill">
         <Container>
           <h2 className="font-heading text-3xl text-white md:text-4xl">
-            Why train with Hornbill?
+            Why train with Hornbill Aviation?
           </h2>
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {WHY_HORNBILL.map((item) => (

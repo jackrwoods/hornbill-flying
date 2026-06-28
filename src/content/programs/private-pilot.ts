@@ -41,12 +41,12 @@ export const privatePilotProgram = {
     },
   },
   quickAnswer:
-    "A private pilot certificate lets you fly a single-engine airplane in visual flight rules, carry passengers, and rent aircraft for cross-country trips. At Hornbill, you train under Part 61 at RNO, choose the CFI you work with, and fly the same PA28 fleet from first lesson to checkride.",
+    "A private pilot certificate lets you fly a single-engine airplane in visual flight rules, carry passengers, and rent aircraft for cross-country trips. At Hornbill Aviation, you train under Part 61 at RNO, choose the CFI you work with, and fly the same PA28 fleet from first lesson to checkride.",
   outcomes: {
     title: "What you'll be able to do after",
     items: [
       "Fly passengers day or night under VFR in the U.S.",
-      "Rent Hornbill PA28s for real cross-country flights.",
+      "Rent Hornbill Aviation PA28s for real cross-country flights.",
       "Build the foundation for an Instrument Rating or Commercial certificate.",
     ],
   },
@@ -116,7 +116,7 @@ export const privatePilotProgram = {
   instructors: {
     title: "Choose your instructor",
     description:
-      "Pick the CFI whose schedule and style fit you. Already have a CFI? You can bring your own instructor to Hornbill.",
+      "Pick the CFI whose schedule and style fit you. Already have a CFI? You can bring your own instructor to Hornbill Aviation.",
     href: instructorsHref,
   },
   faq: [
@@ -140,7 +140,7 @@ export const privatePilotProgram = {
     },
     {
       id: "ppl-cost",
-      question: "How much does it cost to get a PPL at Hornbill?",
+      question: "How much does it cost to get a PPL at Hornbill Aviation?",
       answer:
         `Most students spend roughly $12,000–$16,000 from first lesson to certificate. The biggest variables are aircraft rental rate, instructor time, and how many hours you need to reach proficiency. Members pay ${memberRate} wet; non-members pay ${nonMemberRate} wet.`,
     },
@@ -148,19 +148,19 @@ export const privatePilotProgram = {
       id: "ppl-instructor-choice",
       question: "Can I choose my flight instructor or bring my own?",
       answer:
-        "Yes. You can train with any Hornbill CFI or bring your own certificated flight instructor. Part 61 means the schedule and the instructor relationship fit you.",
+        "Yes. You can train with any Hornbill Aviation CFI or bring your own certificated flight instructor. Part 61 means the schedule and the instructor relationship fit you.",
     },
     {
       id: "ppl-aircraft",
       question: "What aircraft will I train in?",
       answer:
-        "You will train in Hornbill's consistent PA28 fleet. IFR-capable aircraft have dual Garmin G5 units and WAAS GPS, so panel layout and performance stay predictable even when you switch between aircraft.",
+        "You will train in Hornbill Aviation's consistent PA28 fleet. IFR-capable aircraft have dual Garmin G5 units and WAAS GPS, so panel layout and performance stay predictable even when you switch between aircraft.",
     },
     {
       id: "ppl-part-61",
-      question: "Is Hornbill Part 61 or Part 141?",
+      question: "Is Hornbill Aviation Part 61 or Part 141?",
       answer:
-        "Hornbill is a Part 61 flight school. That means we build your training schedule around your life, not a rigid syllabus calendar.",
+        "Hornbill Aviation is a Part 61 flight school. That means we build your training schedule around your life, not a rigid syllabus calendar.",
     },
     {
       id: "ppl-discovery",

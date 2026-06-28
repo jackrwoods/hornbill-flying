@@ -2,11 +2,15 @@ import { AssetImage as Image } from "@/components/AssetImage";
 import Link from "next/link";
 import { Section } from "@/components/Section";
 import { Container } from "@/components/Container";
-import { fleet, membershipRates } from "@/content/fleet";
+import { getPublishedFleet, membershipRates } from "@/content/fleet";
+import { memberRateBillingNote } from "@/content/pricing";
 import { isAircraft } from "@/types";
 
 export function AircraftCardsSection() {
   const { memberRate, nonMemberRate } = membershipRates;
+  const publishedFleet = getPublishedFleet();
+  const aircraft = publishedFleet.filter(isAircraft);
+  const hasSimulator = publishedFleet.some((m) => !isAircraft(m));
 
   return (
     <Section background="white" id="aircraft">
@@ -15,13 +19,16 @@ export function AircraftCardsSection() {
           The fleet
         </h2>
         <p className="mt-4 max-w-2xl text-ink-light">
-          Four PA28 Cherokees and a flight simulator. Same engine, same
-          handling, similarly equipped aircraft — plus a place to rehearse
-          procedures before you burn fuel.
+          {aircraft.length} PA28 {aircraft.length === 1 ? "Cherokee" : "Cherokees"}
+          {hasSimulator && " and a flight simulator"}. Same engine, same
+          handling, similarly equipped aircraft {hasSimulator && "— plus a place to rehearse procedures before you burn fuel"}.
+        </p>
+        <p className="mt-2 max-w-2xl text-sm text-ink-light">
+          {memberRateBillingNote}
         </p>
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {fleet.map((member, index) => (
+          {publishedFleet.map((member, index) => (
             <article
               key={member.slug}
               className="rounded-xl bg-cream-50 shadow-sm overflow-hidden flex flex-col"

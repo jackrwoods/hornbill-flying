@@ -24,7 +24,7 @@ export const sportPilotProgram = {
       "A faster path to the left seat for hobbyist pilots. Train with a CFI you choose, build skills in our consistent PA28 fleet, and fly from Reno–Tahoe (RNO).",
     image: "/images/programs/sport-pilot-hero.webp",
     imageAlt:
-      "Hornbill PA28 on approach to RNO during a flight lesson",
+      "Hornbill Aviation PA28 on approach to RNO during a flight lesson",
     cta: {
       primary: {
         label: "Book a discovery flight",
@@ -69,7 +69,7 @@ export const sportPilotProgram = {
       "No instrument flight rules (IFR) operations.",
       "No flying for compensation or hire.",
     ],
-    note: "Hornbill trains in a fleet of 4-seat Piper Cherokee aircraft. Under MOSAIC, these can be operated by Sport Pilots; however, the PA28 is not a light-sport aircraft. If your goal is to operate only light-sport aircraft, contact us to confirm the right training and checkride path. Many students use Sport Pilot as an entry point and continue toward a Private Pilot certificate in our PA28 fleet.",
+    note: "Hornbill Aviation trains in a fleet of 4-seat Piper Cherokee aircraft. Under MOSAIC, these can be operated by Sport Pilots; however, the PA28 is not a light-sport aircraft. If your goal is to operate only light-sport aircraft, contact us to confirm the right training and checkride path. Many students use Sport Pilot as an entry point and continue toward a Private Pilot certificate in our PA28 fleet.",
   },
   requirements: {
     title: "Requirements",
@@ -83,7 +83,7 @@ export const sportPilotProgram = {
       "Pass the FAA Sport Pilot knowledge test.",
       "Pass the Sport Pilot practical test (checkride) in a light-sport aircraft.",
     ],
-    note: "Hornbill's PA28 fleet is not a light-sport aircraft category. If you intend to take the Sport Pilot checkride with us, confirm aircraft eligibility with our team, or plan to continue toward a Private Pilot certificate in the same PA28 fleet.",
+    note: "Hornbill Aviation's PA28 fleet is not a light-sport aircraft category. If you intend to take the Sport Pilot checkride with us, confirm aircraft eligibility with our team, or plan to continue toward a Private Pilot certificate in the same PA28 fleet.",
   },
   timeline: {
     title: "Training timeline",
@@ -165,7 +165,7 @@ export const sportPilotProgram = {
     analytics: "sport_pilot_discovery_booking_started",
   },
   whyHornbill: {
-    title: "Why train at Hornbill",
+    title: "Why train at Hornbill Aviation",
     items: [
       {
         title: "Choose your CFI",
@@ -221,9 +221,9 @@ export const sportPilotProgram = {
     },
     {
       id: "spl-lsa",
-      question: "Does Hornbill have a light-sport aircraft?",
+      question: "Does Hornbill Aviation have a light-sport aircraft?",
       answer:
-        "Hornbill trains in a fleet of PA28 aircraft. The PA28 is not a light-sport aircraft. If your goal is to operate only light-sport aircraft, contact us to discuss the right training and checkride path. Many students start with Sport Pilot intent and continue toward Private Pilot in our PA28 fleet.",
+        "Hornbill Aviation trains in a fleet of PA28 aircraft. The PA28 is not a light-sport aircraft. If your goal is to operate only light-sport aircraft, contact us to discuss the right training and checkride path. Many students start with Sport Pilot intent and continue toward Private Pilot in our PA28 fleet.",
     },
     {
       id: "spl-discovery",
@@ -252,7 +252,7 @@ export const sportPilotProgram = {
       },
       {
         title: "Instructors",
-        description: "Meet the CFIs who teach Sport Pilot students at Hornbill.",
+        description: "Meet the CFIs who teach Sport Pilot students at Hornbill Aviation.",
         href: instructorsHref,
       },
       {

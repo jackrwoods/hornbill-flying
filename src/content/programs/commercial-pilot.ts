@@ -22,7 +22,7 @@ export const commercialPilotProgram = {
       "Build the proficiency, flight time, and aeronautical decision-making required for a professional pilot career. Train in a consistent PA28 fleet at Reno–Tahoe (RNO) with cross-country routes that count.",
     image: "/images/programs/commercial-pilot-hero.webp",
     imageAlt:
-      "Hornbill PA28 N6576J in flight near the Sierra Nevada during a cross-country training route from Reno-Tahoe (RNO)",
+      "Hornbill Aviation PA28 N6576J in flight near the Sierra Nevada during a cross-country training route from Reno-Tahoe (RNO)",
     cta: {
       primary: {
         label: "Book a consultation",
@@ -135,7 +135,7 @@ export const commercialPilotProgram = {
     ],
   },
   whyHornbill: {
-    title: "Why train at Hornbill",
+    title: "Why train at Hornbill Aviation",
     items: [
       {
         title: "Consistency",
@@ -208,7 +208,7 @@ export const commercialPilotProgram = {
       id: "cpl-bring-instructor",
       question: "Can I bring my own instructor?",
       answer:
-        "Yes. Hornbill is a Part 61 school. You can train with a Hornbill CFI or bring your own certificated flight instructor. The aircraft checkout and scheduling policies still apply.",
+        "Yes. Hornbill Aviation is a Part 61 school. You can train with a Hornbill Aviation CFI or bring your own certificated flight instructor. The aircraft checkout and scheduling policies still apply.",
     },
     {
       id: "cpl-medical",

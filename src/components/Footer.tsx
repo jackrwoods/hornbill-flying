@@ -72,6 +72,19 @@ export function Footer() {
                     </NavLink>
                   </li>
                 ))}
+                {group.title === "Connect" && (
+                  <li>
+                    <a
+                      href={siteConfig.flightCircleScheduleUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-cream-50/90 hover:text-gold-500"
+                      data-analytics="footer_schedule_click"
+                    >
+                      Schedule
+                    </a>
+                  </li>
+                )}
               </ul>
             </div>
           ))}

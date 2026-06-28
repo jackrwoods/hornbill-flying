@@ -5,6 +5,7 @@ import { PhoneLink } from "./PhoneLink";
 import { MobileNav } from "./MobileNav";
 import { Container } from "./Container";
 import { getHeaderNav } from "@/lib/routes";
+import { siteConfig } from "@/lib/config";
 
 export function Header() {
   const navItems = getHeaderNav();
@@ -51,6 +52,15 @@ export function Header() {
                 </NavLink>
               )
             )}
+            <a
+              href={siteConfig.flightCircleScheduleUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-white hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+              data-analytics="header_schedule_click"
+            >
+              Schedule
+            </a>
           </nav>
 
           <div className="hidden items-center gap-4 lg:flex">

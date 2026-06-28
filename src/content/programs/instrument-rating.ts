@@ -168,7 +168,7 @@ export const instrumentRatingProgram = {
     ],
   },
   whyHornbill: {
-    title: "Why train IFR at Hornbill / RNO",
+    title: "Why train IFR at Hornbill Aviation / RNO",
     items: [
       {
         title: "Uniform PA28 fleet",
@@ -193,7 +193,7 @@ export const instrumentRatingProgram = {
       {
         title: "Choose your CFII",
         description:
-          "Train with a Hornbill CFII or bring your own. Part 61 means the schedule and instructor relationship fit you.",
+          "Train with a Hornbill Aviation CFII or bring your own. Part 61 means the schedule and instructor relationship fit you.",
       },
       {
         title: "Unlimited CR-12 AATD for members",
@@ -205,7 +205,7 @@ export const instrumentRatingProgram = {
   discoveryFlightCTA: {
     title: "Start your Instrument Rating",
     description:
-      "New to Hornbill? Book a discovery flight or consultation. You will meet a CFII, see the aircraft, and map out a training plan that fits your schedule. No deposit required.",
+      "New to Hornbill Aviation? Book a discovery flight or consultation. You will meet a CFII, see the aircraft, and map out a training plan that fits your schedule. No deposit required.",
     primaryCta: "Book a discovery flight",
     primaryHref: discoveryFlightHref,
     primaryAnalytics: "instrument_rating_discovery_booking_started",

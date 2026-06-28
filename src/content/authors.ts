@@ -8,7 +8,7 @@ export type Author = {
   isPlaceholder?: boolean;
 };
 
-// TODO: replace placeholder authors with real Hornbill CFIs once hired and photographed.
+// TODO: replace placeholder authors with real Hornbill Aviation CFIs once hired and photographed.
 // Certificate numbers are intentionally omitted at launch per the owner.
 export const authors: Author[] = [
   {
@@ -27,7 +27,7 @@ export const authors: Author[] = [
     name: "Jordan Lee",
     credentials: "CFI, CFII, Commercial Pilot",
     bio:
-      "Jordan is a Hornbill instructor with a focus on discovery flights, student medical certification guidance, " +
+      "Jordan is a Hornbill Aviation instructor with a focus on discovery flights, student medical certification guidance, " +
       "and transition training into the Reno mountain environment.",
     photo: "/images/blog/authors/jordan-lee.webp",
     linkedIn: "https://www.linkedin.com/in/jordan-lee-placeholder",

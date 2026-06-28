@@ -48,7 +48,7 @@ export function InstrumentRatingTrainingStructureSection() {
           <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
             <Image
               src="/images/programs/instrument-cross-country.webp"
-              alt="Hornbill PA28 on an IFR cross-country training route from Reno–Tahoe (RNO)"
+              alt="Hornbill Aviation PA28 on an IFR cross-country training route from Reno–Tahoe (RNO)"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"

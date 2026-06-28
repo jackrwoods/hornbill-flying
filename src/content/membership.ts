@@ -12,16 +12,16 @@ export const membershipContent = {
   meta: {
     title: "PA28 Aircraft Rental Membership in Reno, NV",
     description:
-      `Join Hornbill's $${pricing.membershipMonthly}/month membership for a $${pricing.memberWetRate}/hr PA28 wet rate at RNO. Save $${membershipRates.savingsPerHour}/hr vs. the $${pricing.nonMemberWetRate}/hr non-member rate. No contract.`,
+      `Join Hornbill Aviation's $${pricing.membershipMonthly}/month membership for a $${pricing.memberWetRate}/hr PA28 wet rate at RNO. Save $${membershipRates.savingsPerHour}/hr vs. the $${pricing.nonMemberWetRate}/hr non-member rate. No contract.`,
   },
 
   hero: {
     h1: "The smart way to train at RNO",
-    headline: "Members save thousands with a Hornbill membership.",
+    headline: "Members save thousands with a Hornbill Aviation membership.",
     valueProp: `Get unlimited time in our FAA-certified CR-12 AATD, $${membershipRates.savingsPerHour}/hr off the non-member aircraft rate, priority scheduling, cross-country rental eligibility, and no contract.`,
     image: "/images/membership/membership-hero.webp",
     imageAlt:
-      "Hornbill PA28 Cherokee on the ramp at Reno-Tahoe International Airport (RNO).",
+      "Hornbill Aviation PA28 Cherokee on the ramp at Reno-Tahoe International Airport (RNO).",
     cta: {
       primary: {
         label: "Start membership",
@@ -37,14 +37,14 @@ export const membershipContent = {
   },
 
   quickAnswer: {
-    title: "What is the Hornbill membership?",
-    text: `Hornbill's membership is a $${pricing.membershipMonthly}/month subscription for pilots training or renting at Reno–Tahoe. Members pay $${pricing.memberWetRate}/hr wet for our PA28 fleet, saving $${membershipRates.savingsPerHour}/hr over the non-member rate. There is no contract, and it includes priority scheduling, unlimited ground school, unlimited access to our FAA-certified CR-12 AATD, and cross-country rental eligibility. See the Instrument Rating page for details on AATD time creditable toward a rating.`,
+    title: "What is the Hornbill Aviation membership?",
+    text: `Hornbill Aviation's membership is a $${pricing.membershipMonthly}/month subscription for pilots training or renting at Reno–Tahoe. Members pay $${pricing.memberWetRate}/hr wet for our PA28 fleet (billed as tach time × 1.3). That saves $${membershipRates.savingsPerHour}/hr over the non-member rate. There is no contract, and it includes priority scheduling, unlimited ground school, unlimited access to our FAA-certified CR-12 AATD, and cross-country rental eligibility. See the Instrument Rating page for details on AATD time creditable toward a rating.`,
   },
 
   story: {
     title: "The savings speak for themselves.",
     lede:
-      "As a Hornbill member, you can save thousands on your training toward PPL, Instrument Rating, CPL, and CFI.",
+      "As a Hornbill Aviation member, you can save thousands on your training toward PPL, Instrument Rating, CPL, and CFI.",
     blocks: [
       {
         label: "Low-cost aircraft rental",
@@ -53,7 +53,7 @@ export const membershipContent = {
       },
       {
         label: "Save with the sim",
-        body: "Hornbill's CR-12 AATD is FAA-certified and unlimited for members. Use it for 2.5 hours toward your PPL, 20 toward your instrument rating, and 50 toward your commercial.",
+        body: "Hornbill Aviation's CR-12 AATD is FAA-certified and unlimited for members. Use it for 2.5 hours toward your PPL, 20 toward your instrument rating, and 50 toward your commercial.",
         summary: `Students who utilize all 72.5 hours will save almost $16,800 vs renting an aircraft.`,
       },
       {

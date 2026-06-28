@@ -8,7 +8,7 @@ export function HeroSection() {
     <>
       <PageHeader
         title="Student resources for Reno pilots"
-        subtitle="Everything current and enrolled students need in one place: RNO weather, FAA medical guidance, syllabi, POH downloads, flight-planning tools, and quick links to Hornbill programs and pilot tools."
+        subtitle="Everything current and enrolled students need in one place: RNO weather, FAA medical guidance, syllabi, POH downloads, flight-planning tools, and quick links to Hornbill Aviation programs and pilot tools."
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Student Resources" },

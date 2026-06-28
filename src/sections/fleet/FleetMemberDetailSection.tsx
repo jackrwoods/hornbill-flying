@@ -3,6 +3,7 @@ import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
 import { ImageCarousel } from "@/components/ImageCarousel";
 import { membershipRates } from "@/content/fleet";
+import { memberRateBillingNote } from "@/content/pricing";
 import { isAircraft, type FleetMember } from "@/types";
 
 interface FleetMemberDetailSectionProps {
@@ -69,6 +70,7 @@ export function FleetMemberDetailSection({
                     </span>
                   )}
                 </div>
+                <p className="mt-2 text-sm text-ink-light">{memberRateBillingNote}</p>
 
                 <p className="text-sm text-ink-light">
                   Wet rate includes fuel and oil. Ground and flight instruction

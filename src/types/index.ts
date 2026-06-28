@@ -35,6 +35,7 @@ export interface SiteConfig {
   };
   mapEmbedUrl: string;
   googleMapsDirectionsUrl: string;
+  flightCircleScheduleUrl: string;
   contactFormEndpoint: string;
   recaptchaSiteKey?: string;
 }

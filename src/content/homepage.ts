@@ -39,13 +39,13 @@ export const homepageDifferentiators = [
     id: "value",
     title: "Value",
     description:
-      "Just $159/hr wet with membership. Memberships include unlimited time in our FAA-certified AATD.",
+      "Just $159/hr wet with membership (tach time × 1.3). Memberships include unlimited time in our FAA-certified AATD.",
   },
   {
     id: "community",
     title: "Community",
     description:
-      "Hornbill is a flight school that's run not-for-profit, like a flying club.",
+      "Hornbill Aviation is a flight school run like a flying club: community-driven and built to make flying as affordable as possible.",
   },
   {
     id: "real-world",

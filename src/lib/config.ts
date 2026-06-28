@@ -80,6 +80,8 @@ export const siteConfig: SiteConfig = {
   // External directions link opened by "Get directions" CTAs.
   googleMapsDirectionsUrl:
     "https://www.google.com/maps/dir/?api=1&destination=1008+Gentry+Way%2C+Reno%2C+NV+89512",
+  // External schedule link opened by "Schedule" navigation items.
+  flightCircleScheduleUrl: "https://www.flightcircle.com/v1/#/schedule",
   // Backend endpoint for contact-form submissions. Empty until the custom API ships.
   contactFormEndpoint: "",
   // Optional reCAPTCHA or hCaptcha site key. Leave undefined until configured.

@@ -50,7 +50,7 @@ export function CommercialCareerPathwaySection() {
           <figure className="overflow-hidden rounded-xl bg-white shadow-sm">
             <Image
               src="/images/programs/commercial-pilot-cross-country.webp"
-              alt="Hornbill PA28 flying cross-country near the Sierra Nevada with a student building flight time toward a Commercial Pilot certificate"
+              alt="Hornbill Aviation PA28 flying cross-country near the Sierra Nevada with a student building flight time toward a Commercial Pilot certificate"
               width={870}
               height={653}
               className="h-auto w-full object-cover"

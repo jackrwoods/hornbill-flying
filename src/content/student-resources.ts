@@ -155,7 +155,7 @@ export const downloadableDocuments: DownloadableDocument[] = [
     title: "Private Pilot syllabus",
     slug: "syllabus-private-pilot",
     description:
-      "Private Pilot training syllabus aligned with Part 61 requirements and the Hornbill PA28 fleet.",
+      "Private Pilot training syllabus aligned with Part 61 requirements and the Hornbill Aviation PA28 fleet.",
     format: "PDF",
     size: "Coming soon",
     lastUpdated: "2026-06-18",

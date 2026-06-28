@@ -7,7 +7,7 @@ export function QuickLinksSection() {
     <Section background="white" id="quick-links">
       <Container>
         <h2 className="font-heading text-3xl text-navy-900 md:text-4xl">
-          More from Hornbill
+          More from Hornbill Aviation
         </h2>
         <p className="mt-4 max-w-2xl text-ink-light">
           Book a first flight, explore the fleet, compare programs, or get in touch
@@ -27,7 +27,7 @@ export function QuickLinksSection() {
           />
           <ResourceCard
             title="Membership"
-            description="Fly more for less with the Hornbill monthly membership."
+            description="Fly more for less with the Hornbill Aviation monthly membership."
             links={[{ href: "/membership/", label: "Start membership" }]}
           />
           <ResourceCard

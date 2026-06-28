@@ -75,6 +75,7 @@ export function FAQAccordion({
               hidden={!isOpen}
               className={cn(
                 "px-5 pb-5 text-ink-light",
+                isOpen && "pt-4",
                 !isOpen && "hidden"
               )}
             >

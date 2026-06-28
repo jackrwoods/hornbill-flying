@@ -29,7 +29,7 @@ const PAGE_URL = "/student-resources/";
 const OG_IMAGE = "/images/student-resources/hero.webp";
 const PAGE_TITLE = "Student Resources for Pilots in Reno, NV";
 const PAGE_DESCRIPTION =
-  "Weather, METAR/TAF for RNO, FAA medical certificate guidance, training syllabi, POH downloads, flight-planning tools, and Part 61 resources for Hornbill students.";
+  "Weather, METAR/TAF for RNO, FAA medical certificate guidance, training syllabi, POH downloads, flight-planning tools, and Part 61 resources for Hornbill Aviation students.";
 
 export const metadata: Metadata = {
   title: buildTitle(PAGE_TITLE),

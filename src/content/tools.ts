@@ -111,7 +111,7 @@ export const fuelFaqs: ToolFAQItem[] = [
     id: "rent-pa28",
     question: "Can I rent a PA28 for these trips?",
     answer:
-      "Yes. Hornbill members rent the PA28 fleet at $159/hour wet. A checkout flight is required before cross-country rentals.",
+      "Yes. Hornbill Aviation members rent the PA28 fleet at $159/hour wet. A checkout flight is required before cross-country rentals.",
   },
 ];
 

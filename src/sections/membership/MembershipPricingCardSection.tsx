@@ -2,7 +2,11 @@ import { Section } from "@/components/Section";
 import { Container } from "@/components/Container";
 import { CTALink } from "@/components/CTALink";
 import { membershipContent } from "@/content/membership";
-import { membershipRates, pricing } from "@/content/pricing";
+import {
+  membershipRates,
+  pricing,
+  memberRateBillingNote,
+} from "@/content/pricing";
 
 export function MembershipPricingCardSection() {
   const { pricing: pricingCopy } = membershipContent;
@@ -18,7 +22,7 @@ export function MembershipPricingCardSection() {
         </p>
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">
-          <div className="rounded-xl bg-white p-6 shadow-sm border-t-4 border-gold-500">
+          <div className="rounded-xl bg-white p-6 shadow-sm">
             <p className="font-mono text-xs uppercase tracking-wide text-ink-light">
               {pricingCopy.monthlyLabel}
             </p>
@@ -28,7 +32,7 @@ export function MembershipPricingCardSection() {
             </p>
           </div>
 
-          <div className="rounded-xl bg-white p-6 shadow-sm">
+          <div className="rounded-xl bg-white p-6 shadow-sm border-t-4 border-gold-500">
             <p className="font-mono text-xs uppercase tracking-wide text-ink-light">
               {pricingCopy.memberRateLabel}
             </p>
@@ -37,6 +41,7 @@ export function MembershipPricingCardSection() {
               <span className="text-lg font-body text-ink-light">/hr</span>
             </p>
             <p className="mt-1 text-sm text-success">{pricingCopy.savingsText}</p>
+            <p className="mt-3 text-sm text-ink-light">{memberRateBillingNote}</p>
           </div>
 
           <div className="rounded-xl bg-white p-6 shadow-sm">

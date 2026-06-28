@@ -13,7 +13,7 @@ import {
 export const metadata: Metadata = {
   title: buildTitle("Flight Training Cost Estimator"),
   description:
-    "Estimate total cost and timeline for Sport, Private, Instrument, Commercial, CFI, or CFII training at Hornbill.",
+    "Estimate total cost and timeline for Sport, Private, Instrument, Commercial, CFI, or CFII training at Hornbill Aviation.",
   alternates: {
     canonical: buildCanonical("/tools/cost-estimator/"),
   },
@@ -21,12 +21,12 @@ export const metadata: Metadata = {
     url: buildCanonical("/tools/cost-estimator/"),
     title: buildTitle("Flight Training Cost Estimator"),
     description:
-      "Estimate total cost and timeline for Sport, Private, Instrument, Commercial, CFI, or CFII training at Hornbill.",
+      "Estimate total cost and timeline for Sport, Private, Instrument, Commercial, CFI, or CFII training at Hornbill Aviation.",
   }),
   twitter: buildTwitter({
     title: buildTitle("Flight Training Cost Estimator"),
     description:
-      "Estimate total cost and timeline for Sport, Private, Instrument, Commercial, CFI, or CFII training at Hornbill.",
+      "Estimate total cost and timeline for Sport, Private, Instrument, Commercial, CFI, or CFII training at Hornbill Aviation.",
   }),
 };
 
