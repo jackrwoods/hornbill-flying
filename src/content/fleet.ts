@@ -251,7 +251,7 @@ const fleetMembers: FleetMember[] = [
         slug: "faa-loggable-time",
         description:
           "FAA guidance on what simulator time can be logged and how to log it.",
-        filePath: "/documents/aircraft/FAA-Loggable-Time.pdf",
+        filePath: "/documents/aircraft/FAA-loggable-timeApproval.pdf",
         format: "PDF",
         size: "356 KB",
         lastUpdated: "2026-06-27",
