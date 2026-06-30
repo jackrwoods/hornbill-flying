@@ -1,22 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --color-navy-900: #0B1C2C;
-  --color-navy-800: #142A3D;
-  --color-cream-50: #F7F4EC;
-  --color-gold-500: #C89F4F;
-  --color-gold-400: #DDB970;
-  --color-orange-500: #E87A2A;
-  --color-orange-400: #F2954F;
-  --color-ink: #1A1A1A;
-  --color-ink-light: #5A6573;
-  --color-sky-100: #E3EFF7;
-  --color-success: #2D7A46;
-  --color-error: #B52B2B;
+  --color-navy-900: #0D3B66;
+  --color-navy-800: #0A2C4D;
+  --color-sand-50: #F5F3EF;
+  --color-gold-500: #F1B21D;
+  --color-gold-400: #F5C961;
+  --color-orange: #F26A21;
+  --color-rust: #D64A1A;
+  --color-ink: #2E2717;
+  --color-ink-light: #827D74;
+  --color-teal: #006A6D;
+  --color-teal-100: #E6F0F0;
+  --color-success: #006A6D;
+  --color-error: #D64A1A;
 
-  --font-heading: "Instrument Serif", Georgia, serif;
-  --font-body: "Inter", system-ui, sans-serif;
+  --font-heading: "Nunito Sans", "Inter", system-ui, sans-serif;
+  --font-body: "Poppins", system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", "Courier New", monospace;
 
   --spacing-18: 4.5rem;
@@ -29,8 +30,9 @@
 
   body {
     font-family: var(--font-body);
+    font-weight: 500;
     color: var(--color-ink);
-    background-color: var(--color-cream-50);
+    background-color: var(--color-sand-50);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -39,7 +41,7 @@
   h2,
   h3 {
     font-family: var(--font-heading);
-    font-weight: 400;
+    font-weight: 800;
   }
 
   h4,
