@@ -45,7 +45,7 @@ export default function ComingSoonPage() {
         >
           {/* Text panel — slanted right edge on desktop only (rectangle on mobile) */}
           <div
-            className="relative z-10 flex flex-col justify-center bg-bg px-6 py-12 lg:w-[48%] lg:px-12 xl:px-16 lg:py-0 lg:[clip-path:polygon(0_0,100%_0,85%_100%,0_100%)]"
+            className="relative z-10 flex flex-col justify-center bg-bg px-6 py-12 lg:w-[62.5%] lg:px-12 xl:px-16 lg:py-0 lg:[clip-path:polygon(0_0,100%_0,80%_100%,0_100%)]"
           >
             <div className="mb-8 origin-left scale-125 md:scale-150 lg:scale-[1.75]">
               <Logo
@@ -89,10 +89,9 @@ export default function ComingSoonPage() {
           </div>
 
           {/* Diagonal cheat-line seam — desktop only.
-              Three 12px-thick slanted bands rendered as locked polygons. The
-              seam is now more dramatic: x=48% at the top to x=34% at the
-              bottom. Stripe order is reversed so the colors read
-              gold/coral/ink from left to right. */}
+              The left edge of the ink band follows the text panel's slanted
+              edge: x=62.5% at the top to x=50% at the bottom. Colors read
+              ink/coral/gold from left to right. */}
           <svg
             aria-hidden="true"
             className="pointer-events-none absolute inset-0 z-20 hidden lg:block"
@@ -100,15 +99,15 @@ export default function ComingSoonPage() {
             viewBox="0 0 100 100"
           >
             <polygon
-              points="50.42,0 51.74,0 37.74,100 36.42,100"
+              points="65.14,0 66.46,0 53.96,100 52.64,100"
               fill="var(--palette-gold-400)"
             />
             <polygon
-              points="49.10,0 50.42,0 36.42,100 35.10,100"
+              points="63.82,0 65.14,0 52.64,100 51.32,100"
               fill="var(--palette-coral)"
             />
             <polygon
-              points="47.78,0 49.10,0 35.10,100 33.78,100"
+              points="62.50,0 63.82,0 51.32,100 50.00,100"
               fill="#1C3B61"
             />
           </svg>
