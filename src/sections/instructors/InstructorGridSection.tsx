@@ -5,12 +5,12 @@ import { instructors } from "@/content/instructors";
 
 export function InstructorGridSection() {
   return (
-    <Section background="sand" id="team">
+    <Section background="default" id="team">
       <Container>
-        <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
+        <h2 className="font-heading text-3xl md:text-4xl text-heading">
           Meet the team
         </h2>
-        <p className="mt-4 max-w-2xl text-ink-light">
+        <p className="mt-4 max-w-2xl text-muted">
           Compare CFIs and choose the one whose specialties and availability
           match your goals.
         </p>

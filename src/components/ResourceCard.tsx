@@ -25,19 +25,19 @@ export function ResourceCard({
   return (
     <div
       className={cn(
-        "flex flex-col rounded-xl border-t-4 border-gold-500 bg-white p-6 shadow-sm",
+        "flex flex-col rounded-xl border-t-4 border-accent bg-white p-6 shadow-sm",
         className
       )}
     >
-      <h3 className="font-heading text-xl text-navy-900">{title}</h3>
-      <p className="mt-2 flex-1 text-sm text-ink-light">{description}</p>
+      <h3 className="font-heading text-xl text-heading">{title}</h3>
+      <p className="mt-2 flex-1 text-sm text-muted">{description}</p>
 
       {tags && tags.length > 0 && (
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
             <span
               key={tag}
-              className="inline-flex rounded-full bg-teal-100 px-2.5 py-1 text-xs font-semibold text-navy-900"
+              className="inline-flex rounded-full bg-callout px-2.5 py-1 text-xs font-semibold text-heading"
             >
               {tag}
             </span>
@@ -53,7 +53,7 @@ export function ResourceCard({
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-sm font-semibold text-navy-900 underline hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-heading underline hover:text-accent focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
             >
               {link.label}
               <svg
@@ -78,7 +78,7 @@ export function ResourceCard({
             <Link
               key={link.href}
               href={link.href}
-              className="inline-flex items-center text-sm font-semibold text-navy-900 underline hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+              className="inline-flex items-center text-sm font-semibold text-heading underline hover:text-accent focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
             >
               {link.label}
             </Link>

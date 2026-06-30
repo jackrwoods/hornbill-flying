@@ -67,10 +67,10 @@ export default function CancellationPolicyPage() {
           { label: PAGE_TITLE },
         ]}
       />
-      <Section background="sand">
+      <Section background="default">
         <Container>
           <Prose>
-            <p className="text-ink-light">
+            <p className="text-muted">
               Effective date: {cancellationPolicy.effectiveDate}
             </p>
 
@@ -167,10 +167,10 @@ export default function CancellationPolicyPage() {
         </Container>
       </Section>
 
-      <Section background="white">
+      <Section background="card">
         <Container>
           <div className="mx-auto max-w-2xl">
-            <h2 className="mb-6 font-heading text-3xl text-navy-900">
+            <h2 className="mb-6 font-heading text-3xl text-heading">
               Common questions
             </h2>
             <FAQAccordion faqs={cancellationPolicy.faq} />
@@ -178,7 +178,7 @@ export default function CancellationPolicyPage() {
         </Container>
       </Section>
 
-      <Section background="teal">
+      <Section background="callout">
         <Container>
           <div className="flex flex-col items-center justify-center gap-4 text-center sm:flex-row">
             <CTALink

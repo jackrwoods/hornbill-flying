@@ -30,75 +30,117 @@ The school turns the dream of flying into a practical, supported journey — whe
 
 ### Primary mark
 
-The circular hornbill crest (`logo.jpeg`) is the anchor asset. It combines:
+The primary mark is `logo.svg` — a wide-format vector logo. It combines:
 
-- A hornbill in flight, holding a propeller
-- A sunburst behind mountains
+- A hornbill bird in flight
+- A sun and mountain motif
 - Rope and nautical/aviation insignia styling
-- A dark navy surround with gold and cream lettering
+- A palette of deep blue, gold, coral, teal, warm cream, and dark ink tones
 - The words "Hornbill Flying Club" and "Est. 2026"
 
 ### Name vs. logo wording
 
-The website and public brand name is **Hornbill Aviation**. The logo currently reads "Hornbill Flying Club". Until the wordmark is updated, use the crest as-is for hero/brand moments and pair it with the text name "Hornbill Aviation" so search and signage stay coherent. Treat the crest as the visual symbol; do not crop or edit it to remove the word "Club".
+The website and public brand name is **Hornbill Aviation**. The logo currently reads "Hornbill Flying Club". Until the wordmark is updated, use the mark as-is for hero/brand moments and pair it with the text name "Hornbill Aviation" so search and signage stay coherent. Treat the SVG as the visual symbol; do not crop or edit it to remove the word "Club". Do not stretch, recolor, or rotate it.
 
 ### Logo usage rules
 
-- **Clear space:** keep the height of the letter "H" in "Hornbill" as minimum clear space on all sides.
-- **Backgrounds:** place on light cream, white, navy, or photo backgrounds with sufficient contrast. Avoid placing over busy sky/busy terrain without a subtle overlay.
+- **Clear space:** keep the height of the hornbill mark as minimum clear space on all sides.
+- **Backgrounds:** place on cream, white, blue, or photo backgrounds with sufficient contrast. Avoid placing over busy sky/busy terrain without a subtle overlay.
 - **Minimum size:** 80 px wide on screen; 1 inch wide in print.
+- **Aspect ratio:** preserve the logo's natural width-to-height ratio (do not force it into a square or circle).
 - **Don't:** stretch, recolor, add drop shadows, rotate, or place inside another shape.
 
 ---
 
 ## 3. Color system
 
-Derived directly from the hornbill bird and the existing crest. The palette balances the natural drama of the hornbill (deep blue-black, warm gold, bright orange) with the clarity required for an aviation training website.
+The palette is built from warm, sunny earth tones and confident aviation blues. It keeps the site friendly and approachable while giving navigation, calls to action, and safety information enough contrast to feel professional.
 
 ### Primary colors
 
 | Token | Hex | Usage |
 |-------|-----|-------|
-| `navy-900` | `#0B1C2C` | Primary headings, primary buttons, nav bar background, footer background |
-| `navy-800` | `#142A3D` | Secondary surfaces, card borders, hover states |
-| `cream-50` | `#F7F4EC` | Page background, logo-safe background, light sections |
-| `white` | `#FFFFFF` | Content cards, form fields, contrast text on dark |
+| `blue-900` | `#004E7C` | Primary headings, primary buttons, dark band surfaces (PageHeader, dark sections) |
+| `cream-50` | `#FFF8EC` | Page background, light sections, logo-safe background, header background, footer background |
+| `cream-25` | `#FFFDF6` | Content cards, form fields, subtle surfaces |
+| `white` | `#FFFFFF` | Cards, form fields, contrast text on dark |
 
 ### Accent colors
 
 | Token | Hex | Usage |
 |-------|-----|-------|
-| `gold-500` | `#C89F4F` | Primary CTA highlights, icon fills, badge backgrounds, key links |
-| `gold-400` | `#DDB970` | Hover states, subtle highlights, dividers |
-| `orange-500` | `#E87A2A` | Alert/attention moments, hornbill beak accent, active nav state |
-| `orange-400` | `#F2954F` | Hover on orange elements, progress indicators |
+| `gold-500` | `#F8AF12` | Primary CTA highlights, icon fills, badge backgrounds, key links |
+| `gold-400` | `#F9A90C` | Hover states, subtle highlights, dividers, warm accents |
+| `coral` | `#F45115` | Alert/attention moments, hornbill beak accent, active nav state, form errors |
+| `teal-500` | `#007C80` | Success states, availability indicators, soft functional accents |
 
 ### Functional colors
 
 | Token | Hex | Usage |
 |-------|-----|-------|
-| `ink` | `#1A1A1A` | Body text on light backgrounds |
-| `ink-light` | `#5A6573` | Secondary/body-supporting text, captions, metadata |
-| `sky-100` | `#E3EFF7` | Callout boxes, info banners, soft aviation reference |
-| `success` | `#2D7A46` | Form success, availability indicators |
-| `error` | `#B52B2B` | Form errors, warnings |
+| `ink` | `#2E2717` | Body text on light backgrounds |
+| `ink-light` | `#827D74` | Secondary/body-supporting text, captions, metadata |
+| `teal-100` | `#E6F0F0` | Callout boxes, info banners, soft aviation reference |
+| `success` | `#007C80` | Form success, availability indicators |
+| `error` | `#F45115` | Form errors, warnings |
 
 ### Color combinations
 
 | Context | Background | Text / Accent | Notes |
 |---------|------------|---------------|-------|
-| Hero / dark section | `navy-900` | `cream-50` text, `gold-500` accents | High authority, trust |
-| Body content | `cream-50` | `ink` text, `navy-900` headings, `gold-500` CTAs | Readable, warm |
-| White cards | `white` | `ink` text, `navy-900` headings, `gold-500` links | Clean, modern |
-| Highlight strip | `gold-500` | `navy-900` text | Use sparingly for CTAs |
-| Attention / CTA alt | `orange-500` | `white` text | For time-sensitive or action prompts |
+| Hero / dark section | `blue-900` | `cream-50` text, `gold-500` accents | High authority, trust |
+| Body content | `cream-50` | `ink` text, `blue-900` headings, `gold-500` CTAs | Readable, warm |
+| Cream cards | `cream-25` | `ink` text, `blue-900` headings, `gold-500` links | Clean, modern |
+| Highlight strip | `gold-500` | `blue-900` text | Use sparingly for CTAs |
+| Attention / CTA alt | `coral` | `white` text | For time-sensitive or action prompts |
+| Success / available | `teal-500` | `white` text | Availability, confirmation |
 
 ### Accessibility notes
 
-- `gold-500` on `navy-900`: passes WCAG AA for large text and UI components.
-- `gold-500` on `cream-50` or `white`: does **not** pass AA for normal text. Use `navy-900` for text, `gold-500` only for icons, borders, and large buttons with navy text.
-- `orange-500` on `white`: passes AA for large text; use for buttons, not long paragraphs.
-- Body text should stay `ink` on `cream-50` or `white`.
+- `gold-500` on `blue-900`: passes WCAG AA for large text and UI components.
+- `gold-500` on `cream-50` or `white`: does **not** pass AA for normal text. Use `blue-900` or `ink` for text, and `gold-500` only for icons, borders, and large buttons with dark text.
+- `coral` on `white`: passes AA for large text; use for buttons and short labels, not long paragraphs.
+- Body text should stay `ink` on `cream-50`, `cream-25`, or `white`.
+
+---
+
+## 3a. Token system
+
+The codebase uses a two-layer token system so colors can change without renaming usages.
+
+### Palette layer (`--palette-*`)
+Raw color values, used by SVG/illustrations and as the substrate for intent tokens. Rarely used directly in components.
+
+### Intent layer (`--color-*`)
+Usage-named tokens, used by components. Examples: `--color-bg`, `--color-card`, `--color-dark`, `--color-body`, `--color-heading`, `--color-accent`, `--color-active`, `--color-header-bg`, `--color-header-button-1-bg`. When the palette changes, only the palette layer and the intent-to-palette mapping need to update; component classes don't change.
+
+### New alpha-aware intent tokens
+
+| Token | Maps to | Usage |
+|---|---|---|
+| `border` | `blue-900` | Strong input/button borders |
+| `border-subtle` | `blue-800` /10 | Card and list borders |
+| `border-soft` | `blue-800` /20 | Slightly stronger subtle borders |
+| `dark-subtle` | `blue-900` /5 | Hover washes on light surfaces |
+| `dark-soft` | `blue-800` /10 | Skeleton/placeholder surfaces |
+| `accent-subtle` | `gold-500` /10 | Selected-option backgrounds |
+| `error-subtle` | `coral` /10 | Error callout backgrounds |
+| `success-subtle` | `teal-500` /10 | Success callout backgrounds |
+| `callout-subtle` | `teal-100` /70 | Soft callout hover/alt surfaces |
+| `on-dark-accent` | `gold-500` | Accent text/icons on dark surfaces |
+| `on-dark-accent-hover` | `gold-400` | Hover accent text on dark surfaces |
+| `on-dark-subtle` | `cream-50` /10 | Hover/focus overlays on dark surfaces |
+| `on-dark-soft` | `cream-50` /50 | Muted text on dark surfaces |
+
+### CSS scrim utilities
+
+Two component utilities in `globals.css` replace repeated hero/page-header gradients:
+
+- `.bg-hero-scrim` — `90% → 60% → 40%` dark overlay for homepage and program heroes.
+- `.bg-pageheader-scrim` — `90% → 70% → 50%` dark overlay for `PageHeader` image bands.
+
+### Legacy aliases (deprecated)
+The codebase retains color-name tokens (`navy-900`, `sand-50`, `orange`, `rust`, etc.) as aliases of the palette layer for backwards compatibility. New work uses intent tokens. A follow-up ticket migrates remaining usages.
 
 ---
 
@@ -110,33 +152,34 @@ Principles: easy to read first, inspirational second, aviation-appropriate third
 
 | Role | Font | Fallback | Rationale |
 |------|------|----------|-----------|
-| Headings | **Instrument Serif** | Georgia, serif | Elegant, editorial, slightly technical without being cold. Named after aircraft instruments — subtle aviation tie. |
-| Body | **Inter** | system-ui, sans-serif | Highly legible, modern, friendly. Workhorse for schedules, pricing, forms, long content. |
+| Headings | **Nunito Sans Extra Bold (800)** | system-ui, sans-serif | Strong, friendly, modern display presence; pairs with the warmer Poppins body. |
+| Body | **Poppins Medium (500)** | system-ui, sans-serif | Warm, modern, and highly legible across schedules, pricing, forms, and long content. |
 | Accent / labels / numbers | **IBM Plex Mono** | Courier New, monospace | Aviation-tactical feel for flight hours, aircraft IDs, route names, stats, and small labels. Use sparingly. |
 
 ### Web loading
 
-- Instrument Serif and Inter load from Google Fonts.
-- IBM Plex Mono loads only if UI uses data labels, aircraft identifiers, or pricing tables.
-- Consider a single request: `https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap`
+- Nunito Sans (variable weight) and Poppins load from Google Fonts.
+- IBM Plex Mono loads only if the UI uses data labels, aircraft identifiers, or pricing tables.
+- Single request: `https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap`
 
 ### Type scale
 
 | Style | Font | Size | Line height | Weight | Usage |
 |-------|------|------|-------------|--------|-------|
-| H1 | Instrument Serif | 48–64 px / 3–4 rem | 1.1 | 400 | Hero page titles |
-| H2 | Instrument Serif | 36–48 px / 2.25–3 rem | 1.15 | 400 | Section titles |
-| H3 | Instrument Serif | 24–32 px / 1.5–2 rem | 1.2 | 400 | Sub-sections, card titles |
-| H4 | Inter | 18–20 px / 1.125–1.25 rem | 1.3 | 600 | Labels, smaller headers |
-| Body | Inter | 16–18 px / 1–1.125 rem | 1.6 | 400 | Paragraphs, descriptions |
-| Body small | Inter | 14 px / 0.875 rem | 1.5 | 400 | Captions, metadata, disclaimers |
+| H1 | Nunito Sans | 48–64 px / 3–4 rem | 1.1 | 800 | Hero page titles |
+| H2 | Nunito Sans | 36–48 px / 2.25–3 rem | 1.15 | 800 | Section titles |
+| H3 | Nunito Sans | 24–32 px / 1.5–2 rem | 1.2 | 800 | Sub-sections, card titles |
+| H4 | Poppins | 18–20 px / 1.125–1.25 rem | 1.3 | 600 | Labels, smaller headers |
+| Body | Poppins | 16–18 px / 1–1.125 rem | 1.6 | 500 | Paragraphs, descriptions |
+| Body small | Poppins | 14 px / 0.875 rem | 1.5 | 500 | Captions, metadata, disclaimers |
 | Label / data | IBM Plex Mono | 13–14 px / 0.8125–0.875 rem | 1.4 | 500 | Aircraft type, hours, rates, route codes |
-| Button | Inter | 14–16 px / 0.875–1 rem | 1 | 600 | All buttons |
+| Button | Poppins | 14–16 px / 0.875–1 rem | 1 | 600 | All buttons |
 
 ### Typography rules
 
-- Headings can use sentence case or title case, but be consistent. Prefer sentence case for a friendlier tone: *"Start your flight training"*.
-- Avoid all-caps except for IBM Plex Mono data labels and small UI badges.
+- Headings use sentence case for a friendlier, more direct tone: *"Start your flight training"*.
+- **Exception — brand wordmark:** the "HORNBILL AVIATION" wordmark in the header and footer uses Nunito Sans 900 (extra bold), uppercase, with -0.02em letter-spacing. This is the only all-caps display use of the heading font outside of IBM Plex Mono data labels.
+- Avoid all-caps except for IBM Plex Mono data labels, small UI badges, and the brand wordmark.
 - Keep line length to ~65 characters for body text.
 - Use `font-variant-numeric: tabular-nums` for pricing and aircraft data.
 
@@ -155,7 +198,7 @@ Principles: easy to read first, inspirational second, aviation-appropriate third
 
 - Line-art aircraft silhouettes and sectional-chart motifs can be used as subtle texture.
 - The hornbill crest should remain the only bird illustration.
-- Avoid cartoonish clip-art aviation icons. Use clean, thin-stroke icons in `navy-900` or `gold-500`.
+- Avoid cartoonish clip-art aviation icons. Use clean, thin-stroke icons in `blue-900` or `gold-500`.
 
 ---
 
@@ -211,33 +254,33 @@ Avoid these common weak-writing patterns:
 
 | Type | Background | Text | Usage |
 |------|------------|------|-------|
-| Primary | `navy-900` | `white` | Main conversion action |
-| Secondary | `gold-500` | `navy-900` | Supporting action, standout but less dominant |
-| Tertiary | transparent, `navy-900` border | `navy-900` | Low-priority, ghost action |
-| Accent | `orange-500` | `white` | Time-sensitive / limited availability |
+| Primary | `blue-900` | `white` | Main conversion action |
+| Secondary | `gold-500` | `blue-900` | Supporting action, standout but less dominant |
+| Tertiary | transparent, `blue-900` border | `blue-900` | Low-priority, ghost action |
+| Accent | `coral` | `white` | Time-sensitive / limited availability |
 
 ### Links
 
-- Default: `navy-900`, underline on hover.
-- Inline links on dark backgrounds: `gold-400`.
-- Active/selected: `orange-500`.
+- Default: `blue-900`, underline on hover.
+- Inline links on dark backgrounds: `gold-500`.
+- Active/selected: `coral`.
 
 ### Cards
 
-- White or cream background, subtle shadow, rounded 8–12 px corners.
+- `cream-25` or white background, subtle shadow, rounded 8–12 px corners.
 - Accent top border in `gold-500` for featured/pricing cards.
 
 ### Forms
 
-- Inputs: `white` background, `navy-900` border, `ink` text.
+- Inputs: `cream-25` background, `blue-900` border, `ink` text.
 - Focus ring: `gold-500`.
-- Error state: `error` red, `error` text.
-- Labels: `Inter 600`, `ink`.
+- Error state: `error` coral, `error` text.
+- Labels: `Poppins 600`, `ink`.
 
 ### Badges / tags
 
-- `gold-500` background with `navy-900` text for status tags: "Available now," "Part 61."
-- `sky-100` background with `navy-900` text for informational tags: "Cross-country ready."
+- `gold-500` background with `blue-900` text for status tags: "Available now," "Part 61."
+- `teal-100` background with `blue-900` text for informational tags: "Cross-country ready."
 
 ---
 
@@ -246,13 +289,14 @@ Avoid these common weak-writing patterns:
 | Decision | Rationale | Notes |
 |----------|-----------|-------|
 | Website name is **Hornbill Aviation** | User confirmed; more inclusive of training-center positioning than the logo's "Flying Club." | Logo will be updated separately; keep using crest for now. |
-| Color palette pulled from hornbill + crest | Deep navy from the bird's plumage and crest surround; gold from the crest rope and accents; orange from the hornbill's beak. | Keeps natural/aviation tension: bird warmth + professional navy. |
-| Heading font: **Instrument Serif** | Chosen for legibility first, subtle aviation reference second (aircraft instruments), elegance third. | Pair with Inter body for contrast and readability. |
-| Body font: **Inter** | Highly readable, modern, friendly, works at all sizes. | Use for everything except headings and data labels. |
+| Color palette: warm cream, ink, gold, coral, teal, deep blue | Built from the existing crest and site direction: `#FFF8EC` and `#FFFDF6` as warm light backgrounds, `#2E2717` for readable body text, `#F8AF12` / `#F9A90C` for sunny accents, `#F45115` for attention, `#007C80` for success states, `#004E7C` for authoritative navy surfaces. | Keeps natural/aviation tension: bird warmth + professional blue. |
+| Heading font: **Nunito Sans Extra Bold** | Chosen for a bold, friendly, modern display presence. | Pair with Poppins body for contrast and warmth. |
+| Body font: **Poppins Medium** | Warm, modern, friendly, works at all sizes. | Use for everything except headings and data labels. |
 | Data/accent font: **IBM Plex Mono** | Adds controlled aviation/tactical flavor for numbers, rates, aircraft IDs. | Do not overuse; keep it functional. |
 | Primary differentiators: flexibility, uniform PA28 fleet, instructor choice, lowest RNO rates, cross-country rentals | Captured from interview. These shape what the homepage and copy must communicate. | Cross-country rentals = real-world experience; make this concrete in messaging. |
 | Part 61, Reno–Tahoe (RNO) | Regulatory and geographic context. Part 61 supports the flexibility narrative. | Mentioned in copy where it helps the student understand the learning model. |
 | Voice avoids LLM/marketing clichés | User explicitly requested. Documented with forbidden phrases and replacement principles. | Will be tested against actual homepage copy later. |
+| Retro header / footer treatment (1970s pre-deregulation aviation) | Header and footer go from dark navy to cream-50. Header wordmark uses all-caps Nunito Sans 900. Top-level nav items are color-blocked in 5 shades drawn from the logo palette (gold-500, gold-400, coral, ink, blue-900). Hover state is an inset cream/white border (box-shadow: inset 0 0 0 2px) — stays within header bounds, no layout shift. A coral cheatline (h-1 stripe) runs along the bottom edge of the header. | Evokes Braniff / Southwest / National "Fly Me" era; warm, tactile, non-corporate. Wordmark exception documented in §4 Typography rules. |
 
 ---
 
@@ -269,16 +313,18 @@ Avoid these common weak-writing patterns:
 ## 10. Quick reference
 
 ```
-Primary navy:    #0B1C2C
-Secondary navy:  #142A3D
-Cream:           #F7F4EC
-Gold:            #C89F4F
-Orange:          #E87A2A
-Body text:       #1A1A1A
-Muted text:      #5A6573
-Sky highlight:   #E3EFF7
+Page background: #FFF8EC
+Card/surface:    #FFFDF6
+Body text:       #2E2717
+Gold 500:        #F8AF12
+Gold 400:        #F9A90C
+Coral:           #F45115
+Teal:            #007C80
+Blue 900:        #004E7C
+Muted text:      #827D74
+Teal highlight:  #E6F0F0
 
-Headings:        Instrument Serif
-Body:            Inter
+Headings:        Nunito Sans Extra Bold
+Body:            Poppins Medium
 Data/labels:     IBM Plex Mono
 ```

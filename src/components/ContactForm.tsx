@@ -191,13 +191,13 @@ export function ContactForm({ className }: ContactFormProps) {
 
   if (status === "success") {
     return (
-      <div className={cn("rounded-lg bg-teal-100 p-6 text-navy-900", className)} role="status">
+      <div className={cn("rounded-lg bg-callout p-6 text-heading", className)} role="status">
         <p className="font-semibold">Thanks. We received your message and will reply soon.</p>
-        <p className="mt-2 text-ink-light">
+        <p className="mt-2 text-muted">
           If your question is urgent, call{" "}
           <a
             href={`tel:${siteConfig.nap.telephone}`}
-            className="font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+            className="font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
             data-analytics="phone_click"
           >
             {siteConfig.nap.telephoneFormatted}
@@ -205,7 +205,7 @@ export function ContactForm({ className }: ContactFormProps) {
           or email{" "}
           <a
             href={`mailto:${siteConfig.nap.email}`}
-            className="font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+            className="font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
             data-analytics="email_click"
           >
             {siteConfig.nap.email}
@@ -232,7 +232,7 @@ export function ContactForm({ className }: ContactFormProps) {
             Please call{" "}
             <a
               href={`tel:${siteConfig.nap.telephone.replace(/\D/g, "")}`}
-              className="font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+              className="font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
               data-analytics="phone_click"
             >
               {siteConfig.nap.telephoneFormatted}
@@ -240,7 +240,7 @@ export function ContactForm({ className }: ContactFormProps) {
             or email{" "}
             <a
               href={`mailto:${siteConfig.nap.email}`}
-              className="font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+              className="font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
               data-analytics="email_click"
             >
               {siteConfig.nap.email}
@@ -250,7 +250,7 @@ export function ContactForm({ className }: ContactFormProps) {
       )}
 
       <div className="flex flex-col gap-2">
-        <label htmlFor="contact-name" className="text-sm font-semibold text-ink">
+        <label htmlFor="contact-name" className="text-sm font-semibold text-body">
           Full name
         </label>
         <input
@@ -265,8 +265,8 @@ export function ContactForm({ className }: ContactFormProps) {
           aria-invalid={!!errors.name}
           aria-describedby={errors.name ? "contact-name-error" : undefined}
           className={cn(
-            "rounded-lg border bg-white px-4 py-3 text-ink focus:outline-none focus:ring-2 focus:ring-gold-500",
-            errors.name ? "border-error" : "border-navy-900"
+            "rounded-lg border bg-white px-4 py-3 text-body focus:outline-none focus:ring-2 focus:ring-focus-ring",
+            errors.name ? "border-error" : "border-border"
           )}
         />
         {errors.name && (
@@ -276,7 +276,7 @@ export function ContactForm({ className }: ContactFormProps) {
 
       <div className="grid gap-5 sm:grid-cols-2">
         <div className="flex flex-col gap-2">
-          <label htmlFor="contact-email" className="text-sm font-semibold text-ink">
+          <label htmlFor="contact-email" className="text-sm font-semibold text-body">
             Email address
           </label>
           <input
@@ -293,8 +293,8 @@ export function ContactForm({ className }: ContactFormProps) {
             aria-invalid={!!errors.email}
             aria-describedby={errors.email ? "contact-email-error" : undefined}
             className={cn(
-              "rounded-lg border bg-white px-4 py-3 text-ink focus:outline-none focus:ring-2 focus:ring-gold-500",
-              errors.email ? "border-error" : "border-navy-900"
+              "rounded-lg border bg-white px-4 py-3 text-body focus:outline-none focus:ring-2 focus:ring-focus-ring",
+              errors.email ? "border-error" : "border-border"
             )}
           />
           {errors.email && (
@@ -303,9 +303,9 @@ export function ContactForm({ className }: ContactFormProps) {
         </div>
 
         <div className="flex flex-col gap-2">
-          <label htmlFor="contact-phone" className="text-sm font-semibold text-ink">
+          <label htmlFor="contact-phone" className="text-sm font-semibold text-body">
             Phone number{" "}
-            <span className="font-normal text-ink-light">(optional)</span>
+            <span className="font-normal text-muted">(optional)</span>
           </label>
           <input
             ref={phoneRef}
@@ -320,8 +320,8 @@ export function ContactForm({ className }: ContactFormProps) {
             aria-invalid={!!errors.phone}
             aria-describedby={errors.phone ? "contact-phone-error" : undefined}
             className={cn(
-              "rounded-lg border bg-white px-4 py-3 text-ink focus:outline-none focus:ring-2 focus:ring-gold-500",
-              errors.phone ? "border-error" : "border-navy-900"
+              "rounded-lg border bg-white px-4 py-3 text-body focus:outline-none focus:ring-2 focus:ring-focus-ring",
+              errors.phone ? "border-error" : "border-border"
             )}
           />
           {errors.phone && (
@@ -331,7 +331,7 @@ export function ContactForm({ className }: ContactFormProps) {
       </div>
 
       <div className="flex flex-col gap-2">
-        <label htmlFor="contact-message" className="text-sm font-semibold text-ink">
+        <label htmlFor="contact-message" className="text-sm font-semibold text-body">
           Message
         </label>
         <textarea
@@ -348,11 +348,11 @@ export function ContactForm({ className }: ContactFormProps) {
           aria-invalid={!!errors.message}
           aria-describedby={errors.message ? "contact-message-error" : undefined}
           className={cn(
-            "rounded-lg border bg-white px-4 py-3 text-ink focus:outline-none focus:ring-2 focus:ring-gold-500",
-            errors.message ? "border-error" : "border-navy-900"
+            "rounded-lg border bg-white px-4 py-3 text-body focus:outline-none focus:ring-2 focus:ring-focus-ring",
+            errors.message ? "border-error" : "border-border"
           )}
         />
-        <p className="text-xs text-ink-light">{formData.message.length} / 2000 characters</p>
+        <p className="text-xs text-muted">{formData.message.length} / 2000 characters</p>
         {errors.message && (
           <p id="contact-message-error" className="text-sm text-error">{errors.message}</p>
         )}

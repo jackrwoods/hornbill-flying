@@ -3,7 +3,7 @@ import { PricingSnapshot } from "@/components/PricingSnapshot";
 
 export function PricingSnapshotSection() {
   return (
-    <Section background="teal">
+    <Section background="callout">
       <PricingSnapshot />
     </Section>
   );

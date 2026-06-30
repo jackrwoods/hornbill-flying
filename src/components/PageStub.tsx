@@ -43,17 +43,17 @@ export function PageStub({
   return (
     <>
       <SchemaInjector schema={buildSchemaGraph(...schemas)} id={`${title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}-stub-schema`} />
-      <section className="relative overflow-hidden bg-navy-900 text-white">
+      <section className="relative overflow-hidden bg-dark text-on-dark">
         <Container className="relative z-10">
           <div className="py-20 md:py-28">
             <div className="max-w-2xl">
-              <p className="text-sm font-semibold uppercase tracking-wide text-gold-400">
+              <p className="text-sm font-semibold uppercase tracking-wide text-on-dark-accent-hover">
                 Coming soon
               </p>
               <h1 className="mt-3 font-heading text-4xl leading-tight md:text-5xl lg:text-6xl">
                 {title}
               </h1>
-              <p className="mt-6 text-lg text-sand-50/90 md:text-xl">
+              <p className="mt-6 text-lg text-on-dark md:text-xl">
                 {description}
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
@@ -63,7 +63,7 @@ export function PageStub({
                   </CTALink>
                 )}
                 <PhoneLink
-                  className="text-white hover:text-gold-400"
+                  className="text-on-dark hover:text-on-dark-accent-hover"
                   showIcon
                 />
               </div>
@@ -73,9 +73,9 @@ export function PageStub({
       </section>
 
       {links && links.length > 0 && (
-        <Section background="sand" id="related-links">
+        <Section background="default" id="related-links">
           <Container>
-            <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
+            <h2 className="font-heading text-3xl md:text-4xl text-heading">
               Related pages
             </h2>
             <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -83,13 +83,13 @@ export function PageStub({
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="group rounded-xl border-t-4 border-gold-500 bg-white p-6 transition hover:shadow-md focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2"
+                  className="group rounded-xl border-t-4 border-accent bg-white p-6 transition hover:shadow-md focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2"
                 >
-                  <h3 className="font-heading text-xl text-navy-900 group-hover:text-gold-500 transition-colors">
+                  <h3 className="font-heading text-xl text-heading group-hover:text-accent transition-colors">
                     {item.label}
                   </h3>
                   {item.description && (
-                    <p className="mt-2 text-ink-light">{item.description}</p>
+                    <p className="mt-2 text-muted">{item.description}</p>
                   )}
                 </Link>
               ))}

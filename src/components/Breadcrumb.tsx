@@ -20,18 +20,18 @@ export function Breadcrumb({ items, className }: BreadcrumbProps) {
           return (
             <li key={item.label} className="flex items-center gap-2">
               {index > 0 && (
-                <span aria-hidden="true" className="text-ink-light">
+                <span aria-hidden="true" className="text-muted">
                   &gt;
                 </span>
               )}
               {isLast || !item.href ? (
-                <span className={isLast ? "font-medium text-navy-900" : "text-ink-light"}>
+                <span className={isLast ? "font-medium text-heading" : "text-muted"}>
                   {item.label}
                 </span>
               ) : (
                 <Link
                   href={item.href}
-                  className="text-ink-light hover:text-navy-900 hover:underline focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+                  className="text-muted hover:text-heading hover:underline focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
                 >
                   {item.label}
                 </Link>

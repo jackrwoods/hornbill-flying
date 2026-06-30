@@ -37,7 +37,7 @@ export default function ToolsHubPage() {
       pageHref="/tools/"
       showCta
     >
-      <div className="prose max-w-none text-ink-light">
+      <div className="prose max-w-none text-muted">
         <p>
           These tools are built for pilots training at Hornbill Aviation.
           Check current weather, estimate density altitude, plan cross-country

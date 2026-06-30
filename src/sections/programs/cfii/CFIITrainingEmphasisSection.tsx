@@ -4,16 +4,16 @@ import { cfiiProgram } from "@/content/programs/cfii";
 
 export function CFIITrainingEmphasisSection() {
   return (
-    <Section background="white" id="training-emphasis">
+    <Section background="card" id="training-emphasis">
       <Container>
-        <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
+        <h2 className="font-heading text-3xl md:text-4xl text-heading">
           {cfiiProgram.trainingEmphasis.title}
         </h2>
         <ul className="mt-8 grid gap-4 sm:grid-cols-2">
           {cfiiProgram.trainingEmphasis.items.map((item, index) => (
             <li
               key={index}
-              className="flex items-start gap-3 rounded-lg bg-teal-100 p-4"
+              className="flex items-start gap-3 rounded-lg bg-callout p-4"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -25,12 +25,12 @@ export function CFIITrainingEmphasisSection() {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="mt-0.5 flex-shrink-0 text-gold-500"
+                className="mt-0.5 flex-shrink-0 text-accent"
                 aria-hidden="true"
               >
                 <polyline points="20 6 9 17 4 12" />
               </svg>
-              <span className="text-ink">{item}</span>
+              <span className="text-body">{item}</span>
             </li>
           ))}
         </ul>

@@ -6,24 +6,24 @@ import { cfiProgram } from "@/content/programs/cfi";
 
 export function CFIWhatYouLearnSection() {
   return (
-    <Section background="sand" id="what-you-learn">
+    <Section background="default" id="what-you-learn">
       <Container>
-        <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
+        <h2 className="font-heading text-3xl md:text-4xl text-heading">
           {cfiProgram.whatYouLearn.title}
         </h2>
-        <p className="mt-4 max-w-3xl text-ink-light">
+        <p className="mt-4 max-w-3xl text-muted">
           {cfiProgram.whatYouLearn.intro}
         </p>
         <div className="mt-8 grid gap-6 md:grid-cols-2">
           {cfiProgram.whatYouLearn.items.map((item) => (
             <div
               key={item.title}
-              className="rounded-xl border-t-4 border-gold-500 bg-white p-6"
+              className="rounded-xl border-t-4 border-accent bg-white p-6"
             >
-              <h3 className="font-heading text-xl text-navy-900">
+              <h3 className="font-heading text-xl text-heading">
                 {item.title}
               </h3>
-              <p className="mt-2 text-ink-light">{item.description}</p>
+              <p className="mt-2 text-muted">{item.description}</p>
             </div>
           ))}
         </div>
@@ -37,17 +37,17 @@ export function CFIWhatYouLearnSection() {
             className="h-auto w-full object-cover"
             sizes="(max-width: 768px) 100vw, 870px"
           />
-          <figcaption className="px-5 py-3 text-sm text-ink-light">
+          <figcaption className="px-5 py-3 text-sm text-muted">
             Lesson planning in the PA28 at RNO — consistent avionics mean you
             spend less time relearning the panel and more time learning to teach.
           </figcaption>
         </figure>
 
-        <p className="mt-6 text-ink-light">
+        <p className="mt-6 text-muted">
           After your initial CFI, you can add instrument instruction with our{" "}
           <Link
             href="/programs/cfii/"
-            className="font-semibold text-gold-500 hover:text-gold-400 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+            className="font-semibold text-accent hover:text-on-dark-accent-hover focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
           >
             CFII add-on
           </Link>{" "}

@@ -16,13 +16,13 @@ export function LessonSchedulingFlow({ onCancel }: LessonSchedulingFlowProps) {
       title="Schedule a lesson"
       description="Recurring lesson scheduling is coming soon."
     >
-      <p className="text-ink-light">
+      <p className="text-muted">
         We are building a scheduling tool that lets you reserve recurring training
         flights with your preferred CFI. Until then, call or text us and we will
         set up a schedule that fits yours.
       </p>
       <div className="mt-4">
-        <PhoneLink className="text-navy-900 hover:text-gold-500" />
+        <PhoneLink className="text-heading hover:text-accent" />
       </div>
       <BookingActions onBack={onCancel} backLabel="Choose another option" />
     </BookingStep>

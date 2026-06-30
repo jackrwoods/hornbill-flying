@@ -76,6 +76,25 @@
   --color-footer-link: var(--palette-blue-900);
   --color-footer-link-hover: var(--palette-gold-500);
 
+  /* === Subtle surfaces & borders === */
+  --color-border: var(--palette-blue-900);
+  --color-border-subtle: color-mix(in srgb, var(--palette-blue-800) 10%, transparent);
+  --color-border-soft: color-mix(in srgb, var(--palette-blue-800) 20%, transparent);
+  --color-dark-subtle: color-mix(in srgb, var(--palette-blue-900) 5%, transparent);
+  --color-dark-soft: color-mix(in srgb, var(--palette-blue-800) 10%, transparent);
+  --color-accent-subtle: color-mix(in srgb, var(--palette-gold-500) 10%, transparent);
+
+  /* === Status callout subtle backgrounds === */
+  --color-error-subtle: color-mix(in srgb, var(--palette-coral) 10%, transparent);
+  --color-success-subtle: color-mix(in srgb, var(--palette-teal-500) 10%, transparent);
+  --color-callout-subtle: color-mix(in srgb, var(--palette-teal-100) 70%, transparent);
+
+  /* === Dark-surface accents & overlays === */
+  --color-on-dark-accent: var(--palette-gold-500);
+  --color-on-dark-accent-hover: var(--palette-gold-400);
+  --color-on-dark-subtle: color-mix(in srgb, var(--palette-cream-50) 10%, transparent);
+  --color-on-dark-soft: color-mix(in srgb, var(--palette-cream-50) 50%, transparent);
+
   /* === Legacy aliases (deprecated; removed in follow-up intent-migration ticket) === */
   --color-navy-900: var(--palette-blue-900);
   --color-navy-800: var(--palette-blue-800);
@@ -107,6 +126,24 @@
     text-transform: uppercase;
     letter-spacing: -0.02em;
     line-height: 1;
+  }
+
+  .bg-hero-scrim {
+    background-image: linear-gradient(
+      to right,
+      color-mix(in srgb, var(--color-dark) 90%, transparent),
+      color-mix(in srgb, var(--color-dark) 60%, transparent),
+      color-mix(in srgb, var(--color-dark) 40%, transparent)
+    );
+  }
+
+  .bg-pageheader-scrim {
+    background-image: linear-gradient(
+      to right,
+      color-mix(in srgb, var(--color-dark) 90%, transparent),
+      color-mix(in srgb, var(--color-dark) 70%, transparent),
+      color-mix(in srgb, var(--color-dark) 50%, transparent)
+    );
   }
 }
 

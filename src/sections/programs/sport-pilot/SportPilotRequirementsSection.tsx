@@ -6,15 +6,15 @@ export function SportPilotRequirementsSection() {
   const { requirements } = sportPilotProgram;
 
   return (
-    <Section background="white" id="requirements">
+    <Section background="card" id="requirements">
       <Container>
         <div className="grid gap-12 lg:grid-cols-2">
           <div>
-            <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
+            <h2 className="font-heading text-3xl md:text-4xl text-heading">
               {requirements.title}
             </h2>
-            <p className="mt-4 text-ink-light">{requirements.intro}</p>
-            <p className="mt-6 rounded-lg bg-teal-100 p-4 text-ink">
+            <p className="mt-4 text-muted">{requirements.intro}</p>
+            <p className="mt-6 rounded-lg bg-callout p-4 text-body">
               {requirements.note}
             </p>
           </div>
@@ -22,15 +22,15 @@ export function SportPilotRequirementsSection() {
             {requirements.items.map((item, index) => (
               <li
                 key={index}
-                className="flex items-start gap-3 rounded-lg bg-sand-50 p-4 shadow-sm"
+                className="flex items-start gap-3 rounded-lg bg-bg p-4 shadow-sm"
               >
                 <span
-                  className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-gold-500 text-xs font-semibold text-navy-900"
+                  className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-accent text-xs font-semibold text-heading"
                   aria-hidden="true"
                 >
                   {index + 1}
                 </span>
-                <span className="text-ink">{item}</span>
+                <span className="text-body">{item}</span>
               </li>
             ))}
           </ul>

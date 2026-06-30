@@ -38,11 +38,11 @@ export default function NotFoundPage() {
   return (
     <>
       <SchemaInjector schema={pageSchema} id="404-schema" />
-      <Section background="sand" className="flex-1">
+      <Section background="default" className="flex-1">
         <Container className="py-20">
           <div className="flex flex-col items-center text-center">
             <Logo showText={false} size={140} className="mb-8" />
-            <h1 className="font-heading text-4xl text-navy-900 md:text-5xl">
+            <h1 className="font-heading text-4xl text-heading md:text-5xl">
               {notFoundCopy.headline}
             </h1>
             <div className="mt-6 w-full">

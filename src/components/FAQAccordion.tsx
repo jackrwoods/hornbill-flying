@@ -37,7 +37,7 @@ export function FAQAccordion({
         return (
           <div
             key={faq.id}
-            className="rounded-lg border border-navy-800/10 bg-white overflow-hidden"
+            className="rounded-lg border border-border-subtle bg-white overflow-hidden"
           >
             <h3>
               <button
@@ -45,7 +45,7 @@ export function FAQAccordion({
                 onClick={() => toggle(faq.id)}
                 aria-expanded={isOpen}
                 aria-controls={`faq-answer-${faq.id}`}
-                className="flex w-full items-center justify-between px-5 py-4 text-left font-body text-base font-semibold text-navy-900 hover:bg-sand-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gold-500"
+                className="flex w-full items-center justify-between px-5 py-4 text-left font-body text-base font-semibold text-heading hover:bg-bg focus:outline-none focus:ring-2 focus:ring-inset focus:ring-focus-ring"
               >
                 {faq.question}
                 <svg
@@ -60,7 +60,7 @@ export function FAQAccordion({
                   strokeLinejoin="round"
                   aria-hidden="true"
                   className={cn(
-                    "flex-shrink-0 text-gold-500 transition-transform",
+                    "flex-shrink-0 text-accent transition-transform",
                     isOpen && "rotate-180"
                   )}
                 >
@@ -74,7 +74,7 @@ export function FAQAccordion({
               aria-labelledby={`faq-question-${faq.id}`}
               hidden={!isOpen}
               className={cn(
-                "px-5 pb-5 text-ink-light",
+                "px-5 pb-5 text-muted",
                 isOpen && "pt-4",
                 !isOpen && "hidden"
               )}

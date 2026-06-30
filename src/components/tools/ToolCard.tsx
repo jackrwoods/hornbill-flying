@@ -23,11 +23,11 @@ export function ToolCard({ title, description, href, icon, className }: ToolCard
     <Link
       href={href}
       className={cn(
-        "group flex flex-col rounded-xl border-t-4 border-gold-500 bg-white p-6 shadow-sm transition hover:shadow-md focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2",
+        "group flex flex-col rounded-xl border-t-4 border-accent bg-white p-6 shadow-sm transition hover:shadow-md focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2",
         className
       )}
     >
-      <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-teal-100 text-navy-900">
+      <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-callout text-heading">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="22"
@@ -47,10 +47,10 @@ export function ToolCard({ title, description, href, icon, className }: ToolCard
           )}
         </svg>
       </div>
-      <h3 className="font-heading text-xl text-navy-900 group-hover:text-gold-500 transition-colors">
+      <h3 className="font-heading text-xl text-heading group-hover:text-accent transition-colors">
         {title}
       </h3>
-      <p className="mt-2 text-sm text-ink-light">{description}</p>
+      <p className="mt-2 text-sm text-muted">{description}</p>
     </Link>
   );
 }

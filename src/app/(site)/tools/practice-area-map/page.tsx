@@ -43,7 +43,7 @@ export default function PracticeAreaMapPage() {
         { href: "/student-resources/", label: "Student resources" },
       ]}
     >
-      <div className="rounded-lg bg-teal-100 p-4 text-ink">
+      <div className="rounded-lg bg-callout p-4 text-body">
         <p>
           This is a simplified reference for the common practice area northeast
           of RNO and nearby airports used for touch-and-go practice and cross-country
@@ -53,17 +53,17 @@ export default function PracticeAreaMapPage() {
       </div>
 
       <figure className="mt-6">
-        <PracticeAreaMapSvg className="w-full rounded-xl border border-navy-800/10 bg-white shadow-sm" />
-        <figcaption className="mt-3 text-sm text-ink-light">
+        <PracticeAreaMapSvg className="w-full rounded-xl border border-border-subtle bg-white shadow-sm" />
+        <figcaption className="mt-3 text-sm text-muted">
           Simplified training reference for RNO. Labels: RNO, common practice area,
           nearby airports KRTS, KMLC, KLOL, KSPZ, Sierra ridge, and a simplified
           Class C boundary. Always use the current sectional chart for flight.
         </figcaption>
       </figure>
 
-      <div className="mt-6 rounded-xl border-t-4 border-gold-500 bg-white p-6 shadow-sm">
-        <h3 className="font-heading text-xl text-navy-900">Notes</h3>
-        <ul className="mt-4 list-disc space-y-2 pl-5 text-ink-light">
+      <div className="mt-6 rounded-xl border-t-4 border-accent bg-white p-6 shadow-sm">
+        <h3 className="font-heading text-xl text-heading">Notes</h3>
+        <ul className="mt-4 list-disc space-y-2 pl-5 text-muted">
           <li>Confirm with the current sectional chart before flight.</li>
           <li>Practice area altitudes and boundaries vary with traffic and ATC.</li>
           <li>Check runway conditions and pattern direction at nearby airports.</li>

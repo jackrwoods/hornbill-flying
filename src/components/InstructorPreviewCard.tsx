@@ -29,7 +29,7 @@ export function InstructorPreviewCard({
     >
       <div className="flex items-start gap-4">
         {portraitSrc ? (
-          <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-full bg-navy-800">
+          <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-full bg-dark-muted">
             <AssetImage
               src={portraitSrc}
               alt={instructor.altText}
@@ -40,18 +40,18 @@ export function InstructorPreviewCard({
             />
           </div>
         ) : (
-          <div className="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full bg-navy-800 text-white font-heading text-xl">
+          <div className="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full bg-dark-muted text-on-dark font-heading text-xl">
             {initials}
           </div>
         )}
         <div className="min-w-0">
           <h3 className="font-heading text-xl">{instructor.name}</h3>
-          <p className="mt-1 text-sm text-ink-light">{instructor.title}</p>
+          <p className="mt-1 text-sm text-muted">{instructor.title}</p>
           <div className="mt-2 flex flex-wrap gap-1">
             {instructor.specialties.slice(0, 3).map((specialty) => (
               <span
                 key={specialty}
-                className="inline-flex rounded bg-teal-100 px-2 py-0.5 text-xs font-medium text-navy-900"
+                className="inline-flex rounded bg-callout px-2 py-0.5 text-xs font-medium text-heading"
               >
                 {specialty}
               </span>
@@ -59,7 +59,7 @@ export function InstructorPreviewCard({
           </div>
           <Link
             href={instructor.bookingLink}
-            className="mt-3 inline-block text-sm font-semibold text-gold-500 hover:text-gold-400 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+            className="mt-3 inline-block text-sm font-semibold text-accent hover:text-on-dark-accent-hover focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
           >
             Book with {firstName}
           </Link>

@@ -269,7 +269,7 @@ export function BookingFlow() {
     if (!flow) {
       return (
         <>
-          <h2 className="mb-6 font-heading text-2xl text-navy-900">
+          <h2 className="mb-6 font-heading text-2xl text-heading">
             What would you like to book?
           </h2>
           <FlowSelector />

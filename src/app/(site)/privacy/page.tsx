@@ -65,7 +65,7 @@ export default function PrivacyPage() {
           { label: PAGE_TITLE },
         ]}
       />
-      <Section background="sand">
+      <Section background="default">
         <Container>
           <Prose>
             {privacyContent.sections.map((section) => (

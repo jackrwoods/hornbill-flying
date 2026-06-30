@@ -11,17 +11,17 @@ interface SectionProps {
 }
 
 const backgroundClasses: Record<SectionBackground, string> = {
-  sand: "bg-sand-50",
-  white: "bg-white",
-  navy: "bg-navy-900 text-white",
-  gold: "bg-gold-500 text-navy-900",
-  teal: "bg-teal-100",
+  default: "bg-bg",
+  card: "bg-card",
+  dark: "bg-dark text-on-dark",
+  accent: "bg-accent text-on-accent",
+  callout: "bg-callout",
 };
 
 export function Section({
   children,
   className,
-  background = "sand",
+  background = "default",
   id,
   as: As = "section",
 }: SectionProps) {

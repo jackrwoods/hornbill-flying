@@ -6,14 +6,14 @@ export function MountainFlyingWhatCoversSection() {
   const { whatCourseCovers } = mountainFlyingProgram;
 
   return (
-    <Section background="sand" id="what-the-course-covers">
+    <Section background="default" id="what-the-course-covers">
       <Container>
         <div className="grid gap-12 lg:grid-cols-2">
           <div>
-            <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
+            <h2 className="font-heading text-3xl md:text-4xl text-heading">
               {whatCourseCovers.title}
             </h2>
-            <p className="mt-4 text-ink-light leading-relaxed">
+            <p className="mt-4 text-muted leading-relaxed">
               {whatCourseCovers.intro}
             </p>
           </div>
@@ -22,14 +22,14 @@ export function MountainFlyingWhatCoversSection() {
             {whatCourseCovers.items.map((item) => (
               <li key={item.label} className="flex items-start gap-3">
                 <span
-                  className="mt-2 flex h-2 w-2 flex-shrink-0 rounded-full bg-gold-500"
+                  className="mt-2 flex h-2 w-2 flex-shrink-0 rounded-full bg-accent"
                   aria-hidden="true"
                 />
                 <div>
-                  <h3 className="font-heading text-xl text-navy-900">
+                  <h3 className="font-heading text-xl text-heading">
                     {item.label}
                   </h3>
-                  <p className="mt-1 text-ink-light">{item.description}</p>
+                  <p className="mt-1 text-muted">{item.description}</p>
                 </div>
               </li>
             ))}

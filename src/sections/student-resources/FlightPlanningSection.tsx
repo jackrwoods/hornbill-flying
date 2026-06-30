@@ -4,12 +4,12 @@ import { ResourceCard } from "@/components/ResourceCard";
 
 export function FlightPlanningSection() {
   return (
-    <Section background="white" id="flight-planning">
+    <Section background="card" id="flight-planning">
       <Container>
-        <h2 className="font-heading text-3xl text-navy-900 md:text-4xl">
+        <h2 className="font-heading text-3xl text-heading md:text-4xl">
           Flight-planning tools
         </h2>
-        <p className="mt-4 max-w-2xl text-ink-light">
+        <p className="mt-4 max-w-2xl text-muted">
           Plan routes, estimate fuel, check sunrise and sunset times, and review
           local practice areas. These tools are references only — always confirm
           with current charts and an official briefing.

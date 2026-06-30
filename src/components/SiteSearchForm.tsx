@@ -49,7 +49,7 @@ export function SiteSearchForm({
     >
       <label
         htmlFor={inputId}
-        className="block text-sm font-semibold text-ink"
+        className="block text-sm font-semibold text-body"
       >
         {label}
       </label>
@@ -60,7 +60,7 @@ export function SiteSearchForm({
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder={placeholder}
-          className="w-full rounded-lg border border-navy-900 bg-white px-4 py-3 text-ink placeholder:text-ink-light focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500"
+          className="w-full rounded-lg border border-border bg-white px-4 py-3 text-body placeholder:text-muted focus:border-accent focus:outline-none focus:ring-2 focus:ring-focus-ring"
           required
         />
         <Button type="submit" variant="secondary" className="shrink-0">

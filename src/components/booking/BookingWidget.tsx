@@ -126,11 +126,11 @@ export function BookingWidget({
             <h2
               ref={stepRef}
               tabIndex={-1}
-              className="font-heading text-2xl text-navy-900 focus:outline-none"
+              className="font-heading text-2xl text-heading focus:outline-none"
             >
               Choose your flight type
             </h2>
-            <p className="text-ink-light">
+            <p className="text-muted">
               Pick the discovery flight that fits your schedule and budget.
             </p>
             <FlightTypeSelector
@@ -138,7 +138,7 @@ export function BookingWidget({
               onSelectType={handleSelectType}
               excludeGift={mode === "discovery"}
             />
-            <p className="text-sm text-ink-light">
+            <p className="text-sm text-muted">
               Select a flight type to continue to date and time.
             </p>
           </div>
@@ -150,11 +150,11 @@ export function BookingWidget({
             <h2
               ref={stepRef}
               tabIndex={-1}
-              className="font-heading text-2xl text-navy-900 focus:outline-none"
+              className="font-heading text-2xl text-heading focus:outline-none"
             >
               Choose a date and time
             </h2>
-            <p className="text-ink-light">
+            <p className="text-muted">
               Slots show aircraft and CFI availability.
             </p>
             <AvailabilityCalendar
@@ -167,7 +167,7 @@ export function BookingWidget({
               <button
                 type="button"
                 onClick={actions.previousStep}
-                className="rounded-lg border border-navy-900 px-5 py-3 text-sm font-semibold text-navy-900 transition-colors hover:bg-navy-900/5 focus:outline-none focus:ring-2 focus:ring-gold-500"
+                className="rounded-lg border border-border px-5 py-3 text-sm font-semibold text-heading transition-colors hover:bg-dark/5 focus:outline-none focus:ring-2 focus:ring-focus-ring"
               >
                 Back
               </button>
@@ -175,7 +175,7 @@ export function BookingWidget({
                 type="button"
                 onClick={actions.nextStep}
                 disabled={!state.slot}
-                className="rounded-lg bg-navy-900 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-navy-800 focus:outline-none focus:ring-2 focus:ring-gold-500 disabled:cursor-not-allowed disabled:opacity-50"
+                className="rounded-lg bg-dark px-5 py-3 text-sm font-semibold text-on-dark transition-colors hover:bg-dark-muted focus:outline-none focus:ring-2 focus:ring-focus-ring disabled:cursor-not-allowed disabled:opacity-50"
               >
                 Continue
               </button>
@@ -189,11 +189,11 @@ export function BookingWidget({
             <h2
               ref={stepRef}
               tabIndex={-1}
-              className="font-heading text-2xl text-navy-900 focus:outline-none"
+              className="font-heading text-2xl text-heading focus:outline-none"
             >
               Your details
             </h2>
-            <p className="text-ink-light">
+            <p className="text-muted">
               We need this to confirm your flight and send updates.
             </p>
             <BookingForm value={state.formData} onChange={handleFormChange} />
@@ -208,7 +208,7 @@ export function BookingWidget({
               <button
                 type="button"
                 onClick={actions.previousStep}
-                className="rounded-lg border border-navy-900 px-5 py-3 text-sm font-semibold text-navy-900 transition-colors hover:bg-navy-900/5 focus:outline-none focus:ring-2 focus:ring-gold-500"
+                className="rounded-lg border border-border px-5 py-3 text-sm font-semibold text-heading transition-colors hover:bg-dark/5 focus:outline-none focus:ring-2 focus:ring-focus-ring"
               >
                 Back
               </button>
@@ -221,7 +221,7 @@ export function BookingWidget({
                   !state.formData.phone ||
                   !state.formData.email
                 }
-                className="rounded-lg bg-navy-900 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-navy-800 focus:outline-none focus:ring-2 focus:ring-gold-500 disabled:cursor-not-allowed disabled:opacity-50"
+                className="rounded-lg bg-dark px-5 py-3 text-sm font-semibold text-on-dark transition-colors hover:bg-dark-muted focus:outline-none focus:ring-2 focus:ring-focus-ring disabled:cursor-not-allowed disabled:opacity-50"
               >
                 Continue
               </button>
@@ -235,11 +235,11 @@ export function BookingWidget({
             <h2
               ref={stepRef}
               tabIndex={-1}
-              className="font-heading text-2xl text-navy-900 focus:outline-none"
+              className="font-heading text-2xl text-heading focus:outline-none"
             >
               Payment
             </h2>
-            <p className="text-ink-light">
+            <p className="text-muted">
               Pay a deposit now or the full amount. No deposit is required to book.
             </p>
             <PaymentStep
@@ -255,7 +255,7 @@ export function BookingWidget({
               <button
                 type="button"
                 onClick={actions.previousStep}
-                className="rounded-lg border border-navy-900 px-5 py-3 text-sm font-semibold text-navy-900 transition-colors hover:bg-navy-900/5 focus:outline-none focus:ring-2 focus:ring-gold-500"
+                className="rounded-lg border border-border px-5 py-3 text-sm font-semibold text-heading transition-colors hover:bg-dark/5 focus:outline-none focus:ring-2 focus:ring-focus-ring"
               >
                 Back
               </button>
@@ -296,7 +296,7 @@ export function BookingWidget({
         </div>
       )}
 
-      <div className="min-h-[20rem] rounded-xl border border-navy-800/10 bg-white p-5 shadow-sm md:p-8">
+      <div className="min-h-[20rem] rounded-xl border border-border-subtle bg-white p-5 shadow-sm md:p-8">
         {renderStepContent()}
       </div>
     </div>

@@ -20,7 +20,7 @@ export function FleetMemberDetailSection({
     : [{ src: member.photo, alt: member.photoAlt }];
 
   return (
-    <Section background="white" id="details">
+    <Section background="card" id="details">
       <Container>
         <div className="grid gap-10 lg:grid-cols-2">
           <ImageCarousel images={images} />
@@ -28,23 +28,23 @@ export function FleetMemberDetailSection({
           <div className="flex flex-col gap-6">
             {isAircraft(member) ? (
               <>
-                <p className="font-mono text-sm uppercase tracking-wide text-gold-500">
+                <p className="font-mono text-sm uppercase tracking-wide text-accent">
                   PA28 Cherokee
                 </p>
-                <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
+                <h2 className="font-heading text-3xl md:text-4xl text-heading">
                   {member.tail}
                 </h2>
-                <p className="text-lg text-ink-light leading-relaxed">
+                <p className="text-lg text-muted leading-relaxed">
                   {member.notes}
                 </p>
 
                 <div className="space-y-4">
                   <div>
-                    <h3 className="font-semibold text-ink-light">Engine</h3>
+                    <h3 className="font-semibold text-muted">Engine</h3>
                     <p>{member.engine}</p>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-ink-light">Avionics</h3>
+                    <h3 className="font-semibold text-muted">Avionics</h3>
                     <ul className="list-disc pl-5">
                       {member.avionics.map((item) => (
                         <li key={item}>{item}</li>
@@ -54,31 +54,31 @@ export function FleetMemberDetailSection({
                 </div>
 
                 <div className="flex flex-wrap gap-2">
-                  <span className="inline-flex rounded-full bg-navy-900 px-3 py-1 text-xs font-semibold text-white">
+                  <span className="inline-flex rounded-full bg-dark px-3 py-1 text-xs font-semibold text-on-dark">
                     Member ${memberRate}/hr
                   </span>
-                  <span className="inline-flex rounded-full bg-white border border-navy-800/10 px-3 py-1 text-xs font-semibold text-navy-900">
+                  <span className="inline-flex rounded-full bg-card border border-border-subtle px-3 py-1 text-xs font-semibold text-heading">
                     Non-member ${nonMemberRate}/hr
                   </span>
                   {member.ifrEquipped && (
-                    <span className="inline-flex rounded-full bg-teal-100 px-3 py-1 text-xs font-semibold text-navy-900">
+                    <span className="inline-flex rounded-full bg-callout px-3 py-1 text-xs font-semibold text-heading">
                       IFR equipped
                     </span>
                   )}
                   {member.crossCountryReady && (
-                    <span className="inline-flex rounded-full bg-teal-100 px-3 py-1 text-xs font-semibold text-navy-900">
+                    <span className="inline-flex rounded-full bg-callout px-3 py-1 text-xs font-semibold text-heading">
                       Cross-country ready
                     </span>
                   )}
                 </div>
-                <p className="mt-2 text-sm text-ink-light">{memberRateBillingNote}</p>
+                <p className="mt-2 text-sm text-muted">{memberRateBillingNote}</p>
 
-                <p className="text-sm text-ink-light">
+                <p className="text-sm text-muted">
                   Wet rate includes fuel and oil. Ground and flight instruction
                   are billed separately. See{" "}
                   <Link
                     href="/fleet/"
-                    className="font-semibold text-gold-500 hover:text-gold-400 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+                    className="font-semibold text-accent hover:text-on-dark-accent-hover focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
                   >
                     fleet and pricing
                   </Link>{" "}
@@ -87,24 +87,24 @@ export function FleetMemberDetailSection({
               </>
             ) : (
               <>
-                <p className="font-mono text-sm uppercase tracking-wide text-gold-500">
+                <p className="font-mono text-sm uppercase tracking-wide text-accent">
                   Training device
                 </p>
-                <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
+                <h2 className="font-heading text-3xl md:text-4xl text-heading">
                   {member.name}
                 </h2>
-                <p className="text-lg text-ink-light leading-relaxed">
+                <p className="text-lg text-muted leading-relaxed">
                   {member.description}
                 </p>
-                <p className="text-ink leading-relaxed">{member.notes}</p>
+                <p className="text-body leading-relaxed">{member.notes}</p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="inline-flex rounded-full bg-teal-100 px-3 py-1 text-xs font-semibold text-navy-900">
+                  <span className="inline-flex rounded-full bg-callout px-3 py-1 text-xs font-semibold text-heading">
                     Procedure training
                   </span>
-                  <span className="inline-flex rounded-full bg-teal-100 px-3 py-1 text-xs font-semibold text-navy-900">
+                  <span className="inline-flex rounded-full bg-callout px-3 py-1 text-xs font-semibold text-heading">
                     Approach practice
                   </span>
-                  <span className="inline-flex rounded-full bg-teal-100 px-3 py-1 text-xs font-semibold text-navy-900">
+                  <span className="inline-flex rounded-full bg-callout px-3 py-1 text-xs font-semibold text-heading">
                     IPC prep
                   </span>
                 </div>
@@ -115,10 +115,10 @@ export function FleetMemberDetailSection({
 
         {member.documents && member.documents.length > 0 && (
           <div className="mt-16">
-            <h2 className="font-heading text-2xl text-navy-900 md:text-3xl">
+            <h2 className="font-heading text-2xl text-heading md:text-3xl">
               Documents
             </h2>
-            <p className="mt-3 max-w-3xl text-ink-light">
+            <p className="mt-3 max-w-3xl text-muted">
               Download the current manuals and reference documents for{" "}
               {isAircraft(member) ? member.tail : member.name}. Verify all
               numbers and procedures with the physical aircraft or current

@@ -49,7 +49,7 @@ export function AvailabilityCalendar({
       </div>
 
       {loading && (
-        <p className="text-ink-light" aria-live="polite">
+        <p className="text-muted" aria-live="polite">
           Loading available slots…
         </p>
       )}
@@ -61,7 +61,7 @@ export function AvailabilityCalendar({
             <button
               type="button"
               onClick={refetch}
-              className="font-semibold underline hover:text-navy-900"
+              className="font-semibold underline hover:text-heading"
             >
               Try again
             </button>
@@ -70,7 +70,7 @@ export function AvailabilityCalendar({
       )}
 
       {!loading && !error && slots.length === 0 && (
-        <p className="text-ink-light">
+        <p className="text-muted">
           No slots available for the selected flight type. Choose a different
           option or call us to schedule.
         </p>
@@ -80,7 +80,7 @@ export function AvailabilityCalendar({
         <div className="space-y-6">
           {Object.entries(slotsByDate).map(([dateLabel, daySlots]) => (
             <div key={dateLabel}>
-              <h3 className="font-heading text-lg text-navy-900">{dateLabel}</h3>
+              <h3 className="font-heading text-lg text-heading">{dateLabel}</h3>
               <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
                 {daySlots.map((slot) => {
                   const isSelected = selectedSlot?.id === slot.id;
@@ -90,17 +90,17 @@ export function AvailabilityCalendar({
                       type="button"
                       onClick={() => handleSelect(slot)}
                       className={cn(
-                        "min-h-[3.25rem] min-w-[6.5rem] rounded-lg border px-3 py-2 text-left transition-colors focus:outline-none focus:ring-2 focus:ring-gold-500",
+                        "min-h-[3.25rem] min-w-[6.5rem] rounded-lg border px-3 py-2 text-left transition-colors focus:outline-none focus:ring-2 focus:ring-focus-ring",
                         isSelected
-                          ? "border-gold-500 bg-gold-500/10"
-                          : "border-navy-800/10 bg-white hover:bg-sand-50"
+                          ? "border-accent bg-accent/10"
+                          : "border-border-subtle bg-white hover:bg-bg"
                       )}
                       aria-pressed={isSelected}
                     >
-                      <span className="block font-semibold text-navy-900">
+                      <span className="block font-semibold text-heading">
                         {formatSlotTime(slot.start)}
                       </span>
-                      <span className="block text-xs text-ink-light">
+                      <span className="block text-xs text-muted">
                         {slot.instructorName} · {slot.aircraftTail}
                       </span>
                     </button>

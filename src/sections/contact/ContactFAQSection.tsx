@@ -5,9 +5,9 @@ import { contactFAQ } from "@/content/contact";
 
 export function ContactFAQSection() {
   return (
-    <Section background="sand" id="faq">
+    <Section background="default" id="faq">
       <Container>
-        <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
+        <h2 className="font-heading text-3xl md:text-4xl text-heading">
           Common questions
         </h2>
         <FAQAccordion faqs={contactFAQ} className="mt-6" />

@@ -32,8 +32,8 @@ export function DensityAltitudeTool({ defaults }: DensityAltitudeToolProps) {
 
   return (
     <div className="grid gap-6 lg:grid-cols-2">
-      <div className="rounded-xl border-t-4 border-gold-500 bg-white p-6 shadow-sm">
-        <h3 className="font-heading text-xl text-navy-900">Inputs</h3>
+      <div className="rounded-xl border-t-4 border-accent bg-white p-6 shadow-sm">
+        <h3 className="font-heading text-xl text-heading">Inputs</h3>
         <div className="mt-4 grid gap-4">
           <ToolInput
             id="elevation"
@@ -63,14 +63,14 @@ export function DensityAltitudeTool({ defaults }: DensityAltitudeToolProps) {
               unit={unit === "F" ? "°F" : "°C"}
             />
             <div className="flex items-end">
-              <div className="flex rounded-lg border border-navy-800/20 bg-white p-1">
+              <div className="flex rounded-lg border border-dark-muted/20 bg-white p-1">
                 <button
                   type="button"
                   onClick={() => setUnit("F")}
                   className={`rounded-md px-3 py-2 text-sm font-semibold ${
                     unit === "F"
-                      ? "bg-navy-900 text-white"
-                      : "text-navy-900 hover:bg-sand-50"
+                      ? "bg-dark text-on-dark"
+                      : "text-heading hover:bg-bg"
                   }`}
                 >
                   °F
@@ -80,8 +80,8 @@ export function DensityAltitudeTool({ defaults }: DensityAltitudeToolProps) {
                   onClick={() => setUnit("C")}
                   className={`rounded-md px-3 py-2 text-sm font-semibold ${
                     unit === "C"
-                      ? "bg-navy-900 text-white"
-                      : "text-navy-900 hover:bg-sand-50"
+                      ? "bg-dark text-on-dark"
+                      : "text-heading hover:bg-bg"
                   }`}
                 >
                   °C

@@ -6,12 +6,12 @@ export function MembershipQuickAnswerSection() {
   const { quickAnswer } = membershipContent;
 
   return (
-    <Section background="teal" id="quick-answer">
+    <Section background="callout" id="quick-answer">
       <Container>
-        <h2 className="font-heading text-2xl text-navy-900 md:text-3xl">
+        <h2 className="font-heading text-2xl text-heading md:text-3xl">
           {quickAnswer.title}
         </h2>
-        <p className="mt-4 max-w-3xl text-lg text-ink-light leading-relaxed">
+        <p className="mt-4 max-w-3xl text-lg text-muted leading-relaxed">
           {quickAnswer.text}
         </p>
       </Container>

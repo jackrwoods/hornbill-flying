@@ -10,17 +10,17 @@ export function FlowSelector() {
       {FLOW_SELECTOR_OPTIONS.map((option) => (
         <div
           key={option.id}
-          className="flex flex-col rounded-xl border border-navy-800/10 bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
+          className="flex flex-col rounded-xl border border-border-subtle bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
         >
           <div className="flex items-start justify-between">
-            <h3 className="font-heading text-xl text-navy-900">{option.label}</h3>
+            <h3 className="font-heading text-xl text-heading">{option.label}</h3>
             {option.comingSoon && (
-              <span className="rounded-full bg-teal-100 px-2 py-1 text-xs font-semibold text-navy-900">
+              <span className="rounded-full bg-callout px-2 py-1 text-xs font-semibold text-heading">
                 Coming soon
               </span>
             )}
           </div>
-          <p className="mt-2 flex-1 text-ink-light">{option.description}</p>
+          <p className="mt-2 flex-1 text-muted">{option.description}</p>
           <div className="mt-6">
             {option.comingSoon ? (
               <CTALink

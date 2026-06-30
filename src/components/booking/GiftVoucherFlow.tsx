@@ -71,16 +71,16 @@ export function GiftVoucherFlow({
     return (
       <BookingStep title="Voucher ready">
         <div className="space-y-4 text-center">
-          <p className="text-ink-light">
+          <p className="text-muted">
             Your ${voucherType.price} discovery flight gift voucher has been
             created.
           </p>
-          <div className="rounded-lg bg-teal-100 p-4">
-            <span className="text-sm font-semibold text-navy-900">Voucher code</span>
-            <div className="mt-1 font-mono text-2xl font-semibold text-navy-900">
+          <div className="rounded-lg bg-callout p-4">
+            <span className="text-sm font-semibold text-heading">Voucher code</span>
+            <div className="mt-1 font-mono text-2xl font-semibold text-heading">
               {code}
             </div>
-          </div>          <p className="text-sm text-ink-light">
+          </div>          <p className="text-sm text-muted">
             The voucher will be emailed to the purchaser and is redeemable when
             the recipient books a discovery flight.
           </p>
@@ -97,69 +97,69 @@ export function GiftVoucherFlow({
       <form className="grid gap-5" onSubmit={(e) => e.preventDefault()}>
         <div className="grid gap-5 sm:grid-cols-2">
           <label className="block">
-            <span className="mb-1 block text-sm font-semibold text-navy-900">
+            <span className="mb-1 block text-sm font-semibold text-heading">
               Your name
             </span>
             <input
               type="text"
               value={data.purchaserName}
               onChange={(e) => update("purchaserName", e.target.value)}
-              className="w-full rounded-lg border border-navy-900 bg-white px-4 py-3 text-ink focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500"
+              className="w-full rounded-lg border border-border bg-white px-4 py-3 text-body focus:border-accent focus:outline-none focus:ring-2 focus:ring-focus-ring"
               required
             />
           </label>
           <label className="block">
-            <span className="mb-1 block text-sm font-semibold text-navy-900">
+            <span className="mb-1 block text-sm font-semibold text-heading">
               Your email
             </span>
             <input
               type="email"
               value={data.purchaserEmail}
               onChange={(e) => update("purchaserEmail", e.target.value)}
-              className="w-full rounded-lg border border-navy-900 bg-white px-4 py-3 text-ink focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500"
+              className="w-full rounded-lg border border-border bg-white px-4 py-3 text-body focus:border-accent focus:outline-none focus:ring-2 focus:ring-focus-ring"
               required
             />
           </label>
         </div>
         <div className="grid gap-5 sm:grid-cols-2">
           <label className="block">
-            <span className="mb-1 block text-sm font-semibold text-navy-900">
+            <span className="mb-1 block text-sm font-semibold text-heading">
               Recipient name (optional)
             </span>
             <input
               type="text"
               value={data.recipientName || ""}
               onChange={(e) => update("recipientName", e.target.value)}
-              className="w-full rounded-lg border border-navy-900 bg-white px-4 py-3 text-ink focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500"
+              className="w-full rounded-lg border border-border bg-white px-4 py-3 text-body focus:border-accent focus:outline-none focus:ring-2 focus:ring-focus-ring"
             />
           </label>
           <label className="block">
-            <span className="mb-1 block text-sm font-semibold text-navy-900">
+            <span className="mb-1 block text-sm font-semibold text-heading">
               Your phone (optional)
             </span>
             <input
               type="tel"
               value={data.purchaserPhone || ""}
               onChange={(e) => update("purchaserPhone", e.target.value)}
-              className="w-full rounded-lg border border-navy-900 bg-white px-4 py-3 text-ink focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500"
+              className="w-full rounded-lg border border-border bg-white px-4 py-3 text-body focus:border-accent focus:outline-none focus:ring-2 focus:ring-focus-ring"
             />
           </label>
         </div>
         <label className="block">
-          <span className="mb-1 block text-sm font-semibold text-navy-900">
+          <span className="mb-1 block text-sm font-semibold text-heading">
             Message (optional)
           </span>
           <textarea
             value={data.recipientMessage || ""}
             onChange={(e) => update("recipientMessage", e.target.value)}
             rows={3}
-            className="w-full rounded-lg border border-navy-900 bg-white px-4 py-3 text-ink focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500"
+            className="w-full rounded-lg border border-border bg-white px-4 py-3 text-body focus:border-accent focus:outline-none focus:ring-2 focus:ring-focus-ring"
           />
         </label>
-        <div className="rounded-xl border border-navy-800/10 bg-sand-50 p-4">
+        <div className="rounded-xl border border-border-subtle bg-bg p-4">
           <div className="flex items-baseline justify-between">
-            <span className="text-navy-900">Gift voucher total</span>
-            <span className="font-mono text-xl font-semibold text-navy-900">
+            <span className="text-heading">Gift voucher total</span>
+            <span className="font-mono text-xl font-semibold text-heading">
               ${voucherType.price.toFixed(2)}
             </span>
           </div>

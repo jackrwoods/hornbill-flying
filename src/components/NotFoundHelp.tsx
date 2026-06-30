@@ -26,10 +26,10 @@ export function NotFoundHelp() {
 
   return (
     <div className="mx-auto max-w-3xl text-center">
-      <h2 className="font-heading text-2xl text-navy-900 md:text-3xl">
+      <h2 className="font-heading text-2xl text-heading md:text-3xl">
         {notFoundCopy.subheadline}
       </h2>
-      <p className="mt-4 text-lg text-ink-light">
+      <p className="mt-4 text-lg text-muted">
         {notFoundCopy.body}
       </p>
 
@@ -44,11 +44,11 @@ export function NotFoundHelp() {
       <div className="mt-10 text-left">
         <h3 className="sr-only">{notFoundCopy.quickLinksHeading}</h3>
         <QuickLinkGrid items={primaryLinks} variant="primary" />
-        <p className="mt-3 text-sm text-ink-light">
+        <p className="mt-3 text-sm text-muted">
           Looking for another program?{" "}
           <Link
             href={notFoundRoutes.allPrograms}
-            className="font-medium text-navy-900 underline underline-offset-4 hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+            className="font-medium text-heading underline underline-offset-4 hover:text-accent focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
           >
             {notFoundCopy.allProgramsLabel}
           </Link>
@@ -59,15 +59,15 @@ export function NotFoundHelp() {
         <QuickLinkGrid items={secondaryLinks} variant="secondary" />
       </div>
 
-      <p className="mt-8 text-ink-light">
+      <p className="mt-8 text-muted">
         {notFoundCopy.phonePrompt}{" "}
-        <PhoneLink className="text-navy-900 hover:text-gold-500" />
+        <PhoneLink className="text-heading hover:text-accent" />
       </p>
 
       <p className="mt-6">
         <a
           href="/sitemap.xml"
-          className="text-sm font-medium text-navy-900 underline underline-offset-4 hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+          className="text-sm font-medium text-heading underline underline-offset-4 hover:text-accent focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
         >
           {notFoundCopy.sitemapLinkText}
         </a>

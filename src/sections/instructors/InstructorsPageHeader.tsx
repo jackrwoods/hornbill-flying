@@ -3,14 +3,14 @@ import { Container } from "@/components/Container";
 
 export function InstructorsPageHeader() {
   return (
-    <section className="bg-navy-900 py-16 md:py-24 text-white">
+    <section className="bg-dark py-16 md:py-24 text-on-dark">
       <Container>
         <nav aria-label="Breadcrumb" className="mb-4">
-          <ol className="flex flex-wrap items-center gap-2 text-sm text-sand-50/80">
+          <ol className="flex flex-wrap items-center gap-2 text-sm text-on-dark-soft">
             <li>
               <Link
                 href="/"
-                className="hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+                className="hover:text-on-dark-accent focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
               >
                 Home
               </Link>
@@ -40,11 +40,11 @@ export function InstructorsPageHeader() {
           Part 61 flight instructors in Reno, NV
         </h1>
 
-        <p className="mt-4 max-w-2xl text-lg text-sand-50/90">
+        <p className="mt-4 max-w-2xl text-lg text-on-dark">
           Choose the CFI who fits your goals and schedule.
         </p>
 
-        <div className="mt-6 max-w-3xl text-sand-50/90 leading-relaxed">
+        <div className="mt-6 max-w-3xl text-on-dark leading-relaxed">
           <p>
             Hornbill Aviation is a Part 61 school, so you choose your instructor
             or bring your own. Every CFI is available in any plane in the
@@ -52,7 +52,7 @@ export function InstructorsPageHeader() {
           </p>
         </div>
 
-        <p className="mt-6 inline-flex items-center gap-2 rounded-full bg-navy-800 px-4 py-2 text-sm font-mono text-gold-400">
+        <p className="mt-6 inline-flex items-center gap-2 rounded-full bg-dark-muted px-4 py-2 text-sm font-mono text-on-dark-accent-hover">
           <span>4 CFIs</span>
           <span aria-hidden="true">·</span>
           <span>1 consistent PA28 fleet</span>

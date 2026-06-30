@@ -32,14 +32,14 @@ export function TafTool() {
   };
 
   return (
-    <div className="rounded-xl border-t-4 border-gold-500 bg-white p-6 shadow-sm">
+    <div className="rounded-xl border-t-4 border-accent bg-white p-6 shadow-sm">
       <div className="flex items-center justify-between">
-        <h3 className="font-heading text-xl text-navy-900">Forecast TAF</h3>
+        <h3 className="font-heading text-xl text-heading">Forecast TAF</h3>
         <button
           type="button"
           onClick={handleRefresh}
           disabled={loading}
-          className="inline-flex items-center gap-2 rounded-lg border border-navy-800/20 px-3 py-2 text-sm font-semibold text-navy-900 hover:bg-sand-50 focus:outline-none focus:ring-2 focus:ring-gold-500 disabled:opacity-50"
+          className="inline-flex items-center gap-2 rounded-lg border border-dark-muted/20 px-3 py-2 text-sm font-semibold text-heading hover:bg-bg focus:outline-none focus:ring-2 focus:ring-focus-ring disabled:opacity-50"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@ export function TafTool() {
         </button>
       </div>
 
-      {loading && <p className="mt-4 text-sm text-ink-light">Loading TAF...</p>}
+      {loading && <p className="mt-4 text-sm text-muted">Loading TAF...</p>}
 
       {error && (
         <div className="mt-4 rounded-lg bg-error/10 p-4 text-sm text-error">
@@ -71,7 +71,7 @@ export function TafTool() {
               href="https://aviationweather.gov/"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline hover:text-navy-900"
+              className="underline hover:text-heading"
             >
               Aviation Weather Center
             </a>{" "}
@@ -82,9 +82,9 @@ export function TafTool() {
 
       {taf && !loading && (
         <div className="mt-4 grid gap-4">
-          <div className="rounded-lg bg-sand-50 p-4">
-            <p className="font-mono text-sm font-medium text-navy-900">{taf.raw || "No raw TAF available."}</p>
-            {taf.issued && <p className="mt-1 text-xs text-ink-light">Issued {taf.issued}</p>}
+          <div className="rounded-lg bg-bg p-4">
+            <p className="font-mono text-sm font-medium text-heading">{taf.raw || "No raw TAF available."}</p>
+            {taf.issued && <p className="mt-1 text-xs text-muted">Issued {taf.issued}</p>}
           </div>
 
           {taf.periods.length > 0 && (
@@ -92,12 +92,12 @@ export function TafTool() {
               {taf.periods.map((period, index) => (
                 <div
                   key={index}
-                  className="rounded-lg border border-navy-800/10 p-4"
+                  className="rounded-lg border border-border-subtle p-4"
                 >
-                  <p className="text-xs font-semibold uppercase tracking-wide text-ink-light">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-muted">
                     {period.from} – {period.to}
                   </p>
-                  <p className="mt-1 text-ink">{period.summary}</p>
+                  <p className="mt-1 text-body">{period.summary}</p>
                 </div>
               ))}
             </div>

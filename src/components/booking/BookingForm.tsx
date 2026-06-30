@@ -71,17 +71,17 @@ export function BookingForm({ value, onChange }: BookingFormProps) {
 
   const inputClasses = (field: keyof BookingFormData) =>
     cn(
-      "w-full rounded-lg border bg-white px-4 py-3 text-ink focus:outline-none focus:ring-2",
+      "w-full rounded-lg border bg-white px-4 py-3 text-body focus:outline-none focus:ring-2",
       touched[field] && errorsByField[field]
         ? "border-error focus:border-error focus:ring-error/50"
-        : "border-navy-900 focus:border-gold-500 focus:ring-gold-500"
+        : "border-border focus:border-accent focus:ring-focus-ring"
     );
 
   return (
     <form className="grid gap-5" onSubmit={(e) => e.preventDefault()} noValidate>
       <div className="grid gap-5 sm:grid-cols-2">
         <label className="block">
-          <span className="mb-1 block text-sm font-semibold text-navy-900">
+          <span className="mb-1 block text-sm font-semibold text-heading">
             First name
           </span>
           <input
@@ -105,7 +105,7 @@ export function BookingForm({ value, onChange }: BookingFormProps) {
           )}
         </label>
         <label className="block">
-          <span className="mb-1 block text-sm font-semibold text-navy-900">
+          <span className="mb-1 block text-sm font-semibold text-heading">
             Last name
           </span>
           <input
@@ -131,7 +131,7 @@ export function BookingForm({ value, onChange }: BookingFormProps) {
       </div>
       <div className="grid gap-5 sm:grid-cols-2">
         <label className="block">
-          <span className="mb-1 block text-sm font-semibold text-navy-900">Phone</span>
+          <span className="mb-1 block text-sm font-semibold text-heading">Phone</span>
           <input
             type="tel"
             value={value.phone}
@@ -151,7 +151,7 @@ export function BookingForm({ value, onChange }: BookingFormProps) {
           )}
         </label>
         <label className="block">
-          <span className="mb-1 block text-sm font-semibold text-navy-900">Email</span>
+          <span className="mb-1 block text-sm font-semibold text-heading">Email</span>
           <input
             type="email"
             value={value.email}
@@ -173,7 +173,7 @@ export function BookingForm({ value, onChange }: BookingFormProps) {
       </div>
       <div className="grid gap-5 sm:grid-cols-2">
         <label className="block">
-          <span className="mb-1 block text-sm font-semibold text-navy-900">
+          <span className="mb-1 block text-sm font-semibold text-heading">
             Weight (optional)
           </span>
           <input

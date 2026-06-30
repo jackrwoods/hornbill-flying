@@ -6,12 +6,12 @@ import Link from "next/link";
 
 export function WeatherSection() {
   return (
-    <Section background="sand" id="weather">
+    <Section background="default" id="weather">
       <Container>
-        <h2 className="font-heading text-3xl text-navy-900 md:text-4xl">
+        <h2 className="font-heading text-3xl text-heading md:text-4xl">
           Reno–Tahoe weather (KRNO)
         </h2>
-        <p className="mt-4 max-w-2xl text-ink-light">
+        <p className="mt-4 max-w-2xl text-muted">
           Check the current METAR and forecast TAF for Reno–Tahoe, then jump to a
           full briefing or our RNO-specific density altitude tool.
         </p>
@@ -23,13 +23,13 @@ export function WeatherSection() {
         <div className="mt-8 flex flex-wrap gap-4">
           <Link
             href="/tools/density-altitude/"
-            className="inline-flex items-center rounded-lg bg-navy-900 px-5 py-3 text-sm font-semibold text-white hover:bg-navy-800 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2"
+            className="inline-flex items-center rounded-lg bg-dark px-5 py-3 text-sm font-semibold text-on-dark hover:bg-dark-muted focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2"
           >
             Density altitude calculator for RNO
           </Link>
           <Link
             href="/blog/density-altitude-krno/"
-            className="inline-flex items-center rounded-lg border-2 border-navy-900 px-5 py-3 text-sm font-semibold text-navy-900 hover:bg-navy-900/5 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2"
+            className="inline-flex items-center rounded-lg border-2 border-border px-5 py-3 text-sm font-semibold text-heading hover:bg-dark/5 focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2"
           >
             Density altitude at KRNO
           </Link>

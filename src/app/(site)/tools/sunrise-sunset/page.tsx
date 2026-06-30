@@ -42,7 +42,7 @@ export default function SunriseSunsetPage() {
         { href: "/discovery-flight/", label: "Book a discovery flight" },
       ]}
     >
-      <div className="rounded-lg bg-teal-100 p-4 text-ink">
+      <div className="rounded-lg bg-callout p-4 text-body">
         <p>
           Pick any date to see sunrise, sunset, and civil twilight for
           Reno–Tahoe. The last legal evening flight time marks the end of evening

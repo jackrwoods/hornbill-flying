@@ -3,7 +3,7 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 
 export function MembershipBreadcrumbSection() {
   return (
-    <div className="border-b border-navy-800/10 bg-sand-50 py-4">
+    <div className="border-b border-border-subtle bg-bg py-4">
       <Container>
         <Breadcrumb
           items={[

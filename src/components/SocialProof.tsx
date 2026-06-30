@@ -34,11 +34,11 @@ export function SocialProof({ testimonials }: SocialProofProps) {
                   className="mb-4 h-12 w-12 rounded-full object-cover"
                 />
               )}
-              <p className="text-ink-light">&ldquo;{t.quote}&rdquo;</p>
+              <p className="text-muted">&ldquo;{t.quote}&rdquo;</p>
               <footer className="mt-4">
-                <p className="font-semibold text-navy-900">{t.name}</p>
+                <p className="font-semibold text-heading">{t.name}</p>
                 {t.role && (
-                  <p className="text-sm text-ink-light">{t.role}</p>
+                  <p className="text-sm text-muted">{t.role}</p>
                 )}
               </footer>
             </blockquote>
@@ -57,15 +57,15 @@ export function SocialProof({ testimonials }: SocialProofProps) {
             <h3 className="font-heading text-2xl">
               {homepageFounderCredibility.heading}
             </h3>
-            <p className="mt-3 text-ink-light">
+            <p className="mt-3 text-muted">
               {homepageFounderCredibility.statement}
             </p>
           </div>
           <div className="flex flex-col gap-4">
-            <ul className="space-y-2 text-ink-light">
+            <ul className="space-y-2 text-muted">
               {homepageFounderCredibility.highlights.map((highlight) => (
                 <li key={highlight} className="flex items-center gap-2">
-                  <span className="h-2 w-2 rounded-full bg-gold-500" />
+                  <span className="h-2 w-2 rounded-full bg-accent" />
                   {highlight}
                 </li>
               ))}

@@ -10,13 +10,13 @@ export function PricingSnapshot({ className }: { className?: string }) {
           <div
             key={rate.id}
             className={`rounded-xl bg-white p-6 shadow-sm ${
-              rate.id === "member-rate" ? "border-t-4 border-gold-500" : ""
+              rate.id === "member-rate" ? "border-t-4 border-accent" : ""
             }`}
           >
-            <p className="font-mono text-xs uppercase tracking-wide text-ink-light">
+            <p className="font-mono text-xs uppercase tracking-wide text-muted">
               {rate.label}
             </p>
-            <p className="mt-2 font-heading text-4xl text-navy-900">
+            <p className="mt-2 font-heading text-4xl text-heading">
               {rate.value}
             </p>
           </div>
@@ -26,7 +26,7 @@ export function PricingSnapshot({ className }: { className?: string }) {
       <div className="mt-8 text-center">
         <Link
           href={homepagePricingSnapshot.ctaHref}
-          className="inline-block text-sm font-semibold text-gold-500 hover:text-gold-400 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+          className="inline-block text-sm font-semibold text-accent hover:text-on-dark-accent-hover focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
         >
           {homepagePricingSnapshot.cta}
         </Link>

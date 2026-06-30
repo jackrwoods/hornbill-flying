@@ -7,7 +7,7 @@ export function CommercialHeroSection() {
   const { hero } = commercialPilotProgram;
 
   return (
-    <section className="relative overflow-hidden bg-navy-900 text-white">
+    <section className="relative overflow-hidden bg-dark text-on-dark">
       <div className="absolute inset-0 z-0">
         <Image
           src={hero.image}
@@ -19,7 +19,7 @@ export function CommercialHeroSection() {
           className="object-cover opacity-40"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-900/60 to-navy-900/40" />
+        <div className="absolute inset-0 bg-hero-scrim" />
       </div>
 
       <Container className="relative z-10">
@@ -28,7 +28,7 @@ export function CommercialHeroSection() {
             <h1 className="font-heading text-4xl leading-tight md:text-5xl lg:text-6xl">
               {hero.title}
             </h1>
-            <p className="mt-6 text-lg text-sand-50/90 md:text-xl">
+            <p className="mt-6 text-lg text-on-dark md:text-xl">
               {hero.subtitle}
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
@@ -42,7 +42,7 @@ export function CommercialHeroSection() {
               <CTALink
                 href={hero.cta.secondary.href}
                 variant="tertiary"
-                className="text-white hover:bg-white/10"
+                className="text-on-dark hover:bg-on-dark-subtle"
                 analytics={hero.cta.secondary.analytics}
               >
                 {hero.cta.secondary.label}

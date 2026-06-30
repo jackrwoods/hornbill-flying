@@ -18,7 +18,7 @@ export function InstructorSelector({
 }: InstructorSelectorProps) {
   return (
     <fieldset className="space-y-3">
-      <legend className="mb-2 text-sm font-semibold text-navy-900">
+      <legend className="mb-2 text-sm font-semibold text-heading">
         Preferred instructor (optional)
       </legend>
       <div className="grid gap-3 sm:grid-cols-2">
@@ -26,15 +26,15 @@ export function InstructorSelector({
           type="button"
           onClick={() => onSelect(null)}
           className={cn(
-            "min-h-[3.25rem] rounded-lg border p-4 text-left transition-colors focus:outline-none focus:ring-2 focus:ring-gold-500",
+            "min-h-[3.25rem] rounded-lg border p-4 text-left transition-colors focus:outline-none focus:ring-2 focus:ring-focus-ring",
             !preferredInstructor
-              ? "border-gold-500 bg-gold-500/10"
-              : "border-navy-800/10 bg-white hover:bg-sand-50"
+              ? "border-accent bg-accent/10"
+              : "border-border-subtle bg-white hover:bg-bg"
           )}
           aria-pressed={!preferredInstructor}
         >
-          <span className="font-semibold text-navy-900">No preference</span>
-          <span className="block text-sm text-ink-light">
+          <span className="font-semibold text-heading">No preference</span>
+          <span className="block text-sm text-muted">
             We will match you with the next available CFI.
           </span>
         </button>
@@ -46,15 +46,15 @@ export function InstructorSelector({
               type="button"
               onClick={() => onSelect(instructor.slug)}
               className={cn(
-                "min-h-[3.25rem] rounded-lg border p-4 text-left transition-colors focus:outline-none focus:ring-2 focus:ring-gold-500",
+                "min-h-[3.25rem] rounded-lg border p-4 text-left transition-colors focus:outline-none focus:ring-2 focus:ring-focus-ring",
                 isSelected
-                  ? "border-gold-500 bg-gold-500/10"
-                  : "border-navy-800/10 bg-white hover:bg-sand-50"
+                  ? "border-accent bg-accent/10"
+                  : "border-border-subtle bg-white hover:bg-bg"
               )}
               aria-pressed={isSelected}
             >
-              <span className="font-semibold text-navy-900">{instructor.name}</span>
-              <span className="block text-sm text-ink-light">
+              <span className="font-semibold text-heading">{instructor.name}</span>
+              <span className="block text-sm text-muted">
                 {instructor.title}
               </span>
             </button>

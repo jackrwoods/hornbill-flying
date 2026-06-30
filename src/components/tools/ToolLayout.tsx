@@ -56,20 +56,20 @@ export function ToolLayout({
         ]}
       />
 
-      <Section background="sand">
+      <Section background="default">
         <Container className="max-w-4xl">{children}</Container>
       </Section>
 
       {related && related.length > 0 && (
-        <Section background="white">
+        <Section background="card">
           <Container className="max-w-4xl">
-            <h2 className="font-heading text-2xl text-navy-900">Related pages</h2>
+            <h2 className="font-heading text-2xl text-heading">Related pages</h2>
             <ul className="mt-4 grid gap-3 sm:grid-cols-2">
               {related.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="block rounded-lg border border-navy-800/10 bg-sand-50 p-4 font-semibold text-navy-900 hover:border-gold-500 hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500"
+                    className="block rounded-lg border border-border-subtle bg-bg p-4 font-semibold text-heading hover:border-accent hover:text-accent focus:outline-none focus:ring-2 focus:ring-focus-ring"
                   >
                     {link.label}
                   </Link>
@@ -81,9 +81,9 @@ export function ToolLayout({
       )}
 
       {faqs && faqs.length > 0 && (
-        <Section background="white" id="faq">
+        <Section background="card" id="faq">
           <Container className="max-w-4xl">
-            <h2 className="font-heading text-2xl text-navy-900">Frequently asked questions</h2>
+            <h2 className="font-heading text-2xl text-heading">Frequently asked questions</h2>
             <div className="mt-6">
               <FAQAccordion faqs={faqs} />
             </div>
@@ -92,15 +92,15 @@ export function ToolLayout({
       )}
 
       {showCta && (
-        <Section background="navy" id="cta">
+        <Section background="dark" id="cta">
           <Container className="max-w-4xl text-center">
-            <h2 className="font-heading text-3xl text-white">Ready to fly?</h2>
-            <p className="mx-auto mt-4 max-w-xl text-sand-50/90">
+            <h2 className="font-heading text-3xl text-on-dark">Ready to fly?</h2>
+            <p className="mx-auto mt-4 max-w-xl text-on-dark">
               Book a discovery flight at Hornbill Aviation and see how Part 61 training in a PA28 fleet fits your schedule.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <CTALink variant="secondary">Book a discovery flight</CTALink>
-              <PhoneLink className="text-white hover:text-gold-400" showIcon />
+              <PhoneLink className="text-on-dark hover:text-on-dark-accent-hover" showIcon />
             </div>
           </Container>
         </Section>

@@ -11,21 +11,21 @@ export function ProgramCard({ program, className }: ProgramCardProps) {
   return (
     <div
       className={cn(
-        "group flex flex-col rounded-xl border-t-4 border-gold-500 bg-white p-6 shadow-sm transition hover:shadow-md",
+        "group flex flex-col rounded-xl border-t-4 border-accent bg-white p-6 shadow-sm transition hover:shadow-md",
         className
       )}
     >
-      <h3 className="font-heading text-2xl text-navy-900 group-hover:text-gold-500 transition-colors">
+      <h3 className="font-heading text-2xl text-heading group-hover:text-accent transition-colors">
         {program.title}
       </h3>
-      <p className="mt-2 flex-1 text-ink-light">{program.shortDescription}</p>
-      <div className="mt-4 flex flex-wrap items-center gap-3 font-mono text-xs text-navy-900">
-        <span className="rounded bg-teal-100 px-2 py-1">{program.duration}</span>
-        <span className="rounded bg-sand-50 px-2 py-1">{program.costRange}</span>
+      <p className="mt-2 flex-1 text-muted">{program.shortDescription}</p>
+      <div className="mt-4 flex flex-wrap items-center gap-3 font-mono text-xs text-heading">
+        <span className="rounded bg-callout px-2 py-1">{program.duration}</span>
+        <span className="rounded bg-bg px-2 py-1">{program.costRange}</span>
       </div>
       <Link
         href={program.url}
-        className="mt-5 inline-flex items-center text-sm font-semibold text-gold-500 hover:text-gold-400 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+        className="mt-5 inline-flex items-center text-sm font-semibold text-accent hover:text-on-dark-accent-hover focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
       >
         See program
         <svg

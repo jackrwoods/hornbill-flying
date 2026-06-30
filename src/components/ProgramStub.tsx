@@ -47,14 +47,14 @@ export function ProgramStub({ program, description, related }: ProgramStubProps)
   return (
     <>
       <SchemaInjector schema={buildSchemaGraph(...schemas)} id={`${program.slug}-stub-schema`} />
-      <section className="relative overflow-hidden bg-navy-900 text-white">
+      <section className="relative overflow-hidden bg-dark text-on-dark">
         <Container className="relative z-10">
           <div className="py-20 md:py-28">
             <div className="max-w-2xl">
               <h1 className="font-heading text-4xl leading-tight md:text-5xl lg:text-6xl">
                 {program.title} training in Reno, NV
               </h1>
-              <p className="mt-6 text-lg text-sand-50/90 md:text-xl">
+              <p className="mt-6 text-lg text-on-dark md:text-xl">
                 {description || program.shortDescription}
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
@@ -62,7 +62,7 @@ export function ProgramStub({ program, description, related }: ProgramStubProps)
                   Talk to an instructor
                 </CTALink>
                 <PhoneLink
-                  className="text-white hover:text-gold-400"
+                  className="text-on-dark hover:text-on-dark-accent-hover"
                   showIcon
                 />
               </div>
@@ -71,35 +71,35 @@ export function ProgramStub({ program, description, related }: ProgramStubProps)
         </Container>
       </section>
 
-      <Section background="sand" id="overview">
+      <Section background="default" id="overview">
         <Container>
           <div className="grid gap-8 lg:grid-cols-3">
-            <div className="rounded-xl border-t-4 border-gold-500 bg-white p-6">
-              <p className="text-sm font-semibold uppercase tracking-wide text-ink-light">
+            <div className="rounded-xl border-t-4 border-accent bg-white p-6">
+              <p className="text-sm font-semibold uppercase tracking-wide text-muted">
                 Target certificate
               </p>
-              <p className="mt-2 font-heading text-xl text-navy-900">
+              <p className="mt-2 font-heading text-xl text-heading">
                 {program.targetCertificate}
               </p>
             </div>
-            <div className="rounded-xl border-t-4 border-gold-500 bg-white p-6">
-              <p className="text-sm font-semibold uppercase tracking-wide text-ink-light">
+            <div className="rounded-xl border-t-4 border-accent bg-white p-6">
+              <p className="text-sm font-semibold uppercase tracking-wide text-muted">
                 Typical timeline
               </p>
-              <p className="mt-2 font-heading text-xl text-navy-900">
+              <p className="mt-2 font-heading text-xl text-heading">
                 {program.duration}
               </p>
             </div>
-            <div className="rounded-xl border-t-4 border-gold-500 bg-white p-6">
-              <p className="text-sm font-semibold uppercase tracking-wide text-ink-light">
+            <div className="rounded-xl border-t-4 border-accent bg-white p-6">
+              <p className="text-sm font-semibold uppercase tracking-wide text-muted">
                 Starting cost range
               </p>
-              <p className="mt-2 font-heading text-xl text-navy-900">
+              <p className="mt-2 font-heading text-xl text-heading">
                 {program.costRange}
               </p>
             </div>
           </div>
-          <p className="mt-8 max-w-3xl text-ink-light">
+          <p className="mt-8 max-w-3xl text-muted">
             The full {program.title} program page is coming soon. In the meantime,
             contact us for a personalized training plan, current rates, and
             availability.
@@ -107,9 +107,9 @@ export function ProgramStub({ program, description, related }: ProgramStubProps)
         </Container>
       </Section>
 
-      <Section background="white" id="related-pathways">
+      <Section background="card" id="related-pathways">
         <Container>
-          <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
+          <h2 className="font-heading text-3xl md:text-4xl text-heading">
             Related pathways
           </h2>
           <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -117,12 +117,12 @@ export function ProgramStub({ program, description, related }: ProgramStubProps)
               <Link
                 key={item.href}
                 href={item.href}
-                className="group rounded-xl border-t-4 border-gold-500 bg-sand-50 p-6 transition hover:shadow-md focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2"
+                className="group rounded-xl border-t-4 border-accent bg-bg p-6 transition hover:shadow-md focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2"
               >
-                <h3 className="font-heading text-xl text-navy-900 group-hover:text-gold-500 transition-colors">
+                <h3 className="font-heading text-xl text-heading group-hover:text-accent transition-colors">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-ink-light">{item.description}</p>
+                <p className="mt-2 text-muted">{item.description}</p>
               </Link>
             ))}
           </div>

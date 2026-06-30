@@ -78,15 +78,15 @@ export function PaymentStep({
 
   return (
     <div className="space-y-6">
-      <div className="rounded-xl border border-navy-800/10 bg-white p-5">
+      <div className="rounded-xl border border-border-subtle bg-white p-5">
         <div className="flex items-baseline justify-between">
-          <span className="text-ink-light">Total</span>
-          <span className="font-mono text-3xl font-semibold text-navy-900">
+          <span className="text-muted">Total</span>
+          <span className="font-mono text-3xl font-semibold text-heading">
             ${amount.toFixed(2)}
           </span>
         </div>
         {flightType && (
-          <div className="mt-2 text-sm text-ink-light">
+          <div className="mt-2 text-sm text-muted">
             Flight type: {flightType}
             {slot && (
               <span className="ml-2">
@@ -102,56 +102,56 @@ export function PaymentStep({
       </div>
 
       <fieldset className="space-y-3">
-        <legend className="mb-2 text-sm font-semibold text-navy-900">
+        <legend className="mb-2 text-sm font-semibold text-heading">
           Choose how to pay
         </legend>
         <button
           type="button"
           onClick={() => handleMethodChange("deposit")}
           className={cn(
-            "flex min-h-[3.25rem] w-full items-center justify-between rounded-lg border px-4 py-3 text-left transition-colors focus:outline-none focus:ring-2 focus:ring-gold-500",
+            "flex min-h-[3.25rem] w-full items-center justify-between rounded-lg border px-4 py-3 text-left transition-colors focus:outline-none focus:ring-2 focus:ring-focus-ring",
             method === "deposit"
-              ? "border-gold-500 bg-gold-500/10"
-              : "border-navy-800/10 bg-white hover:bg-sand-50"
+              ? "border-accent bg-accent/10"
+              : "border-border-subtle bg-white hover:bg-bg"
           )}
           aria-pressed={method === "deposit"}
           disabled={depositAmount <= 0}
         >
-          <span className="font-semibold text-navy-900">Pay ${depositAmount} deposit</span>
-          <span className="text-sm text-ink-light">Balance at the flight</span>
+          <span className="font-semibold text-heading">Pay ${depositAmount} deposit</span>
+          <span className="text-sm text-muted">Balance at the flight</span>
         </button>
         <button
           type="button"
           onClick={() => handleMethodChange("full")}
           className={cn(
-            "flex min-h-[3.25rem] w-full items-center justify-between rounded-lg border px-4 py-3 text-left transition-colors focus:outline-none focus:ring-2 focus:ring-gold-500",
+            "flex min-h-[3.25rem] w-full items-center justify-between rounded-lg border px-4 py-3 text-left transition-colors focus:outline-none focus:ring-2 focus:ring-focus-ring",
             method === "full"
-              ? "border-gold-500 bg-gold-500/10"
-              : "border-navy-800/10 bg-white hover:bg-sand-50"
+              ? "border-accent bg-accent/10"
+              : "border-border-subtle bg-white hover:bg-bg"
           )}
           aria-pressed={method === "full"}
         >
-          <span className="font-semibold text-navy-900">Pay ${amount.toFixed(2)} in full</span>
-          <span className="text-sm text-ink-light">Skip the counter</span>
+          <span className="font-semibold text-heading">Pay ${amount.toFixed(2)} in full</span>
+          <span className="text-sm text-muted">Skip the counter</span>
         </button>
         <button
           type="button"
           onClick={() => handleMethodChange("none")}
           className={cn(
-            "flex min-h-[3.25rem] w-full items-center justify-between rounded-lg border px-4 py-3 text-left transition-colors focus:outline-none focus:ring-2 focus:ring-gold-500",
+            "flex min-h-[3.25rem] w-full items-center justify-between rounded-lg border px-4 py-3 text-left transition-colors focus:outline-none focus:ring-2 focus:ring-focus-ring",
             method === "none"
-              ? "border-gold-500 bg-gold-500/10"
-              : "border-navy-800/10 bg-white hover:bg-sand-50"
+              ? "border-accent bg-accent/10"
+              : "border-border-subtle bg-white hover:bg-bg"
           )}
           aria-pressed={method === "none"}
         >
-          <span className="font-semibold text-navy-900">Pay at the flight</span>
-          <span className="text-sm text-ink-light">No deposit required</span>
+          <span className="font-semibold text-heading">Pay at the flight</span>
+          <span className="text-sm text-muted">No deposit required</span>
         </button>
       </fieldset>
 
-      <div className="rounded-xl border border-navy-800/10 bg-sand-50 p-4">
-        <p className="text-sm text-ink-light">
+      <div className="rounded-xl border border-border-subtle bg-bg p-4">
+        <p className="text-sm text-muted">
           Payment processing will be handled securely through Stripe, including
           Apple Pay and Google Pay when your device supports them. This demo
           does not charge a card.
@@ -159,14 +159,14 @@ export function PaymentStep({
       </div>
 
       <form onSubmit={(e) => { e.preventDefault(); handleConfirm(); }} className="space-y-4">
-        <div className="min-h-[4rem] rounded-lg border border-dashed border-navy-800/20 bg-white p-4 text-sm text-ink-light">
+        <div className="min-h-[4rem] rounded-lg border border-dashed border-dark-muted/20 bg-white p-4 text-sm text-muted">
           Stripe Payment Element will appear here once the backend payment-intent
           endpoint is connected.
         </div>
         <button
           type="submit"
           disabled={loading}
-          className="w-full rounded-lg bg-navy-900 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-navy-800 focus:outline-none focus:ring-2 focus:ring-gold-500 disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto"
+          className="w-full rounded-lg bg-dark px-5 py-3 text-sm font-semibold text-on-dark transition-colors hover:bg-dark-muted focus:outline-none focus:ring-2 focus:ring-focus-ring disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto"
         >
           {loading
             ? "Processing…"

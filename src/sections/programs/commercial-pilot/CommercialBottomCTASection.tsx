@@ -8,9 +8,9 @@ export function CommercialBottomCTASection() {
   const { bottomCTA } = commercialPilotProgram;
 
   return (
-    <Section background="gold" id="book-consultation">
+    <Section background="accent" id="book-consultation">
       <Container className="text-center">
-        <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
+        <h2 className="font-heading text-3xl md:text-4xl text-heading">
           {bottomCTA.title}
         </h2>
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -28,9 +28,9 @@ export function CommercialBottomCTASection() {
             {bottomCTA.secondaryCta}
           </CTALink>
         </div>
-        <p className="mt-6 text-navy-900/80">
+        <p className="mt-6 text-heading/80">
           Prefer to call?{" "}
-          <PhoneLink className="font-semibold text-navy-900 hover:underline" />
+          <PhoneLink className="font-semibold text-heading hover:underline" />
         </p>
       </Container>
     </Section>

@@ -7,13 +7,13 @@ export function InstrumentRatingDiscoveryFlightSection() {
   const { discoveryFlightCTA } = instrumentRatingProgram;
 
   return (
-    <Section background="gold" id="start">
+    <Section background="accent" id="start">
       <Container>
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
+          <h2 className="font-heading text-3xl md:text-4xl text-heading">
             {discoveryFlightCTA.title}
           </h2>
-          <p className="mt-4 text-navy-800">{discoveryFlightCTA.description}</p>
+          <p className="mt-4 text-dark-muted">{discoveryFlightCTA.description}</p>
 
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <CTALink
@@ -26,7 +26,7 @@ export function InstrumentRatingDiscoveryFlightSection() {
             <CTALink
               href={discoveryFlightCTA.secondaryHref}
               variant="tertiary"
-              className="border-navy-900 text-navy-900 hover:bg-navy-900/5"
+              className="border-border text-heading hover:bg-dark/5"
               analytics={discoveryFlightCTA.secondaryAnalytics}
             >
               {discoveryFlightCTA.secondaryCta}

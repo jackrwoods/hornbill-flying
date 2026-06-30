@@ -6,12 +6,12 @@ export function MountainFlyingTerrainWeatherSection() {
   const { terrainWeather } = mountainFlyingProgram;
 
   return (
-    <Section background="sand" id="terrain-and-weather">
+    <Section background="default" id="terrain-and-weather">
       <Container>
-        <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
+        <h2 className="font-heading text-3xl md:text-4xl text-heading">
           {terrainWeather.title}
         </h2>
-        <p className="mt-4 max-w-3xl text-ink-light">
+        <p className="mt-4 max-w-3xl text-muted">
           {terrainWeather.intro}
         </p>
 
@@ -19,12 +19,12 @@ export function MountainFlyingTerrainWeatherSection() {
           {terrainWeather.items.map((item) => (
             <div
               key={item.label}
-              className="rounded-xl border-t-4 border-gold-500 bg-white p-6 shadow-sm"
+              className="rounded-xl border-t-4 border-accent bg-white p-6 shadow-sm"
             >
-              <h3 className="font-heading text-xl text-navy-900">
+              <h3 className="font-heading text-xl text-heading">
                 {item.label}
               </h3>
-              <p className="mt-2 text-ink-light">{item.description}</p>
+              <p className="mt-2 text-muted">{item.description}</p>
             </div>
           ))}
         </div>

@@ -21,19 +21,19 @@ export function FaaResourcesSection() {
   const medical = externalResources.filter((r) => r.category === "medical");
 
   return (
-    <Section background="sand" id="faa-resources">
+    <Section background="default" id="faa-resources">
       <Container>
-        <h2 className="font-heading text-3xl text-navy-900 md:text-4xl">
+        <h2 className="font-heading text-3xl text-heading md:text-4xl">
           Useful FAA resources
         </h2>
-        <p className="mt-4 max-w-2xl text-ink-light">
+        <p className="mt-4 max-w-2xl text-muted">
           Curated links to the regulations, advisories, weather products, and
           safety programs you will reference most often during training.
         </p>
 
         <div className="mt-10 grid gap-8 lg:grid-cols-2">
           <div>
-            <h3 className="font-heading text-2xl text-navy-900">
+            <h3 className="font-heading text-2xl text-heading">
               Regulations and advisory circulars
             </h3>
             <div className="mt-4 grid gap-4">
@@ -56,7 +56,7 @@ export function FaaResourcesSection() {
           </div>
 
           <div>
-            <h3 className="font-heading text-2xl text-navy-900">
+            <h3 className="font-heading text-2xl text-heading">
               Weather products
             </h3>
             <div className="mt-4 grid gap-4">
@@ -79,7 +79,7 @@ export function FaaResourcesSection() {
           </div>
 
           <div>
-            <h3 className="font-heading text-2xl text-navy-900">NOTAMs</h3>
+            <h3 className="font-heading text-2xl text-heading">NOTAMs</h3>
             <div className="mt-4 grid gap-4">
               {notams.map((resource) => (
                 <ResourceCard
@@ -100,7 +100,7 @@ export function FaaResourcesSection() {
           </div>
 
           <div>
-            <h3 className="font-heading text-2xl text-navy-900">
+            <h3 className="font-heading text-2xl text-heading">
               Safety programs
             </h3>
             <div className="mt-4 grid gap-4">
@@ -123,7 +123,7 @@ export function FaaResourcesSection() {
           </div>
 
           <div className="lg:col-span-2">
-            <h3 className="font-heading text-2xl text-navy-900">Medical</h3>
+            <h3 className="font-heading text-2xl text-heading">Medical</h3>
             <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {medical.map((resource) => (
                 <ResourceCard

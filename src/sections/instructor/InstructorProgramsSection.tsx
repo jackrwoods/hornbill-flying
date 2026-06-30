@@ -18,9 +18,9 @@ export function InstructorProgramsSection({
   if (taughtPrograms.length === 0) return null;
 
   return (
-    <Section background="sand" id="programs">
+    <Section background="default" id="programs">
       <Container>
-        <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
+        <h2 className="font-heading text-3xl md:text-4xl text-heading">
           Programs {instructor.name.split(" ")[0]} teaches
         </h2>
         <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -28,13 +28,13 @@ export function InstructorProgramsSection({
             <Link
               key={program.slug}
               href={program.url}
-              className="group rounded-xl bg-white p-5 shadow-sm transition-shadow hover:shadow-md focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2"
+              className="group rounded-xl bg-white p-5 shadow-sm transition-shadow hover:shadow-md focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2"
             >
-              <h3 className="font-heading text-xl text-navy-900 group-hover:text-gold-500">
+              <h3 className="font-heading text-xl text-heading group-hover:text-accent">
                 {program.title}
               </h3>
-              <p className="mt-2 text-sm text-ink-light">{program.shortDescription}</p>
-              <p className="mt-4 text-sm font-semibold text-gold-500">
+              <p className="mt-2 text-sm text-muted">{program.shortDescription}</p>
+              <p className="mt-4 text-sm font-semibold text-accent">
                 See {program.title} training →
               </p>
             </Link>

@@ -6,18 +6,18 @@ export function InstrumentRatingPrerequisitesSection() {
   const { prerequisites } = instrumentRatingProgram;
 
   return (
-    <Section background="white" id="prerequisites">
+    <Section background="card" id="prerequisites">
       <Container>
-        <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
+        <h2 className="font-heading text-3xl md:text-4xl text-heading">
           {prerequisites.title}
         </h2>
-        <p className="mt-4 max-w-3xl text-ink-light">{prerequisites.intro}</p>
+        <p className="mt-4 max-w-3xl text-muted">{prerequisites.intro}</p>
 
         <ul className="mt-8 max-w-3xl space-y-3">
           {prerequisites.items.map((item) => (
             <li
               key={item}
-              className="flex items-start gap-3 text-ink"
+              className="flex items-start gap-3 text-body"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +29,7 @@ export function InstrumentRatingPrerequisitesSection() {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="mt-1 flex-shrink-0 text-gold-500"
+                className="mt-1 flex-shrink-0 text-accent"
                 aria-hidden="true"
               >
                 <polyline points="20 6 9 17 4 12" />

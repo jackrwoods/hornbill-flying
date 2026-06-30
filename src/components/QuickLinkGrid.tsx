@@ -94,8 +94,8 @@ export function QuickLinkGrid({
     >
       {items.map((item) => {
         const iconColor = isPrimary
-          ? "text-gold-500"
-          : "text-navy-900 group-hover:text-gold-500";
+          ? "text-accent"
+          : "text-heading group-hover:text-accent";
         const content = (
           <>
             <span className={cn("shrink-0", iconColor)}>
@@ -114,7 +114,7 @@ export function QuickLinkGrid({
                 analytics="discovery_flight_booking_started"
                 className={cn(
                   "w-full justify-start gap-3 px-5 py-4 focus:ring-offset-2",
-                  isPrimary ? "bg-navy-900 text-white hover:bg-navy-800" : ""
+                  isPrimary ? "bg-dark text-on-dark hover:bg-dark-muted" : ""
                 )}
               >
                 {content}
@@ -123,10 +123,10 @@ export function QuickLinkGrid({
               <Link
                 href={item.href}
                 className={cn(
-                  "group flex items-center gap-3 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2",
+                  "group flex items-center gap-3 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2",
                   isPrimary
-                    ? "bg-navy-900 px-5 py-4 text-white hover:bg-navy-800"
-                    : "text-navy-900 hover:text-gold-500"
+                    ? "bg-dark px-5 py-4 text-on-dark hover:bg-dark-muted"
+                    : "text-heading hover:text-accent"
                 )}
               >
                 {content}

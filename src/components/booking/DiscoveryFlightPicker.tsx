@@ -49,21 +49,21 @@ export function DiscoveryFlightPicker({
               type="button"
               onClick={() => onSelectType(type.id)}
               className={cn(
-                "flex flex-col rounded-xl border p-5 text-left transition-colors focus:outline-none focus:ring-2 focus:ring-gold-500",
+                "flex flex-col rounded-xl border p-5 text-left transition-colors focus:outline-none focus:ring-2 focus:ring-focus-ring",
                 isSelected
-                  ? "border-gold-500 bg-gold-500/10"
-                  : "border-navy-800/10 bg-white hover:bg-sand-50"
+                  ? "border-accent bg-accent/10"
+                  : "border-border-subtle bg-white hover:bg-bg"
               )}
               aria-pressed={isSelected}
             >
-              <span className="font-heading text-xl text-navy-900">
+              <span className="font-heading text-xl text-heading">
                 {type.label}
               </span>
-              <span className="mt-1 text-sm text-ink-light">{type.duration}</span>
-              <span className="mt-3 font-mono text-lg font-semibold text-navy-900">
+              <span className="mt-1 text-sm text-muted">{type.duration}</span>
+              <span className="mt-3 font-mono text-lg font-semibold text-heading">
                 ${type.price}
               </span>
-              <p className="mt-2 text-sm text-ink-light">{type.description}</p>
+              <p className="mt-2 text-sm text-muted">{type.description}</p>
             </button>
           );
         })}
@@ -74,10 +74,10 @@ export function DiscoveryFlightPicker({
   return (
     <div className="space-y-4">
       {loading && (
-        <p className="text-ink-light">Loading available slots...</p>
+        <p className="text-muted">Loading available slots...</p>
       )}
       {!loading && slots.length === 0 && (
-        <p className="text-ink-light">
+        <p className="text-muted">
           No slots available for the selected flight type. Choose a different
           option or call us.
         </p>
@@ -92,21 +92,21 @@ export function DiscoveryFlightPicker({
               type="button"
               onClick={() => onSelectSlot(isSelected ? null : slot)}
               className={cn(
-                "rounded-lg border p-4 text-left transition-colors focus:outline-none focus:ring-2 focus:ring-gold-500",
+                "rounded-lg border p-4 text-left transition-colors focus:outline-none focus:ring-2 focus:ring-focus-ring",
                 isSelected
-                  ? "border-gold-500 bg-gold-500/10"
-                  : "border-navy-800/10 bg-white hover:bg-sand-50"
+                  ? "border-accent bg-accent/10"
+                  : "border-border-subtle bg-white hover:bg-bg"
               )}
               aria-pressed={isSelected}
             >
-              <span className="block font-semibold text-navy-900">
+              <span className="block font-semibold text-heading">
                 {date.toLocaleDateString(undefined, {
                   weekday: "short",
                   month: "short",
                   day: "numeric",
                 })}
               </span>
-              <span className="block text-sm text-ink-light">
+              <span className="block text-sm text-muted">
                 {date.toLocaleTimeString(undefined, {
                   hour: "numeric",
                   minute: "2-digit",
@@ -117,7 +117,7 @@ export function DiscoveryFlightPicker({
                   minute: "2-digit",
                 })}
               </span>
-              <span className="mt-1 block text-xs text-ink-light">
+              <span className="mt-1 block text-xs text-muted">
                 {slot.instructorName} · {slot.aircraftTail}
               </span>
             </button>

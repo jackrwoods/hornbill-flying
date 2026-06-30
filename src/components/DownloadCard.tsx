@@ -15,25 +15,25 @@ export function DownloadCard({ document, className }: DownloadCardProps) {
   return (
     <div
       className={cn(
-        "flex flex-col rounded-xl border-t-4 border-gold-500 bg-white p-6 shadow-sm",
+        "flex flex-col rounded-xl border-t-4 border-accent bg-white p-6 shadow-sm",
         className
       )}
     >
       <div className="flex flex-wrap items-start justify-between gap-2">
-        <h3 className="font-heading text-xl text-navy-900">{document.title}</h3>
+        <h3 className="font-heading text-xl text-heading">{document.title}</h3>
         {document.tailNumber && (
-          <span className="rounded-full bg-teal-100 px-2.5 py-1 text-xs font-semibold text-navy-900">
+          <span className="rounded-full bg-callout px-2.5 py-1 text-xs font-semibold text-heading">
             {document.tailNumber}
           </span>
         )}
       </div>
 
-      <p className="mt-2 flex-1 text-sm text-ink-light">
+      <p className="mt-2 flex-1 text-sm text-muted">
         {document.description}
       </p>
 
-      <div className="mt-4 flex flex-wrap items-center gap-3 text-xs text-ink-light">
-        <span className="rounded bg-sand-50 px-2 py-1 font-semibold text-navy-900">
+      <div className="mt-4 flex flex-wrap items-center gap-3 text-xs text-muted">
+        <span className="rounded bg-bg px-2 py-1 font-semibold text-heading">
           {document.format}
         </span>
         {document.size && (
@@ -53,20 +53,20 @@ export function DownloadCard({ document, className }: DownloadCardProps) {
             download={document.externalUrl ? undefined : true}
             target={document.externalUrl ? "_blank" : undefined}
             rel={document.externalUrl ? "noopener noreferrer" : undefined}
-            className="inline-flex items-center justify-center rounded-lg bg-navy-900 px-5 py-3 text-sm font-semibold text-white hover:bg-navy-800 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2"
+            className="inline-flex items-center justify-center rounded-lg bg-dark px-5 py-3 text-sm font-semibold text-on-dark hover:bg-dark-muted focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2"
             aria-label={`Download ${document.title} ${document.format}`}
           >
             Download {document.format}
           </a>
         ) : (
           <div className="flex flex-wrap items-center gap-3">
-            <span className="inline-flex items-center rounded-lg bg-sand-50 px-4 py-2 text-sm font-semibold text-ink-light">
+            <span className="inline-flex items-center rounded-lg bg-bg px-4 py-2 text-sm font-semibold text-muted">
               Coming soon
             </span>
             {document.tailNumber && (
               <Link
                 href="/fleet/"
-                className="text-sm font-semibold text-navy-900 underline hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+                className="text-sm font-semibold text-heading underline hover:text-accent focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
               >
                 See current aircraft
               </Link>

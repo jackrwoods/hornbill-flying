@@ -37,7 +37,7 @@ export default function ComingSoonPage() {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="bg-navy-900">
+      <header className="bg-dark">
         <Container>
           <div className="flex h-18 items-center justify-between py-3">
             <div className="inline-flex items-center gap-3">
@@ -50,7 +50,7 @@ export default function ComingSoonPage() {
                 priority
                 unoptimized
               />
-              <span className="font-heading text-xl text-white">
+              <span className="font-heading text-xl text-on-dark">
                 {siteConfig.brandName}
               </span>
             </div>
@@ -59,7 +59,7 @@ export default function ComingSoonPage() {
               href={siteConfig.flightCircleScheduleUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded px-3 py-2 text-sm font-medium text-white hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2"
+              className="rounded px-3 py-2 text-sm font-medium text-on-dark hover:text-on-dark-accent focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2"
             >
               Schedule
             </a>
@@ -68,7 +68,7 @@ export default function ComingSoonPage() {
       </header>
 
       <main className="flex-1">
-        <section className="relative overflow-hidden bg-navy-900 text-white">
+        <section className="relative overflow-hidden bg-dark text-on-dark">
           <div className="absolute inset-0 z-0">
             <Image
               src="/images/hero/homepage-hero.jpeg"
@@ -82,7 +82,7 @@ export default function ComingSoonPage() {
               sizes="100vw"
               style={{ minWidth: "100%", minHeight: "100%" }}
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-900/60 to-navy-900/40" />
+            <div className="absolute inset-0 bg-hero-scrim" />
           </div>
 
           <Container className="relative z-10">
@@ -91,7 +91,7 @@ export default function ComingSoonPage() {
                 <h1 className="font-heading text-4xl leading-tight md:text-5xl lg:text-6xl">
                   Aircraft Rentals and Flight Training
                 </h1>
-                <p className="mt-6 text-lg text-sand-50/90 md:text-xl">
+                <p className="mt-6 text-lg text-on-dark md:text-xl">
                   Hornbill Aviation is getting ready for takeoff. Check back soon
                   for our full site, or schedule through Flight Circle today.
                 </p>
@@ -100,12 +100,12 @@ export default function ComingSoonPage() {
           </Container>
         </section>
 
-        <section className="bg-sand-50 py-16 md:py-24">
+        <section className="bg-bg py-16 md:py-24">
           <Container>
-            <h2 className="font-heading text-3xl text-navy-900 md:text-4xl">
+            <h2 className="font-heading text-3xl text-heading md:text-4xl">
               The fleet
             </h2>
-            <p className="mt-4 max-w-2xl text-ink-light">
+            <p className="mt-4 max-w-2xl text-muted">
               Our available aircraft and simulator. Same engine, same handling,
               and transparent wet rates.
             </p>
@@ -128,18 +128,18 @@ export default function ComingSoonPage() {
                   </div>
 
                   <div className="flex flex-1 flex-col p-5">
-                    <h3 className="font-heading text-2xl text-navy-900">
+                    <h3 className="font-heading text-2xl text-heading">
                       {isAircraft(member) ? member.tail : member.name}
                     </h3>
 
                     {isAircraft(member) ? (
                       <div className="mt-4 space-y-3 text-sm">
                         <div>
-                          <h4 className="font-semibold text-ink-light">Engine</h4>
+                          <h4 className="font-semibold text-muted">Engine</h4>
                           <p>{member.engine}</p>
                         </div>
                         <div>
-                          <h4 className="font-semibold text-ink-light">Avionics</h4>
+                          <h4 className="font-semibold text-muted">Avionics</h4>
                           <ul className="list-disc pl-4">
                             {member.avionics.map((item) => (
                               <li key={item}>{item}</li>
@@ -147,7 +147,7 @@ export default function ComingSoonPage() {
                           </ul>
                         </div>
                         <div>
-                          <h4 className="font-semibold text-ink-light">Notes</h4>
+                          <h4 className="font-semibold text-muted">Notes</h4>
                           <p>{member.notes}</p>
                         </div>
                       </div>
@@ -162,18 +162,18 @@ export default function ComingSoonPage() {
                       {isAircraft(member) ? (
                         <>
                           {member.ifrEquipped && (
-                            <span className="inline-flex rounded-full bg-teal-100 px-3 py-1 text-xs font-semibold text-navy-900">
+                            <span className="inline-flex rounded-full bg-callout px-3 py-1 text-xs font-semibold text-heading">
                               IFR equipped
                             </span>
                           )}
                           {member.crossCountryReady && (
-                            <span className="inline-flex rounded-full bg-teal-100 px-3 py-1 text-xs font-semibold text-navy-900">
+                            <span className="inline-flex rounded-full bg-callout px-3 py-1 text-xs font-semibold text-heading">
                               Cross-country ready
                             </span>
                           )}
                         </>
                       ) : (
-                        <span className="inline-flex rounded-full bg-teal-100 px-3 py-1 text-xs font-semibold text-navy-900">
+                        <span className="inline-flex rounded-full bg-callout px-3 py-1 text-xs font-semibold text-heading">
                           Procedure training
                         </span>
                       )}
@@ -186,9 +186,9 @@ export default function ComingSoonPage() {
         </section>
       </main>
 
-      <footer className="bg-navy-900 py-8">
+      <footer className="bg-dark py-8">
         <Container>
-          <p className="text-center text-sm text-sand-50/70">
+          <p className="text-center text-sm text-on-dark-soft">
             &copy; {new Date().getFullYear()} {siteConfig.brandName}. All rights
             reserved.
           </p>

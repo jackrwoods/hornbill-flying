@@ -31,16 +31,16 @@ export function ContactInfoCard({
   return (
     <div
       className={cn(
-        "rounded-xl border border-navy-800/10 bg-white p-6 shadow-sm",
+        "rounded-xl border border-border-subtle bg-white p-6 shadow-sm",
         className
       )}
     >
       <div className="flex flex-col gap-5">
         <div>
-          <h3 className="font-heading text-xl text-navy-900">
+          <h3 className="font-heading text-xl text-heading">
             {siteConfig.nap.name}
           </h3>
-          <address className="mt-2 not-italic text-ink">
+          <address className="mt-2 not-italic text-body">
             <p>{siteConfig.nap.streetAddress}</p>
             <p>
               {siteConfig.nap.addressLocality}, {siteConfig.nap.addressRegion}{" "}
@@ -52,40 +52,40 @@ export function ContactInfoCard({
               href={siteConfig.googleMapsDirectionsUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2 inline-block text-sm font-semibold text-navy-900 hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+              className="mt-2 inline-block text-sm font-semibold text-heading hover:text-accent focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
             >
               Get directions
             </Link>
           )}
         </div>
 
-        <div className="border-t border-navy-800/10 pt-5">
-          <h4 className="text-sm font-semibold uppercase tracking-wide text-ink-light">
+        <div className="border-t border-border-subtle pt-5">
+          <h4 className="text-sm font-semibold uppercase tracking-wide text-muted">
             Phone
           </h4>
-          <PhoneLink className="mt-1 text-navy-900" />
+          <PhoneLink className="mt-1 text-heading" />
         </div>
 
-        <div className="border-t border-navy-800/10 pt-5">
-          <h4 className="text-sm font-semibold uppercase tracking-wide text-ink-light">
+        <div className="border-t border-border-subtle pt-5">
+          <h4 className="text-sm font-semibold uppercase tracking-wide text-muted">
             Email
           </h4>
           <a
             href={`mailto:${siteConfig.nap.email}?subject=${encodeURIComponent(
               "Question about flight training"
             )}`}
-            className="mt-1 inline-block font-medium text-navy-900 hover:underline focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+            className="mt-1 inline-block font-medium text-heading hover:underline focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
             data-analytics="email_click"
           >
             {siteConfig.nap.email}
           </a>
         </div>
 
-        <div className="border-t border-navy-800/10 pt-5">
-          <h4 className="text-sm font-semibold uppercase tracking-wide text-ink-light">
+        <div className="border-t border-border-subtle pt-5">
+          <h4 className="text-sm font-semibold uppercase tracking-wide text-muted">
             Office hours
           </h4>
-          <dl className="mt-2 space-y-1 text-ink">
+          <dl className="mt-2 space-y-1 text-body">
             {siteConfig.contactHours.map((entry, index) => (
               <div
                 key={index}

@@ -7,25 +7,25 @@ export function DiscoveryFlightPriceSection() {
   const { price, duration, deposit, includes } = discoveryFlightPricing;
 
   return (
-    <Section background="teal" id="discovery-flight">
+    <Section background="callout" id="discovery-flight">
       <Container>
         <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
           <div>
-            <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
+            <h2 className="font-heading text-3xl md:text-4xl text-heading">
               Discovery flight
             </h2>
-            <p className="mt-4 text-lg text-ink-light">
+            <p className="mt-4 text-lg text-muted">
               Your first lesson in the left seat. No deposit, no commitment.
             </p>
 
             <div className="mt-6 rounded-xl bg-white p-6 shadow-sm">
-              <p className="font-mono text-xs uppercase tracking-wide text-ink-light">
+              <p className="font-mono text-xs uppercase tracking-wide text-muted">
                 Introductory flight
               </p>
-              <p className="mt-2 font-heading text-5xl text-navy-900">
+              <p className="mt-2 font-heading text-5xl text-heading">
                 ${price}
               </p>
-              <ul className="mt-4 space-y-1 text-ink-light">
+              <ul className="mt-4 space-y-1 text-muted">
                 <li>{duration}</li>
                 <li>{deposit}</li>
               </ul>
@@ -43,8 +43,8 @@ export function DiscoveryFlightPriceSection() {
           </div>
 
           <div className="rounded-xl bg-white p-6 shadow-sm">
-            <h3 className="font-heading text-xl text-navy-900">What is included</h3>
-            <ul className="mt-4 space-y-3 text-ink-light">
+            <h3 className="font-heading text-xl text-heading">What is included</h3>
+            <ul className="mt-4 space-y-3 text-muted">
               {includes.map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <svg
@@ -58,7 +58,7 @@ export function DiscoveryFlightPriceSection() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     aria-hidden="true"
-                    className="mt-0.5 flex-shrink-0 text-gold-500"
+                    className="mt-0.5 flex-shrink-0 text-accent"
                   >
                     <polyline points="20 6 9 17 4 12" />
                   </svg>

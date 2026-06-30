@@ -14,13 +14,13 @@ interface CTALinkProps {
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    "bg-navy-900 text-white hover:bg-navy-800 focus:ring-gold-500",
+    "bg-dark text-on-dark hover:bg-dark-muted focus:ring-focus-ring",
   secondary:
-    "bg-gold-500 text-navy-900 hover:bg-gold-400 focus:ring-navy-900",
+    "bg-accent text-on-accent hover:bg-accent-hover focus:ring-dark",
   tertiary:
-    "bg-transparent border-2 border-current text-navy-900 hover:bg-navy-900/5 focus:ring-navy-900",
+    "bg-transparent border-2 border-dark text-dark hover:bg-dark-subtle focus:ring-dark",
   accent:
-    "bg-orange text-white hover:bg-rust focus:ring-gold-500",
+    "bg-alert text-on-alert hover:bg-alert-hover focus:ring-focus-ring",
   "header-cta":
     "bg-header-cta-bg text-header-cta-text hover:bg-header-cta-hover focus:ring-focus-ring",
 };

@@ -15,10 +15,10 @@ export function HeroSection() {
         ]}
       />
 
-      <Section background="teal" className="py-8 md:py-10">
+      <Section background="callout" className="py-8 md:py-10">
         <Container className="max-w-4xl">
-          <div className="rounded-lg border-l-4 border-gold-500 bg-white p-6 shadow-sm">
-            <p className="text-ink">
+          <div className="rounded-lg border-l-4 border-accent bg-white p-6 shadow-sm">
+            <p className="text-body">
               Hornbill Aviation students can check the latest KRNO METAR/TAF,
               download training syllabi and PA28 checklists, review FAA medical
               certificate requirements, and use our Reno-specific flight tools.

@@ -11,8 +11,8 @@ export function MetarTafWidget() {
         <TafTool />
       </div>
 
-      <div className="rounded-lg border border-navy-800/10 bg-white p-4 text-sm text-ink-light">
-        <strong className="text-navy-900">Always obtain a full preflight weather
+      <div className="rounded-lg border border-border-subtle bg-white p-4 text-sm text-muted">
+        <strong className="text-heading">Always obtain a full preflight weather
         briefing from an official source.</strong> This widget is a quick reference
         only. Data comes from NOAA Aviation Weather Center and refreshes every
         minute.

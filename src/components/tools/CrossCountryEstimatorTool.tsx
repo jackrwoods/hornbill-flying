@@ -38,8 +38,8 @@ export function CrossCountryEstimatorTool({
 
   return (
     <div className="grid gap-6">
-      <div className="rounded-xl border-t-4 border-gold-500 bg-white p-6 shadow-sm">
-        <h3 className="font-heading text-xl text-navy-900">Route and performance</h3>
+      <div className="rounded-xl border-t-4 border-accent bg-white p-6 shadow-sm">
+        <h3 className="font-heading text-xl text-heading">Route and performance</h3>
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
           <ToolInput
             id="origin"
@@ -86,14 +86,14 @@ export function CrossCountryEstimatorTool({
         </div>
 
         <div className="mt-6">
-          <p className="text-sm font-semibold text-navy-900">Quick-fill routes:</p>
+          <p className="text-sm font-semibold text-heading">Quick-fill routes:</p>
           <div className="mt-2 flex flex-wrap gap-2">
             {sampleRoutes.map((route) => (
               <button
                 key={route.destination}
                 type="button"
                 onClick={() => applyRoute(route.destination)}
-                className="rounded-lg bg-teal-100 px-3 py-1.5 text-sm font-semibold text-navy-900 hover:bg-teal-100 focus:outline-none focus:ring-2 focus:ring-gold-500"
+                className="rounded-lg bg-callout px-3 py-1.5 text-sm font-semibold text-heading hover:bg-callout focus:outline-none focus:ring-2 focus:ring-focus-ring"
               >
                 {route.name}
               </button>

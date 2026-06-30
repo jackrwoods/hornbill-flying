@@ -5,10 +5,10 @@ import { homeFAQ } from "@/content/faq";
 
 export function FAQSection() {
   return (
-    <Section background="white" id="faq">
+    <Section background="card" id="faq">
       <Container>
         <div className="mx-auto max-w-3xl">
-          <h2 className="font-heading text-3xl md:text-4xl text-center text-navy-900">
+          <h2 className="font-heading text-3xl md:text-4xl text-center text-heading">
             Common questions
           </h2>
           <div className="mt-10">

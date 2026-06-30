@@ -13,8 +13,8 @@ export function SunriseSunsetTool() {
 
   return (
     <div className="grid gap-6 lg:grid-cols-2">
-      <div className="rounded-xl border-t-4 border-gold-500 bg-white p-6 shadow-sm">
-        <h3 className="font-heading text-xl text-navy-900">Select date</h3>
+      <div className="rounded-xl border-t-4 border-accent bg-white p-6 shadow-sm">
+        <h3 className="font-heading text-xl text-heading">Select date</h3>
         <div className="mt-4">
           <ToolInput
             id="date"

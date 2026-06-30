@@ -6,9 +6,9 @@ export function PrivatePilotOutcomesSection() {
   const { outcomes } = privatePilotProgram;
 
   return (
-    <Section background="sand" id="outcomes">
+    <Section background="default" id="outcomes">
       <Container>
-        <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
+        <h2 className="font-heading text-3xl md:text-4xl text-heading">
           {outcomes.title}
         </h2>
         <ul className="mt-8 space-y-4">
@@ -18,10 +18,10 @@ export function PrivatePilotOutcomesSection() {
               className="flex items-start gap-3 rounded-lg bg-white p-5 shadow-sm"
             >
               <span
-                className="mt-1 flex h-2 w-2 flex-shrink-0 rounded-full bg-gold-500"
+                className="mt-1 flex h-2 w-2 flex-shrink-0 rounded-full bg-accent"
                 aria-hidden="true"
               />
-              <span className="text-ink">{item}</span>
+              <span className="text-body">{item}</span>
             </li>
           ))}
         </ul>

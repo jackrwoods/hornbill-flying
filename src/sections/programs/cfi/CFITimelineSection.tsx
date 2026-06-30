@@ -4,24 +4,24 @@ import { cfiProgram } from "@/content/programs/cfi";
 
 export function CFITimelineSection() {
   return (
-    <Section background="white" id="timeline">
+    <Section background="card" id="timeline">
       <Container>
-        <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
+        <h2 className="font-heading text-3xl md:text-4xl text-heading">
           {cfiProgram.timeline.title}
         </h2>
-        <p className="mt-4 max-w-2xl text-ink-light">
+        <p className="mt-4 max-w-2xl text-muted">
           {cfiProgram.timeline.intro}
         </p>
         <div className="mt-8 grid gap-6 md:grid-cols-2">
           {cfiProgram.timeline.options.map((option) => (
-            <div key={option.label} className="rounded-xl bg-sand-50 p-6">
-              <p className="font-mono text-xs uppercase tracking-wide text-ink-light">
+            <div key={option.label} className="rounded-xl bg-bg p-6">
+              <p className="font-mono text-xs uppercase tracking-wide text-muted">
                 {option.label}
               </p>
-              <p className="mt-2 font-heading text-3xl text-navy-900">
+              <p className="mt-2 font-heading text-3xl text-heading">
                 {option.duration}
               </p>
-              <p className="mt-1 text-sm text-ink-light">{option.schedule}</p>
+              <p className="mt-1 text-sm text-muted">{option.schedule}</p>
             </div>
           ))}
         </div>

@@ -8,7 +8,7 @@ export function MembershipHeroSection() {
   const { hero } = membershipContent;
 
   return (
-    <section className="relative overflow-hidden bg-navy-900 text-white">
+    <section className="relative overflow-hidden bg-dark text-on-dark">
       <div className="absolute inset-0 z-0">
         <Image
           src={hero.image}
@@ -20,7 +20,7 @@ export function MembershipHeroSection() {
           className="object-cover opacity-40"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-900/60 to-navy-900/40" />
+        <div className="absolute inset-0 bg-hero-scrim" />
       </div>
 
       <Container className="relative z-10">
@@ -29,10 +29,10 @@ export function MembershipHeroSection() {
             <h1 className="font-heading text-4xl leading-tight md:text-5xl lg:text-6xl">
               {hero.h1}
             </h1>
-            <p className="mt-4 font-heading text-2xl text-gold-400 md:text-3xl">
+            <p className="mt-4 font-heading text-2xl text-on-dark-accent-hover md:text-3xl">
               {hero.headline}
             </p>
-            <p className="mt-6 text-lg text-sand-50/90 md:text-xl">
+            <p className="mt-6 text-lg text-on-dark md:text-xl">
               {hero.valueProp}
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
@@ -47,13 +47,13 @@ export function MembershipHeroSection() {
               <CTALink
                 href={hero.cta.secondary.href}
                 variant="tertiary"
-                className="text-white hover:bg-white/10"
+                className="text-on-dark hover:bg-on-dark-subtle"
                 analytics="fleet_click"
               >
                 {hero.cta.secondary.label}
               </CTALink>
               <PhoneLink
-                className="inline-flex min-h-[44px] items-center text-white hover:text-gold-400"
+                className="inline-flex min-h-[44px] items-center text-on-dark hover:text-on-dark-accent-hover"
                 showIcon
               />
             </div>

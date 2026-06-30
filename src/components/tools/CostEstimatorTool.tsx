@@ -29,8 +29,8 @@ export function CostEstimatorTool({ defaults }: CostEstimatorToolProps) {
 
   return (
     <div className="grid gap-6">
-      <div className="rounded-xl border-t-4 border-gold-500 bg-white p-6 shadow-sm">
-        <h3 className="font-heading text-xl text-navy-900">Training plan</h3>
+      <div className="rounded-xl border-t-4 border-accent bg-white p-6 shadow-sm">
+        <h3 className="font-heading text-xl text-heading">Training plan</h3>
         <div className="mt-4 grid gap-4">
           <ToolInput
             id="program"
@@ -66,18 +66,18 @@ export function CostEstimatorTool({ defaults }: CostEstimatorToolProps) {
             unit="$/hr"
           />
 
-          <div className="flex items-center gap-3 rounded-lg border border-navy-800/10 bg-sand-50 p-3">
+          <div className="flex items-center gap-3 rounded-lg border border-border-subtle bg-bg p-3">
             <input
               id="membership"
               type="checkbox"
               checked={isMember}
               onChange={(e: React.ChangeEvent<HTMLInputElement>) => setIsMember(e.target.checked)}
-              className="h-5 w-5 accent-gold-500"
+              className="h-5 w-5 accent-accent"
             />
-            <label htmlFor="membership" className="text-sm font-semibold text-navy-900">
+            <label htmlFor="membership" className="text-sm font-semibold text-heading">
               Include membership at ${siteConfig.pricing.membershipMonthly}/month
               {" "}
-              <span className="font-normal text-ink-light">(saves ${
+              <span className="font-normal text-muted">(saves ${
                 siteConfig.pricing.nonMemberWetRate - siteConfig.pricing.memberWetRate
               }/hour on aircraft)</span>
             </label>

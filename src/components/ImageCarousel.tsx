@@ -63,7 +63,7 @@ export function ImageCarousel({
             type="button"
             onClick={previous}
             aria-label="Previous image"
-            className="absolute left-3 top-1/2 z-20 -translate-y-1/2 cursor-pointer rounded-full bg-navy-900/70 p-2 text-white opacity-100 transition-opacity hover:bg-navy-900 focus:outline-none focus:ring-2 focus:ring-gold-500"
+            className="absolute left-3 top-1/2 z-20 -translate-y-1/2 cursor-pointer rounded-full bg-dark/70 p-2 text-on-dark opacity-100 transition-opacity hover:bg-dark focus:outline-none focus:ring-2 focus:ring-focus-ring"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +85,7 @@ export function ImageCarousel({
             type="button"
             onClick={next}
             aria-label="Next image"
-            className="absolute right-3 top-1/2 z-20 -translate-y-1/2 cursor-pointer rounded-full bg-navy-900/70 p-2 text-white opacity-100 transition-opacity hover:bg-navy-900 focus:outline-none focus:ring-2 focus:ring-gold-500"
+            className="absolute right-3 top-1/2 z-20 -translate-y-1/2 cursor-pointer rounded-full bg-dark/70 p-2 text-on-dark opacity-100 transition-opacity hover:bg-dark focus:outline-none focus:ring-2 focus:ring-focus-ring"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -112,7 +112,7 @@ export function ImageCarousel({
                 aria-label={`Go to image ${index + 1} of ${images.length}`}
                 aria-current={index === current ? "true" : undefined}
                 className={cn(
-                  "h-2 w-2 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-1",
+                  "h-2 w-2 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-1",
                   index === current
                     ? "bg-white"
                     : "bg-white/60 hover:bg-white/90"

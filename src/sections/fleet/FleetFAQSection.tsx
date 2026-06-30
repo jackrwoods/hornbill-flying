@@ -5,9 +5,9 @@ import { fleetFAQs } from "@/content/fleet";
 
 export function FleetFAQSection() {
   return (
-    <Section background="white" id="faq">
+    <Section background="card" id="faq">
       <Container>
-        <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
+        <h2 className="font-heading text-3xl md:text-4xl text-heading">
           Frequently asked questions
         </h2>
         <div className="mt-8 max-w-3xl">

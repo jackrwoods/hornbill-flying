@@ -25,7 +25,7 @@ export function InstructorPhoto({
   return (
     <div
       className={cn(
-        "relative aspect-[4/5] w-full overflow-hidden rounded-xl bg-navy-800",
+        "relative aspect-[4/5] w-full overflow-hidden rounded-xl bg-dark-muted",
         className
       )}
     >

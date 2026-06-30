@@ -18,7 +18,7 @@ export function MapEmbed({
 }: MapEmbedProps) {
   return (
     <div className={cn("w-full", className)}>
-      <div className="relative w-full overflow-hidden rounded-lg bg-teal-100" style={{ aspectRatio: "16 / 9" }}>
+      <div className="relative w-full overflow-hidden rounded-lg bg-callout" style={{ aspectRatio: "16 / 9" }}>
         <iframe
           title={title}
           src={src}
@@ -30,7 +30,7 @@ export function MapEmbed({
         />
       </div>
       <div className="mt-3 flex flex-col justify-between gap-2 sm:flex-row sm:items-center">
-        <p className="text-sm text-ink-light">
+        <p className="text-sm text-muted">
           {siteConfig.nap.streetAddress}, {siteConfig.nap.addressLocality},{" "}
           {siteConfig.nap.addressRegion} {siteConfig.nap.postalCode}
         </p>
@@ -38,7 +38,7 @@ export function MapEmbed({
           href={directionsUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm font-semibold text-navy-900 hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+          className="text-sm font-semibold text-heading hover:text-accent focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
         >
           Get directions
         </a>

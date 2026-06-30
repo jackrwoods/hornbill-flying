@@ -7,10 +7,10 @@ export function InstrumentRatingBottomCTASection() {
   const { bottomCTA } = instrumentRatingProgram;
 
   return (
-    <Section background="navy" id="bottom-cta">
+    <Section background="dark" id="bottom-cta">
       <Container>
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-heading text-3xl md:text-4xl text-white">
+          <h2 className="font-heading text-3xl md:text-4xl text-on-dark">
             {bottomCTA.title}
           </h2>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -24,7 +24,7 @@ export function InstrumentRatingBottomCTASection() {
             <CTALink
               href={bottomCTA.secondaryHref}
               variant="tertiary"
-              className="text-white hover:bg-white/10"
+              className="text-on-dark hover:bg-on-dark-subtle"
             >
               {bottomCTA.secondaryCta}
             </CTALink>

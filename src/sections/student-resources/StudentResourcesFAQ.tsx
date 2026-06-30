@@ -5,12 +5,12 @@ import { studentFaqs } from "@/content/student-resources";
 
 export function StudentResourcesFAQ() {
   return (
-    <Section background="sand" id="faq">
+    <Section background="default" id="faq">
       <Container className="max-w-4xl">
-        <h2 className="font-heading text-3xl text-navy-900 md:text-4xl">
+        <h2 className="font-heading text-3xl text-heading md:text-4xl">
           Student resources FAQ
         </h2>
-        <p className="mt-4 text-ink-light">
+        <p className="mt-4 text-muted">
           Quick answers to the questions we hear most from current and enrolled
           students.
         </p>

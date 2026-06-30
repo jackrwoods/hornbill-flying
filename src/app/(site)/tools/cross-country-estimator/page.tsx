@@ -43,7 +43,7 @@ export default function CrossCountryEstimatorPage() {
         { href: "/programs/private-pilot/", label: "Private Pilot program" },
       ]}
     >
-      <div className="rounded-lg bg-teal-100 p-4 text-ink">
+      <div className="rounded-lg bg-callout p-4 text-body">
         <p>
           Enter origin, destination, cruise speed, and fuel burn to get a
           straight-line distance, time, and fuel estimate. Add a wind component
@@ -57,22 +57,22 @@ export default function CrossCountryEstimatorPage() {
       </div>
 
       <div className="mt-8">
-        <h3 className="font-heading text-xl text-navy-900">Sample routes</h3>
+        <h3 className="font-heading text-xl text-heading">Sample routes</h3>
         <div className="mt-4 overflow-x-auto">
           <table className="min-w-full rounded-lg bg-white text-sm">
-            <thead className="bg-navy-900 text-sand-50">
+            <thead className="bg-dark text-on-dark">
               <tr>
                 <th className="px-4 py-3 text-left font-body font-semibold">Route</th>
                 <th className="px-4 py-3 text-left font-body font-semibold">Origin</th>
                 <th className="px-4 py-3 text-left font-body font-semibold">Destination</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-navy-800/10">
+            <tbody className="divide-y divide-border-subtle">
               {sampleRoutes.map((route) => (
                 <tr key={route.destination}>
-                  <td className="px-4 py-3 font-mono text-navy-900">{route.name}</td>
-                  <td className="px-4 py-3 text-ink-light">{route.originName} ({route.origin})</td>
-                  <td className="px-4 py-3 text-ink-light">{route.destinationName} ({route.destination})</td>
+                  <td className="px-4 py-3 font-mono text-heading">{route.name}</td>
+                  <td className="px-4 py-3 text-muted">{route.originName} ({route.origin})</td>
+                  <td className="px-4 py-3 text-muted">{route.destinationName} ({route.destination})</td>
                 </tr>
               ))}
             </tbody>

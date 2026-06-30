@@ -73,7 +73,7 @@ export function ConfirmationView({
   }, [isGift, date, reference, flightType, instructorName, aircraftTail, customerEmail]);
 
   return (
-    <div className="rounded-xl border border-navy-800/10 bg-white p-6 text-center md:p-8">
+    <div className="rounded-xl border border-border-subtle bg-white p-6 text-center md:p-8">
       <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-success/10">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -91,20 +91,20 @@ export function ConfirmationView({
           <polyline points="20 6 9 17 4 12" />
         </svg>
       </div>
-      <h2 className="mt-4 font-heading text-3xl text-navy-900">{effectiveTitle}</h2>
-      <p className="mx-auto mt-2 max-w-md text-ink-light">{effectiveMessage}</p>
+      <h2 className="mt-4 font-heading text-3xl text-heading">{effectiveTitle}</h2>
+      <p className="mx-auto mt-2 max-w-md text-muted">{effectiveMessage}</p>
 
-      <div className="mt-6 rounded-lg bg-teal-100 p-4">
-        <span className="text-sm font-semibold text-navy-900">
+      <div className="mt-6 rounded-lg bg-callout p-4">
+        <span className="text-sm font-semibold text-heading">
           {isGift ? "Voucher code" : "Booking reference"}
         </span>
-        <div className="mt-1 font-mono text-xl font-semibold text-navy-900">
+        <div className="mt-1 font-mono text-xl font-semibold text-heading">
           {reference}
         </div>
       </div>
 
       {!isGift && (
-        <div className="mt-6 space-y-2 text-sm text-ink-light">
+        <div className="mt-6 space-y-2 text-sm text-muted">
           {flightType && <p>Flight type: {flightType}</p>}
           {formattedDate && <p>Date: {formattedDate}</p>}
           {instructorName && <p>Instructor: {instructorName}</p>}
@@ -117,20 +117,20 @@ export function ConfirmationView({
           <a
             href={icalUrl}
             download={`hornbill-discovery-flight-${reference}.ics`}
-            className="inline-flex items-center justify-center rounded-lg border border-navy-900 px-5 py-3 text-sm font-semibold text-navy-900 transition-colors hover:bg-navy-900/5 focus:outline-none focus:ring-2 focus:ring-gold-500"
+            className="inline-flex items-center justify-center rounded-lg border border-border px-5 py-3 text-sm font-semibold text-heading transition-colors hover:bg-dark/5 focus:outline-none focus:ring-2 focus:ring-focus-ring"
           >
             Add to calendar
           </a>
         )}
         <Link
           href="/cancellation-policy/"
-          className="inline-flex items-center justify-center rounded-lg border border-navy-900 px-5 py-3 text-sm font-semibold text-navy-900 transition-colors hover:bg-navy-900/5 focus:outline-none focus:ring-2 focus:ring-gold-500"
+          className="inline-flex items-center justify-center rounded-lg border border-border px-5 py-3 text-sm font-semibold text-heading transition-colors hover:bg-dark/5 focus:outline-none focus:ring-2 focus:ring-focus-ring"
         >
           Cancellation / weather policy
         </Link>
         <Link
           href="/"
-          className="inline-flex items-center justify-center rounded-lg bg-navy-900 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-navy-800 focus:outline-none focus:ring-2 focus:ring-gold-500"
+          className="inline-flex items-center justify-center rounded-lg bg-dark px-5 py-3 text-sm font-semibold text-on-dark transition-colors hover:bg-dark-muted focus:outline-none focus:ring-2 focus:ring-focus-ring"
         >
           Back to the site
         </Link>

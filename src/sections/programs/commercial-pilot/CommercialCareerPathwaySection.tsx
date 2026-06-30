@@ -8,28 +8,28 @@ export function CommercialCareerPathwaySection() {
   const { careerPathway } = commercialPilotProgram;
 
   return (
-    <Section background="white" id="career-pathway">
+    <Section background="card" id="career-pathway">
       <Container>
         <div className="grid gap-12 lg:grid-cols-2">
           <div>
-            <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
+            <h2 className="font-heading text-3xl md:text-4xl text-heading">
               {careerPathway.title}
             </h2>
-            <p className="mt-4 text-ink-light">{careerPathway.intro}</p>
+            <p className="mt-4 text-muted">{careerPathway.intro}</p>
             <div className="mt-8 space-y-6">
               {careerPathway.steps.map((step, index) => (
                 <div key={step.title} className="flex gap-4">
                   <span
-                    className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-gold-500 text-sm font-semibold text-navy-900"
+                    className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-accent text-sm font-semibold text-heading"
                     aria-hidden="true"
                   >
                     {index + 1}
                   </span>
                   <div>
-                    <h3 className="font-heading text-xl text-navy-900">
+                    <h3 className="font-heading text-xl text-heading">
                       {step.title}
                     </h3>
-                    <p className="mt-1 text-ink-light">{step.description}</p>
+                    <p className="mt-1 text-muted">{step.description}</p>
                   </div>
                 </div>
               ))}
@@ -39,7 +39,7 @@ export function CommercialCareerPathwaySection() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-sm font-semibold text-gold-500 hover:text-gold-400 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+                  className="text-sm font-semibold text-accent hover:text-on-dark-accent-hover focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
                 >
                   {link.label}
                 </Link>
@@ -56,7 +56,7 @@ export function CommercialCareerPathwaySection() {
               className="h-auto w-full object-cover"
               sizes="(max-width: 768px) 100vw, 870px"
             />
-            <figcaption className="px-5 py-3 text-sm text-ink-light">
+            <figcaption className="px-5 py-3 text-sm text-muted">
               Cross-country rentals let you build real flight time in the same
               PA28s you train in.
             </figcaption>

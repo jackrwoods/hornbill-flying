@@ -23,7 +23,7 @@ export function PhoneLink({
     <a
       href={telHref}
       className={cn(
-        "inline-flex items-center gap-2 font-medium hover:underline focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded",
+        "inline-flex items-center gap-2 font-medium hover:underline focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded",
         className
       )}
       data-analytics={analytics}

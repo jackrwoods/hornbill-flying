@@ -7,15 +7,15 @@ export function SportPilotDiscoveryFlightSection() {
   const { discoveryFlightCTA } = sportPilotProgram;
 
   return (
-    <Section background="navy" id="discovery-flight">
+    <Section background="dark" id="discovery-flight">
       <Container className="text-center">
-        <h2 className="font-heading text-3xl md:text-4xl text-white">
+        <h2 className="font-heading text-3xl md:text-4xl text-on-dark">
           {discoveryFlightCTA.title}
         </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-sand-50/90">
+        <p className="mx-auto mt-4 max-w-2xl text-on-dark">
           {discoveryFlightCTA.description}
         </p>
-        <p className="mt-6 font-heading text-4xl text-gold-500">
+        <p className="mt-6 font-heading text-4xl text-on-dark-accent">
           {discoveryFlightCTA.price}
         </p>
         <div className="mt-8">

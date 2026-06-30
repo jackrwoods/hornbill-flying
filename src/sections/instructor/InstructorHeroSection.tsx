@@ -21,7 +21,7 @@ export function InstructorHeroSection({ instructor }: InstructorHeroSectionProps
   const firstName = instructor.name.split(" ")[0];
 
   return (
-    <Section background="white" id="about">
+    <Section background="card" id="about">
       <Container>
         <div className="grid gap-10 md:grid-cols-2 md:items-center">
           <InstructorPortrait
@@ -31,13 +31,13 @@ export function InstructorHeroSection({ instructor }: InstructorHeroSectionProps
           />
 
           <div className="flex flex-col gap-5">
-            <p className="font-mono text-sm uppercase tracking-wide text-gold-500">
+            <p className="font-mono text-sm uppercase tracking-wide text-accent">
               {instructor.title}
             </p>
-            <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
+            <h2 className="font-heading text-3xl md:text-4xl text-heading">
               {instructor.tagline}
             </h2>
-            <p className="text-lg text-ink-light leading-relaxed">
+            <p className="text-lg text-muted leading-relaxed">
               {instructor.bio.split("\n\n")[0]}
             </p>
             <div className="mt-2 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -48,7 +48,7 @@ export function InstructorHeroSection({ instructor }: InstructorHeroSectionProps
               />
               <Link
                 href="/instructors/"
-                className="inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-semibold text-navy-900 transition-colors hover:bg-navy-900/5 focus:outline-none focus:ring-2 focus:ring-navy-900 focus:ring-offset-2"
+                className="inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-semibold text-heading transition-colors hover:bg-dark/5 focus:outline-none focus:ring-2 focus:ring-dark focus:ring-offset-2"
               >
                 Back to all instructors
               </Link>
@@ -57,7 +57,7 @@ export function InstructorHeroSection({ instructor }: InstructorHeroSectionProps
                   href={instructor.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-semibold text-navy-900 transition-colors hover:bg-navy-900/5 focus:outline-none focus:ring-2 focus:ring-navy-900 focus:ring-offset-2"
+                  className="inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-semibold text-heading transition-colors hover:bg-dark/5 focus:outline-none focus:ring-2 focus:ring-dark focus:ring-offset-2"
                 >
                   {displayDomain(instructor.website)}
                 </a>

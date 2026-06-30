@@ -6,12 +6,12 @@ import Link from "next/link";
 
 export function MedicalSection() {
   return (
-    <Section background="white" id="medical">
+    <Section background="card" id="medical">
       <Container>
-        <h2 className="font-heading text-3xl text-navy-900 md:text-4xl">
+        <h2 className="font-heading text-3xl text-heading md:text-4xl">
           FAA medical certificate guide
         </h2>
-        <p className="mt-4 max-w-2xl text-ink-light">
+        <p className="mt-4 max-w-2xl text-muted">
           Medical certification is a common early hurdle. Here is what you need,
           where to schedule an exam, and how to handle typical questions.
         </p>
@@ -19,52 +19,52 @@ export function MedicalSection() {
         <div className="mt-10 grid gap-8 lg:grid-cols-3">
           <div className="lg:col-span-2 space-y-8">
             <div>
-              <h3 className="font-heading text-2xl text-navy-900">
+              <h3 className="font-heading text-2xl text-heading">
                 Which medical certificate do I need?
               </h3>
-              <div className="mt-4 overflow-hidden rounded-lg border border-navy-800/10 bg-white">
+              <div className="mt-4 overflow-hidden rounded-lg border border-border-subtle bg-white">
                 <table className="w-full text-left text-sm">
-                  <thead className="bg-sand-50 text-navy-900">
+                  <thead className="bg-bg text-heading">
                     <tr>
                       <th scope="col" className="px-4 py-3 font-semibold">Certificate</th>
                       <th scope="col" className="px-4 py-3 font-semibold">Typical use</th>
                       <th scope="col" className="px-4 py-3 font-semibold">Training path</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-navy-800/10">
+                  <tbody className="divide-y divide-border-subtle">
                     <tr>
                       <td className="px-4 py-3 font-medium">Third class</td>
-                      <td className="px-4 py-3 text-ink-light">
+                      <td className="px-4 py-3 text-muted">
                         Private Pilot, Sport Pilot, recreational flying
                       </td>
-                      <td className="px-4 py-3 text-ink-light">
+                      <td className="px-4 py-3 text-muted">
                         PPL, SPL, most initial training
                       </td>
                     </tr>
                     <tr>
                       <td className="px-4 py-3 font-medium">Second class</td>
-                      <td className="px-4 py-3 text-ink-light">
+                      <td className="px-4 py-3 text-muted">
                         Commercial pilot operations
                       </td>
-                      <td className="px-4 py-3 text-ink-light">
+                      <td className="px-4 py-3 text-muted">
                         Commercial Pilot
                       </td>
                     </tr>
                     <tr>
                       <td className="px-4 py-3 font-medium">First class</td>
-                      <td className="px-4 py-3 text-ink-light">
+                      <td className="px-4 py-3 text-muted">
                         Airline transport pilot
                       </td>
-                      <td className="px-4 py-3 text-ink-light">
+                      <td className="px-4 py-3 text-muted">
                         ATP and some career-track planning
                       </td>
                     </tr>
                     <tr>
                       <td className="px-4 py-3 font-medium">BasicMed</td>
-                      <td className="px-4 py-3 text-ink-light">
+                      <td className="px-4 py-3 text-muted">
                         Limited Private Pilot privileges after a medical course
                       </td>
-                      <td className="px-4 py-3 text-ink-light">
+                      <td className="px-4 py-3 text-muted">
                         Not for student pilot solo or IFR training
                       </td>
                     </tr>
@@ -74,17 +74,17 @@ export function MedicalSection() {
             </div>
 
             <div>
-              <h3 className="font-heading text-2xl text-navy-900">
+              <h3 className="font-heading text-2xl text-heading">
                 How to schedule your exam
               </h3>
-              <ol className="mt-4 list-decimal space-y-2 pl-5 text-ink-light">
+              <ol className="mt-4 list-decimal space-y-2 pl-5 text-muted">
                 <li>
                   Complete your application in{" "}
                   <a
                     href="https://medxpress.faa.gov/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-semibold text-navy-900 underline hover:text-gold-500"
+                    className="font-semibold text-heading underline hover:text-accent"
                   >
                     FAA MedXPress
                   </a>{" "}
@@ -96,7 +96,7 @@ export function MedicalSection() {
                     href="https://www.faa.gov/pilots/medical/ame_locator/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-semibold text-navy-900 underline hover:text-gold-500"
+                    className="font-semibold text-heading underline hover:text-accent"
                   >
                     FAA AME locator
                   </a>
@@ -110,12 +110,12 @@ export function MedicalSection() {
             </div>
 
             <div>
-              <h3 className="font-heading text-2xl text-navy-900">
+              <h3 className="font-heading text-2xl text-heading">
                 Common medical questions
               </h3>
-              <dl className="mt-4 space-y-4 text-ink-light">
+              <dl className="mt-4 space-y-4 text-muted">
                 <div>
-                  <dt className="font-semibold text-navy-900">
+                  <dt className="font-semibold text-heading">
                     Can I wear glasses?
                   </dt>
                   <dd>
@@ -125,7 +125,7 @@ export function MedicalSection() {
                   </dd>
                 </div>
                 <div>
-                  <dt className="font-semibold text-navy-900">
+                  <dt className="font-semibold text-heading">
                     What about ADHD or common medications?
                   </dt>
                   <dd>
@@ -135,7 +135,7 @@ export function MedicalSection() {
                   </dd>
                 </div>
                 <div>
-                  <dt className="font-semibold text-navy-900">
+                  <dt className="font-semibold text-heading">
                     Is BasicMed enough for flight training?
                   </dt>
                   <dd>
@@ -150,7 +150,7 @@ export function MedicalSection() {
             <div>
               <Link
                 href="/blog/medical-certificate-student-pilots/"
-                className="inline-flex items-center font-semibold text-navy-900 underline hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+                className="inline-flex items-center font-semibold text-heading underline hover:text-accent focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
               >
                 Read the medical certificate guide for student pilots
               </Link>
@@ -195,17 +195,17 @@ export function MedicalSection() {
               tags={["FAA"]}
             />
 
-            <div className="rounded-xl bg-navy-900 p-6 text-white">
-              <h3 className="font-heading text-xl text-white">
+            <div className="rounded-xl bg-dark p-6 text-on-dark">
+              <h3 className="font-heading text-xl text-on-dark">
                 Questions? Call us.
               </h3>
-              <p className="mt-2 text-sm text-sand-50/90">
+              <p className="mt-2 text-sm text-on-dark">
                 Not sure which medical path fits your training goal? We can point
                 you in the right direction before you schedule an exam.
               </p>
               <div className="mt-4">
                 <PhoneLink
-                  className="text-sand-50 hover:text-gold-400"
+                  className="text-on-dark hover:text-on-dark-accent-hover"
                   showIcon
                 />
               </div>

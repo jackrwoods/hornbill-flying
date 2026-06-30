@@ -4,14 +4,14 @@ import { cfiiProgram } from "@/content/programs/cfii";
 
 export function CFIIPrerequisitesSection() {
   return (
-    <Section background="sand" id="prerequisites">
+    <Section background="default" id="prerequisites">
       <Container>
         <div className="grid gap-12 lg:grid-cols-2">
           <div>
-            <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
+            <h2 className="font-heading text-3xl md:text-4xl text-heading">
               {cfiiProgram.prerequisites.title}
             </h2>
-            <p className="mt-4 text-ink-light">{cfiiProgram.prerequisites.intro}</p>
+            <p className="mt-4 text-muted">{cfiiProgram.prerequisites.intro}</p>
           </div>
           <ul className="space-y-4">
             {cfiiProgram.prerequisites.items.map((item, index) => (
@@ -20,12 +20,12 @@ export function CFIIPrerequisitesSection() {
                 className="flex items-start gap-3 rounded-lg bg-white p-4 shadow-sm"
               >
                 <span
-                  className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-gold-500 text-xs font-semibold text-navy-900"
+                  className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-accent text-xs font-semibold text-heading"
                   aria-hidden="true"
                 >
                   {index + 1}
                 </span>
-                <span className="text-ink">{item}</span>
+                <span className="text-body">{item}</span>
               </li>
             ))}
           </ul>

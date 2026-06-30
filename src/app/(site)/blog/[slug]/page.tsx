@@ -105,12 +105,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         ]}
       />
 
-      <Section background="white">
+      <Section background="card">
         <Container className="max-w-3xl">
           <article className="prose prose-lg max-w-none">
             <header className="not-prose mb-8">
-              <div className="flex flex-wrap items-center gap-3 text-sm text-ink-light">
-                <span className="rounded bg-teal-100 px-2 py-0.5 text-navy-900">
+              <div className="flex flex-wrap items-center gap-3 text-sm text-muted">
+                <span className="rounded bg-callout px-2 py-0.5 text-heading">
                   {post.category}
                 </span>
                 <time dateTime={post.date}>
@@ -134,8 +134,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               }}
             />
 
-            <footer className="not-prose mt-12 border-t border-navy-800/10 pt-8">
-              <p className="text-sm text-ink-light">
+            <footer className="not-prose mt-12 border-t border-border-subtle pt-8">
+              <p className="text-sm text-muted">
                 By {post.authorName}
               </p>
             </footer>

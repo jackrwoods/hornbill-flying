@@ -19,7 +19,7 @@ export function InstructorPortrait({
   return (
     <div
       className={cn(
-        "relative aspect-[4/5] w-full max-w-sm overflow-hidden rounded-xl bg-navy-800",
+        "relative aspect-[4/5] w-full max-w-sm overflow-hidden rounded-xl bg-dark-muted",
         className
       )}
     >

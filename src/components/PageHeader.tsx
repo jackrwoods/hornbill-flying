@@ -33,7 +33,7 @@ export function PageHeader({
   return (
     <section
       className={cn(
-        "relative overflow-hidden bg-navy-900 py-16 md:py-24 text-white",
+        "relative overflow-hidden bg-dark py-16 md:py-24 text-on-dark",
         className
       )}
     >
@@ -49,14 +49,14 @@ export function PageHeader({
             className="object-cover opacity-30"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-900/70 to-navy-900/50" />
+          <div className="absolute inset-0 bg-pageheader-scrim" />
         </div>
       )}
 
       <Container className="relative z-10">
         {breadcrumbs && breadcrumbs.length > 0 && (
           <nav aria-label="Breadcrumb" className="mb-4">
-            <ol className="flex flex-wrap items-center gap-2 text-sm text-sand-50/80">
+            <ol className="flex flex-wrap items-center gap-2 text-sm text-on-dark-soft">
               {breadcrumbs.map((crumb, index) => (
                 <li key={crumb.label} className="flex items-center gap-2">
                   {index > 0 && (
@@ -78,7 +78,7 @@ export function PageHeader({
                   {crumb.href ? (
                     <Link
                       href={crumb.href}
-                      className="hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+                      className="hover:text-on-dark-accent focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
                     >
                       {crumb.label}
                     </Link>
@@ -95,7 +95,7 @@ export function PageHeader({
           {title}
         </h1>
         {subtitle && (
-          <p className="mt-4 max-w-2xl text-lg text-sand-50/90">{subtitle}</p>
+          <p className="mt-4 max-w-2xl text-lg text-on-dark">{subtitle}</p>
         )}
       </Container>
     </section>

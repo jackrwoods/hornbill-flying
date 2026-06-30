@@ -4,12 +4,12 @@ import { ResourceCard } from "@/components/ResourceCard";
 
 export function QuickLinksSection() {
   return (
-    <Section background="white" id="quick-links">
+    <Section background="card" id="quick-links">
       <Container>
-        <h2 className="font-heading text-3xl text-navy-900 md:text-4xl">
+        <h2 className="font-heading text-3xl text-heading md:text-4xl">
           More from Hornbill Aviation
         </h2>
-        <p className="mt-4 max-w-2xl text-ink-light">
+        <p className="mt-4 max-w-2xl text-muted">
           Book a first flight, explore the fleet, compare programs, or get in touch
           with the team.
         </p>

@@ -6,9 +6,9 @@ export function InstrumentRatingWhyHornbillSection() {
   const { whyHornbill } = instrumentRatingProgram;
 
   return (
-    <Section background="navy" id="why-hornbill">
+    <Section background="dark" id="why-hornbill">
       <Container>
-        <h2 className="font-heading text-3xl md:text-4xl text-white">
+        <h2 className="font-heading text-3xl md:text-4xl text-on-dark">
           {whyHornbill.title}
         </h2>
 
@@ -16,10 +16,10 @@ export function InstrumentRatingWhyHornbillSection() {
           {whyHornbill.items.map((item) => (
             <div
               key={item.title}
-              className="rounded-xl bg-white/5 p-6"
+              className="rounded-xl bg-on-dark-subtle p-6"
             >
-              <h3 className="font-heading text-xl text-gold-400">{item.title}</h3>
-              <p className="mt-2 text-sand-50/90">{item.description}</p>
+              <h3 className="font-heading text-xl text-on-dark-accent-hover">{item.title}</h3>
+              <p className="mt-2 text-on-dark">{item.description}</p>
             </div>
           ))}
         </div>

@@ -127,9 +127,9 @@ export function MembershipBenefitsSection() {
   const { benefits } = membershipContent;
 
   return (
-    <Section background="white" id="benefits">
+    <Section background="card" id="benefits">
       <Container>
-        <h2 className="font-heading text-3xl text-navy-900 md:text-4xl">
+        <h2 className="font-heading text-3xl text-heading md:text-4xl">
           {benefits.title}
         </h2>
 
@@ -137,15 +137,15 @@ export function MembershipBenefitsSection() {
           {benefits.items.map((item) => (
             <div
               key={item.title}
-              className="rounded-xl border border-navy-800/10 bg-sand-50 p-6"
+              className="rounded-xl border border-border-subtle bg-bg p-6"
             >
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-navy-900 text-gold-500">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-dark text-on-dark-accent">
                 {icons[item.title]}
               </div>
-              <h3 className="mt-4 font-heading text-xl text-navy-900">
+              <h3 className="mt-4 font-heading text-xl text-heading">
                 {item.title}
               </h3>
-              <p className="mt-2 text-ink-light">{item.description}</p>
+              <p className="mt-2 text-muted">{item.description}</p>
             </div>
           ))}
         </div>

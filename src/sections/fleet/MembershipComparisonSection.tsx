@@ -14,28 +14,28 @@ export function MembershipComparisonSection() {
   } = membershipRates;
 
   return (
-    <Section background="sand" id="membership">
+    <Section background="default" id="membership">
       <Container>
-        <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
+        <h2 className="font-heading text-3xl md:text-4xl text-heading">
           Membership vs non-member rates
         </h2>
-        <p className="mt-4 max-w-2xl text-ink-light">
+        <p className="mt-4 max-w-2xl text-muted">
           Transparent pricing. One membership lowers every PA28 wet rate.
         </p>
 
         <div className="mt-10 grid gap-6 md:grid-cols-2">
-          <div className="rounded-xl border-t-4 border-gold-500 bg-white p-6 shadow-sm">
-            <p className="font-mono text-xs uppercase tracking-wide text-ink-light">
+          <div className="rounded-xl border-t-4 border-accent bg-white p-6 shadow-sm">
+            <p className="font-mono text-xs uppercase tracking-wide text-muted">
               Member
             </p>
-            <p className="mt-2 font-heading text-4xl text-navy-900">
+            <p className="mt-2 font-heading text-4xl text-heading">
               ${memberRate}
-              <span className="text-lg font-body text-ink-light">/hr wet</span>
+              <span className="text-lg font-body text-muted">/hr wet</span>
             </p>
-            <p className="mt-1 text-sm text-ink-light">
+            <p className="mt-1 text-sm text-muted">
               ${monthly}/month · students and renters who fly regularly
             </p>
-            <p className="mt-3 text-sm text-ink-light">{memberRateBillingNote}</p>
+            <p className="mt-3 text-sm text-muted">{memberRateBillingNote}</p>
             <p className="mt-4 text-sm font-semibold text-success">
               Save ${savingsPerHour}/hr. At about {breakEvenHours} hours per month,
               membership pays for itself.
@@ -43,14 +43,14 @@ export function MembershipComparisonSection() {
           </div>
 
           <div className="rounded-xl bg-white p-6 shadow-sm">
-            <p className="font-mono text-xs uppercase tracking-wide text-ink-light">
+            <p className="font-mono text-xs uppercase tracking-wide text-muted">
               Non-member
             </p>
-            <p className="mt-2 font-heading text-4xl text-navy-900">
+            <p className="mt-2 font-heading text-4xl text-heading">
               ${nonMemberRate}
-              <span className="text-lg font-body text-ink-light">/hr wet</span>
+              <span className="text-lg font-body text-muted">/hr wet</span>
             </p>
-            <p className="mt-1 text-sm text-ink-light">
+            <p className="mt-1 text-sm text-muted">
               No monthly fee · occasional renters or visitors
             </p>
           </div>
@@ -59,7 +59,7 @@ export function MembershipComparisonSection() {
         <div className="mt-8">
           <Link
             href="/membership/"
-            className="inline-flex items-center text-sm font-semibold text-gold-500 hover:text-gold-400 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+            className="inline-flex items-center text-sm font-semibold text-accent hover:text-on-dark-accent-hover focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
             data-analytics="membership_signup_started"
           >
             See membership details

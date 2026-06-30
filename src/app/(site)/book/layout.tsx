@@ -69,10 +69,10 @@ export default function BookLayout({
     <>
       <SchemaInjector schema={bookSchema} id="book-schema" />
       {children}
-      <div className="fixed bottom-0 left-0 right-0 z-40 border-t border-navy-800 bg-navy-900 p-3 lg:hidden">
+      <div className="fixed bottom-0 left-0 right-0 z-40 border-t border-dark-muted bg-dark p-3 lg:hidden">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-3">
           <PhoneLink
-            className="text-sm text-white hover:text-gold-500"
+            className="text-sm text-on-dark hover:text-on-dark-accent"
             showIcon
           />
           <CTALink

@@ -115,11 +115,11 @@ export default function DiscoveryFlightPage() {
     <>
       <SchemaInjector schema={pageSchema} id="discovery-flight-schema" />
 
-      <Section background="white" id="hero-details">
+      <Section background="card" id="hero-details">
         <Container>
           <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
             <div className="order-2 lg:order-1">
-              <div className="overflow-hidden rounded-2xl bg-navy-900">
+              <div className="overflow-hidden rounded-2xl bg-dark">
                 <Image
                   src="/images/discovery-flight-hero.jpg"
                   alt="PA28 Cherokee on the ramp at Reno-Tahoe International Airport"
@@ -134,25 +134,25 @@ export default function DiscoveryFlightPage() {
               </div>
             </div>
             <div className="order-1 space-y-6 lg:order-2">
-              <nav aria-label="Breadcrumb" className="text-sm text-ink-light">
+              <nav aria-label="Breadcrumb" className="text-sm text-muted">
                 <ol className="flex flex-wrap items-center gap-2">
                   <li>
-                    <Link href="/" className="hover:text-navy-900 hover:underline">Home</Link>
+                    <Link href="/" className="hover:text-heading hover:underline">Home</Link>
                   </li>
                   <li aria-hidden="true">/</li>
-                  <li aria-current="page" className="text-navy-900">Discovery Flight</li>
+                  <li aria-current="page" className="text-heading">Discovery Flight</li>
                 </ol>
               </nav>
-              <h1 className="font-heading text-4xl text-navy-900 md:text-5xl">
+              <h1 className="font-heading text-4xl text-heading md:text-5xl">
                 Book a discovery flight in Reno, NV.
               </h1>
-              <p className="text-lg text-ink-light">
+              <p className="text-lg text-muted">
                 {`Spend 45–60 minutes in the left seat of a PA28 at Reno–Tahoe (RNO). $${siteConfig.pricing.discoveryFlight}. No deposit required.`}
               </p>
               <div className="flex flex-col gap-4 sm:flex-row">
                 <a
                   href="#booking-widget"
-                  className="inline-flex min-h-[3.25rem] items-center justify-center rounded-lg bg-navy-900 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-navy-800 focus:outline-none focus:ring-2 focus:ring-gold-500"
+                  className="inline-flex min-h-[3.25rem] items-center justify-center rounded-lg bg-dark px-5 py-3 text-sm font-semibold text-on-dark transition-colors hover:bg-dark-muted focus:outline-none focus:ring-2 focus:ring-focus-ring"
                 >
                   Book now
                 </a>
@@ -166,13 +166,13 @@ export default function DiscoveryFlightPage() {
                 </CTALink>
               </div>
               <div className="flex flex-wrap gap-3 pt-2">
-                <span className="rounded-full bg-gold-500 px-3 py-1 text-xs font-semibold text-navy-900">
+                <span className="rounded-full bg-accent px-3 py-1 text-xs font-semibold text-heading">
                   Part 61 school
                 </span>
-                <span className="rounded-full bg-gold-500 px-3 py-1 text-xs font-semibold text-navy-900">
+                <span className="rounded-full bg-accent px-3 py-1 text-xs font-semibold text-heading">
                   PA28 fleet
                 </span>
-                <span className="rounded-full bg-gold-500 px-3 py-1 text-xs font-semibold text-navy-900">
+                <span className="rounded-full bg-accent px-3 py-1 text-xs font-semibold text-heading">
                   RNO
                 </span>
               </div>
@@ -181,31 +181,31 @@ export default function DiscoveryFlightPage() {
         </Container>
       </Section>
 
-      <Section background="sand" id="whats-included">
+      <Section background="default" id="whats-included">
         <Container>
-          <h2 className="font-heading text-3xl text-navy-900 md:text-4xl">
+          <h2 className="font-heading text-3xl text-heading md:text-4xl">
             What’s included
           </h2>
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {WHAT_IS_INCLUDED.map((item) => (
               <div
                 key={item.label}
-                className="rounded-xl border border-navy-800/10 bg-white p-5 shadow-sm"
+                className="rounded-xl border border-border-subtle bg-white p-5 shadow-sm"
               >
-                <h3 className="font-heading text-xl text-navy-900">{item.label}</h3>
-                <p className="mt-2 text-ink-light">{item.text}</p>
+                <h3 className="font-heading text-xl text-heading">{item.label}</h3>
+                <p className="mt-2 text-muted">{item.text}</p>
               </div>
             ))}
           </div>
         </Container>
       </Section>
 
-      <Section background="white" id="booking-widget">
+      <Section background="card" id="booking-widget">
         <Container>
-          <h2 className="font-heading text-3xl text-navy-900 md:text-4xl">
+          <h2 className="font-heading text-3xl text-heading md:text-4xl">
             Book your flight
           </h2>
-          <p className="mt-2 max-w-2xl text-ink-light">
+          <p className="mt-2 max-w-2xl text-muted">
             Choose your flight type, pick a date and time, enter your details,
             and pay online. Most visitors complete a booking in under a minute.
           </p>
@@ -217,41 +217,41 @@ export default function DiscoveryFlightPage() {
         </Container>
       </Section>
 
-      <Section background="navy" id="why-hornbill">
+      <Section background="dark" id="why-hornbill">
         <Container>
-          <h2 className="font-heading text-3xl text-white md:text-4xl">
+          <h2 className="font-heading text-3xl text-on-dark md:text-4xl">
             Why train with Hornbill Aviation?
           </h2>
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {WHY_HORNBILL.map((item) => (
               <div
                 key={item.label}
-                className="rounded-xl border border-white/10 bg-white/5 p-5"
+                className="rounded-xl border border-on-dark-subtle bg-on-dark-subtle p-5"
               >
-                <h3 className="font-heading text-xl text-gold-400">{item.label}</h3>
-                <p className="mt-2 text-sand-50/90">{item.text}</p>
+                <h3 className="font-heading text-xl text-on-dark-accent-hover">{item.label}</h3>
+                <p className="mt-2 text-on-dark">{item.text}</p>
               </div>
             ))}
           </div>
           <div className="mt-10">
-            <PhoneLink className="text-gold-400 hover:text-gold-500" />
+            <PhoneLink className="text-on-dark-accent-hover hover:text-on-dark-accent" />
           </div>
         </Container>
       </Section>
 
-      <Section background="sand" id="faq">
+      <Section background="default" id="faq">
         <Container>
-          <h2 className="font-heading text-3xl text-navy-900 md:text-4xl">
+          <h2 className="font-heading text-3xl text-heading md:text-4xl">
             Frequently asked questions
           </h2>
           <div className="mt-8 max-w-3xl">
             <FAQAccordion faqs={DISCOVERY_FAQ} />
           </div>
-          <p className="mt-6 text-sm text-ink-light">
+          <p className="mt-6 text-sm text-muted">
             Still have questions?{" "}
             <Link
               href="/cancellation-policy/"
-              className="font-medium text-navy-900 hover:text-gold-500 hover:underline"
+              className="font-medium text-heading hover:text-accent hover:underline"
             >
               Read our cancellation and weather policy
             </Link>

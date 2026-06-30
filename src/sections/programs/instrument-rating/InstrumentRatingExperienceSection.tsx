@@ -6,25 +6,25 @@ export function InstrumentRatingExperienceSection() {
   const { experience } = instrumentRatingProgram;
 
   return (
-    <Section background="teal" id="experience">
+    <Section background="callout" id="experience">
       <Container>
-        <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
+        <h2 className="font-heading text-3xl md:text-4xl text-heading">
           {experience.title}
         </h2>
-        <p className="mt-4 max-w-3xl text-ink-light">{experience.intro}</p>
+        <p className="mt-4 max-w-3xl text-muted">{experience.intro}</p>
 
         <div className="mt-8 overflow-hidden rounded-xl bg-white shadow-sm">
           <table className="w-full text-left">
-            <tbody className="divide-y divide-navy-800/10">
+            <tbody className="divide-y divide-border-subtle">
               {experience.rows.map((row) => (
                 <tr key={row.label}>
                   <th
                     scope="row"
-                    className="px-6 py-4 font-body font-medium text-ink"
+                    className="px-6 py-4 font-body font-medium text-body"
                   >
                     {row.label}
                   </th>
-                  <td className="px-6 py-4 text-right font-mono text-navy-900">
+                  <td className="px-6 py-4 text-right font-mono text-heading">
                     {row.value}
                   </td>
                 </tr>
@@ -33,7 +33,7 @@ export function InstrumentRatingExperienceSection() {
           </table>
         </div>
 
-        <p className="mt-6 text-sm text-ink-light">{experience.note}</p>
+        <p className="mt-6 text-sm text-muted">{experience.note}</p>
       </Container>
     </Section>
   );

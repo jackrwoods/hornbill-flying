@@ -43,7 +43,7 @@ export default function DensityAltitudePage() {
         { href: "/fleet/", label: "PA28 fleet and rates" },
       ]}
     >
-      <div className="rounded-lg bg-teal-100 p-4 text-ink">
+      <div className="rounded-lg bg-callout p-4 text-body">
         <p>
           Density altitude is pressure altitude corrected for temperature. Hot,
           high days at RNO can make the airplane perform as if it is thousands

@@ -12,9 +12,9 @@ export function InstructorCredentialsSection({
   const { credentials, publishCertificate, certificateNumber } = instructor;
 
   return (
-    <Section background="teal" id="credentials">
+    <Section background="callout" id="credentials">
       <Container>
-        <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
+        <h2 className="font-heading text-3xl md:text-4xl text-heading">
           Credentials & experience
         </h2>
 
@@ -24,19 +24,19 @@ export function InstructorCredentialsSection({
               key={certificate}
               className="rounded-lg bg-white p-4 shadow-sm"
             >
-              <p className="font-mono text-xs uppercase tracking-wide text-gold-500">
+              <p className="font-mono text-xs uppercase tracking-wide text-accent">
                 Certificate / Rating
               </p>
-              <p className="mt-1 font-semibold text-navy-900">{certificate}</p>
+              <p className="mt-1 font-semibold text-heading">{certificate}</p>
             </li>
           ))}
 
           {credentials.totalHours && (
             <li className="rounded-lg bg-white p-4 shadow-sm">
-              <p className="font-mono text-xs uppercase tracking-wide text-gold-500">
+              <p className="font-mono text-xs uppercase tracking-wide text-accent">
                 Total flight hours
               </p>
-              <p className="mt-1 font-semibold text-navy-900">
+              <p className="mt-1 font-semibold text-heading">
                 {credentials.totalHours}
               </p>
             </li>
@@ -44,10 +44,10 @@ export function InstructorCredentialsSection({
 
           {credentials.hoursInstructing && (
             <li className="rounded-lg bg-white p-4 shadow-sm">
-              <p className="font-mono text-xs uppercase tracking-wide text-gold-500">
+              <p className="font-mono text-xs uppercase tracking-wide text-accent">
                 Hours instructing
               </p>
-              <p className="mt-1 font-semibold text-navy-900">
+              <p className="mt-1 font-semibold text-heading">
                 {credentials.hoursInstructing}
               </p>
             </li>
@@ -55,12 +55,12 @@ export function InstructorCredentialsSection({
         </ul>
 
         {publishCertificate && certificateNumber && (
-          <p className="mt-6 text-sm text-ink-light">
+          <p className="mt-6 text-sm text-muted">
             FAA certificate number: {certificateNumber}
           </p>
         )}
 
-        <p className="mt-6 max-w-3xl text-ink-light">
+        <p className="mt-6 max-w-3xl text-muted">
           All instruction follows FAA Part 61 standards and Hornbill Aviation
           flight center safety practices. Aircraft are inspected before each
           flight and maintained on a recurring schedule.
