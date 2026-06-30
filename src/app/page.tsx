@@ -38,48 +38,23 @@ export default function ComingSoonPage() {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="sticky top-0 z-40 bg-header-bg relative">
-        {/* Cheatline — 70s livery stripe */}
-        <div
-          aria-hidden="true"
-          className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#1C3B61]"
-        />
-        <div
-          aria-hidden="true"
-          className="absolute bottom-0.5 left-0 right-0 h-0.5 bg-header-cheatline"
-        />
-        <div
-          aria-hidden="true"
-          className="absolute bottom-1 left-0 right-0 h-0.5 bg-[#F9A90C]"
-        />
-        <Container>
-          <div className="flex h-18 items-center justify-between">
-            <div className="flex items-center gap-4">
-              <Logo variant="stacked" size={48} textClassName="text-ink" />
-            </div>
-
-            <a
-              href={siteConfig.flightCircleScheduleUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-analytics="header_schedule_click"
-              className="relative px-2 py-2 text-sm font-semibold uppercase tracking-wide text-ink transition-colors hover:text-active focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 focus:ring-offset-header-bg rounded"
-            >
-              Schedule
-            </a>
-          </div>
-        </Container>
-      </header>
-
       <main className="flex-1">
         <section
           className="relative flex flex-col overflow-hidden bg-bg lg:flex-row"
-          style={{ minHeight: "calc(100svh - 4.875rem)" }}
+          style={{ minHeight: "100svh" }}
         >
           {/* Text panel — slanted right edge on desktop only (rectangle on mobile) */}
           <div
             className="relative z-10 flex flex-col justify-center bg-bg px-6 py-12 lg:w-[48%] lg:px-12 xl:px-16 lg:py-0 lg:[clip-path:polygon(0_0,100%_0,85%_100%,0_100%)]"
           >
+            <div className="mb-8 origin-left scale-125 md:scale-150 lg:scale-[1.75]">
+              <Logo
+                variant="stacked"
+                size={64}
+                textClassName="text-[#2E2717]"
+                largeText
+              />
+            </div>
             <h1 className="font-heading text-4xl leading-tight text-heading md:text-5xl lg:text-6xl">
               Aircraft Rentals and Flight Training
             </h1>
@@ -94,9 +69,9 @@ export default function ComingSoonPage() {
             aria-hidden="true"
             className="pointer-events-none relative z-20 flex flex-col lg:hidden"
           >
-            <div className="h-0.5 bg-ink" />
-            <div className="h-0.5 bg-header-cheatline" />
-            <div className="h-0.5 bg-[#F9A90C]" />
+            <div className="h-3 bg-ink" />
+            <div className="h-3 bg-header-cheatline" />
+            <div className="h-3 bg-[#F9A90C]" />
           </div>
 
           {/* Photo panel */}
@@ -114,10 +89,10 @@ export default function ComingSoonPage() {
           </div>
 
           {/* Diagonal cheat-line seam — desktop only.
-              Three 2px-thick slanted bands (matching the header's h-0.5 cheat
-              lines) rendered as locked polygons. The seam is now more dramatic:
-              x=48% at the top to x=34% at the bottom. Stripe order is reversed
-              so the colors read gold/coral/ink from left to right. */}
+              Three 12px-thick slanted bands rendered as locked polygons. The
+              seam is now more dramatic: x=48% at the top to x=34% at the
+              bottom. Stripe order is reversed so the colors read
+              gold/coral/ink from left to right. */}
           <svg
             aria-hidden="true"
             className="pointer-events-none absolute inset-0 z-20 hidden lg:block"
@@ -125,15 +100,15 @@ export default function ComingSoonPage() {
             viewBox="0 0 100 100"
           >
             <polygon
-              points="48.22,0 48.44,0 34.22,100 34.0,100"
+              points="50.42,0 51.74,0 37.74,100 36.42,100"
               fill="var(--palette-gold-400)"
             />
             <polygon
-              points="48.0,0 48.22,0 34.0,100 33.78,100"
+              points="49.10,0 50.42,0 36.42,100 35.10,100"
               fill="var(--palette-coral)"
             />
             <polygon
-              points="47.78,0 48.0,0 33.78,100 33.56,100"
+              points="47.78,0 49.10,0 35.10,100 33.78,100"
               fill="#1C3B61"
             />
           </svg>
