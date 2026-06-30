@@ -6,7 +6,7 @@ export function InstrumentRatingExperienceSection() {
   const { experience } = instrumentRatingProgram;
 
   return (
-    <Section background="sky" id="experience">
+    <Section background="teal" id="experience">
       <Container>
         <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
           {experience.title}

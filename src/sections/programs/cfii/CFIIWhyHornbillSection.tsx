@@ -16,7 +16,7 @@ export function CFIIWhyHornbillSection() {
               className="rounded-xl bg-navy-800 p-6"
             >
               <h3 className="font-heading text-xl text-gold-500">{item.title}</h3>
-              <p className="mt-2 text-cream-50/90">{item.description}</p>
+              <p className="mt-2 text-sand-50/90">{item.description}</p>
             </div>
           ))}
         </div>

@@ -14,7 +14,7 @@ export function MountainFlyingSafetySection() {
             <h2 className="font-heading text-3xl md:text-4xl text-white">
               {safety.title}
             </h2>
-            <p className="mt-4 text-cream-50/90 leading-relaxed">
+            <p className="mt-4 text-sand-50/90 leading-relaxed">
               {safety.intro}
             </p>
 
@@ -39,7 +39,7 @@ export function MountainFlyingSafetySection() {
               {safety.nonNegotiables.map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <span
-                    className="mt-1 flex h-2 w-2 flex-shrink-0 rounded-full bg-orange-500"
+                    className="mt-1 flex h-2 w-2 flex-shrink-0 rounded-full bg-orange"
                     aria-hidden="true"
                   />
                   <span className="text-ink-light">{item}</span>

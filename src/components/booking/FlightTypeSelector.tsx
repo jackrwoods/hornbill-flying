@@ -55,7 +55,7 @@ export function FlightTypeSelector({
               "flex min-h-[8rem] min-w-[17.5rem] flex-col rounded-xl border p-5 text-left transition-colors focus:outline-none focus:ring-2 focus:ring-gold-500",
               isSelected
                 ? "border-gold-500 bg-gold-500/10"
-                : "border-navy-800/10 bg-white hover:bg-cream-50"
+                : "border-navy-800/10 bg-white hover:bg-sand-50"
             )}
             aria-pressed={isSelected}
           >

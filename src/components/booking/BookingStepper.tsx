@@ -20,7 +20,7 @@ export function BookingStepper({
     <nav
       aria-label="Booking steps"
       className={cn(
-        "sticky top-[4.5rem] z-30 border-b border-navy-800/10 bg-cream-50 py-4 shadow-sm",
+        "sticky top-[4.5rem] z-30 border-b border-navy-800/10 bg-sand-50 py-4 shadow-sm",
         className
       )}
     >
@@ -36,7 +36,7 @@ export function BookingStepper({
                 <span
                   className={cn(
                     "flex h-11 w-11 min-h-[2.75rem] min-w-[2.75rem] items-center justify-center rounded-full text-sm font-semibold transition-colors",
-                    isCurrent && "bg-orange-500 text-white",
+                    isCurrent && "bg-orange text-white",
                     isCompleted && "bg-navy-900 text-white",
                     isUpcoming && "border-2 border-navy-800/20 bg-white text-ink-light"
                   )}

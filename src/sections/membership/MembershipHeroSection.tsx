@@ -32,7 +32,7 @@ export function MembershipHeroSection() {
             <p className="mt-4 font-heading text-2xl text-gold-400 md:text-3xl">
               {hero.headline}
             </p>
-            <p className="mt-6 text-lg text-cream-50/90 md:text-xl">
+            <p className="mt-6 text-lg text-sand-50/90 md:text-xl">
               {hero.valueProp}
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">

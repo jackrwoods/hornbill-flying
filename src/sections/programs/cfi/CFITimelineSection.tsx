@@ -14,7 +14,7 @@ export function CFITimelineSection() {
         </p>
         <div className="mt-8 grid gap-6 md:grid-cols-2">
           {cfiProgram.timeline.options.map((option) => (
-            <div key={option.label} className="rounded-xl bg-cream-50 p-6">
+            <div key={option.label} className="rounded-xl bg-sand-50 p-6">
               <p className="font-mono text-xs uppercase tracking-wide text-ink-light">
                 {option.label}
               </p>

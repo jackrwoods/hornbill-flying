@@ -17,7 +17,7 @@ export function MountainFlyingSampleRoutesSection() {
 
         <div className="mt-8 overflow-hidden rounded-xl bg-white shadow-sm">
           <table className="w-full text-left">
-            <thead className="bg-cream-50">
+            <thead className="bg-sand-50">
               <tr>
                 <th
                   scope="col"

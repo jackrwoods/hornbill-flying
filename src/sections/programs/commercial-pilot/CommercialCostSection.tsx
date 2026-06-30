@@ -7,7 +7,7 @@ export function CommercialCostSection() {
   const { cost } = commercialPilotProgram;
 
   return (
-    <Section background="cream" id="cost">
+    <Section background="sand" id="cost">
       <Container>
         <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
           {cost.title}
@@ -31,7 +31,7 @@ export function CommercialCostSection() {
                 </tr>
               ))}
             </tbody>
-            <tfoot className="bg-cream-50">
+            <tfoot className="bg-sand-50">
               <tr>
                 <th
                   scope="row"

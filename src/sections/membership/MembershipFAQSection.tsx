@@ -5,7 +5,7 @@ import { membershipContent, membershipFAQs } from "@/content/membership";
 
 export function MembershipFAQSection() {
   return (
-    <Section background="cream" id="faq">
+    <Section background="sand" id="faq">
       <Container>
         <h2 className="font-heading text-3xl text-navy-900 md:text-4xl">
           {membershipContent.faqTitle}

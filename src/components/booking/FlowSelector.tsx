@@ -15,7 +15,7 @@ export function FlowSelector() {
           <div className="flex items-start justify-between">
             <h3 className="font-heading text-xl text-navy-900">{option.label}</h3>
             {option.comingSoon && (
-              <span className="rounded-full bg-sky-100 px-2 py-1 text-xs font-semibold text-navy-900">
+              <span className="rounded-full bg-teal-100 px-2 py-1 text-xs font-semibold text-navy-900">
                 Coming soon
               </span>
             )}

@@ -6,7 +6,7 @@ export function PrivatePilotOutcomesSection() {
   const { outcomes } = privatePilotProgram;
 
   return (
-    <Section background="cream" id="outcomes">
+    <Section background="sand" id="outcomes">
       <Container>
         <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
           {outcomes.title}

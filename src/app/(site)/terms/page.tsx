@@ -66,7 +66,7 @@ export default function TermsPage() {
           { label: PAGE_TITLE },
         ]}
       />
-      <Section background="cream">
+      <Section background="sand">
         <Container>
           <Prose>
             {termsContent.sections.map((section) => (

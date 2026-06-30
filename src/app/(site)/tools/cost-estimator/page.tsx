@@ -43,7 +43,7 @@ export default function CostEstimatorPage() {
         { href: "/programs/private-pilot/", label: "Private Pilot program" },
       ]}
     >
-      <div className="rounded-lg bg-sky-100 p-4 text-ink">
+      <div className="rounded-lg bg-teal-100 p-4 text-ink">
         <p>
           Use this tool to get a rough range for your training budget. It uses
           our published PA28 wet rates, membership savings, and a placeholder

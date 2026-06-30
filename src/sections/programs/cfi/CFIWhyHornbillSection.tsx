@@ -14,15 +14,15 @@ export function CFIWhyHornbillSection() {
           {cfiProgram.whyHornbill.items.map((item) => (
             <div key={item.title} className="rounded-xl bg-navy-800 p-6">
               <h3 className="font-heading text-xl text-gold-500">{item.title}</h3>
-              <p className="mt-2 text-cream-50/90">{item.description}</p>
+              <p className="mt-2 text-sand-50/90">{item.description}</p>
             </div>
           ))}
         </div>
-        <p className="mt-6 text-cream-50/80">
+        <p className="mt-6 text-sand-50/80">
           Meet the instructors who mentor CFI candidates on our{" "}
           <Link
             href="/instructors/"
-            className="font-semibold text-gold-400 hover:text-gold-300 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+            className="font-semibold text-gold-400 hover:text-gold-400 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
           >
             instructors page
           </Link>

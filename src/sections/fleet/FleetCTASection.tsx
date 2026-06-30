@@ -12,7 +12,7 @@ export function FleetCTASection() {
           <h2 className="font-heading text-3xl md:text-4xl text-white">
             Ready to fly?
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-cream-50/90">
+          <p className="mx-auto mt-4 max-w-2xl text-sand-50/90">
             Book a discovery flight or start a membership today. Questions? Call
             us and we will walk you through the rates.
           </p>
@@ -35,7 +35,7 @@ export function FleetCTASection() {
             <PhoneLink className="text-white hover:text-gold-400" showIcon />
           </div>
 
-          <p className="mt-6 text-sm text-cream-50/70">
+          <p className="mt-6 text-sm text-sand-50/70">
             Interested in a full certificate?{" "}
             <Link
               href="/programs/private-pilot/"

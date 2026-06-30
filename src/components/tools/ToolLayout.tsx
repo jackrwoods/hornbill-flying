@@ -56,7 +56,7 @@ export function ToolLayout({
         ]}
       />
 
-      <Section background="cream">
+      <Section background="sand">
         <Container className="max-w-4xl">{children}</Container>
       </Section>
 
@@ -69,7 +69,7 @@ export function ToolLayout({
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="block rounded-lg border border-navy-800/10 bg-cream-50 p-4 font-semibold text-navy-900 hover:border-gold-500 hover:text-gold-600 focus:outline-none focus:ring-2 focus:ring-gold-500"
+                    className="block rounded-lg border border-navy-800/10 bg-sand-50 p-4 font-semibold text-navy-900 hover:border-gold-500 hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500"
                   >
                     {link.label}
                   </Link>
@@ -95,7 +95,7 @@ export function ToolLayout({
         <Section background="navy" id="cta">
           <Container className="max-w-4xl text-center">
             <h2 className="font-heading text-3xl text-white">Ready to fly?</h2>
-            <p className="mx-auto mt-4 max-w-xl text-cream-50/90">
+            <p className="mx-auto mt-4 max-w-xl text-sand-50/90">
               Book a discovery flight at Hornbill Aviation and see how Part 61 training in a PA28 fleet fits your schedule.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">

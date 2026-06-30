@@ -179,8 +179,8 @@ export interface Testimonial {
   image?: string;
 }
 
-export type ButtonVariant = "primary" | "secondary" | "tertiary" | "accent";
-export type SectionBackground = "cream" | "white" | "navy" | "gold" | "sky";
+export type ButtonVariant = "primary" | "secondary" | "tertiary" | "accent" | "header-cta";
+export type SectionBackground = "sand" | "white" | "navy" | "gold" | "teal";
 
 export interface AircraftPhoto {
   src: string;

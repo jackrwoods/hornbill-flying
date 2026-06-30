@@ -21,7 +21,7 @@ export function FaaResourcesSection() {
   const medical = externalResources.filter((r) => r.category === "medical");
 
   return (
-    <Section background="cream" id="faa-resources">
+    <Section background="sand" id="faa-resources">
       <Container>
         <h2 className="font-heading text-3xl text-navy-900 md:text-4xl">
           Useful FAA resources

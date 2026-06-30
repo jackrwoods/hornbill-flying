@@ -17,7 +17,9 @@ const variantClasses: Record<ButtonVariant, string> = {
   tertiary:
     "bg-transparent border-2 border-navy-900 text-navy-900 hover:bg-navy-900/5 focus:ring-navy-900",
   accent:
-    "bg-orange-500 text-white hover:bg-orange-400 focus:ring-gold-500",
+    "bg-orange text-white hover:bg-rust focus:ring-gold-500",
+  "header-cta":
+    "bg-header-cta-bg text-header-cta-text hover:bg-header-cta-hover focus:ring-focus-ring",
 };
 
 const baseClasses =

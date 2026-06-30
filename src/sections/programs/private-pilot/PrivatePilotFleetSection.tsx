@@ -27,7 +27,7 @@ export function PrivatePilotFleetSection() {
             </div>
           </div>
 
-          <div className="rounded-xl bg-cream-50 p-6">
+          <div className="rounded-xl bg-sand-50 p-6">
             <h3 className="font-heading text-xl text-navy-900">
               PA28 fleet highlights
             </h3>

@@ -31,7 +31,7 @@ export function SportPilotCostSection() {
                 </tr>
               ))}
             </tbody>
-            <tfoot className="bg-cream-50">
+            <tfoot className="bg-sand-50">
               <tr>
                 <th
                   scope="row"

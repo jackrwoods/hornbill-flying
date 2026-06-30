@@ -28,7 +28,7 @@ export function SportPilotHeroSection() {
             <h1 className="font-heading text-4xl leading-tight md:text-5xl lg:text-6xl">
               {hero.title}
             </h1>
-            <p className="mt-6 text-lg text-cream-50/90 md:text-xl">
+            <p className="mt-6 text-lg text-sand-50/90 md:text-xl">
               {hero.subtitle}
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">

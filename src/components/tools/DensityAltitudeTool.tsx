@@ -70,7 +70,7 @@ export function DensityAltitudeTool({ defaults }: DensityAltitudeToolProps) {
                   className={`rounded-md px-3 py-2 text-sm font-semibold ${
                     unit === "F"
                       ? "bg-navy-900 text-white"
-                      : "text-navy-900 hover:bg-cream-50"
+                      : "text-navy-900 hover:bg-sand-50"
                   }`}
                 >
                   °F
@@ -81,7 +81,7 @@ export function DensityAltitudeTool({ defaults }: DensityAltitudeToolProps) {
                   className={`rounded-md px-3 py-2 text-sm font-semibold ${
                     unit === "C"
                       ? "bg-navy-900 text-white"
-                      : "text-navy-900 hover:bg-cream-50"
+                      : "text-navy-900 hover:bg-sand-50"
                   }`}
                 >
                   °C

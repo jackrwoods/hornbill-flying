@@ -15,7 +15,7 @@ export function ContactFormSection() {
             form and we will reply within one business day.
           </p>
 
-          <div className="mt-8 rounded-xl border border-navy-800/10 bg-cream-50 p-6 md:p-8">
+          <div className="mt-8 rounded-xl border border-navy-800/10 bg-sand-50 p-6 md:p-8">
             <ContactForm />
           </div>
 

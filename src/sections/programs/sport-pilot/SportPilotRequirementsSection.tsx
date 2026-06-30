@@ -14,7 +14,7 @@ export function SportPilotRequirementsSection() {
               {requirements.title}
             </h2>
             <p className="mt-4 text-ink-light">{requirements.intro}</p>
-            <p className="mt-6 rounded-lg bg-sky-100 p-4 text-ink">
+            <p className="mt-6 rounded-lg bg-teal-100 p-4 text-ink">
               {requirements.note}
             </p>
           </div>
@@ -22,7 +22,7 @@ export function SportPilotRequirementsSection() {
             {requirements.items.map((item, index) => (
               <li
                 key={index}
-                className="flex items-start gap-3 rounded-lg bg-cream-50 p-4 shadow-sm"
+                className="flex items-start gap-3 rounded-lg bg-sand-50 p-4 shadow-sm"
               >
                 <span
                   className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-gold-500 text-xs font-semibold text-navy-900"

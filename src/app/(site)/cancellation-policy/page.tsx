@@ -67,7 +67,7 @@ export default function CancellationPolicyPage() {
           { label: PAGE_TITLE },
         ]}
       />
-      <Section background="cream">
+      <Section background="sand">
         <Container>
           <Prose>
             <p className="text-ink-light">
@@ -178,7 +178,7 @@ export default function CancellationPolicyPage() {
         </Container>
       </Section>
 
-      <Section background="sky">
+      <Section background="teal">
         <Container>
           <div className="flex flex-col items-center justify-center gap-4 text-center sm:flex-row">
             <CTALink

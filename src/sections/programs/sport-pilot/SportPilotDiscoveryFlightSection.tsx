@@ -12,7 +12,7 @@ export function SportPilotDiscoveryFlightSection() {
         <h2 className="font-heading text-3xl md:text-4xl text-white">
           {discoveryFlightCTA.title}
         </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-cream-50/90">
+        <p className="mx-auto mt-4 max-w-2xl text-sand-50/90">
           {discoveryFlightCTA.description}
         </p>
         <p className="mt-6 font-heading text-4xl text-gold-500">

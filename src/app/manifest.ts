@@ -12,12 +12,12 @@ export default function manifest(): MetadataRoute.Manifest {
       "Part 61 flight school in Reno, NV. Train in a consistent PA28 fleet and book a discovery flight.",
     start_url: assetPath("/"),
     display: "standalone",
-    background_color: "#F7F4EC",
-    theme_color: "#0B1C2C",
+    background_color: "#FFF8EC",
+    theme_color: "#004E7C",
     orientation: "portrait",
     icons: [
       {
-        src: assetPath("/logo.jpeg"),
+        src: assetPath("/logo.svg"),
         sizes: "any",
         type: "image/jpeg",
         purpose: "maskable",

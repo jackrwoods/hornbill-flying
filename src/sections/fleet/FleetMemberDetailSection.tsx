@@ -61,12 +61,12 @@ export function FleetMemberDetailSection({
                     Non-member ${nonMemberRate}/hr
                   </span>
                   {member.ifrEquipped && (
-                    <span className="inline-flex rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold text-navy-900">
+                    <span className="inline-flex rounded-full bg-teal-100 px-3 py-1 text-xs font-semibold text-navy-900">
                       IFR equipped
                     </span>
                   )}
                   {member.crossCountryReady && (
-                    <span className="inline-flex rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold text-navy-900">
+                    <span className="inline-flex rounded-full bg-teal-100 px-3 py-1 text-xs font-semibold text-navy-900">
                       Cross-country ready
                     </span>
                   )}
@@ -98,13 +98,13 @@ export function FleetMemberDetailSection({
                 </p>
                 <p className="text-ink leading-relaxed">{member.notes}</p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="inline-flex rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold text-navy-900">
+                  <span className="inline-flex rounded-full bg-teal-100 px-3 py-1 text-xs font-semibold text-navy-900">
                     Procedure training
                   </span>
-                  <span className="inline-flex rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold text-navy-900">
+                  <span className="inline-flex rounded-full bg-teal-100 px-3 py-1 text-xs font-semibold text-navy-900">
                     Approach practice
                   </span>
-                  <span className="inline-flex rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold text-navy-900">
+                  <span className="inline-flex rounded-full bg-teal-100 px-3 py-1 text-xs font-semibold text-navy-900">
                     IPC prep
                   </span>
                 </div>

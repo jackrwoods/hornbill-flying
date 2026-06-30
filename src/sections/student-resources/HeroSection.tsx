@@ -15,7 +15,7 @@ export function HeroSection() {
         ]}
       />
 
-      <Section background="sky" className="py-8 md:py-10">
+      <Section background="teal" className="py-8 md:py-10">
         <Container className="max-w-4xl">
           <div className="rounded-lg border-l-4 border-gold-500 bg-white p-6 shadow-sm">
             <p className="text-ink">

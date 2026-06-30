@@ -14,7 +14,7 @@ export function CFIIBenefitsSection() {
           {cfiiProgram.benefits.items.map((item) => (
             <div
               key={item.title}
-              className="rounded-xl border-t-4 border-gold-500 bg-cream-50 p-6"
+              className="rounded-xl border-t-4 border-gold-500 bg-sand-50 p-6"
             >
               <h3 className="font-heading text-xl text-navy-900">{item.title}</h3>
               <p className="mt-2 text-ink-light">{item.description}</p>

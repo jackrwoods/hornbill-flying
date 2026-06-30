@@ -27,7 +27,7 @@ export function ToolCard({ title, description, href, icon, className }: ToolCard
         className
       )}
     >
-      <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-sky-100 text-navy-900">
+      <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-teal-100 text-navy-900">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="22"
@@ -47,7 +47,7 @@ export function ToolCard({ title, description, href, icon, className }: ToolCard
           )}
         </svg>
       </div>
-      <h3 className="font-heading text-xl text-navy-900 group-hover:text-gold-600 transition-colors">
+      <h3 className="font-heading text-xl text-navy-900 group-hover:text-gold-500 transition-colors">
         {title}
       </h3>
       <p className="mt-2 text-sm text-ink-light">{description}</p>

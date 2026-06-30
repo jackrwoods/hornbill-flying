@@ -112,7 +112,7 @@ export function PaymentStep({
             "flex min-h-[3.25rem] w-full items-center justify-between rounded-lg border px-4 py-3 text-left transition-colors focus:outline-none focus:ring-2 focus:ring-gold-500",
             method === "deposit"
               ? "border-gold-500 bg-gold-500/10"
-              : "border-navy-800/10 bg-white hover:bg-cream-50"
+              : "border-navy-800/10 bg-white hover:bg-sand-50"
           )}
           aria-pressed={method === "deposit"}
           disabled={depositAmount <= 0}
@@ -127,7 +127,7 @@ export function PaymentStep({
             "flex min-h-[3.25rem] w-full items-center justify-between rounded-lg border px-4 py-3 text-left transition-colors focus:outline-none focus:ring-2 focus:ring-gold-500",
             method === "full"
               ? "border-gold-500 bg-gold-500/10"
-              : "border-navy-800/10 bg-white hover:bg-cream-50"
+              : "border-navy-800/10 bg-white hover:bg-sand-50"
           )}
           aria-pressed={method === "full"}
         >
@@ -141,7 +141,7 @@ export function PaymentStep({
             "flex min-h-[3.25rem] w-full items-center justify-between rounded-lg border px-4 py-3 text-left transition-colors focus:outline-none focus:ring-2 focus:ring-gold-500",
             method === "none"
               ? "border-gold-500 bg-gold-500/10"
-              : "border-navy-800/10 bg-white hover:bg-cream-50"
+              : "border-navy-800/10 bg-white hover:bg-sand-50"
           )}
           aria-pressed={method === "none"}
         >
@@ -150,7 +150,7 @@ export function PaymentStep({
         </button>
       </fieldset>
 
-      <div className="rounded-xl border border-navy-800/10 bg-cream-50 p-4">
+      <div className="rounded-xl border border-navy-800/10 bg-sand-50 p-4">
         <p className="text-sm text-ink-light">
           Payment processing will be handled securely through Stripe, including
           Apple Pay and Google Pay when your device supports them. This demo

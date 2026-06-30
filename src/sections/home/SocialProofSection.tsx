@@ -3,7 +3,7 @@ import { SocialProof } from "@/components/SocialProof";
 
 export function SocialProofSection() {
   return (
-    <Section background="cream">
+    <Section background="sand">
       <SocialProof />
     </Section>
   );

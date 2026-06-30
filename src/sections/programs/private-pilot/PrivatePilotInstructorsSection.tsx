@@ -7,7 +7,7 @@ export function PrivatePilotInstructorsSection() {
   const { instructors } = privatePilotProgram;
 
   return (
-    <Section background="cream" id="instructors">
+    <Section background="sand" id="instructors">
       <Container>
         <div className="rounded-xl border-l-4 border-gold-500 bg-white p-6 shadow-sm md:p-8">
           <h2 className="font-heading text-3xl md:text-4xl text-navy-900">

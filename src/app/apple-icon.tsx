@@ -14,16 +14,16 @@ export default function AppleIcon() {
           justifyContent: "center",
           width: "100%",
           height: "100%",
-          backgroundColor: "#0B1C2C",
+          backgroundColor: "#004E7C",
           borderRadius: "22%",
         }}
       >
         <span
           style={{
-            color: "#C89F4F",
+            color: "#F8AF12",
             fontSize: "110px",
-            fontFamily: "Georgia, serif",
-            fontWeight: 400,
+            fontFamily: "Nunito Sans, system-ui, sans-serif",
+            fontWeight: 800,
           }}
         >
           H

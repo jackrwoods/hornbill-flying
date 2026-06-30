@@ -15,7 +15,7 @@ export function PrivatePilotRequirementsSection() {
 
         <div className="mt-8 overflow-hidden rounded-xl bg-white shadow-sm">
           <table className="w-full text-left">
-            <thead className="bg-cream-50">
+            <thead className="bg-sand-50">
               <tr>
                 <th
                   scope="col"
@@ -47,7 +47,7 @@ export function PrivatePilotRequirementsSection() {
           </table>
         </div>
 
-        <p className="mt-6 rounded-lg bg-sky-100 p-4 text-ink">
+        <p className="mt-6 rounded-lg bg-teal-100 p-4 text-ink">
           {requirements.note}
         </p>
       </Container>

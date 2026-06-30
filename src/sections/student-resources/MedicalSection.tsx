@@ -24,7 +24,7 @@ export function MedicalSection() {
               </h3>
               <div className="mt-4 overflow-hidden rounded-lg border border-navy-800/10 bg-white">
                 <table className="w-full text-left text-sm">
-                  <thead className="bg-cream-50 text-navy-900">
+                  <thead className="bg-sand-50 text-navy-900">
                     <tr>
                       <th scope="col" className="px-4 py-3 font-semibold">Certificate</th>
                       <th scope="col" className="px-4 py-3 font-semibold">Typical use</th>
@@ -84,7 +84,7 @@ export function MedicalSection() {
                     href="https://medxpress.faa.gov/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-semibold text-navy-900 underline hover:text-gold-600"
+                    className="font-semibold text-navy-900 underline hover:text-gold-500"
                   >
                     FAA MedXPress
                   </a>{" "}
@@ -96,7 +96,7 @@ export function MedicalSection() {
                     href="https://www.faa.gov/pilots/medical/ame_locator/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-semibold text-navy-900 underline hover:text-gold-600"
+                    className="font-semibold text-navy-900 underline hover:text-gold-500"
                   >
                     FAA AME locator
                   </a>
@@ -150,7 +150,7 @@ export function MedicalSection() {
             <div>
               <Link
                 href="/blog/medical-certificate-student-pilots/"
-                className="inline-flex items-center font-semibold text-navy-900 underline hover:text-gold-600 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+                className="inline-flex items-center font-semibold text-navy-900 underline hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
               >
                 Read the medical certificate guide for student pilots
               </Link>
@@ -199,13 +199,13 @@ export function MedicalSection() {
               <h3 className="font-heading text-xl text-white">
                 Questions? Call us.
               </h3>
-              <p className="mt-2 text-sm text-cream-50/90">
+              <p className="mt-2 text-sm text-sand-50/90">
                 Not sure which medical path fits your training goal? We can point
                 you in the right direction before you schedule an exam.
               </p>
               <div className="mt-4">
                 <PhoneLink
-                  className="text-cream-50 hover:text-gold-400"
+                  className="text-sand-50 hover:text-gold-400"
                   showIcon
                 />
               </div>

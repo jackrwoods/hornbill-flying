@@ -6,7 +6,7 @@ export function MountainFlyingTerrainWeatherSection() {
   const { terrainWeather } = mountainFlyingProgram;
 
   return (
-    <Section background="cream" id="terrain-and-weather">
+    <Section background="sand" id="terrain-and-weather">
       <Container>
         <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
           {terrainWeather.title}

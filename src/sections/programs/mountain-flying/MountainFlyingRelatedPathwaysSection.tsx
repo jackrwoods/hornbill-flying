@@ -7,7 +7,7 @@ export function MountainFlyingRelatedPathwaysSection() {
   const { relatedPathways } = mountainFlyingProgram;
 
   return (
-    <Section background="cream" id="related-pathways">
+    <Section background="sand" id="related-pathways">
       <Container>
         <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
           {relatedPathways.title}

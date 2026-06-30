@@ -22,7 +22,7 @@ import { contactFAQ } from "@/content/contact";
 
 const PAGE_TITLE = "Contact Hornbill Aviation in Reno, NV";
 const PAGE_DESCRIPTION =
-  "Call 555-555-1234 or email office@hornbillaviation.com. Visit us at 1008 Gentry Way, Reno, NV. Book a discovery flight or send a message.";
+  "Call 555-555-1234 or email office@hornbillaviation.com. Visit us at 1880 Gentry Way, Reno, NV. Book a discovery flight or send a message.";
 
 export const metadata: Metadata = {
   title: buildTitle(PAGE_TITLE),

@@ -64,7 +64,7 @@ export default async function BlogIndexPage() {
         }}
       />
 
-      <Section background="cream">
+      <Section background="sand">
         <Container>
           <LatestPosts posts={posts} />
         </Container>

@@ -16,7 +16,7 @@ export function LatestPosts({ posts, className }: LatestPostsProps) {
           className="flex flex-col rounded-xl bg-white p-5 shadow-sm transition hover:shadow-md"
         >
           <div className="flex items-center gap-2 text-xs font-mono text-ink-light">
-            <span className="rounded bg-sky-100 px-2 py-0.5 text-navy-900">
+            <span className="rounded bg-teal-100 px-2 py-0.5 text-navy-900">
               {post.category}
             </span>
             <time dateTime={post.date}>

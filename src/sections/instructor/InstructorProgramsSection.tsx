@@ -18,7 +18,7 @@ export function InstructorProgramsSection({
   if (taughtPrograms.length === 0) return null;
 
   return (
-    <Section background="cream" id="programs">
+    <Section background="sand" id="programs">
       <Container>
         <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
           Programs {instructor.name.split(" ")[0]} teaches

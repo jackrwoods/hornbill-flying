@@ -12,7 +12,7 @@ export function InstructorCredentialsSection({
   const { credentials, publishCertificate, certificateNumber } = instructor;
 
   return (
-    <Section background="sky" id="credentials">
+    <Section background="teal" id="credentials">
       <Container>
         <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
           Credentials & experience

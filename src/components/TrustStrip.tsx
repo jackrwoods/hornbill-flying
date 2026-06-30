@@ -3,7 +3,7 @@ import { homepageTrustStrip } from "@/content/homepage";
 
 export function TrustStrip({ className }: { className?: string }) {
   return (
-    <section className={`bg-sky-100 py-8 ${className ?? ""}`}>
+    <section className={`bg-teal-100 py-8 ${className ?? ""}`}>
       <Container>
         <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {homepageTrustStrip.items.map((item) => (

@@ -7,7 +7,7 @@ export const siteConfig: SiteConfig = {
   tagline: "Built around how you learn best.",
   nap: {
     name: "Hornbill Aviation",
-    streetAddress: "1008 Gentry Way",
+    streetAddress: "1880 Gentry Way",
     addressLocality: "Reno",
     addressRegion: "NV",
     postalCode: "89512",
@@ -74,12 +74,12 @@ export const siteConfig: SiteConfig = {
     nonMemberWetRate: 179,
     discoveryFlight: 199,
   },
-  // Map embed URL (OpenStreetMap iframe) centered on RNO / 1008 Gentry Way.
+  // Map embed URL (OpenStreetMap iframe) centered on RNO / 1880 Gentry Way.
   mapEmbedUrl:
     "https://www.openstreetmap.org/export/embed.html?bbox=-119.7781%2C39.4891%2C-119.7581%2C39.5091&layer=mapnik&marker=39.4991%2C-119.7681",
   // External directions link opened by "Get directions" CTAs.
   googleMapsDirectionsUrl:
-    "https://www.google.com/maps/dir/?api=1&destination=1008+Gentry+Way%2C+Reno%2C+NV+89512",
+    "https://www.google.com/maps/dir/?api=1&destination=1880+Gentry+Way%2C+Reno%2C+NV+89512",
   // External schedule link opened by "Schedule" navigation items.
   flightCircleScheduleUrl: "https://www.flightcircle.com/v1/#/schedule",
   // Backend endpoint for contact-form submissions. Empty until the custom API ships.

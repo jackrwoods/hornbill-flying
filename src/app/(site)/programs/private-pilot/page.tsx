@@ -114,7 +114,7 @@ export default function PrivatePilotProgramPage() {
       <SchemaInjector schema={schema} id="private-pilot-schema" />
       <PrivatePilotHeroSection />
 
-      <div className="border-b border-navy-800/10 bg-cream-50 py-4">
+      <div className="border-b border-navy-800/10 bg-sand-50 py-4">
         <Container>
           <Breadcrumb
             items={[

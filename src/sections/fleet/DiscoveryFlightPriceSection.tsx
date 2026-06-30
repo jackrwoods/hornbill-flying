@@ -7,7 +7,7 @@ export function DiscoveryFlightPriceSection() {
   const { price, duration, deposit, includes } = discoveryFlightPricing;
 
   return (
-    <Section background="sky" id="discovery-flight">
+    <Section background="teal" id="discovery-flight">
       <Container>
         <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
           <div>

@@ -51,7 +51,7 @@ export function InstructorPreviewCard({
             {instructor.specialties.slice(0, 3).map((specialty) => (
               <span
                 key={specialty}
-                className="inline-flex rounded bg-sky-100 px-2 py-0.5 text-xs font-medium text-navy-900"
+                className="inline-flex rounded bg-teal-100 px-2 py-0.5 text-xs font-medium text-navy-900"
               >
                 {specialty}
               </span>

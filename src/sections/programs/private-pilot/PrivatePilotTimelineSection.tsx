@@ -6,7 +6,7 @@ export function PrivatePilotTimelineSection() {
   const { timeline } = privatePilotProgram;
 
   return (
-    <Section background="cream" id="timeline">
+    <Section background="sand" id="timeline">
       <Container>
         <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
           {timeline.title}

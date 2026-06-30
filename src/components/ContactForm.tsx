@@ -191,7 +191,7 @@ export function ContactForm({ className }: ContactFormProps) {
 
   if (status === "success") {
     return (
-      <div className={cn("rounded-lg bg-sky-100 p-6 text-navy-900", className)} role="status">
+      <div className={cn("rounded-lg bg-teal-100 p-6 text-navy-900", className)} role="status">
         <p className="font-semibold">Thanks. We received your message and will reply soon.</p>
         <p className="mt-2 text-ink-light">
           If your question is urgent, call{" "}

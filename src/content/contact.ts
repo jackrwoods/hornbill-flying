@@ -29,6 +29,6 @@ export const contactFAQ: FAQItem[] = [
     id: "free-parking",
     question: "Is parking free at the office?",
     answer:
-      "Yes. Free visitor parking is available near the office at 1008 Gentry Way, right on the RNO field.",
+      "Yes. Free visitor parking is available near the office at 1880 Gentry Way, right on the RNO field.",
   },
 ];

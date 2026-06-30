@@ -181,7 +181,7 @@ export default function DiscoveryFlightPage() {
         </Container>
       </Section>
 
-      <Section background="cream" id="whats-included">
+      <Section background="sand" id="whats-included">
         <Container>
           <h2 className="font-heading text-3xl text-navy-900 md:text-4xl">
             What’s included
@@ -229,7 +229,7 @@ export default function DiscoveryFlightPage() {
                 className="rounded-xl border border-white/10 bg-white/5 p-5"
               >
                 <h3 className="font-heading text-xl text-gold-400">{item.label}</h3>
-                <p className="mt-2 text-cream-50/90">{item.text}</p>
+                <p className="mt-2 text-sand-50/90">{item.text}</p>
               </div>
             ))}
           </div>
@@ -239,7 +239,7 @@ export default function DiscoveryFlightPage() {
         </Container>
       </Section>
 
-      <Section background="cream" id="faq">
+      <Section background="sand" id="faq">
         <Container>
           <h2 className="font-heading text-3xl text-navy-900 md:text-4xl">
             Frequently asked questions

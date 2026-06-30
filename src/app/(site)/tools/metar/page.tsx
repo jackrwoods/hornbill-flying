@@ -43,7 +43,7 @@ export default function MetarPage() {
         { href: "/student-resources/", label: "Student resources" },
       ]}
     >
-      <div className="rounded-lg bg-sky-100 p-4 text-ink">
+      <div className="rounded-lg bg-teal-100 p-4 text-ink">
         <p>
           The current METAR below shows wind, visibility, ceiling, temperature,
           and altimeter at RNO. The TAF gives you the next forecast periods.
@@ -62,7 +62,7 @@ export default function MetarPage() {
           href="https://aviationweather.gov/"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center font-semibold text-navy-900 underline hover:text-gold-600 focus:outline-none focus:ring-2 focus:ring-gold-500"
+          className="inline-flex items-center font-semibold text-navy-900 underline hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500"
         >
           Full briefing on Aviation Weather Center
         </a>

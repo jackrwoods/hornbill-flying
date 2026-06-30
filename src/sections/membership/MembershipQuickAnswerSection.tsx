@@ -6,7 +6,7 @@ export function MembershipQuickAnswerSection() {
   const { quickAnswer } = membershipContent;
 
   return (
-    <Section background="sky" id="quick-answer">
+    <Section background="teal" id="quick-answer">
       <Container>
         <h2 className="font-heading text-2xl text-navy-900 md:text-3xl">
           {quickAnswer.title}

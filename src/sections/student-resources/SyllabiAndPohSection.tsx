@@ -13,7 +13,7 @@ export function SyllabiAndPohSection() {
   const pohCards = downloadableDocuments.filter((d) => d.tailNumber);
 
   return (
-    <Section background="cream" id="syllabi-and-poh">
+    <Section background="sand" id="syllabi-and-poh">
       <Container>
         <h2 className="font-heading text-3xl text-navy-900 md:text-4xl">
           Training syllabi and aircraft documents

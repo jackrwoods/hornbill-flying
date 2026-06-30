@@ -25,7 +25,7 @@ export function CFIIHeroSection() {
             <h1 className="font-heading text-4xl leading-tight md:text-5xl lg:text-6xl">
               CFII training in Reno, NV.
             </h1>
-            <p className="mt-6 text-lg text-cream-50/90 md:text-xl">
+            <p className="mt-6 text-lg text-sand-50/90 md:text-xl">
               Add instrument instruction to your CFI certificate. Teach
               approaches, holds, and partial-panel flying from Reno–Tahoe (RNO).
             </p>

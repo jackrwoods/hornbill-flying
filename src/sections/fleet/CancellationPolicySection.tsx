@@ -4,7 +4,7 @@ import { cancellationPolicy } from "@/content/fleet";
 
 export function CancellationPolicySection() {
   return (
-    <Section background="cream" id="cancellation-policy">
+    <Section background="sand" id="cancellation-policy">
       <Container>
         <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
           Cancellation and refund policy

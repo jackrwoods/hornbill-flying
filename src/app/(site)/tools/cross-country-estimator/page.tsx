@@ -43,7 +43,7 @@ export default function CrossCountryEstimatorPage() {
         { href: "/programs/private-pilot/", label: "Private Pilot program" },
       ]}
     >
-      <div className="rounded-lg bg-sky-100 p-4 text-ink">
+      <div className="rounded-lg bg-teal-100 p-4 text-ink">
         <p>
           Enter origin, destination, cruise speed, and fuel burn to get a
           straight-line distance, time, and fuel estimate. Add a wind component
@@ -60,7 +60,7 @@ export default function CrossCountryEstimatorPage() {
         <h3 className="font-heading text-xl text-navy-900">Sample routes</h3>
         <div className="mt-4 overflow-x-auto">
           <table className="min-w-full rounded-lg bg-white text-sm">
-            <thead className="bg-navy-900 text-cream-50">
+            <thead className="bg-navy-900 text-sand-50">
               <tr>
                 <th className="px-4 py-3 text-left font-body font-semibold">Route</th>
                 <th className="px-4 py-3 text-left font-body font-semibold">Origin</th>

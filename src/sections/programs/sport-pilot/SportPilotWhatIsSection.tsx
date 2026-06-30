@@ -6,7 +6,7 @@ export function SportPilotWhatIsSection() {
   const { whatIs } = sportPilotProgram;
 
   return (
-    <Section background="cream" id="what-is-sport-pilot">
+    <Section background="sand" id="what-is-sport-pilot">
       <Container>
         <div className="grid gap-12 lg:grid-cols-2">
           <div>
@@ -14,7 +14,7 @@ export function SportPilotWhatIsSection() {
               {whatIs.title}
             </h2>
             <p className="mt-4 text-ink-light leading-relaxed">{whatIs.intro}</p>
-            <p className="mt-6 rounded-lg bg-sky-100 p-4 text-ink">
+            <p className="mt-6 rounded-lg bg-teal-100 p-4 text-ink">
               {whatIs.note}
             </p>
           </div>
@@ -44,7 +44,7 @@ export function SportPilotWhatIsSection() {
                 {whatIs.limitations.map((item, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <span
-                      className="mt-1 flex h-2 w-2 flex-shrink-0 rounded-full bg-orange-500"
+                      className="mt-1 flex h-2 w-2 flex-shrink-0 rounded-full bg-orange"
                       aria-hidden="true"
                     />
                     <span className="text-ink-light">{item}</span>

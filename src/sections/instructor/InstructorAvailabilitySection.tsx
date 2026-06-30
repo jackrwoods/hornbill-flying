@@ -34,7 +34,7 @@ export function InstructorAvailabilitySection({
             </p>
           </div>
 
-          <div className="flex flex-col gap-4 rounded-xl bg-sky-100 p-6">
+          <div className="flex flex-col gap-4 rounded-xl bg-teal-100 p-6">
             <BookingCTALink
               instructorSlug={instructor.bookingSlug}
               instructorFirstName={firstName}

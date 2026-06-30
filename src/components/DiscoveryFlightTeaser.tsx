@@ -9,11 +9,11 @@ export function DiscoveryFlightTeaser({ className }: { className?: string }) {
         <h2 className="font-heading text-3xl md:text-4xl">
           {homepageDiscoveryTeaser.headline}
         </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-lg text-cream-50/90">
+        <p className="mx-auto mt-4 max-w-2xl text-lg text-sand-50/90">
           {homepageDiscoveryTeaser.subtext}
         </p>
 
-        <ul className="mx-auto mt-8 flex max-w-2xl flex-col items-center justify-center gap-3 text-cream-50/90 sm:flex-row">
+        <ul className="mx-auto mt-8 flex max-w-2xl flex-col items-center justify-center gap-3 text-sand-50/90 sm:flex-row">
           {homepageDiscoveryTeaser.bullets.map((bullet) => (
             <li key={bullet} className="flex items-center gap-2">
               <svg

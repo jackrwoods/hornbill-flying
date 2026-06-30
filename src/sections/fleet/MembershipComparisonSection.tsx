@@ -14,7 +14,7 @@ export function MembershipComparisonSection() {
   } = membershipRates;
 
   return (
-    <Section background="cream" id="membership">
+    <Section background="sand" id="membership">
       <Container>
         <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
           Membership vs non-member rates

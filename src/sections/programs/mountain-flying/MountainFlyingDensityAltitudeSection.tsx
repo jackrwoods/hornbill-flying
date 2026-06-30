@@ -34,7 +34,7 @@ export function MountainFlyingDensityAltitudeSection() {
             </div>
           </div>
 
-          <div className="rounded-xl border-t-4 border-gold-500 bg-cream-50 p-6 md:p-8">
+          <div className="rounded-xl border-t-4 border-gold-500 bg-sand-50 p-6 md:p-8">
             <h3 className="font-heading text-xl text-navy-900">
               What drives density altitude
             </h3>

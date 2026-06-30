@@ -93,7 +93,7 @@ export function Footer() {
         {/* Map placeholder */}
         <div className="overflow-hidden rounded-lg bg-card">
           <div className="flex h-48 items-center justify-center text-sm text-footer-muted">
-            <span>Map embed placeholder — 1008 Gentry Way, Reno, NV 89512</span>
+            <span>Map embed placeholder — 1880 Gentry Way, Reno, NV 89512</span>
           </div>
         </div>
 

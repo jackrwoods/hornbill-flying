@@ -54,7 +54,7 @@ export function ProgramStub({ program, description, related }: ProgramStubProps)
               <h1 className="font-heading text-4xl leading-tight md:text-5xl lg:text-6xl">
                 {program.title} training in Reno, NV
               </h1>
-              <p className="mt-6 text-lg text-cream-50/90 md:text-xl">
+              <p className="mt-6 text-lg text-sand-50/90 md:text-xl">
                 {description || program.shortDescription}
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
@@ -71,7 +71,7 @@ export function ProgramStub({ program, description, related }: ProgramStubProps)
         </Container>
       </section>
 
-      <Section background="cream" id="overview">
+      <Section background="sand" id="overview">
         <Container>
           <div className="grid gap-8 lg:grid-cols-3">
             <div className="rounded-xl border-t-4 border-gold-500 bg-white p-6">
@@ -117,7 +117,7 @@ export function ProgramStub({ program, description, related }: ProgramStubProps)
               <Link
                 key={item.href}
                 href={item.href}
-                className="group rounded-xl border-t-4 border-gold-500 bg-cream-50 p-6 transition hover:shadow-md focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2"
+                className="group rounded-xl border-t-4 border-gold-500 bg-sand-50 p-6 transition hover:shadow-md focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2"
               >
                 <h3 className="font-heading text-xl text-navy-900 group-hover:text-gold-500 transition-colors">
                   {item.title}

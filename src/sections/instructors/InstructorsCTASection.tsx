@@ -12,7 +12,7 @@ export function InstructorsCTASection() {
             <h2 className="font-heading text-2xl md:text-3xl text-white">
               Not sure which instructor is right for you?
             </h2>
-            <p className="mt-3 max-w-2xl text-cream-50/90">
+            <p className="mt-3 max-w-2xl text-sand-50/90">
               Book a discovery flight and meet the team in person. It is the
               easiest way to see who fits your learning style before you commit
               to training.

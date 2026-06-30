@@ -4,7 +4,7 @@ import { instructorRate } from "@/content/fleet";
 
 export function InstructorRateSection() {
   return (
-    <Section background="cream" id="instructor-rate">
+    <Section background="sand" id="instructor-rate">
       <Container>
         <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
           CFI instruction rates

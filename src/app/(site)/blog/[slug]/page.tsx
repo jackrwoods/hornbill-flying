@@ -110,7 +110,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           <article className="prose prose-lg max-w-none">
             <header className="not-prose mb-8">
               <div className="flex flex-wrap items-center gap-3 text-sm text-ink-light">
-                <span className="rounded bg-sky-100 px-2 py-0.5 text-navy-900">
+                <span className="rounded bg-teal-100 px-2 py-0.5 text-navy-900">
                   {post.category}
                 </span>
                 <time dateTime={post.date}>

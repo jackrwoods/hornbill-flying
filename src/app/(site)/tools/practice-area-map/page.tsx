@@ -43,7 +43,7 @@ export default function PracticeAreaMapPage() {
         { href: "/student-resources/", label: "Student resources" },
       ]}
     >
-      <div className="rounded-lg bg-sky-100 p-4 text-ink">
+      <div className="rounded-lg bg-teal-100 p-4 text-ink">
         <p>
           This is a simplified reference for the common practice area northeast
           of RNO and nearby airports used for touch-and-go practice and cross-country

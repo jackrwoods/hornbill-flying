@@ -7,7 +7,7 @@ export function InstrumentRatingTrainingStructureSection() {
   const { trainingStructure } = instrumentRatingProgram;
 
   return (
-    <Section background="cream" id="training-structure">
+    <Section background="sand" id="training-structure">
       <Container>
         <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
           {trainingStructure.title}

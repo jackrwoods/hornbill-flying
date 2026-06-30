@@ -31,7 +31,7 @@ export function AircraftCardsSection() {
           {publishedFleet.map((member, index) => (
             <article
               key={member.slug}
-              className="rounded-xl bg-cream-50 shadow-sm overflow-hidden flex flex-col"
+              className="rounded-xl bg-sand-50 shadow-sm overflow-hidden flex flex-col"
             >
               <div className="relative aspect-[4/3] w-full">
                 <Image
@@ -84,19 +84,19 @@ export function AircraftCardsSection() {
                         Non-member ${nonMemberRate}/hr
                       </span>
                       {member.ifrEquipped && (
-                        <span className="inline-flex rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold text-navy-900">
+                        <span className="inline-flex rounded-full bg-teal-100 px-3 py-1 text-xs font-semibold text-navy-900">
                           IFR equipped
                         </span>
                       )}
                       {member.crossCountryReady && (
-                        <span className="inline-flex rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold text-navy-900">
+                        <span className="inline-flex rounded-full bg-teal-100 px-3 py-1 text-xs font-semibold text-navy-900">
                           Cross-country ready
                         </span>
                       )}
                     </>
                   )}
                   {!isAircraft(member) && (
-                    <span className="inline-flex rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold text-navy-900">
+                    <span className="inline-flex rounded-full bg-teal-100 px-3 py-1 text-xs font-semibold text-navy-900">
                       Procedure training
                     </span>
                   )}

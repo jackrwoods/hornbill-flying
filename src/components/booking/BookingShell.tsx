@@ -42,7 +42,7 @@ export function BookingShell({
       {steps && currentStepIndex !== undefined && (
         <BookingStepper steps={steps} currentIndex={currentStepIndex} />
       )}
-      <Section background="cream">
+      <Section background="sand">
         <Container>
           <div className="grid gap-10 lg:grid-cols-[1fr_360px] lg:items-start">
             <div className="min-w-0">

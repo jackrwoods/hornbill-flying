@@ -11,7 +11,7 @@ export function InstructorBottomNavSection() {
             <h2 className="font-heading text-2xl text-white">
               Meet the rest of the team
             </h2>
-            <p className="mt-1 text-cream-50/80">
+            <p className="mt-1 text-sand-50/80">
               Compare CFIs and find the one whose schedule fits you.
             </p>
           </div>
@@ -24,7 +24,7 @@ export function InstructorBottomNavSection() {
             </Link>
             <Link
               href="/discovery-flight/"
-              className="inline-flex items-center justify-center rounded-lg border-2 border-cream-50/30 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2"
+              className="inline-flex items-center justify-center rounded-lg border-2 border-sand-50/30 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2"
             >
               Book a discovery flight
             </Link>

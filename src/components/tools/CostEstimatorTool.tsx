@@ -66,7 +66,7 @@ export function CostEstimatorTool({ defaults }: CostEstimatorToolProps) {
             unit="$/hr"
           />
 
-          <div className="flex items-center gap-3 rounded-lg border border-navy-800/10 bg-cream-50 p-3">
+          <div className="flex items-center gap-3 rounded-lg border border-navy-800/10 bg-sand-50 p-3">
             <input
               id="membership"
               type="checkbox"

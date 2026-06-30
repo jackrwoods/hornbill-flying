@@ -75,7 +75,7 @@ export function GiftVoucherFlow({
             Your ${voucherType.price} discovery flight gift voucher has been
             created.
           </p>
-          <div className="rounded-lg bg-sky-100 p-4">
+          <div className="rounded-lg bg-teal-100 p-4">
             <span className="text-sm font-semibold text-navy-900">Voucher code</span>
             <div className="mt-1 font-mono text-2xl font-semibold text-navy-900">
               {code}
@@ -156,7 +156,7 @@ export function GiftVoucherFlow({
             className="w-full rounded-lg border border-navy-900 bg-white px-4 py-3 text-ink focus:border-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500"
           />
         </label>
-        <div className="rounded-xl border border-navy-800/10 bg-cream-50 p-4">
+        <div className="rounded-xl border border-navy-800/10 bg-sand-50 p-4">
           <div className="flex items-baseline justify-between">
             <span className="text-navy-900">Gift voucher total</span>
             <span className="font-mono text-xl font-semibold text-navy-900">

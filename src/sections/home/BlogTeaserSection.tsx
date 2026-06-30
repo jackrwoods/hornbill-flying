@@ -9,7 +9,7 @@ export async function BlogTeaserSection() {
   const posts = (await getBlogTeasers()).slice(0, homepageBlog.maxPosts);
 
   return (
-    <Section background="cream">
+    <Section background="sand">
       <Container>
         <div className="flex items-end justify-between gap-4">
           <h2 className="font-heading text-3xl md:text-4xl text-navy-900">

@@ -42,12 +42,13 @@ export default function ComingSoonPage() {
           <div className="flex h-18 items-center justify-between py-3">
             <div className="inline-flex items-center gap-3">
               <Image
-                src="/logo.jpeg"
+                src="/logo.svg"
                 alt=""
                 width={56}
-                height={56}
-                className="rounded-full"
+                height={48}
+                className="h-auto w-auto"
                 priority
+                unoptimized
               />
               <span className="font-heading text-xl text-white">
                 {siteConfig.brandName}
@@ -90,7 +91,7 @@ export default function ComingSoonPage() {
                 <h1 className="font-heading text-4xl leading-tight md:text-5xl lg:text-6xl">
                   Aircraft Rentals and Flight Training
                 </h1>
-                <p className="mt-6 text-lg text-cream-50/90 md:text-xl">
+                <p className="mt-6 text-lg text-sand-50/90 md:text-xl">
                   Hornbill Aviation is getting ready for takeoff. Check back soon
                   for our full site, or schedule through Flight Circle today.
                 </p>
@@ -99,7 +100,7 @@ export default function ComingSoonPage() {
           </Container>
         </section>
 
-        <section className="bg-cream-50 py-16 md:py-24">
+        <section className="bg-sand-50 py-16 md:py-24">
           <Container>
             <h2 className="font-heading text-3xl text-navy-900 md:text-4xl">
               The fleet
@@ -161,18 +162,18 @@ export default function ComingSoonPage() {
                       {isAircraft(member) ? (
                         <>
                           {member.ifrEquipped && (
-                            <span className="inline-flex rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold text-navy-900">
+                            <span className="inline-flex rounded-full bg-teal-100 px-3 py-1 text-xs font-semibold text-navy-900">
                               IFR equipped
                             </span>
                           )}
                           {member.crossCountryReady && (
-                            <span className="inline-flex rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold text-navy-900">
+                            <span className="inline-flex rounded-full bg-teal-100 px-3 py-1 text-xs font-semibold text-navy-900">
                               Cross-country ready
                             </span>
                           )}
                         </>
                       ) : (
-                        <span className="inline-flex rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold text-navy-900">
+                        <span className="inline-flex rounded-full bg-teal-100 px-3 py-1 text-xs font-semibold text-navy-900">
                           Procedure training
                         </span>
                       )}
@@ -187,7 +188,7 @@ export default function ComingSoonPage() {
 
       <footer className="bg-navy-900 py-8">
         <Container>
-          <p className="text-center text-sm text-cream-50/70">
+          <p className="text-center text-sm text-sand-50/70">
             &copy; {new Date().getFullYear()} {siteConfig.brandName}. All rights
             reserved.
           </p>

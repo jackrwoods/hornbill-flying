@@ -37,7 +37,7 @@ export function ResourceCard({
           {tags.map((tag) => (
             <span
               key={tag}
-              className="inline-flex rounded-full bg-sky-100 px-2.5 py-1 text-xs font-semibold text-navy-900"
+              className="inline-flex rounded-full bg-teal-100 px-2.5 py-1 text-xs font-semibold text-navy-900"
             >
               {tag}
             </span>
@@ -53,7 +53,7 @@ export function ResourceCard({
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-sm font-semibold text-navy-900 underline hover:text-gold-600 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-navy-900 underline hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
             >
               {link.label}
               <svg
@@ -78,7 +78,7 @@ export function ResourceCard({
             <Link
               key={link.href}
               href={link.href}
-              className="inline-flex items-center text-sm font-semibold text-navy-900 underline hover:text-gold-600 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+              className="inline-flex items-center text-sm font-semibold text-navy-900 underline hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
             >
               {link.label}
             </Link>

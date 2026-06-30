@@ -13,7 +13,7 @@ export function CFIITrainingEmphasisSection() {
           {cfiiProgram.trainingEmphasis.items.map((item, index) => (
             <li
               key={index}
-              className="flex items-start gap-3 rounded-lg bg-sky-100 p-4"
+              className="flex items-start gap-3 rounded-lg bg-teal-100 p-4"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

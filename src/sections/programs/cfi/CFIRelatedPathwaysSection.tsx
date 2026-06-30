@@ -5,7 +5,7 @@ import { cfiProgram } from "@/content/programs/cfi";
 
 export function CFIRelatedPathwaysSection() {
   return (
-    <Section background="sky" id="related-pathways">
+    <Section background="teal" id="related-pathways">
       <Container>
         <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
           {cfiProgram.relatedPathways.title}

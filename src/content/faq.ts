@@ -35,6 +35,6 @@ export const homeFAQ: FAQItem[] = [
     id: "where-located",
     question: "Where are you located?",
     answer:
-      "We are at 1008 Gentry Way, Reno, NV 89512, on the Reno–Tahoe International Airport (RNO) field. Free visitor parking is available near the office.",
+      "We are at 1880 Gentry Way, Reno, NV 89512, on the Reno–Tahoe International Airport (RNO) field. Free visitor parking is available near the office.",
   },
 ];

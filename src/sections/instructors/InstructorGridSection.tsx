@@ -5,7 +5,7 @@ import { instructors } from "@/content/instructors";
 
 export function InstructorGridSection() {
   return (
-    <Section background="cream" id="team">
+    <Section background="sand" id="team">
       <Container>
         <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
           Meet the team

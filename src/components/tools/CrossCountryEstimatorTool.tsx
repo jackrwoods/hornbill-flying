@@ -93,7 +93,7 @@ export function CrossCountryEstimatorTool({
                 key={route.destination}
                 type="button"
                 onClick={() => applyRoute(route.destination)}
-                className="rounded-lg bg-sky-100 px-3 py-1.5 text-sm font-semibold text-navy-900 hover:bg-sky-200 focus:outline-none focus:ring-2 focus:ring-gold-500"
+                className="rounded-lg bg-teal-100 px-3 py-1.5 text-sm font-semibold text-navy-900 hover:bg-teal-100 focus:outline-none focus:ring-2 focus:ring-gold-500"
               >
                 {route.name}
               </button>

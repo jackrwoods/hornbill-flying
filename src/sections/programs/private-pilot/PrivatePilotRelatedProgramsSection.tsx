@@ -17,7 +17,7 @@ export function PrivatePilotRelatedProgramsSection() {
             <Link
               key={item.href}
               href={item.href}
-              className="group rounded-xl border-t-4 border-gold-500 bg-cream-50 p-6 transition hover:shadow-md focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2"
+              className="group rounded-xl border-t-4 border-gold-500 bg-sand-50 p-6 transition hover:shadow-md focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2"
             >
               <h3 className="font-heading text-xl text-navy-900 group-hover:text-gold-500 transition-colors">
                 {item.title}

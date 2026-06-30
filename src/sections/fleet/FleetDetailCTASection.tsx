@@ -4,7 +4,7 @@ import { Section } from "@/components/Section";
 
 export function FleetDetailCTASection() {
   return (
-    <Section background="cream" id="next-steps">
+    <Section background="sand" id="next-steps">
       <Container>
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
           <Link

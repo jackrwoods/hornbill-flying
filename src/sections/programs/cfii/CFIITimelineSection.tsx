@@ -16,7 +16,7 @@ export function CFIITimelineSection() {
           {cfiiProgram.timeline.options.map((option) => (
             <div
               key={option.label}
-              className="rounded-xl bg-cream-50 p-6"
+              className="rounded-xl bg-sand-50 p-6"
             >
               <p className="font-mono text-xs uppercase tracking-wide text-ink-light">
                 {option.label}

@@ -93,7 +93,7 @@ export function AvailabilityCalendar({
                         "min-h-[3.25rem] min-w-[6.5rem] rounded-lg border px-3 py-2 text-left transition-colors focus:outline-none focus:ring-2 focus:ring-gold-500",
                         isSelected
                           ? "border-gold-500 bg-gold-500/10"
-                          : "border-navy-800/10 bg-white hover:bg-cream-50"
+                          : "border-navy-800/10 bg-white hover:bg-sand-50"
                       )}
                       aria-pressed={isSelected}
                     >

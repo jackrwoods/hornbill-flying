@@ -53,7 +53,7 @@ export function PageStub({
               <h1 className="mt-3 font-heading text-4xl leading-tight md:text-5xl lg:text-6xl">
                 {title}
               </h1>
-              <p className="mt-6 text-lg text-cream-50/90 md:text-xl">
+              <p className="mt-6 text-lg text-sand-50/90 md:text-xl">
                 {description}
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
@@ -73,7 +73,7 @@ export function PageStub({
       </section>
 
       {links && links.length > 0 && (
-        <Section background="cream" id="related-links">
+        <Section background="sand" id="related-links">
           <Container>
             <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
               Related pages

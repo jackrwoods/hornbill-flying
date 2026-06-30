@@ -28,7 +28,7 @@ export function ToolResult({ title, items, className, caution }: ToolResultProps
             key={item.label}
             className={cn(
               "flex items-baseline justify-between rounded-lg p-3",
-              item.highlight ? "bg-sky-100" : "bg-cream-50"
+              item.highlight ? "bg-teal-100" : "bg-sand-50"
             )}
           >
             <dt className="text-sm font-semibold text-ink-light">{item.label}</dt>
@@ -44,7 +44,7 @@ export function ToolResult({ title, items, className, caution }: ToolResultProps
         ))}
       </dl>
       {caution && (
-        <p className="mt-4 rounded-lg bg-orange-500/10 p-3 text-sm font-medium text-orange-700">
+        <p className="mt-4 rounded-lg bg-orange/10 p-3 text-sm font-medium text-rust">
           {caution}
         </p>
       )}

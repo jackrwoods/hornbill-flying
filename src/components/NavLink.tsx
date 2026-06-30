@@ -16,7 +16,7 @@ export function NavLink({
   href,
   children,
   className,
-  activeClassName = "text-orange-500",
+  activeClassName,
   onClick,
 }: NavLinkProps) {
   const pathname = usePathname();
@@ -25,13 +25,14 @@ export function NavLink({
   return (
     <Link
       href={href}
+      data-active={isActive ? "true" : undefined}
+      aria-current={isActive ? "page" : undefined}
       onClick={onClick}
       className={cn(
-        "text-sm font-medium transition-colors hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded",
+        "transition-colors focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded",
         isActive && activeClassName,
         className
       )}
-      aria-current={isActive ? "page" : undefined}
     >
       {children}
     </Link>

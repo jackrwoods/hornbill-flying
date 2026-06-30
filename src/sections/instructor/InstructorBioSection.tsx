@@ -10,7 +10,7 @@ export function InstructorBioSection({ instructor }: InstructorBioSectionProps) 
   const paragraphs = instructor.bio.split("\n\n");
 
   return (
-    <Section background="cream" id="bio">
+    <Section background="sand" id="bio">
       <Container>
         <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
           About {instructor.name.split(" ")[0]}

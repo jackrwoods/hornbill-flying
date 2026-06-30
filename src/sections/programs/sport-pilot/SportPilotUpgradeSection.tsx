@@ -7,7 +7,7 @@ export function SportPilotUpgradeSection() {
   const { upgradePathway } = sportPilotProgram;
 
   return (
-    <Section background="cream" id="upgrade-pathway">
+    <Section background="sand" id="upgrade-pathway">
       <Container>
         <div className="grid gap-12 lg:grid-cols-2">
           <div>

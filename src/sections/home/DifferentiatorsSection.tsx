@@ -4,7 +4,7 @@ import { homepageDifferentiators } from "@/content/homepage";
 
 export function DifferentiatorsSection() {
   return (
-    <Section background="cream">
+    <Section background="sand">
       <Container>
         <h2 className="font-heading text-3xl md:text-4xl text-center text-navy-900">
           What makes Hornbill Aviation different

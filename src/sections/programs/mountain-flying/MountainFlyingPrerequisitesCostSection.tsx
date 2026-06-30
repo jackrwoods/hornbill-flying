@@ -7,7 +7,7 @@ export function MountainFlyingPrerequisitesCostSection() {
   const { prerequisitesDurationCost } = mountainFlyingProgram;
 
   return (
-    <Section background="cream" id="prerequisites-duration-cost">
+    <Section background="sand" id="prerequisites-duration-cost">
       <Container>
         <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
           {prerequisitesDurationCost.title}
@@ -69,7 +69,7 @@ export function MountainFlyingPrerequisitesCostSection() {
                   </tr>
                 ))}
               </tbody>
-              <tfoot className="bg-cream-50">
+              <tfoot className="bg-sand-50">
                 <tr>
                   <th
                     scope="row"

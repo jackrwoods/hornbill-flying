@@ -12,7 +12,7 @@ export function MembershipPricingCardSection() {
   const { pricing: pricingCopy } = membershipContent;
 
   return (
-    <Section background="cream" id="pricing">
+    <Section background="sand" id="pricing">
       <Container>
         <h2 className="font-heading text-3xl text-navy-900 md:text-4xl">
           Membership pricing
@@ -64,7 +64,7 @@ export function MembershipPricingCardSection() {
               <p className="font-heading text-2xl text-gold-400">
                 Save ${membershipRates.savingsPerHour}/hr
               </p>
-              <p className="mt-1 text-cream-50/90">{pricingCopy.breakEvenText}</p>
+              <p className="mt-1 text-sand-50/90">{pricingCopy.breakEvenText}</p>
             </div>
             <CTALink
               href={membershipContent.signupCTA.primary.href}

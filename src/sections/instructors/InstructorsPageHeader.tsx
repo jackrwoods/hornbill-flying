@@ -6,7 +6,7 @@ export function InstructorsPageHeader() {
     <section className="bg-navy-900 py-16 md:py-24 text-white">
       <Container>
         <nav aria-label="Breadcrumb" className="mb-4">
-          <ol className="flex flex-wrap items-center gap-2 text-sm text-cream-50/80">
+          <ol className="flex flex-wrap items-center gap-2 text-sm text-sand-50/80">
             <li>
               <Link
                 href="/"
@@ -40,11 +40,11 @@ export function InstructorsPageHeader() {
           Part 61 flight instructors in Reno, NV
         </h1>
 
-        <p className="mt-4 max-w-2xl text-lg text-cream-50/90">
+        <p className="mt-4 max-w-2xl text-lg text-sand-50/90">
           Choose the CFI who fits your goals and schedule.
         </p>
 
-        <div className="mt-6 max-w-3xl text-cream-50/90 leading-relaxed">
+        <div className="mt-6 max-w-3xl text-sand-50/90 leading-relaxed">
           <p>
             Hornbill Aviation is a Part 61 school, so you choose your instructor
             or bring your own. Every CFI is available in any plane in the

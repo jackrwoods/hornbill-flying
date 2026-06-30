@@ -21,7 +21,7 @@ export function InstrumentRatingFleetSection() {
               {fleet.aircraft.map((aircraft) => (
                 <div
                   key={aircraft.tail}
-                  className="rounded-xl border-l-4 border-gold-500 bg-cream-50 p-5"
+                  className="rounded-xl border-l-4 border-gold-500 bg-sand-50 p-5"
                 >
                   <div className="flex items-center gap-3">
                     <span className="rounded bg-navy-900 px-2 py-1 font-mono text-sm font-semibold text-white">

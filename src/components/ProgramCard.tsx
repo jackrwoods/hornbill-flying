@@ -20,8 +20,8 @@ export function ProgramCard({ program, className }: ProgramCardProps) {
       </h3>
       <p className="mt-2 flex-1 text-ink-light">{program.shortDescription}</p>
       <div className="mt-4 flex flex-wrap items-center gap-3 font-mono text-xs text-navy-900">
-        <span className="rounded bg-sky-100 px-2 py-1">{program.duration}</span>
-        <span className="rounded bg-cream-50 px-2 py-1">{program.costRange}</span>
+        <span className="rounded bg-teal-100 px-2 py-1">{program.duration}</span>
+        <span className="rounded bg-sand-50 px-2 py-1">{program.costRange}</span>
       </div>
       <Link
         href={program.url}

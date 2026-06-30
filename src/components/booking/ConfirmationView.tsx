@@ -94,7 +94,7 @@ export function ConfirmationView({
       <h2 className="mt-4 font-heading text-3xl text-navy-900">{effectiveTitle}</h2>
       <p className="mx-auto mt-2 max-w-md text-ink-light">{effectiveMessage}</p>
 
-      <div className="mt-6 rounded-lg bg-sky-100 p-4">
+      <div className="mt-6 rounded-lg bg-teal-100 p-4">
         <span className="text-sm font-semibold text-navy-900">
           {isGift ? "Voucher code" : "Booking reference"}
         </span>

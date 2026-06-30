@@ -5,18 +5,18 @@ import { MapEmbed } from "@/components/MapEmbed";
 
 export function ContactMapSection() {
   return (
-    <Section background="cream" id="find-us">
+    <Section background="sand" id="find-us">
       <Container>
         <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
           Find us at Reno–Tahoe (RNO)
         </h2>
         <p className="mt-4 max-w-3xl text-ink-light">
-          We are based at 1008 Gentry Way, right on the RNO field. Free visitor
+          We are based at 1880 Gentry Way, right on the RNO field. Free visitor
           parking is available near the office.
         </p>
 
         <div className="mt-8">
-          <MapEmbed title="Hornbill Aviation location at 1008 Gentry Way, Reno, NV" />
+          <MapEmbed title="Hornbill Aviation location at 1880 Gentry Way, Reno, NV" />
         </div>
 
         <p className="mt-6 text-ink-light">

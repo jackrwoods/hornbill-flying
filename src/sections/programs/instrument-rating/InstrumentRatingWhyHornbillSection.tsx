@@ -19,7 +19,7 @@ export function InstrumentRatingWhyHornbillSection() {
               className="rounded-xl bg-white/5 p-6"
             >
               <h3 className="font-heading text-xl text-gold-400">{item.title}</h3>
-              <p className="mt-2 text-cream-50/90">{item.description}</p>
+              <p className="mt-2 text-sand-50/90">{item.description}</p>
             </div>
           ))}
         </div>

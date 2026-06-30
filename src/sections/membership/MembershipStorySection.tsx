@@ -6,7 +6,7 @@ export function MembershipStorySection() {
   const { story } = membershipContent;
 
   return (
-    <Section background="cream" id="story">
+    <Section background="sand" id="story">
       <Container>
         <h2 className="font-heading text-3xl text-navy-900 md:text-4xl">
           {story.title}
@@ -21,7 +21,7 @@ export function MembershipStorySection() {
               key={block.label}
               className="rounded-xl border border-navy-800/10 bg-white p-6"
             >
-              <p className="text-sm font-semibold uppercase tracking-wide text-gold-600">
+              <p className="text-sm font-semibold uppercase tracking-wide text-gold-500">
                 {block.label}
               </p>
               <p className="mt-3 text-ink leading-relaxed">{block.body}</p>

@@ -17,7 +17,7 @@ export function MountainFlyingWhyHornbillSection() {
           {whyHornbill.items.map((item) => (
             <div
               key={item.title}
-              className="rounded-xl border-t-4 border-gold-500 bg-cream-50 p-6"
+              className="rounded-xl border-t-4 border-gold-500 bg-sand-50 p-6"
             >
               <h3 className="font-heading text-xl text-navy-900">
                 {item.title}

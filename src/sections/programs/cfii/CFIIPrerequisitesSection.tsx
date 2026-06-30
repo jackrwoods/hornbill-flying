@@ -4,7 +4,7 @@ import { cfiiProgram } from "@/content/programs/cfii";
 
 export function CFIIPrerequisitesSection() {
   return (
-    <Section background="cream" id="prerequisites">
+    <Section background="sand" id="prerequisites">
       <Container>
         <div className="grid gap-12 lg:grid-cols-2">
           <div>

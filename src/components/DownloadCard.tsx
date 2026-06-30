@@ -22,7 +22,7 @@ export function DownloadCard({ document, className }: DownloadCardProps) {
       <div className="flex flex-wrap items-start justify-between gap-2">
         <h3 className="font-heading text-xl text-navy-900">{document.title}</h3>
         {document.tailNumber && (
-          <span className="rounded-full bg-sky-100 px-2.5 py-1 text-xs font-semibold text-navy-900">
+          <span className="rounded-full bg-teal-100 px-2.5 py-1 text-xs font-semibold text-navy-900">
             {document.tailNumber}
           </span>
         )}
@@ -33,7 +33,7 @@ export function DownloadCard({ document, className }: DownloadCardProps) {
       </p>
 
       <div className="mt-4 flex flex-wrap items-center gap-3 text-xs text-ink-light">
-        <span className="rounded bg-cream-50 px-2 py-1 font-semibold text-navy-900">
+        <span className="rounded bg-sand-50 px-2 py-1 font-semibold text-navy-900">
           {document.format}
         </span>
         {document.size && (
@@ -60,13 +60,13 @@ export function DownloadCard({ document, className }: DownloadCardProps) {
           </a>
         ) : (
           <div className="flex flex-wrap items-center gap-3">
-            <span className="inline-flex items-center rounded-lg bg-cream-50 px-4 py-2 text-sm font-semibold text-ink-light">
+            <span className="inline-flex items-center rounded-lg bg-sand-50 px-4 py-2 text-sm font-semibold text-ink-light">
               Coming soon
             </span>
             {document.tailNumber && (
               <Link
                 href="/fleet/"
-                className="text-sm font-semibold text-navy-900 underline hover:text-gold-600 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+                className="text-sm font-semibold text-navy-900 underline hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
               >
                 See current aircraft
               </Link>

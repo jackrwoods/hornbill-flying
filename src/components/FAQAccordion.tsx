@@ -45,7 +45,7 @@ export function FAQAccordion({
                 onClick={() => toggle(faq.id)}
                 aria-expanded={isOpen}
                 aria-controls={`faq-answer-${faq.id}`}
-                className="flex w-full items-center justify-between px-5 py-4 text-left font-body text-base font-semibold text-navy-900 hover:bg-cream-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gold-500"
+                className="flex w-full items-center justify-between px-5 py-4 text-left font-body text-base font-semibold text-navy-900 hover:bg-sand-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gold-500"
               >
                 {faq.question}
                 <svg

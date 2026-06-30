@@ -38,7 +38,7 @@ export default function NotFoundPage() {
   return (
     <>
       <SchemaInjector schema={pageSchema} id="404-schema" />
-      <Section background="cream" className="flex-1">
+      <Section background="sand" className="flex-1">
         <Container className="py-20">
           <div className="flex flex-col items-center text-center">
             <Logo showText={false} size={140} className="mb-8" />

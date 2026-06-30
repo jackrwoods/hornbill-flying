@@ -5,7 +5,7 @@ import { cfiiProgram } from "@/content/programs/cfii";
 
 export function CFIICostSection() {
   return (
-    <Section background="sky" id="cost">
+    <Section background="teal" id="cost">
       <Container>
         <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
           {cfiiProgram.cost.title}
@@ -29,7 +29,7 @@ export function CFIICostSection() {
                 </tr>
               ))}
             </tbody>
-            <tfoot className="bg-cream-50">
+            <tfoot className="bg-sand-50">
               <tr>
                 <th
                   scope="row"

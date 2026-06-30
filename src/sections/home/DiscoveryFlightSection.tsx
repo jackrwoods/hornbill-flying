@@ -3,7 +3,7 @@ import { DiscoveryFlightTeaser } from "@/components/DiscoveryFlightTeaser";
 
 export function DiscoveryFlightSection() {
   return (
-    <Section background="cream">
+    <Section background="sand">
       <DiscoveryFlightTeaser />
     </Section>
   );

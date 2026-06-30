@@ -137,7 +137,7 @@ export function MembershipBenefitsSection() {
           {benefits.items.map((item) => (
             <div
               key={item.title}
-              className="rounded-xl border border-navy-800/10 bg-cream-50 p-6"
+              className="rounded-xl border border-navy-800/10 bg-sand-50 p-6"
             >
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-navy-900 text-gold-500">
                 {icons[item.title]}

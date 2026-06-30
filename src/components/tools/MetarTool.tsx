@@ -39,7 +39,7 @@ export function MetarTool() {
           type="button"
           onClick={handleRefresh}
           disabled={loading}
-          className="inline-flex items-center gap-2 rounded-lg border border-navy-800/20 px-3 py-2 text-sm font-semibold text-navy-900 hover:bg-cream-50 focus:outline-none focus:ring-2 focus:ring-gold-500 disabled:opacity-50"
+          className="inline-flex items-center gap-2 rounded-lg border border-navy-800/20 px-3 py-2 text-sm font-semibold text-navy-900 hover:bg-sand-50 focus:outline-none focus:ring-2 focus:ring-gold-500 disabled:opacity-50"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +82,7 @@ export function MetarTool() {
 
       {metar && !loading && (
         <div className="mt-4 grid gap-4">
-          <div className="rounded-lg bg-cream-50 p-4">
+          <div className="rounded-lg bg-sand-50 p-4">
             <p className="font-mono text-sm font-medium text-navy-900">{metar.raw || "No raw report available."}</p>
             {metar.observationTime && (
               <p className="mt-1 text-xs text-ink-light">Observed {metar.observationTime}</p>

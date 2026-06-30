@@ -25,7 +25,7 @@ export function InstructorHeroSection({ instructor }: InstructorHeroSectionProps
       <Container>
         <div className="grid gap-10 md:grid-cols-2 md:items-center">
           <InstructorPortrait
-            src={instructor.photo || "/logo.jpeg"}
+            src={instructor.photo || "/logo.svg"}
             alt={instructor.altText}
             priority
           />

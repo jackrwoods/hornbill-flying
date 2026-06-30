@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export function WeatherSection() {
   return (
-    <Section background="cream" id="weather">
+    <Section background="sand" id="weather">
       <Container>
         <h2 className="font-heading text-3xl text-navy-900 md:text-4xl">
           Reno–Tahoe weather (KRNO)

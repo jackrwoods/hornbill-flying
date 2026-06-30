@@ -18,7 +18,7 @@ export function MapEmbed({
 }: MapEmbedProps) {
   return (
     <div className={cn("w-full", className)}>
-      <div className="relative w-full overflow-hidden rounded-lg bg-sky-100" style={{ aspectRatio: "16 / 9" }}>
+      <div className="relative w-full overflow-hidden rounded-lg bg-teal-100" style={{ aspectRatio: "16 / 9" }}>
         <iframe
           title={title}
           src={src}

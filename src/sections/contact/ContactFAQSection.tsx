@@ -5,7 +5,7 @@ import { contactFAQ } from "@/content/contact";
 
 export function ContactFAQSection() {
   return (
-    <Section background="cream" id="faq">
+    <Section background="sand" id="faq">
       <Container>
         <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
           Common questions

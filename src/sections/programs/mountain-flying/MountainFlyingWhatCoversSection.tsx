@@ -6,7 +6,7 @@ export function MountainFlyingWhatCoversSection() {
   const { whatCourseCovers } = mountainFlyingProgram;
 
   return (
-    <Section background="cream" id="what-the-course-covers">
+    <Section background="sand" id="what-the-course-covers">
       <Container>
         <div className="grid gap-12 lg:grid-cols-2">
           <div>

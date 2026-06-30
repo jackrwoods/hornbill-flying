@@ -4,7 +4,7 @@ import { cfiiProgram } from "@/content/programs/cfii";
 
 export function CFIIPracticalTestSection() {
   return (
-    <Section background="cream" id="practical-test-areas">
+    <Section background="sand" id="practical-test-areas">
       <Container>
         <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
           {cfiiProgram.practicalTestAreas.title}

@@ -7,7 +7,7 @@ export function InstrumentRatingCostSection() {
   const { cost } = instrumentRatingProgram;
 
   return (
-    <Section background="sky" id="cost">
+    <Section background="teal" id="cost">
       <Container>
         <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
           {cost.title}
@@ -31,7 +31,7 @@ export function InstrumentRatingCostSection() {
                 </tr>
               ))}
             </tbody>
-            <tfoot className="bg-cream-50">
+            <tfoot className="bg-sand-50">
               <tr>
                 <th
                   scope="row"

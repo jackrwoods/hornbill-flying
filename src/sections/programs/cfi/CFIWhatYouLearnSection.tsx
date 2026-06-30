@@ -6,7 +6,7 @@ import { cfiProgram } from "@/content/programs/cfi";
 
 export function CFIWhatYouLearnSection() {
   return (
-    <Section background="cream" id="what-you-learn">
+    <Section background="sand" id="what-you-learn">
       <Container>
         <h2 className="font-heading text-3xl md:text-4xl text-navy-900">
           {cfiProgram.whatYouLearn.title}
