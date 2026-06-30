@@ -56,7 +56,7 @@ export function PageHeader({
       <Container className="relative z-10">
         {breadcrumbs && breadcrumbs.length > 0 && (
           <nav aria-label="Breadcrumb" className="mb-4">
-            <ol className="flex flex-wrap items-center gap-2 text-sm text-on-dark-soft">
+            <ol className="flex flex-wrap items-center gap-2 text-sm text-on-dark">
               {breadcrumbs.map((crumb, index) => (
                 <li key={crumb.label} className="flex items-center gap-2">
                   {index > 0 && (

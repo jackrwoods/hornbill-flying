@@ -6,7 +6,7 @@ export function InstructorsPageHeader() {
     <section className="bg-dark py-16 md:py-24 text-on-dark">
       <Container>
         <nav aria-label="Breadcrumb" className="mb-4">
-          <ol className="flex flex-wrap items-center gap-2 text-sm text-on-dark-soft">
+          <ol className="flex flex-wrap items-center gap-2 text-sm text-on-dark">
             <li>
               <Link
                 href="/"
@@ -59,6 +59,28 @@ export function InstructorsPageHeader() {
           <span aria-hidden="true">·</span>
           <span>train at RNO</span>
         </p>
+
+        <div className="mt-8 max-w-3xl rounded-xl bg-dark-muted p-6 text-on-dark">
+          <h2 className="font-heading text-lg text-on-dark">How CFIs work with Hornbill</h2>
+          <ul className="mt-4 grid gap-3 text-on-dark/90 sm:grid-cols-2">
+            <li className="flex items-start gap-2">
+              <span aria-hidden="true" className="text-on-dark-accent">✓</span>
+              <span>CFIs set their own rates</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span aria-hidden="true" className="text-on-dark-accent">✓</span>
+              <span>CFIs are independent contractors</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span aria-hidden="true" className="text-on-dark-accent">✓</span>
+              <span>CFIs manage their own schedules</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span aria-hidden="true" className="text-on-dark-accent">✓</span>
+              <span>All CFIs are approved by Hornbill Aviation via a check flight in our aircraft</span>
+            </li>
+          </ul>
+        </div>
       </Container>
     </section>
   );

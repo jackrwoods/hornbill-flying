@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { AssetImage as Image } from "@/components/AssetImage";
 import { Container } from "@/components/Container";
+import { Logo } from "@/components/Logo";
 import { getPublishedFleet } from "@/content/fleet";
 import { isAircraft } from "@/types";
 import { siteConfig } from "@/lib/config";
@@ -37,29 +38,32 @@ export default function ComingSoonPage() {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="bg-dark">
+      <header className="sticky top-0 z-40 bg-header-bg relative">
+        {/* Cheatline — 70s livery stripe */}
+        <div
+          aria-hidden="true"
+          className="absolute bottom-0 left-0 right-0 h-0.5 bg-ink"
+        />
+        <div
+          aria-hidden="true"
+          className="absolute bottom-0.5 left-0 right-0 h-0.5 bg-header-cheatline"
+        />
+        <div
+          aria-hidden="true"
+          className="absolute bottom-1 left-0 right-0 h-0.5 bg-[#F9A90C]"
+        />
         <Container>
-          <div className="flex h-18 items-center justify-between py-3">
-            <div className="inline-flex items-center gap-3">
-              <Image
-                src="/logo.svg"
-                alt=""
-                width={56}
-                height={48}
-                className="h-auto w-auto"
-                priority
-                unoptimized
-              />
-              <span className="font-heading text-xl text-on-dark">
-                {siteConfig.brandName}
-              </span>
+          <div className="flex h-18 items-center justify-between">
+            <div className="flex items-center gap-4">
+              <Logo variant="stacked" size={48} textClassName="text-ink" />
             </div>
 
             <a
               href={siteConfig.flightCircleScheduleUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded px-3 py-2 text-sm font-medium text-on-dark hover:text-on-dark-accent focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2"
+              data-analytics="header_schedule_click"
+              className="relative px-2 py-2 text-sm font-semibold uppercase tracking-wide text-ink transition-colors hover:text-active focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 focus:ring-offset-header-bg rounded"
             >
               Schedule
             </a>
