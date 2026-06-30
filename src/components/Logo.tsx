@@ -9,6 +9,7 @@ interface LogoProps {
   size?: number;
   textClassName?: string;
   variant?: "inline" | "stacked";
+  largeText?: boolean;
 }
 
 export function Logo({
@@ -17,6 +18,7 @@ export function Logo({
   size = 56,
   textClassName = "text-heading",
   variant = "inline",
+  largeText = false,
 }: LogoProps) {
   return (
     <Link
@@ -48,17 +50,23 @@ export function Logo({
       )}
 
       {showText && variant === "stacked" && (
-        <span className="flex flex-col">
+        <span className={cn("flex flex-col", largeText ? "gap-1" : "")}>
           <span
             className={cn(
-              "brand-wordmark text-base leading-none",
+              "brand-wordmark leading-none",
+              largeText ? "text-2xl" : "text-base",
               textClassName
             )}
           >
             {siteConfig.brandName.split(" ")[0]}
           </span>
           {siteConfig.brandName.split(" ").slice(1).length > 0 && (
-            <span className="font-body text-[0.55rem] font-semibold uppercase leading-none tracking-[0.16em] text-[#007C80]">
+            <span
+              className={cn(
+                "font-body font-semibold uppercase leading-none tracking-[0.16em] text-[#007C80]",
+                largeText ? "text-sm" : "text-[0.55rem]"
+              )}
+            >
               {siteConfig.brandName.split(" ").slice(1).join(" ")}
             </span>
           )}

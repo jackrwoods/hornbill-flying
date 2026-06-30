@@ -20,7 +20,15 @@ export function Header() {
       {/* Cheatline — 70s livery stripe */}
       <div
         aria-hidden="true"
-        className="absolute bottom-0 left-0 right-0 h-1 bg-header-cheatline"
+        className="absolute bottom-0 left-0 right-0 h-0.5 bg-ink"
+      />
+      <div
+        aria-hidden="true"
+        className="absolute bottom-0.5 left-0 right-0 h-0.5 bg-header-cheatline"
+      />
+      <div
+        aria-hidden="true"
+        className="absolute bottom-1 left-0 right-0 h-0.5 bg-[#F9A90C]"
       />
       <Container>
         <div className="flex h-18 items-center justify-between">

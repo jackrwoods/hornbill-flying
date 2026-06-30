@@ -12,24 +12,24 @@ export function Footer() {
   );
 
   return (
-    <footer className="bg-navy-900 text-cream-50">
+    <footer className="bg-footer-bg text-footer-text">
       <Container>
         <div className="grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-5">
           {/* Brand + NAP */}
           <div className="lg:col-span-2">
-            <Logo showText textClassName="text-white" />
+            <Logo variant="stacked" size={48} textClassName="text-ink" largeText />
             <address className="mt-6 not-italic">
-              <p className="text-sm leading-relaxed">
+              <p className="text-sm leading-relaxed text-footer-text">
                 {siteConfig.nap.streetAddress}
                 <br />
                 {siteConfig.nap.addressLocality}, {siteConfig.nap.addressRegion}{" "}
                 {siteConfig.nap.postalCode}
               </p>
               <div className="mt-4 flex flex-col gap-1 text-sm">
-                <PhoneLink className="text-cream-50 hover:text-gold-500" />
+                <PhoneLink className="text-footer-link hover:text-footer-link-hover" />
                 <a
                   href={`mailto:${siteConfig.nap.email}`}
-                  className="hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+                  className="text-footer-link hover:text-footer-link-hover focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
                   data-analytics="email_click"
                 >
                   {siteConfig.nap.email}
@@ -43,7 +43,7 @@ export function Footer() {
                   <a
                     key={name}
                     href={url as string}
-                    className="text-sm text-cream-50/80 hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2 rounded"
+                    className="text-sm text-footer-muted hover:text-footer-link-hover focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`${siteConfig.brandName} on ${name}`}
@@ -58,7 +58,7 @@ export function Footer() {
           {/* Quick links */}
           {linkGroups.map((group) => (
             <div key={group.title}>
-              <h3 className="font-body text-sm font-semibold uppercase tracking-wide text-gold-500">
+              <h3 className="font-body text-sm font-semibold uppercase tracking-wide text-accent">
                 {group.title}
               </h3>
               <ul className="mt-4 flex flex-col gap-2">
@@ -66,7 +66,7 @@ export function Footer() {
                   <li key={link.href}>
                     <NavLink
                       href={link.href}
-                      className="text-sm text-cream-50/90 hover:text-gold-500"
+                      className="text-sm text-footer-link/90 hover:text-footer-link-hover"
                     >
                       {link.label}
                     </NavLink>
@@ -78,7 +78,7 @@ export function Footer() {
                       href={siteConfig.flightCircleScheduleUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm text-cream-50/90 hover:text-gold-500"
+                      className="text-sm text-footer-link/90 hover:text-footer-link-hover"
                       data-analytics="footer_schedule_click"
                     >
                       Schedule
@@ -91,14 +91,14 @@ export function Footer() {
         </div>
 
         {/* Map placeholder */}
-        <div className="overflow-hidden rounded-lg bg-navy-800">
-          <div className="flex h-48 items-center justify-center text-sm text-cream-50/60">
+        <div className="overflow-hidden rounded-lg bg-card">
+          <div className="flex h-48 items-center justify-center text-sm text-footer-muted">
             <span>Map embed placeholder — 1008 Gentry Way, Reno, NV 89512</span>
           </div>
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-navy-800 py-6 text-sm text-cream-50/70">
+        <div className="border-t border-divider py-6 text-sm text-footer-muted">
           <p>
             FAA Part 61 flight school at Reno–Tahoe (RNO). All instruction
             provided by certificated flight instructors.

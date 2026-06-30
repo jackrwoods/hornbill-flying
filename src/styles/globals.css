@@ -2,25 +2,112 @@
 @import "tailwindcss";
 
 @theme {
-  --color-navy-900: #0D3B66;
-  --color-navy-800: #0A2C4D;
-  --color-sand-50: #F5F3EF;
-  --color-gold-500: #F1B21D;
-  --color-gold-400: #F5C961;
-  --color-orange: #F26A21;
-  --color-rust: #D64A1A;
-  --color-ink: #2E2717;
-  --color-ink-light: #827D74;
-  --color-teal: #006A6D;
-  --color-teal-100: #E6F0F0;
-  --color-success: #006A6D;
-  --color-error: #D64A1A;
+  /* === Palette layer (raw colors, used by SVG/illustrations + intent tokens) === */
+  --palette-blue-900: #004E7C;
+  --palette-blue-800: #003A60;
+  --palette-cream-50: #FFF8EC;
+  --palette-cream-25: #FFFDF6;
+  --palette-gold-500: #F8AF12;
+  --palette-gold-400: #F9A90C;
+  --palette-coral: #F45115;
+  --palette-coral-600: #C8410D;
+  --palette-teal-500: #007C80;
+  --palette-teal-700: #2C6269;
+  --palette-teal-100: #E6F0F0;
+  --palette-ink: #2E2717;
+  --palette-ink-light: #827D74;
+  --palette-white: #FFFFFF;
 
-  --font-heading: "Nunito Sans", "Inter", system-ui, sans-serif;
+  /* === Intent layer (used by components) === */
+  /* Surfaces */
+  --color-bg: var(--palette-cream-50);
+  --color-card: var(--palette-cream-25);
+  --color-input: var(--palette-white);
+  --color-dark: var(--palette-blue-900);
+  --color-dark-muted: var(--palette-blue-800);
+
+  /* Text */
+  --color-body: var(--palette-ink);
+  --color-muted: var(--palette-ink-light);
+  --color-heading: var(--palette-blue-900);
+  --color-on-dark: var(--palette-cream-50);
+  --color-on-dark-muted: color-mix(in srgb, var(--palette-cream-50) 70%, transparent);
+
+  /* Accent / action */
+  --color-accent: var(--palette-gold-500);
+  --color-accent-hover: var(--palette-gold-400);
+  --color-on-accent: var(--palette-blue-900);
+  --color-alert: var(--palette-coral);
+  --color-alert-hover: var(--palette-coral-600);
+  --color-on-alert: var(--palette-white);
+  --color-active: var(--palette-coral);
+  --color-success: var(--palette-teal-500);
+  --color-on-success: var(--palette-white);
+  --color-callout: var(--palette-teal-100);
+  --color-on-callout: var(--palette-blue-900);
+
+  /* Functional */
+  --color-error: var(--palette-coral);
+  --color-focus-ring: var(--palette-gold-500);
+  --color-divider: var(--palette-gold-400);
+
+  /* Header (retro) */
+  --color-header-bg: var(--palette-cream-50);
+  --color-header-hover-border: var(--palette-white);
+  --color-header-cheatline: var(--palette-coral);
+  --color-header-button-1-bg: var(--palette-gold-500);
+  --color-header-button-1-text: var(--palette-ink);
+  --color-header-button-2-bg: var(--palette-gold-400);
+  --color-header-button-2-text: var(--palette-ink);
+  --color-header-button-3-bg: var(--palette-coral);
+  --color-header-button-3-text: var(--palette-white);
+  --color-header-button-4-bg: var(--palette-ink);
+  --color-header-button-4-text: var(--palette-cream-50);
+  --color-header-button-5-bg: var(--palette-blue-900);
+  --color-header-button-5-text: var(--palette-cream-50);
+  --color-header-cta-bg: var(--palette-gold-500);
+  --color-header-cta-text: var(--palette-blue-900);
+  --color-header-cta-hover: var(--palette-gold-400);
+
+  /* Footer (in-scope, going cream) */
+  --color-footer-bg: var(--palette-cream-50);
+  --color-footer-text: var(--palette-ink);
+  --color-footer-muted: var(--palette-ink-light);
+  --color-footer-link: var(--palette-blue-900);
+  --color-footer-link-hover: var(--palette-gold-500);
+
+  /* === Legacy aliases (deprecated; removed in follow-up intent-migration ticket) === */
+  --color-navy-900: var(--palette-blue-900);
+  --color-navy-800: var(--palette-blue-800);
+  --color-sand-50: var(--palette-cream-50);
+  --color-orange: var(--palette-coral);
+  --color-rust: var(--palette-coral-600);
+  --color-teal: var(--palette-teal-500);
+  --color-teal-100: var(--palette-teal-100);
+  --color-gold-500: var(--palette-gold-500);
+  --color-gold-400: var(--palette-gold-400);
+  --color-ink: var(--palette-ink);
+  --color-ink-light: var(--palette-ink-light);
+  --color-success: var(--palette-teal-500);
+  --color-error: var(--palette-coral);
+
+  /* Fonts (drop Inter from heading fallback per brand doc) */
+  --font-heading: "Nunito Sans", system-ui, sans-serif;
   --font-body: "Poppins", system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", "Courier New", monospace;
 
+  /* Spacing (unchanged) */
   --spacing-18: 4.5rem;
+}
+
+@layer components {
+  .brand-wordmark {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
 }
 
 @layer base {
@@ -31,8 +118,8 @@
   body {
     font-family: var(--font-body);
     font-weight: 500;
-    color: var(--color-ink);
-    background-color: var(--color-sand-50);
+    color: var(--color-body);
+    background-color: var(--color-bg);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
