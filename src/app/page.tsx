@@ -42,7 +42,7 @@ export default function ComingSoonPage() {
         {/* Cheatline — 70s livery stripe */}
         <div
           aria-hidden="true"
-          className="absolute bottom-0 left-0 right-0 h-0.5 bg-ink"
+          className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#1C3B61]"
         />
         <div
           aria-hidden="true"
@@ -72,36 +72,71 @@ export default function ComingSoonPage() {
       </header>
 
       <main className="flex-1">
-        <section className="relative overflow-hidden bg-dark text-on-dark">
-          <div className="absolute inset-0 z-0">
+        <section
+          className="relative flex flex-col overflow-hidden bg-bg lg:flex-row"
+          style={{ minHeight: "calc(100svh - 4.875rem)" }}
+        >
+          {/* Text panel — slanted right edge on desktop only (rectangle on mobile) */}
+          <div
+            className="relative z-10 flex flex-col justify-center bg-bg px-6 py-12 lg:w-[48%] lg:px-12 xl:px-16 lg:py-0 lg:[clip-path:polygon(0_0,100%_0,85%_100%,0_100%)]"
+          >
+            <h1 className="font-heading text-4xl leading-tight text-heading md:text-5xl lg:text-6xl">
+              Aircraft Rentals and Flight Training
+            </h1>
+            <p className="mt-6 text-lg text-body md:text-xl">
+              Hornbill Aviation is getting ready for takeoff. Check back soon
+              for our full site, or schedule through Flight Circle today.
+            </p>
+          </div>
+
+          {/* Horizontal cheat-line divider — mobile only, sits between stacked panels */}
+          <div
+            aria-hidden="true"
+            className="pointer-events-none relative z-20 flex flex-col lg:hidden"
+          >
+            <div className="h-0.5 bg-ink" />
+            <div className="h-0.5 bg-header-cheatline" />
+            <div className="h-0.5 bg-[#F9A90C]" />
+          </div>
+
+          {/* Photo panel */}
+          <div className="relative flex-1 lg:absolute lg:inset-0 lg:left-auto lg:w-full">
             <Image
               src="/images/hero/homepage-hero.jpeg"
               alt="Aerial view of an airplane wing over airport runways near Reno, NV."
-              width={1440}
-              height={1080}
+              fill
               priority
               fetchPriority="high"
               loading="eager"
-              className="h-full w-full object-cover opacity-40"
-              sizes="100vw"
-              style={{ minWidth: "100%", minHeight: "100%" }}
+              className="object-cover lg:object-center"
+              sizes="(min-width: 1024px) 55vw, 100vw"
             />
-            <div className="absolute inset-0 bg-hero-scrim" />
           </div>
 
-          <Container className="relative z-10">
-            <div className="py-20 md:py-32 lg:py-40">
-              <div className="max-w-2xl">
-                <h1 className="font-heading text-4xl leading-tight md:text-5xl lg:text-6xl">
-                  Aircraft Rentals and Flight Training
-                </h1>
-                <p className="mt-6 text-lg text-on-dark md:text-xl">
-                  Hornbill Aviation is getting ready for takeoff. Check back soon
-                  for our full site, or schedule through Flight Circle today.
-                </p>
-              </div>
-            </div>
-          </Container>
+          {/* Diagonal cheat-line seam — desktop only.
+              Three 2px-thick slanted bands (matching the header's h-0.5 cheat
+              lines) rendered as locked polygons. The seam is now more dramatic:
+              x=48% at the top to x=34% at the bottom. Stripe order is reversed
+              so the colors read gold/coral/ink from left to right. */}
+          <svg
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-0 z-20 hidden lg:block"
+            preserveAspectRatio="none"
+            viewBox="0 0 100 100"
+          >
+            <polygon
+              points="48.22,0 48.44,0 34.22,100 34.0,100"
+              fill="var(--palette-gold-400)"
+            />
+            <polygon
+              points="48.0,0 48.22,0 34.0,100 33.78,100"
+              fill="var(--palette-coral)"
+            />
+            <polygon
+              points="47.78,0 48.0,0 33.78,100 33.56,100"
+              fill="#1C3B61"
+            />
+          </svg>
         </section>
 
         <section className="bg-bg py-16 md:py-24">
