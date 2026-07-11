@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 import { SchemaInjector } from "@/components/SchemaInjector";
 import {
   buildTitle,
@@ -96,7 +98,11 @@ export default function RootLayout({
           />
         )}
 
-        {children}
+        <Header />
+        <main id="main-content" className="flex-1">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
