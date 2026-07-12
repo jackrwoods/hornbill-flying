@@ -42,7 +42,7 @@ export default function NotFoundPage() {
       <Section background="default" className="flex-1">
         <Container className="py-20 md:py-28">
           <Reveal variant="stagger" className="flex flex-col items-center text-center">
-            <Logo showText={false} size={140} className="mb-8" />
+            <Logo width={140} className="mb-8" />
             <p className="panel-label-lg text-accent mb-5">Lost · 404</p>
             <h1 className="font-heading font-extrabold text-4xl text-heading md:text-5xl text-balance">
               {notFoundCopy.headline}

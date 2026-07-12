@@ -19,7 +19,7 @@ export function Footer() {
         <div className="grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-5">
           {/* Brand + NAP */}
           <div className="lg:col-span-2">
-            <Logo variant="stacked" size={48} textClassName="text-ink" largeText />
+            <Logo fullWordmark width={170} />
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-footer-muted">
               {siteConfig.tagline}
             </p>

@@ -15,11 +15,11 @@ export function Header() {
   const navLinkActive = "text-active";
 
   return (
-    <header className="sticky top-0 lg:top-9 z-30 bg-header-bg/95 backdrop-blur-md">
+    <header className="sticky top-0 z-30 bg-header-bg/95 backdrop-blur-md">
       <Container>
         <div className="flex h-16 lg:h-18 items-center justify-between">
           <div className="flex items-center gap-4">
-            <Logo variant="stacked" size={44} textClassName="text-ink" />
+            <Logo fullWordmark width={170} />
           </div>
 
           {/* Desktop nav */}

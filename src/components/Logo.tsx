@@ -5,72 +5,46 @@ import { siteConfig } from "@/lib/config";
 
 interface LogoProps {
   className?: string;
-  showText?: boolean;
-  size?: number;
-  textClassName?: string;
-  variant?: "inline" | "stacked";
-  largeText?: boolean;
+  /** Render the full wordmark image (includes icon + text). Defaults to the icon-only SVG. */
+  fullWordmark?: boolean;
+  /** Width of the rendered logo in pixels. */
+  width?: number;
 }
 
 export function Logo({
   className,
-  showText = true,
-  size = 56,
-  textClassName = "text-heading",
-  variant = "inline",
-  largeText = false,
+  fullWordmark = false,
+  width = 160,
 }: LogoProps) {
   return (
     <Link
       href="/"
       className={cn(
-        "inline-flex items-center gap-3 focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded",
+        "inline-flex items-center focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded",
         className
       )}
       aria-label={`${siteConfig.brandName} home`}
     >
-      <Image
-        src="/images/logos/logo.svg"
-        alt=""
-        width={size}
-        height={Math.round(size * 0.856)}
-        className="h-auto w-auto"
-        priority
-        unoptimized
-      />
-      {showText && variant === "inline" && (
-        <span
-          className={cn(
-            "brand-wordmark text-xl",
-            textClassName
-          )}
-        >
-          {siteConfig.brandName}
-        </span>
-      )}
-
-      {showText && variant === "stacked" && (
-        <span className={cn("flex flex-col", largeText ? "gap-1" : "")}>
-          <span
-            className={cn(
-              "brand-wordmark leading-none",
-              largeText ? "text-2xl" : "text-base",
-              textClassName
-            )}
-          >
-            {siteConfig.brandName.split(" ")[0]}
-          </span>
-          {siteConfig.brandName.split(" ").slice(1).length > 0 && (
-            <span
-              className={cn(
-                "font-body font-semibold uppercase leading-none tracking-[0.16em] text-[var(--palette-cyan-500)]",
-                largeText ? "text-sm" : "text-[0.55rem]"
-              )}
-            >
-              {siteConfig.brandName.split(" ").slice(1).join(" ")}
-            </span>
-          )}
-        </span>
+      {fullWordmark ? (
+        <Image
+          src="/images/logos/logo-dark.png"
+          alt={siteConfig.brandName}
+          width={width}
+          height={Math.round(width * 0.31)}
+          className="h-auto w-auto"
+          priority
+          unoptimized
+        />
+      ) : (
+        <Image
+          src="/images/logos/logo.svg"
+          alt=""
+          width={56}
+          height={48}
+          className="h-auto w-auto"
+          priority
+          unoptimized
+        />
       )}
     </Link>
   );
