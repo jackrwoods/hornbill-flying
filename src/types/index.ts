@@ -180,7 +180,7 @@ export interface Testimonial {
 }
 
 export type ButtonVariant = "primary" | "secondary" | "tertiary" | "accent" | "header-cta";
-export type SectionBackground = "default" | "card" | "dark" | "accent" | "callout";
+export type SectionBackground = "default" | "card" | "dark" | "accent" | "callout" | "immersive" | "immersive-deep" | "immersive-night";
 
 export interface AircraftPhoto {
   src: string;

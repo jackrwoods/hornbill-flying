@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { QuickFactsStrip } from "@/components/QuickFactsStrip";
 import { SchemaInjector } from "@/components/SchemaInjector";
 import {
   buildTitle,
@@ -98,8 +99,12 @@ export default function RootLayout({
           />
         )}
 
+        <a href="#main-content" className="skip-link">
+          Skip to content
+        </a>
+        <QuickFactsStrip />
         <Header />
-        <main id="main-content" className="flex-1">
+        <main id="main-content" className="flex-1 pb-14 lg:pb-0">
           {children}
         </main>
         <Footer />

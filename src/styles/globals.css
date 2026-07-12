@@ -1,122 +1,167 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 @import "tailwindcss";
 
 @theme {
-  /* === Palette layer (raw colors, used by SVG/illustrations + intent tokens) === */
-  --palette-blue-900: #004E7C;
-  --palette-blue-800: #003A60;
-  --palette-cream-50: #FFF8EC;
-  --palette-cream-25: #FFFDF6;
-  --palette-gold-500: #F8AF12;
-  --palette-gold-400: #F9A90C;
-  --palette-coral: #F45115;
-  --palette-coral-600: #C8410D;
-  --palette-teal-500: #007C80;
-  --palette-teal-700: #2C6269;
-  --palette-teal-100: #E6F0F0;
-  --palette-ink: #2E2717;
-  --palette-ink-light: #827D74;
+  /* === Palette layer (raw colors) === */
+  --palette-dark-900: #1E212B;
+  --palette-dark-800: #2A2F3A;
+  --palette-dark-700: #353A47;
+  --palette-dark-950: #12141B;
+  --palette-cream-50: #F7F5F0;
+  --palette-cream-25: #FAFAF8;
+  --palette-gold-500: #F1A21B;
+  --palette-gold-400: #F1CA24;
+  --palette-gold-600: #D68E16;
+  --palette-cyan-500: #00C2D1;
+  --palette-cyan-700: #0097A3;
+  --palette-cyan-100: #E0F7F9;
+  --palette-red-500: #E11D48;
+  --palette-red-600: #B91C3C;
+  --palette-ink: #2A2F3A;
+  --palette-ink-light: #6E7683;
   --palette-white: #FFFFFF;
 
+  /* Sunset gradient stops (launch placeholder photography) */
+  --palette-sunset-gold: #F1A21B;
+  --palette-sunset-amber: #D68E16;
+  --palette-sunset-rose: #E11D48;
+  --palette-sunset-dusk: #6B1E36;
+  --palette-sunset-night: #2A2F3A;
+  --palette-sunset-deep: #12141B;
+
   /* === Intent layer (used by components) === */
-  /* Surfaces */
-  --color-bg: var(--palette-cream-50);
+  /* Surfaces — bg is a semi-transparent cream veil so the body's fixed sunset
+     gradient shows through content sections; card stays solid for readability. */
+  --color-bg: color-mix(in srgb, var(--palette-cream-50) 72%, transparent);
   --color-card: var(--palette-cream-25);
   --color-input: var(--palette-white);
-  --color-dark: var(--palette-blue-900);
-  --color-dark-muted: var(--palette-blue-800);
+  --color-dark: var(--palette-dark-900);
+  --color-dark-muted: var(--palette-dark-800);
 
   /* Text */
   --color-body: var(--palette-ink);
   --color-muted: var(--palette-ink-light);
-  --color-heading: var(--palette-blue-900);
+  --color-heading: var(--palette-dark-900);
   --color-on-dark: var(--palette-cream-50);
   --color-on-dark-muted: color-mix(in srgb, var(--palette-cream-50) 70%, transparent);
 
   /* Accent / action */
   --color-accent: var(--palette-gold-500);
   --color-accent-hover: var(--palette-gold-400);
-  --color-on-accent: var(--palette-blue-900);
-  --color-alert: var(--palette-coral);
-  --color-alert-hover: var(--palette-coral-600);
+  --color-on-accent: var(--palette-dark-900);
+  --color-alert: var(--palette-red-500);
+  --color-alert-hover: var(--palette-red-600);
   --color-on-alert: var(--palette-white);
-  --color-active: var(--palette-coral);
-  --color-success: var(--palette-teal-500);
-  --color-on-success: var(--palette-white);
-  --color-callout: var(--palette-teal-100);
-  --color-on-callout: var(--palette-blue-900);
+  --color-active: var(--palette-red-500);
+  --color-success: var(--palette-cyan-500);
+  --color-on-success: var(--palette-dark-900);
+  --color-callout: var(--palette-cyan-100);
+  --color-on-callout: var(--palette-dark-900);
 
   /* Functional */
-  --color-error: var(--palette-coral);
+  --color-error: var(--palette-red-500);
   --color-focus-ring: var(--palette-gold-500);
   --color-divider: var(--palette-gold-400);
 
-  /* Header (retro) */
+  /* Header (retro cinematic) */
   --color-header-bg: var(--palette-cream-50);
   --color-header-hover-border: var(--palette-white);
-  --color-header-cheatline: var(--palette-coral);
+  --color-header-cheatline: var(--palette-cyan-500);
   --color-header-button-1-bg: var(--palette-gold-500);
   --color-header-button-1-text: var(--palette-ink);
   --color-header-button-2-bg: var(--palette-gold-400);
   --color-header-button-2-text: var(--palette-ink);
-  --color-header-button-3-bg: var(--palette-coral);
-  --color-header-button-3-text: var(--palette-white);
+  --color-header-button-3-bg: var(--palette-cyan-500);
+  --color-header-button-3-text: var(--palette-dark-900);
   --color-header-button-4-bg: var(--palette-ink);
   --color-header-button-4-text: var(--palette-cream-50);
-  --color-header-button-5-bg: var(--palette-blue-900);
+  --color-header-button-5-bg: var(--palette-dark-900);
   --color-header-button-5-text: var(--palette-cream-50);
   --color-header-cta-bg: var(--palette-gold-500);
-  --color-header-cta-text: var(--palette-blue-900);
+  --color-header-cta-text: var(--palette-dark-900);
   --color-header-cta-hover: var(--palette-gold-400);
 
-  /* Footer (in-scope, going cream) */
+  /* Footer */
   --color-footer-bg: var(--palette-cream-50);
   --color-footer-text: var(--palette-ink);
   --color-footer-muted: var(--palette-ink-light);
-  --color-footer-link: var(--palette-blue-900);
+  --color-footer-link: var(--palette-dark-900);
   --color-footer-link-hover: var(--palette-gold-500);
 
+  /* === Immersive (cinematic dark / photographic) surfaces === */
+  --color-immersive-bg: var(--palette-dark-900);
+  --color-immersive-bg-deep: color-mix(in srgb, var(--palette-dark-900) 78%, #000 22%);
+  --color-immersive-bg-night: var(--palette-dark-950);
+  --color-on-immersive: var(--palette-cream-50);
+  --color-on-immersive-muted: color-mix(in srgb, var(--palette-cream-50) 72%, transparent);
+  --color-immersive-accent: var(--palette-gold-500);
+  --color-immersive-accent-hover: var(--palette-gold-400);
+  --color-immersive-cool: var(--palette-cyan-500);
+
   /* === Subtle surfaces & borders === */
-  --color-border: var(--palette-blue-900);
-  --color-border-subtle: color-mix(in srgb, var(--palette-blue-800) 10%, transparent);
-  --color-border-soft: color-mix(in srgb, var(--palette-blue-800) 20%, transparent);
-  --color-dark-subtle: color-mix(in srgb, var(--palette-blue-900) 5%, transparent);
-  --color-dark-soft: color-mix(in srgb, var(--palette-blue-800) 10%, transparent);
+  --color-border: var(--palette-dark-900);
+  --color-border-subtle: color-mix(in srgb, var(--palette-dark-800) 10%, transparent);
+  --color-border-soft: color-mix(in srgb, var(--palette-dark-800) 20%, transparent);
+  --color-dark-subtle: color-mix(in srgb, var(--palette-dark-900) 5%, transparent);
+  --color-dark-soft: color-mix(in srgb, var(--palette-dark-800) 10%, transparent);
   --color-accent-subtle: color-mix(in srgb, var(--palette-gold-500) 10%, transparent);
+  --color-immersive-subtle: color-mix(in srgb, var(--palette-dark-900) 8%, transparent);
+  --color-cyan-subtle: color-mix(in srgb, var(--palette-cyan-500) 12%, transparent);
 
-  /* === Status callout subtle backgrounds === */
-  --color-error-subtle: color-mix(in srgb, var(--palette-coral) 10%, transparent);
-  --color-success-subtle: color-mix(in srgb, var(--palette-teal-500) 10%, transparent);
-  --color-callout-subtle: color-mix(in srgb, var(--palette-teal-100) 70%, transparent);
+  /* Status callout subtle backgrounds */
+  --color-error-subtle: color-mix(in srgb, var(--palette-red-500) 10%, transparent);
+  --color-success-subtle: color-mix(in srgb, var(--palette-cyan-500) 10%, transparent);
+  --color-callout-subtle: color-mix(in srgb, var(--palette-cyan-100) 70%, transparent);
 
-  /* === Dark-surface accents & overlays === */
+  /* Dark-surface accents & overlays */
   --color-on-dark-accent: var(--palette-gold-500);
   --color-on-dark-accent-hover: var(--palette-gold-400);
   --color-on-dark-subtle: color-mix(in srgb, var(--palette-cream-50) 10%, transparent);
   --color-on-dark-soft: color-mix(in srgb, var(--palette-cream-50) 50%, transparent);
 
-  /* === Legacy aliases (deprecated; removed in follow-up intent-migration ticket) === */
-  --color-navy-900: var(--palette-blue-900);
-  --color-navy-800: var(--palette-blue-800);
+  /* === Legacy aliases (deprecated; kept until downstream cleanup) === */
+  --color-navy-900: var(--palette-dark-900);
+  --color-navy-800: var(--palette-dark-800);
   --color-sand-50: var(--palette-cream-50);
-  --color-orange: var(--palette-coral);
-  --color-rust: var(--palette-coral-600);
-  --color-teal: var(--palette-teal-500);
-  --color-teal-100: var(--palette-teal-100);
+  --color-orange: var(--palette-red-500);
+  --color-rust: var(--palette-red-600);
+  --color-teal: var(--palette-cyan-500);
+  --color-teal-100: var(--palette-cyan-100);
   --color-gold-500: var(--palette-gold-500);
   --color-gold-400: var(--palette-gold-400);
   --color-ink: var(--palette-ink);
   --color-ink-light: var(--palette-ink-light);
-  --color-success: var(--palette-teal-500);
-  --color-error: var(--palette-coral);
+  --color-success: var(--palette-cyan-500);
+  --color-error: var(--palette-red-500);
 
-  /* Fonts (drop Inter from heading fallback per brand doc) */
+  /* Fonts — V2 cinematic stack (all free Google Fonts) */
   --font-heading: "Nunito Sans", system-ui, sans-serif;
   --font-body: "Poppins", system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", "Courier New", monospace;
+  --font-display: "Spectral", Georgia, serif;
 
-  /* Spacing (unchanged) */
+  /* Spacing */
   --spacing-18: 4.5rem;
+
+  /* === Motion tokens (per v2-visual-and-motion-system.md §4g) === */
+  --motion-instant: 80ms;
+  --motion-quick: 150ms;
+  --motion-base: 300ms;
+  --motion-slow: 500ms;
+  --motion-cinema: 800ms;
+
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-soft: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-scrub: linear;
+
+  --rise-entrance: 24px;
+  --rise-story: 40px;
+  --parallax-delta: 20%;
+  --tilt-delta: 3deg;
+
+  --stagger-tight: 60ms;
+  --stagger-loose: 120ms;
 }
 
 @layer components {
@@ -128,12 +173,232 @@
     line-height: 1;
   }
 
+  /* Cinematic gradient scrims (replace flat overlays) — §4c */
   .bg-hero-scrim {
-    background-color: rgba(15, 15, 15, 0.5);
+    background: linear-gradient(
+      180deg,
+      rgba(18, 20, 27, 0.10) 0%,
+      rgba(18, 20, 27, 0.35) 38%,
+      rgba(18, 20, 27, 0.74) 80%,
+      rgba(18, 20, 27, 0.94) 100%
+    );
   }
 
   .bg-pageheader-scrim {
-    background-color: rgba(15, 15, 15, 0.55);
+    background: linear-gradient(
+      180deg,
+      rgba(30, 33, 43, 0.62) 0%,
+      rgba(18, 20, 27, 0.55) 55%,
+      rgba(18, 20, 27, 0.30) 100%
+    );
+  }
+
+  .bg-panel-scrim-left {
+    background: linear-gradient(
+      90deg,
+      rgba(18, 20, 27, 0.84) 0%,
+      rgba(18, 20, 27, 0.55) 55%,
+      rgba(18, 20, 27, 0) 100%
+    );
+  }
+
+  .bg-panel-scrim-bottom {
+    background: linear-gradient(
+      0deg,
+      rgba(18, 20, 27, 0.88) 0%,
+      rgba(18, 20, 27, 0.45) 60%,
+      rgba(18, 20, 27, 0) 100%
+    );
+  }
+
+  /* Sunset gradient placeholder — launch photography placeholder per v2-resolutions §4.
+     Warm gold → amber → rose → dusk → night → deep, using the new palette. */
+  .bg-sunset-placeholder {
+    background: linear-gradient(
+      155deg,
+      #F1CA24 0%,
+      #F1A21B 14%,
+      #D68E16 28%,
+      #E11D48 46%,
+      #B91C3C 60%,
+      #6B1E36 74%,
+      #2A2F3A 88%,
+      #12141B 100%
+    );
+  }
+
+  .bg-sunset-placeholder-vertical {
+    background: linear-gradient(
+      180deg,
+      #F1CA24 0%,
+      #F1A21B 18%,
+      #E11D48 38%,
+      #6B1E36 58%,
+      #2A2F3A 80%,
+      #12141B 100%
+    );
+  }
+
+  .bg-sunset-placeholder-soft {
+    background: linear-gradient(
+      160deg,
+      #FAFAF8 0%,
+      #F1CA24 16%,
+      #F1A21B 32%,
+      #E11D48 52%,
+      #6B1E36 72%,
+      #2A2F3A 88%,
+      #12141B 100%
+    );
+  }
+
+  .bg-sunset-placeholder-dawn {
+    background: linear-gradient(
+      200deg,
+      #12141B 0%,
+      #2A2F3A 18%,
+      #6B1E36 38%,
+      #E11D48 58%,
+      #F1A21B 78%,
+      #F1CA24 100%
+    );
+  }
+
+  /* Blueprint / sectional-chart grid motif for dark sections */
+  .bg-blueprint-grid {
+    background-image:
+      linear-gradient(rgba(241, 202, 36, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(241, 202, 36, 0.05) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  .bg-blueprint-grid-cyan {
+    background-image:
+      linear-gradient(rgba(0, 194, 209, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 194, 209, 0.05) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  /* Film grain overlay — §4e step 5 (CSS SVG filter, swappable) */
+  .film-grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.08;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* Vignette — §4e step 6, hero/full-bleed only */
+  .cinema-vignette::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    background: radial-gradient(
+      ellipse at center,
+      transparent 52%,
+      rgba(18, 20, 27, 0.40) 100%
+    );
+  }
+
+  /* Cockpit panel stencil label (IBM Plex Mono, tracked) — §4d */
+  .panel-label {
+    font-family: var(--font-mono);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.6875rem;
+  }
+  .panel-label-lg {
+    font-family: var(--font-mono);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.75rem;
+  }
+
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  /* Quick-facts strip badge styles */
+  .qfs-badge-gold {
+    background: var(--palette-gold-500);
+    color: var(--palette-dark-900);
+  }
+  .qfs-badge-cyan {
+    background: var(--palette-cyan-500);
+    color: var(--palette-dark-900);
+  }
+  .qfs-badge-ink {
+    background: var(--palette-ink);
+    color: var(--palette-cream-50);
+  }
+  .qfs-badge-cream {
+    background: var(--palette-cream-50);
+    color: var(--palette-ink);
+  }
+
+  /* Cheatline — retro livery stripe, header detail only */
+  .cheatline-bottom {
+    position: relative;
+  }
+  .cheatline-bottom::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    background: linear-gradient(
+      90deg,
+      var(--palette-red-500) 0%,
+      var(--palette-red-500) 62%,
+      var(--palette-gold-500) 62%,
+      var(--palette-gold-500) 84%,
+      var(--palette-cyan-500) 84%,
+      var(--palette-cyan-500) 100%
+    );
+  }
+
+  /* Horizon hairline — subtle gold rule used as a throughline divider */
+  .horizon-rule {
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      color-mix(in srgb, var(--palette-gold-500) 50%, transparent) 20%,
+      color-mix(in srgb, var(--palette-gold-500) 85%, transparent) 50%,
+      color-mix(in srgb, var(--palette-gold-500) 50%, transparent) 80%,
+      transparent 100%
+    );
+  }
+
+  /* Card surfaces for the cinematic system */
+  .card-cinematic {
+    background: var(--palette-cream-25);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 0.75rem;
+    transition:
+      transform var(--motion-base) var(--ease-out-quart),
+      box-shadow var(--motion-base) var(--ease-out-quart),
+      border-color var(--motion-base) var(--ease-out-quart);
+  }
+  .card-cinematic:hover {
+    transform: translateY(-2px);
+    border-color: color-mix(in srgb, var(--palette-gold-500) 45%, transparent);
+    box-shadow: 0 18px 40px -24px rgba(18, 20, 27, 0.35);
+  }
+
+  .card-immersive {
+    background: color-mix(in srgb, var(--palette-dark-900) 70%, transparent);
+    border: 1px solid color-mix(in srgb, var(--palette-cream-50) 12%, transparent);
+    border-radius: 0.75rem;
+    backdrop-filter: blur(6px);
   }
 }
 
@@ -146,7 +411,20 @@
     font-family: var(--font-body);
     font-weight: 500;
     color: var(--color-body);
-    background-color: var(--color-bg);
+    /* Fixed sunset gradient — light cream/gold at the top → deep charcoal at the
+       bottom. Viewport-anchored so it stays put while content scrolls over it.
+       `--color-bg` (a 72% cream veil) is used by `bg-bg` content sections, so
+       they reveal this gradient softly while keeping ink text readable. */
+    background: linear-gradient(
+      180deg,
+      #F7F5F0 0%,
+      #F1CA24 14%,
+      #F1A21B 30%,
+      #E11D48 52%,
+      #6B1E36 72%,
+      #2A2F3A 100%
+    ) fixed;
+    background-color: var(--palette-dark-950);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -156,6 +434,7 @@
   h3 {
     font-family: var(--font-heading);
     font-weight: 800;
+    letter-spacing: -0.01em;
   }
 
   h4,
@@ -163,6 +442,35 @@
   h6 {
     font-family: var(--font-body);
     font-weight: 600;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-focus-ring);
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background: var(--palette-gold-500);
+    color: var(--palette-dark-900);
+  }
+
+  .skip-link {
+    position: absolute;
+    left: 0.5rem;
+    top: -3rem;
+    z-index: 100;
+    background: var(--palette-dark-900);
+    color: var(--palette-cream-50);
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    transition: top var(--motion-quick) var(--ease-out-quart);
+  }
+  .skip-link:focus {
+    top: 0.5rem;
   }
 }
 
@@ -173,5 +481,176 @@
 
   .text-balance {
     text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  .visually-hidden {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  /* === Motion grammar — §4a named patterns === */
+
+  /* glide-entrance — both registers, intersection triggered */
+  .reveal {
+    opacity: 0;
+    transform: translateY(var(--rise-entrance));
+    transition:
+      opacity var(--motion-slow) var(--ease-out-quart),
+      transform var(--motion-slow) var(--ease-out-quart);
+    will-change: opacity, transform;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* horizon-reveal — both registers, photo lifts and clears */
+  .reveal-horizon {
+    opacity: 0.6;
+    transform: translateY(16px) scale(1.02);
+    transition:
+      opacity var(--motion-slow) var(--ease-out-quart),
+      transform var(--motion-slow) var(--ease-out-quart);
+    will-change: opacity, transform;
+  }
+  .reveal-horizon.is-visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  /* Staggered children — word-cascade for multi-line headlines */
+  .reveal-stagger > * {
+    opacity: 0;
+    transform: translateY(var(--rise-entrance));
+    transition:
+      opacity var(--motion-slow) var(--ease-out-quart),
+      transform var(--motion-slow) var(--ease-out-quart);
+    will-change: opacity, transform;
+  }
+  .reveal-stagger.is-visible > * {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .reveal-stagger.is-visible > *:nth-child(1) { transition-delay: 0ms; }
+  .reveal-stagger.is-visible > *:nth-child(2) { transition-delay: 80ms; }
+  .reveal-stagger.is-visible > *:nth-child(3) { transition-delay: 160ms; }
+  .reveal-stagger.is-visible > *:nth-child(4) { transition-delay: 240ms; }
+  .reveal-stagger.is-visible > *:nth-child(5) { transition-delay: 320ms; }
+  .reveal-stagger.is-visible > *:nth-child(6) { transition-delay: 400ms; }
+
+  /* beak-flash — gold underline grows on hover */
+  .beak-flash {
+    position: relative;
+  }
+  .beak-flash::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 0;
+    background: var(--palette-gold-500);
+    transition: width var(--motion-quick) var(--ease-out-quart);
+  }
+  .beak-flash:hover::after,
+  .beak-flash:focus-visible::after {
+    width: 100%;
+  }
+
+  /* Scroll-scrubbed parallax via CSS scroll-timeline (progressive enhancement). */
+  @supports (animation-timeline: scroll()) {
+    .scrub-parallax {
+      animation: parallax-drift linear both;
+      animation-timeline: scroll(root);
+    }
+    @keyframes parallax-drift {
+      from { transform: translateY(0); }
+      to { transform: translateY(-12%); }
+    }
+    .scrub-parallax-slow {
+      animation: parallax-drift-slow linear both;
+      animation-timeline: scroll(root);
+    }
+    @keyframes parallax-drift-slow {
+      from { transform: translateY(0) scale(1.04); }
+      to { transform: translateY(-6%) scale(1.12); }
+    }
+  }
+
+  @supports (animation-timeline: view()) {
+    .scrub-altitude-lift {
+      animation: altitude-lift linear both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 40%;
+    }
+    @keyframes altitude-lift {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .scrub-runway-recede {
+      animation: runway-recede linear both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 60%;
+    }
+    @keyframes runway-recede {
+      from { transform: scale(1) translateY(0); }
+      to { transform: scale(1.12) translateY(-8%); }
+    }
+  }
+
+  .story-hero-viewport {
+    min-height: 100svh;
+  }
+
+  .prose-cinematic {
+    font-family: var(--font-body);
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    color: var(--color-body);
+    max-width: 68ch;
+  }
+  .prose-cinematic p + p {
+    margin-top: 1.25rem;
+  }
+
+  .nums {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.01em;
+  }
+}
+
+/* === Reduced motion — §4h === */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal,
+  .reveal-horizon,
+  .reveal-stagger > * {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .scrub-parallax,
+  .scrub-parallax-slow,
+  .scrub-altitude-lift,
+  .scrub-runway-recede {
+    animation: none !important;
+  }
+  .beak-flash::after {
+    width: 100% !important;
+    transition: none !important;
   }
 }

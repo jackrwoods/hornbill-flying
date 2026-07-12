@@ -5,7 +5,7 @@ import { absoluteUrl } from "./utils";
 const TITLE_TEMPLATE = "%s | Hornbill Aviation";
 const DEFAULT_TITLE_SEGMENT = "Part 61 flight school in Reno, NV";
 const DEFAULT_DESCRIPTION =
-  "Train with a Part 61 flight school at Reno-Tahoe (RNO). Choose your instructor, fly a consistent PA28 fleet, and book a discovery flight today.";
+  "Train with a Part 61 flight school at Reno-Tahoe (RNO). Choose your instructor, fly our PA28 fleet, and book a discovery flight today.";
 
 /**
  * Builds a full page title using the site template.
