@@ -103,7 +103,7 @@ export const milestones: Milestone[] = [
   },
   {
     index: 4,
-    title: "Cross-country time building",
+    title: "Cross-country",
     eyebrow: "04 · Cross-country",
     href: "/programs/private-pilot/",
     linkLabel: "See Private Pilot",
@@ -118,7 +118,7 @@ export const milestones: Milestone[] = [
   },
   {
     index: 5,
-    title: "First actual instrument flight",
+    title: "First IFR",
     eyebrow: "05 · First Time in Cloud",
     href: "/programs/instrument-rating/",
     linkLabel: "See Instrument Rating",

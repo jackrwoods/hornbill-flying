@@ -15,7 +15,7 @@ import { MilestoneStack } from "@/sections/home/timeline/MilestoneStack";
  * straight horizontal SVG line of 9 milestone nodes.
  *
  * Scroll story:
- *   - First look (scroll 0): full timeline zoomed out (scale 0.6) and
+ *   - First look (scroll 0): full timeline zoomed out (scale 0.85) and
  *     centered in the viewport. All nodes at full opacity. The nav-map
  *     header is visible.
  *   - Zoom in (0 → 0.05): camera zooms from the centered overview into
@@ -28,13 +28,13 @@ import { MilestoneStack } from "@/sections/home/timeline/MilestoneStack";
  *     opacity 1); inactive nodes dim (radius 18, opacity 0.5). Each
  *     milestone's overlay panel crossfades in as its node centers.
  *   - Hold (0.85 → 0.93): hold on node 9.
- *   - Zoom out (0.93 → 1.0): scale 1.4 → 0.6, camera pulls back to the
+ *   - Zoom out (0.93 → 1.0): scale 1.4 → 0.85, camera pulls back to the
  *     centered overview. All nodes return to full opacity; overlay panels
  *     fade out; the nav-map header fades back in.
  *
  * Camera math (SVG user units, canvas 3200 × 1800, `xMidYMid meet`):
  *   - Nodes sit at y=600. Viewport center is at user (1600, 900).
- *   - Overview (scale 0.6, centered): translate = (640, 540) — centroid
+ *   - Overview (scale 0.85, centered): translate = (240, 390) — centroid
  *     (1600, 600) maps to viewport (1600, 900).
  *   - Zoomed-in (scale 1.4, line at viewport y=400):
  *     translate_x = 1600 - 1.4*xN, translate_y = 400 - 1.4*600 = -440.
@@ -65,20 +65,22 @@ const CAMERA_X_INPUT = [
   0.48, 0.52, 0.58, 0.62, 0.68, 0.72, 0.78, 0.82, 0.93, 1,
 ];
 const CAMERA_X_OUTPUT = [
-  640,  1320, 1320, 830,  830,  340,  340,  -150, -150, -640,
-  -640, -1130, -1130, -1620, -1620, -2110, -2110, -2600, -2600, 640,
+  240,  1320, 1320, 830,  830,  340,  340,  -150, -150, -640,
+  -640, -1130, -1130, -1620, -1620, -2110, -2110, -2600, -2600, 240,
 ];
 
-// Camera translate Y: centered (540) at the overview, top portion (-440)
-// during the zoomed-in pan. At scale 0.6: 900 - 0.6*600 = 540.
+// Camera translate Y: centered in the visible viewport area (480) at the
+// overview, top portion (-440) during the zoomed-in pan.
+// At scale 0.85: target_y - 0.85*600 = 480, where target_y is slightly
+// below the SVG center to account for the sticky site header.
 // At scale 1.4: 400 - 1.4*600 = -440.
 const CAMERA_Y_INPUT = [0, 0.05, 0.93, 1];
-const CAMERA_Y_OUTPUT = [540, -440, -440, 540];
+const CAMERA_Y_OUTPUT = [480, -440, -440, 480];
 
-// Camera scale: zoomed out (0.6) at first look → zoomed in (1.4) for the
-// pan → zoomed back out (0.6) at the end.
+// Camera scale: zoomed out (0.85) at first look → zoomed in (1.4) for the
+// pan → zoomed back out (0.85) at the end.
 const SCALE_INPUT = [0, 0.05, 0.93, 1];
-const SCALE_OUTPUT = [0.6, 1.4, 1.4, 0.6];
+const SCALE_OUTPUT = [0.85, 1.4, 1.4, 0.85];
 
 // Nav-map header: visible at the first look, fades out as the camera zooms
 // into node 1, hidden during the pan, fades back in at the zoom-out.

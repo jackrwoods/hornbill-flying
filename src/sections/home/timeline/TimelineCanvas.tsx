@@ -1,7 +1,7 @@
 "use client";
-import type { JSX } from "react";
+import { useRef, useEffect, type JSX } from "react";
 import type { MotionValue } from "framer-motion";
-import { motion } from "framer-motion";
+import { motion, useMotionValue, useTransform } from "framer-motion";
 import {
   milestones,
   TIMELINE_CANVAS_WIDTH,
@@ -14,7 +14,7 @@ interface TimelineCanvasProps {
   cameraX: MotionValue<number>;
   /** Camera translate Y in SVG user units. */
   cameraY: MotionValue<number>;
-  /** Camera scale (0.6 = zoomed-out overview, 1.4 = zoomed-in on a node). */
+  /** Camera scale (0.85 = zoomed-out overview, 1.4 = zoomed-in on a node). */
   cameraScale: MotionValue<number>;
   /** Per-node circle radius MotionValue (9 entries; active node r=30, inactive r=18). Optional — if not provided, a static r=18 with CSS hover scale is used. */
   nodeRadii?: MotionValue<number>[];
@@ -36,15 +36,74 @@ const PATH_D = buildPathD(milestones);
 
 export function TimelineCanvas(props: TimelineCanvasProps): JSX.Element {
   const { cameraX, cameraY, cameraScale, nodeRadii, nodeOpacities } = props;
+  const svgRef = useRef<SVGSVGElement>(null);
+  const svgWidth = useMotionValue(
+    typeof window !== "undefined" ? window.innerWidth : 0
+  );
+  const svgHeight = useMotionValue(
+    typeof window !== "undefined" ? window.innerHeight : 0
+  );
+
+  useEffect(() => {
+    const svg = svgRef.current;
+    if (!svg) return;
+    const update = () => {
+      const rect = svg.getBoundingClientRect();
+      svgWidth.set(rect.width);
+      svgHeight.set(rect.height);
+    };
+    update();
+    const ro = new ResizeObserver(update);
+    ro.observe(svg);
+    window.addEventListener("resize", update);
+    return () => {
+      ro.disconnect();
+      window.removeEventListener("resize", update);
+    };
+  }, [svgWidth, svgHeight]);
+
+  // The SVG uses `preserveAspectRatio="xMidYMid meet"`, so its user-unit
+  // viewBox is scaled uniformly and centered inside the actual CSS box.
+  // Convert the user-unit camera values into CSS-pixel transform values so
+  // the timeline stays centered in the rendered viewport across aspect
+  // ratios.
+  const scaleCss = useTransform([svgWidth, svgHeight], ([w, h]: number[]) =>
+    w > 0 && h > 0
+      ? Math.min(
+          w / TIMELINE_CANVAS_WIDTH,
+          h / TIMELINE_CANVAS_HEIGHT
+        )
+      : 1
+  );
+  const offsetX = useTransform([svgWidth, scaleCss], ([w, s]: number[]) =>
+    (w - TIMELINE_CANVAS_WIDTH * s) / 2
+  );
+  const offsetY = useTransform([svgHeight, scaleCss], ([h, s]: number[]) =>
+    (h - TIMELINE_CANVAS_HEIGHT * s) / 2
+  );
+  const cssX = useTransform(
+    [cameraX, cameraScale, scaleCss, offsetX],
+    ([x, cs, s, ox]) =>
+      (x as number) * (s as number) +
+      (ox as number) * (1 - (cs as number))
+  );
+  const cssY = useTransform(
+    [cameraY, cameraScale, scaleCss, offsetY],
+    ([y, cs, s, oy]) =>
+      (y as number) * (s as number) +
+      (oy as number) * (1 - (cs as number))
+  );
+  const cssScale = useTransform([cameraScale], ([s]) => s as number);
 
   return (
     <svg
+      ref={svgRef}
       xmlns="http://www.w3.org/2000/svg"
       viewBox={`0 0 ${TIMELINE_CANVAS_WIDTH} ${TIMELINE_CANVAS_HEIGHT}`}
       preserveAspectRatio="xMidYMid meet"
       width="100%"
       height="100%"
-      className="h-full w-full"
+      className="block h-full w-full"
       role="img"
       aria-label="Pilot journey timeline from Discovery Flight through CFII, laid out as a horizontal flight path across a sectional-chart grid."
     >
@@ -75,12 +134,16 @@ export function TimelineCanvas(props: TimelineCanvasProps): JSX.Element {
         className="text-on-immersive"
       />
 
-      {/* Camera group: Framer-driven translate + scale. Wraps all canvas content. */}
+      {/* Camera group: Framer-driven translate + scale. The values above are
+           in SVG user units; they are converted to CSS pixels below so the
+           timeline centers correctly inside the `xMidYMid meet` viewport. */}
       <motion.g
         style={{
-          x: cameraX,
-          y: cameraY,
-          scale: cameraScale,
+          x: cssX,
+          y: cssY,
+          scale: cssScale,
+          originX: 0,
+          originY: 0,
           willChange: "transform",
         }}
       >
@@ -126,7 +189,7 @@ export function TimelineCanvas(props: TimelineCanvasProps): JSX.Element {
                     y={60}
                     textAnchor="middle"
                     fontFamily="var(--font-body)"
-                    fontSize={28}
+                    fontSize={36}
                     fill="var(--color-on-immersive)"
                   >
                     {m.title}
