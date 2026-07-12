@@ -11,6 +11,7 @@
     "deploy": "gh-pages -d out --dotfiles"
   },
   "dependencies": {
+    "framer-motion": "^12.42.2",
     "gray-matter": "^4.0.3",
     "next": "^16.2.9",
     "next-mdx-remote": "^5.0.0",
