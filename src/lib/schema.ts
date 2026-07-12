@@ -40,7 +40,7 @@ export function buildOrganization(): JsonLdThing {
     "@id": absoluteUrl("/#organization", BASE),
     name: siteConfig.brandName,
     url: absoluteUrl("/", BASE),
-    logo: absoluteUrl("/logo.svg", BASE),
+    logo: absoluteUrl("/images/logos/logo.svg", BASE),
     sameAs,
   };
 }
@@ -330,7 +330,7 @@ export function buildPerson(instructor: Instructor): JsonLdThing {
       "@id": absoluteUrl("/#organization", BASE),
     },
     url: instructorDetailUrl(instructor.slug),
-    image: absoluteUrl(instructor.photo || "/logo.svg", BASE),
+    image: absoluteUrl(instructor.photo || "/images/logos/logo.svg", BASE),
     description: instructor.metaDescription,
     knowsAbout: buildKnowsAbout(instructor),
     areaServed: {

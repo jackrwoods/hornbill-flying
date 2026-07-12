@@ -17,9 +17,9 @@ export default function manifest(): MetadataRoute.Manifest {
     orientation: "portrait",
     icons: [
       {
-        src: assetPath("/logo.svg"),
+        src: assetPath("/images/logos/logo.svg"),
         sizes: "any",
-        type: "image/jpeg",
+        type: "image/svg+xml",
         purpose: "maskable",
       },
     ],

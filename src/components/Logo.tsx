@@ -30,7 +30,7 @@ export function Logo({
       aria-label={`${siteConfig.brandName} home`}
     >
       <Image
-        src="/logo.svg"
+        src="/images/logos/logo.svg"
         alt=""
         width={size}
         height={Math.round(size * 0.856)}
