@@ -31,7 +31,7 @@ export function Logo({
           alt={siteConfig.brandName}
           width={width}
           height={Math.round(width * 0.31)}
-          className="h-auto w-auto"
+          className="h-full w-auto"
           priority
           unoptimized
         />

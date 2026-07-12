@@ -18,8 +18,8 @@ export function Header() {
     <header className="sticky top-0 z-30 bg-header-bg/95 backdrop-blur-md">
       <Container>
         <div className="flex h-16 lg:h-18 items-center justify-between">
-          <div className="flex items-center gap-4">
-            <Logo fullWordmark width={170} />
+          <div className="flex h-full items-center">
+            <Logo fullWordmark className="h-10 lg:h-12 w-auto" />
           </div>
 
           {/* Desktop nav */}
