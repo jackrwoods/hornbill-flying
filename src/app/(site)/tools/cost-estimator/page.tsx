@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ToolLayout } from "@/components/tools/ToolLayout";
 import { CostEstimatorTool } from "@/components/tools/CostEstimatorTool";
 import { Disclaimer } from "@/components/tools/Disclaimer";
+import { Reveal } from "@/components/Reveal";
 import { costFaqs, widgetDefaults } from "@/content/tools";
 import {
   buildTitle,
@@ -42,22 +43,27 @@ export default function CostEstimatorPage() {
         { href: "/membership/", label: "Membership" },
         { href: "/programs/private-pilot/", label: "Private Pilot program" },
       ]}
+      eyebrow="Budget"
+      placeholderLabel="PA28 panel and logbook — photography coming"
+      sunsetVariant="soft"
     >
-      <div className="rounded-lg bg-callout p-4 text-body">
-        <p>
-          Use this tool to get a rough range for your training budget. It uses
-          our published PA28 wet rates, membership savings, and a placeholder
-          instructor rate. Talk to a CFI for a personalized plan.
-        </p>
-      </div>
+      <Reveal variant="glide">
+        <div className="card-cinematic p-5 text-body">
+          <p>
+            Use this tool to get a rough range for your training budget. It uses
+            our published PA28 wet rates, membership savings, and a placeholder
+            instructor rate. Talk to a CFI for a personalized plan.
+          </p>
+        </div>
+      </Reveal>
 
-      <div className="mt-6">
+      <Reveal variant="glide" className="mt-6">
         <CostEstimatorTool defaults={widgetDefaults.costEstimator} />
-      </div>
+      </Reveal>
 
-      <div className="mt-6">
+      <Reveal variant="glide" className="mt-6">
         <Disclaimer />
-      </div>
+      </Reveal>
     </ToolLayout>
   );
 }

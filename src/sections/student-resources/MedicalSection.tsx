@@ -1,5 +1,6 @@
 import { Section } from "@/components/Section";
 import { Container } from "@/components/Container";
+import { Reveal } from "@/components/Reveal";
 import { PhoneLink } from "@/components/PhoneLink";
 import { ResourceCard } from "@/components/ResourceCard";
 import Link from "next/link";
@@ -8,17 +9,20 @@ export function MedicalSection() {
   return (
     <Section background="card" id="medical">
       <Container>
-        <h2 className="font-heading text-3xl text-heading md:text-4xl">
-          FAA medical certificate guide
-        </h2>
-        <p className="mt-4 max-w-2xl text-muted">
-          Medical certification is a common early hurdle. Here is what you need,
-          where to schedule an exam, and how to handle typical questions.
-        </p>
+        <Reveal variant="glide" className="max-w-3xl">
+          <p className="panel-label-lg text-accent mb-4">Medical</p>
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-extrabold text-heading text-balance">
+            FAA medical certificate guide
+          </h2>
+          <p className="mt-4 max-w-2xl text-muted text-pretty">
+            Medical certification is a common early hurdle. Here is what you need,
+            where to schedule an exam, and how to handle typical questions.
+          </p>
+        </Reveal>
 
         <div className="mt-10 grid gap-8 lg:grid-cols-3">
           <div className="lg:col-span-2 space-y-8">
-            <div>
+            <Reveal variant="glide">
               <h3 className="font-heading text-2xl text-heading">
                 Which medical certificate do I need?
               </h3>
@@ -71,9 +75,9 @@ export function MedicalSection() {
                   </tbody>
                 </table>
               </div>
-            </div>
+            </Reveal>
 
-            <div>
+            <Reveal variant="glide">
               <h3 className="font-heading text-2xl text-heading">
                 How to schedule your exam
               </h3>
@@ -84,7 +88,7 @@ export function MedicalSection() {
                     href="https://medxpress.faa.gov/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-semibold text-heading underline hover:text-accent"
+                    className="beak-flash font-semibold text-heading"
                   >
                     FAA MedXPress
                   </a>{" "}
@@ -96,7 +100,7 @@ export function MedicalSection() {
                     href="https://www.faa.gov/pilots/medical/ame_locator/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-semibold text-heading underline hover:text-accent"
+                    className="beak-flash font-semibold text-heading"
                   >
                     FAA AME locator
                   </a>
@@ -107,9 +111,9 @@ export function MedicalSection() {
                   medications.
                 </li>
               </ol>
-            </div>
+            </Reveal>
 
-            <div>
+            <Reveal variant="glide">
               <h3 className="font-heading text-2xl text-heading">
                 Common medical questions
               </h3>
@@ -145,71 +149,79 @@ export function MedicalSection() {
                   </dd>
                 </div>
               </dl>
-            </div>
+            </Reveal>
 
-            <div>
+            <Reveal variant="glide">
               <Link
                 href="/blog/medical-certificate-student-pilots/"
-                className="inline-flex items-center font-semibold text-heading underline hover:text-accent focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
+                className="beak-flash inline-flex items-center font-semibold text-heading focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
               >
                 Read the medical certificate guide for student pilots
               </Link>
-            </div>
+            </Reveal>
           </div>
 
           <div className="space-y-6">
-            <ResourceCard
-              title="FAA MedXPress"
-              description="Complete your medical application online before visiting an AME."
-              links={[
-                {
-                  href: "https://medxpress.faa.gov/",
-                  label: "Start application",
-                  external: true,
-                },
-              ]}
-              tags={["FAA"]}
-            />
-            <ResourceCard
-              title="AME Locator"
-              description="Find an Aviation Medical Examiner near you."
-              links={[
-                {
-                  href: "https://www.faa.gov/pilots/medical/ame_locator/",
-                  label: "Find an AME",
-                  external: true,
-                },
-              ]}
-              tags={["FAA"]}
-            />
-            <ResourceCard
-              title="BasicMed"
-              description="Alternative medical certification rules for certain pilots."
-              links={[
-                {
-                  href: "https://www.faa.gov/pilots/medical/basic_med",
-                  label: "Learn about BasicMed",
-                  external: true,
-                },
-              ]}
-              tags={["FAA"]}
-            />
+            <Reveal variant="glide">
+              <ResourceCard
+                title="FAA MedXPress"
+                description="Complete your medical application online before visiting an AME."
+                links={[
+                  {
+                    href: "https://medxpress.faa.gov/",
+                    label: "Start application",
+                    external: true,
+                  },
+                ]}
+                tags={["FAA"]}
+              />
+            </Reveal>
+            <Reveal variant="glide">
+              <ResourceCard
+                title="AME Locator"
+                description="Find an Aviation Medical Examiner near you."
+                links={[
+                  {
+                    href: "https://www.faa.gov/pilots/medical/ame_locator/",
+                    label: "Find an AME",
+                    external: true,
+                  },
+                ]}
+                tags={["FAA"]}
+              />
+            </Reveal>
+            <Reveal variant="glide">
+              <ResourceCard
+                title="BasicMed"
+                description="Alternative medical certification rules for certain pilots."
+                links={[
+                  {
+                    href: "https://www.faa.gov/pilots/medical/basic_med",
+                    label: "Learn about BasicMed",
+                    external: true,
+                  },
+                ]}
+                tags={["FAA"]}
+              />
+            </Reveal>
 
-            <div className="rounded-xl bg-dark p-6 text-on-dark">
-              <h3 className="font-heading text-xl text-on-dark">
-                Questions? Call us.
-              </h3>
-              <p className="mt-2 text-sm text-on-dark">
-                Not sure which medical path fits your training goal? We can point
-                you in the right direction before you schedule an exam.
-              </p>
-              <div className="mt-4">
-                <PhoneLink
-                  className="text-on-dark hover:text-on-dark-accent-hover"
-                  showIcon
-                />
+            <Reveal variant="glide">
+              <div className="card-immersive p-6">
+                <h3 className="font-heading text-xl text-on-immersive">
+                  Questions? Call us.
+                </h3>
+                <p className="mt-2 text-sm text-on-immersive-muted">
+                  Not sure which medical path fits your training goal? We can point
+                  you in the right direction before you schedule an exam.
+                </p>
+                <div className="mt-4">
+                  <PhoneLink
+                    className="text-on-immersive hover:text-immersive-accent-hover"
+                    showIcon
+                  />
+                </div>
               </div>
-            </div>
+            </Reveal>
           </div>
         </div>
       </Container>

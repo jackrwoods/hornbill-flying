@@ -1,4 +1,5 @@
 import { Container } from "@/components/Container";
+import { Reveal } from "@/components/Reveal";
 import { Section } from "@/components/Section";
 import { mountainFlyingProgram } from "@/content/programs/mountain-flying";
 
@@ -8,24 +9,26 @@ export function MountainFlyingTerrainWeatherSection() {
   return (
     <Section background="default" id="terrain-and-weather">
       <Container>
-        <h2 className="font-heading text-3xl md:text-4xl text-heading">
-          {terrainWeather.title}
-        </h2>
-        <p className="mt-4 max-w-3xl text-muted">
-          {terrainWeather.intro}
-        </p>
+        <Reveal variant="glide" className="max-w-3xl">
+          <p className="panel-label-lg text-accent mb-4">Terrain &amp; weather</p>
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-extrabold text-heading text-balance">
+            {terrainWeather.title}
+          </h2>
+          <p className="mt-4 text-muted text-pretty">{terrainWeather.intro}</p>
+        </Reveal>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-2">
+        <div className="mt-12 grid gap-5 md:grid-cols-2">
           {terrainWeather.items.map((item) => (
-            <div
+            <Reveal
               key={item.label}
-              className="rounded-xl border-t-4 border-accent bg-white p-6 shadow-sm"
+              variant="glide"
+              className="card-cinematic p-6 flex flex-col"
             >
-              <h3 className="font-heading text-xl text-heading">
+              <h3 className="font-heading text-xl font-extrabold text-heading">
                 {item.label}
               </h3>
-              <p className="mt-2 text-muted">{item.description}</p>
-            </div>
+              <p className="mt-2 text-muted text-pretty">{item.description}</p>
+            </Reveal>
           ))}
         </div>
       </Container>

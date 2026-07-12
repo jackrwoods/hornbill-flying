@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ToolLayout } from "@/components/tools/ToolLayout";
 import { PracticeAreaMapSvg } from "@/components/tools/PracticeAreaMapSvg";
 import { Disclaimer } from "@/components/tools/Disclaimer";
+import { Reveal } from "@/components/Reveal";
 import { practiceAreaFaqs } from "@/content/tools";
 import {
   buildTitle,
@@ -42,38 +43,48 @@ export default function PracticeAreaMapPage() {
         { href: "/programs/mountain-flying/", label: "Mountain Flying course" },
         { href: "/student-resources/", label: "Student resources" },
       ]}
+      eyebrow="Local area"
+      placeholderLabel="Sectional chart and cockpit — photography coming"
+      sunsetVariant="default"
     >
-      <div className="rounded-lg bg-callout p-4 text-body">
-        <p>
-          This is a simplified reference for the common practice area northeast
-          of RNO and nearby airports used for touch-and-go practice and cross-country
-          training. It is not a sectional chart. Confirm current airspace,
-          NOTAMs, and TFRs before every flight.
-        </p>
-      </div>
+      <Reveal variant="glide">
+        <div className="card-cinematic p-5 text-body">
+          <p>
+            This is a simplified reference for the common practice area northeast
+            of RNO and nearby airports used for touch-and-go practice and cross-country
+            training. It is not a sectional chart. Confirm current airspace,
+            NOTAMs, and TFRs before every flight.
+          </p>
+        </div>
+      </Reveal>
 
-      <figure className="mt-6">
-        <PracticeAreaMapSvg className="w-full rounded-xl border border-border-subtle bg-white shadow-sm" />
-        <figcaption className="mt-3 text-sm text-muted">
-          Simplified training reference for RNO. Labels: RNO, common practice area,
-          nearby airports KRTS, KMLC, KLOL, KSPZ, Sierra ridge, and a simplified
-          Class C boundary. Always use the current sectional chart for flight.
-        </figcaption>
-      </figure>
+      <Reveal variant="glide" className="mt-6">
+        <figure>
+          <PracticeAreaMapSvg className="w-full rounded-xl border border-border-subtle bg-card shadow-sm" />
+          <figcaption className="mt-3 text-sm text-muted">
+            Simplified training reference for RNO. Labels: RNO, common practice area,
+            nearby airports KRTS, KMLC, KLOL, KSPZ, Sierra ridge, and a simplified
+            Class C boundary. Always use the current sectional chart for flight.
+          </figcaption>
+        </figure>
+      </Reveal>
 
-      <div className="mt-6 rounded-xl border-t-4 border-accent bg-white p-6 shadow-sm">
-        <h3 className="font-heading text-xl text-heading">Notes</h3>
-        <ul className="mt-4 list-disc space-y-2 pl-5 text-muted">
-          <li>Confirm with the current sectional chart before flight.</li>
-          <li>Practice area altitudes and boundaries vary with traffic and ATC.</li>
-          <li>Check runway conditions and pattern direction at nearby airports.</li>
-          <li>Keep the Sierra ridge and rising terrain in mind when heading west.</li>
-        </ul>
-      </div>
+      <Reveal variant="glide" className="mt-6">
+        <div className="card-cinematic p-6">
+          <p className="panel-label-lg text-accent mb-3">Notes</p>
+          <h3 className="font-heading text-xl text-heading">Notes</h3>
+          <ul className="mt-4 list-disc space-y-2 pl-5 text-muted">
+            <li>Confirm with the current sectional chart before flight.</li>
+            <li>Practice area altitudes and boundaries vary with traffic and ATC.</li>
+            <li>Check runway conditions and pattern direction at nearby airports.</li>
+            <li>Keep the Sierra ridge and rising terrain in mind when heading west.</li>
+          </ul>
+        </div>
+      </Reveal>
 
-      <div className="mt-6">
+      <Reveal variant="glide" className="mt-6">
         <Disclaimer />
-      </div>
+      </Reveal>
     </ToolLayout>
   );
 }

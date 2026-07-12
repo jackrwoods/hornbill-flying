@@ -8,7 +8,7 @@ import {
 
 const PAGE_TITLE = "Commercial Pilot License Training in Reno, NV";
 const PAGE_DESCRIPTION =
-  "Earn your Commercial Pilot certificate at RNO. Part 61 CPL training in a consistent PA28 fleet with real cross-country experience. Book a consultation.";
+  "Earn your Commercial Pilot certificate at RNO. Part 61 CPL training in a PA28 fleet with real cross-country experience. Book a consultation.";
 
 export const metadata: Metadata = {
   title: buildTitle(PAGE_TITLE),

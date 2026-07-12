@@ -1,5 +1,6 @@
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
+import { Reveal } from "@/components/Reveal";
 import type { Instructor } from "@/types";
 
 interface InstructorCredentialsSectionProps {
@@ -14,57 +15,60 @@ export function InstructorCredentialsSection({
   return (
     <Section background="callout" id="credentials">
       <Container>
-        <h2 className="font-heading text-3xl md:text-4xl text-heading">
-          Credentials & experience
-        </h2>
+        <Reveal variant="glide" className="max-w-3xl">
+          <p className="panel-label-lg text-accent mb-4">Credentials</p>
+          <h2 className="font-heading text-3xl md:text-4xl text-heading">
+            Credentials &amp; experience
+          </h2>
+        </Reveal>
 
-        <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {credentials.certificates.map((certificate) => (
-            <li
-              key={certificate}
-              className="rounded-lg bg-white p-4 shadow-sm"
-            >
-              <p className="font-mono text-xs uppercase tracking-wide text-accent">
-                Certificate / Rating
-              </p>
-              <p className="mt-1 font-semibold text-heading">{certificate}</p>
-            </li>
-          ))}
+        <Reveal variant="glide" className="mt-8">
+          <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {credentials.certificates.map((certificate) => (
+              <li
+                key={certificate}
+                className="card-cinematic p-4"
+              >
+                <p className="panel-label text-accent">Certificate / Rating</p>
+                <p className="mt-1 font-semibold text-heading">{certificate}</p>
+              </li>
+            ))}
 
-          {credentials.totalHours && (
-            <li className="rounded-lg bg-white p-4 shadow-sm">
-              <p className="font-mono text-xs uppercase tracking-wide text-accent">
-                Total flight hours
-              </p>
-              <p className="mt-1 font-semibold text-heading">
-                {credentials.totalHours}
-              </p>
-            </li>
-          )}
+            {credentials.totalHours && (
+              <li className="card-cinematic p-4">
+                <p className="panel-label text-accent">Total flight hours</p>
+                <p className="mt-1 font-semibold text-heading nums">
+                  {credentials.totalHours}
+                </p>
+              </li>
+            )}
 
-          {credentials.hoursInstructing && (
-            <li className="rounded-lg bg-white p-4 shadow-sm">
-              <p className="font-mono text-xs uppercase tracking-wide text-accent">
-                Hours instructing
-              </p>
-              <p className="mt-1 font-semibold text-heading">
-                {credentials.hoursInstructing}
-              </p>
-            </li>
-          )}
-        </ul>
+            {credentials.hoursInstructing && (
+              <li className="card-cinematic p-4">
+                <p className="panel-label text-accent">Hours instructing</p>
+                <p className="mt-1 font-semibold text-heading nums">
+                  {credentials.hoursInstructing}
+                </p>
+              </li>
+            )}
+          </ul>
+        </Reveal>
 
         {publishCertificate && certificateNumber && (
-          <p className="mt-6 text-sm text-muted">
-            FAA certificate number: {certificateNumber}
-          </p>
+          <Reveal variant="glide" className="mt-6">
+            <p className="text-sm text-muted nums">
+              FAA certificate number: {certificateNumber}
+            </p>
+          </Reveal>
         )}
 
-        <p className="mt-6 max-w-3xl text-muted">
-          All instruction follows FAA Part 61 standards and Hornbill Aviation
-          flight center safety practices. Aircraft are inspected before each
-          flight and maintained on a recurring schedule.
-        </p>
+        <Reveal variant="glide" className="mt-6 max-w-3xl">
+          <p className="text-muted text-pretty">
+            All instruction follows FAA Part 61 standards and Hornbill Aviation
+            flight center safety practices. Aircraft are inspected before each
+            flight and maintained on a recurring schedule.
+          </p>
+        </Reveal>
       </Container>
     </Section>
   );

@@ -1,5 +1,6 @@
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
+import { Reveal } from "@/components/Reveal";
 import type { Instructor } from "@/types";
 
 interface InstructorBioSectionProps {
@@ -12,14 +13,17 @@ export function InstructorBioSection({ instructor }: InstructorBioSectionProps) 
   return (
     <Section background="default" id="bio">
       <Container>
-        <h2 className="font-heading text-3xl md:text-4xl text-heading">
-          About {instructor.name.split(" ")[0]}
-        </h2>
-        <div className="mt-6 max-w-3xl space-y-5 text-body leading-relaxed">
-          {paragraphs.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
-          ))}
-        </div>
+        <Reveal variant="glide" className="max-w-3xl">
+          <p className="panel-label-lg text-accent mb-4">Bio</p>
+          <h2 className="font-heading text-3xl md:text-4xl text-heading">
+            About {instructor.name.split(" ")[0]}
+          </h2>
+          <div className="mt-6 prose-cinematic">
+            {paragraphs.map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
+          </div>
+        </Reveal>
       </Container>
     </Section>
   );

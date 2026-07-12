@@ -1,4 +1,5 @@
 import { Container } from "@/components/Container";
+import { Reveal } from "@/components/Reveal";
 import { Section } from "@/components/Section";
 import { cfiiProgram } from "@/content/programs/cfii";
 
@@ -6,14 +7,19 @@ export function CFIITrainingEmphasisSection() {
   return (
     <Section background="card" id="training-emphasis">
       <Container>
-        <h2 className="font-heading text-3xl md:text-4xl text-heading">
-          {cfiiProgram.trainingEmphasis.title}
-        </h2>
-        <ul className="mt-8 grid gap-4 sm:grid-cols-2">
+        <Reveal variant="glide" className="max-w-3xl">
+          <p className="panel-label-lg text-accent mb-4">Training emphasis</p>
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-extrabold text-heading text-balance">
+            {cfiiProgram.trainingEmphasis.title}
+          </h2>
+        </Reveal>
+        <ul className="mt-12 grid gap-4 sm:grid-cols-2">
           {cfiiProgram.trainingEmphasis.items.map((item, index) => (
-            <li
+            <Reveal
               key={index}
-              className="flex items-start gap-3 rounded-lg bg-callout p-4"
+              variant="glide"
+              as="li"
+              className="card-cinematic p-4 flex items-start gap-3"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +37,7 @@ export function CFIITrainingEmphasisSection() {
                 <polyline points="20 6 9 17 4 12" />
               </svg>
               <span className="text-body">{item}</span>
-            </li>
+            </Reveal>
           ))}
         </ul>
       </Container>

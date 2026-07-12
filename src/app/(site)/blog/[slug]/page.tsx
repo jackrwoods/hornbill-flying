@@ -5,8 +5,11 @@ import rehypeSlug from "rehype-slug";
 import remarkGfm from "remark-gfm";
 import { Container } from "@/components/Container";
 import { PageHeader } from "@/components/PageHeader";
+import { Reveal } from "@/components/Reveal";
+import { CTALink } from "@/components/CTALink";
 import { SchemaInjector } from "@/components/SchemaInjector";
 import { Section } from "@/components/Section";
+import { siteFacts } from "@/content/siteFacts";
 import {
   buildTitle,
   buildCanonical,
@@ -103,45 +106,77 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           { label: "Blog", href: "/blog/" },
           { label: post.title },
         ]}
+        eyebrow="Field notes"
+        placeholderLabel={`${post.category} — photography coming`}
+        sunsetVariant="default"
       />
 
       <Section background="card">
         <Container className="max-w-3xl">
-          <article className="prose prose-lg max-w-none">
-            <header className="not-prose mb-8">
-              <div className="flex flex-wrap items-center gap-3 text-sm text-muted">
-                <span className="rounded bg-callout px-2 py-0.5 text-heading">
-                  {post.category}
-                </span>
-                <time dateTime={post.date}>
-                  {new Date(post.date).toLocaleDateString("en-US", {
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric",
-                  })}
-                </time>
-                <span>{post.readTime} min read</span>
-              </div>
-            </header>
+          <Reveal variant="glide">
+            <article className="prose prose-lg max-w-none">
+              <header className="not-prose mb-8">
+                <div className="flex flex-wrap items-center gap-3 text-sm text-muted">
+                  <span className="rounded bg-callout px-2 py-0.5 text-heading">
+                    {post.category}
+                  </span>
+                  <time dateTime={post.date} className="nums">
+                    {new Date(post.date).toLocaleDateString("en-US", {
+                      year: "numeric",
+                      month: "long",
+                      day: "numeric",
+                    })}
+                  </time>
+                  <span className="nums">{post.readTime} min read</span>
+                </div>
+              </header>
 
-            <MDXRemote
-              source={post.content}
-              options={{
-                mdxOptions: {
-                  remarkPlugins: [remarkGfm],
-                  rehypePlugins: [rehypeSlug],
-                },
-              }}
-            />
+              <MDXRemote
+                source={post.content}
+                options={{
+                  mdxOptions: {
+                    remarkPlugins: [remarkGfm],
+                    rehypePlugins: [rehypeSlug],
+                  },
+                }}
+              />
 
-            <footer className="not-prose mt-12 border-t border-border-subtle pt-8">
-              <p className="text-sm text-muted">
-                By {post.authorName}
-              </p>
-            </footer>
-          </article>
+              <footer className="not-prose mt-12 border-t border-border-subtle pt-8">
+                <p className="text-sm text-muted">
+                  By {post.authorName}
+                </p>
+              </footer>
+            </article>
+          </Reveal>
         </Container>
       </Section>
+
+      {/* Closing CTA band — mirrors the homepage Discovery CTA */}
+      <section className="bg-immersive-bg-night text-on-immersive relative overflow-hidden">
+        <div className="absolute inset-0 bg-blueprint-grid opacity-60" aria-hidden="true" />
+        <div className="absolute inset-0 bg-sunset-placeholder-dawn opacity-25" aria-hidden="true" />
+        <Container className="relative z-10 py-24 md:py-32 text-center">
+          <Reveal variant="stagger" className="mx-auto max-w-3xl flex flex-col items-center">
+            <p className="panel-label-lg text-immersive-accent mb-6">Book</p>
+            <p className="font-display text-3xl md:text-4xl lg:text-5xl leading-snug text-on-immersive text-balance">
+              Your first lesson is a discovery flight. You fly. We watch.
+            </p>
+            <p className="mt-6 text-on-immersive-muted text-pretty max-w-xl">
+              {siteFacts.discoveryPrice} · {siteFacts.discoveryQualifier} · about 60 minutes · {siteFacts.airportLong}
+            </p>
+            <div className="mt-10">
+              <CTALink
+                href="/discovery-flight/"
+                variant="secondary"
+                analytics="discovery_flight_booking_started"
+                className="px-8 py-4 text-base"
+              >
+                Book a discovery flight — {siteFacts.discoveryPrice}
+              </CTALink>
+            </div>
+          </Reveal>
+        </Container>
+      </section>
     </>
   );
 }

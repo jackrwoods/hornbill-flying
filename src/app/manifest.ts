@@ -9,11 +9,11 @@ export default function manifest(): MetadataRoute.Manifest {
     name: siteConfig.brandName,
     short_name: "Hornbill",
     description:
-      "Part 61 flight school in Reno, NV. Train in a consistent PA28 fleet and book a discovery flight.",
+      "Part 61 flight school in Reno, NV. Train in a PA28 fleet and book a discovery flight.",
     start_url: assetPath("/"),
     display: "standalone",
-    background_color: "#FFF8EC",
-    theme_color: "#004E7C",
+    background_color: "#F7F5F0",
+    theme_color: "#1E212B",
     orientation: "portrait",
     icons: [
       {

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Container } from "@/components/Container";
+import { Reveal } from "@/components/Reveal";
 import { Section } from "@/components/Section";
 import { mountainFlyingProgram } from "@/content/programs/mountain-flying";
 
@@ -9,16 +10,19 @@ export function MountainFlyingPrerequisitesCostSection() {
   return (
     <Section background="default" id="prerequisites-duration-cost">
       <Container>
-        <h2 className="font-heading text-3xl md:text-4xl text-heading">
-          {prerequisitesDurationCost.title}
-        </h2>
-        <p className="mt-4 max-w-3xl text-muted">
-          {prerequisitesDurationCost.intro}
-        </p>
+        <Reveal variant="glide" className="max-w-3xl">
+          <p className="panel-label-lg text-accent mb-4">Prerequisites &amp; cost</p>
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-extrabold text-heading text-balance">
+            {prerequisitesDurationCost.title}
+          </h2>
+          <p className="mt-4 text-muted text-pretty">
+            {prerequisitesDurationCost.intro}
+          </p>
+        </Reveal>
 
-        <div className="mt-10 grid gap-8 lg:grid-cols-2">
-          <div className="rounded-xl border-t-4 border-accent bg-white p-6 shadow-sm md:p-8">
-            <h3 className="font-heading text-xl text-heading">
+        <div className="mt-12 grid gap-5 lg:grid-cols-2">
+          <Reveal variant="glide" className="card-cinematic p-6 md:p-8">
+            <h3 className="font-heading text-xl font-extrabold text-heading">
               {prerequisitesDurationCost.prerequisites.title}
             </h3>
             <ul className="mt-4 space-y-3">
@@ -28,31 +32,33 @@ export function MountainFlyingPrerequisitesCostSection() {
                     className="mt-1 flex h-2 w-2 flex-shrink-0 rounded-full bg-accent"
                     aria-hidden="true"
                   />
-                  <span className="text-muted">{item}</span>
+                  <span className="text-muted text-pretty">{item}</span>
                 </li>
               ))}
             </ul>
-          </div>
+          </Reveal>
 
-          <div className="rounded-xl border-t-4 border-accent bg-white p-6 shadow-sm md:p-8">
-            <h3 className="font-heading text-xl text-heading">
+          <Reveal variant="glide" className="card-cinematic p-6 md:p-8">
+            <h3 className="font-heading text-xl font-extrabold text-heading">
               {prerequisitesDurationCost.duration.title}
             </h3>
-            <p className="mt-4 text-muted">
+            <p className="mt-4 text-muted text-pretty">
               {prerequisitesDurationCost.duration.description}
             </p>
-          </div>
+          </Reveal>
         </div>
 
         <div className="mt-12">
-          <h3 className="font-heading text-2xl text-heading">
-            {prerequisitesDurationCost.cost.title}
-          </h3>
-          <p className="mt-2 max-w-3xl text-muted">
-            {prerequisitesDurationCost.cost.description}
-          </p>
+          <Reveal variant="glide">
+            <h3 className="font-heading text-2xl font-extrabold text-heading">
+              {prerequisitesDurationCost.cost.title}
+            </h3>
+            <p className="mt-2 max-w-3xl text-muted text-pretty">
+              {prerequisitesDurationCost.cost.description}
+            </p>
+          </Reveal>
 
-          <div className="mt-6 overflow-hidden rounded-xl bg-white shadow-sm">
+          <Reveal variant="glide" className="mt-6 card-cinematic overflow-hidden">
             <table className="w-full text-left">
               <tbody className="divide-y divide-border-subtle">
                 {prerequisitesDurationCost.cost.rows.map((row) => (
@@ -63,7 +69,7 @@ export function MountainFlyingPrerequisitesCostSection() {
                     >
                       {row.label}
                     </th>
-                    <td className="px-6 py-4 text-right font-mono text-heading">
+                    <td className="nums px-6 py-4 text-right text-heading">
                       {row.value}
                     </td>
                   </tr>
@@ -77,7 +83,7 @@ export function MountainFlyingPrerequisitesCostSection() {
                   >
                     Typical total — member
                   </th>
-                  <td className="px-6 py-4 text-right font-heading text-2xl text-heading">
+                  <td className="nums px-6 py-4 text-right font-heading text-2xl text-heading">
                     {prerequisitesDurationCost.cost.memberTotal}
                   </td>
                 </tr>
@@ -88,28 +94,28 @@ export function MountainFlyingPrerequisitesCostSection() {
                   >
                     Typical total — non-member
                   </th>
-                  <td className="px-6 py-4 text-right font-heading text-2xl text-heading">
+                  <td className="nums px-6 py-4 text-right font-heading text-2xl text-heading">
                     {prerequisitesDurationCost.cost.nonMemberTotal}
                   </td>
                 </tr>
               </tfoot>
             </table>
-          </div>
+          </Reveal>
 
-          <p className="mt-4 text-sm text-muted">
+          <p className="mt-4 text-sm text-muted text-pretty">
             {prerequisitesDurationCost.cost.note}
           </p>
-          <div className="mt-4 flex flex-wrap gap-4">
+          <Reveal variant="glide" className="mt-4 flex flex-wrap gap-4">
             {prerequisitesDurationCost.cost.links.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-semibold text-accent hover:text-on-dark-accent-hover focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
+                className="beak-flash text-sm font-semibold text-accent"
               >
                 {link.label}
               </Link>
             ))}
-          </div>
+          </Reveal>
         </div>
       </Container>
     </Section>

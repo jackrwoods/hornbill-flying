@@ -23,7 +23,7 @@ export const privatePilotProgram = {
   hero: {
     title: "Private Pilot License Training in Reno, NV",
     subtitle:
-      "Train at your pace, choose your instructor, and earn your certificate in a consistent PA28 fleet at Reno–Tahoe (RNO).",
+      "Train at your pace, choose your instructor, and earn your certificate in a PA28 fleet at Reno–Tahoe (RNO).",
     image: "/images/programs/private-pilot-hero.webp",
     imageAlt:
       "PA28 Cherokee on the ramp at Reno-Tahoe International Airport",
@@ -154,7 +154,7 @@ export const privatePilotProgram = {
       id: "ppl-aircraft",
       question: "What aircraft will I train in?",
       answer:
-        "You will train in Hornbill Aviation's consistent PA28 fleet. IFR-capable aircraft have dual Garmin G5 units and WAAS GPS, so panel layout and performance stay predictable even when you switch between aircraft.",
+        "You will train in Hornbill Aviation's similarly equipped PA28 fleet. IFR-capable aircraft have dual Garmin G5 units and WAAS GPS, so panel layout and performance stay predictable even when you switch between aircraft.",
     },
     {
       id: "ppl-part-61",

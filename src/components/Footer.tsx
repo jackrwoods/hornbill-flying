@@ -3,6 +3,7 @@ import { Logo } from "./Logo";
 import { PhoneLink } from "./PhoneLink";
 import { NavLink } from "./NavLink";
 import { siteConfig } from "@/lib/config";
+import { siteFacts } from "@/content/siteFacts";
 import { getFooterLinks } from "@/lib/routes";
 
 export function Footer() {
@@ -12,27 +13,30 @@ export function Footer() {
   );
 
   return (
-    <footer className="bg-footer-bg text-footer-text">
+    <footer className="bg-footer-bg text-footer-text relative">
+      <div aria-hidden="true" className="cheatline-bottom" />
       <Container>
         <div className="grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-5">
           {/* Brand + NAP */}
           <div className="lg:col-span-2">
             <Logo variant="stacked" size={48} textClassName="text-ink" largeText />
+            <p className="mt-5 max-w-sm text-sm leading-relaxed text-footer-muted">
+              {siteConfig.tagline}
+            </p>
             <address className="mt-6 not-italic">
               <p className="text-sm leading-relaxed text-footer-text">
-                {siteConfig.nap.streetAddress}
+                {siteFacts.addressLine1}
                 <br />
-                {siteConfig.nap.addressLocality}, {siteConfig.nap.addressRegion}{" "}
-                {siteConfig.nap.postalCode}
+                {siteFacts.addressLine2}
               </p>
               <div className="mt-4 flex flex-col gap-1 text-sm">
                 <PhoneLink className="text-footer-link hover:text-footer-link-hover" />
                 <a
-                  href={`mailto:${siteConfig.nap.email}`}
-                  className="text-footer-link hover:text-footer-link-hover focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
+                  href={`mailto:${siteFacts.email}`}
+                  className="text-footer-link hover:text-footer-link-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-focus-ring focus-visible:ring-offset-2 rounded"
                   data-analytics="email_click"
                 >
-                  {siteConfig.nap.email}
+                  {siteFacts.email}
                 </a>
               </div>
             </address>
@@ -43,7 +47,7 @@ export function Footer() {
                   <a
                     key={name}
                     href={url as string}
-                    className="text-sm text-footer-muted hover:text-footer-link-hover focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
+                    className="text-sm text-footer-muted hover:text-footer-link-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-focus-ring focus-visible:ring-offset-2 rounded"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`${siteConfig.brandName} on ${name}`}
@@ -58,7 +62,7 @@ export function Footer() {
           {/* Quick links */}
           {linkGroups.map((group) => (
             <div key={group.title}>
-              <h3 className="font-body text-sm font-semibold uppercase tracking-wide text-accent">
+              <h3 className="panel-label-lg text-accent">
                 {group.title}
               </h3>
               <ul className="mt-4 flex flex-col gap-2">
@@ -66,7 +70,7 @@ export function Footer() {
                   <li key={link.href}>
                     <NavLink
                       href={link.href}
-                      className="text-sm text-footer-link/90 hover:text-footer-link-hover"
+                      className="beak-flash text-sm text-footer-link/90 hover:text-footer-link-hover"
                     >
                       {link.label}
                     </NavLink>
@@ -78,7 +82,7 @@ export function Footer() {
                       href={siteConfig.flightCircleScheduleUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm text-footer-link/90 hover:text-footer-link-hover"
+                      className="beak-flash text-sm text-footer-link/90 hover:text-footer-link-hover"
                       data-analytics="footer_schedule_click"
                     >
                       Schedule
@@ -90,17 +94,10 @@ export function Footer() {
           ))}
         </div>
 
-        {/* Map placeholder */}
-        <div className="overflow-hidden rounded-lg bg-card">
-          <div className="flex h-48 items-center justify-center text-sm text-footer-muted">
-            <span>Map embed placeholder — 1880 Gentry Way, Reno, NV 89512</span>
-          </div>
-        </div>
-
         {/* Bottom bar */}
         <div className="border-t border-divider py-6 text-sm text-footer-muted">
           <p>
-            FAA Part 61 flight school at Reno–Tahoe (RNO). All instruction
+            FAA {siteFacts.part} flight school at {siteFacts.airportLong} ({siteFacts.airport}). All instruction
             provided by certificated flight instructors.
           </p>
           <p className="mt-2">

@@ -15,11 +15,11 @@ export const commercialPilotProgram = {
   fullTitle: "Commercial Pilot License",
   metaTitle: "Commercial Pilot License Training in Reno, NV",
   metaDescription:
-    "Earn your Commercial Pilot certificate at RNO. Part 61 CPL training in a consistent PA28 fleet with real cross-country experience. Book a consultation.",
+    "Earn your Commercial Pilot certificate at RNO. Part 61 CPL training in a PA28 fleet with real cross-country experience. Book a consultation.",
   hero: {
     title: "Commercial Pilot training in Reno, NV.",
     subtitle:
-      "Build the proficiency, flight time, and aeronautical decision-making required for a professional pilot career. Train in a consistent PA28 fleet at Reno–Tahoe (RNO) with cross-country routes that count.",
+      "Build the proficiency, flight time, and aeronautical decision-making required for a professional pilot career. Train in a PA28 fleet at Reno–Tahoe (RNO) with cross-country routes that count.",
     image: "/images/programs/commercial-pilot-hero.webp",
     imageAlt:
       "Hornbill Aviation PA28 N6576J in flight near the Sierra Nevada during a cross-country training route from Reno-Tahoe (RNO)",
@@ -37,7 +37,7 @@ export const commercialPilotProgram = {
     },
   },
   quickAnswer:
-    `Hornbill Aviation offers Part 61 Commercial Pilot training at Reno–Tahoe (RNO). You build the required 250 hours in a consistent PA28 fleet, fly real cross-country routes through high-elevation terrain, and prepare for the FAA Commercial Pilot checkride. Training is flexible — full-time or part-time — with instructor choice and transparent ${memberRate} member wet rates.`,
+    `Hornbill Aviation offers Part 61 Commercial Pilot training at Reno–Tahoe (RNO). You build the required 250 hours in a PA28 fleet, fly real cross-country routes through high-elevation terrain, and prepare for the FAA Commercial Pilot checkride. Training is flexible — full-time or part-time — with instructor choice and transparent ${memberRate} member wet rates.`,
   benefits: {
     title: "What the Commercial Pilot certificate gives you",
     intro:

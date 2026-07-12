@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
-import { InstructorPortrait } from "@/components/InstructorPortrait";
+import { Reveal } from "@/components/Reveal";
+import { SunsetPlaceholder } from "@/components/SunsetPlaceholder";
 import { BookingCTALink } from "@/components/BookingCTALink";
 import type { Instructor } from "@/types";
 
@@ -24,20 +25,20 @@ export function InstructorHeroSection({ instructor }: InstructorHeroSectionProps
     <Section background="card" id="about">
       <Container>
         <div className="grid gap-10 md:grid-cols-2 md:items-center">
-          <InstructorPortrait
-            src={instructor.photo || "/images/logos/logo.svg"}
-            alt={instructor.altText}
-            priority
-          />
+          <Reveal variant="horizon">
+            <SunsetPlaceholder
+              variant="dawn"
+              label={`${instructor.name} — portrait photography coming`}
+              className="aspect-[4/5] w-full max-w-sm rounded-xl"
+            />
+          </Reveal>
 
-          <div className="flex flex-col gap-5">
-            <p className="font-mono text-sm uppercase tracking-wide text-accent">
-              {instructor.title}
-            </p>
-            <h2 className="font-heading text-3xl md:text-4xl text-heading">
+          <Reveal variant="glide" className="flex flex-col gap-5">
+            <p className="panel-label-lg text-accent">{instructor.title}</p>
+            <h2 className="font-heading text-3xl md:text-4xl text-heading text-balance">
               {instructor.tagline}
             </h2>
-            <p className="text-lg text-muted leading-relaxed">
+            <p className="text-lg text-muted leading-relaxed text-pretty">
               {instructor.bio.split("\n\n")[0]}
             </p>
             <div className="mt-2 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -48,7 +49,7 @@ export function InstructorHeroSection({ instructor }: InstructorHeroSectionProps
               />
               <Link
                 href="/instructors/"
-                className="inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-semibold text-heading transition-colors hover:bg-dark/5 focus:outline-none focus:ring-2 focus:ring-dark focus:ring-offset-2"
+                className="beak-flash inline-flex items-center justify-center px-5 py-3 text-sm font-semibold text-heading focus:outline-none focus-visible:ring-2 focus-visible:ring-focus-ring focus-visible:ring-offset-2 rounded"
               >
                 Back to all instructors
               </Link>
@@ -57,13 +58,13 @@ export function InstructorHeroSection({ instructor }: InstructorHeroSectionProps
                   href={instructor.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-semibold text-heading transition-colors hover:bg-dark/5 focus:outline-none focus:ring-2 focus:ring-dark focus:ring-offset-2"
+                  className="beak-flash inline-flex items-center justify-center px-5 py-3 text-sm font-semibold text-heading focus:outline-none focus-visible:ring-2 focus-visible:ring-focus-ring focus-visible:ring-offset-2 rounded"
                 >
                   {displayDomain(instructor.website)}
                 </a>
               )}
             </div>
-          </div>
+          </Reveal>
         </div>
       </Container>
     </Section>

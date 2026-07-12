@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Container } from "@/components/Container";
+import { Reveal } from "@/components/Reveal";
 import { Section } from "@/components/Section";
 import { commercialPilotProgram } from "@/content/programs/commercial-pilot";
 
@@ -9,12 +10,15 @@ export function CommercialCostSection() {
   return (
     <Section background="default" id="cost">
       <Container>
-        <h2 className="font-heading text-3xl md:text-4xl text-heading">
-          {cost.title}
-        </h2>
-        <p className="mt-4 max-w-3xl text-muted">{cost.intro}</p>
+        <Reveal variant="glide" className="max-w-3xl">
+          <p className="panel-label-lg text-accent mb-4">Cost</p>
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-extrabold text-heading text-balance">
+            {cost.title}
+          </h2>
+          <p className="mt-4 text-muted text-pretty">{cost.intro}</p>
+        </Reveal>
 
-        <div className="mt-8 overflow-hidden rounded-xl bg-white shadow-sm">
+        <Reveal variant="glide" className="mt-10 card-cinematic overflow-hidden">
           <table className="w-full text-left">
             <tbody className="divide-y divide-border-subtle">
               {cost.rows.map((row) => (
@@ -25,7 +29,7 @@ export function CommercialCostSection() {
                   >
                     {row.label}
                   </th>
-                  <td className="px-6 py-4 text-right font-mono text-heading">
+                  <td className="nums px-6 py-4 text-right text-heading">
                     {row.value}
                   </td>
                 </tr>
@@ -39,26 +43,26 @@ export function CommercialCostSection() {
                 >
                   Typical total
                 </th>
-                <td className="px-6 py-4 text-right font-heading text-2xl text-heading">
+                <td className="nums px-6 py-4 text-right font-heading text-2xl text-heading">
                   {cost.totalRange}
                 </td>
               </tr>
             </tfoot>
           </table>
-        </div>
+        </Reveal>
 
-        <p className="mt-6 text-sm text-muted">{cost.note}</p>
-        <div className="mt-4 flex flex-wrap gap-4">
+        <p className="mt-6 text-sm text-muted text-pretty">{cost.note}</p>
+        <Reveal variant="glide" className="mt-4 flex flex-wrap gap-4">
           {cost.links.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-semibold text-accent hover:text-on-dark-accent-hover focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
+              className="beak-flash text-sm font-semibold text-accent"
             >
               {link.label}
             </Link>
           ))}
-        </div>
+        </Reveal>
       </Container>
     </Section>
   );

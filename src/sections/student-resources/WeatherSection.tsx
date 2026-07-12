@@ -1,5 +1,6 @@
 import { Section } from "@/components/Section";
 import { Container } from "@/components/Container";
+import { Reveal } from "@/components/Reveal";
 import { MetarTafWidget } from "@/components/MetarTafWidget";
 import { ResourceCard } from "@/components/ResourceCard";
 import Link from "next/link";
@@ -8,19 +9,22 @@ export function WeatherSection() {
   return (
     <Section background="default" id="weather">
       <Container>
-        <h2 className="font-heading text-3xl text-heading md:text-4xl">
-          Reno–Tahoe weather (KRNO)
-        </h2>
-        <p className="mt-4 max-w-2xl text-muted">
-          Check the current METAR and forecast TAF for Reno–Tahoe, then jump to a
-          full briefing or our RNO-specific density altitude tool.
-        </p>
+        <Reveal variant="glide" className="max-w-3xl">
+          <p className="panel-label-lg text-accent mb-4">Weather</p>
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-extrabold text-heading text-balance">
+            Reno–Tahoe weather (KRNO)
+          </h2>
+          <p className="mt-4 max-w-2xl text-muted text-pretty">
+            Check the current METAR and forecast TAF for Reno–Tahoe, then jump to a
+            full briefing or our RNO-specific density altitude tool.
+          </p>
+        </Reveal>
 
-        <div className="mt-8">
+        <Reveal variant="glide" className="mt-8">
           <MetarTafWidget />
-        </div>
+        </Reveal>
 
-        <div className="mt-8 flex flex-wrap gap-4">
+        <Reveal variant="glide" className="mt-8 flex flex-wrap gap-4">
           <Link
             href="/tools/density-altitude/"
             className="inline-flex items-center rounded-lg bg-dark px-5 py-3 text-sm font-semibold text-on-dark hover:bg-dark-muted focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2"
@@ -29,11 +33,11 @@ export function WeatherSection() {
           </Link>
           <Link
             href="/blog/density-altitude-krno/"
-            className="inline-flex items-center rounded-lg border-2 border-border px-5 py-3 text-sm font-semibold text-heading hover:bg-dark/5 focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2"
+            className="beak-flash inline-flex items-center rounded-lg border-2 border-border px-5 py-3 text-sm font-semibold text-heading hover:bg-dark/5 focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2"
           >
             Density altitude at KRNO
           </Link>
-        </div>
+        </Reveal>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <ResourceCard

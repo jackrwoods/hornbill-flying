@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ToolLayout } from "@/components/tools/ToolLayout";
 import { SunriseSunsetTool } from "@/components/tools/SunriseSunsetTool";
 import { Disclaimer } from "@/components/tools/Disclaimer";
+import { Reveal } from "@/components/Reveal";
 import { solarFaqs } from "@/content/tools";
 import {
   buildTitle,
@@ -41,22 +42,27 @@ export default function SunriseSunsetPage() {
         { href: "/book/", label: "Book a flight" },
         { href: "/discovery-flight/", label: "Book a discovery flight" },
       ]}
+      eyebrow="Daylight"
+      placeholderLabel="Golden hour over the Sierra at RNO — photography coming"
+      sunsetVariant="dawn"
     >
-      <div className="rounded-lg bg-callout p-4 text-body">
-        <p>
-          Pick any date to see sunrise, sunset, and civil twilight for
-          Reno–Tahoe. The last legal evening flight time marks the end of evening
-          civil twilight — the VFR landing limit if you are not night current.
-        </p>
-      </div>
+      <Reveal variant="glide">
+        <div className="card-cinematic p-5 text-body">
+          <p>
+            Pick any date to see sunrise, sunset, and civil twilight for
+            Reno–Tahoe. The last legal evening flight time marks the end of evening
+            civil twilight — the VFR landing limit if you are not night current.
+          </p>
+        </div>
+      </Reveal>
 
-      <div className="mt-6">
+      <Reveal variant="glide" className="mt-6">
         <SunriseSunsetTool />
-      </div>
+      </Reveal>
 
-      <div className="mt-6">
+      <Reveal variant="glide" className="mt-6">
         <Disclaimer />
-      </div>
+      </Reveal>
     </ToolLayout>
   );
 }

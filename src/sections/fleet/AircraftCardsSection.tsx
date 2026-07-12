@@ -1,4 +1,5 @@
-import { AssetImage as Image } from "@/components/AssetImage";
+import { SunsetPlaceholder } from "@/components/SunsetPlaceholder";
+import { Reveal } from "@/components/Reveal";
 import Link from "next/link";
 import { Section } from "@/components/Section";
 import { Container } from "@/components/Container";
@@ -15,34 +16,33 @@ export function AircraftCardsSection() {
   return (
     <Section background="card" id="aircraft">
       <Container>
-        <h2 className="font-heading text-3xl md:text-4xl text-heading">
-          The fleet
-        </h2>
-        <p className="mt-4 max-w-2xl text-muted">
-          {aircraft.length} PA28 {aircraft.length === 1 ? "Cherokee" : "Cherokees"}
-          {hasSimulator && " and a flight simulator"}. Same engine, same
-          handling, similarly equipped aircraft {hasSimulator && "— plus a place to rehearse procedures before you burn fuel"}.
-        </p>
-        <p className="mt-2 max-w-2xl text-sm text-muted">
-          {memberRateBillingNote}
-        </p>
+        <Reveal variant="glide" className="max-w-3xl">
+          <p className="panel-label-lg text-accent mb-4">Fleet</p>
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-extrabold text-heading text-balance">
+            The fleet
+          </h2>
+          <p className="mt-4 max-w-2xl text-muted text-pretty">
+            {aircraft.length} PA28 {aircraft.length === 1 ? "Cherokee" : "Cherokees"}
+            {hasSimulator && " and a flight simulator"}. Same engine, same
+            handling, similarly equipped aircraft {hasSimulator && "— plus a place to rehearse procedures before you burn fuel"}.
+          </p>
+          <p className="mt-2 max-w-2xl text-sm text-muted">
+            {memberRateBillingNote}
+          </p>
+        </Reveal>
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {publishedFleet.map((member, index) => (
-            <article
+          {publishedFleet.map((member) => (
+            <Reveal
               key={member.slug}
-              className="rounded-xl bg-bg shadow-sm overflow-hidden flex flex-col"
+              variant="glide"
+              className="card-cinematic overflow-hidden flex flex-col"
             >
-              <div className="relative aspect-[4/3] w-full">
-                <Image
-                  src={member.photo}
-                  alt={member.photoAlt}
-                  fill
-                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                  className="object-cover"
-                  loading={index === 0 ? "eager" : "lazy"}
-                />
-              </div>
+              <SunsetPlaceholder
+                variant="vertical"
+                label={`${isAircraft(member) ? member.tail : member.name} — photography coming`}
+                className="aspect-[4/3] w-full"
+              />
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="font-heading text-2xl text-heading">
                   {isAircraft(member) ? member.tail : member.name}
@@ -77,10 +77,10 @@ export function AircraftCardsSection() {
                 <div className="mt-auto pt-5 flex flex-wrap gap-2">
                   {isAircraft(member) && (
                     <>
-                      <span className="inline-flex rounded-full bg-dark px-3 py-1 text-xs font-semibold text-on-dark">
+                      <span className="nums inline-flex rounded-full bg-dark px-3 py-1 text-xs font-semibold text-on-dark">
                         Member ${memberRate}/hr
                       </span>
-                      <span className="inline-flex rounded-full bg-white border border-border-subtle px-3 py-1 text-xs font-semibold text-heading">
+                      <span className="nums inline-flex rounded-full bg-bg border border-border-subtle px-3 py-1 text-xs font-semibold text-heading">
                         Non-member ${nonMemberRate}/hr
                       </span>
                       {member.ifrEquipped && (
@@ -105,13 +105,13 @@ export function AircraftCardsSection() {
                 <p className="mt-4 text-sm">
                   <Link
                     href={`/fleet/${member.slug}/`}
-                    className="font-semibold text-accent hover:text-on-dark-accent-hover focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
+                    className="beak-flash font-semibold text-accent focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
                   >
                     View details →
                   </Link>
                 </p>
               </div>
-            </article>
+            </Reveal>
           ))}
         </div>
       </Container>

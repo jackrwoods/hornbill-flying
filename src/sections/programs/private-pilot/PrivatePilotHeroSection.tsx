@@ -1,6 +1,7 @@
-import { AssetImage as Image } from "@/components/AssetImage";
 import { Container } from "@/components/Container";
 import { CTALink } from "@/components/CTALink";
+import { SunsetPlaceholder } from "@/components/SunsetPlaceholder";
+import { Reveal } from "@/components/Reveal";
 import { PhoneLink } from "@/components/PhoneLink";
 import { privatePilotProgram } from "@/content/programs/private-pilot";
 
@@ -8,53 +9,51 @@ export function PrivatePilotHeroSection() {
   const { hero } = privatePilotProgram;
 
   return (
-    <section className="relative overflow-hidden bg-dark text-on-dark">
+    <section className="relative min-h-[60vh] md:min-h-[70vh] overflow-hidden bg-immersive-bg text-on-immersive flex items-end">
       <div className="absolute inset-0 z-0">
-        <Image
-          src={hero.image}
-          alt={hero.imageAlt}
-          fill
-          priority
-          fetchPriority="high"
-          loading="eager"
-          className="object-cover opacity-40"
-          sizes="100vw"
+        <SunsetPlaceholder
+          variant="default"
+          label="PA28 on the ramp at RNO — photography coming"
+          vignette
+          grain
+          className="h-full w-full"
         />
-        <div className="absolute inset-0 bg-hero-scrim" />
+        <div className="absolute inset-0 bg-panel-scrim-bottom" />
       </div>
 
-      <Container className="relative z-10">
-        <div className="py-20 md:py-32 lg:py-40">
-          <div className="max-w-2xl">
-            <h1 className="font-heading text-4xl leading-tight md:text-5xl lg:text-6xl">
-              {hero.title}
-            </h1>
-            <p className="mt-6 text-lg text-on-dark md:text-xl">
-              {hero.subtitle}
-            </p>
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
-              <CTALink
-                href={hero.cta.primary.href}
-                variant="secondary"
-                analytics={hero.cta.primary.analytics}
-              >
-                {hero.cta.primary.label}
-              </CTALink>
-              <CTALink
-                href={hero.cta.secondary.href}
-                variant="tertiary"
-                className="text-on-dark hover:bg-on-dark-subtle"
-                analytics={hero.cta.secondary.analytics}
-              >
-                {hero.cta.secondary.label}
-              </CTALink>
-              <PhoneLink
-                className="inline-flex min-h-[44px] items-center text-on-dark hover:text-on-dark-accent-hover"
-                showIcon
-              />
-            </div>
+      <Container className="relative z-10 pb-16 md:pb-20">
+        <Reveal variant="stagger" className="max-w-3xl">
+          <p className="panel-label-lg text-immersive-accent mb-4">
+            Programs · Private Pilot
+          </p>
+          <h1 className="font-heading font-extrabold leading-[1.08] text-3xl sm:text-4xl md:text-5xl text-on-immersive text-balance">
+            {hero.title}
+          </h1>
+          <p className="mt-5 text-on-immersive-muted text-pretty max-w-2xl text-base md:text-lg">
+            {hero.subtitle}
+          </p>
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+            <CTALink
+              href={hero.cta.primary.href}
+              variant="secondary"
+              analytics={hero.cta.primary.analytics}
+            >
+              {hero.cta.primary.label}
+            </CTALink>
+            <CTALink
+              href={hero.cta.secondary.href}
+              variant="tertiary"
+              className="border-on-immersive/40 text-on-immersive hover:bg-on-dark-subtle"
+              analytics={hero.cta.secondary.analytics}
+            >
+              {hero.cta.secondary.label}
+            </CTALink>
+            <PhoneLink
+              className="inline-flex min-h-[44px] items-center text-on-immersive hover:text-immersive-accent-hover"
+              showIcon
+            />
           </div>
-        </div>
+        </Reveal>
       </Container>
     </section>
   );

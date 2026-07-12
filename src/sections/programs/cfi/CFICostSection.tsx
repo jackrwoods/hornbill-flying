@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Container } from "@/components/Container";
+import { Reveal } from "@/components/Reveal";
 import { Section } from "@/components/Section";
 import { cfiProgram } from "@/content/programs/cfi";
 
@@ -7,12 +8,15 @@ export function CFICostSection() {
   return (
     <Section background="callout" id="cost">
       <Container>
-        <h2 className="font-heading text-3xl md:text-4xl text-heading">
-          {cfiProgram.cost.title}
-        </h2>
-        <p className="mt-4 max-w-3xl text-muted">{cfiProgram.cost.intro}</p>
+        <Reveal variant="glide" className="max-w-3xl">
+          <p className="panel-label-lg text-accent mb-4">Cost</p>
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-extrabold text-heading text-balance">
+            {cfiProgram.cost.title}
+          </h2>
+          <p className="mt-4 text-muted text-pretty">{cfiProgram.cost.intro}</p>
+        </Reveal>
 
-        <div className="mt-8 overflow-hidden rounded-xl bg-white shadow-sm">
+        <Reveal variant="glide" className="mt-10 card-cinematic overflow-hidden">
           <table className="w-full text-left">
             <tbody className="divide-y divide-border-subtle">
               {cfiProgram.cost.rows.map((row) => (
@@ -23,7 +27,7 @@ export function CFICostSection() {
                   >
                     {row.label}
                   </th>
-                  <td className="px-6 py-4 text-right font-mono text-heading">
+                  <td className="nums px-6 py-4 text-right text-heading">
                     {row.value}
                   </td>
                 </tr>
@@ -37,29 +41,29 @@ export function CFICostSection() {
                 >
                   Typical total
                 </th>
-                <td className="px-6 py-4 text-right font-heading text-2xl text-heading">
+                <td className="nums px-6 py-4 text-right font-heading text-2xl text-heading">
                   {cfiProgram.cost.totalRange}
                 </td>
               </tr>
             </tfoot>
           </table>
-        </div>
+        </Reveal>
 
-        <p className="mt-6 text-sm text-muted">{cfiProgram.cost.note}</p>
-        <div className="mt-4 flex flex-wrap gap-4">
+        <p className="mt-6 text-sm text-muted text-pretty">{cfiProgram.cost.note}</p>
+        <Reveal variant="glide" className="mt-4 flex flex-wrap gap-4">
           <Link
             href="/fleet/"
-            className="text-sm font-semibold text-accent hover:text-on-dark-accent-hover focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
+            className="beak-flash text-sm font-semibold text-accent"
           >
             See fleet and rates
           </Link>
           <Link
             href="/membership/"
-            className="text-sm font-semibold text-accent hover:text-on-dark-accent-hover focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
+            className="beak-flash text-sm font-semibold text-accent"
           >
             Membership details
           </Link>
-        </div>
+        </Reveal>
       </Container>
     </Section>
   );

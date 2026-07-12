@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Container } from "@/components/Container";
+import { Reveal } from "@/components/Reveal";
 import { Section } from "@/components/Section";
 import { cfiProgram } from "@/content/programs/cfi";
 
@@ -7,29 +8,33 @@ export function CFIInstructorLeadSection() {
   return (
     <Section background="card" id="instructor-lead">
       <Container>
-        <h2 className="font-heading text-3xl md:text-4xl text-heading">
-          {cfiProgram.instructorLead.title}
-        </h2>
-        <p className="mt-4 max-w-3xl text-muted">
-          {cfiProgram.instructorLead.intro}
-        </p>
-        <div className="mt-8 grid gap-6 md:grid-cols-2">
+        <Reveal variant="glide" className="max-w-3xl">
+          <p className="panel-label-lg text-accent mb-4">Instructor lead</p>
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-extrabold text-heading text-balance">
+            {cfiProgram.instructorLead.title}
+          </h2>
+          <p className="mt-4 text-muted text-pretty">
+            {cfiProgram.instructorLead.intro}
+          </p>
+        </Reveal>
+        <div className="mt-12 grid gap-5 md:grid-cols-2">
           {cfiProgram.instructorLead.instructors.map((instructor) => (
-            <div
+            <Reveal
               key={instructor.name}
-              className="rounded-xl border-t-4 border-accent bg-bg p-6"
+              variant="glide"
+              className="card-cinematic p-6 flex flex-col"
             >
-              <h3 className="font-heading text-xl text-heading">
+              <h3 className="font-heading text-xl font-extrabold text-heading">
                 {instructor.name}
               </h3>
-              <p className="mt-2 text-muted">{instructor.focus}</p>
+              <p className="mt-2 text-muted text-pretty">{instructor.focus}</p>
               <Link
                 href={instructor.href}
-                className="mt-4 inline-block text-sm font-semibold text-accent hover:text-on-dark-accent-hover focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
+                className="beak-flash mt-4 inline-block w-fit text-sm font-semibold text-accent"
               >
                 Book with {instructor.name.split(" ")[0]}
               </Link>
-            </div>
+            </Reveal>
           ))}
         </div>
       </Container>

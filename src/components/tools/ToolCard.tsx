@@ -23,7 +23,7 @@ export function ToolCard({ title, description, href, icon, className }: ToolCard
     <Link
       href={href}
       className={cn(
-        "group flex flex-col rounded-xl border-t-4 border-accent bg-white p-6 shadow-sm transition hover:shadow-md focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2",
+        "card-cinematic group flex flex-col p-6 focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2",
         className
       )}
     >
@@ -47,8 +47,10 @@ export function ToolCard({ title, description, href, icon, className }: ToolCard
           )}
         </svg>
       </div>
-      <h3 className="font-heading text-xl text-heading group-hover:text-accent transition-colors">
-        {title}
+      <h3 className="font-heading text-xl text-heading">
+        <span className="beak-flash inline-block group-hover:text-accent transition-colors">
+          {title}
+        </span>
       </h3>
       <p className="mt-2 text-sm text-muted">{description}</p>
     </Link>

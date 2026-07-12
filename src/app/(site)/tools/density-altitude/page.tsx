@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ToolLayout } from "@/components/tools/ToolLayout";
 import { DensityAltitudeTool } from "@/components/tools/DensityAltitudeTool";
 import { Disclaimer } from "@/components/tools/Disclaimer";
+import { Reveal } from "@/components/Reveal";
 import { densityFaqs, widgetDefaults } from "@/content/tools";
 import {
   buildTitle,
@@ -42,24 +43,29 @@ export default function DensityAltitudePage() {
         { href: "/blog/", label: "Blog: density altitude at KRNO" },
         { href: "/fleet/", label: "PA28 fleet and rates" },
       ]}
+      eyebrow="Performance"
+      placeholderLabel="PA28 runup at high-elevation RNO — photography coming"
+      sunsetVariant="default"
     >
-      <div className="rounded-lg bg-callout p-4 text-body">
-        <p>
-          Density altitude is pressure altitude corrected for temperature. Hot,
-          high days at RNO can make the airplane perform as if it is thousands
-          of feet higher than the field elevation. Use this calculator as a
-          planning aid, then verify takeoff and climb performance with your
-          POH.
-        </p>
-      </div>
+      <Reveal variant="glide">
+        <div className="card-cinematic p-5 text-body">
+          <p>
+            Density altitude is pressure altitude corrected for temperature. Hot,
+            high days at RNO can make the airplane perform as if it is thousands
+            of feet higher than the field elevation. Use this calculator as a
+            planning aid, then verify takeoff and climb performance with your
+            POH.
+          </p>
+        </div>
+      </Reveal>
 
-      <div className="mt-6">
+      <Reveal variant="glide" className="mt-6">
         <DensityAltitudeTool defaults={widgetDefaults.densityAltitude} />
-      </div>
+      </Reveal>
 
-      <div className="mt-6">
+      <Reveal variant="glide" className="mt-6">
         <Disclaimer />
-      </div>
+      </Reveal>
     </ToolLayout>
   );
 }

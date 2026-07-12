@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ToolLayout } from "@/components/tools/ToolLayout";
 import { ToolCard } from "@/components/tools/ToolCard";
+import { Reveal } from "@/components/Reveal";
 import { tools } from "@/content/tools";
 import {
   buildTitle,
@@ -36,8 +37,11 @@ export default function ToolsHubPage() {
       subtitle="Quick, practical tools for student pilots and renters at Reno–Tahoe."
       pageHref="/tools/"
       showCta
+      eyebrow="Tools"
+      placeholderLabel="Flight planning desk, charts and E6B — photography coming"
+      sunsetVariant="soft"
     >
-      <div className="prose max-w-none text-muted">
+      <div className="prose prose-cinematic max-w-none text-muted">
         <p>
           These tools are built for pilots training at Hornbill Aviation.
           Check current weather, estimate density altitude, plan cross-country
@@ -47,7 +51,7 @@ export default function ToolsHubPage() {
         </p>
       </div>
 
-      <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <Reveal variant="glide" className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {tools.map((tool) => (
           <ToolCard
             key={tool.slug}
@@ -57,7 +61,7 @@ export default function ToolsHubPage() {
             icon={tool.icon}
           />
         ))}
-      </div>
+      </Reveal>
     </ToolLayout>
   );
 }

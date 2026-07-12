@@ -1,7 +1,8 @@
-import { AssetImage as Image } from "@/components/AssetImage";
 import Link from "next/link";
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
+import { SunsetPlaceholder } from "@/components/SunsetPlaceholder";
+import { Reveal } from "@/components/Reveal";
 import { instrumentRatingProgram } from "@/content/programs/instrument-rating";
 
 export function InstrumentRatingFleetSection() {
@@ -11,20 +12,18 @@ export function InstrumentRatingFleetSection() {
     <Section background="card" id="fleet">
       <Container>
         <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
-          <div>
-            <h2 className="font-heading text-3xl md:text-4xl text-heading">
+          <Reveal variant="glide">
+            <p className="panel-label-lg text-accent mb-4">Fleet</p>
+            <h2 className="font-heading text-3xl md:text-4xl text-heading text-balance">
               {fleet.title}
             </h2>
-            <p className="mt-4 text-muted">{fleet.intro}</p>
+            <p className="mt-4 text-muted text-pretty">{fleet.intro}</p>
 
             <div className="mt-8 space-y-4">
               {fleet.aircraft.map((aircraft) => (
-                <div
-                  key={aircraft.tail}
-                  className="rounded-xl border-l-4 border-accent bg-bg p-5"
-                >
+                <Reveal key={aircraft.tail} variant="glide" className="card-cinematic p-5">
                   <div className="flex items-center gap-3">
-                    <span className="rounded bg-dark px-2 py-1 font-mono text-sm font-semibold text-on-dark">
+                    <span className="nums rounded bg-dark px-2 py-1 font-mono text-sm font-semibold text-on-dark">
                       {aircraft.tail}
                     </span>
                     <span className="text-sm text-muted">{aircraft.engine}</span>
@@ -33,7 +32,7 @@ export function InstrumentRatingFleetSection() {
                     {aircraft.avionics}
                   </p>
                   <p className="mt-1 text-sm text-muted">{aircraft.notes}</p>
-                </div>
+                </Reveal>
               ))}
             </div>
 
@@ -44,23 +43,21 @@ export function InstrumentRatingFleetSection() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-sm font-semibold text-accent hover:text-on-dark-accent-hover focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
+                  className="beak-flash text-sm font-semibold text-accent focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
                 >
                   {link.label}
                 </Link>
               ))}
             </div>
-          </div>
+          </Reveal>
 
-          <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
-            <Image
-              src="/images/programs/instrument-rating-hero.webp"
-              alt="Dual Garmin G5 instrument panel in a Hornbill Aviation PA28 IFR trainer at RNO"
-              fill
-              className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 50vw"
+          <Reveal variant="horizon" className="relative aspect-[4/3] overflow-hidden rounded-xl">
+            <SunsetPlaceholder
+              variant="vertical"
+              label="Dual Garmin G5 IFR panel — photography coming"
+              className="h-full w-full"
             />
-          </div>
+          </Reveal>
         </div>
       </Container>
     </Section>

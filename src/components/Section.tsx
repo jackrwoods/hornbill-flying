@@ -16,6 +16,9 @@ const backgroundClasses: Record<SectionBackground, string> = {
   dark: "bg-dark text-on-dark",
   accent: "bg-accent text-on-accent",
   callout: "bg-callout",
+  immersive: "bg-immersive-bg text-on-immersive",
+  "immersive-deep": "bg-immersive-bg-deep text-on-immersive",
+  "immersive-night": "bg-immersive-bg-night text-on-immersive",
 };
 
 export function Section({

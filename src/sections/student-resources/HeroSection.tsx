@@ -2,6 +2,7 @@ import { PageHeader } from "@/components/PageHeader";
 import { Section } from "@/components/Section";
 import { Container } from "@/components/Container";
 import { CTALink } from "@/components/CTALink";
+import { Reveal } from "@/components/Reveal";
 
 export function HeroSection() {
   return (
@@ -13,22 +14,29 @@ export function HeroSection() {
           { label: "Home", href: "/" },
           { label: "Student Resources" },
         ]}
+        eyebrow="Student resources"
+        placeholderLabel="Ramp checklist, PA28 — photography coming"
+        sunsetVariant="dawn"
       />
 
       <Section background="callout" className="py-8 md:py-10">
         <Container className="max-w-4xl">
-          <div className="rounded-lg border-l-4 border-accent bg-white p-6 shadow-sm">
-            <p className="text-body">
-              Hornbill Aviation students can check the latest KRNO METAR/TAF,
-              download training syllabi and PA28 checklists, review FAA medical
-              certificate requirements, and use our Reno-specific flight tools.
-              Everything is organized below and kept current.
-            </p>
-          </div>
+          <Reveal variant="glide">
+            <div className="card-cinematic p-6">
+              <p className="text-body">
+                Hornbill Aviation students can check the latest KRNO METAR/TAF,
+                download training syllabi and PA28 checklists, review FAA medical
+                certificate requirements, and use our Reno-specific flight tools.
+                Everything is organized below and kept current.
+              </p>
+            </div>
 
-          <div className="mt-6">
-            <CTALink variant="secondary">Book a discovery flight</CTALink>
-          </div>
+            <div className="mt-6">
+              <CTALink href="/discovery-flight/" variant="secondary">
+                Book a discovery flight
+              </CTALink>
+            </div>
+          </Reveal>
         </Container>
       </Section>
     </>

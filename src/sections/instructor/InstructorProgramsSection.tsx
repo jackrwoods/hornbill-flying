@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
+import { Reveal } from "@/components/Reveal";
 import { programs } from "@/content/programs";
 import type { Instructor } from "@/types";
 
@@ -20,24 +21,34 @@ export function InstructorProgramsSection({
   return (
     <Section background="default" id="programs">
       <Container>
-        <h2 className="font-heading text-3xl md:text-4xl text-heading">
-          Programs {instructor.name.split(" ")[0]} teaches
-        </h2>
-        <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <Reveal variant="glide" className="max-w-3xl">
+          <p className="panel-label-lg text-accent mb-4">Programs</p>
+          <h2 className="font-heading text-3xl md:text-4xl text-heading">
+            Programs {instructor.name.split(" ")[0]} teaches
+          </h2>
+        </Reveal>
+        <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {taughtPrograms.map((program) => (
-            <Link
+            <Reveal
               key={program.slug}
-              href={program.url}
-              className="group rounded-xl bg-white p-5 shadow-sm transition-shadow hover:shadow-md focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2"
+              variant="glide"
+              className="card-cinematic p-5 flex flex-col"
             >
-              <h3 className="font-heading text-xl text-heading group-hover:text-accent">
-                {program.title}
-              </h3>
-              <p className="mt-2 text-sm text-muted">{program.shortDescription}</p>
-              <p className="mt-4 text-sm font-semibold text-accent">
-                See {program.title} training →
-              </p>
-            </Link>
+              <Link
+                href={program.url}
+                className="group flex flex-col flex-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-focus-ring focus-visible:ring-offset-2 rounded"
+              >
+                <h3 className="font-heading text-xl text-heading group-hover:text-accent">
+                  {program.title}
+                </h3>
+                <p className="mt-2 flex-1 text-sm text-muted text-pretty">
+                  {program.shortDescription}
+                </p>
+                <p className="beak-flash mt-4 inline-flex w-fit text-sm font-semibold text-accent">
+                  See {program.title} training →
+                </p>
+              </Link>
+            </Reveal>
           ))}
         </div>
       </Container>

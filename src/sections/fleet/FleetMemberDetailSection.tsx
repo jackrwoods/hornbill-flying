@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
-import { ImageCarousel } from "@/components/ImageCarousel";
+import { SunsetPlaceholder } from "@/components/SunsetPlaceholder";
+import { Reveal } from "@/components/Reveal";
 import { DownloadCard } from "@/components/DownloadCard";
 import { membershipRates } from "@/content/fleet";
 import { memberRateBillingNote } from "@/content/pricing";
@@ -15,26 +16,29 @@ export function FleetMemberDetailSection({
   member,
 }: FleetMemberDetailSectionProps) {
   const { memberRate, nonMemberRate } = membershipRates;
-  const images = isAircraft(member)
-    ? member.gallery
-    : [{ src: member.photo, alt: member.photoAlt }];
 
   return (
     <Section background="card" id="details">
       <Container>
         <div className="grid gap-10 lg:grid-cols-2">
-          <ImageCarousel images={images} />
+          <Reveal variant="horizon">
+            <SunsetPlaceholder
+              variant="vertical"
+              label={`${isAircraft(member) ? member.tail : member.name} — photography coming`}
+              vignette
+              grain
+              className="aspect-[4/3] w-full rounded-xl"
+            />
+          </Reveal>
 
-          <div className="flex flex-col gap-6">
+          <Reveal variant="glide" className="flex flex-col gap-6">
             {isAircraft(member) ? (
               <>
-                <p className="font-mono text-sm uppercase tracking-wide text-accent">
-                  PA28 Cherokee
-                </p>
-                <h2 className="font-heading text-3xl md:text-4xl text-heading">
+                <p className="panel-label-lg text-accent">PA28 Cherokee</p>
+                <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-extrabold text-heading text-balance">
                   {member.tail}
                 </h2>
-                <p className="text-lg text-muted leading-relaxed">
+                <p className="text-lg text-muted leading-relaxed text-pretty">
                   {member.notes}
                 </p>
 
@@ -54,10 +58,10 @@ export function FleetMemberDetailSection({
                 </div>
 
                 <div className="flex flex-wrap gap-2">
-                  <span className="inline-flex rounded-full bg-dark px-3 py-1 text-xs font-semibold text-on-dark">
+                  <span className="nums inline-flex rounded-full bg-dark px-3 py-1 text-xs font-semibold text-on-dark">
                     Member ${memberRate}/hr
                   </span>
-                  <span className="inline-flex rounded-full bg-card border border-border-subtle px-3 py-1 text-xs font-semibold text-heading">
+                  <span className="nums inline-flex rounded-full bg-card border border-border-subtle px-3 py-1 text-xs font-semibold text-heading">
                     Non-member ${nonMemberRate}/hr
                   </span>
                   {member.ifrEquipped && (
@@ -78,7 +82,7 @@ export function FleetMemberDetailSection({
                   are billed separately. See{" "}
                   <Link
                     href="/fleet/"
-                    className="font-semibold text-accent hover:text-on-dark-accent-hover focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
+                    className="beak-flash font-semibold text-accent focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
                   >
                     fleet and pricing
                   </Link>{" "}
@@ -87,13 +91,11 @@ export function FleetMemberDetailSection({
               </>
             ) : (
               <>
-                <p className="font-mono text-sm uppercase tracking-wide text-accent">
-                  Training device
-                </p>
-                <h2 className="font-heading text-3xl md:text-4xl text-heading">
+                <p className="panel-label-lg text-accent">Training device</p>
+                <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-extrabold text-heading text-balance">
                   {member.name}
                 </h2>
-                <p className="text-lg text-muted leading-relaxed">
+                <p className="text-lg text-muted leading-relaxed text-pretty">
                   {member.description}
                 </p>
                 <p className="text-body leading-relaxed">{member.notes}</p>
@@ -110,15 +112,16 @@ export function FleetMemberDetailSection({
                 </div>
               </>
             )}
-          </div>
+          </Reveal>
         </div>
 
         {member.documents && member.documents.length > 0 && (
-          <div className="mt-16">
-            <h2 className="font-heading text-2xl text-heading md:text-3xl">
+          <Reveal variant="glide" className="mt-16">
+            <p className="panel-label-lg text-accent mb-4">Manuals</p>
+            <h2 className="font-heading text-2xl text-heading md:text-3xl text-balance">
               Documents
             </h2>
-            <p className="mt-3 max-w-3xl text-muted">
+            <p className="mt-3 max-w-3xl text-muted text-pretty">
               Download the current manuals and reference documents for{" "}
               {isAircraft(member) ? member.tail : member.name}. Verify all
               numbers and procedures with the physical aircraft or current
@@ -129,7 +132,7 @@ export function FleetMemberDetailSection({
                 <DownloadCard key={doc.slug} document={doc} />
               ))}
             </div>
-          </div>
+          </Reveal>
         )}
       </Container>
     </Section>

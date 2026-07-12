@@ -1,5 +1,6 @@
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
+import { Reveal } from "@/components/Reveal";
 import { sportPilotProgram } from "@/content/programs/sport-pilot";
 
 export function SportPilotWhatIsSection() {
@@ -9,17 +10,20 @@ export function SportPilotWhatIsSection() {
     <Section background="default" id="what-is-sport-pilot">
       <Container>
         <div className="grid gap-12 lg:grid-cols-2">
-          <div>
-            <h2 className="font-heading text-3xl md:text-4xl text-heading">
+          <Reveal variant="glide">
+            <p className="panel-label-lg text-accent mb-4">What it is</p>
+            <h2 className="font-heading text-3xl md:text-4xl text-heading text-balance">
               {whatIs.title}
             </h2>
-            <p className="mt-4 text-muted leading-relaxed">{whatIs.intro}</p>
+            <p className="mt-4 text-muted leading-relaxed text-pretty">
+              {whatIs.intro}
+            </p>
             <p className="mt-6 rounded-lg bg-callout p-4 text-body">
               {whatIs.note}
             </p>
-          </div>
+          </Reveal>
 
-          <div className="space-y-6">
+          <Reveal variant="glide" className="space-y-6">
             <div>
               <h3 className="font-heading text-xl text-heading">Privileges</h3>
               <ul className="mt-3 space-y-3">
@@ -52,7 +56,7 @@ export function SportPilotWhatIsSection() {
                 ))}
               </ul>
             </div>
-          </div>
+          </Reveal>
         </div>
       </Container>
     </Section>

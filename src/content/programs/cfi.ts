@@ -15,7 +15,7 @@ export const cfiProgram = {
   hero: {
     title: "Certified Flight Instructor (CFI) training in Reno, NV",
     subtitle:
-      "Learn to teach pilots in a consistent PA28 fleet at Reno–Tahoe (RNO). Part 61 CFI training that covers Fundamentals of Instruction, spin proficiency, lesson planning, and practical-test preparation.",
+      "Learn to teach pilots in a PA28 fleet at Reno–Tahoe (RNO). Part 61 CFI training that covers Fundamentals of Instruction, spin proficiency, lesson planning, and practical-test preparation.",
     image: "/images/programs/cfi-hero.webp",
     imageAlt:
       "CFI candidate reviewing a flight lesson plan with a Hornbill Aviation instructor in a PA28 at Reno-Tahoe International Airport",
@@ -33,7 +33,7 @@ export const cfiProgram = {
     },
   },
   quickAnswer:
-    "Hornbill Aviation's CFI program prepares commercial pilots with instrument privileges to become FAA-certified flight instructors. Training emphasizes the Fundamentals of Instruction, spin proficiency endorsement, lesson planning, and the practical test standards for single-engine airplane instruction in our consistent PA28 fleet at RNO.",
+    "Hornbill Aviation's CFI program prepares commercial pilots with instrument privileges to become FAA-certified flight instructors. Training emphasizes the Fundamentals of Instruction, spin proficiency endorsement, lesson planning, and the practical test standards for single-engine airplane instruction in our PA28 fleet at RNO.",
   whoIsFor: {
     title: "Who this is for",
     intro:
@@ -205,7 +205,7 @@ export const cfiProgram = {
       id: "cfi-aircraft",
       question: "What aircraft will I train in?",
       answer:
-        "You will train in our consistent PA28 fleet, including IFR-capable aircraft equipped with Garmin G5 units and WAAS GPS. Uniform equipment means you spend less time relearning panels and more time learning to teach.",
+        "You will train in our similarly equipped PA28 fleet, including IFR-capable aircraft with Garmin G5 units and WAAS GPS. Uniform equipment means you spend less time relearning panels and more time learning to teach.",
     },
   ] as FAQItem[],
   bottomCTA: {

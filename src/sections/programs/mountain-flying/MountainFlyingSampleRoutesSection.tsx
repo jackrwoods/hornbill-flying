@@ -1,4 +1,5 @@
 import { Container } from "@/components/Container";
+import { Reveal } from "@/components/Reveal";
 import { Section } from "@/components/Section";
 import { mountainFlyingProgram } from "@/content/programs/mountain-flying";
 
@@ -8,32 +9,33 @@ export function MountainFlyingSampleRoutesSection() {
   return (
     <Section background="card" id="sample-routes">
       <Container>
-        <h2 className="font-heading text-3xl md:text-4xl text-heading">
-          {sampleRoutes.title}
-        </h2>
-        <p className="mt-4 max-w-3xl text-muted">
-          {sampleRoutes.intro}
-        </p>
+        <Reveal variant="glide" className="max-w-3xl">
+          <p className="panel-label-lg text-accent mb-4">Sample routes</p>
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-extrabold text-heading text-balance">
+            {sampleRoutes.title}
+          </h2>
+          <p className="mt-4 text-muted text-pretty">{sampleRoutes.intro}</p>
+        </Reveal>
 
-        <div className="mt-8 overflow-hidden rounded-xl bg-white shadow-sm">
+        <Reveal variant="glide" className="mt-10 card-cinematic overflow-hidden">
           <table className="w-full text-left">
             <thead className="bg-bg">
               <tr>
                 <th
                   scope="col"
-                  className="px-6 py-4 font-body text-sm font-semibold uppercase tracking-wide text-muted"
+                  className="px-6 py-4 panel-label text-muted"
                 >
                   Route
                 </th>
                 <th
                   scope="col"
-                  className="px-6 py-4 font-body text-sm font-semibold uppercase tracking-wide text-muted"
+                  className="px-6 py-4 panel-label text-muted"
                 >
                   Distance
                 </th>
                 <th
                   scope="col"
-                  className="px-6 py-4 font-body text-sm font-semibold uppercase tracking-wide text-muted"
+                  className="px-6 py-4 panel-label text-muted"
                 >
                   What it teaches
                 </th>
@@ -44,26 +46,26 @@ export function MountainFlyingSampleRoutesSection() {
                 <tr key={route.code}>
                   <th
                     scope="row"
-                    className="px-6 py-4 align-top font-mono text-heading"
+                    className="nums px-6 py-4 align-top text-heading"
                   >
                     {route.code}
                     <span className="ml-2 block font-body text-sm font-normal text-muted">
                       {route.name}
                     </span>
                   </th>
-                  <td className="px-6 py-4 align-top font-mono text-body">
+                  <td className="nums px-6 py-4 align-top text-body">
                     {route.distance}
                   </td>
-                  <td className="px-6 py-4 align-top text-muted">
+                  <td className="px-6 py-4 align-top text-muted text-pretty">
                     {route.focus}
                   </td>
                 </tr>
               ))}
             </tbody>
           </table>
-        </div>
+        </Reveal>
 
-        <p className="mt-4 text-sm text-muted">
+        <p className="mt-4 text-sm text-muted text-pretty">
           {sampleRoutes.disclaimer}
         </p>
       </Container>

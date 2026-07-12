@@ -1,5 +1,6 @@
 import { Section } from "@/components/Section";
 import { Container } from "@/components/Container";
+import { Reveal } from "@/components/Reveal";
 import { CTALink } from "@/components/CTALink";
 import { discoveryFlightPricing } from "@/content/fleet";
 
@@ -10,22 +11,21 @@ export function DiscoveryFlightPriceSection() {
     <Section background="callout" id="discovery-flight">
       <Container>
         <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
-          <div>
-            <h2 className="font-heading text-3xl md:text-4xl text-heading">
+          <Reveal variant="glide">
+            <p className="panel-label-lg text-accent mb-4">Discovery flight</p>
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-extrabold text-heading text-balance">
               Discovery flight
             </h2>
-            <p className="mt-4 text-lg text-muted">
+            <p className="mt-4 text-lg text-muted text-pretty">
               Your first lesson in the left seat. No deposit, no commitment.
             </p>
 
-            <div className="mt-6 rounded-xl bg-white p-6 shadow-sm">
-              <p className="font-mono text-xs uppercase tracking-wide text-muted">
-                Introductory flight
-              </p>
-              <p className="mt-2 font-heading text-5xl text-heading">
+            <div className="card-cinematic mt-6 p-6">
+              <p className="panel-label text-muted">Introductory flight</p>
+              <p className="nums mt-2 font-heading text-5xl text-heading">
                 ${price}
               </p>
-              <ul className="mt-4 space-y-1 text-muted">
+              <ul className="nums mt-4 space-y-1 text-muted">
                 <li>{duration}</li>
                 <li>{deposit}</li>
               </ul>
@@ -40,9 +40,9 @@ export function DiscoveryFlightPriceSection() {
                 Book a discovery flight
               </CTALink>
             </div>
-          </div>
+          </Reveal>
 
-          <div className="rounded-xl bg-white p-6 shadow-sm">
+          <Reveal variant="glide" className="card-cinematic p-6">
             <h3 className="font-heading text-xl text-heading">What is included</h3>
             <ul className="mt-4 space-y-3 text-muted">
               {includes.map((item) => (
@@ -66,7 +66,7 @@ export function DiscoveryFlightPriceSection() {
                 </li>
               ))}
             </ul>
-          </div>
+          </Reveal>
         </div>
       </Container>
     </Section>

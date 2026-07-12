@@ -1,5 +1,6 @@
 import { Section } from "@/components/Section";
 import { Container } from "@/components/Container";
+import { Reveal } from "@/components/Reveal";
 import { ContactInfoCard } from "@/components/ContactInfoCard";
 import { CTALink } from "@/components/CTALink";
 import { PhoneLink } from "@/components/PhoneLink";
@@ -9,11 +10,12 @@ export function ContactDetailsSection() {
     <Section background="card" id="contact-details">
       <Container>
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
-          <div>
-            <h2 className="font-heading text-3xl md:text-4xl text-heading">
+          <Reveal variant="glide">
+            <p className="panel-label-lg text-accent mb-4">Direct</p>
+            <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-heading text-balance">
               Reach us directly
             </h2>
-            <p className="mt-4 max-w-xl text-muted">
+            <p className="mt-4 max-w-xl text-muted text-pretty">
               Questions about training, memberships, or rentals? Call or email
               the office. We reply to every message and are happy to walk you
               through the next step.
@@ -32,9 +34,11 @@ export function ContactDetailsSection() {
                 showIcon
               />
             </div>
-          </div>
+          </Reveal>
 
-          <ContactInfoCard />
+          <Reveal variant="glide">
+            <ContactInfoCard />
+          </Reveal>
         </div>
       </Container>
     </Section>

@@ -1,4 +1,5 @@
 import { Container } from "@/components/Container";
+import { Reveal } from "@/components/Reveal";
 import { Section } from "@/components/Section";
 import { commercialPilotProgram } from "@/content/programs/commercial-pilot";
 
@@ -8,12 +9,15 @@ export function CommercialExperienceSection() {
   return (
     <Section background="callout" id="experience">
       <Container>
-        <h2 className="font-heading text-3xl md:text-4xl text-heading">
-          {experience.title}
-        </h2>
-        <p className="mt-4 max-w-3xl text-muted">{experience.intro}</p>
+        <Reveal variant="glide" className="max-w-3xl">
+          <p className="panel-label-lg text-accent mb-4">Experience</p>
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-extrabold text-heading text-balance">
+            {experience.title}
+          </h2>
+          <p className="mt-4 text-muted text-pretty">{experience.intro}</p>
+        </Reveal>
 
-        <div className="mt-8 overflow-hidden rounded-xl bg-white shadow-sm">
+        <Reveal variant="glide" className="mt-10 card-cinematic overflow-hidden">
           <table className="w-full text-left">
             <tbody className="divide-y divide-border-subtle">
               {experience.rows.map((row) => (
@@ -24,16 +28,16 @@ export function CommercialExperienceSection() {
                   >
                     {row.label}
                   </th>
-                  <td className="px-6 py-4 text-right font-mono text-heading">
+                  <td className="nums px-6 py-4 text-right text-heading">
                     {row.value}
                   </td>
                 </tr>
               ))}
             </tbody>
           </table>
-        </div>
+        </Reveal>
 
-        <p className="mt-6 text-sm text-muted">{experience.note}</p>
+        <p className="mt-6 text-sm text-muted text-pretty">{experience.note}</p>
       </Container>
     </Section>
   );

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ToolLayout } from "@/components/tools/ToolLayout";
 import { CrossCountryEstimatorTool } from "@/components/tools/CrossCountryEstimatorTool";
 import { Disclaimer } from "@/components/tools/Disclaimer";
+import { Reveal } from "@/components/Reveal";
 import { fuelFaqs, sampleRoutes, widgetDefaults } from "@/content/tools";
 import {
   buildTitle,
@@ -42,24 +43,30 @@ export default function CrossCountryEstimatorPage() {
         { href: "/cross-country-rentals/", label: "Cross-country rentals" },
         { href: "/programs/private-pilot/", label: "Private Pilot program" },
       ]}
+      eyebrow="Planning"
+      placeholderLabel="Cockpit chart and route line — photography coming"
+      sunsetVariant="soft"
     >
-      <div className="rounded-lg bg-callout p-4 text-body">
-        <p>
-          Enter origin, destination, cruise speed, and fuel burn to get a
-          straight-line distance, time, and fuel estimate. Add a wind component
-          for a rough ground-speed adjustment. This is not a flight plan — use
-          it to start thinking about routes, fuel stops, and reserve.
-        </p>
-      </div>
+      <Reveal variant="glide">
+        <div className="card-cinematic p-5 text-body">
+          <p>
+            Enter origin, destination, cruise speed, and fuel burn to get a
+            straight-line distance, time, and fuel estimate. Add a wind component
+            for a rough ground-speed adjustment. This is not a flight plan — use
+            it to start thinking about routes, fuel stops, and reserve.
+          </p>
+        </div>
+      </Reveal>
 
-      <div className="mt-6">
+      <Reveal variant="glide" className="mt-6">
         <CrossCountryEstimatorTool defaults={widgetDefaults.fuelEstimator} />
-      </div>
+      </Reveal>
 
-      <div className="mt-8">
+      <Reveal variant="glide" className="mt-8">
+        <p className="panel-label-lg text-accent mb-3">Routes</p>
         <h3 className="font-heading text-xl text-heading">Sample routes</h3>
         <div className="mt-4 overflow-x-auto">
-          <table className="min-w-full rounded-lg bg-white text-sm">
+          <table className="nums min-w-full rounded-lg bg-card text-sm border border-border-subtle">
             <thead className="bg-dark text-on-dark">
               <tr>
                 <th className="px-4 py-3 text-left font-body font-semibold">Route</th>
@@ -70,7 +77,7 @@ export default function CrossCountryEstimatorPage() {
             <tbody className="divide-y divide-border-subtle">
               {sampleRoutes.map((route) => (
                 <tr key={route.destination}>
-                  <td className="px-4 py-3 font-mono text-heading">{route.name}</td>
+                  <td className="px-4 py-3 text-heading">{route.name}</td>
                   <td className="px-4 py-3 text-muted">{route.originName} ({route.origin})</td>
                   <td className="px-4 py-3 text-muted">{route.destinationName} ({route.destination})</td>
                 </tr>
@@ -78,11 +85,11 @@ export default function CrossCountryEstimatorPage() {
             </tbody>
           </table>
         </div>
-      </div>
+      </Reveal>
 
-      <div className="mt-6">
+      <Reveal variant="glide" className="mt-6">
         <Disclaimer />
-      </div>
+      </Reveal>
     </ToolLayout>
   );
 }

@@ -1,5 +1,6 @@
 import { Section } from "@/components/Section";
 import { Container } from "@/components/Container";
+import { Reveal } from "@/components/Reveal";
 import { ResourceCard } from "@/components/ResourceCard";
 import { externalResources } from "@/content/student-resources";
 
@@ -23,16 +24,19 @@ export function FaaResourcesSection() {
   return (
     <Section background="default" id="faa-resources">
       <Container>
-        <h2 className="font-heading text-3xl text-heading md:text-4xl">
-          Useful FAA resources
-        </h2>
-        <p className="mt-4 max-w-2xl text-muted">
-          Curated links to the regulations, advisories, weather products, and
-          safety programs you will reference most often during training.
-        </p>
+        <Reveal variant="glide" className="max-w-3xl">
+          <p className="panel-label-lg text-accent mb-4">FAA resources</p>
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-extrabold text-heading text-balance">
+            Useful FAA resources
+          </h2>
+          <p className="mt-4 max-w-2xl text-muted text-pretty">
+            Curated links to the regulations, advisories, weather products, and
+            safety programs you will reference most often during training.
+          </p>
+        </Reveal>
 
         <div className="mt-10 grid gap-8 lg:grid-cols-2">
-          <div>
+          <Reveal variant="glide">
             <h3 className="font-heading text-2xl text-heading">
               Regulations and advisory circulars
             </h3>
@@ -53,9 +57,9 @@ export function FaaResourcesSection() {
                 />
               ))}
             </div>
-          </div>
+          </Reveal>
 
-          <div>
+          <Reveal variant="glide">
             <h3 className="font-heading text-2xl text-heading">
               Weather products
             </h3>
@@ -76,9 +80,9 @@ export function FaaResourcesSection() {
                 />
               ))}
             </div>
-          </div>
+          </Reveal>
 
-          <div>
+          <Reveal variant="glide">
             <h3 className="font-heading text-2xl text-heading">NOTAMs</h3>
             <div className="mt-4 grid gap-4">
               {notams.map((resource) => (
@@ -97,9 +101,9 @@ export function FaaResourcesSection() {
                 />
               ))}
             </div>
-          </div>
+          </Reveal>
 
-          <div>
+          <Reveal variant="glide">
             <h3 className="font-heading text-2xl text-heading">
               Safety programs
             </h3>
@@ -120,9 +124,9 @@ export function FaaResourcesSection() {
                 />
               ))}
             </div>
-          </div>
+          </Reveal>
 
-          <div className="lg:col-span-2">
+          <Reveal variant="glide" className="lg:col-span-2">
             <h3 className="font-heading text-2xl text-heading">Medical</h3>
             <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {medical.map((resource) => (
@@ -141,7 +145,7 @@ export function FaaResourcesSection() {
                 />
               ))}
             </div>
-          </div>
+          </Reveal>
         </div>
       </Container>
     </Section>

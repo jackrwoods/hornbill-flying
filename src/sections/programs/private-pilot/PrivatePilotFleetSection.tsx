@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
+import { Reveal } from "@/components/Reveal";
 import { privatePilotProgram } from "@/content/programs/private-pilot";
 
 export function PrivatePilotFleetSection() {
@@ -10,24 +11,25 @@ export function PrivatePilotFleetSection() {
     <Section background="card" id="fleet">
       <Container>
         <div className="grid gap-12 lg:grid-cols-2">
-          <div>
-            <h2 className="font-heading text-3xl md:text-4xl text-heading">
+          <Reveal variant="glide">
+            <p className="panel-label-lg text-accent mb-4">Fleet</p>
+            <h2 className="font-heading text-3xl md:text-4xl text-heading text-balance">
               {fleet.title}
             </h2>
-            <p className="mt-4 text-muted leading-relaxed">
+            <p className="mt-4 text-muted leading-relaxed text-pretty">
               {fleet.description}
             </p>
             <div className="mt-6">
               <Link
                 href={fleet.href}
-                className="text-sm font-semibold text-accent hover:text-on-dark-accent-hover focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
+                className="beak-flash text-sm font-semibold text-accent focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
               >
                 Meet the fleet
               </Link>
             </div>
-          </div>
+          </Reveal>
 
-          <div className="rounded-xl bg-bg p-6">
+          <Reveal variant="glide" className="card-cinematic p-6">
             <h3 className="font-heading text-xl text-heading">
               PA28 fleet highlights
             </h3>
@@ -60,7 +62,7 @@ export function PrivatePilotFleetSection() {
                 </span>
               </li>
             </ul>
-          </div>
+          </Reveal>
         </div>
       </Container>
     </Section>

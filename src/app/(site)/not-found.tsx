@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Section } from "@/components/Section";
 import { Container } from "@/components/Container";
 import { Logo } from "@/components/Logo";
+import { Reveal } from "@/components/Reveal";
 import { NotFoundHelp } from "@/components/NotFoundHelp";
 import { SchemaInjector } from "@/components/SchemaInjector";
 import {
@@ -39,16 +40,17 @@ export default function NotFoundPage() {
     <>
       <SchemaInjector schema={pageSchema} id="404-schema" />
       <Section background="default" className="flex-1">
-        <Container className="py-20">
-          <div className="flex flex-col items-center text-center">
+        <Container className="py-20 md:py-28">
+          <Reveal variant="stagger" className="flex flex-col items-center text-center">
             <Logo showText={false} size={140} className="mb-8" />
-            <h1 className="font-heading text-4xl text-heading md:text-5xl">
+            <p className="panel-label-lg text-accent mb-5">Lost · 404</p>
+            <h1 className="font-heading font-extrabold text-4xl text-heading md:text-5xl text-balance">
               {notFoundCopy.headline}
             </h1>
             <div className="mt-6 w-full">
               <NotFoundHelp />
             </div>
-          </div>
+          </Reveal>
         </Container>
       </Section>
     </>

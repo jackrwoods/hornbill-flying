@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
-import { AssetImage as Image } from "@/components/AssetImage";
 import Link from "next/link";
-import { Section } from "@/components/Section";
 import { Container } from "@/components/Container";
+import { SunsetPlaceholder } from "@/components/SunsetPlaceholder";
+import { Reveal } from "@/components/Reveal";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { SchemaInjector } from "@/components/SchemaInjector";
 import { BookingWidget } from "@/components/booking/BookingWidget";
 import { BookingSkeleton } from "@/components/booking/BookingSkeleton";
 import { CTALink } from "@/components/CTALink";
 import { PhoneLink } from "@/components/PhoneLink";
+import { siteFacts } from "@/content/siteFacts";
 import { buildTitle, buildCanonical, buildOpenGraph, buildTwitter } from "@/lib/seo";
-import { siteConfig } from "@/lib/config";
 import { buildSchemaGraph } from "@/lib/schema";
 import {
   buildDiscoveryFlightWebPage,
@@ -23,10 +23,10 @@ import {
 
 const TITLE = "Book a Discovery Flight in Reno, NV | $199";
 const DESCRIPTION =
-  "Book a $199 discovery flight at Reno–Tahoe (RNO). Choose a standard PA28, scenic Tahoe flight, or gift voucher. Pick a date, enter your details, and pay online.";
+  "Book a $199 discovery flight at Reno–Tahoe (RNO). You sit in the left seat and fly. No deposit. Under 60 seconds to book.";
 
 export const metadata: Metadata = {
-  title: buildTitle("Book a Discovery Flight in Reno, NV | $199"),
+  title: buildTitle(TITLE),
   description: DESCRIPTION,
   alternates: {
     canonical: buildCanonical("/discovery-flight/"),
@@ -41,21 +41,6 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
   }),
 };
-
-const WHAT_IS_INCLUDED = [
-  { label: "Left seat", text: "You sit in the left seat and handle the controls." },
-  { label: "Preflight briefing", text: "Your CFI walks you through the aircraft and the plan." },
-  { label: "45–60 minutes aloft", text: "Standard flight around Reno; Tahoe scenic option adds Lake Tahoe views." },
-  { label: "Post-flight debrief", text: "Ask questions and get a clear next step if you want to continue." },
-  { label: "No experience needed", text: "Discovery flights are built for first-timers." },
-];
-
-const WHY_HORNBILL = [
-  { label: "Choose your instructor", text: "Pick the CFI whose schedule and style fit you." },
-  { label: "Consistent PA28 fleet", text: "Same handling, predictable costs, no surprises when you switch aircraft." },
-  { label: "Real cross-country experience", text: "Train with trips that look like actual flying, not just practice-area loops." },
-  { label: "Transparent pricing", text: `$${siteConfig.pricing.discoveryFlight} for a standard discovery flight. No hidden fees.` },
-];
 
 const DISCOVERY_FAQ = [
   {
@@ -94,13 +79,58 @@ const DISCOVERY_FAQ = [
     answer:
       "You buy a voucher online. The recipient receives a code and books a discovery flight at a time that works for them. Vouchers are valid for 12 months.",
   },
-  {
-    id: "discovery-cancel",
-    question: "What is your cancellation policy?",
-    answer:
-      "You can cancel or reschedule up to 24 hours before your discovery flight. Same-day cancellations may be charged at the discretion of operations.",
-  },
 ];
+
+function PoeticLine({ children, className = "" }: { children: React.ReactNode; className?: string }) {
+  return (
+    <p className={`font-display text-2xl md:text-3xl lg:text-4xl leading-snug text-on-immersive text-balance max-w-3xl ${className}`}>
+      {children}
+    </p>
+  );
+}
+
+function StoryBeat({
+  eyebrow,
+  variant = "default",
+  scrim = "bottom",
+  placeholderLabel,
+  children,
+}: {
+  eyebrow: string;
+  variant?: "default" | "vertical" | "soft" | "dawn";
+  scrim?: "bottom" | "left" | "none";
+  placeholderLabel?: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <section className="relative story-hero-viewport overflow-hidden bg-immersive-bg text-on-immersive">
+      <div className="absolute inset-0 z-0">
+        <SunsetPlaceholder
+          variant={variant}
+          label={placeholderLabel}
+          vignette
+          grain
+          className="scrub-runway-recede h-full w-full"
+        />
+        <div
+          className={
+            scrim === "bottom"
+              ? "absolute inset-0 bg-panel-scrim-bottom"
+              : scrim === "left"
+                ? "absolute inset-0 bg-panel-scrim-left"
+                : ""
+          }
+        />
+      </div>
+      <Container className="relative z-10 flex h-full items-end pb-20 md:pb-28">
+        <Reveal variant="stagger" className="max-w-2xl">
+          <p className="panel-label-lg text-immersive-accent mb-5">{eyebrow}</p>
+          {children}
+        </Reveal>
+      </Container>
+    </section>
+  );
+}
 
 export default function DiscoveryFlightPage() {
   const pageSchema = buildSchemaGraph(
@@ -115,150 +145,124 @@ export default function DiscoveryFlightPage() {
     <>
       <SchemaInjector schema={pageSchema} id="discovery-flight-schema" />
 
-      <Section background="card" id="hero-details">
-        <Container>
-          <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
-            <div className="order-2 lg:order-1">
-              <div className="overflow-hidden rounded-2xl bg-dark">
-                <Image
-                  src="/images/discovery-flight-hero.jpg"
-                  alt="PA28 Cherokee on the ramp at Reno-Tahoe International Airport"
-                  width={1200}
-                  height={800}
-                  priority
-                  fetchPriority="high"
-                  loading="eager"
-                  className="h-auto w-full object-cover"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                />
-              </div>
-            </div>
-            <div className="order-1 space-y-6 lg:order-2">
-              <nav aria-label="Breadcrumb" className="text-sm text-muted">
-                <ol className="flex flex-wrap items-center gap-2">
-                  <li>
-                    <Link href="/" className="hover:text-heading hover:underline">Home</Link>
-                  </li>
-                  <li aria-hidden="true">/</li>
-                  <li aria-current="page" className="text-heading">Discovery Flight</li>
-                </ol>
-              </nav>
-              <h1 className="font-heading text-4xl text-heading md:text-5xl">
-                Book a discovery flight in Reno, NV.
-              </h1>
-              <p className="text-lg text-muted">
-                {`Spend 45–60 minutes in the left seat of a PA28 at Reno–Tahoe (RNO). $${siteConfig.pricing.discoveryFlight}. No deposit required.`}
-              </p>
-              <div className="flex flex-col gap-4 sm:flex-row">
-                <a
-                  href="#booking-widget"
-                  className="inline-flex min-h-[3.25rem] items-center justify-center rounded-lg bg-dark px-5 py-3 text-sm font-semibold text-on-dark transition-colors hover:bg-dark-muted focus:outline-none focus:ring-2 focus:ring-focus-ring"
-                >
-                  Book now
-                </a>
-                <CTALink
-                  href="/discovery-flight/"
-                  query={{ type: "gift" }}
-                  variant="tertiary"
-                  analytics="discovery_flight_gift_voucher_started"
-                >
-                  Buy a gift voucher
-                </CTALink>
-              </div>
-              <div className="flex flex-wrap gap-3 pt-2">
-                <span className="rounded-full bg-accent px-3 py-1 text-xs font-semibold text-heading">
-                  Part 61 school
-                </span>
-                <span className="rounded-full bg-accent px-3 py-1 text-xs font-semibold text-heading">
-                  PA28 fleet
-                </span>
-                <span className="rounded-full bg-accent px-3 py-1 text-xs font-semibold text-heading">
-                  RNO
-                </span>
-              </div>
-            </div>
-          </div>
-        </Container>
-      </Section>
+      {/* Beat 1 — Pre-flight */}
+      <StoryBeat
+        eyebrow="Beat 01 · Pre-flight"
+        variant="dawn"
+        scrim="left"
+        placeholderLabel="Instructor and student on the ramp — photography coming"
+      >
+        <h1 className="font-heading font-extrabold leading-[1.05] text-4xl sm:text-5xl md:text-6xl text-on-immersive text-balance">
+          Your first lesson is a discovery flight.
+        </h1>
+        <PoeticLine className="mt-8">
+          You meet your instructor at the airplane. You walk around it together.
+        </PoeticLine>
+        <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+          <a
+            href="#booking"
+            className="inline-flex items-center justify-center rounded-lg bg-accent px-5 py-3 text-sm font-semibold text-on-accent transition-colors hover:bg-accent-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-focus-ring"
+            data-analytics="discovery_flight_booking_started"
+          >
+            Book a discovery flight — {siteFacts.discoveryPrice}
+          </a>
+          <CTALink
+            href="/discovery-flight/"
+            query={{ type: "gift" }}
+            variant="tertiary"
+            analytics="discovery_flight_gift_voucher_started"
+            className="border-on-immersive/40 text-on-immersive hover:bg-on-dark-subtle"
+          >
+            Buy as a gift
+          </CTALink>
+        </div>
+      </StoryBeat>
 
-      <Section background="default" id="whats-included">
-        <Container>
-          <h2 className="font-heading text-3xl text-heading md:text-4xl">
-            What’s included
-          </h2>
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {WHAT_IS_INCLUDED.map((item) => (
-              <div
-                key={item.label}
-                className="rounded-xl border border-border-subtle bg-white p-5 shadow-sm"
-              >
-                <h3 className="font-heading text-xl text-heading">{item.label}</h3>
-                <p className="mt-2 text-muted">{item.text}</p>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </Section>
+      {/* Beat 2 — Walk-around */}
+      <StoryBeat
+        eyebrow="Beat 02 · Walk-around"
+        variant="default"
+        placeholderLabel="Fuel sump, tire, prop — photography coming"
+      >
+        <PoeticLine>
+          You check the fuel. You check the oil. You look at everything.
+        </PoeticLine>
+      </StoryBeat>
 
-      <Section background="card" id="booking-widget">
+      {/* Beat 3 — Left seat */}
+      <StoryBeat
+        eyebrow="Beat 03 · Left seat"
+        variant="soft"
+        scrim="left"
+        placeholderLabel="Left seat, panel lit — photography coming"
+      >
+        <PoeticLine>
+          You sit in the left seat. Your instructor sits to your right.
+        </PoeticLine>
+      </StoryBeat>
+
+      {/* Beat 4 — You fly */}
+      <StoryBeat
+        eyebrow="Beat 04 · You fly"
+        variant="vertical"
+        placeholderLabel="Aerial over the Sierra, golden hour — photography coming"
+      >
+        <PoeticLine>
+          You push the throttle in. You rotate. You fly.
+        </PoeticLine>
+      </StoryBeat>
+
+      {/* Beat 5 — Book (grounded, booking widget) */}
+      <section
+        id="booking"
+        className="bg-bg text-body py-20 md:py-28 scroll-mt-32"
+      >
         <Container>
-          <h2 className="font-heading text-3xl text-heading md:text-4xl">
-            Book your flight
-          </h2>
-          <p className="mt-2 max-w-2xl text-muted">
-            Choose your flight type, pick a date and time, enter your details,
-            and pay online. Most visitors complete a booking in under a minute.
-          </p>
-          <div className="mt-8 max-w-4xl">
+          <Reveal variant="glide" className="max-w-3xl">
+            <p className="panel-label-lg text-accent mb-4">Beat 05 · Book</p>
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-extrabold text-heading text-balance">
+              Discovery flight — {siteFacts.discoveryPrice}. About 60 minutes. No deposit. Pick a day.
+            </h2>
+            <p className="mt-4 text-muted text-pretty max-w-2xl">
+              Choose your flight type, pick a date and time, enter your details,
+              and pay online. Most visitors complete a booking in under a minute.
+            </p>
+          </Reveal>
+          <div className="mt-10 max-w-4xl">
             <Suspense fallback={<BookingSkeleton />}>
               <BookingWidget />
             </Suspense>
           </div>
         </Container>
-      </Section>
+      </section>
 
-      <Section background="dark" id="why-hornbill">
+      {/* FAQ (grounded) */}
+      <section className="bg-card text-body py-20 md:py-28 border-t border-border-subtle">
         <Container>
-          <h2 className="font-heading text-3xl text-on-dark md:text-4xl">
-            Why train with Hornbill Aviation?
-          </h2>
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {WHY_HORNBILL.map((item) => (
-              <div
-                key={item.label}
-                className="rounded-xl border border-on-dark-subtle bg-on-dark-subtle p-5"
-              >
-                <h3 className="font-heading text-xl text-on-dark-accent-hover">{item.label}</h3>
-                <p className="mt-2 text-on-dark">{item.text}</p>
-              </div>
-            ))}
-          </div>
-          <div className="mt-10">
-            <PhoneLink className="text-on-dark-accent-hover hover:text-on-dark-accent" />
-          </div>
-        </Container>
-      </Section>
-
-      <Section background="default" id="faq">
-        <Container>
-          <h2 className="font-heading text-3xl text-heading md:text-4xl">
-            Frequently asked questions
-          </h2>
-          <div className="mt-8 max-w-3xl">
+          <Reveal variant="glide" className="max-w-3xl">
+            <p className="panel-label-lg text-accent mb-4">Questions</p>
+            <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-heading">
+              Frequently asked questions
+            </h2>
+          </Reveal>
+          <div className="mt-10 max-w-3xl">
             <FAQAccordion faqs={DISCOVERY_FAQ} />
           </div>
-          <p className="mt-6 text-sm text-muted">
+          <p className="mt-8 text-sm text-muted">
             Still have questions?{" "}
             <Link
               href="/cancellation-policy/"
-              className="font-medium text-heading hover:text-accent hover:underline"
+              className="beak-flash font-medium text-heading"
             >
               Read our cancellation and weather policy
-            </Link>
-            {" "}or call us.
+            </Link>{" "}
+            or call us.
           </p>
+          <div className="mt-6">
+            <PhoneLink className="text-heading" />
+          </div>
         </Container>
-      </Section>
+      </section>
     </>
   );
 }

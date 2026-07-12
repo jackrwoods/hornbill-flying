@@ -1,6 +1,7 @@
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
 import { CTALink } from "@/components/CTALink";
+import { Reveal } from "@/components/Reveal";
 import { instrumentRatingProgram } from "@/content/programs/instrument-rating";
 
 export function InstrumentRatingDiscoveryFlightSection() {
@@ -9,11 +10,14 @@ export function InstrumentRatingDiscoveryFlightSection() {
   return (
     <Section background="accent" id="start">
       <Container>
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-heading text-3xl md:text-4xl text-heading">
+        <Reveal variant="stagger" className="mx-auto max-w-3xl text-center flex flex-col items-center">
+          <p className="panel-label-lg text-on-accent mb-4">Discovery flight</p>
+          <h2 className="font-heading text-3xl md:text-4xl text-heading text-balance">
             {discoveryFlightCTA.title}
           </h2>
-          <p className="mt-4 text-dark-muted">{discoveryFlightCTA.description}</p>
+          <p className="mt-4 text-dark-muted text-pretty">
+            {discoveryFlightCTA.description}
+          </p>
 
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <CTALink
@@ -26,13 +30,13 @@ export function InstrumentRatingDiscoveryFlightSection() {
             <CTALink
               href={discoveryFlightCTA.secondaryHref}
               variant="tertiary"
-              className="border-border text-heading hover:bg-dark/5"
+              className="border-heading text-heading hover:bg-heading/5"
               analytics={discoveryFlightCTA.secondaryAnalytics}
             >
               {discoveryFlightCTA.secondaryCta}
             </CTALink>
           </div>
-        </div>
+        </Reveal>
       </Container>
     </Section>
   );

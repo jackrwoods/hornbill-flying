@@ -5,6 +5,9 @@ import { PageHeader } from "@/components/PageHeader";
 import { Section } from "@/components/Section";
 import { Prose } from "@/components/Prose";
 import { Container } from "@/components/Container";
+import { Reveal } from "@/components/Reveal";
+import { CTALink } from "@/components/CTALink";
+import { siteFacts } from "@/content/siteFacts";
 import {
   buildTitle,
   buildCanonical,
@@ -65,6 +68,9 @@ export default function TermsPage() {
           { label: "Home", href: "/" },
           { label: PAGE_TITLE },
         ]}
+        eyebrow="Legal · Terms"
+        placeholderLabel="Office desk, morning — photography coming"
+        sunsetVariant="soft"
       />
       <Section background="default">
         <Container>
@@ -82,7 +88,7 @@ export default function TermsPage() {
                     return (
                       <p key={index}>
                         {before}
-                        <Link href={cancellationRoute.href}>{linkText}</Link>
+                        <Link href={cancellationRoute.href} className="beak-flash">{linkText}</Link>
                         {after}
                       </p>
                     );
@@ -100,11 +106,38 @@ export default function TermsPage() {
             ))}
             <p>
               Questions about these terms? Contact us through our{" "}
-              <Link href={contactRoute.href}>Contact page</Link>.
+              <Link href={contactRoute.href} className="beak-flash">Contact page</Link>.
             </p>
           </Prose>
         </Container>
       </Section>
+
+      {/* Closing CTA band */}
+      <section className="bg-immersive-bg-night text-on-immersive relative overflow-hidden">
+        <div className="absolute inset-0 bg-blueprint-grid opacity-60" aria-hidden="true" />
+        <div className="absolute inset-0 bg-sunset-placeholder-dawn opacity-25" aria-hidden="true" />
+        <Container className="relative z-10 py-24 md:py-32 text-center">
+          <Reveal variant="stagger" className="mx-auto max-w-3xl flex flex-col items-center">
+            <p className="panel-label-lg text-immersive-accent mb-6">Book</p>
+            <p className="font-display text-3xl md:text-4xl lg:text-5xl leading-snug text-on-immersive text-balance">
+              Your first lesson is a discovery flight. You fly. We watch.
+            </p>
+            <p className="mt-6 text-on-immersive-muted text-pretty max-w-xl">
+              {siteFacts.discoveryPrice} · {siteFacts.discoveryQualifier} · about 60 minutes · {siteFacts.airportLong}
+            </p>
+            <div className="mt-10">
+              <CTALink
+                href="/discovery-flight/"
+                variant="secondary"
+                analytics="discovery_flight_booking_started"
+                className="px-8 py-4 text-base"
+              >
+                Book a discovery flight — {siteFacts.discoveryPrice}
+              </CTALink>
+            </div>
+          </Reveal>
+        </Container>
+      </section>
     </>
   );
 }

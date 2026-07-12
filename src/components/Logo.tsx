@@ -63,7 +63,7 @@ export function Logo({
           {siteConfig.brandName.split(" ").slice(1).length > 0 && (
             <span
               className={cn(
-                "font-body font-semibold uppercase leading-none tracking-[0.16em] text-[#007C80]",
+                "font-body font-semibold uppercase leading-none tracking-[0.16em] text-[var(--palette-cyan-500)]",
                 largeText ? "text-sm" : "text-[0.55rem]"
               )}
             >

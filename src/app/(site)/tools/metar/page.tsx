@@ -3,6 +3,7 @@ import { ToolLayout } from "@/components/tools/ToolLayout";
 import { MetarTool } from "@/components/tools/MetarTool";
 import { TafTool } from "@/components/tools/TafTool";
 import { Disclaimer } from "@/components/tools/Disclaimer";
+import { Reveal } from "@/components/Reveal";
 import { metarFaqs } from "@/content/tools";
 import {
   buildTitle,
@@ -42,35 +43,40 @@ export default function MetarPage() {
         { href: "/discovery-flight/", label: "Book a discovery flight" },
         { href: "/student-resources/", label: "Student resources" },
       ]}
+      eyebrow="Weather"
+      placeholderLabel="Windsock at KRNO, dusk — photography coming"
+      sunsetVariant="default"
     >
-      <div className="rounded-lg bg-callout p-4 text-body">
-        <p>
-          The current METAR below shows wind, visibility, ceiling, temperature,
-          and altimeter at RNO. The TAF gives you the next forecast periods.
-          Data comes from NOAA Aviation Weather Center and refreshes every 60
-          seconds. Use it as a quick check, not a legal briefing.
-        </p>
-      </div>
+      <Reveal variant="glide">
+        <div className="card-cinematic p-5 text-body">
+          <p>
+            The current METAR below shows wind, visibility, ceiling, temperature,
+            and altimeter at RNO. The TAF gives you the next forecast periods.
+            Data comes from NOAA Aviation Weather Center and refreshes every 60
+            seconds. Use it as a quick check, not a legal briefing.
+          </p>
+        </div>
+      </Reveal>
 
-      <div className="mt-6 grid gap-6">
+      <Reveal variant="glide" className="mt-6 grid gap-6">
         <MetarTool />
         <TafTool />
-      </div>
+      </Reveal>
 
-      <div className="mt-6">
+      <Reveal variant="glide" className="mt-6">
         <a
           href="https://aviationweather.gov/"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center font-semibold text-heading underline hover:text-accent focus:outline-none focus:ring-2 focus:ring-focus-ring"
+          className="beak-flash inline-flex items-center font-semibold text-heading hover:text-accent focus:outline-none focus:ring-2 focus:ring-focus-ring"
         >
           Full briefing on Aviation Weather Center
         </a>
-      </div>
+      </Reveal>
 
-      <div className="mt-6">
+      <Reveal variant="glide" className="mt-6">
         <Disclaimer />
-      </div>
+      </Reveal>
     </ToolLayout>
   );
 }

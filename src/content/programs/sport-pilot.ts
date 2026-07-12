@@ -21,7 +21,7 @@ export const sportPilotProgram = {
   hero: {
     title: "Sport Pilot training in Reno, NV.",
     subtitle:
-      "A faster path to the left seat for hobbyist pilots. Train with a CFI you choose, build skills in our consistent PA28 fleet, and fly from Reno–Tahoe (RNO).",
+      "A faster path to the left seat for hobbyist pilots. Train with a CFI you choose, build skills in our PA28 fleet, and fly from Reno–Tahoe (RNO).",
     image: "/images/programs/sport-pilot-hero.webp",
     imageAlt:
       "Hornbill Aviation PA28 on approach to RNO during a flight lesson",
@@ -39,7 +39,7 @@ export const sportPilotProgram = {
     },
   },
   quickAnswer:
-    "Hornbill Aviation offers Part 61 Sport Pilot training at Reno–Tahoe (RNO). You train with a CFI you choose, build foundational skills in a consistent PA28 fleet, and prepare for the FAA Sport Pilot knowledge and practical tests. The first step is a $199 discovery flight with no deposit required.",
+    "Hornbill Aviation offers Part 61 Sport Pilot training at Reno–Tahoe (RNO). You train with a CFI you choose, build foundational skills in a PA28 fleet, and prepare for the FAA Sport Pilot knowledge and practical tests. The first step is a $199 discovery flight with no deposit required.",
   whatIs: {
     title: "What is a Sport Pilot certificate?",
     intro:
@@ -173,7 +173,7 @@ export const sportPilotProgram = {
           "Pick the instructor whose schedule and style fit you. Or bring your own certificated flight instructor.",
       },
       {
-        title: "Consistent PA28 fleet",
+        title: "Similarly equipped PA28 fleet",
         description:
           "Train in the same aircraft type, with the same avionics packages, from first lesson to checkride prep.",
       },

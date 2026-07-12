@@ -5,7 +5,7 @@ export const programs: Program[] = [
     slug: "sport-pilot",
     title: "Sport Pilot",
     shortDescription:
-      "Earn a Sport Pilot certificate at your pace. Train in a consistent PA28 fleet, choose your CFI, and fly from Reno–Tahoe (RNO).",
+      "Earn a Sport Pilot certificate at your pace. Train in a PA28 fleet, choose your CFI, and fly from Reno–Tahoe (RNO).",
     url: "/programs/sport-pilot/",
     icon: "sport-pilot",
     targetCertificate: "Sport Pilot Certificate",
@@ -16,7 +16,7 @@ export const programs: Program[] = [
     slug: "private-pilot",
     title: "Private Pilot",
     shortDescription:
-      "Train for your Private Pilot checkride in a consistent PA28 fleet. Fly passengers anywhere in the U.S. under VFR.",
+      "Train for your Private Pilot checkride in a PA28 fleet. Fly passengers anywhere in the U.S. under VFR.",
     url: "/programs/private-pilot/",
     icon: "private-pilot",
     targetCertificate: "Private Pilot Certificate",

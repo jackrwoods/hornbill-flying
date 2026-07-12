@@ -1,5 +1,6 @@
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
+import { Reveal } from "@/components/Reveal";
 import { privatePilotProgram } from "@/content/programs/private-pilot";
 
 export function PrivatePilotTimelineSection() {
@@ -8,24 +9,22 @@ export function PrivatePilotTimelineSection() {
   return (
     <Section background="default" id="timeline">
       <Container>
-        <h2 className="font-heading text-3xl md:text-4xl text-heading">
-          {timeline.title}
-        </h2>
-        <p className="mt-4 max-w-3xl text-muted">{timeline.intro}</p>
+        <Reveal variant="glide" className="max-w-3xl">
+          <p className="panel-label-lg text-accent mb-4">Timeline</p>
+          <h2 className="font-heading text-3xl md:text-4xl text-heading text-balance">
+            {timeline.title}
+          </h2>
+          <p className="mt-4 text-muted text-pretty">{timeline.intro}</p>
+        </Reveal>
         <div className="mt-8 grid gap-6 md:grid-cols-2">
           {timeline.options.map((option) => (
-            <div
-              key={option.label}
-              className="rounded-xl bg-white p-6 shadow-sm"
-            >
-              <p className="font-mono text-xs uppercase tracking-wide text-muted">
-                {option.label}
-              </p>
-              <p className="mt-2 font-heading text-3xl text-heading">
+            <Reveal key={option.label} variant="glide" className="card-cinematic p-6">
+              <p className="panel-label text-muted">{option.label}</p>
+              <p className="nums mt-2 font-heading text-3xl text-heading">
                 {option.duration}
               </p>
               <p className="mt-1 text-sm text-muted">{option.schedule}</p>
-            </div>
+            </Reveal>
           ))}
         </div>
         <p className="mt-6 text-sm text-muted">{timeline.note}</p>

@@ -1,49 +1,26 @@
-import { AssetImage as Image } from "@/components/AssetImage";
-import { Container } from "@/components/Container";
-import { CTALink } from "@/components/CTALink";
+import { CinematicHero } from "@/components/CinematicHero";
 
 export function CFIIHeroSection() {
   return (
-    <section className="relative overflow-hidden bg-dark text-on-dark">
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/images/programs/cfii-hero.webp"
-          alt="N6576J instrument panel with Garmin G5 and WAAS GPS at Reno-Tahoe International Airport"
-          fill
-          priority
-          fetchPriority="high"
-          loading="eager"
-          className="object-cover opacity-40"
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-hero-scrim" />
-      </div>
-
-      <Container className="relative z-10">
-        <div className="py-20 md:py-32 lg:py-40">
-          <div className="max-w-2xl">
-            <h1 className="font-heading text-4xl leading-tight md:text-5xl lg:text-6xl">
-              CFII training in Reno, NV.
-            </h1>
-            <p className="mt-6 text-lg text-on-dark md:text-xl">
-              Add instrument instruction to your CFI certificate. Teach
-              approaches, holds, and partial-panel flying from Reno–Tahoe (RNO).
-            </p>
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
-              <CTALink href="/contact/" variant="secondary">
-                Talk to an instructor
-              </CTALink>
-              <CTALink
-                href="/fleet/"
-                variant="tertiary"
-                className="text-on-dark hover:bg-on-dark-subtle"
-              >
-                See the fleet and rates
-              </CTALink>
-            </div>
-          </div>
-        </div>
-      </Container>
-    </section>
+    <CinematicHero
+      register="product"
+      sunsetVariant="vertical"
+      eyebrow="CFII · Certified Flight Instructor Instrument"
+      placeholderLabel="PA28 instrument panel, G5 and WAAS GPS — photography coming"
+      title="CFII training in Reno, NV."
+      subhead="Add instrument instruction to your CFI certificate. Teach approaches, holds, and partial-panel flying from Reno–Tahoe (RNO)."
+      actions={[
+        {
+          label: "Talk to an instructor",
+          href: "/contact/",
+          variant: "secondary",
+        },
+        {
+          label: "See the fleet and rates",
+          href: "/fleet/",
+          variant: "tertiary",
+        },
+      ]}
+    />
   );
 }

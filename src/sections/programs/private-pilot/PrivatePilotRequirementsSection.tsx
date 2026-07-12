@@ -1,5 +1,6 @@
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
+import { Reveal } from "@/components/Reveal";
 import { privatePilotProgram } from "@/content/programs/private-pilot";
 
 export function PrivatePilotRequirementsSection() {
@@ -8,12 +9,15 @@ export function PrivatePilotRequirementsSection() {
   return (
     <Section background="card" id="requirements">
       <Container>
-        <h2 className="font-heading text-3xl md:text-4xl text-heading">
-          {requirements.title}
-        </h2>
-        <p className="mt-4 max-w-3xl text-muted">{requirements.intro}</p>
+        <Reveal variant="glide" className="max-w-3xl">
+          <p className="panel-label-lg text-accent mb-4">Requirements</p>
+          <h2 className="font-heading text-3xl md:text-4xl text-heading text-balance">
+            {requirements.title}
+          </h2>
+          <p className="mt-4 text-muted text-pretty">{requirements.intro}</p>
+        </Reveal>
 
-        <div className="mt-8 overflow-hidden rounded-xl bg-white shadow-sm">
+        <Reveal variant="glide" className="mt-8 card-cinematic overflow-hidden">
           <table className="w-full text-left">
             <thead className="bg-bg">
               <tr>
@@ -40,12 +44,12 @@ export function PrivatePilotRequirementsSection() {
                   >
                     {row.requirement}
                   </th>
-                  <td className="px-6 py-4 text-muted">{row.minimum}</td>
+                  <td className="px-6 py-4 text-muted nums">{row.minimum}</td>
                 </tr>
               ))}
             </tbody>
           </table>
-        </div>
+        </Reveal>
 
         <p className="mt-6 rounded-lg bg-callout p-4 text-body">
           {requirements.note}
