@@ -9,12 +9,15 @@ interface LogoProps {
   fullWordmark?: boolean;
   /** Width of the rendered logo in pixels. */
   width?: number;
+  /** Wordmark color variant. "dark" is for light backgrounds; "light" for dark backgrounds. */
+  variant?: "dark" | "light";
 }
 
 export function Logo({
   className,
   fullWordmark = false,
   width = 160,
+  variant = "dark",
 }: LogoProps) {
   return (
     <Link
@@ -27,7 +30,11 @@ export function Logo({
     >
       {fullWordmark ? (
         <Image
-          src="/images/logos/logo-dark.png"
+          src={
+            variant === "light"
+              ? "/images/logos/logo-light.png"
+              : "/images/logos/logo-dark.png"
+          }
           alt={siteConfig.brandName}
           width={width}
           height={Math.round(width * 0.31)}

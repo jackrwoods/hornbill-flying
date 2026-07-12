@@ -16,7 +16,7 @@ import { HeroMedia } from "@/components/home/HeroMedia";
  */
 export function Hero() {
   return (
-    <section className="relative min-h-svh overflow-hidden bg-immersive-bg text-on-immersive">
+    <section className="relative -mt-16 min-h-svh overflow-hidden bg-immersive-bg text-on-immersive lg:-mt-18">
       <HeroMedia />
       <Container className="relative z-10 flex min-h-svh flex-col justify-end pb-20 md:pb-28">
         <Reveal variant="stagger" className="max-w-2xl">

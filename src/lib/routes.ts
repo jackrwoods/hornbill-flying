@@ -412,27 +412,13 @@ export function getPublishedRoutes(): RouteMeta[] {
 }
 
 /**
- * Returns navigation items for the main header, including the Programs dropdown.
+ * Returns navigation items for the main header.
  */
 export function getHeaderNav(): NavItem[] {
-  const programsGroup = routeMap.find((r) => r.slug === "programs");
-  const programsChildren = programsGroup?.children
-    ?.filter((c) => c.published)
-    .map((c) => ({
-      label: c.label,
-      href: c.href,
-    }));
-
   return [
-    {
-      label: "Programs",
-      href: "/programs/",
-      children: programsChildren || [],
-    },
     { label: "Fleet & Pricing", href: "/fleet/" },
     { label: "Membership", href: "/membership/" },
     { label: "Instructors", href: "/instructors/" },
-    { label: "Blog", href: "/blog/" },
   ];
 }
 

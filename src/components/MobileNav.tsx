@@ -26,7 +26,7 @@ export function MobileNav({ items }: MobileNavProps) {
         aria-expanded={isOpen}
         aria-controls="mobile-nav-menu"
         aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
-        className="inline-flex h-11 w-11 items-center justify-center rounded-md text-ink hover:text-active focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 focus:ring-offset-header-bg"
+        className="inline-flex h-11 w-11 items-center justify-center rounded-md text-on-dark hover:text-on-dark-accent focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 focus:ring-offset-transparent"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
