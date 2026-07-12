@@ -66,7 +66,10 @@ export function TimelineCanvas(props: TimelineCanvasProps): JSX.Element {
   // viewBox is scaled uniformly and centered inside the actual CSS box.
   // Convert the user-unit camera values into CSS-pixel transform values so
   // the timeline stays centered in the rendered viewport across aspect
-  // ratios.
+  // ratios. The camera values are authored as if `scale(cameraScale)` is
+  // applied about the top-left of the scaled SVG content (which maps to the
+  // SVG origin), so the translate must include `offset * (1 - scale)` to keep
+  // that origin stable while scaling.
   const scaleCss = useTransform([svgWidth, svgHeight], ([w, h]: number[]) =>
     w > 0 && h > 0
       ? Math.min(

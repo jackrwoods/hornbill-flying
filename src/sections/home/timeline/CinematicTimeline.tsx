@@ -1,14 +1,19 @@
 "use client";
 import type { JSX } from "react";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, useMemo } from "react";
 import {
   useScroll,
   useTransform,
+  useMotionValue,
   type MotionValue,
 } from "framer-motion";
 import { TimelineCanvas } from "@/sections/home/timeline/TimelineCanvas";
 import { TimelineOverlay } from "@/sections/home/timeline/TimelineOverlay";
 import { MilestoneStack } from "@/sections/home/timeline/MilestoneStack";
+import {
+  TIMELINE_CANVAS_WIDTH,
+  TIMELINE_CANVAS_HEIGHT,
+} from "@/sections/home/timeline/milestones";
 
 /**
  * Cinematic homepage timeline — a sticky-pinned scroll-driven camera over a
@@ -16,8 +21,8 @@ import { MilestoneStack } from "@/sections/home/timeline/MilestoneStack";
  *
  * Scroll story:
  *   - First look (scroll 0): full timeline zoomed out (scale 0.85) and
- *     centered in the viewport. All nodes at full opacity. The nav-map
- *     header is visible.
+ *     centered in the visible sticky viewport below the site header. All
+ *     nodes at full opacity. The nav-map header is visible.
  *   - Zoom in (0 → 0.05): camera zooms from the centered overview into
  *     node 1, and the line shifts from viewport-center to the top portion
  *     (viewport y=400) so overlay panels render below it.
@@ -69,17 +74,28 @@ const CAMERA_X_OUTPUT = [
   -640, -1130, -1130, -1620, -1620, -2110, -2110, -2600, -2600, 240,
 ];
 
-// Camera translate Y: vertically centered in the visible frame (460) at
-// the overview states, accounting for the sticky site header so the node
-// composition (circles + labels) sits in the middle of the dark sticky
-// area, then moves to the top portion (-440) during the zoomed-in pan so
-// overlay panels can render below.
-// At scale 0.85: target_y - 0.85*600 = 460, where target_y is the visual
-// center of the available viewport space below the header.
-// At scale 1.4: keep line in upper viewport -> 1.4*600 + cameraY = 400,
-// so cameraY = 400 - 840 = -440.
+// Horizontal correction for the overview state. The node-line midpoint
+// (x=1600) centers the circles, but the text labels extend asymmetrically
+// ("Discovery Flight" is much wider than "CFII"), so the visual composition
+// reads shifted left. We express the desired correction in CSS pixels so it is
+// viewport-independent in rendered space; the matching user-unit offset is
+// `cssShift / scaleCss`. This correction is applied only at the overview
+// states (scroll 0 and 1) so the per-node pan positions remain unchanged.
+const OVERVIEW_X_SHIFT_CSS_PX = 120;
+
+// Camera translate Y: the scroll-driven values below express the camera's
+// offset from the overview centering position. The actual overview cameraY
+// is computed responsively from the viewport so the node line (y=600) sits
+// in the middle of the visible sticky area below the site header. The pan
+// state is a fixed 900-unit lift from that overview center so the line
+// moves to the upper viewport and leaves room for overlay panels.
 const CAMERA_Y_INPUT = [0, 0.05, 0.93, 1];
-const CAMERA_Y_OUTPUT = [460, -440, -440, 460];
+const CAMERA_Y_OFFSET_OUTPUT = [0, -900, -900, 0];
+
+// Total sticky top area: desktop has the 36px QuickFactsStrip + 72px
+// Header; below the lg breakpoint only the 64px Header is sticky.
+const HEADER_HEIGHT_DESKTOP = 108;
+const HEADER_HEIGHT_MOBILE_HEADER_ONLY = 64;
 
 // Camera scale: zoomed out (0.85) at first look → zoomed in (1.4) for the
 // pan → zoomed back out (0.85) at the end.
@@ -146,13 +162,95 @@ export function CinematicTimeline(): JSX.Element {
     setEnabled(!reduce && desktop);
   }, []);
 
+  // Measure the viewport so the overview cameraY can be centered in the
+  // visible area below the sticky header. Default to a typical desktop
+  // viewport for the server/initial paint, then correct after hydration.
+  const [viewport, setViewport] = useState(() => ({
+    width: typeof window !== "undefined" ? window.innerWidth : 1440,
+    height: typeof window !== "undefined" ? window.innerHeight : 900,
+  }));
+
+  useEffect(() => {
+    const update = () =>
+      setViewport({ width: window.innerWidth, height: window.innerHeight });
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, []);
+
+  const scaleCss = useMemo(() => {
+    if (viewport.width === 0 || viewport.height === 0) return 0.5;
+    return Math.min(
+      viewport.width / TIMELINE_CANVAS_WIDTH,
+      viewport.height / TIMELINE_CANVAS_HEIGHT
+    );
+  }, [viewport]);
+
+  const headerHeight =
+    viewport.width >= 1024
+      ? HEADER_HEIGHT_DESKTOP
+      : HEADER_HEIGHT_MOBILE_HEADER_ONLY;
+
+  // Vertically center the node line (y=600) in the visible sticky area
+  // below the header. Derivation:
+  //   visualCenter = (viewportHeight + headerHeight) / 2
+  //   visualCenter = offsetY + cameraY*scaleCss + 0.85*scaleCss*600
+  //   offsetY = (viewportHeight - 1800*scaleCss) / 2
+  //   => cameraY = headerHeight / (2*scaleCss) + 390
+  const centerYOffset =
+    scaleCss > 0 ? headerHeight / (2 * scaleCss) + 390 : 498;
+  // Keep the MotionValue instance stable across resizes; update its value
+  // via `.set()` so the cameraY transform keeps its subscription.
+  const centerYOffsetMv = useMotionValue(498);
+
+  useEffect(() => {
+    centerYOffsetMv.set(centerYOffset);
+  }, [centerYOffset]);
+
+  // Responsive horizontal correction for the overview. Convert the desired
+  // CSS-pixel shift into SVG user units so the rendered shift stays the same
+  // across viewport sizes. The correction fades out during the zoom/pan so
+  // the per-node positions remain centered.
+  const overviewXOffset =
+    scaleCss > 0 ? OVERVIEW_X_SHIFT_CSS_PX / scaleCss : 800;
+  const overviewXOffsetMv = useMotionValue(800);
+
+  useEffect(() => {
+    overviewXOffsetMv.set(overviewXOffset);
+  }, [overviewXOffset]);
+
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end end"],
   });
 
-  const cameraX = useTransform(scrollYProgress, CAMERA_X_INPUT, CAMERA_X_OUTPUT);
-  const cameraY = useTransform(scrollYProgress, CAMERA_Y_INPUT, CAMERA_Y_OUTPUT);
+  const cameraXBase = useTransform(
+    scrollYProgress,
+    CAMERA_X_INPUT,
+    CAMERA_X_OUTPUT
+  );
+  const overviewXShiftFactor = useTransform(
+    scrollYProgress,
+    [0, 0.05, 0.93, 1],
+    [1, 0, 0, 1]
+  );
+  const cameraXOffset = useTransform(
+    [overviewXOffsetMv, overviewXShiftFactor],
+    ([offset, factor]) => (offset as number) * (factor as number)
+  );
+  const cameraX = useTransform(
+    [cameraXBase, cameraXOffset],
+    ([base, off]) => (base as number) + (off as number)
+  );
+  const cameraYBase = useTransform(
+    scrollYProgress,
+    CAMERA_Y_INPUT,
+    CAMERA_Y_OFFSET_OUTPUT
+  );
+  const cameraY = useTransform(
+    [cameraYBase, centerYOffsetMv],
+    ([base, cy]) => (base as number) + (cy as number)
+  );
   const cameraScale = useTransform(scrollYProgress, SCALE_INPUT, SCALE_OUTPUT);
   const navMapHeaderOpacity = useTransform(
     scrollYProgress,
