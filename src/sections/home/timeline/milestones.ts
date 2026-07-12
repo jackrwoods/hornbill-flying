@@ -65,10 +65,10 @@ export const milestones: Milestone[] = [
     eyebrow: "01 · Discovery Flight",
     href: "/discovery-flight/",
     linkLabel: "See Discovery Flight",
-    poeticLine: "You take the yoke. The runway is yours.",
+    poeticLine: "Your first flight as Pilot-in-command.",
     groundedLine:
-      "Your first lesson is a discovery flight at RNO — about 60 minutes, $199, no deposit.",
-    differentiator: "You fly the first lesson. We watch. No commitment.",
+      "Your first lesson is a discovery flight at RNO — about 60 minutes, $199, and no deposit.",
+    differentiator: "See if flying is for you without any commitment.",
     imageLabel: "PA28 on the RNO ramp at golden hour, preflight — photography coming",
     sunsetVariant: "dawn",
     svgX: 200,
@@ -82,11 +82,11 @@ export const milestones: Milestone[] = [
     eyebrow: "02 · First Solo",
     href: "/programs/private-pilot/",
     linkLabel: "See Private Pilot",
-    poeticLine: "Your CFI steps out. The runway is yours alone.",
+    poeticLine: "The cockpit is all yours.",
     groundedLine:
-      "Most Hornbill students solo between 15 and 25 hours in the same PA28 they trained in.",
+      "Most Hornbill students solo between 15 and 25 hours.",
     differentiator:
-      "Same PA28 fleet, every lesson. Same handling, same panel.",
+      "Our experienced CFIs ensure you will take flight with confidence.",
     imageLabel: "PA28 lifting off RNO runway 17R, solo — photography coming",
     sunsetVariant: "default",
     svgX: 550,
@@ -100,11 +100,11 @@ export const milestones: Milestone[] = [
     eyebrow: "03 · Private Pilot",
     href: "/programs/private-pilot/",
     linkLabel: "See Private Pilot",
-    poeticLine: "You sign the logbook. The country opens under VFR.",
+    poeticLine: "A Licence to Learn. Or for fun.",
     groundedLine:
       "FAA minimum 40 hours; most Hornbill students finish between 55 and 70, then take the checkride.",
     differentiator:
-      "Pick the CFI whose schedule and style fit you — or bring your own.",
+      "Earn your wings at your own pace through our FAA Part 61 program.",
     imageLabel:
       "Left-seat PA28 panel, dual Garmin G5, checkride-ready — photography coming",
     sunsetVariant: "default",
@@ -119,10 +119,10 @@ export const milestones: Milestone[] = [
     eyebrow: "04 · Cross-country",
     href: "/programs/private-pilot/",
     linkLabel: "See Private Pilot",
-    poeticLine: "Two hours north. A real destination. A real lunch.",
+    poeticLine: "Visit real destinations as you build time.",
     groundedLine:
-      "File a route to Tahoe, Monterey, or Bend in the same PA28 you trained in.",
-    differentiator: "Real routes — Tahoe, Monterey, Bend — not pattern work.",
+      "Plan an overnight trip to California, Idaho, Utah, or Arizona.",
+    differentiator: "Hornbill encourages pilots to take real trips in our fleet.",
     imageLabel: "PA28 over Lake Tahoe at altitude, southbound — photography coming",
     sunsetVariant: "vertical",
     svgX: 1250,
@@ -133,15 +133,15 @@ export const milestones: Milestone[] = [
   },
   {
     index: 5,
-    title: "First IFR",
+    title: "Initial IFR Training",
     eyebrow: "05 · First Time in Cloud",
     href: "/programs/instrument-rating/",
     linkLabel: "See Instrument Rating",
-    poeticLine: "You climb into cloud. The panel glows. The ground lets go.",
+    poeticLine: "Master the instruments.",
     groundedLine:
-      "Your first IMC lesson is in N6576J or N7824W — both PA28s with WAAS GPS and dual Garmin G5.",
+      "Your first IMC lesson, in an aircraft with cutting-edge Garmin avionics and WAAS-enabled GPS.",
     differentiator:
-      "WAAS GPS and dual Garmin G5 in your IFR trainers (N6576J, N7824W).",
+      "Our fleet is equipped with the latest Garmin avionics.",
     imageLabel: "First IMC lesson in a PA28, hood on, panel lit — photography coming",
     sunsetVariant: "soft",
     svgX: 1600,
@@ -155,11 +155,11 @@ export const milestones: Milestone[] = [
     eyebrow: "06 · Instrument Rating",
     href: "/programs/instrument-rating/",
     linkLabel: "See Instrument Rating",
-    poeticLine: "You file. You fly. The clouds are no longer a wall.",
+    poeticLine: "Soar through the clouds.",
     groundedLine:
-      "50 hours PIC cross-country and a 250 NM long IFR XC with approaches at three airports.",
+      "Gain real-world experience flying through the challenging weather surrounding the Sierra Nevada mountains.",
     differentiator:
-      "Unlimited CR-12 AATD time for members. Spend hours in the sim, not dollars.",
+      "We believe the best experience is \"actual\" IMC time.",
     imageLabel:
       "IFR checkride, approach plate, attitude indicator alive — photography coming",
     sunsetVariant: "soft",
@@ -174,11 +174,11 @@ export const milestones: Milestone[] = [
     eyebrow: "07 · Commercial Pilot",
     href: "/programs/commercial-pilot/",
     linkLabel: "See Commercial Pilot",
-    poeticLine: "You round out on short final, and the work begins to pay.",
+    poeticLine: "Get paid to fly.",
     groundedLine:
-      "Part 61 requires 250 hours total time and 10 in a complex or technically advanced airplane.",
+      "Our commercial students graduate with real-world experiences that stand out during job interviews.",
     differentiator:
-      "250 hours of real cross-country in the same PA28 you trained in.",
+      "Hornbill students get real-world experience which translates into real jobs.",
     imageLabel: "PA28 on short final at RNO, gear down — photography coming",
     sunsetVariant: "vertical",
     svgX: 2300,
@@ -192,11 +192,11 @@ export const milestones: Milestone[] = [
     eyebrow: "08 · Certified Flight Instructor",
     href: "/programs/certified-flight-instructor/",
     linkLabel: "See Certified Flight Instructor",
-    poeticLine: "You move to the right seat. The sectional becomes a chalkboard.",
+    poeticLine: "Move into the right seat.",
     groundedLine:
       "Earn the Fundamentals of Instruction and spin-training endorsements, then sign off your first student at RNO.",
     differentiator:
-      "Part 61 flexibility. You teach on your schedule, not the school's.",
+      "Part 61 flexibility. You teach on your schedule and set your own instruction rates.",
     imageLabel: "CFI and student in the right seat, sectional open — photography coming",
     sunsetVariant: "dawn",
     svgX: 2650,
@@ -211,11 +211,11 @@ export const milestones: Milestone[] = [
     href: "/programs/cfii/",
     linkLabel: "See CFII",
     poeticLine:
-      "You teach in cloud. The attitude indicator becomes your student's horizon.",
+      "Teach advanced ratings.",
     groundedLine:
-      "A CFII adds instrument-instructor privileges to your CFI; teach IFR students in WAAS-equipped PA28s at RNO.",
+      "A CFII adds instrument-instructor privileges to your CFI; teach IFR students in our WAAS-equipped PA28s at RNO.",
     differentiator:
-      "Teach instrument students in IFR-capable PA28s with WAAS GPS.",
+      "Teach advanced students and build valuable experience in IMC.",
     imageLabel: "CFII and student in IMC, attitude indicator alive — photography coming",
     sunsetVariant: "soft",
     svgX: 3000,

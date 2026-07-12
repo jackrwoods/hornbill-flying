@@ -154,7 +154,7 @@ export function TimelineCanvas(props: TimelineCanvasProps): JSX.Element {
         <path
           d={PATH_D}
           fill="none"
-          stroke="var(--palette-cyan-500)"
+          stroke="var(--palette-magenta-500)"
           strokeWidth={8}
           strokeDasharray="16 16"
           strokeLinecap="round"
@@ -182,8 +182,8 @@ export function TimelineCanvas(props: TimelineCanvasProps): JSX.Element {
                     cx={0}
                     cy={0}
                     {...circleProps}
-                    fill="var(--color-immersive-bg-night)"
-                    stroke="var(--palette-cyan-500)"
+                    fill="var(--palette-gold-600)"
+                    stroke="var(--palette-gold-600)"
                     strokeWidth={4}
                     className="transition-[r,fill] duration-200 group-hover:[r:30] group-hover:[fill:var(--color-on-immersive)]"
                   />
