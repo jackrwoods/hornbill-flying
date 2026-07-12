@@ -69,13 +69,17 @@ const CAMERA_X_OUTPUT = [
   -640, -1130, -1130, -1620, -1620, -2110, -2110, -2600, -2600, 240,
 ];
 
-// Camera translate Y: centered in the visible viewport area (480) at the
-// overview, top portion (-440) during the zoomed-in pan.
-// At scale 0.85: target_y - 0.85*600 = 480, where target_y is slightly
-// below the SVG center to account for the sticky site header.
-// At scale 1.4: 400 - 1.4*600 = -440.
+// Camera translate Y: vertically centered in the visible frame (460) at
+// the overview states, accounting for the sticky site header so the node
+// composition (circles + labels) sits in the middle of the dark sticky
+// area, then moves to the top portion (-440) during the zoomed-in pan so
+// overlay panels can render below.
+// At scale 0.85: target_y - 0.85*600 = 460, where target_y is the visual
+// center of the available viewport space below the header.
+// At scale 1.4: keep line in upper viewport -> 1.4*600 + cameraY = 400,
+// so cameraY = 400 - 840 = -440.
 const CAMERA_Y_INPUT = [0, 0.05, 0.93, 1];
-const CAMERA_Y_OUTPUT = [480, -440, -440, 480];
+const CAMERA_Y_OUTPUT = [460, -440, -440, 460];
 
 // Camera scale: zoomed out (0.85) at first look → zoomed in (1.4) for the
 // pan → zoomed back out (0.85) at the end.
