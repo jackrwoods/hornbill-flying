@@ -11,9 +11,8 @@ export function DiscoveryCta() {
       <div className="absolute inset-0 bg-sunset-placeholder-dawn opacity-25" aria-hidden="true" />
       <Container className="relative z-10 py-24 md:py-32 text-center">
         <Reveal variant="stagger" className="mx-auto max-w-3xl flex flex-col items-center">
-          <p className="panel-label-lg text-immersive-accent mb-6">Book</p>
           <p className="font-display text-3xl md:text-4xl lg:text-5xl leading-snug text-on-immersive text-balance">
-            Your first lesson is a discovery flight. You fly. We watch.
+            Your first lesson is a discovery flight.
           </p>
           <p className="mt-6 text-on-immersive-muted text-pretty max-w-xl">
             {siteFacts.discoveryPrice} · {siteFacts.discoveryQualifier} · about 60 minutes · {siteFacts.airportLong}
@@ -36,12 +35,14 @@ export function DiscoveryCta() {
                 Call or text
               </PhoneLink>
             )}
-            <a
+            <CTALink
               href={`mailto:${siteFacts.email}`}
-              className="beak-flash inline-flex items-center text-sm font-semibold text-immersive-accent"
+              variant="tertiary"
+              className="border-on-immersive/40 text-on-immersive hover:bg-on-dark-subtle"
+              analytics="email_click_home"
             >
               Email us
-            </a>
+            </CTALink>
           </div>
         </Reveal>
       </Container>

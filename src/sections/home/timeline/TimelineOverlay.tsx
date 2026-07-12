@@ -84,7 +84,7 @@ export function TimelineOverlay(
         className="absolute inset-x-0 top-12 md:top-16 text-center"
       >
         <p className="panel-label-lg text-immersive-accent">The journey</p>
-        <h2 className="font-display text-3xl md:text-4xl mt-3 text-on-immersive text-balance">
+        <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mt-3 text-on-immersive text-balance">
           Pick a program. Start anywhere.
         </h2>
         <p className="mt-3 text-on-immersive-muted">

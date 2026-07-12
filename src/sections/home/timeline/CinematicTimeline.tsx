@@ -9,6 +9,7 @@ import {
 } from "framer-motion";
 import { TimelineCanvas } from "@/sections/home/timeline/TimelineCanvas";
 import { TimelineOverlay } from "@/sections/home/timeline/TimelineOverlay";
+import { TimelineMedia } from "@/sections/home/timeline/TimelineMedia";
 import { MilestoneStack } from "@/sections/home/timeline/MilestoneStack";
 import {
   TIMELINE_CANVAS_WIDTH,
@@ -314,6 +315,10 @@ export function CinematicTimeline(): JSX.Element {
       className="relative h-[500vh] bg-immersive-bg"
     >
       <div className="sticky top-0 h-svh overflow-hidden">
+        <TimelineMedia
+          panelOpacities={panelOpacities}
+          overviewBoost={overviewBoost}
+        />
         <TimelineCanvas
           cameraX={cameraX}
           cameraY={cameraY}

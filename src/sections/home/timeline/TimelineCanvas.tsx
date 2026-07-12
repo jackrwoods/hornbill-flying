@@ -106,7 +106,7 @@ export function TimelineCanvas(props: TimelineCanvasProps): JSX.Element {
       preserveAspectRatio="xMidYMid meet"
       width="100%"
       height="100%"
-      className="block h-full w-full"
+      className="relative z-[5] block h-full w-full"
       role="img"
       aria-label="Pilot journey timeline from Discovery Flight through CFII, laid out as a horizontal flight path across a sectional-chart grid."
     >
@@ -185,7 +185,7 @@ export function TimelineCanvas(props: TimelineCanvasProps): JSX.Element {
                     fill="var(--color-immersive-bg-night)"
                     stroke="var(--palette-cyan-500)"
                     strokeWidth={4}
-                    className="transition-[r] duration-200 group-hover:[r:30]"
+                    className="transition-[r,fill] duration-200 group-hover:[r:30] group-hover:[fill:var(--color-on-immersive)]"
                   />
                   <text
                     x={0}

@@ -50,6 +50,12 @@ export interface Milestone {
   svgX: number;
   /** SVG node Y position in user units (canvas 1800 tall). */
   svgY: number;
+  /** Background media asset (image or video) for the cinematic timeline. */
+  mediaSrc: string;
+  /** Alt text / brief description of the media asset. */
+  mediaAlt: string;
+  /** True if the media is a video that should play muted and looped. */
+  mediaIsVideo?: boolean;
 }
 
 export const milestones: Milestone[] = [
@@ -67,6 +73,8 @@ export const milestones: Milestone[] = [
     sunsetVariant: "dawn",
     svgX: 200,
     svgY: 600,
+    mediaSrc: "/images/programs/private-pilot-hero.webp",
+    mediaAlt: "Private pilot training hero — PA28 on the ramp at golden hour.",
   },
   {
     index: 2,
@@ -83,6 +91,8 @@ export const milestones: Milestone[] = [
     sunsetVariant: "default",
     svgX: 550,
     svgY: 600,
+    mediaSrc: "/images/programs/private-pilot-og.webp",
+    mediaAlt: "First solo — PA28 lifting off RNO runway 17R.",
   },
   {
     index: 3,
@@ -100,6 +110,8 @@ export const milestones: Milestone[] = [
     sunsetVariant: "default",
     svgX: 900,
     svgY: 600,
+    mediaSrc: "/images/timeline/ppl-checkride.jpg",
+    mediaAlt: "Private Pilot checkride — left-seat PA28 panel with dual Garmin G5.",
   },
   {
     index: 4,
@@ -115,6 +127,9 @@ export const milestones: Milestone[] = [
     sunsetVariant: "vertical",
     svgX: 1250,
     svgY: 600,
+    mediaSrc: "/images/timeline/cross-country-flight.mp4",
+    mediaAlt: "Cross-country flight — PA28 over the Sierra Nevada.",
+    mediaIsVideo: true,
   },
   {
     index: 5,
@@ -131,6 +146,8 @@ export const milestones: Milestone[] = [
     sunsetVariant: "soft",
     svgX: 1600,
     svgY: 600,
+    mediaSrc: "/images/programs/instrument-cross-country.webp",
+    mediaAlt: "First IMC lesson — PA28 in instrument cross-country conditions.",
   },
   {
     index: 6,
@@ -148,6 +165,8 @@ export const milestones: Milestone[] = [
     sunsetVariant: "soft",
     svgX: 1950,
     svgY: 600,
+    mediaSrc: "/images/programs/instrument-rating-hero.webp",
+    mediaAlt: "Instrument rating — approach plate and attitude indicator alive.",
   },
   {
     index: 7,
@@ -164,6 +183,8 @@ export const milestones: Milestone[] = [
     sunsetVariant: "vertical",
     svgX: 2300,
     svgY: 600,
+    mediaSrc: "/images/programs/cfi-hero.webp",
+    mediaAlt: "Commercial pilot — PA28 on short final at RNO.",
   },
   {
     index: 8,
@@ -180,6 +201,8 @@ export const milestones: Milestone[] = [
     sunsetVariant: "dawn",
     svgX: 2650,
     svgY: 600,
+    mediaSrc: "/images/programs/cfi-instructor-pa28.webp",
+    mediaAlt: "CFI and student in the right seat of a PA28 with sectional open.",
   },
   {
     index: 9,
@@ -197,6 +220,8 @@ export const milestones: Milestone[] = [
     sunsetVariant: "soft",
     svgX: 3000,
     svgY: 600,
+    mediaSrc: "/images/timeline/overview-destination.jpg",
+    mediaAlt: "Sierra Nevada destination — the view from the end of the journey.",
   },
 ];
 

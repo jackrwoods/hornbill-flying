@@ -20,14 +20,14 @@ export function Hero() {
       <HeroMedia />
       <Container className="relative z-10 flex min-h-svh flex-col justify-end pb-20 md:pb-28">
         <Reveal variant="stagger" className="max-w-2xl">
-          <p className="panel-label-lg text-immersive-accent mb-5">
+          <p>
             Hornbill Aviation · RNO
           </p>
           <h1 className="font-heading font-extrabold leading-[1.02] text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-on-immersive text-balance">
-            You in the left seat. The Sierra out the windscreen.
+            Life is better at 10,000 ft
           </h1>
           <p className="mt-8 font-display text-2xl md:text-3xl leading-snug text-on-immersive-muted text-balance max-w-xl">
-            Part 61 flight training at Reno–Tahoe International. One fleet. Your pace. From first flight to CFII.
+            From first flight to CFII, Hornbill offers Part 61 flight training at Reno–Tahoe International Airport.
           </p>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
             <CTALink
