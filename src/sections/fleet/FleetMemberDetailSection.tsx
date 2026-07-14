@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
-import { SunsetPlaceholder } from "@/components/SunsetPlaceholder";
+import { AssetImage as Image } from "@/components/AssetImage";
 import { Reveal } from "@/components/Reveal";
 import { DownloadCard } from "@/components/DownloadCard";
 import { membershipRates } from "@/content/fleet";
@@ -22,13 +22,15 @@ export function FleetMemberDetailSection({
       <Container>
         <div className="grid gap-10 lg:grid-cols-2">
           <Reveal variant="horizon">
-            <SunsetPlaceholder
-              variant="vertical"
-              label={`${isAircraft(member) ? member.tail : member.name} — photography coming`}
-              vignette
-              grain
-              className="aspect-[4/3] w-full rounded-xl"
-            />
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-immersive-bg">
+              <Image
+                src={member.photo}
+                alt={member.photoAlt}
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+              />
+            </div>
           </Reveal>
 
           <Reveal variant="glide" className="flex flex-col gap-6">
