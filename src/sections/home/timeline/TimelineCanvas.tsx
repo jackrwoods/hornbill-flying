@@ -218,7 +218,7 @@ export function TimelineCanvas(props: TimelineCanvasProps): JSX.Element {
             style={{ x: jetX, y: 600 }}
             aria-hidden="true"
           >
-            <g transform="translate(-46.76, -46.42) scale(0.195) rotate(45, 239.79, 238.05)">
+            <g transform="translate(-40.41, -37.14) scale(0.156) rotate(45, 239.79, 238.05)">
               <path
                 fill="white"
                 opacity={1}
