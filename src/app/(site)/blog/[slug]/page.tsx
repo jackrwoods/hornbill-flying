@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import rehypeSlug from "rehype-slug";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import remarkGfm from "remark-gfm";
 import { Container } from "@/components/Container";
 import { PageHeader } from "@/components/PageHeader";
@@ -135,7 +136,21 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 options={{
                   mdxOptions: {
                     remarkPlugins: [remarkGfm],
-                    rehypePlugins: [rehypeSlug],
+                    rehypePlugins: [
+                      rehypeSlug,
+                      [
+                        rehypeAutolinkHeadings,
+                        {
+                          behavior: "append",
+                          properties: {
+                            className: ["prose-anchor"],
+                            ariaHidden: "true",
+                            tabIndex: -1,
+                          },
+                          content: { type: "text", value: "#" },
+                        },
+                      ],
+                    ],
                   },
                 }}
               />
