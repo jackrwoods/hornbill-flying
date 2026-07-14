@@ -11,8 +11,11 @@ export function FleetPageHeader() {
         { label: "Fleet & Pricing" },
       ]}
       eyebrow="Fleet & Pricing"
-      placeholderLabel="PA28 Cherokee line on the ramp — photography coming"
-      sunsetVariant="default"
+      image={{
+        src: "/images/fleet/fleet-hero.webp",
+        alt: "Hornbill Aviation PA28 Cherokee fleet on the ramp at KRNO",
+      }}
+      className="-mt-16 lg:-mt-18"
     />
   );
 }
