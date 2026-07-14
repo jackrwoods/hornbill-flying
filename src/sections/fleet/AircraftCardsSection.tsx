@@ -1,4 +1,4 @@
-import { SunsetPlaceholder } from "@/components/SunsetPlaceholder";
+import { AssetImage as Image } from "@/components/AssetImage";
 import { Reveal } from "@/components/Reveal";
 import Link from "next/link";
 import { Section } from "@/components/Section";
@@ -38,11 +38,15 @@ export function AircraftCardsSection() {
               variant="glide"
               className="card-cinematic overflow-hidden flex flex-col"
             >
-              <SunsetPlaceholder
-                variant="vertical"
-                label={`${isAircraft(member) ? member.tail : member.name} — photography coming`}
-                className="aspect-[4/3] w-full"
-              />
+              <div className="relative aspect-[4/3] w-full overflow-hidden bg-immersive-bg">
+                <Image
+                  src={member.photo}
+                  alt={member.photoAlt}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover"
+                />
+              </div>
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="font-heading text-2xl text-heading">
                   {isAircraft(member) ? member.tail : member.name}
