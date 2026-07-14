@@ -7,7 +7,7 @@ import { milestones } from "@/sections/home/timeline/milestones";
 
 interface TimelineOverlayProps {
   /**
-   * 9 opacity MotionValues, one per milestone panel. Each drives a panel's
+   * 6 opacity MotionValues, one per milestone panel. Each drives a panel's
    * opacity across the scroll. The orchestrator owns the `useTransform`
    * calls that produce these values; this component only reads them.
    */
@@ -22,7 +22,7 @@ interface TimelineOverlayProps {
 
 /**
  * HTML overlay that sits on top of the SVG canvas during the cinematic
- * scroll. Renders 9 crossfading panels (one per milestone) plus an
+ * scroll. Renders 6 crossfading panels (one per milestone) plus an
  * end-state "nav map" header that appears at the zoom-out.
  *
  * The container is `pointer-events-none` so the SVG nodes underneath
@@ -83,12 +83,11 @@ export function TimelineOverlay(
         style={{ opacity: navMapHeaderOpacity, willChange: "opacity" }}
         className="absolute inset-x-0 top-12 md:top-16 text-center"
       >
-        <p className="panel-label-lg text-immersive-accent">The journey</p>
         <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mt-3 text-on-immersive text-balance">
-          Pick a program. Start anywhere.
+          From first flight to CFI.
         </h2>
         <p className="mt-3 text-on-immersive-muted">
-          Each node opens that program&apos;s page.
+          Hornbill offers training programs for both airline-bound students and weekend warrior pilots.
         </p>
       </motion.div>
     </div>

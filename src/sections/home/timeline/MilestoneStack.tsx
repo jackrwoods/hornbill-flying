@@ -8,7 +8,7 @@ import { milestones } from "@/sections/home/timeline/milestones";
  * Mobile / reduced-motion fallback for the cinematic timeline.
  *
  * Renders when `useScrubbedTransform`'s gate returns disabled (viewport < 768px
- * or `prefers-reduced-motion: reduce`). Plain vertical stack of 9 cards, one
+ * or `prefers-reduced-motion: reduce`). Plain vertical stack of 6 cards, one
  * per milestone, each with a `Reveal variant="glide"` entrance. No pin, no SVG,
  * no Framer scroll. Server component — the `Reveal` child handles its own
  * client-side IntersectionObserver internally.
@@ -26,8 +26,8 @@ export function MilestoneStack() {
             From your first discovery flight to teaching instrument students.
           </h2>
           <p className="mt-5 text-on-immersive-muted text-pretty max-w-2xl">
-            Nine milestones, one PA28 fleet, one Sierra backyard. This is the
-            path from your first lesson to your CFII.
+            Six milestones, one PA28 fleet, one Sierra backyard. This is the
+            path from your first lesson to your CFI.
           </p>
         </header>
 

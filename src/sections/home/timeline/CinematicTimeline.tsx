@@ -12,13 +12,14 @@ import { TimelineOverlay } from "@/sections/home/timeline/TimelineOverlay";
 import { TimelineMedia } from "@/sections/home/timeline/TimelineMedia";
 import { MilestoneStack } from "@/sections/home/timeline/MilestoneStack";
 import {
+  milestones,
   TIMELINE_CANVAS_WIDTH,
   TIMELINE_CANVAS_HEIGHT,
 } from "@/sections/home/timeline/milestones";
 
 /**
  * Cinematic homepage timeline — a sticky-pinned scroll-driven camera over a
- * straight horizontal SVG line of 9 milestone nodes.
+ * straight horizontal SVG line of 6 milestone nodes.
  *
  * Scroll story:
  *   - First look (scroll 0): full timeline zoomed out (scale 0.85) and
@@ -27,13 +28,13 @@ import {
  *   - Zoom in (0 → 0.05): camera zooms from the centered overview into
  *     node 1, and the line shifts from viewport-center to the top portion
  *     (viewport y=400) so overlay panels render below it.
- *   - Pan (0.05 → 0.85): scale=1.4 (bigger than the overview), camera
+ *   - Pan (0.05 → 0.93): scale=1.4 (bigger than the overview), camera
  *     SNAPS right from node to node (staircase, not smooth pan). The
- *     camera holds at each node for 80% of the scroll interval, then
- *     snaps to the next in 20%. The active node lights up (radius 30,
- *     opacity 1); inactive nodes dim (radius 18, opacity 0.5). Each
- *     milestone's overlay panel crossfades in as its node centers.
- *   - Hold (0.85 → 0.93): hold on node 9.
+ *     camera holds at each node, then snaps to the next. The active node
+ *     lights up (radius 30, opacity 1); inactive nodes dim (radius 18,
+ *     opacity 0.5). Each milestone's overlay panel crossfades in as its
+ *     node centers.
+ *   - Hold (0.80 → 0.93): hold on node 6.
  *   - Zoom out (0.93 → 1.0): scale 1.4 → 0.85, camera pulls back to the
  *     centered overview. All nodes return to full opacity; overlay panels
  *     fade out; the nav-map header fades back in.
@@ -47,11 +48,11 @@ import {
  *
  * Mobile / `prefers-reduced-motion: reduce` collapses to `<MilestoneStack />`
  * — no pin, no SVG, no Framer scroll. The `enabled` gate defaults to `true`
- * so the cinematic SVG (with all 9 crawlable nodes) renders on the server;
+ * so the cinematic SVG (with all 6 crawlable nodes) renders on the server;
  * `useEffect` flips `enabled` to `false` after mount if the viewport is
  * below 768px or the user prefers reduced motion.
  *
- * Pinned-section height is 500vh (desktop only). This is a deliberate
+ * Pinned-section height is 400vh (desktop only). This is a deliberate
  * deviation from `v2-visual-and-motion-system.md` §4f's 250vh cap —
  * justified because all camera motion is compositor-only (`transform` +
  * `opacity` on a `<motion.g>`), so INP won't suffer, and mobile fully
@@ -59,25 +60,42 @@ import {
  */
 
 // Camera translate X: staircase pattern that steps between nodes. The
-// camera holds at each node for 60% of the scroll interval, then transitions
-// to the next node over the remaining 40%. Transition windows are centered
-// at the midpoints between panel peaks (0.10, 0.20, ... 0.80).
+// camera holds at each node for ~0.11 of the scroll interval, then
+// transitions to the next node over ~0.04. Transition windows are centered
+// at the midpoints between panel peaks.
 //
 // At scale 1.4: translate_x = 1600 - 1.4*xN.
-// Node x values: 200, 550, 900, 1250, 1600, 1950, 2300, 2650, 3000
-// Camera x values: 1320, 830, 340, -150, -640, -1130, -1620, -2110, -2600
+// Node x values: 200, 760, 1320, 1880, 2440, 3000
+// Camera x values: 1320, 536, -248, -1032, -1816, -2600
 const CAMERA_X_INPUT = [
-  0,    0.05, 0.08, 0.12, 0.18, 0.22, 0.28, 0.32, 0.38, 0.42,
-  0.48, 0.52, 0.58, 0.62, 0.68, 0.72, 0.78, 0.82, 0.93, 1,
+  0,    0.05, 0.16, 0.20, 0.31, 0.35, 0.46, 0.50, 0.61, 0.65,
+  0.76, 0.80, 0.93, 1,
 ];
 const CAMERA_X_OUTPUT = [
-  240,  1320, 1320, 830,  830,  340,  340,  -150, -150, -640,
-  -640, -1130, -1130, -1620, -1620, -2110, -2110, -2600, -2600, 240,
+  240,  1320, 1320, 536,  536,  -248, -248, -1032, -1032, -1816,
+  -1816, -2600, -2600, 240,
+];
+
+// Jet marker x position: same staircase as the camera, but in world-space
+// node-x coordinates. The jet sits at the active node during each hold,
+// then flies to the next node during the camera transition window. Since
+// the jet lives inside the camera-transformed group, it stays centered on
+// screen while the path and other nodes slide underneath — the visual of
+// the jet flying along the timeline. At scroll 0 it rests at node 1; at
+// scroll 1 it rests at node 6 (journey complete).
+const JET_X_INPUT = CAMERA_X_INPUT;
+const JET_X_OUTPUT = [
+  milestones[0].svgX, milestones[0].svgX, milestones[0].svgX,
+  milestones[1].svgX, milestones[1].svgX,
+  milestones[2].svgX, milestones[2].svgX,
+  milestones[3].svgX, milestones[3].svgX,
+  milestones[4].svgX, milestones[4].svgX,
+  milestones[5].svgX, milestones[5].svgX, milestones[5].svgX,
 ];
 
 // Horizontal correction for the overview state. The node-line midpoint
 // (x=1600) centers the circles, but the text labels extend asymmetrically
-// ("Discovery Flight" is much wider than "CFII"), so the visual composition
+// ("Discovery Flight" is much wider than "CFI"), so the visual composition
 // reads shifted left. We express the desired correction in CSS pixels so it is
 // viewport-independent in rendered space; the matching user-unit offset is
 // `cssShift / scaleCss`. This correction is applied only at the overview
@@ -122,25 +140,22 @@ const OVERVIEW_BOOST_OUTPUT = [1, 0, 0, 1];
  * fades out during the 0.04 transition window as the camera moves to the
  * next node. The next panel fades in during the same transition window.
  *
- * Transition windows (where adjacent panels crossfade): 0.08–0.12, 0.18–0.22,
- * 0.28–0.32, 0.38–0.42, 0.48–0.52, 0.58–0.62, 0.68–0.72, 0.78–0.82.
+ * Transition windows (where adjacent panels crossfade): 0.16–0.20, 0.31–0.35,
+ * 0.46–0.50, 0.61–0.65, 0.76–0.80.
  *
- * Panel 0 fades in during the zoom-in (0.02→0.05). Panel 8 fades out
+ * Panel 0 fades in during the zoom-in (0.02→0.05). Panel 5 fades out
  * just before the zoom-out (0.91→0.93).
  */
 const PANEL_OPACITY_WINDOWS: Array<{
   input: number[];
   output: number[];
 }> = [
-  { input: [0.02, 0.05, 0.08, 0.12], output: [0, 1, 1, 0] },
-  { input: [0.08, 0.12, 0.18, 0.22], output: [0, 1, 1, 0] },
-  { input: [0.18, 0.22, 0.28, 0.32], output: [0, 1, 1, 0] },
-  { input: [0.28, 0.32, 0.38, 0.42], output: [0, 1, 1, 0] },
-  { input: [0.38, 0.42, 0.48, 0.52], output: [0, 1, 1, 0] },
-  { input: [0.48, 0.52, 0.58, 0.62], output: [0, 1, 1, 0] },
-  { input: [0.58, 0.62, 0.68, 0.72], output: [0, 1, 1, 0] },
-  { input: [0.68, 0.72, 0.78, 0.82], output: [0, 1, 1, 0] },
-  { input: [0.78, 0.82, 0.91, 0.93], output: [0, 1, 1, 0] },
+  { input: [0.02, 0.05, 0.16, 0.20], output: [0, 1, 1, 0] },
+  { input: [0.16, 0.20, 0.31, 0.35], output: [0, 1, 1, 0] },
+  { input: [0.31, 0.35, 0.46, 0.50], output: [0, 1, 1, 0] },
+  { input: [0.46, 0.50, 0.61, 0.65], output: [0, 1, 1, 0] },
+  { input: [0.61, 0.65, 0.76, 0.80], output: [0, 1, 1, 0] },
+  { input: [0.76, 0.80, 0.91, 0.93], output: [0, 1, 1, 0] },
 ];
 
 /**
@@ -264,7 +279,7 @@ export function CinematicTimeline(): JSX.Element {
     OVERVIEW_BOOST_OUTPUT
   );
 
-  // 9 unrolled useTransform calls for panel opacities — keeps the
+  // 6 unrolled useTransform calls for panel opacities — keeps the
   // react-hooks linter happy (constant call count, no loops/conditionals).
   const p0 = useTransform(scrollYProgress, PANEL_OPACITY_WINDOWS[0].input, PANEL_OPACITY_WINDOWS[0].output);
   const p1 = useTransform(scrollYProgress, PANEL_OPACITY_WINDOWS[1].input, PANEL_OPACITY_WINDOWS[1].output);
@@ -272,12 +287,9 @@ export function CinematicTimeline(): JSX.Element {
   const p3 = useTransform(scrollYProgress, PANEL_OPACITY_WINDOWS[3].input, PANEL_OPACITY_WINDOWS[3].output);
   const p4 = useTransform(scrollYProgress, PANEL_OPACITY_WINDOWS[4].input, PANEL_OPACITY_WINDOWS[4].output);
   const p5 = useTransform(scrollYProgress, PANEL_OPACITY_WINDOWS[5].input, PANEL_OPACITY_WINDOWS[5].output);
-  const p6 = useTransform(scrollYProgress, PANEL_OPACITY_WINDOWS[6].input, PANEL_OPACITY_WINDOWS[6].output);
-  const p7 = useTransform(scrollYProgress, PANEL_OPACITY_WINDOWS[7].input, PANEL_OPACITY_WINDOWS[7].output);
-  const p8 = useTransform(scrollYProgress, PANEL_OPACITY_WINDOWS[8].input, PANEL_OPACITY_WINDOWS[8].output);
-  const panelOpacities: MotionValue<number>[] = [p0, p1, p2, p3, p4, p5, p6, p7, p8];
+  const panelOpacities: MotionValue<number>[] = [p0, p1, p2, p3, p4, p5];
 
-  // 9 unrolled per-node radius transforms (active r=30, inactive r=18),
+  // 6 unrolled per-node radius transforms (active r=30, inactive r=18),
   // derived from each panel's opacity (0→18, 1→30).
   const r0 = useTransform(p0, [0, 1], [18, 30]);
   const r1 = useTransform(p1, [0, 1], [18, 30]);
@@ -285,12 +297,9 @@ export function CinematicTimeline(): JSX.Element {
   const r3 = useTransform(p3, [0, 1], [18, 30]);
   const r4 = useTransform(p4, [0, 1], [18, 30]);
   const r5 = useTransform(p5, [0, 1], [18, 30]);
-  const r6 = useTransform(p6, [0, 1], [18, 30]);
-  const r7 = useTransform(p7, [0, 1], [18, 30]);
-  const r8 = useTransform(p8, [0, 1], [18, 30]);
-  const nodeRadii: MotionValue<number>[] = [r0, r1, r2, r3, r4, r5, r6, r7, r8];
+  const nodeRadii: MotionValue<number>[] = [r0, r1, r2, r3, r4, r5];
 
-  // 9 unrolled per-node opacity transforms — combine the overview boost
+  // 6 unrolled per-node opacity transforms — combine the overview boost
   // (all nodes bright at scroll 0 and 1.0) with the panel opacity (active
   // node bright during the pan) to produce the final node opacity.
   const o0 = useTransform([overviewBoost, p0], ([o, p]: number[]) => combineNodeOpacity(o, p));
@@ -299,10 +308,11 @@ export function CinematicTimeline(): JSX.Element {
   const o3 = useTransform([overviewBoost, p3], ([o, p]: number[]) => combineNodeOpacity(o, p));
   const o4 = useTransform([overviewBoost, p4], ([o, p]: number[]) => combineNodeOpacity(o, p));
   const o5 = useTransform([overviewBoost, p5], ([o, p]: number[]) => combineNodeOpacity(o, p));
-  const o6 = useTransform([overviewBoost, p6], ([o, p]: number[]) => combineNodeOpacity(o, p));
-  const o7 = useTransform([overviewBoost, p7], ([o, p]: number[]) => combineNodeOpacity(o, p));
-  const o8 = useTransform([overviewBoost, p8], ([o, p]: number[]) => combineNodeOpacity(o, p));
-  const nodeOpacities: MotionValue<number>[] = [o0, o1, o2, o3, o4, o5, o6, o7, o8];
+  const nodeOpacities: MotionValue<number>[] = [o0, o1, o2, o3, o4, o5];
+
+  // Jet marker x in world space — drives the small jet that flies along the
+  // path, node to node, as the user scrolls.
+  const jetX = useTransform(scrollYProgress, JET_X_INPUT, JET_X_OUTPUT);
 
   if (!enabled) {
     return <MilestoneStack />;
@@ -311,8 +321,8 @@ export function CinematicTimeline(): JSX.Element {
   return (
     <section
       ref={containerRef}
-      aria-label="Your flight training journey, from Discovery Flight through CFII"
-      className="relative h-[500vh] bg-immersive-bg"
+      aria-label="Your flight training journey, from Discovery Flight through CFI"
+      className="relative h-[400vh] bg-immersive-bg"
     >
       <div className="sticky top-0 h-svh overflow-hidden">
         <TimelineMedia
@@ -325,6 +335,7 @@ export function CinematicTimeline(): JSX.Element {
           cameraScale={cameraScale}
           nodeRadii={nodeRadii}
           nodeOpacities={nodeOpacities}
+          jetX={jetX}
         />
         <TimelineOverlay
           panelOpacities={panelOpacities}

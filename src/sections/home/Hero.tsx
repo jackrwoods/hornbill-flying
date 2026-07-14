@@ -24,10 +24,10 @@ export function Hero() {
             Hornbill Aviation · RNO
           </p>
           <h1 className="font-heading font-extrabold leading-[1.02] text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-on-immersive text-balance">
-            Life is better at 10,000 ft
+            Learn to Fly in Northern Nevada
           </h1>
           <p className="mt-8 font-display text-2xl md:text-3xl leading-snug text-on-immersive-muted text-balance max-w-xl">
-            From first flight to CFII, Hornbill offers Part 61 flight training at Reno–Tahoe International Airport.
+            From first flight to CFI, Hornbill offers Part 61 flight training at Reno–Tahoe International Airport.
           </p>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
             <CTALink

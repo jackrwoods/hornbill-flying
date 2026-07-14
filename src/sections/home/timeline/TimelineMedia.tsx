@@ -8,7 +8,7 @@ import { assetPath } from "@/lib/assets";
 
 interface TimelineMediaProps {
   /**
-   * 9 opacity MotionValues, one per milestone. Each drives a media layer's
+   * 6 opacity MotionValues, one per milestone. Each drives a media layer's
    * opacity across the scroll, matching the overlay panels so the images
    * fade/change with the text.
    */

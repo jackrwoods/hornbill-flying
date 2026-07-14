@@ -1,10 +1,10 @@
 /**
- * Homepage V2 cinematic timeline — the 9 pilot-journey milestones.
+ * Homepage V2 cinematic timeline — the 6 pilot-journey milestones.
  *
  * The timeline is a single straight horizontal line. The first look is the
  * full timeline zoomed out; as the user scrolls, the camera zooms into each
  * node one at a time, panning right along the line, then zooms back out at
- * the end so all 9 nodes become a clickable program nav map.
+ * the end so all 6 nodes become a clickable program nav map.
  *
  * Copy registers (per `v2-narrative-and-voice.md`):
  *   - `poeticLine`:    4–14 words, fragments allowed, one flight/Sierra
@@ -18,11 +18,11 @@
  *
  * `svgX` / `svgY` are the node positions in the TimelineCanvas SVG's user
  * coordinate system (canvas is 3200 × 1800, 16:9 to map cleanly to desktop
- * viewports). All 9 nodes sit on y=600 (upper portion — the camera frames
+ * viewports). All 6 nodes sit on y=600 (upper portion — the camera frames
  * this at the top of the viewport so overlay panels render below), evenly
- * spaced along x from 200 to 3000 (350-unit spacing):
+ * spaced along x from 200 to 3000 (560-unit spacing):
  *
- *    1 ─── 2 ─── 3 ─── 4 ─── 5 ─── 6 ─── 7 ─── 8 ─── 9   ← horizontal line (y=600)
+ *    1 ─── 2 ─── 3 ─── 4 ─── 5 ─── 6   ← horizontal line (y=600)
  */
 
 export interface Milestone {
@@ -78,26 +78,8 @@ export const milestones: Milestone[] = [
   },
   {
     index: 2,
-    title: "First Solo",
-    eyebrow: "02 · First Solo",
-    href: "/programs/private-pilot/",
-    linkLabel: "See Private Pilot",
-    poeticLine: "The cockpit is all yours.",
-    groundedLine:
-      "Most Hornbill students solo between 15 and 25 hours.",
-    differentiator:
-      "Our experienced CFIs ensure you will take flight with confidence.",
-    imageLabel: "PA28 lifting off RNO runway 17R, solo — photography coming",
-    sunsetVariant: "default",
-    svgX: 550,
-    svgY: 600,
-    mediaSrc: "/images/programs/private-pilot-og.webp",
-    mediaAlt: "First solo — PA28 lifting off RNO runway 17R.",
-  },
-  {
-    index: 3,
     title: "PPL",
-    eyebrow: "03 · Private Pilot",
+    eyebrow: "02 · Private Pilot",
     href: "/programs/private-pilot/",
     linkLabel: "See Private Pilot",
     poeticLine: "A Licence to Learn. Or for fun.",
@@ -108,15 +90,15 @@ export const milestones: Milestone[] = [
     imageLabel:
       "Left-seat PA28 panel, dual Garmin G5, checkride-ready — photography coming",
     sunsetVariant: "default",
-    svgX: 900,
+    svgX: 760,
     svgY: 600,
     mediaSrc: "/images/timeline/ppl-checkride.jpg",
     mediaAlt: "Private Pilot checkride — left-seat PA28 panel with dual Garmin G5.",
   },
   {
-    index: 4,
+    index: 3,
     title: "Cross-country",
-    eyebrow: "04 · Cross-country",
+    eyebrow: "03 · Cross-country",
     href: "/programs/private-pilot/",
     linkLabel: "See Private Pilot",
     poeticLine: "Visit real destinations as you build time.",
@@ -125,34 +107,16 @@ export const milestones: Milestone[] = [
     differentiator: "Hornbill encourages pilots to take real trips in our fleet.",
     imageLabel: "PA28 over Lake Tahoe at altitude, southbound — photography coming",
     sunsetVariant: "vertical",
-    svgX: 1250,
+    svgX: 1320,
     svgY: 600,
     mediaSrc: "/images/timeline/cross-country-flight.mp4",
     mediaAlt: "Cross-country flight — PA28 over the Sierra Nevada.",
     mediaIsVideo: true,
   },
   {
-    index: 5,
-    title: "Initial IFR Training",
-    eyebrow: "05 · First Time in Cloud",
-    href: "/programs/instrument-rating/",
-    linkLabel: "See Instrument Rating",
-    poeticLine: "Master the instruments.",
-    groundedLine:
-      "Your first IMC lesson, in an aircraft with cutting-edge Garmin avionics and WAAS-enabled GPS.",
-    differentiator:
-      "Our fleet is equipped with the latest Garmin avionics.",
-    imageLabel: "First IMC lesson in a PA28, hood on, panel lit — photography coming",
-    sunsetVariant: "soft",
-    svgX: 1600,
-    svgY: 600,
-    mediaSrc: "/images/programs/instrument-cross-country.webp",
-    mediaAlt: "First IMC lesson — PA28 in instrument cross-country conditions.",
-  },
-  {
-    index: 6,
+    index: 4,
     title: "Instrument Rating",
-    eyebrow: "06 · Instrument Rating",
+    eyebrow: "04 · Instrument Rating",
     href: "/programs/instrument-rating/",
     linkLabel: "See Instrument Rating",
     poeticLine: "Soar through the clouds.",
@@ -163,15 +127,15 @@ export const milestones: Milestone[] = [
     imageLabel:
       "IFR checkride, approach plate, attitude indicator alive — photography coming",
     sunsetVariant: "soft",
-    svgX: 1950,
+    svgX: 1880,
     svgY: 600,
     mediaSrc: "/images/programs/instrument-rating-hero.webp",
     mediaAlt: "Instrument rating — approach plate and attitude indicator alive.",
   },
   {
-    index: 7,
+    index: 5,
     title: "Commercial",
-    eyebrow: "07 · Commercial Pilot",
+    eyebrow: "05 · Commercial Pilot",
     href: "/programs/commercial-pilot/",
     linkLabel: "See Commercial Pilot",
     poeticLine: "Get paid to fly.",
@@ -181,15 +145,15 @@ export const milestones: Milestone[] = [
       "Hornbill students get real-world experience which translates into real jobs.",
     imageLabel: "PA28 on short final at RNO, gear down — photography coming",
     sunsetVariant: "vertical",
-    svgX: 2300,
+    svgX: 2440,
     svgY: 600,
     mediaSrc: "/images/programs/cfi-hero.webp",
     mediaAlt: "Commercial pilot — PA28 on short final at RNO.",
   },
   {
-    index: 8,
+    index: 6,
     title: "CFI",
-    eyebrow: "08 · Certified Flight Instructor",
+    eyebrow: "06 · Certified Flight Instructor",
     href: "/programs/certified-flight-instructor/",
     linkLabel: "See Certified Flight Instructor",
     poeticLine: "Move into the right seat.",
@@ -199,29 +163,10 @@ export const milestones: Milestone[] = [
       "Part 61 flexibility. You teach on your schedule and set your own instruction rates.",
     imageLabel: "CFI and student in the right seat, sectional open — photography coming",
     sunsetVariant: "dawn",
-    svgX: 2650,
+    svgX: 3000,
     svgY: 600,
     mediaSrc: "/images/programs/cfi-instructor-pa28.webp",
     mediaAlt: "CFI and student in the right seat of a PA28 with sectional open.",
-  },
-  {
-    index: 9,
-    title: "CFII",
-    eyebrow: "09 · CFII",
-    href: "/programs/cfii/",
-    linkLabel: "See CFII",
-    poeticLine:
-      "Teach advanced ratings.",
-    groundedLine:
-      "A CFII adds instrument-instructor privileges to your CFI; teach IFR students in our WAAS-equipped PA28s at RNO.",
-    differentiator:
-      "Teach advanced students and build valuable experience in IMC.",
-    imageLabel: "CFII and student in IMC, attitude indicator alive — photography coming",
-    sunsetVariant: "soft",
-    svgX: 3000,
-    svgY: 600,
-    mediaSrc: "/images/timeline/overview-destination.jpg",
-    mediaAlt: "Sierra Nevada destination — the view from the end of the journey.",
   },
 ];
 
