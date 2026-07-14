@@ -7,7 +7,6 @@ export function MountainFlyingHeroSection() {
   return (
     <CinematicHero
       register="product"
-      sunsetVariant="dawn"
       eyebrow="Mountain Flying · Sierra Nevada"
       placeholderLabel="PA28 on the ramp with the Sierra Nevada — photography coming"
       title={hero.title}

@@ -70,7 +70,6 @@ export default function TermsPage() {
         ]}
         eyebrow="Legal · Terms"
         placeholderLabel="Office desk, morning — photography coming"
-        sunsetVariant="soft"
       />
       <Section background="default">
         <Container>

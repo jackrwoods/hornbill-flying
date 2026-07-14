@@ -61,7 +61,6 @@ export default async function BlogIndexPage() {
         ]}
         eyebrow="Field notes"
         placeholderLabel="Cockpit panel, golden hour — photography coming"
-        sunsetVariant="default"
       />
 
       <Section background="default">

@@ -20,7 +20,8 @@ export function NavLink({
   onClick,
 }: NavLinkProps) {
   const pathname = usePathname();
-  const isActive = pathname === href || pathname.startsWith(href);
+  const isActive =
+    href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(href);
 
   return (
     <Link

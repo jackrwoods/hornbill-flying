@@ -10,12 +10,10 @@ export function InstructorsPageHeader() {
         src: "/images/fleet/n7824w-flying.webp",
         alt: "Hornbill Aviation PA28 Cherokee in flight against a blue sky",
       }}
-      sunsetVariant="dawn"
       breadcrumbs={[
         { label: "Home", href: "/" },
         { label: "Instructors" },
       ]}
-      className="-mt-16 lg:-mt-18"
     >
       <p className="mt-6 max-w-2xl text-on-immersive-muted leading-relaxed text-pretty">
         Hornbill Aviation is a Part 61 school, so you choose your instructor

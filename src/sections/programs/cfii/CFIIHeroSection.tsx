@@ -4,7 +4,6 @@ export function CFIIHeroSection() {
   return (
     <CinematicHero
       register="product"
-      sunsetVariant="vertical"
       eyebrow="CFII · Certified Flight Instructor Instrument"
       placeholderLabel="PA28 instrument panel, G5 and WAAS GPS — photography coming"
       title="CFII training in Reno, NV."

@@ -9,7 +9,7 @@ export function PrivatePilotHeroSection() {
   const { hero } = privatePilotProgram;
 
   return (
-    <section className="relative min-h-[60vh] md:min-h-[70vh] overflow-hidden bg-immersive-bg text-on-immersive flex items-end">
+    <section className="relative -mt-16 min-h-[60vh] overflow-hidden bg-immersive-bg text-on-immersive flex items-end md:min-h-[70vh] lg:-mt-18">
       <div className="absolute inset-0 z-0">
         <SunsetPlaceholder
           variant="default"

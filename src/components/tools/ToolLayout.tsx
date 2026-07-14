@@ -32,7 +32,7 @@ interface ToolLayoutProps {
   /** Launch photography placeholder label for the hero. */
   placeholderLabel?: string;
   /** Sunset gradient variant for the hero backdrop. */
-  sunsetVariant?: "default" | "vertical" | "soft" | "dawn";
+  sunsetVariant?: "default" | "vertical" | "soft" | "dawn" | "home";
 }
 
 const BASE = siteConfig.baseUrl;
@@ -47,7 +47,7 @@ export function ToolLayout({
   showCta = true,
   eyebrow = "Tools",
   placeholderLabel = "Cockpit panel, golden hour — photography coming",
-  sunsetVariant = "default",
+  sunsetVariant = "home",
 }: ToolLayoutProps) {
   const schemas = [buildBreadcrumbList(buildCrumbs(title, pageHref))];
   if (faqs && faqs.length > 0) {

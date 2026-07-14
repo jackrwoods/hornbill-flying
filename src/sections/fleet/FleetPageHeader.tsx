@@ -15,7 +15,6 @@ export function FleetPageHeader() {
         src: "/images/fleet/fleet-hero.webp",
         alt: "Hornbill Aviation PA28 Cherokee fleet on the ramp at KRNO",
       }}
-      className="-mt-16 lg:-mt-18"
     />
   );
 }

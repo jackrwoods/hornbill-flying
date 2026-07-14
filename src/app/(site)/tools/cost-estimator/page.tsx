@@ -45,7 +45,6 @@ export default function CostEstimatorPage() {
       ]}
       eyebrow="Budget"
       placeholderLabel="PA28 panel and logbook — photography coming"
-      sunsetVariant="soft"
     >
       <Reveal variant="glide">
         <div className="card-cinematic p-5 text-body">

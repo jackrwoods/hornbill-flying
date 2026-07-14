@@ -8,7 +8,6 @@ export function MembershipHeroSection() {
   return (
     <CinematicHero
       register="product"
-      sunsetVariant="default"
       placeholderLabel="PA28 on the ramp at RNO — photography coming"
       eyebrow="Membership"
       title={hero.h1}

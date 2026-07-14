@@ -26,7 +26,7 @@ interface CinematicHeroProps {
     height: number;
   };
   /** Sunset placeholder variant for the no-photo backdrop. */
-  sunsetVariant?: "default" | "vertical" | "soft" | "dawn";
+  sunsetVariant?: "default" | "vertical" | "soft" | "dawn" | "home";
   /** Optional "coming soon" label for the placeholder slot. */
   placeholderLabel?: string;
   /**
@@ -51,7 +51,7 @@ export function CinematicHero({
   subhead,
   actions = [],
   image,
-  sunsetVariant = "default",
+  sunsetVariant = "home",
   placeholderLabel,
   register = "product",
   scrim = "bottom",
@@ -62,7 +62,7 @@ export function CinematicHero({
   return (
     <section
       className={cn(
-        "relative overflow-hidden bg-immersive-bg text-on-immersive",
+        "relative -mt-16 overflow-hidden bg-immersive-bg text-on-immersive lg:-mt-18",
         isStory ? "story-hero-viewport flex items-end" : "min-h-[60vh] md:min-h-[70vh] flex items-end",
         className
       )}

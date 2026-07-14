@@ -44,7 +44,6 @@ export default function SunriseSunsetPage() {
       ]}
       eyebrow="Daylight"
       placeholderLabel="Golden hour over the Sierra at RNO — photography coming"
-      sunsetVariant="dawn"
     >
       <Reveal variant="glide">
         <div className="card-cinematic p-5 text-body">

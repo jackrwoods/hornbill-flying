@@ -7,7 +7,6 @@ export function CommercialHeroSection() {
   return (
     <CinematicHero
       register="product"
-      sunsetVariant="default"
       eyebrow="Commercial Pilot · CPL"
       placeholderLabel="PA28 cross-country over the Sierra — photography coming"
       title={hero.title}

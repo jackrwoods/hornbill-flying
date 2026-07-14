@@ -57,7 +57,6 @@ export default function ProgramsIndexPage() {
         ]}
         eyebrow="Programs"
         placeholderLabel="PA28 fleet on the RNO ramp — photography coming"
-        sunsetVariant="default"
       />
 
       <Section background="default">

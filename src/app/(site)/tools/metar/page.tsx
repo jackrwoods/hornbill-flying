@@ -45,7 +45,6 @@ export default function MetarPage() {
       ]}
       eyebrow="Weather"
       placeholderLabel="Windsock at KRNO, dusk — photography coming"
-      sunsetVariant="default"
     >
       <Reveal variant="glide">
         <div className="card-cinematic p-5 text-body">

@@ -45,7 +45,6 @@ export default function PracticeAreaMapPage() {
       ]}
       eyebrow="Local area"
       placeholderLabel="Sectional chart and cockpit — photography coming"
-      sunsetVariant="default"
     >
       <Reveal variant="glide">
         <div className="card-cinematic p-5 text-body">

@@ -69,7 +69,6 @@ export default function PrivacyPage() {
         ]}
         eyebrow="Legal · Privacy"
         placeholderLabel="Office desk, morning — photography coming"
-        sunsetVariant="soft"
       />
       <Section background="default">
         <Container>

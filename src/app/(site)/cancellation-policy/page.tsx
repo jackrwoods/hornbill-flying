@@ -70,7 +70,6 @@ export default function CancellationPolicyPage() {
         ]}
         eyebrow="Legal · Cancellation"
         placeholderLabel="Office desk, morning — photography coming"
-        sunsetVariant="soft"
       />
       <Section background="default">
         <Container>

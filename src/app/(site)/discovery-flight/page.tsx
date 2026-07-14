@@ -10,6 +10,7 @@ import { BookingWidget } from "@/components/booking/BookingWidget";
 import { BookingSkeleton } from "@/components/booking/BookingSkeleton";
 import { CTALink } from "@/components/CTALink";
 import { PhoneLink } from "@/components/PhoneLink";
+import { cn } from "@/lib/utils";
 import { siteFacts } from "@/content/siteFacts";
 import { buildTitle, buildCanonical, buildOpenGraph, buildTwitter } from "@/lib/seo";
 import { buildSchemaGraph } from "@/lib/schema";
@@ -91,19 +92,21 @@ function PoeticLine({ children, className = "" }: { children: React.ReactNode; c
 
 function StoryBeat({
   eyebrow,
-  variant = "default",
+  variant = "home",
   scrim = "bottom",
   placeholderLabel,
+  className,
   children,
 }: {
   eyebrow: string;
-  variant?: "default" | "vertical" | "soft" | "dawn";
+  variant?: "default" | "vertical" | "soft" | "dawn" | "home";
   scrim?: "bottom" | "left" | "none";
   placeholderLabel?: string;
+  className?: string;
   children: React.ReactNode;
 }) {
   return (
-    <section className="relative story-hero-viewport overflow-hidden bg-immersive-bg text-on-immersive">
+    <section className={cn("relative story-hero-viewport overflow-hidden bg-immersive-bg text-on-immersive", className)}>
       <div className="absolute inset-0 z-0">
         <SunsetPlaceholder
           variant={variant}
@@ -148,9 +151,9 @@ export default function DiscoveryFlightPage() {
       {/* Beat 1 — Pre-flight */}
       <StoryBeat
         eyebrow="Beat 01 · Pre-flight"
-        variant="dawn"
         scrim="left"
         placeholderLabel="Instructor and student on the ramp — photography coming"
+        className="-mt-16 lg:-mt-18"
       >
         <h1 className="font-heading font-extrabold leading-[1.05] text-4xl sm:text-5xl md:text-6xl text-on-immersive text-balance">
           Your first lesson is a discovery flight.
@@ -181,7 +184,6 @@ export default function DiscoveryFlightPage() {
       {/* Beat 2 — Walk-around */}
       <StoryBeat
         eyebrow="Beat 02 · Walk-around"
-        variant="default"
         placeholderLabel="Fuel sump, tire, prop — photography coming"
       >
         <PoeticLine>
@@ -192,7 +194,6 @@ export default function DiscoveryFlightPage() {
       {/* Beat 3 — Left seat */}
       <StoryBeat
         eyebrow="Beat 03 · Left seat"
-        variant="soft"
         scrim="left"
         placeholderLabel="Left seat, panel lit — photography coming"
       >
@@ -204,7 +205,6 @@ export default function DiscoveryFlightPage() {
       {/* Beat 4 — You fly */}
       <StoryBeat
         eyebrow="Beat 04 · You fly"
-        variant="vertical"
         placeholderLabel="Aerial over the Sierra, golden hour — photography coming"
       >
         <PoeticLine>

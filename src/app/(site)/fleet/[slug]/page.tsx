@@ -111,7 +111,6 @@ export default async function FleetDetailPage({
         ]}
         eyebrow={isAircraft(member) ? "PA28 Cherokee" : "Training device"}
         placeholderLabel={`${isAircraft(member) ? member.tail : member.name} — photography coming`}
-        sunsetVariant="default"
       />
       <FleetMemberDetailSection member={member} />
       <FleetDetailCTASection />

@@ -39,7 +39,6 @@ export default function ToolsHubPage() {
       showCta
       eyebrow="Tools"
       placeholderLabel="Flight planning desk, charts and E6B — photography coming"
-      sunsetVariant="soft"
     >
       <div className="prose prose-cinematic max-w-none text-muted">
         <p>

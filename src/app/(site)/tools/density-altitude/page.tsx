@@ -45,7 +45,6 @@ export default function DensityAltitudePage() {
       ]}
       eyebrow="Performance"
       placeholderLabel="PA28 runup at high-elevation RNO — photography coming"
-      sunsetVariant="default"
     >
       <Reveal variant="glide">
         <div className="card-cinematic p-5 text-body">

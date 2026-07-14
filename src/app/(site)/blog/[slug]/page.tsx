@@ -108,7 +108,6 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         ]}
         eyebrow="Field notes"
         placeholderLabel={`${post.category} — photography coming`}
-        sunsetVariant="default"
       />
 
       <Section background="card">

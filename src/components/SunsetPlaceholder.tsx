@@ -5,7 +5,8 @@ type SunsetVariant =
   | "default"
   | "vertical"
   | "soft"
-  | "dawn";
+  | "dawn"
+  | "home";
 
 interface SunsetPlaceholderProps {
   label?: string;
@@ -21,10 +22,11 @@ interface SunsetPlaceholderProps {
 }
 
 const variantClass: Record<SunsetVariant, string> = {
-  default: "bg-sunset-placeholder",
+  default: "bg-sunset-home",
   vertical: "bg-sunset-placeholder-vertical",
   soft: "bg-sunset-placeholder-soft",
   dawn: "bg-sunset-placeholder-dawn",
+  home: "bg-sunset-home",
 };
 
 /**

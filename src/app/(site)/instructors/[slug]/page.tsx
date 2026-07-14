@@ -106,7 +106,6 @@ export default async function InstructorPage({
         subtitle="Certified Flight Instructor, Hornbill Aviation"
         eyebrow="Our Team"
         placeholderLabel={`${instructor.name} — portrait photography coming`}
-        sunsetVariant="dawn"
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Instructors", href: "/instructors/" },

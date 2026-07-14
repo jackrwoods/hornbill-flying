@@ -8,7 +8,6 @@ export function CFIHeroSection() {
   return (
     <CinematicHero
       register="product"
-      sunsetVariant="soft"
       eyebrow="Certified Flight Instructor · CFI"
       placeholderLabel="CFI candidate and instructor in the PA28 — photography coming"
       title={hero.title}

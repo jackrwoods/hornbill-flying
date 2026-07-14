@@ -45,7 +45,6 @@ export default function CrossCountryEstimatorPage() {
       ]}
       eyebrow="Planning"
       placeholderLabel="Cockpit chart and route line — photography coming"
-      sunsetVariant="soft"
     >
       <Reveal variant="glide">
         <div className="card-cinematic p-5 text-body">

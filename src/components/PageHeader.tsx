@@ -27,7 +27,7 @@ interface PageHeaderProps {
   /** Launch photography placeholder label (shown only when no image). */
   placeholderLabel?: string;
   /** Sunset gradient variant for the no-image backdrop. */
-  sunsetVariant?: "default" | "vertical" | "soft" | "dawn";
+  sunsetVariant?: "default" | "vertical" | "soft" | "dawn" | "home";
   /** "product" (default) is a contained band; "story" is full-viewport. */
   register?: "product" | "story";
   className?: string;
@@ -41,7 +41,7 @@ export function PageHeader({
   image,
   eyebrow,
   placeholderLabel,
-  sunsetVariant = "default",
+  sunsetVariant = "home",
   register = "product",
   className,
   children,
@@ -50,7 +50,7 @@ export function PageHeader({
   return (
     <section
       className={cn(
-        "relative overflow-hidden bg-immersive-bg text-on-immersive",
+        "relative -mt-16 overflow-hidden bg-immersive-bg text-on-immersive lg:-mt-18",
         isStory ? "story-hero-viewport flex items-end" : "min-h-[52vh] md:min-h-[64vh] flex items-end",
         className
       )}

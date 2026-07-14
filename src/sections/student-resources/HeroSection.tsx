@@ -16,7 +16,6 @@ export function HeroSection() {
         ]}
         eyebrow="Student resources"
         placeholderLabel="Ramp checklist, PA28 — photography coming"
-        sunsetVariant="dawn"
       />
 
       <Section background="callout" className="py-8 md:py-10">

@@ -68,7 +68,6 @@ export default function ContactPage() {
         ]}
         eyebrow="Contact · KRNO"
         placeholderLabel="Office on the RNO ramp — photography coming"
-        sunsetVariant="dawn"
       />
       <ContactDetailsSection />
       <ContactMapSection />
