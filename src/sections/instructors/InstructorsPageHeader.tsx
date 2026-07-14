@@ -7,8 +7,8 @@ export function InstructorsPageHeader() {
       title="Part 61 flight instructors in Reno, NV"
       subtitle="Choose the CFI who fits your goals and schedule."
       image={{
-        src: "/images/instructors/person-leaning-airplane-hoodie.png",
-        alt: "Hornbill Aviation flight instructor with a PA28 Cherokee on the ramp at KRNO",
+        src: "/images/fleet/n7824w-flying.webp",
+        alt: "Hornbill Aviation PA28 Cherokee in flight against a blue sky",
       }}
       sunsetVariant="dawn"
       breadcrumbs={[
