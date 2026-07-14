@@ -18,7 +18,7 @@ export function Hero() {
   return (
     <section className="relative -mt-16 min-h-svh overflow-hidden bg-immersive-bg text-on-immersive lg:-mt-18">
       <HeroMedia />
-      <Container className="relative z-10 flex min-h-svh flex-col justify-end pb-20 md:pb-28">
+      <Container className="relative z-10 flex min-h-svh flex-col justify-end pt-16 lg:pt-18 pb-20 md:pb-28">
         <Reveal variant="stagger" className="max-w-2xl">
           <p>
             Hornbill Aviation · RNO

@@ -96,7 +96,7 @@ export function CinematicHero({
         />
       </div>
 
-      <Container className={cn("relative z-10", isStory ? "pb-20 md:pb-28" : "pb-16 md:pb-20")}>
+      <Container className={cn("relative z-10 pt-16 lg:pt-18", isStory ? "pb-20 md:pb-28" : "pb-16 md:pb-20")}>
         <Reveal variant="stagger" className="max-w-3xl">
           {eyebrow ? (
             <p className="panel-label-lg text-immersive-accent mb-5">

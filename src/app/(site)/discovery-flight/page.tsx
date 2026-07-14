@@ -153,7 +153,7 @@ export default function DiscoveryFlightPage() {
         eyebrow="Beat 01 · Pre-flight"
         scrim="left"
         placeholderLabel="Instructor and student on the ramp — photography coming"
-        className="-mt-16 lg:-mt-18"
+        className="pt-16 lg:pt-18 -mt-16 lg:-mt-18"
       >
         <h1 className="font-heading font-extrabold leading-[1.05] text-4xl sm:text-5xl md:text-6xl text-on-immersive text-balance">
           Your first lesson is a discovery flight.

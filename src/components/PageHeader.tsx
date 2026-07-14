@@ -83,7 +83,7 @@ export function PageHeader({
         <div className="absolute inset-0 bg-panel-scrim-bottom" />
       </div>
 
-      <Container className={cn("relative z-10", isStory ? "pb-20 md:pb-28" : "pb-16 md:pb-20")}>
+      <Container className={cn("relative z-10 pt-16 lg:pt-18", isStory ? "pb-20 md:pb-28" : "pb-16 md:pb-20")}>
         {breadcrumbs && breadcrumbs.length > 0 && (
           <nav aria-label="Breadcrumb" className="mb-4">
             <ol className="flex flex-wrap items-center gap-2 text-sm text-on-immersive-muted">

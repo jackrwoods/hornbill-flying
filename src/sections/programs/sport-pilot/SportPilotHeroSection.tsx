@@ -20,7 +20,7 @@ export function SportPilotHeroSection() {
         <div className="absolute inset-0 bg-panel-scrim-bottom" />
       </div>
 
-      <Container className="relative z-10 pb-16 md:pb-20">
+      <Container className="relative z-10 pt-16 lg:pt-18 pb-16 md:pb-20">
         <Reveal variant="stagger" className="max-w-3xl">
           <p className="panel-label-lg text-immersive-accent mb-4">
             Programs · Sport Pilot

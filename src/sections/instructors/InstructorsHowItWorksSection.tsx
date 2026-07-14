@@ -2,6 +2,7 @@ import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
 import { Reveal } from "@/components/Reveal";
 import { CTALink } from "@/components/CTALink";
+import { AssetImage } from "@/components/AssetImage";
 
 const steps = [
   "CFIs set their own rates.",
@@ -15,23 +16,30 @@ export function InstructorsHowItWorksSection() {
     <Section
       background="default"
       id="how-it-works"
-      className="relative overflow-hidden bg-sunset-placeholder-soft bg-sunset-shimmer py-20 md:py-28"
+      className="relative overflow-hidden py-20 md:py-28"
     >
+      <div className="absolute inset-0 z-0" aria-hidden="true">
+        <AssetImage
+          src="/images/fleet/n6576j-panel.jpeg"
+          alt=""
+          fill
+          sizes="100vw"
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-immersive-bg/80" />
+      </div>
       <Container className="relative z-10">
         <Reveal
           variant="glide"
           className="card-immersive p-6 md:p-10 lg:p-12"
         >
-          <p className="panel-label-lg text-immersive-accent mb-4 text-center">
-            How it works
-          </p>
           <h2 className="font-heading text-3xl md:text-4xl text-on-immersive text-balance text-center">
-            How CFIs work with Hornbill
+            How it Works
           </h2>
           <p className="mt-4 mx-auto max-w-2xl text-on-immersive-muted text-pretty text-center">
             Four simple expectations for every instructor on our team.
           </p>
-          <ol className="mt-8 grid gap-5 sm:grid-cols-2">
+          <ol className="mt-8 grid gap-x-5 gap-y-3 sm:grid-cols-2">
             {steps.map((step, index) => (
               <li key={index} className="flex items-start gap-4">
                 <span
