@@ -15,6 +15,7 @@ import {
 import { SchemaInjector } from "@/components/SchemaInjector";
 import { InstructorsPageHeader } from "@/sections/instructors/InstructorsPageHeader";
 import { InstructorGridSection } from "@/sections/instructors/InstructorGridSection";
+import { InstructorsHowItWorksSection } from "@/sections/instructors/InstructorsHowItWorksSection";
 import { InstructorsFAQSection } from "@/sections/instructors/InstructorsFAQSection";
 import { InstructorsCTASection } from "@/sections/instructors/InstructorsCTASection";
 import { instructors } from "@/content/instructors";
@@ -57,6 +58,7 @@ export default function InstructorsPage() {
       <SchemaInjector schema={schema} id="instructors-schema" />
       <InstructorsPageHeader />
       <InstructorGridSection />
+      <InstructorsHowItWorksSection />
       <InstructorsFAQSection />
       <InstructorsCTASection />
     </>

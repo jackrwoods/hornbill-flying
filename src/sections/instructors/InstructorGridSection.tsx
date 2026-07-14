@@ -1,9 +1,11 @@
 import Link from "next/link";
+import { AssetImage as Image } from "@/components/AssetImage";
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
 import { Reveal } from "@/components/Reveal";
 import { SunsetPlaceholder } from "@/components/SunsetPlaceholder";
 import { instructors } from "@/content/instructors";
+import { siteConfig } from "@/lib/config";
 
 export function InstructorGridSection() {
   return (
@@ -28,20 +30,32 @@ export function InstructorGridSection() {
               <Reveal
                 key={instructor.slug}
                 variant="glide"
-                className="card-cinematic p-5 flex flex-col"
+                className="card-cinematic relative flex flex-col p-5 transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl focus-within:-translate-y-1"
               >
-                <SunsetPlaceholder
-                  variant="vertical"
-                  label={`${instructor.name} — portrait photography coming`}
-                  className="aspect-[4/5] w-full rounded-lg"
-                />
+                <div className="aspect-[4/5] w-full overflow-hidden rounded-lg">
+                  {instructor.photo ? (
+                    <Image
+                      src={instructor.photo}
+                      alt={instructor.altText}
+                      width={400}
+                      height={500}
+                      className="h-full w-full object-cover"
+                    />
+                  ) : (
+                    <SunsetPlaceholder
+                      variant="vertical"
+                      label={`${instructor.name} — portrait photography coming`}
+                      className="h-full w-full"
+                    />
+                  )}
+                </div>
 
                 <h3 className="mt-5 font-heading text-2xl text-heading">
                   {instructor.name}
                 </h3>
 
                 <div className="mt-3 flex flex-wrap gap-2">
-                  {instructor.specialties.slice(0, 4).map((specialty) => (
+                  {instructor.specialties.map((specialty) => (
                     <span
                       key={specialty}
                       className="inline-flex items-center rounded-full bg-accent px-3 py-1 text-xs font-semibold text-heading"
@@ -62,7 +76,7 @@ export function InstructorGridSection() {
                     {firstName} also mentors{" "}
                     <Link
                       href="/programs/certified-flight-instructor/"
-                      className="beak-flash font-semibold text-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-focus-ring focus-visible:ring-offset-2 rounded"
+                      className="beak-flash relative z-20 font-semibold text-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-focus-ring focus-visible:ring-offset-2 rounded"
                     >
                       CFI candidates
                     </Link>
@@ -70,7 +84,6 @@ export function InstructorGridSection() {
                   </p>
                 )}
 
-                {/* Certificate number intentionally omitted at launch. Enable per-CFI once consent is confirmed. */}
                 {instructor.publishCertificate && instructor.certificateNumber && (
                   <p className="mt-3 text-xs text-muted nums">
                     Certificate: {instructor.certificateNumber}
@@ -78,19 +91,21 @@ export function InstructorGridSection() {
                 )}
 
                 <div className="mt-auto flex flex-col gap-3 pt-5">
-                  <Link
-                    href={instructor.bookingLink}
-                    className="inline-flex items-center justify-center rounded-lg bg-dark px-5 py-3 text-center text-sm font-semibold text-on-dark transition-colors hover:bg-dark-muted focus:outline-none focus-visible:ring-2 focus-visible:ring-focus-ring focus-visible:ring-offset-2"
+                  <a
+                    href={siteConfig.flightCircleScheduleUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="relative z-20 inline-flex items-center justify-center rounded-lg bg-dark px-5 py-3 text-center text-sm font-semibold text-on-dark transition-colors hover:bg-dark-muted focus:outline-none focus-visible:ring-2 focus-visible:ring-focus-ring focus-visible:ring-offset-2"
                   >
                     Book with {firstName}
-                  </Link>
-                  <Link
-                    href={instructor.bookingLink}
-                    className="inline-flex items-center justify-center rounded-lg border-2 border-border px-5 py-3 text-center text-sm font-semibold text-heading transition-colors hover:bg-dark/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-dark focus-visible:ring-offset-2"
-                  >
-                    View full profile
-                  </Link>
+                  </a>
                 </div>
+
+                <Link
+                  href={instructor.bookingLink}
+                  className="absolute inset-0 z-10"
+                  aria-label={`View ${instructor.name} profile`}
+                />
               </Reveal>
             );
           })}

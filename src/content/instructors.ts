@@ -7,10 +7,11 @@ export const instructors: Instructor[] = [
     title: "Certified Flight Instructor — Instrument",
     tagline: "Private through CFI/CFII, instrument, and mountain flying at RNO",
     specialties: [
-      "Private through Commercial pilot training",
-      "Instrument Rating (CFII)",
-      "CFI/CFII mentoring",
-      "Mountain flying and cross-country trips",
+      "CFI/CFII Mentoring",
+      "Flight Reviews",
+      "CPL",
+      "Mountain Flying",
+      "IPCs",
     ],
     photo: "/images/instructors/person-leaning-airplane-hoodie.png",
     previewPhoto: "/images/instructors/trygve-portrait.webp",
@@ -84,10 +85,10 @@ export const instructors: Instructor[] = [
     title: "Certified Flight Instructor",
     tagline: "Private and Commercial students from discovery flight to checkride",
     specialties: [
-      "Private Pilot training",
-      "Commercial Pilot training",
-      "Discovery flights",
-      "Young and first-time students",
+      "Discovery Flights",
+      "Private Pilot",
+      "Instrument",
+      "Commercial Pilot",
     ],
     photo: "/images/instructors/person-by-airplane-propeller.png",
     previewPhoto: "/images/instructors/ethan-portrait.webp",
@@ -144,10 +145,10 @@ export const instructors: Instructor[] = [
     title: "Certified Flight Instructor — Instrument",
     tagline: "Private through Commercial, instrument, and CFI/CFII training",
     specialties: [
-      "Private through Commercial pilot training",
-      "Instrument Rating (CFII)",
-      "CFI/CFII mentoring",
-      "Mountain and cross-country flying",
+      "Discovery Flights",
+      "Private Pilot",
+      "Instrument",
+      "Commercial Pilot",
     ],
     photo: "/images/instructors/person-by-airplane-american-flag.png",
     previewPhoto: "/images/instructors/joel-portrait.webp",
@@ -170,8 +171,6 @@ export const instructors: Instructor[] = [
       "private-pilot",
       "instrument-rating",
       "commercial-pilot",
-      "certified-flight-instructor",
-      "cfii",
     ],
     bookingSlug: "joel",
     bookingLink: "/instructors/joel/",
@@ -202,58 +201,57 @@ export const instructors: Instructor[] = [
     published: true,
   },
   {
-    slug: "jeremy",
-    name: "Jeremy",
+    slug: "kurtis",
+    name: "Kurtis",
     title: "Certified Flight Instructor",
-    tagline: "Private and Commercial training with a focus on safety and precision",
+    tagline: "Private, Instrument, and Commercial training at RNO",
     specialties: [
-      "Private Pilot training",
-      "Commercial Pilot training",
-      "First-time students",
-      "Safety and precision",
+      "Discovery Flights",
+      "Private Pilot",
+      "Instrument",
+      "Commercial Pilot",
     ],
     photo: "/images/instructors/person-by-airplane-tail.png",
     previewPhoto: "/images/instructors/jeremy-portrait.webp",
     altText:
-      "Headshot of Jeremy, Certified Flight Instructor at Hornbill Aviation",
+      "Headshot of Kurtis, Certified Flight Instructor at Hornbill Aviation",
     certificateNumber: null,
     publishCertificate: false,
     bio:
-      "Jeremy is a Certified Flight Instructor with four years of flying experience. His teaching combines enthusiasm with a " +
-      "strong focus on safety, precision, and customer care. Inspired by Hornbill Aviation's supportive community and his family's " +
-      "encouragement, he helps the next generation of aviators turn their goals into reality.\n\n" +
-      "He holds Commercial Pilot, Airplane Single-Engine Land, and CFI certificates and works with Private and Commercial pilot " +
-      "candidates at Reno–Tahoe International (KRNO).",
+      "Kurtis is a Certified Flight Instructor with Hornbill Aviation, working with Private, Instrument, and Commercial pilot " +
+      "candidates at Reno–Tahoe International (KRNO). He enjoys guiding first-time flyers from discovery flight through checkride " +
+      "and helping existing pilots add new ratings.\n\n" +
+      "He holds Commercial Pilot, Airplane Single-Engine Land, and CFI certificates and is available by appointment at KRNO.",
     credentials: {
       certificates: ["CFI", "Commercial ASEL"],
     },
     typicalAvailability:
       "Based at KRNO; available by appointment",
-    teachesPrograms: ["private-pilot", "commercial-pilot"],
-    bookingSlug: "jeremy",
-    bookingLink: "/instructors/jeremy/",
+    teachesPrograms: ["private-pilot", "instrument-rating", "commercial-pilot"],
+    bookingSlug: "kurtis",
+    bookingLink: "/instructors/kurtis/",
     website: null,
-    metaTitle: "Jeremy — Flight Instructor in Reno, NV",
+    metaTitle: "Kurtis — Flight Instructor in Reno, NV",
     metaDescription:
-      "Train with Jeremy, a CFI at Reno-Tahoe (RNO). Specialties: private pilot, commercial pilot, first-time students. Book a discovery flight with Jeremy.",
+      "Train with Kurtis, a CFI at Reno-Tahoe (RNO). Specialties: discovery flights, private pilot, instrument, commercial pilot. Book a discovery flight with Kurtis.",
     faq: [
       {
-        id: "jeremy-discovery",
-        question: "Can I request Jeremy for my discovery flight?",
+        id: "kurtis-discovery",
+        question: "Can I request Kurtis for my discovery flight?",
         answer:
-          "Yes. Select Jeremy when booking a discovery flight. He is a good match for first-time flyers and anyone starting their aviation journey.",
+          "Yes. Select Kurtis when booking a discovery flight. He is a good match for first-time flyers and anyone starting their aviation journey.",
       },
       {
-        id: "jeremy-ratings",
-        question: "What ratings does Jeremy teach?",
+        id: "kurtis-ratings",
+        question: "What ratings does Kurtis teach?",
         answer:
-          "Jeremy teaches Private Pilot and Commercial Pilot training, with an emphasis on safety, precision, and building confidence in the cockpit.",
+          "Kurtis teaches Private Pilot, Instrument Rating, and Commercial Pilot training at Hornbill Aviation.",
       },
       {
-        id: "jeremy-experience",
-        question: "How much experience does Jeremy have?",
+        id: "kurtis-availability",
+        question: "Where is Kurtis based?",
         answer:
-          "Jeremy has four years of flying experience and brings an enthusiastic, safety-focused approach to every lesson.",
+          "Kurtis is based at Reno–Tahoe International (KRNO) and is available by appointment.",
       },
     ],
     published: true,

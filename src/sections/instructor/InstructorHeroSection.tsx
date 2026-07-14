@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AssetImage as Image } from "@/components/AssetImage";
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
 import { Reveal } from "@/components/Reveal";
@@ -26,11 +27,23 @@ export function InstructorHeroSection({ instructor }: InstructorHeroSectionProps
       <Container>
         <div className="grid gap-10 md:grid-cols-2 md:items-center">
           <Reveal variant="horizon">
-            <SunsetPlaceholder
-              variant="dawn"
-              label={`${instructor.name} — portrait photography coming`}
-              className="aspect-[4/5] w-full max-w-sm rounded-xl"
-            />
+            {instructor.photo ? (
+              <div className="aspect-[4/5] w-full max-w-sm overflow-hidden rounded-xl">
+                <Image
+                  src={instructor.photo}
+                  alt={instructor.altText}
+                  width={400}
+                  height={500}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+            ) : (
+              <SunsetPlaceholder
+                variant="dawn"
+                label={`${instructor.name} — portrait photography coming`}
+                className="aspect-[4/5] w-full max-w-sm rounded-xl"
+              />
+            )}
           </Reveal>
 
           <Reveal variant="glide" className="flex flex-col gap-5">
