@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
 import { AssetImage as Image } from "@/components/AssetImage";
+import { ImageCarousel } from "@/components/ImageCarousel";
 import { Reveal } from "@/components/Reveal";
 import { DownloadCard } from "@/components/DownloadCard";
 import { membershipRates } from "@/content/fleet";
@@ -22,15 +23,19 @@ export function FleetMemberDetailSection({
       <Container>
         <div className="grid gap-10 lg:grid-cols-2">
           <Reveal variant="horizon">
-            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-immersive-bg">
-              <Image
-                src={member.photo}
-                alt={member.photoAlt}
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
-              />
-            </div>
+            {isAircraft(member) && member.gallery.length > 0 ? (
+              <ImageCarousel images={member.gallery} aspectRatio="aspect-[4/3]" />
+            ) : (
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-immersive-bg">
+                <Image
+                  src={member.photo}
+                  alt={member.photoAlt}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover"
+                />
+              </div>
+            )}
           </Reveal>
 
           <Reveal variant="glide" className="flex flex-col gap-6">
