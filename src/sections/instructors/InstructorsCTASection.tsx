@@ -1,3 +1,4 @@
+import { AssetImage as Image } from "@/components/AssetImage";
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
 import { Reveal } from "@/components/Reveal";
@@ -12,13 +13,20 @@ export function InstructorsCTASection() {
       className="relative overflow-hidden"
     >
       <div
-        className="absolute inset-0 bg-blueprint-grid opacity-60"
+        className="absolute inset-0 bg-blueprint-grid opacity-40"
         aria-hidden="true"
       />
-      <div
-        className="absolute inset-0 bg-sunset-placeholder-dawn opacity-25"
-        aria-hidden="true"
-      />
+      <div className="absolute inset-0 z-0" aria-hidden="true">
+        <Image
+          src="/images/discovery-flight-hero.jpg"
+          alt=""
+          fill
+          priority={false}
+          className="object-cover opacity-30"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-hero-scrim" />
+      </div>
       <Container className="relative z-10 py-24 md:py-32 text-center">
         <Reveal
           variant="stagger"
