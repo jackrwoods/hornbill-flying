@@ -416,9 +416,10 @@ export function getPublishedRoutes(): RouteMeta[] {
  */
 export function getHeaderNav(): NavItem[] {
   return [
-    { label: "Fleet & Pricing", href: "/fleet/" },
-    { label: "Membership", href: "/membership/" },
+    { label: "Home", href: "/" },
     { label: "Instructors", href: "/instructors/" },
+    { label: "Fleet", href: "/fleet/" },
+    { label: "Membership", href: "/membership/" },
   ];
 }
 

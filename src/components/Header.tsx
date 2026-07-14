@@ -3,8 +3,6 @@
 import { useEffect, useState } from "react";
 import { Logo } from "./Logo";
 import { NavLink } from "./NavLink";
-import { CTALink } from "./CTALink";
-import { PhoneLink } from "./PhoneLink";
 import { MobileNav } from "./MobileNav";
 import { Container } from "./Container";
 import { getHeaderNav } from "@/lib/routes";
@@ -89,21 +87,12 @@ export function Header() {
               href={siteConfig.flightCircleScheduleUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className={navLinkBase}
+              className="ml-2 inline-flex items-center justify-center rounded-lg bg-header-cta-bg px-5 py-2.5 text-sm font-semibold uppercase tracking-[0.08em] text-header-cta-text transition-colors hover:bg-header-cta-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-focus-ring focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
               data-analytics="header_schedule_click"
             >
               Schedule
             </a>
           </nav>
-
-          <div className="hidden shrink-0 items-center gap-4 lg:flex">
-            <PhoneLink className="text-sm text-on-dark hover:text-on-dark-accent" />
-            <CTALink
-              href="/discovery-flight/"
-              variant="header-cta"
-              analytics="discovery_flight_booking_started"
-            />
-          </div>
 
           <MobileNav items={navItems} />
         </div>

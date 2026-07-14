@@ -2,8 +2,6 @@
 
 import { useState } from "react";
 import { NavLink } from "./NavLink";
-import { CTALink } from "./CTALink";
-import { PhoneLink } from "./PhoneLink";
 import { siteConfig } from "@/lib/config";
 import type { NavItem } from "@/types";
 
@@ -93,24 +91,13 @@ export function MobileNav({ items }: MobileNavProps) {
               href={siteConfig.flightCircleScheduleUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className={mobileNavBase}
+              className="mt-2 inline-flex items-center justify-center rounded-lg bg-header-cta-bg px-5 py-3 text-base font-semibold uppercase tracking-wide text-header-cta-text transition-colors hover:bg-header-cta-hover"
               onClick={() => setIsOpen(false)}
               data-analytics="mobile_schedule_click"
             >
               Schedule
             </a>
           </nav>
-
-          <div className="mt-4 flex flex-col gap-3 border-t border-divider pt-4">
-            <PhoneLink className="text-ink" showIcon />
-            <CTALink
-              href="/discovery-flight/"
-              variant="header-cta"
-              className="w-full shadow-[inset_0_0_0_2px_transparent] hover:shadow-[inset_0_0_0_2px_var(--color-header-hover-border)]"
-              analytics="discovery_flight_booking_started"
-              onClick={() => setIsOpen(false)}
-            />
-          </div>
         </div>
       )}
     </div>
