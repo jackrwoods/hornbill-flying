@@ -110,7 +110,10 @@ export default async function FleetDetailPage({
           { label: isAircraft(member) ? member.tail : member.name },
         ]}
         eyebrow={isAircraft(member) ? "PA28 Cherokee" : "Training device"}
-        placeholderLabel={`${isAircraft(member) ? member.tail : member.name} — photography coming`}
+        image={{
+          src: member.photo,
+          alt: member.photoAlt,
+        }}
       />
       <FleetMemberDetailSection member={member} />
       <FleetDetailCTASection />
