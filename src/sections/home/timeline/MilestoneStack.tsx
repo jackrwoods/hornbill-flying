@@ -1,17 +1,17 @@
 import { Container } from "@/components/Container";
 import { Reveal } from "@/components/Reveal";
-import { SunsetPlaceholder } from "@/components/SunsetPlaceholder";
+import { AssetImage } from "@/components/AssetImage";
 import { CTALink } from "@/components/CTALink";
 import { milestones } from "@/sections/home/timeline/milestones";
+import { assetPath } from "@/lib/assets";
 
 /**
  * Mobile / reduced-motion fallback for the cinematic timeline.
  *
  * Renders when `useScrubbedTransform`'s gate returns disabled (viewport < 768px
  * or `prefers-reduced-motion: reduce`). Plain vertical stack of 6 cards, one
- * per milestone, each with a `Reveal variant="glide"` entrance. No pin, no SVG,
- * no Framer scroll. Server component — the `Reveal` child handles its own
- * client-side IntersectionObserver internally.
+ * per milestone, each with a `Reveal variant="glide"` entrance. Uses the same
+ * media assets and copy as the desktop cinematic timeline.
  */
 export function MilestoneStack() {
   return (
@@ -43,15 +43,32 @@ export function MilestoneStack() {
                 <article className="grid gap-8 md:grid-cols-2 md:gap-12 items-center">
                   <div
                     className={
-                      "aspect-4/3 overflow-hidden rounded-xl " +
+                      "relative aspect-4/3 overflow-hidden rounded-xl " +
                       (imageLeft ? "" : "md:order-2")
                     }
                   >
-                    <SunsetPlaceholder
-                      variant={m.sunsetVariant}
-                      label={m.imageLabel}
-                      className="h-full w-full"
-                    />
+                    {m.mediaIsVideo ? (
+                      <video
+                        className="h-full w-full object-cover"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        preload="auto"
+                        poster=""
+                        aria-label={m.mediaAlt}
+                      >
+                        <source src={assetPath(m.mediaSrc)} type="video/mp4" />
+                      </video>
+                    ) : (
+                      <AssetImage
+                        src={m.mediaSrc}
+                        alt={m.mediaAlt}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        className="object-cover"
+                      />
+                    )}
                   </div>
                   <div
                     className={
