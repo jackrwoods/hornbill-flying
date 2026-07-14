@@ -36,85 +36,84 @@ export function AircraftCardsSection() {
             <Reveal
               key={member.slug}
               variant="glide"
-              className="card-cinematic overflow-hidden flex flex-col"
             >
-              <div className="relative aspect-[4/3] w-full overflow-hidden bg-immersive-bg">
-                <Image
-                  src={member.photo}
-                  alt={member.photoAlt}
-                  fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  className="object-cover"
-                />
-              </div>
-              <div className="flex flex-1 flex-col p-5">
-                <h3 className="font-heading text-2xl text-heading">
-                  {isAircraft(member) ? member.tail : member.name}
-                </h3>
+              <Link
+                href={`/fleet/${member.slug}/`}
+                className="card-cinematic group flex flex-col overflow-hidden focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2"
+              >
+                <div className="relative aspect-[4/3] w-full overflow-hidden bg-immersive-bg">
+                  <Image
+                    src={member.photo}
+                    alt={member.photoAlt}
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div className="flex flex-1 flex-col p-5">
+                  <h3 className="font-heading text-2xl text-heading">
+                    {isAircraft(member) ? member.tail : member.name}
+                  </h3>
 
-                {isAircraft(member) ? (
-                  <div className="mt-4 space-y-3 text-sm">
-                    <div>
-                      <h4 className="font-semibold text-muted">Engine</h4>
-                      <p>{member.engine}</p>
+                  {isAircraft(member) ? (
+                    <div className="mt-4 space-y-3 text-sm">
+                      <div>
+                        <h4 className="font-semibold text-muted">Engine</h4>
+                        <p>{member.engine}</p>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-muted">Avionics</h4>
+                        <ul className="list-disc pl-4">
+                          {member.avionics.map((item) => (
+                            <li key={item}>{item}</li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-muted">Notes</h4>
+                        <p>{member.notes}</p>
+                      </div>
                     </div>
-                    <div>
-                      <h4 className="font-semibold text-muted">Avionics</h4>
-                      <ul className="list-disc pl-4">
-                        {member.avionics.map((item) => (
-                          <li key={item}>{item}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-muted">Notes</h4>
+                  ) : (
+                    <div className="mt-4 space-y-3 text-sm">
+                      <p>{member.tagline}</p>
                       <p>{member.notes}</p>
                     </div>
-                  </div>
-                ) : (
-                  <div className="mt-4 space-y-3 text-sm">
-                    <p>{member.tagline}</p>
-                    <p>{member.notes}</p>
-                  </div>
-                )}
-
-                <div className="mt-auto pt-5 flex flex-wrap gap-2">
-                  {isAircraft(member) && (
-                    <>
-                      <span className="nums inline-flex rounded-full bg-dark px-3 py-1 text-xs font-semibold text-on-dark">
-                        Member ${memberRate}/hr
-                      </span>
-                      <span className="nums inline-flex rounded-full bg-bg border border-border-subtle px-3 py-1 text-xs font-semibold text-heading">
-                        Non-member ${nonMemberRate}/hr
-                      </span>
-                      {member.ifrEquipped && (
-                        <span className="inline-flex rounded-full bg-callout px-3 py-1 text-xs font-semibold text-heading">
-                          IFR equipped
-                        </span>
-                      )}
-                      {member.crossCountryReady && (
-                        <span className="inline-flex rounded-full bg-callout px-3 py-1 text-xs font-semibold text-heading">
-                          Cross-country ready
-                        </span>
-                      )}
-                    </>
                   )}
-                  {!isAircraft(member) && (
-                    <span className="inline-flex rounded-full bg-callout px-3 py-1 text-xs font-semibold text-heading">
-                      Procedure training
-                    </span>
-                  )}
-                </div>
 
-                <p className="mt-4 text-sm">
-                  <Link
-                    href={`/fleet/${member.slug}/`}
-                    className="beak-flash font-semibold text-accent focus:outline-none focus:ring-2 focus:ring-focus-ring focus:ring-offset-2 rounded"
-                  >
+                  <div className="mt-auto pt-5 flex flex-wrap gap-2">
+                    {isAircraft(member) && (
+                      <>
+                        <span className="nums inline-flex rounded-full bg-dark px-3 py-1 text-xs font-semibold text-on-dark">
+                          Member ${memberRate}/hr
+                        </span>
+                        <span className="nums inline-flex rounded-full bg-bg border border-border-subtle px-3 py-1 text-xs font-semibold text-heading">
+                          Non-member ${nonMemberRate}/hr
+                        </span>
+                        {member.ifrEquipped && (
+                          <span className="inline-flex rounded-full bg-callout px-3 py-1 text-xs font-semibold text-heading">
+                            IFR equipped
+                          </span>
+                        )}
+                        {member.crossCountryReady && (
+                          <span className="inline-flex rounded-full bg-callout px-3 py-1 text-xs font-semibold text-heading">
+                            Cross-country ready
+                          </span>
+                        )}
+                      </>
+                    )}
+                    {!isAircraft(member) && (
+                      <span className="inline-flex rounded-full bg-callout px-3 py-1 text-xs font-semibold text-heading">
+                        Procedure training
+                      </span>
+                    )}
+                  </div>
+
+                  <p className="mt-4 text-sm font-semibold text-accent group-hover:underline">
                     View details →
-                  </Link>
-                </p>
-              </div>
+                  </p>
+                </div>
+              </Link>
             </Reveal>
           ))}
         </div>
