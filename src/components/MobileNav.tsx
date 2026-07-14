@@ -60,7 +60,7 @@ export function MobileNav({ items }: MobileNavProps) {
           <line className="mobile-nav-icon-close" x1="6" y1="6" x2="18" y2="18" />
         </svg>
       </summary>
-      <div className="absolute left-0 right-0 top-full z-50 bg-header-bg px-4 py-6 shadow-xl">
+      <div className="fixed left-0 right-0 top-16 z-50 bg-header-bg px-4 py-6 shadow-xl">
         <nav aria-label="Mobile" className="flex flex-col gap-2">
           {items.map((item) => (
             <div key={item.href}>
